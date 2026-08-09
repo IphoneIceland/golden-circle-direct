@@ -5,7 +5,7 @@
 // `target` is what you POINT AT. `cue` is the line under the heading, verbatim.
 // Blocks with target:null are story blocks — no view, tell them anywhere on that stretch.
 window.__SCRIPT__ = {
-title: "1.0 Golden Circle Direct",
+title: "Golden Circle Direct",
 intro: [
   "Welcome onboard your Golden Circle Direct tour, you will see its split into how we will drive the tour today.",
   "🚌 Is drive sections",
