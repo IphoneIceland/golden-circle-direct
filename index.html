@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Golden Circle Direct 1.0 — Stop-by-Stop Script Map</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="vendor/leaflet.css">
+<style>
+  :root{--bg:#0e1114;--panel:#161b21;--panel2:#1d242c;--line:#2b333d;--ink:#e8edf2;--mute:#93a1b0;--accent:#5ec8f2}
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+  #wrap{display:flex;height:100%;overflow:hidden}
+  #side{width:430px;min-width:430px;background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column}
+  #head{padding:16px 20px 13px;border-bottom:1px solid var(--line)}
+  #head h1{margin:0;font-size:16px;line-height:1.3}
+  #head p{margin:6px 0 0;font-size:11.5px;color:var(--mute);line-height:1.5}
+  #ctl{padding:10px 20px;border-bottom:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap}
+  button{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:6px 11px;font-size:12px;cursor:pointer;font-family:inherit}
+  button:hover{border-color:var(--accent);color:var(--accent)}
+  button.on{border-color:#5ec8f2;color:#5ec8f2}
+  #find{flex:1;min-width:120px;background:var(--panel2);border:1px solid var(--line);border-radius:7px;color:var(--ink);font:12px/1 inherit;padding:6px 10px;outline:none}
+  #find:focus{border-color:var(--accent)}
+  #days{overflow-y:auto;flex:1;padding:10px 12px 40px}
+  .day{border:1px solid var(--line);border-radius:10px;margin-bottom:10px;background:var(--panel2);overflow:hidden}
+  .dayhead{display:flex;align-items:center;gap:10px;padding:11px 13px;cursor:pointer;user-select:none}
+  .dot{width:11px;height:11px;border-radius:50%;flex:none}
+  .dayhead .t{font-size:13px;font-weight:600;flex:1;line-height:1.35}
+  .day.shown{border-color:#5ec8f2}
+  .dayhead .m{font-size:11px;color:var(--mute);white-space:nowrap;text-align:right}
+  .body{display:none;padding:2px 13px 13px}
+  .day.open .body{display:block}
+  .stop{display:flex;gap:9px;padding:7px 0;border-top:1px solid #262e37}
+  .stop[data-key]{cursor:pointer;border-radius:6px;margin:0 -6px;padding-left:6px;padding-right:6px;transition:background .12s}
+  .stop[data-key]:hover{background:#232c35}
+  .stop[data-key]:hover .sn{color:var(--accent)}
+  .stop[data-key]:active{background:#2a343f}
+  .num{flex:none;min-width:21px;height:21px;padding:0 5px;border-radius:11px;display:flex;align-items:center;justify-content:center;font:700 10px/1 ui-monospace,Menlo,monospace;color:#0e1114}
+  .num.noview{background:transparent;border:1.5px dashed #93a1b0;color:#93a1b0}
+  .sc{flex:1;min-width:0}
+  .sn{font-size:12.5px;font-weight:600;line-height:1.35}
+  .sd{font-size:11.5px;color:var(--mute);line-height:1.5;margin-top:1px}
+  .tstrip{display:flex;flex-wrap:wrap;align-items:baseline;gap:7px;margin-top:8px;line-height:1}
+  .tstrip .lb{font:700 8.5px/1 -apple-system,sans-serif;letter-spacing:.08em;color:#61707e;margin-right:2px}
+  .tstrip .v{font:700 12px/1 -apple-system,sans-serif;color:#e8edf2}
+  .tstrip .v.dep{color:#9fe0ff}
+  .tstrip .dr{font:600 11px/1 -apple-system,sans-serif;color:#8fb6cc;white-space:nowrap}
+  .tstrip .sep{color:#39434e}
+  .blkbody{display:none;padding:2px 0 6px}
+  .stop.open + .blkbody{display:block}
+  .hook{margin-top:9px;padding:9px 10px;border-radius:7px;background:#0f2530;border:1px solid #1d4b5e;color:#b7e2f2;font-size:11.5px;line-height:1.55}
+  .blkbody ul{margin:9px 0 0;padding-left:17px}
+  .blkbody li{font-size:11.5px;line-height:1.6;color:#c8d3dd;margin-bottom:6px}
+  .pt{margin-top:9px;padding:9px 10px;border-radius:7px;background:#12251a;border:1px solid #2c4a34;color:#bfe3cb;font-size:11.5px;line-height:1.55}
+  .mc{margin-top:9px;padding:9px 10px;border-radius:7px;background:#33240f;border:1px solid #6b4a17;color:#f4d79a;font-size:11.5px;line-height:1.55;font-weight:600}
+  .wx{margin-top:9px;padding:9px 10px;border-radius:7px;background:#1a2027;border:1px dashed #33404c;color:#9fb3c2;font-size:11px;line-height:1.55}
+  .flag{margin-top:9px;padding:9px 10px;border-radius:7px;background:#3a1a1a;border:1px solid #6b2b2b;color:#ffb3b3;font-size:11.5px;line-height:1.5}
+  .pre{margin-top:9px;padding:9px 10px;border-radius:7px;background:#11161b;border:1px solid #232c35;color:#9fb3c2;font:10.5px/1.55 ui-monospace,Menlo,monospace;overflow-x:auto;white-space:pre}
+  .sublab{font:700 9px/1 -apple-system,sans-serif;letter-spacing:.09em;color:#61707e;text-transform:uppercase;margin-top:11px}
+  .say{margin-top:10px;border-top:1px solid #262e37;padding-top:8px}
+  .say div{font-size:11px;line-height:1.6;color:#a9b7c4;margin-bottom:3px}
+  .say b{color:#e8edf2}
+  .say i{color:#f2c98a;font-style:normal;font-family:ui-monospace,Menlo,monospace;font-size:10px}
+  .legln{font-size:10.5px;color:#6f8090;margin-top:3px}
+  .tags{font-size:10px;color:#5b6b7a;margin-top:8px}
+  #map{flex:1;position:relative}
+  #zhint{position:absolute;z-index:500;bottom:14px;left:14px;background:rgba(22,27,33,.92);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--mute)}
+  #foot{padding:11px 20px;border-top:1px solid var(--line);font-size:10.5px;color:var(--mute);line-height:1.6}
+  #foot a{color:var(--accent)}
+  .mpill{height:22px;padding:0 8px;border-radius:11px;border:2px solid #0e1114;display:flex;align-items:center;justify-content:center;font:700 11px/1 -apple-system,sans-serif;color:#0e1114;white-space:nowrap;box-shadow:0 0 0 1.5px rgba(255,255,255,.5)}
+  .mtgt{width:11px;height:11px;background:#fff;border:2px solid #0e1114;border-radius:3px;box-shadow:0 0 0 1.5px rgba(0,0,0,.5)}
+  @media (max-width:860px){#wrap{flex-direction:column}#side{width:100%;min-width:0;height:55%;border-right:none;border-bottom:1px solid var(--line)}#map{height:45%}}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="side">
+    <div id="head">
+      <h1>Golden Circle Direct 1.0</h1>
+      <p>BSÍ → Þingvellir → Geysir → Gullfoss → Skálholt → Kerið → BSÍ</p>
+    </div>
+    <div id="ctl">
+      <button id="all">Show all sections</button>
+      <button id="none">Hide all</button>
+      <button id="fit">Fit route</button>
+      <input id="find" placeholder="Search the script…">
+    </div>
+    <div id="days"></div>
+    <div id="foot"></div>
+  </div>
+  <div id="map"><div id="zhint">Zoom in further to show place names</div></div>
+</div>
+
+<script src="vendor/leaflet.js"></script>
+<script src="route-1.0.js"></script>
+<script src="script-1.0.js"></script>
+<script src="cues-1.0.js"></script>
+<script>
+const R = window.__ROUTE__, S = window.__SCRIPT__, CUES = window.__CUES__;
+const CUE = {}; CUES.forEach(c => CUE[c.id] = c);
+const COL = {drive:"#5ec8f2", stop:"#c8a2f2"};
+
+// fadeAnimation:false is not cosmetic. With a service worker in front of the tile requests,
+// Leaflet's fade never flips tiles from opacity 0 to 1 — every tile downloads correctly
+// (naturalWidth 256) and then paints invisibly, so you get a blank map and no error anywhere.
+// Turning the fade off makes tiles opaque the moment they arrive.
+const map = L.map("map",{fadeAnimation:false}).setView([64.15,-20.9],8);
+
+const SAT = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  {maxZoom:19, maxNativeZoom:17, attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'});
+const TERRAIN = L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+  {maxZoom:19, maxNativeZoom:15, attribution:'&copy; OpenTopoMap, &copy; OpenStreetMap contributors'});
+const DARK = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",{maxZoom:19,
+  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'});
+// Road casings and place names printed over the imagery — satellite alone is pretty and useless.
+const SATLBL = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
+  {maxZoom:19, maxNativeZoom:16, attribution:''});
+
+// Sentinel-2 cloudless (EOX, CC-BY) as a second imagery source. Esri is better where it
+// has coverage, but if anything blocks it — a preview pane, an ad blocker, a corporate
+// network — a grey rectangle is useless on a coach. Fall through instead of failing.
+const SAT2 = L.tileLayer("https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/g/{z}/{y}/{x}.jpg",
+  {maxZoom:19, maxNativeZoom:14, attribution:'Sentinel-2 cloudless &copy; EOX IT Services (CC BY-NC-SA 4.0)'});
+
+SAT.addTo(map); SATLBL.addTo(map);
+const layerCtl = L.control.layers({"Satellite (Esri)":SAT,"Satellite (Sentinel-2)":SAT2,"Terrain":TERRAIN,"Dark map":DARK},
+                 {"Names on satellite":SATLBL},{position:"topright"}).addTo(map);
+
+// ---- imagery watchdog -------------------------------------------------------
+// Leaflet fires tileerror per failed tile. A handful is normal at the edges of coverage;
+// a wall of them means the source is blocked. Switch once, say so, and move on.
+let satErr = 0, satOK = 0, switched = false;
+SAT.on("tileload", ()=>{ satOK++; });
+SAT.on("tileerror", ()=>{
+  satErr++;
+  if(switched || satOK > 0 || satErr < 6) return;
+  switched = true;
+  map.removeLayer(SAT); SAT2.addTo(map);
+  banner("Esri imagery is blocked here — switched to Sentinel-2. Layers control, top right, to change it.");
+});
+SAT2.on("tileerror", ()=>{
+  if(!switched) return;
+  banner("Both satellite sources are blocked. You are almost certainly viewing this in a preview pane — open the file in a browser.");
+});
+function banner(msg){
+  let el = document.getElementById("tilewarn");
+  if(!el){
+    el = document.createElement("div"); el.id = "tilewarn";
+    el.style.cssText = "position:absolute;z-index:600;top:10px;left:10px;max-width:340px;background:#3a1a1a;"
+      + "border:1px solid #6b2b2b;color:#ffb3b3;border-radius:7px;padding:8px 11px;font:11.5px/1.5 -apple-system,sans-serif";
+    document.getElementById("map").appendChild(el);
+  }
+  el.textContent = msg;
+}
+
+const routeLine = L.polyline(R.geometry,{color:"#5ec8f2",weight:4,opacity:.85}).addTo(map);
+
+function esc(s){ return (s||"").replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+function md(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g,"<i>$1</i>"); }
+
+// Markers built once and never rebuilt — a rebuild-on-zoom is what raced the old map's popups.
+const CUEM={}, TGTM={}, LINK={};
+CUES.forEach(c=>{
+  if(!c.pin) return;
+  const stop = c.sec==="S2"||c.sec==="S4"||c.sec==="S5";
+  const col = stop ? COL.stop : COL.drive;
+  CUEM[c.id]=L.marker([c.pin.lat,c.pin.lon],{icon:L.divIcon({className:"",iconSize:[38,22],iconAnchor:[19,11],
+    html:`<div class="mpill" style="background:${col}">${c.id}</div>`})})
+    .bindPopup(`<b>${c.id}</b><br><span style="color:#556">${c.cue?esc(c.cue):"story block"}</span>`);
+  if(c.target){
+    TGTM[c.id]=L.marker([c.target.lat,c.target.lon],{icon:L.divIcon({className:"",iconSize:[11,11],iconAnchor:[5,5],html:'<div class="mtgt"></div>'})})
+      .bindPopup(`<b>${esc(c.target.name)}</b><br>${c.dist_m>=1000?(c.dist_m/1000).toFixed(1)+" km":c.dist_m+" m"} away · reads ${c.clock} o'clock`);
+    LINK[c.id]=L.polyline([[c.pin.lat,c.pin.lon],[c.target.lat,c.target.lon]],{color:"#fff",weight:1.5,opacity:.8,dashArray:"4,6"});
+  }
+});
+let SHOWN=null;
+function focusBlock(id){
+  if(SHOWN && SHOWN!==id) [CUEM,TGTM,LINK].forEach(g=>{ if(g[SHOWN]&&map.hasLayer(g[SHOWN])) map.removeLayer(g[SHOWN]); });
+  SHOWN=id; const c=CUE[id]; if(!c||!c.pin) return;
+  CUEM[id].addTo(map); if(TGTM[id]) TGTM[id].addTo(map); if(LINK[id]) LINK[id].addTo(map);
+  const pts=[[c.pin.lat,c.pin.lon]]; if(c.target) pts.push([c.target.lat,c.target.lon]);
+  if(pts.length>1) map.fitBounds(L.latLngBounds(pts).pad(.45),{maxZoom:13}); else map.flyTo(pts[0],13,{duration:.5});
+  CUEM[id].openPopup();
+}
+
+const list=document.getElementById("days");
+function blockRow(b, kind){
+  const c=CUE[b.id]||{};
+  const col = kind==="stop" ? COL.stop : COL.drive;
+  const say=(b.say||[]).map(s=>`<div><b>${esc(s[0])}</b> <i>[${esc(s[1])}]</i> — ${esc(s[2])}</div>`).join("");
+  const heads=(b.heads||[]).map(h=>`<div class="sublab">${esc(h[0])}</div><ul>${h[1].map(x=>`<li>${md(x)}</li>`).join("")}</ul>`).join("");
+  const pre=(b.pre||[]).map(p=>`<div class="sublab">${esc(p[0])}</div><div class="pre">${esc(p[1])}</div>`).join("");
+  const S2=[];
+  if(b.cue) S2.push(`<span class="lb">CUE</span><span class="v">${esc(b.cue)}</span>`);
+  if(c.target) S2.push(`<span class="dr">◇ ${esc(c.target.name)} · ${c.dist_m>=1000?(c.dist_m/1000).toFixed(1)+" km":c.dist_m+" m"} · ${c.clock} o'clock</span>`);
+  return `<div class="stop" data-key="${b.id}"><div class="num${c.target?"":" noview"}" style="${c.target?`background:${col}`:""}">${b.id}</div>
+      <div class="sc"><div class="sn">${b.emoji?b.emoji+" ":""}${esc(b.title)}</div>
+      ${!c.target?`<div class="legln">no view — tell it anywhere on this stretch</div>`:""}
+      ${S2.length?`<div class="tstrip">${S2.join('<span class="sep">·</span>')}</div>`:""}</div></div>
+    <div class="blkbody">
+      ${b.hook?`<div class="hook">🎣 ${md(b.hook)}</div>`:""}
+      ${heads}${pre}
+      ${(b.bullets&&b.bullets.length)?`<ul>${b.bullets.map(x=>`<li>${md(x)}</li>`).join("")}</ul>`:""}
+      ${b.point?`<div class="pt">🎯 ${md(b.point)}</div>`:""}
+      ${b.mic?`<div class="mc">🎤 ${md(b.mic)}</div>`:""}
+      ${b.weather?`<div class="wx">🌫️ ${md(b.weather)}</div>`:""}
+      ${b.flag?`<div class="flag"><b>Check this:</b> ${esc(b.flag)}</div>`:""}
+      ${say?`<div class="say"><div class="sublab">🗣️ How to say it</div>${say}</div>`:""}
+      ${(b.tags||[]).length?`<div class="tags">${b.tags.join(" ")}</div>`:""}
+    </div>`;
+}
+function render(filter){
+  const f=(filter||"").trim().toLowerCase();
+  list.innerHTML="";
+  S.sections.forEach((sec,si)=>{
+    const blocks=sec.blocks.filter(b=>!f || JSON.stringify(b).toLowerCase().includes(f));
+    if(!blocks.length) return;
+    const col=COL[sec.kind];
+    const el=document.createElement("div"); el.className="day"; el.dataset.i=si;
+    el.innerHTML=`<div class="dayhead"><span class="dot" style="background:${col}"></span>
+        <span class="t">${sec.kind==="stop"?"📍":"🚌"} ${esc(sec.title)}</span>
+        <span class="m">${blocks.length} block${blocks.length>1?"s":""}</span></div>
+      <div class="body">${blocks.map(b=>blockRow(b,sec.kind)).join("")}</div>`;
+    el.querySelector(".dayhead").onclick=()=>{
+      const open=el.classList.toggle("open"); el.classList.toggle("shown",open);
+    };
+    el.querySelectorAll(".stop[data-key]").forEach(row=>{
+      row.addEventListener("click",ev=>{
+        if(ev.target.closest("a")) return;
+        row.classList.toggle("open");
+        focusBlock(row.dataset.key);
+      });
+    });
+    list.appendChild(el);
+    if(f){ el.classList.add("open"); el.querySelectorAll(".stop").forEach(r=>r.classList.add("open")); }
+  });
+}
+document.getElementById("all").onclick=()=>document.querySelectorAll(".day").forEach(e=>{e.classList.add("open");e.classList.add("shown");});
+document.getElementById("none").onclick=()=>document.querySelectorAll(".day").forEach(e=>{e.classList.remove("open");e.classList.remove("shown");});
+document.getElementById("fit").onclick=()=>{
+  if(SHOWN){[CUEM,TGTM,LINK].forEach(g=>{if(g[SHOWN]&&map.hasLayer(g[SHOWN]))map.removeLayer(g[SHOWN]);});SHOWN=null;}
+  map.fitBounds(routeLine.getBounds().pad(.06));
+};
+document.getElementById("find").addEventListener("input",e=>render(e.target.value));
+map.on("zoomend",()=>{document.getElementById("zhint").style.display=map.getZoom()>=11?"none":"block";});
+
+const nB=S.sections.reduce((a,s)=>a+s.blocks.length,0), nT=CUES.filter(c=>c.target).length;
+document.getElementById("foot").innerHTML=
+  `${nB} script blocks · ${nT} pinned to something you can point at · ${nB-nT} story blocks with no view. `+
+  `Route ${R.km} km, coach-legal roads only. Coordinates verified against OpenStreetMap, 8 Aug 2026.<br>`+
+  `Basemap © Esri / OpenStreetMap / CARTO. <span id="sw"></span>`;
+
+if("serviceWorker" in navigator) window.addEventListener("load",()=>{
+  navigator.serviceWorker.register("sw.js").then(()=>{const el=document.getElementById("sw");if(el){el.textContent="· Offline ready";el.style.color="#9fdcae";}}).catch(()=>{});
+});
+
+render("");
+map.fitBounds(routeLine.getBounds().pad(.06));
+</script>
+</body>
+</html>
