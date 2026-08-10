@@ -3,6 +3,7 @@
 **True as of 10 Aug 2026, 07:45.** Paste this into a fresh chat and you lose nothing.
 
 **Changelog**
+- 10 Aug 2026 — **block layout now follows the Craft doc.** Every heading's subtitle (`Kjarval — the cod fisherman who became legal tender`) was being dropped; all **34** are back as a `sub:` field on each block, harvested from `RitchWiki/Tour Scripts/1.0 Golden Circle Direct.md`. 🧵 thread tags moved from the bottom of the body up under the title where Craft has them. Bullets get a **📖 The story** label. Pronunciations re-ordered to Craft's `[PRON] — Name (gloss)`. `sw.js` VERSION → `gcd10-v6`.
 - 10 Aug 2026 — **"🗣️ How to say it" is now collapsible**, matching Craft. Rendered as `<details class="say">` with a `<summary>` carrying a rotating chevron and the pronunciation count. Closed by default. `sw.js` VERSION → `gcd10-v5`.
 - `de14354` 10 Aug 2026 — narrow screens (phone, and the Claude preview pane) put the **map on top**, script below: `#map{order:-1;height:48%;min-height:280px}`, `#side{height:52%}`. Desktop layout unchanged. `sw.js` VERSION → `gcd10-v4`.
 

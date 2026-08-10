@@ -39,6 +39,9 @@
   .num.noview{background:transparent;border:1.5px dashed #93a1b0;color:#93a1b0}
   .sc{flex:1;min-width:0}
   .sn{font-size:12.5px;font-weight:600;line-height:1.35}
+  .sub{font-size:11.5px;line-height:1.4;color:#8fb6cc;font-style:italic;margin-top:2px}
+  .thr{font:600 10px/1 ui-monospace,Menlo,monospace;color:#6f8090;margin-top:5px;letter-spacing:.02em}
+  .storylab{font:700 9px/1 -apple-system,sans-serif;letter-spacing:.09em;color:#61707e;text-transform:uppercase;margin-top:11px;margin-bottom:-2px}
   .sd{font-size:11.5px;color:var(--mute);line-height:1.5;margin-top:1px}
   .tstrip{display:flex;flex-wrap:wrap;align-items:baseline;gap:7px;margin-top:8px;line-height:1}
   .tstrip .lb{font:700 8.5px/1 -apple-system,sans-serif;letter-spacing:.08em;color:#61707e;margin-right:2px}
@@ -68,6 +71,7 @@
   .say>div:first-of-type{margin-top:7px}
   .say div{font-size:11px;line-height:1.6;color:#a9b7c4;margin-bottom:3px}
   .say b{color:#e8edf2}
+  .say .gloss{color:#7f8f9d}
   .say i{color:#f2c98a;font-style:normal;font-family:ui-monospace,Menlo,monospace;font-size:10px}
   .legln{font-size:10.5px;color:#6f8090;margin-top:3px}
   .tags{font-size:10px;color:#5b6b7a;margin-top:8px}
@@ -195,7 +199,7 @@ const list=document.getElementById("days");
 function blockRow(b, kind){
   const c=CUE[b.id]||{};
   const col = kind==="stop" ? COL.stop : COL.drive;
-  const say=(b.say||[]).map(s=>`<div><b>${esc(s[0])}</b> <i>[${esc(s[1])}]</i> — ${esc(s[2])}</div>`).join("");
+  const say=(b.say||[]).map(s=>`<div><i>[${esc(s[1])}]</i> — <b>${esc(s[0])}</b>${s[2]?` <span class="gloss">(${esc(s[2])})</span>`:""}</div>`).join("");
   const heads=(b.heads||[]).map(h=>`<div class="sublab">${esc(h[0])}</div><ul>${h[1].map(x=>`<li>${md(x)}</li>`).join("")}</ul>`).join("");
   const pre=(b.pre||[]).map(p=>`<div class="sublab">${esc(p[0])}</div><div class="pre">${esc(p[1])}</div>`).join("");
   const S2=[];
@@ -203,18 +207,19 @@ function blockRow(b, kind){
   if(c.target) S2.push(`<span class="dr">◇ ${esc(c.target.name)} · ${c.dist_m>=1000?(c.dist_m/1000).toFixed(1)+" km":c.dist_m+" m"} · ${c.clock} o'clock</span>`);
   return `<div class="stop" data-key="${b.id}"><div class="num${c.target?"":" noview"}" style="${c.target?`background:${col}`:""}">${b.id}</div>
       <div class="sc"><div class="sn">${b.emoji?b.emoji+" ":""}${esc(b.title)}</div>
+      ${b.sub?`<div class="sub">${esc(b.sub)}</div>`:""}
+      ${(b.tags||[]).length?`<div class="thr">🧵 ${b.tags.join(" ")}</div>`:""}
       ${!c.target?`<div class="legln">no view — tell it anywhere on this stretch</div>`:""}
       ${S2.length?`<div class="tstrip">${S2.join('<span class="sep">·</span>')}</div>`:""}</div></div>
     <div class="blkbody">
       ${b.hook?`<div class="hook">🎣 ${md(b.hook)}</div>`:""}
       ${heads}${pre}
-      ${(b.bullets&&b.bullets.length)?`<ul>${b.bullets.map(x=>`<li>${md(x)}</li>`).join("")}</ul>`:""}
+      ${(b.bullets&&b.bullets.length)?`<div class="storylab">📖 The story</div><ul>${b.bullets.map(x=>`<li>${md(x)}</li>`).join("")}</ul>`:""}
       ${b.point?`<div class="pt">🎯 ${md(b.point)}</div>`:""}
       ${b.mic?`<div class="mc">🎤 ${md(b.mic)}</div>`:""}
       ${b.weather?`<div class="wx">🌫️ ${md(b.weather)}</div>`:""}
       ${b.flag?`<div class="flag"><b>Check this:</b> ${esc(b.flag)}</div>`:""}
       ${say?`<details class="say"><summary><span class="chev">▶</span><span class="sublab">🗣️ How to say it</span><span class="cnt">${(b.say||[]).length}</span></summary>${say}</details>`:""}
-      ${(b.tags||[]).length?`<div class="tags">${b.tags.join(" ")}</div>`:""}
     </div>`;
 }
 function render(filter){
