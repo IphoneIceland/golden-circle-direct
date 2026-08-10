@@ -1,6 +1,9 @@
 # HANDOVER — Golden Circle Direct
 
-**True as of 9 Aug 2026, 01:30.** Paste this into a fresh chat and you lose nothing.
+**True as of 10 Aug 2026, 07:45.** Paste this into a fresh chat and you lose nothing.
+
+**Changelog**
+- `de14354` 10 Aug 2026 — narrow screens (phone, and the Claude preview pane) put the **map on top**, script below: `#map{order:-1;height:48%;min-height:280px}`, `#side{height:52%}`. Desktop layout unchanged. `sw.js` VERSION → `gcd10-v4`.
 
 ---
 
