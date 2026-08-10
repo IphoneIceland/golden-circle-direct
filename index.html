@@ -7,7 +7,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="stylesheet" href="vendor/leaflet.css">
 <style>
-  :root{--bg:#0e1114;--panel:#161b21;--panel2:#1d242c;--line:#2b333d;--ink:#e8edf2;--mute:#93a1b0;--accent:#5ec8f2}
+  :root{--bg:#0e1114;--panel:#161b21;--panel2:#1d242c;--line:#2b333d;--ink:#e8edf2;--mute:#93a1b0;--accent:#5ec8f2;--fs:16px;--lh:1.8}
   *{box-sizing:border-box}
   html,body{margin:0;height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
   #wrap{display:flex;height:100%;overflow:hidden}
@@ -16,64 +16,66 @@
   #head h1{margin:0;font-size:16px;line-height:1.3}
   #head p{margin:6px 0 0;font-size:11.5px;color:var(--mute);line-height:1.5}
   #ctl{padding:10px 20px;border-bottom:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap}
-  button{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:6px 11px;font-size:12px;cursor:pointer;font-family:inherit}
+  button{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:7px 12px;font-size:13px;cursor:pointer;font-family:inherit}
   button:hover{border-color:var(--accent);color:var(--accent)}
   button.on{border-color:#5ec8f2;color:#5ec8f2}
   #find{flex:1;min-width:120px;background:var(--panel2);border:1px solid var(--line);border-radius:7px;color:var(--ink);font:12px/1 inherit;padding:6px 10px;outline:none}
   #find:focus{border-color:var(--accent)}
-  #days{overflow-y:auto;flex:1;padding:10px 12px 40px}
+  #days{overflow-y:auto;flex:1;padding:10px 12px 60px;font-size:var(--fs);line-height:var(--lh)}
+  .blkbody{max-width:66ch}
   .day{border:1px solid var(--line);border-radius:10px;margin-bottom:10px;background:var(--panel2);overflow:hidden}
   .dayhead{display:flex;align-items:center;gap:10px;padding:11px 13px;cursor:pointer;user-select:none}
   .dot{width:11px;height:11px;border-radius:50%;flex:none}
-  .dayhead .t{font-size:13px;font-weight:600;flex:1;line-height:1.35}
+  .dayhead .t{font-size:1.02em;font-weight:600;flex:1;line-height:1.45}
   .day.shown{border-color:#5ec8f2}
-  .dayhead .m{font-size:11px;color:var(--mute);white-space:nowrap;text-align:right}
+  .dayhead .m{font-size:.82em;color:var(--mute);white-space:nowrap;text-align:right;line-height:1.5}
   .body{display:none;padding:2px 13px 13px}
   .day.open .body{display:block}
-  .stop{display:flex;gap:9px;padding:7px 0;border-top:1px solid #262e37}
+  .stop{display:flex;gap:11px;padding:13px 0;border-top:1px solid #262e37}
   .stop[data-key]{cursor:pointer;border-radius:6px;margin:0 -6px;padding-left:6px;padding-right:6px;transition:background .12s}
   .stop[data-key]:hover{background:#232c35}
   .stop[data-key]:hover .sn{color:var(--accent)}
   .stop[data-key]:active{background:#2a343f}
-  .num{flex:none;min-width:21px;height:21px;padding:0 5px;border-radius:11px;display:flex;align-items:center;justify-content:center;font:700 10px/1 ui-monospace,Menlo,monospace;color:#0e1114}
+  .num{flex:none;min-width:26px;height:26px;padding:0 6px;border-radius:13px;display:flex;align-items:center;justify-content:center;font:700 .78em/1 ui-monospace,Menlo,monospace;color:#0e1114}
   .num.noview{background:transparent;border:1.5px dashed #93a1b0;color:#93a1b0}
   .sc{flex:1;min-width:0}
-  .sn{font-size:12.5px;font-weight:600;line-height:1.35}
-  .sub{font-size:11.5px;line-height:1.4;color:#8fb6cc;font-style:italic;margin-top:2px}
-  .thr{font:600 10px/1 ui-monospace,Menlo,monospace;color:#6f8090;margin-top:5px;letter-spacing:.02em}
-  .storylab{font:700 9px/1 -apple-system,sans-serif;letter-spacing:.09em;color:#61707e;text-transform:uppercase;margin-top:11px;margin-bottom:-2px}
+  .sn{font-size:1.08em;font-weight:600;line-height:1.45;letter-spacing:.005em}
+  .sub{font-size:.97em;line-height:1.55;color:#9ec8dd;margin-top:4px}
+  .thr{font-size:.82em;font-weight:600;color:#7d8fa0;margin-top:7px;line-height:1.5}
+  .storylab{font-size:.85em;font-weight:700;color:#8fa3b4;margin-top:16px;margin-bottom:2px}
   .sd{font-size:11.5px;color:var(--mute);line-height:1.5;margin-top:1px}
-  .tstrip{display:flex;flex-wrap:wrap;align-items:baseline;gap:7px;margin-top:8px;line-height:1}
-  .tstrip .lb{font:700 8.5px/1 -apple-system,sans-serif;letter-spacing:.08em;color:#61707e;margin-right:2px}
-  .tstrip .v{font:700 12px/1 -apple-system,sans-serif;color:#e8edf2}
+  .tstrip{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;margin-top:10px}
+  .tstrip .lb{font-size:.76em;font-weight:700;color:#8fa3b4;margin-right:3px}
+  .tstrip .v{font-size:.98em;font-weight:700;color:#e8edf2;line-height:1.5}
   .tstrip .v.dep{color:#9fe0ff}
-  .tstrip .dr{font:600 11px/1 -apple-system,sans-serif;color:#8fb6cc;white-space:nowrap}
+  .tstrip .dr{font-size:.88em;font-weight:600;color:#8fb6cc;white-space:nowrap;line-height:1.5}
   .tstrip .sep{color:#39434e}
   .blkbody{display:none;padding:2px 0 6px}
   .stop.open + .blkbody{display:block}
-  .hook{margin-top:9px;padding:9px 10px;border-radius:7px;background:#0f2530;border:1px solid #1d4b5e;color:#b7e2f2;font-size:11.5px;line-height:1.55}
-  .blkbody ul{margin:9px 0 0;padding-left:17px}
-  .blkbody li{font-size:11.5px;line-height:1.6;color:#c8d3dd;margin-bottom:6px}
-  .pt{margin-top:9px;padding:9px 10px;border-radius:7px;background:#12251a;border:1px solid #2c4a34;color:#bfe3cb;font-size:11.5px;line-height:1.55}
-  .mc{margin-top:9px;padding:9px 10px;border-radius:7px;background:#33240f;border:1px solid #6b4a17;color:#f4d79a;font-size:11.5px;line-height:1.55;font-weight:600}
-  .wx{margin-top:9px;padding:9px 10px;border-radius:7px;background:#1a2027;border:1px dashed #33404c;color:#9fb3c2;font-size:11px;line-height:1.55}
-  .flag{margin-top:9px;padding:9px 10px;border-radius:7px;background:#3a1a1a;border:1px solid #6b2b2b;color:#ffb3b3;font-size:11.5px;line-height:1.5}
+  .hook{margin-top:14px;padding:13px 14px;border-radius:9px;background:#0f2530;border:1px solid #1d4b5e;color:#cdeaf7;font-size:1em;line-height:var(--lh)}
+  .blkbody ul{margin:8px 0 0;padding-left:20px}
+  .blkbody li{font-size:1em;line-height:var(--lh);color:#d3dde6;margin-bottom:14px;padding-left:2px}
+  .pt{margin-top:14px;padding:13px 14px;border-radius:9px;background:#12251a;border:1px solid #2c4a34;color:#cfeeda;font-size:1em;line-height:var(--lh)}
+  .mc{margin-top:12px;padding:13px 14px;border-radius:9px;background:#2a1e0d;border:1px solid #5c3f14;color:#f6dfab;font-size:1em;line-height:var(--lh);font-weight:500}
+  .wx{margin-top:12px;padding:12px 14px;border-radius:9px;background:#1a2027;border:1px solid #2b3641;color:#adc0ce;font-size:.95em;line-height:var(--lh)}
+  .flag{margin-top:12px;padding:13px 14px;border-radius:9px;background:#33191a;border:1px solid #6b2b2b;color:#ffc4c4;font-size:1em;line-height:var(--lh)}
   .pre{margin-top:9px;padding:9px 10px;border-radius:7px;background:#11161b;border:1px solid #232c35;color:#9fb3c2;font:10.5px/1.55 ui-monospace,Menlo,monospace;overflow-x:auto;white-space:pre}
-  .sublab{font:700 9px/1 -apple-system,sans-serif;letter-spacing:.09em;color:#61707e;text-transform:uppercase;margin-top:11px}
+  .sublab{font-size:.85em;font-weight:700;color:#8fa3b4;margin-top:14px}
   .say{margin-top:10px;border-top:1px solid #262e37;padding-top:8px}
   .say>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:7px;user-select:none;padding:2px 0}
   .say>summary::-webkit-details-marker{display:none}
   .say>summary .sublab{margin-top:0}
-  .say>summary .chev{color:#61707e;font-size:9px;line-height:1;transition:transform .15s ease;display:inline-block}
+  .say>summary .chev{color:#8fa3b4;font-size:.72em;line-height:1;transition:transform .15s ease;display:inline-block}
   .say[open]>summary .chev{transform:rotate(90deg)}
-  .say>summary .cnt{font:700 9px/1 -apple-system,sans-serif;color:#61707e;letter-spacing:.06em}
+  .say>summary .cnt{font-size:.8em;font-weight:700;color:#8fa3b4}
   .say>summary:hover .sublab,.say>summary:hover .cnt,.say>summary:hover .chev{color:var(--accent)}
   .say>div:first-of-type{margin-top:7px}
-  .say div{font-size:11px;line-height:1.6;color:#a9b7c4;margin-bottom:3px}
-  .say b{color:#e8edf2}
+  .say div{font-size:.95em;line-height:1.85;color:#b6c3ce;margin-bottom:7px}
+  .say b{color:#e8edf2;font-weight:600}
+  .blkbody li b,.hook b,.pt b,.flag b,.mc b{font-weight:600;color:#ffffff}
   .say .gloss{color:#7f8f9d}
-  .say i{color:#f2c98a;font-style:normal;font-family:ui-monospace,Menlo,monospace;font-size:10px}
-  .legln{font-size:10.5px;color:#6f8090;margin-top:3px}
+  .say i{color:#f4d5a0;font-style:normal;font-family:ui-monospace,Menlo,monospace;font-size:.9em}
+  .legln{font-size:.9em;color:#8496a5;margin-top:5px;line-height:1.55}
   .tags{font-size:10px;color:#5b6b7a;margin-top:8px}
   #map{flex:1;position:relative}
   #zhint{position:absolute;z-index:500;bottom:14px;left:14px;background:rgba(22,27,33,.92);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--mute)}
@@ -95,6 +97,8 @@
       <button id="all">Show all sections</button>
       <button id="none">Hide all</button>
       <button id="fit">Fit route</button>
+      <button id="tsm" title="Smaller text">A−</button>
+      <button id="tsp" title="Bigger text">A+</button>
       <input id="find" placeholder="Search the script…">
     </div>
     <div id="days"></div>
@@ -254,6 +258,19 @@ document.getElementById("fit").onclick=()=>{
   if(SHOWN){[CUEM,TGTM,LINK].forEach(g=>{if(g[SHOWN]&&map.hasLayer(g[SHOWN]))map.removeLayer(g[SHOWN]);});SHOWN=null;}
   map.fitBounds(routeLine.getBounds().pad(.06));
 };
+// Text size — reading comfort beats density. Steps 14->22px, remembered where storage allows.
+(function(){
+  const KEY="gcd-fs";
+  let fs=16;
+  try{ const v=parseFloat(localStorage.getItem(KEY)); if(v>=14&&v<=22) fs=v; }catch(e){}
+  const apply=()=>{
+    document.documentElement.style.setProperty("--fs", fs+"px");
+    try{ localStorage.setItem(KEY, fs); }catch(e){}
+  };
+  apply();
+  document.getElementById("tsm").onclick=()=>{ fs=Math.max(14,fs-1); apply(); };
+  document.getElementById("tsp").onclick=()=>{ fs=Math.min(22,fs+1); apply(); };
+})();
 document.getElementById("find").addEventListener("input",e=>render(e.target.value));
 map.on("zoomend",()=>{document.getElementById("zhint").style.display=map.getZoom()>=11?"none":"block";});
 
