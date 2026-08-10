@@ -721,6 +721,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .pre{margin-top:9px;padding:9px 10px;border-radius:7px;background:#11161b;border:1px solid #232c35;color:#9fb3c2;font:10.5px/1.55 ui-monospace,Menlo,monospace;overflow-x:auto;white-space:pre}
   .sublab{font:700 9px/1 -apple-system,sans-serif;letter-spacing:.09em;color:#61707e;text-transform:uppercase;margin-top:11px}
   .say{margin-top:10px;border-top:1px solid #262e37;padding-top:8px}
+  .say>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:7px;user-select:none;padding:2px 0}
+  .say>summary::-webkit-details-marker{display:none}
+  .say>summary .sublab{margin-top:0}
+  .say>summary .chev{color:#61707e;font-size:9px;line-height:1;transition:transform .15s ease;display:inline-block}
+  .say[open]>summary .chev{transform:rotate(90deg)}
+  .say>summary .cnt{font:700 9px/1 -apple-system,sans-serif;color:#61707e;letter-spacing:.06em}
+  .say>summary:hover .sublab,.say>summary:hover .cnt,.say>summary:hover .chev{color:var(--accent)}
+  .say>div:first-of-type{margin-top:7px}
   .say div{font-size:11px;line-height:1.6;color:#a9b7c4;margin-bottom:3px}
   .say b{color:#e8edf2}
   .say i{color:#f2c98a;font-style:normal;font-family:ui-monospace,Menlo,monospace;font-size:10px}
@@ -1569,7 +1577,7 @@ function blockRow(b, kind){
       ${b.mic?`<div class="mc">🎤 ${md(b.mic)}</div>`:""}
       ${b.weather?`<div class="wx">🌫️ ${md(b.weather)}</div>`:""}
       ${b.flag?`<div class="flag"><b>Check this:</b> ${esc(b.flag)}</div>`:""}
-      ${say?`<div class="say"><div class="sublab">🗣️ How to say it</div>${say}</div>`:""}
+      ${say?`<details class="say"><summary><span class="chev">▶</span><span class="sublab">🗣️ How to say it</span><span class="cnt">${(b.say||[]).length}</span></summary>${say}</details>`:""}
       ${(b.tags||[]).length?`<div class="tags">${b.tags.join(" ")}</div>`:""}
     </div>`;
 }

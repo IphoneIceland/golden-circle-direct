@@ -3,6 +3,7 @@
 **True as of 10 Aug 2026, 07:45.** Paste this into a fresh chat and you lose nothing.
 
 **Changelog**
+- 10 Aug 2026 — **"🗣️ How to say it" is now collapsible**, matching Craft. Rendered as `<details class="say">` with a `<summary>` carrying a rotating chevron and the pronunciation count. Closed by default. `sw.js` VERSION → `gcd10-v5`.
 - `de14354` 10 Aug 2026 — narrow screens (phone, and the Claude preview pane) put the **map on top**, script below: `#map{order:-1;height:48%;min-height:280px}`, `#side{height:52%}`. Desktop layout unchanged. `sw.js` VERSION → `gcd10-v4`.
 
 ---
