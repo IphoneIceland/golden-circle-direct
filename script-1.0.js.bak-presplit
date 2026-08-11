@@ -70,7 +70,7 @@ sections: [
       ["Bjórdagurinn","BYOR-dah-gur-in","\"Beer Day\", 1 March, when beer became legal again"]],
  tags:["#trade"]},
 
-{id:"1.3", emoji:"🏞️", title:"Elliðaárdalur", sub:"The Valley That Runs the City", cue:"Look right at 2 o'clock — Elliðaárdalur.",
+{id:"1.3", emoji:"🏞️", title:"Elliðaárdalur — The Valley That Runs the City", sub:"The Valley That Runs the City", cue:"Look right at 2 o'clock — Elliðaárdalur.",
  target:{lat:64.1106398, lon:-21.8007516, name:"Elliðaárdalur"},
  hook:"Most capitals get a grey, sad little river. Reykjavík's hands you **dinner, drinking water, electricity — and the country's first parliament.** Show-off.",
  bullets:[
@@ -88,7 +88,7 @@ sections: [
       ["Þorsteinn Ingólfsson","THOR-stayn ING-ohlfs-son","the first settler's son, who set that assembly up"]],
  tags:["#law","#migration","#technology"]},
 
-{id:"1.4", emoji:"⛰️", title:"Mount Esja", sub:"A Layer Cake of Climate", cue:"Look ahead at 12 o'clock — Esja on the skyline.",
+{id:"1.4", emoji:"⛰️", title:"Mount Esja — A Layer Cake of Climate", sub:"A Layer Cake of Climate", cue:"Look ahead at 12 o'clock — Esja on the skyline.",
  target:{lat:64.23301, lon:-21.71115, name:"Þverfellshorn, Esja"},
  hook:"That ridge isn't a mountain — it's a **volcanic range** with **11 ice ages** stacked inside it. Reykjavík's **weather forecast, written in stone** — and unlike the app, it's never wrong.",
  bullets:[
@@ -106,7 +106,7 @@ sections: [
       ["móberg","MOH-berg","the pale rock: lava that fought a glacier and got shattered under the ice"]],
  tags:["#geology"]},
 
-{id:"1.5", emoji:"⚖️", title:"Kjalarnesþing", sub:"The Parliament Before the Parliament", cue:"At Kjalarnes, foot of Esja.",
+{id:"1.5", emoji:"⚖️", title:"Kjalarnesþing — The Parliament Before the Parliament", sub:"The Parliament Before the Parliament", cue:"At Kjalarnes, foot of Esja.",
  target:{lat:64.2421793, lon:-21.8315022, name:"Kjalarnes"},
  hook:"Iceland's world-famous parliament at Þingvellir? Not even the first. The original ran right here — set up by the founder's son. Nepotism: also a Viking value.",
  bullets:[
@@ -123,7 +123,7 @@ sections: [
       ["Gulating","GOO-la-ting","the Norwegian law he studied and adapted"]],
  tags:["#law","#migration"]},
 
-{id:"1.6", emoji:"🎵", title:"Mosfellsbær", sub:"A Town That Punches Above Its Weight", cue:"All around — Mosfellsbær.",
+{id:"1.6", emoji:"🎵", title:"Mosfellsbær — A Town That Punches Above Its Weight", sub:"A Town That Punches Above Its Weight", cue:"All around — Mosfellsbær.",
  target:{lat:64.1674922, lon:-21.6971313, name:"Mosfellsbær"},
  hook:"A commuter town of **~13,700** — smaller than a single Reykjavík suburb — that exported **two global music acts** at opposite ends of the volume knob.",
  bullets:[
@@ -141,7 +141,7 @@ sections: [
       ["Vor í Vaglaskógi","vor ee VAHG-la-SKOH-yi","the Kaleo track, a cover of an Icelandic classic about a forest up north"]],
  tags:["#music"]},
 
-{id:"1.7", emoji:"🪶", title:"Mosfellsdalur", sub:"A Valley of Buried Silver and a Nobel Prize", cue:"All around — Mosfellsdalur.",
+{id:"1.7", emoji:"🪶", title:"Mosfellsdalur — A Valley of Buried Silver and a Nobel Prize", sub:"A Valley of Buried Silver and a Nobel Prize", cue:"All around — Mosfellsdalur.",
  target:{lat:64.1802753, lon:-21.6188617, name:"Mosfellsdalur"},
  hook:"Two famous residents, a thousand years apart: one **buried a fortune here and killed the witnesses**; the other won the **Nobel Prize**.",
  bullets:[
@@ -161,7 +161,7 @@ sections: [
       ["Hrísbrú","HREES-broo","the dig site in this valley where the saga says Egil's bones were moved"]],
  tags:["#literature","#law"]},
 
-{id:"1.8", emoji:"🪶", title:"Gljúfrasteinn", sub:"The Poet's House", cue:"On Route 36, up the valley — Gljúfrasteinn, the white house by the river.",
+{id:"1.8", emoji:"🪶", title:"Gljúfrasteinn — The Poet's House", sub:"Key Facts & Routes", cue:"On Route 36, up the valley — Gljúfrasteinn, the white house by the river.",
  target:{lat:64.1809135, lon:-21.5818503, name:"Gljúfrasteinn"},
  hook:"That white house was built in **1945** by a novelist betting everything on staying home — **ten years later the bet paid out a Nobel Prize.**",
  bullets:[
@@ -180,7 +180,7 @@ sections: [
       ["Dyrfjöll","DEER-fyutl","the mountains behind the figure"]],
  tags:["#literature","#art"]},
 
-{id:"1.9", emoji:"🚢", title:"The Norse Expansion (793–1066 CE)", sub:"Key Facts & Routes", cue:"Approaching Þingvellir.",
+{id:"1.9", emoji:"🚢", title:"The Norse Expansion (793–1066 CE) — Key Facts & Routes", sub:"Sixty Years to Build a Country", cue:"Approaching Þingvellir.",
  target:null,
  hook:null,
  heads:[
@@ -216,7 +216,7 @@ sections: [
       ["Vínland","VIN-land","Wine Land, their name for North America"]],
  tags:["#warfare","#migration"]},
 
-{id:"1.10", emoji:"🏘️", title:"Landnám", sub:"Sixty Years to Build a Country", cue:"Crossing the Settlement Era.",
+{id:"1.10", emoji:"🏘️", title:"Landnám — Sixty Years to Build a Country", sub:"Iceland's First Parliament", cue:"Crossing the Settlement Era.",
  target:null,
  hook:"By tradition, in **874 CE** Iceland was all but empty. By **930**, it was full. Settled, mapped and **booted up with a national parliament** — in a single human lifetime.",
  bullets:[
@@ -236,7 +236,7 @@ sections: [
 
 { kind:"stop", title:"Þingvellir", blocks:[
 
-{id:"1.11", emoji:"⚖️", title:"The Althing", sub:"Iceland's First Parliament", cue:"At Þingvellir — the rift valley.",
+{id:"1.11", emoji:"⚖️", title:"The Althing — Iceland's First Parliament", sub:"Drinking From a Dead Glacier", cue:"At Þingvellir — the rift valley.",
  target:{lat:64.259536, lon:-21.122538, name:"Lögberg (Law Rock)"},
  hook:"The **world's oldest parliament still in use**. Set up in **930 CE** in a literal **crack in the earth** — because the acoustics were better than anyone's farmhouse.",
  bullets:[
@@ -254,7 +254,7 @@ sections: [
       ["goði / goðar","GO-thi / GO-thar","the chieftain-priests, about 36 of them, who ran it by consensus"]],
  tags:["#law"]},
 
-{id:"1.12", emoji:"🌍", title:"Þingvellir Geology", sub:"Drinking From a Dead Glacier", cue:"At Þingvellir — the rift valley.",
+{id:"1.12", emoji:"🌍", title:"Þingvellir Geology — Drinking From a Dead Glacier", sub:"Europe's Last Cave Family", cue:"At Þingvellir — the rift valley.",
  target:{lat:64.258277, lon:-21.1249481, name:"Almannagjá"},
  hook:"You are standing in the **gap between North America and Eurasia** — and no, the plates do **not** meet here. They're tearing **apart**, at the speed your fingernails grow — and we have the **cleanest water on Earth** to show for it.",
  bullets:[
@@ -276,7 +276,7 @@ sections: [
 
 { kind:"drive", title:"Þingvellir → Haukadalur Valley", blocks:[
 
-{id:"1.13", emoji:"🕳️", title:"The Cave People", sub:"Europe's Last Cave Family", cue:"Driving past Laugarvatnshellir.",
+{id:"1.13", emoji:"🕳️", title:"The Cave People — Europe's Last Cave Family", sub:"The Gateway to Hell", cue:"Driving past Laugarvatnshellir.",
  target:{lat:64.2175477, lon:-20.88393, name:"Laugarvatnshellir"},
  hook:"The last family to call an Icelandic **cave** home moved out in **1922** — no electricity, no plumbing, but **their own front door** and a cow tied up next door.",
  bullets:[
@@ -297,7 +297,7 @@ sections: [
       ["Lyngdalsheiði","LING-dals-HAY-thi","the heath the caves are carved into"]],
  tags:["#geology"]},
 
-{id:"1.14", emoji:"⚖️", title:"Kristnitaka", sub:"Iceland's Conversion to Christianity", cue:"Look ahead — Þingvellir, where the decision was made.",
+{id:"1.14", emoji:"⚖️", title:"Kristnitaka — Iceland's Conversion to Christianity", sub:"Iceland's Conversion to Christianity", cue:"Look ahead — Þingvellir, where the decision was made.",
  target:{lat:64.2555609, lon:-21.1360746, name:"Þingvellir (behind you)"},
  hook:"Around **the year 1000**, Iceland changed its national religion **without a single sword being drawn**. No army. No martyrs. Just one pagan chieftain, one cloak, and a really long nap.",
  bullets:[
@@ -313,7 +313,7 @@ sections: [
       ["Ólafur Tryggvason","OH-la-vur TRIGG-va-son","Norway's king, who squeezed Iceland with port bans and hostages"]],
  tags:["#religion","#law"]},
 
-{id:"1.15", emoji:"🌋", title:"Hekla", sub:"The Gateway to Hell", cue:"Look at 11 o'clock — Hekla, sometimes visible on a clear day.",
+{id:"1.15", emoji:"🌋", title:"Hekla — The Gateway to Hell", sub:"Warm Lakes, Cold Politics", cue:"Look at 11 o'clock — Hekla, sometimes visible on a clear day.",
  target:{lat:63.9927006, lon:-19.6658171, name:"Hekla"},
  hook:"In medieval Europe, this was officially **the front door of Hell** — and the prison of **Judas Iscariot**. Iceland didn't argue. We just charged tourists.",
  bullets:[
@@ -349,7 +349,7 @@ sections: [
       ["Fontana","FON-tah-na","the geothermal baths there today: same warmth, now with a bar"]],
  tags:["#religion"]},
 
-{id:"1.17", emoji:"💙", title:"Brúará", sub:"The River That Lost Its Bridge", cue:"Crossing Brúará.",
+{id:"1.17", emoji:"💙", title:"Brúará — The River That Lost Its Bridge", sub:"Valley of the Hawks", cue:"Crossing Brúará.",
  target:{lat:64.1345483, lon:-20.5647827, name:"Brúará"},
  hook:"A river whose name literally means **\"Bridge-River\"** — except the bridge was a **natural stone arch**, and in **1602** the church **smashed it on purpose** to keep the starving out.",
  bullets:[
@@ -367,7 +367,7 @@ sections: [
       ["Skálholt","SKOWL-holt","the estate whose steward had the bridge destroyed — we visit it this afternoon"]],
  tags:["#law"]},
 
-{id:"1.18", emoji:"⚖️", title:"The Sturlung Age", sub:"The Civil War That Ended the Republic", cue:"The 13th-century chapter most tours skip.",
+{id:"1.18", emoji:"⚖️", title:"The Sturlung Age — The Civil War That Ended the Republic", sub:"The Name That Went Global", cue:"The 13th-century chapter most tours skip.",
  target:null,
  hook:"Iceland ran itself as a republic for **300 years**. Then **one family** decided that wasn't working — and burned the whole thing down. Literally.",
  bullets:[
@@ -392,7 +392,7 @@ sections: [
       ["Flugumýri","FLU-gu-MEER-i","the 1253 wedding ambush where the hall was torched with the family inside"]],
  tags:["#law","#literature","#statehood"]},
 
-{id:"1.19", emoji:"⚖️", title:"Haukadalur", sub:"Valley of the Hawks", cue:"At the geothermal field of Haukadalur.",
+{id:"1.19", emoji:"⚖️", title:"Haukadalur — Valley of the Hawks", sub:"Meltwater and the Falls One Woman Saved", cue:"At the geothermal field of Haukadalur.",
  target:{lat:64.3241337, lon:-20.2857756, name:"Haukadalur"},
  hook:"One farm in this steaming valley bred a **dynasty**: Iceland's first bishop's family, the schoolmaster who trained the nation's memory — and the man who **ended the republic**. Meet the **Haukdælir**.",
  bullets:[
@@ -415,7 +415,7 @@ sections: [
 
 { kind:"stop", title:"Geysir", blocks:[
 
-{id:"1.20", emoji:"⛲", title:"Geysir", sub:"The Name That Went Global", cue:"At the geothermal field — Strokkur and Geysir.",
+{id:"1.20", emoji:"⛲", title:"Geysir — The Name That Went Global", sub:"The Quiet Tributary & Brú Power Plant", cue:"At the geothermal field — Strokkur and Geysir.",
  target:{lat:64.3126964, lon:-20.3007733, name:"Strokkur"},
  hook:"Iceland gave the world the word **\"geyser\"** — from one hot spring, in one field, on one farm.",
  bullets:[
@@ -435,7 +435,7 @@ sections: [
 
 { kind:"stop", title:"Gullfoss", blocks:[
 
-{id:"1.21", emoji:"💧", title:"Hvítá & Gullfoss", sub:"Meltwater and the Falls One Woman Saved", cue:"At Gullfoss.",
+{id:"1.21", emoji:"💧", title:"Hvítá & Gullfoss — Meltwater and the Falls One Woman Saved", sub:"Tomatoes in the Arctic", cue:"At Gullfoss.",
  target:{lat:64.3252420, lon:-20.1307390, name:"Gullfoss"},
  hook:"In **1907** an investor tried to dam this waterfall — and a farmer's daughter, **Sigríður**, fought it all the way to Reykjavík. She **lost in court** — and the falls are still here anyway.",
  bullets:[
@@ -457,7 +457,7 @@ sections: [
 
 { kind:"drive", title:"Gullfoss → BSÍ", blocks:[
 
-{id:"1.22", emoji:"⚡", title:"Tungufljót", sub:"The Quiet Tributary & Brú Power Plant", cue:"Crossing the Tungufljót river.",
+{id:"1.22", emoji:"⚡", title:"Tungufljót — The Quiet Tributary & Brú Power Plant", sub:"Living Viking Heritage", cue:"Crossing the Tungufljót river.",
  target:{lat:64.243739, lon:-20.320552, name:"Tungufljót (Route 35 crossing)"},
  hook:"A river you've never heard of, **powering a country you have** — quietly.",
  bullets:[
@@ -473,7 +473,7 @@ sections: [
       ["Hvítá","KHVEE-tau","the glacial river this one drains into"]],
  tags:["#technology"]},
 
-{id:"1.23", emoji:"🍅", title:"Reykholt & Friðheimar", sub:"Tomatoes in the Arctic", cue:"Passing Friðheimar, Reykholt.",
+{id:"1.23", emoji:"🍅", title:"Reykholt & Friðheimar — Tomatoes in the Arctic", sub:"Bishops, Heads, and Rock Bands", cue:"Passing Friðheimar, Reykholt.",
  target:{lat:64.1783286, lon:-20.4476081, name:"Friðheimar"},
  hook:"We grow **tomatoes, cucumbers, peppers and strawberries** at the latitude of **Fairbanks, Alaska** — heated by hot water that **costs us almost nothing**.",
  bullets:[
@@ -488,7 +488,7 @@ sections: [
       ["Bláskógabyggð","BLOW-skoh-ga-byggð","the municipality Reykholt sits in"]],
  tags:["#geology","#technology"]},
 
-{id:"1.24", emoji:"🐎", title:"Icelandic Horses", sub:"Living Viking Heritage", cue:"Look at the horses in the field.",
+{id:"1.24", emoji:"🐎", title:"Icelandic Horses — Living Viking Heritage", sub:"The River That Lost Its Bridge", cue:"Look at the horses in the field.",
  target:null,
  hook:"The horse in that field is a **direct descendant of a Viking horse** — a bloodline effectively **closed for ~1,000 years**. Just don't call it a pony. That's the one hill Iceland will genuinely die on.",
  bullets:[
@@ -503,7 +503,7 @@ sections: [
       ["Alþingi","AL-thing-i","Iceland's parliament"]],
  tags:["#law"]},
 
-{id:"1.25", emoji:"⛪", title:"Skálholt", sub:"Bishops, Heads, and Rock Bands", cue:"At Skálholt.",
+{id:"1.25", emoji:"⛪", title:"Skálholt — Bishops, Heads, and Rock Bands", sub:"Red Walls, Blue Lake, Björk on a Raft", cue:"At Skálholt.",
  target:{lat:64.1253127, lon:-20.524143, name:"Skálholtskirkja"},
  hook:"For **700 years**, this farm was Iceland's **capital, university and cathedral** rolled into one. Then a **1784 earthquake** ate the lot — and the country never gave it back.",
  bullets:[
@@ -519,7 +519,7 @@ sections: [
       ["Þorlákur","THOR-low-kur","Iceland's only saint, whose feast on 23 December still anchors the Icelandic Christmas"]],
  tags:["#geology","#religion"]},
 
-{id:"1.26", emoji:"🎵", title:"Grímsnes & Kerið", sub:"Red Walls, Blue Lake, Björk on a Raft", cue:"At Kerið crater.",
+{id:"1.26", emoji:"🎵", title:"Grímsnes & Kerið — Red Walls, Blue Lake, Björk on a Raft", sub:"The River That Ran Everything", cue:"At Kerið crater.",
  target:{lat:64.0409591, lon:-20.8846110, name:"Kerið"},
  hook:"A **red volcanic crater** with a **bright blue lake** at the bottom — that **Björk once performed on**, from a **floating raft**.",
  bullets:[
@@ -536,7 +536,7 @@ sections: [
       ["Kristinn Sigmundsson","KRIST-in SIG-munds-son","the operatic bass who actually headlined that 1987 concert"]],
  tags:["#geology"]},
 
-{id:"1.27", emoji:"⚡", title:"Sog River", sub:"The River That Ran Everything", cue:"Crossing the Sog.",
+{id:"1.27", emoji:"⚡", title:"Sog River — The River That Ran Everything", sub:"The Big Drain", cue:"Crossing the Sog.",
  target:{lat:64.0625189, lon:-20.9914354, name:"Sog"},
  hook:"A river that's only **20 km long** — and powered **half of Iceland** for **50 years**.",
  bullets:[
@@ -559,7 +559,7 @@ sections: [
       ["Hafnarfjörður","HAP-nar-fyur-thur","the town where Iceland's first power station lit up in December 1904"]],
  tags:["#geology","#law","#technology"]},
 
-{id:"1.28", emoji:"🌊", title:"Ölfusá", sub:"The Final Drain", cue:"Look right at 1–2 o'clock — Ölfusá.",
+{id:"1.28", emoji:"🌊", title:"Ölfusá — The Final Drain", sub:"The Great Milk Collapse", cue:"Look right at 1–2 o'clock — Ölfusá.",
  target:{lat:63.9359567, lon:-21.0998804, name:"Ölfusá"},
  hook:"The river ahead carries more water than any other in Iceland — and **most of it isn't even called Ölfusá**. It's **four rivers in disguise**, sharing a name only for the last 25 km.",
  bullets:[
@@ -578,7 +578,7 @@ sections: [
       ["Tungufljót","TOON-gu-flyoht","the other river the Hvítá gathers"]],
  tags:["#geology"]},
 
-{id:"1.29", emoji:"🏗️", title:"Selfoss", sub:"The Great Milk Collapse", cue:"Look right at 3 o'clock — Ölfusárbrú.",
+{id:"1.29", emoji:"🏗️", title:"Selfoss — The Great Milk Collapse", sub:"The Founder's Path", cue:"Look right at 3 o'clock — Ölfusárbrú.",
  target:{lat:63.9387838, lon:-21.0047735, name:"Ölfusárbrú"},
  hook:"What's more dangerous than a world war? Apparently, **two milkmen in a very big hurry**.",
  bullets:[
@@ -594,7 +594,7 @@ sections: [
  flag:"DATE CLASH — collapse September 1944, rebuild \"about five and a half months\", opening 21 December 1945. That is 15 months, and Dec 1945 is after VE and VJ Day, so \"mid-war\" cannot be right either. Two of those three numbers are wrong. Verify before you say it.",
  tags:["#wwii"]},
 
-{id:"1.30", emoji:"🧭", title:"Ingólfur Arnarson", sub:"The Founder's Path", cue:"Look ahead at 12 o'clock — the Ring Road (Leið 1).",
+{id:"1.30", emoji:"🧭", title:"Ingólfur Arnarson — The Founder's Path", sub:"Quakes, Cakes and Steam", cue:"Look ahead at 12 o'clock — the Ring Road (Leið 1).",
  target:null,
  hook:"Would you move your whole family to an empty island based on **where two pieces of furniture washed up**?",
  bullets:[
@@ -609,7 +609,7 @@ sections: [
       ["Höfn","HUFN","the south-east port that took hundreds of extra km to reach before this road"]],
  tags:["#migration"]},
 
-{id:"1.31", emoji:"🌋", title:"Hveragerði", sub:"Quakes, Cakes and Steam", cue:"Look right at 3 o'clock — Hveragerði.",
+{id:"1.31", emoji:"🌋", title:"Hveragerði — Quakes, Cakes and Steam", sub:"The Dragon's Breath", cue:"Look right at 3 o'clock — Hveragerði.",
  target:{lat:63.9975943, lon:-21.1868303, name:"Hveragerði"},
  hook:"A town of ~**2,660 people** where the ground occasionally rearranges itself — and the locals responded by **building an exhibition around the crack in their floor**.",
  bullets:[
@@ -624,7 +624,7 @@ sections: [
       ["Sunnumörk","SUN-nu-murk","the shopping centre that fissure runs through"]],
  tags:["#geology"]},
 
-{id:"1.32", emoji:"🏢", title:"Hellisheiðarvirkjun", sub:"The Dragon's Breath", cue:"Look right at 2 o'clock — Hellisheiði geothermal plant.",
+{id:"1.32", emoji:"🏢", title:"Hellisheiðarvirkjun — The Dragon's Breath", sub:"The Decision Rock", cue:"Look right at 2 o'clock — Hellisheiði geothermal plant.",
  target:{lat:64.0365423, lon:-21.3976306, name:"Hellisheiðarvirkjun"},
  hook:"In most countries, a volcano is a disaster plan. In Iceland, it's the **light switch**.",
  bullets:[
@@ -639,7 +639,7 @@ sections: [
       ["Hellisheiði","HEL-lis-HAY-thi","the heath and pass the plant is named after"]],
  tags:["#technology","#geology"]},
 
-{id:"1.33", emoji:"⛰️", title:"Kristnitökuhraun", sub:"The Decision Rock", cue:"Look left at 9 o'clock — Kristnitökuhraun, the Christianity Lava.",
+{id:"1.33", emoji:"⛰️", title:"Kristnitökuhraun — The Decision Rock", sub:"The Mars Impostors", cue:"Look left at 9 o'clock — Kristnitökuhraun, the Christianity Lava.",
  target:{lat:64.0153893, lon:-21.493378, name:"Kristnitökuhraun"},
  hook:"Can a volcano vote? Around **the year 1000**, one sort of did. One chieftain out-thought it with a single question.",
  bullets:[
