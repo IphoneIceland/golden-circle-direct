@@ -21,6 +21,13 @@
   #navmid{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-align:center}
   #navt{font-size:14px;font-weight:600;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
   #navc{font-size:11.5px;color:var(--mute)}
+  #bnav{display:flex;align-items:stretch;gap:8px;padding:6px 12px;border-bottom:1px solid var(--line);background:var(--panel)}
+  #bnav button{flex:none;width:52px;font-size:20px;line-height:1;padding:0;border-radius:9px}
+  #bnav button:disabled{opacity:.3;cursor:default;border-color:var(--line);color:var(--mute)}
+  #bmid{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-align:center}
+  #bt{font-size:13px;font-weight:600;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+  #bc{font-size:11px;color:var(--mute)}
+  .stop.cur{background:#20303c;border-radius:8px}
   #ctl{padding:10px 20px;border-bottom:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap}
   button{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:7px 12px;font-size:13px;cursor:pointer;font-family:inherit}
   button:hover{border-color:var(--accent);color:var(--accent)}
@@ -103,6 +110,11 @@
       <button id="prev" title="Previous section">‹</button>
       <div id="navmid"><div id="navt"></div><div id="navc"></div></div>
       <button id="next" title="Next section">›</button>
+    </div>
+    <div id="bnav">
+      <button id="bprev" title="Previous block">‹</button>
+      <div id="bmid"><div id="bt"></div><div id="bc"></div></div>
+      <button id="bnext" title="Next block">›</button>
     </div>
     <div id="ctl">
       <button id="all">All sections</button>
@@ -260,6 +272,15 @@ function render(filter){
         if(ev.target.closest("a")) return;
         row.classList.toggle("open");
         focusBlock(row.dataset.key);
+        if(CUR!==null){
+          const bi=S.sections[CUR].blocks.findIndex(x=>x.id===row.dataset.key);
+          if(bi>=0){
+            CURB=bi;
+            document.querySelectorAll("#days .stop.cur").forEach(r=>r.classList.remove("cur"));
+            row.classList.add("cur");
+            if(typeof paintBlockNav==="function") paintBlockNav();
+          }
+        }
       });
     });
     list.appendChild(el);
@@ -293,6 +314,7 @@ function paintNav(){
 }
 function goSection(i,fit){
   CUR=i;
+  if(typeof CURB!=="undefined") CURB=null;
   document.getElementById("find").value="";
   render("");
   paintNav();
@@ -301,6 +323,7 @@ function goSection(i,fit){
     const b=sectionBounds(i);
     if(b) map.fitBounds(b.pad(.25),{maxZoom:13});
   }
+  if(typeof paintBlockNav==="function") paintBlockNav();
 }
 btnPrev.onclick=()=>{ if(CUR!==null&&CUR>0) goSection(CUR-1); };
 btnNext.onclick=()=>{ if(CUR!==null&&CUR<S.sections.length-1) goSection(CUR+1); };
@@ -308,8 +331,64 @@ document.addEventListener("keydown",e=>{
   if(document.activeElement===document.getElementById("find")) return;
   if(e.key==="ArrowLeft") btnPrev.click();
   if(e.key==="ArrowRight") btnNext.click();
+  if(e.key==="ArrowDown"){ e.preventDefault(); bNext.click(); }
+  if(e.key==="ArrowUp"){ e.preventDefault(); bPrev.click(); }
 });
 document.getElementById("all").onclick=()=>{ goSection(null,false); document.querySelectorAll(".day").forEach(e=>{e.classList.add("open");e.classList.add("shown");}); };
+
+// ---- block stepper: one thumb, straight through the tour.
+// Runs off the end of a section into the next one, so ">" never dead-ends mid-tour.
+let CURB = null;
+const bT=document.getElementById("bt"), bC=document.getElementById("bc");
+const bPrev=document.getElementById("bprev"), bNext=document.getElementById("bnext");
+
+function flatIndex(){
+  const out=[];
+  S.sections.forEach((sec,si)=>sec.blocks.forEach((b,bi)=>out.push({si,bi,b})));
+  return out;
+}
+function paintBlockNav(){
+  const inSection = (CUR!==null);
+  if(!inSection || CURB===null){
+    bT.textContent = inSection ? "Tap a block, or press ›" : "All sections";
+    bC.textContent = inSection ? (S.sections[CUR].blocks.length+" in this section") : "block arrows off";
+    bPrev.disabled = !inSection;
+    bNext.disabled = !inSection;
+    return;
+  }
+  const sec=S.sections[CUR], b=sec.blocks[CURB];
+  bT.textContent = (b.emoji?b.emoji+" ":"")+b.title;
+  bC.textContent = "block "+(CURB+1)+" of "+sec.blocks.length+"  ·  "+b.id;
+  const flat=flatIndex();
+  const pos=flat.findIndex(x=>x.si===CUR&&x.bi===CURB);
+  bPrev.disabled = pos<=0;
+  bNext.disabled = pos>=flat.length-1;
+}
+function showBlock(si,bi){
+  if(si!==CUR){ goSection(si,true); }
+  CURB=bi;
+  const sec=S.sections[si], b=sec.blocks[bi];
+  document.querySelectorAll("#days .stop.open").forEach(r=>r.classList.remove("open"));
+  document.querySelectorAll("#days .stop.cur").forEach(r=>r.classList.remove("cur"));
+  const row=document.querySelector('#days .stop[data-key="'+CSS.escape(b.id)+'"]');
+  if(row){
+    row.classList.add("open"); row.classList.add("cur");
+    row.scrollIntoView({block:"start",behavior:"smooth"});
+  }
+  focusBlock(b.id);
+  paintBlockNav();
+}
+function stepBlock(dir){
+  const flat=flatIndex();
+  let pos;
+  if(CUR===null) return;
+  if(CURB===null) pos = flat.findIndex(x=>x.si===CUR) + (dir>0?0:-1);
+  else pos = flat.findIndex(x=>x.si===CUR&&x.bi===CURB) + dir;
+  if(pos<0||pos>=flat.length) return;
+  showBlock(flat[pos].si, flat[pos].bi);
+}
+bPrev.onclick=()=>stepBlock(-1);
+bNext.onclick=()=>stepBlock(1);
 document.getElementById("none").onclick=()=>document.querySelectorAll(".day").forEach(e=>{e.classList.remove("open");e.classList.remove("shown");});
 document.getElementById("fit").onclick=()=>{
   if(SHOWN){[CUEM,TGTM,LINK].forEach(g=>{if(g[SHOWN]&&map.hasLayer(g[SHOWN]))map.removeLayer(g[SHOWN]);});SHOWN=null;}
@@ -352,6 +431,7 @@ if("serviceWorker" in navigator) window.addEventListener("load",()=>{
 
 render("");
 paintNav();
+paintBlockNav();
 { const b0=sectionBounds(0); map.fitBounds(b0?b0.pad(.25):routeLine.getBounds().pad(.06),{maxZoom:13}); }
 </script>
 </body>
