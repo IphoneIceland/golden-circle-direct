@@ -678,22 +678,24 @@ svg.leaflet-image-layer.leaflet-interactive path {
   #head{padding:16px 20px 13px;border-bottom:1px solid var(--line)}
   #head h1{margin:0;font-size:16px;line-height:1.3}
   #head p{margin:6px 0 0;font-size:11.5px;color:var(--mute);line-height:1.5}
-  #nav{background:var(--panel2);border-bottom:1px solid var(--line);padding:6px 10px 8px}
-  #navrow{display:flex;align-items:center;gap:6px}
-  #navrow button{flex:none;width:34px;height:26px;font-size:15px;line-height:1;padding:0;border-radius:7px;background:transparent}
-  #navmid{flex:1;min-width:0;display:flex;align-items:baseline;justify-content:center;gap:8px;overflow:hidden}
-  #navt{font-size:12px;color:var(--mute);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  #navc{font-size:11px;color:#6f8090;white-space:nowrap;flex:none}
-  #bnavrow{display:flex;align-items:stretch;gap:8px;margin-top:6px}
-  #bnavrow>button{flex:none;width:54px;font-size:22px;line-height:1;padding:0;border-radius:9px}
-  #bmid{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-align:center;padding:7px 10px}
-  #bt{font-size:13.5px;font-weight:600;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%;color:var(--ink)}
-  #bc{font-size:11px;color:var(--mute)}
+  #nav{background:var(--panel2);border-bottom:1px solid var(--line);padding:5px 8px 7px}
+  #navrow{display:flex;align-items:center;gap:4px}
+  #navrow button{flex:none;width:30px;height:24px;font-size:14px;line-height:1;padding:0;border-radius:6px;background:transparent;border-color:transparent;color:var(--mute)}
+  #navmid{flex:1;min-width:0;display:flex;align-items:baseline;justify-content:center;gap:7px;overflow:hidden}
+  #navt{font-size:11.5px;color:var(--mute);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  #navc{font-size:11px;color:#61707e;white-space:nowrap;flex:none}
+  #bnavrow{display:flex;align-items:stretch;gap:6px;margin-top:5px}
+  #bprev,#bnext{flex:none;width:50px;font-size:22px;line-height:1;padding:0;border-radius:9px}
+  #tools{flex:none;width:38px;font-size:17px;line-height:1;padding:0;border-radius:9px;color:var(--mute)}
+  #bmid{flex:1 1 auto;min-width:0;width:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;text-align:center;padding:6px 8px}
+  #bt{font-size:13.5px;font-weight:600;line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%;color:var(--ink)}
+  #bc{font-size:10.5px;color:var(--mute);white-space:nowrap}
   #nav button:disabled{opacity:.28;cursor:default;border-color:var(--line);color:var(--mute)}
   .stop.cur{background:#1d2c37;border-radius:8px}
   .day.solo>.dayhead{display:none}
   .day.solo{border:none;background:transparent;margin-bottom:0}
   .day.solo>.body{padding-top:0}
+  #ctl.hid{display:none}
   #ctl{padding:10px 20px;border-bottom:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap}
   button{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:7px 12px;font-size:13px;cursor:pointer;font-family:inherit}
   button:hover{border-color:var(--accent);color:var(--accent)}
@@ -762,7 +764,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   #foot a{color:var(--accent)}
   .mpill{height:22px;padding:0 8px;border-radius:11px;border:2px solid #0e1114;display:flex;align-items:center;justify-content:center;font:700 11px/1 -apple-system,sans-serif;color:#0e1114;white-space:nowrap;box-shadow:0 0 0 1.5px rgba(255,255,255,.5)}
   .mtgt{width:11px;height:11px;background:#fff;border:2px solid #0e1114;border-radius:3px;box-shadow:0 0 0 1.5px rgba(0,0,0,.5)}
-  @media (max-width:860px){#wrap{flex-direction:column}#map{order:-1;height:38%;min-height:220px;border-bottom:1px solid var(--line)}#side{width:100%;min-width:0;height:62%;border-right:none;border-bottom:none}}
+  @media (max-width:860px){#head{display:none}#wrap{flex-direction:column}#map{order:-1;height:38%;min-height:220px;border-bottom:1px solid var(--line)}#side{width:100%;min-width:0;height:62%;border-right:none;border-bottom:none}}
 </style>
 </head>
 <body>
@@ -780,11 +782,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
       </div>
       <div id="bnavrow">
         <button id="bprev" title="Previous block">‹</button>
-        <button id="bmid" title="Tap to collapse this block"><span id="bt"></span><span id="bc"></span></button>
+        <button id="bmid" title="Tap to fold this block away"><span id="bt"></span><span id="bc"></span></button>
         <button id="bnext" title="Next block">›</button>
+        <button id="tools" title="Tools and search">⋯</button>
       </div>
     </div>
-    <div id="ctl">
+    <div id="ctl" class="hid">
       <button id="all">All sections</button>
       <button id="none">Hide all</button>
       <button id="fit">Fit route</button>
@@ -1832,6 +1835,12 @@ document.getElementById("bmid").onclick=()=>{
   const open=row.classList.toggle("open");
   if(open) row.scrollIntoView({block:"start",behavior:"smooth"});
   else { map.invalidateSize(); const c=CUE[row.dataset.key]; if(c&&c.pin) map.setView([c.pin.lat,c.pin.lon], Math.min(map.getZoom(),13)); }
+};
+document.getElementById("tools").onclick=()=>{
+  const c=document.getElementById("ctl");
+  const hid=c.classList.toggle("hid");
+  if(!hid) document.getElementById("find").focus();
+  map.invalidateSize();
 };
 bPrev.onclick=()=>stepBlock(-1);
 bNext.onclick=()=>stepBlock(1);
