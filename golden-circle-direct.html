@@ -678,19 +678,22 @@ svg.leaflet-image-layer.leaflet-interactive path {
   #head{padding:16px 20px 13px;border-bottom:1px solid var(--line)}
   #head h1{margin:0;font-size:16px;line-height:1.3}
   #head p{margin:6px 0 0;font-size:11.5px;color:var(--mute);line-height:1.5}
-  #nav{display:flex;align-items:stretch;gap:8px;padding:8px 12px;border-bottom:1px solid var(--line);background:var(--panel2)}
-  #nav button{flex:none;width:52px;font-size:22px;line-height:1;padding:0;border-radius:9px}
-  #nav button:disabled{opacity:.3;cursor:default;border-color:var(--line);color:var(--mute)}
-  #navmid{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-align:center}
-  #navt{font-size:14px;font-weight:600;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
-  #navc{font-size:11.5px;color:var(--mute)}
-  #bnav{display:flex;align-items:stretch;gap:8px;padding:6px 12px;border-bottom:1px solid var(--line);background:var(--panel)}
-  #bnav button{flex:none;width:52px;font-size:20px;line-height:1;padding:0;border-radius:9px}
-  #bnav button:disabled{opacity:.3;cursor:default;border-color:var(--line);color:var(--mute)}
-  #bmid{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-align:center}
-  #bt{font-size:13px;font-weight:600;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+  #nav{background:var(--panel2);border-bottom:1px solid var(--line);padding:6px 10px 8px}
+  #navrow{display:flex;align-items:center;gap:6px}
+  #navrow button{flex:none;width:34px;height:26px;font-size:15px;line-height:1;padding:0;border-radius:7px;background:transparent}
+  #navmid{flex:1;min-width:0;display:flex;align-items:baseline;justify-content:center;gap:8px;overflow:hidden}
+  #navt{font-size:12px;color:var(--mute);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  #navc{font-size:11px;color:#6f8090;white-space:nowrap;flex:none}
+  #bnavrow{display:flex;align-items:stretch;gap:8px;margin-top:6px}
+  #bnavrow>button{flex:none;width:54px;font-size:22px;line-height:1;padding:0;border-radius:9px}
+  #bmid{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-align:center;padding:7px 10px}
+  #bt{font-size:13.5px;font-weight:600;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%;color:var(--ink)}
   #bc{font-size:11px;color:var(--mute)}
-  .stop.cur{background:#20303c;border-radius:8px}
+  #nav button:disabled{opacity:.28;cursor:default;border-color:var(--line);color:var(--mute)}
+  .stop.cur{background:#1d2c37;border-radius:8px}
+  .day.solo>.dayhead{display:none}
+  .day.solo{border:none;background:transparent;margin-bottom:0}
+  .day.solo>.body{padding-top:0}
   #ctl{padding:10px 20px;border-bottom:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap}
   button{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:7px 12px;font-size:13px;cursor:pointer;font-family:inherit}
   button:hover{border-color:var(--accent);color:var(--accent)}
@@ -770,14 +773,16 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <p>BSÍ → Þingvellir → Geysir → Gullfoss → Skálholt → Kerið → BSÍ</p>
     </div>
     <div id="nav">
-      <button id="prev" title="Previous section">‹</button>
-      <div id="navmid"><div id="navt"></div><div id="navc"></div></div>
-      <button id="next" title="Next section">›</button>
-    </div>
-    <div id="bnav">
-      <button id="bprev" title="Previous block">‹</button>
-      <div id="bmid"><div id="bt"></div><div id="bc"></div></div>
-      <button id="bnext" title="Next block">›</button>
+      <div id="navrow">
+        <button id="prev" title="Previous section">‹</button>
+        <div id="navmid"><span id="navt"></span><span id="navc"></span></div>
+        <button id="next" title="Next section">›</button>
+      </div>
+      <div id="bnavrow">
+        <button id="bprev" title="Previous block">‹</button>
+        <button id="bmid" title="Tap to collapse this block"><span id="bt"></span><span id="bc"></span></button>
+        <button id="bnext" title="Next block">›</button>
+      </div>
     </div>
     <div id="ctl">
       <button id="all">All sections</button>
@@ -1695,7 +1700,7 @@ function render(filter){
     const blocks=sec.blocks.filter(b=>!f || JSON.stringify(b).toLowerCase().includes(f));
     if(!blocks.length) return;
     const col=COL[sec.kind];
-    const el=document.createElement("div"); el.className="day"; el.dataset.i=si;
+    const el=document.createElement("div"); el.className="day"+((CUR!==null&&!f)?" solo":""); el.dataset.i=si;
     el.innerHTML=`<div class="dayhead"><span class="dot" style="background:${col}"></span>
         <span class="t">${sec.kind==="stop"?"📍":"🚌"} ${esc(sec.title)}</span>
         <span class="m">${blocks.length} block${blocks.length>1?"s":""}</span></div>
@@ -1708,10 +1713,11 @@ function render(filter){
         if(ev.target.closest("a")) return;
         row.classList.toggle("open");
         focusBlock(row.dataset.key);
-        if(CUR!==null){
-          const bi=S.sections[CUR].blocks.findIndex(x=>x.id===row.dataset.key);
+        {
+          const si=(CUR!==null)?CUR:S.sections.findIndex(sec=>sec.blocks.some(x=>x.id===row.dataset.key));
+          const bi=si>=0?S.sections[si].blocks.findIndex(x=>x.id===row.dataset.key):-1;
           if(bi>=0){
-            CURB=bi;
+            CURS=si; CURB=bi;
             document.querySelectorAll("#days .stop.cur").forEach(r=>r.classList.remove("cur"));
             row.classList.add("cur");
             if(typeof paintBlockNav==="function") paintBlockNav();
@@ -1750,7 +1756,6 @@ function paintNav(){
 }
 function goSection(i,fit){
   CUR=i;
-  if(typeof CURB!=="undefined") CURB=null;
   document.getElementById("find").value="";
   render("");
   paintNav();
@@ -1774,7 +1779,7 @@ document.getElementById("all").onclick=()=>{ goSection(null,false); document.que
 
 // ---- block stepper: one thumb, straight through the tour.
 // Runs off the end of a section into the next one, so ">" never dead-ends mid-tour.
-let CURB = null;
+let CURB = null, CURS = null;
 const bT=document.getElementById("bt"), bC=document.getElementById("bc");
 const bPrev=document.getElementById("bprev"), bNext=document.getElementById("bnext");
 
@@ -1784,25 +1789,23 @@ function flatIndex(){
   return out;
 }
 function paintBlockNav(){
-  const inSection = (CUR!==null);
-  if(!inSection || CURB===null){
-    bT.textContent = inSection ? "Tap a block, or press ›" : "All sections";
-    bC.textContent = inSection ? (S.sections[CUR].blocks.length+" in this section") : "block arrows off";
-    bPrev.disabled = !inSection;
-    bNext.disabled = !inSection;
+  const flat=flatIndex();
+  if(CURS===null||CURB===null){
+    bT.textContent = "Start the tour";
+    bC.textContent = "35 blocks · press ›";
+    bPrev.disabled = true; bNext.disabled = false;
     return;
   }
-  const sec=S.sections[CUR], b=sec.blocks[CURB];
+  const b=S.sections[CURS].blocks[CURB];
+  const pos=flat.findIndex(x=>x.si===CURS&&x.bi===CURB);
   bT.textContent = (b.emoji?b.emoji+" ":"")+b.title;
-  bC.textContent = "block "+(CURB+1)+" of "+sec.blocks.length+"  ·  "+b.id;
-  const flat=flatIndex();
-  const pos=flat.findIndex(x=>x.si===CUR&&x.bi===CURB);
+  bC.textContent = "block "+(pos+1)+" of "+flat.length+"  ·  "+b.id;
   bPrev.disabled = pos<=0;
   bNext.disabled = pos>=flat.length-1;
 }
 function showBlock(si,bi){
-  if(si!==CUR){ goSection(si,true); }
-  CURB=bi;
+  if(CUR!==null && si!==CUR){ goSection(si,true); }
+  CURS=si; CURB=bi;
   const sec=S.sections[si], b=sec.blocks[bi];
   document.querySelectorAll("#days .stop.open").forEach(r=>r.classList.remove("open"));
   document.querySelectorAll("#days .stop.cur").forEach(r=>r.classList.remove("cur"));
@@ -1817,12 +1820,19 @@ function showBlock(si,bi){
 function stepBlock(dir){
   const flat=flatIndex();
   let pos;
-  if(CUR===null) return;
-  if(CURB===null) pos = flat.findIndex(x=>x.si===CUR) + (dir>0?0:-1);
-  else pos = flat.findIndex(x=>x.si===CUR&&x.bi===CURB) + dir;
+  if(CURS===null||CURB===null) pos = (CUR!==null ? flat.findIndex(x=>x.si===CUR) : 0) + (dir>0?0:-1);
+  else pos = flat.findIndex(x=>x.si===CURS&&x.bi===CURB) + dir;
   if(pos<0||pos>=flat.length) return;
   showBlock(flat[pos].si, flat[pos].bi);
 }
+// tap the middle of the block bar to fold the block away and get the map back
+document.getElementById("bmid").onclick=()=>{
+  const row=document.querySelector("#days .stop.cur");
+  if(!row) return;
+  const open=row.classList.toggle("open");
+  if(open) row.scrollIntoView({block:"start",behavior:"smooth"});
+  else { map.invalidateSize(); const c=CUE[row.dataset.key]; if(c&&c.pin) map.setView([c.pin.lat,c.pin.lon], Math.min(map.getZoom(),13)); }
+};
 bPrev.onclick=()=>stepBlock(-1);
 bNext.onclick=()=>stepBlock(1);
 document.getElementById("none").onclick=()=>document.querySelectorAll(".day").forEach(e=>{e.classList.remove("open");e.classList.remove("shown");});
