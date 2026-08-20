@@ -678,6 +678,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
   #head{padding:16px 20px 13px;border-bottom:1px solid var(--line)}
   #head h1{margin:0;font-size:16px;line-height:1.3}
   #head p{margin:6px 0 0;font-size:11.5px;color:var(--mute);line-height:1.5}
+  #nav{display:flex;align-items:stretch;gap:8px;padding:8px 12px;border-bottom:1px solid var(--line);background:var(--panel2)}
+  #nav button{flex:none;width:52px;font-size:22px;line-height:1;padding:0;border-radius:9px}
+  #nav button:disabled{opacity:.3;cursor:default;border-color:var(--line);color:var(--mute)}
+  #navmid{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-align:center}
+  #navt{font-size:14px;font-weight:600;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+  #navc{font-size:11.5px;color:var(--mute)}
   #ctl{padding:10px 20px;border-bottom:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap}
   button{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:7px 12px;font-size:13px;cursor:pointer;font-family:inherit}
   button:hover{border-color:var(--accent);color:var(--accent)}
@@ -756,8 +762,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <h1>Golden Circle Direct</h1>
       <p>BSÍ → Þingvellir → Geysir → Gullfoss → Skálholt → Kerið → BSÍ</p>
     </div>
+    <div id="nav">
+      <button id="prev" title="Previous section">‹</button>
+      <div id="navmid"><div id="navt"></div><div id="navc"></div></div>
+      <button id="next" title="Next section">›</button>
+    </div>
     <div id="ctl">
-      <button id="all">Show all sections</button>
+      <button id="all">All sections</button>
       <button id="none">Hide all</button>
       <button id="fit">Fit route</button>
       <button id="tsm" title="Smaller text">A−</button>
@@ -1662,10 +1673,13 @@ function blockRow(b, kind){
       ${say?`<details class="say"><summary><span class="chev">▶</span><span class="sublab">🗣️ How to say it</span><span class="cnt">${(b.say||[]).length}</span></summary>${say}</details>`:""}
     </div>`;
 }
+// CUR = index of the section on screen. null = show the lot (prep at home).
+let CUR = 0;
 function render(filter){
   const f=(filter||"").trim().toLowerCase();
   list.innerHTML="";
   S.sections.forEach((sec,si)=>{
+    if(CUR!==null && !f && si!==CUR) return;
     const blocks=sec.blocks.filter(b=>!f || JSON.stringify(b).toLowerCase().includes(f));
     if(!blocks.length) return;
     const col=COL[sec.kind];
@@ -1685,10 +1699,53 @@ function render(filter){
       });
     });
     list.appendChild(el);
+    if(CUR!==null && !f) el.classList.add("open");
     if(f){ el.classList.add("open"); el.querySelectorAll(".stop").forEach(r=>r.classList.add("open")); }
   });
 }
-document.getElementById("all").onclick=()=>document.querySelectorAll(".day").forEach(e=>{e.classList.add("open");e.classList.add("shown");});
+const navT=document.getElementById("navt"), navC=document.getElementById("navc");
+const btnPrev=document.getElementById("prev"), btnNext=document.getElementById("next");
+
+function sectionBounds(si){
+  const pts=[];
+  S.sections[si].blocks.forEach(b=>{
+    const c=CUE[b.id];
+    if(c&&c.pin) pts.push([c.pin.lat,c.pin.lon]);
+    if(b.target) pts.push([b.target.lat,b.target.lon]);
+  });
+  return pts.length?L.latLngBounds(pts):null;
+}
+function paintNav(){
+  if(CUR===null){
+    navT.textContent="All sections";
+    navC.textContent=S.sections.length+" sections · "+S.sections.reduce((n,s)=>n+s.blocks.length,0)+" blocks";
+  } else {
+    const sec=S.sections[CUR];
+    navT.textContent=(sec.kind==="stop"?"📍 ":"🚌 ")+sec.title;
+    navC.textContent=(CUR+1)+" of "+S.sections.length+" · "+sec.blocks.length+" block"+(sec.blocks.length>1?"s":"");
+  }
+  btnPrev.disabled = (CUR===null || CUR===0);
+  btnNext.disabled = (CUR===null || CUR===S.sections.length-1);
+}
+function goSection(i,fit){
+  CUR=i;
+  document.getElementById("find").value="";
+  render("");
+  paintNav();
+  list.scrollTop=0;
+  if(fit!==false && i!==null){
+    const b=sectionBounds(i);
+    if(b) map.fitBounds(b.pad(.25),{maxZoom:13});
+  }
+}
+btnPrev.onclick=()=>{ if(CUR!==null&&CUR>0) goSection(CUR-1); };
+btnNext.onclick=()=>{ if(CUR!==null&&CUR<S.sections.length-1) goSection(CUR+1); };
+document.addEventListener("keydown",e=>{
+  if(document.activeElement===document.getElementById("find")) return;
+  if(e.key==="ArrowLeft") btnPrev.click();
+  if(e.key==="ArrowRight") btnNext.click();
+});
+document.getElementById("all").onclick=()=>{ goSection(null,false); document.querySelectorAll(".day").forEach(e=>{e.classList.add("open");e.classList.add("shown");}); };
 document.getElementById("none").onclick=()=>document.querySelectorAll(".day").forEach(e=>{e.classList.remove("open");e.classList.remove("shown");});
 document.getElementById("fit").onclick=()=>{
   if(SHOWN){[CUEM,TGTM,LINK].forEach(g=>{if(g[SHOWN]&&map.hasLayer(g[SHOWN]))map.removeLayer(g[SHOWN]);});SHOWN=null;}
@@ -1707,7 +1764,16 @@ document.getElementById("fit").onclick=()=>{
   document.getElementById("tsm").onclick=()=>{ fs=Math.max(14,fs-1); apply(); };
   document.getElementById("tsp").onclick=()=>{ fs=Math.min(22,fs+1); apply(); };
 })();
-document.getElementById("find").addEventListener("input",e=>render(e.target.value));
+document.getElementById("find").addEventListener("input",e=>{
+  const v=e.target.value;
+  render(v);
+  if(v.trim()){
+    navT.textContent="Search: "+v.trim();
+    const hits=document.querySelectorAll("#days .day").length;
+    navC.textContent=hits?("across "+hits+" section"+(hits>1?"s":"")+" · clear to go back"):"nothing found";
+    btnPrev.disabled=btnNext.disabled=true;
+  } else { paintNav(); }
+});
 map.on("zoomend",()=>{document.getElementById("zhint").style.display=map.getZoom()>=11?"none":"block";});
 
 const nB=S.sections.reduce((a,s)=>a+s.blocks.length,0), nT=CUES.filter(c=>c.target).length;
@@ -1721,7 +1787,8 @@ if("serviceWorker" in navigator) window.addEventListener("load",()=>{
 });
 
 render("");
-map.fitBounds(routeLine.getBounds().pad(.06));
+paintNav();
+{ const b0=sectionBounds(0); map.fitBounds(b0?b0.pad(.25):routeLine.getBounds().pad(.06),{maxZoom:13}); }
 </script>
 </body>
 </html>
