@@ -15,24 +15,6 @@
   #head{padding:16px 20px 13px;border-bottom:1px solid var(--line)}
   #head h1{margin:0;font-size:16px;line-height:1.3}
   #head p{margin:6px 0 0;font-size:11.5px;color:var(--mute);line-height:1.5}
-  #nav{background:var(--panel2);border-bottom:1px solid var(--line);padding:5px 8px 7px}
-  #navrow{display:flex;align-items:center;gap:4px}
-  #navrow button{flex:none;width:30px;height:24px;font-size:14px;line-height:1;padding:0;border-radius:6px;background:transparent;border-color:transparent;color:var(--mute)}
-  #navmid{flex:1;min-width:0;display:flex;align-items:baseline;justify-content:center;gap:7px;overflow:hidden}
-  #navt{font-size:11.5px;color:var(--mute);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  #navc{font-size:11px;color:#61707e;white-space:nowrap;flex:none}
-  #bnavrow{display:flex;align-items:stretch;gap:6px;margin-top:5px}
-  #bprev,#bnext{flex:none;width:50px;font-size:22px;line-height:1;padding:0;border-radius:9px}
-  #tools{flex:none;width:38px;font-size:17px;line-height:1;padding:0;border-radius:9px;color:var(--mute)}
-  #bmid{flex:1 1 auto;min-width:0;width:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;text-align:center;padding:6px 8px}
-  #bt{font-size:13.5px;font-weight:600;line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%;color:var(--ink)}
-  #bc{font-size:10.5px;color:var(--mute);white-space:nowrap}
-  #nav button:disabled{opacity:.28;cursor:default;border-color:var(--line);color:var(--mute)}
-  .stop.cur{background:#1d2c37;border-radius:8px}
-  .day.solo>.dayhead{display:none}
-  .day.solo{border:none;background:transparent;margin-bottom:0}
-  .day.solo>.body{padding-top:0}
-  #ctl.hid{display:none}
   #ctl{padding:10px 20px;border-bottom:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap}
   button{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:7px 12px;font-size:13px;cursor:pointer;font-family:inherit}
   button:hover{border-color:var(--accent);color:var(--accent)}
@@ -101,7 +83,7 @@
   #foot a{color:var(--accent)}
   .mpill{height:22px;padding:0 8px;border-radius:11px;border:2px solid #0e1114;display:flex;align-items:center;justify-content:center;font:700 11px/1 -apple-system,sans-serif;color:#0e1114;white-space:nowrap;box-shadow:0 0 0 1.5px rgba(255,255,255,.5)}
   .mtgt{width:11px;height:11px;background:#fff;border:2px solid #0e1114;border-radius:3px;box-shadow:0 0 0 1.5px rgba(0,0,0,.5)}
-  @media (max-width:860px){#head{display:none}#wrap{flex-direction:column}#map{order:-1;height:38%;min-height:220px;border-bottom:1px solid var(--line)}#side{width:100%;min-width:0;height:62%;border-right:none;border-bottom:none}}
+  @media (max-width:860px){#wrap{flex-direction:column}#map{order:-1;height:38%;min-height:220px;border-bottom:1px solid var(--line)}#side{width:100%;min-width:0;height:62%;border-right:none;border-bottom:none}}
 </style>
 </head>
 <body>
@@ -111,21 +93,8 @@
       <h1>Golden Circle Direct</h1>
       <p>BSÍ → Þingvellir → Geysir → Gullfoss → Skálholt → Kerið → BSÍ</p>
     </div>
-    <div id="nav">
-      <div id="navrow">
-        <button id="prev" title="Previous section">‹</button>
-        <div id="navmid"><span id="navt"></span><span id="navc"></span></div>
-        <button id="next" title="Next section">›</button>
-      </div>
-      <div id="bnavrow">
-        <button id="bprev" title="Previous block">‹</button>
-        <button id="bmid" title="Tap to fold this block away"><span id="bt"></span><span id="bc"></span></button>
-        <button id="bnext" title="Next block">›</button>
-        <button id="tools" title="Tools and search">⋯</button>
-      </div>
-    </div>
-    <div id="ctl" class="hid">
-      <button id="all">All sections</button>
+    <div id="ctl">
+      <button id="all">Show all sections</button>
       <button id="none">Hide all</button>
       <button id="fit">Fit route</button>
       <button id="tsm" title="Smaller text">A−</button>
@@ -257,17 +226,14 @@ function blockRow(b, kind){
       ${say?`<details class="say"><summary><span class="chev">▶</span><span class="sublab">🗣️ How to say it</span><span class="cnt">${(b.say||[]).length}</span></summary>${say}</details>`:""}
     </div>`;
 }
-// CUR = index of the section on screen. null = show the lot (prep at home).
-let CUR = 0;
 function render(filter){
   const f=(filter||"").trim().toLowerCase();
   list.innerHTML="";
   S.sections.forEach((sec,si)=>{
-    if(CUR!==null && !f && si!==CUR) return;
     const blocks=sec.blocks.filter(b=>!f || JSON.stringify(b).toLowerCase().includes(f));
     if(!blocks.length) return;
     const col=COL[sec.kind];
-    const el=document.createElement("div"); el.className="day"+((CUR!==null&&!f)?" solo":""); el.dataset.i=si;
+    const el=document.createElement("div"); el.className="day"; el.dataset.i=si;
     el.innerHTML=`<div class="dayhead"><span class="dot" style="background:${col}"></span>
         <span class="t">${sec.kind==="stop"?"📍":"🚌"} ${esc(sec.title)}</span>
         <span class="m">${blocks.length} block${blocks.length>1?"s":""}</span></div>
@@ -280,134 +246,13 @@ function render(filter){
         if(ev.target.closest("a")) return;
         row.classList.toggle("open");
         focusBlock(row.dataset.key);
-        {
-          const si=(CUR!==null)?CUR:S.sections.findIndex(sec=>sec.blocks.some(x=>x.id===row.dataset.key));
-          const bi=si>=0?S.sections[si].blocks.findIndex(x=>x.id===row.dataset.key):-1;
-          if(bi>=0){
-            CURS=si; CURB=bi;
-            document.querySelectorAll("#days .stop.cur").forEach(r=>r.classList.remove("cur"));
-            row.classList.add("cur");
-            if(typeof paintBlockNav==="function") paintBlockNav();
-          }
-        }
       });
     });
     list.appendChild(el);
-    if(CUR!==null && !f) el.classList.add("open");
     if(f){ el.classList.add("open"); el.querySelectorAll(".stop").forEach(r=>r.classList.add("open")); }
   });
 }
-const navT=document.getElementById("navt"), navC=document.getElementById("navc");
-const btnPrev=document.getElementById("prev"), btnNext=document.getElementById("next");
-
-function sectionBounds(si){
-  const pts=[];
-  S.sections[si].blocks.forEach(b=>{
-    const c=CUE[b.id];
-    if(c&&c.pin) pts.push([c.pin.lat,c.pin.lon]);
-    if(b.target) pts.push([b.target.lat,b.target.lon]);
-  });
-  return pts.length?L.latLngBounds(pts):null;
-}
-function paintNav(){
-  if(CUR===null){
-    navT.textContent="All sections";
-    navC.textContent=S.sections.length+" sections · "+S.sections.reduce((n,s)=>n+s.blocks.length,0)+" blocks";
-  } else {
-    const sec=S.sections[CUR];
-    navT.textContent=(sec.kind==="stop"?"📍 ":"🚌 ")+sec.title;
-    navC.textContent=(CUR+1)+" of "+S.sections.length+" · "+sec.blocks.length+" block"+(sec.blocks.length>1?"s":"");
-  }
-  btnPrev.disabled = (CUR===null || CUR===0);
-  btnNext.disabled = (CUR===null || CUR===S.sections.length-1);
-}
-function goSection(i,fit){
-  CUR=i;
-  document.getElementById("find").value="";
-  render("");
-  paintNav();
-  list.scrollTop=0;
-  if(fit!==false && i!==null){
-    const b=sectionBounds(i);
-    if(b) map.fitBounds(b.pad(.25),{maxZoom:13});
-  }
-  if(typeof paintBlockNav==="function") paintBlockNav();
-}
-btnPrev.onclick=()=>{ if(CUR!==null&&CUR>0) goSection(CUR-1); };
-btnNext.onclick=()=>{ if(CUR!==null&&CUR<S.sections.length-1) goSection(CUR+1); };
-document.addEventListener("keydown",e=>{
-  if(document.activeElement===document.getElementById("find")) return;
-  if(e.key==="ArrowLeft") btnPrev.click();
-  if(e.key==="ArrowRight") btnNext.click();
-  if(e.key==="ArrowDown"){ e.preventDefault(); bNext.click(); }
-  if(e.key==="ArrowUp"){ e.preventDefault(); bPrev.click(); }
-});
-document.getElementById("all").onclick=()=>{ goSection(null,false); document.querySelectorAll(".day").forEach(e=>{e.classList.add("open");e.classList.add("shown");}); };
-
-// ---- block stepper: one thumb, straight through the tour.
-// Runs off the end of a section into the next one, so ">" never dead-ends mid-tour.
-let CURB = null, CURS = null;
-const bT=document.getElementById("bt"), bC=document.getElementById("bc");
-const bPrev=document.getElementById("bprev"), bNext=document.getElementById("bnext");
-
-function flatIndex(){
-  const out=[];
-  S.sections.forEach((sec,si)=>sec.blocks.forEach((b,bi)=>out.push({si,bi,b})));
-  return out;
-}
-function paintBlockNav(){
-  const flat=flatIndex();
-  if(CURS===null||CURB===null){
-    bT.textContent = "Start the tour";
-    bC.textContent = "35 blocks · press ›";
-    bPrev.disabled = true; bNext.disabled = false;
-    return;
-  }
-  const b=S.sections[CURS].blocks[CURB];
-  const pos=flat.findIndex(x=>x.si===CURS&&x.bi===CURB);
-  bT.textContent = (b.emoji?b.emoji+" ":"")+b.title;
-  bC.textContent = "block "+(pos+1)+" of "+flat.length+"  ·  "+b.id;
-  bPrev.disabled = pos<=0;
-  bNext.disabled = pos>=flat.length-1;
-}
-function showBlock(si,bi){
-  if(CUR!==null && si!==CUR){ goSection(si,true); }
-  CURS=si; CURB=bi;
-  const sec=S.sections[si], b=sec.blocks[bi];
-  document.querySelectorAll("#days .stop.open").forEach(r=>r.classList.remove("open"));
-  document.querySelectorAll("#days .stop.cur").forEach(r=>r.classList.remove("cur"));
-  const row=document.querySelector('#days .stop[data-key="'+CSS.escape(b.id)+'"]');
-  if(row){
-    row.classList.add("open"); row.classList.add("cur");
-    row.scrollIntoView({block:"start",behavior:"smooth"});
-  }
-  focusBlock(b.id);
-  paintBlockNav();
-}
-function stepBlock(dir){
-  const flat=flatIndex();
-  let pos;
-  if(CURS===null||CURB===null) pos = (CUR!==null ? flat.findIndex(x=>x.si===CUR) : 0) + (dir>0?0:-1);
-  else pos = flat.findIndex(x=>x.si===CURS&&x.bi===CURB) + dir;
-  if(pos<0||pos>=flat.length) return;
-  showBlock(flat[pos].si, flat[pos].bi);
-}
-// tap the middle of the block bar to fold the block away and get the map back
-document.getElementById("bmid").onclick=()=>{
-  const row=document.querySelector("#days .stop.cur");
-  if(!row) return;
-  const open=row.classList.toggle("open");
-  if(open) row.scrollIntoView({block:"start",behavior:"smooth"});
-  else { map.invalidateSize(); const c=CUE[row.dataset.key]; if(c&&c.pin) map.setView([c.pin.lat,c.pin.lon], Math.min(map.getZoom(),13)); }
-};
-document.getElementById("tools").onclick=()=>{
-  const c=document.getElementById("ctl");
-  const hid=c.classList.toggle("hid");
-  if(!hid) document.getElementById("find").focus();
-  map.invalidateSize();
-};
-bPrev.onclick=()=>stepBlock(-1);
-bNext.onclick=()=>stepBlock(1);
+document.getElementById("all").onclick=()=>document.querySelectorAll(".day").forEach(e=>{e.classList.add("open");e.classList.add("shown");});
 document.getElementById("none").onclick=()=>document.querySelectorAll(".day").forEach(e=>{e.classList.remove("open");e.classList.remove("shown");});
 document.getElementById("fit").onclick=()=>{
   if(SHOWN){[CUEM,TGTM,LINK].forEach(g=>{if(g[SHOWN]&&map.hasLayer(g[SHOWN]))map.removeLayer(g[SHOWN]);});SHOWN=null;}
@@ -426,16 +271,7 @@ document.getElementById("fit").onclick=()=>{
   document.getElementById("tsm").onclick=()=>{ fs=Math.max(14,fs-1); apply(); };
   document.getElementById("tsp").onclick=()=>{ fs=Math.min(22,fs+1); apply(); };
 })();
-document.getElementById("find").addEventListener("input",e=>{
-  const v=e.target.value;
-  render(v);
-  if(v.trim()){
-    navT.textContent="Search: "+v.trim();
-    const hits=document.querySelectorAll("#days .day").length;
-    navC.textContent=hits?("across "+hits+" section"+(hits>1?"s":"")+" · clear to go back"):"nothing found";
-    btnPrev.disabled=btnNext.disabled=true;
-  } else { paintNav(); }
-});
+document.getElementById("find").addEventListener("input",e=>render(e.target.value));
 map.on("zoomend",()=>{document.getElementById("zhint").style.display=map.getZoom()>=11?"none":"block";});
 
 const nB=S.sections.reduce((a,s)=>a+s.blocks.length,0), nT=CUES.filter(c=>c.target).length;
@@ -449,9 +285,7 @@ if("serviceWorker" in navigator) window.addEventListener("load",()=>{
 });
 
 render("");
-paintNav();
-paintBlockNav();
-{ const b0=sectionBounds(0); map.fitBounds(b0?b0.pad(.25):routeLine.getBounds().pad(.06),{maxZoom:13}); }
+map.fitBounds(routeLine.getBounds().pad(.06));
 </script>
 </body>
 </html>
