@@ -1602,7 +1602,40 @@ function banner(msg){
   el.textContent = msg;
 }
 
-const routeLine = L.polyline(R.geometry,{color:"#5ec8f2",weight:4,opacity:.85}).addTo(map);
+// The road you have actually travelled. It grows as the tour does — nothing
+// ahead of you is drawn, because you haven't been there yet.
+const GEO = R.geometry;
+const CUM = (()=>{
+  const out=[0];
+  for(let i=1;i<GEO.length;i++){
+    const [a,b]=GEO[i-1], [c,d]=GEO[i];
+    const dy=(c-a)*111.32, dx=(d-b)*111.32*Math.cos((a+c)/2*Math.PI/180);
+    out.push(out[i-1]+Math.sqrt(dx*dx+dy*dy));
+  }
+  return out;
+})();
+const TOTAL = CUM[CUM.length-1];
+function travelled(pct){
+  if(pct==null) return [GEO[0]];
+  const want = TOTAL*Math.max(0,Math.min(100,pct))/100;
+  const out=[];
+  for(let i=0;i<GEO.length;i++){
+    out.push(GEO[i]);
+    if(CUM[i]>=want) break;
+  }
+  return out.length>1?out:[GEO[0],GEO[0]];
+}
+const routeLine = L.polyline(travelled(0),{color:"#5ec8f2",weight:4,opacity:.9}).addTo(map);
+// how far along we are at a given block: its own progress, or the last one behind it
+const PROG = (()=>{
+  const m={}; let last=0;
+  S.sections.forEach(sec=>sec.blocks.forEach(b=>{
+    const c=CUE[b.id];
+    if(c && typeof c.progress==="number") last=c.progress;
+    m[b.id]=last;
+  }));
+  return m;
+})();
 
 function esc(s){ return (s||"").replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
 function md(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g,"<i>$1</i>"); }
@@ -1678,15 +1711,13 @@ function render(){
   $("bprev").disabled = pos<=0;
   $("bnext").disabled = pos>=f.length-1;
 
+  routeLine.setLatLngs(travelled(PROG[b.id]));
   focusBlock(b.id);
 }
 function goSection(d){
   const n=SI+d;
   if(n<0||n>=S.sections.length) return;
   SI=n; BI=0; render();
-  const pts=[];
-  S.sections[SI].blocks.forEach(x=>{const c=CUE[x.id]; if(c&&c.pin)pts.push([c.pin.lat,c.pin.lon]); if(c&&c.target)pts.push([c.target.lat,c.target.lon]);});
-  if(pts.length) map.fitBounds(L.latLngBounds(pts).pad(.25),{maxZoom:13});
 }
 function goBlock(d){
   const f=flat(), pos=f.findIndex(x=>x.si===SI&&x.bi===BI)+d;
@@ -1711,9 +1742,9 @@ if("serviceWorker" in navigator) window.addEventListener("load",()=>{
 });
 
 render();
-{ const pts=[];
-  S.sections[0].blocks.forEach(x=>{const c=CUE[x.id]; if(c&&c.pin)pts.push([c.pin.lat,c.pin.lon]); if(c&&c.target)pts.push([c.target.lat,c.target.lon]);});
-  map.fitBounds(pts.length?L.latLngBounds(pts).pad(.25):routeLine.getBounds().pad(.06),{maxZoom:13}); }
+{ const c=CUE[S.sections[0].blocks[0].id];
+  const p=(c&&c.pin)?[c.pin.lat,c.pin.lon]:GEO[0];
+  map.setView(p,13); }
 </script>
 </body>
 </html>
