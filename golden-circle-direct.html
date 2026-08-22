@@ -744,8 +744,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
   #zhint{position:absolute;z-index:500;bottom:14px;left:14px;background:rgba(22,27,33,.92);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--mute)}
   #foot{padding:11px 20px;border-top:1px solid var(--line);font-size:10.5px;color:var(--mute);line-height:1.6}
   #foot a{color:var(--accent)}
-  .mpill{height:22px;padding:0 8px;border-radius:11px;border:2px solid #0e1114;display:flex;align-items:center;justify-content:center;font:700 11px/1 -apple-system,sans-serif;color:#0e1114;white-space:nowrap;box-shadow:0 0 0 1.5px rgba(255,255,255,.5)}
-  .mtgt{width:11px;height:11px;background:#fff;border:2px solid #0e1114;border-radius:3px;box-shadow:0 0 0 1.5px rgba(0,0,0,.5)}
   @media (max-width:860px){#wrap{flex-direction:column}#map{order:-1;height:38%;min-height:220px;border-bottom:1px solid var(--line)}#side{width:100%;min-width:0;height:62%;border-right:none;border-bottom:none}}
 </style>
 </head>
@@ -1642,28 +1640,15 @@ function esc(s){ return (s||"").replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>'
 function md(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g,"<i>$1</i>"); }
 
 // Markers built once and never rebuilt — a rebuild-on-zoom is what raced the old map's popups.
-const CUEM={}, TGTM={}, LINK={};
-CUES.forEach(c=>{
-  if(!c.pin) return;
-  const stop = c.sec==="S2"||c.sec==="S4"||c.sec==="S5";
-  const col = stop ? COL.stop : COL.drive;
-  CUEM[c.id]=L.marker([c.pin.lat,c.pin.lon],{icon:L.divIcon({className:"",iconSize:[38,22],iconAnchor:[19,11],
-    html:`<div class="mpill" style="background:${col}">${c.id}</div>`})})
-    .bindPopup(`<b>${c.id}</b><br><span style="color:#556">${c.cue?esc(c.cue):"story block"}</span>`);
-  if(c.target){
-    TGTM[c.id]=L.marker([c.target.lat,c.target.lon],{icon:L.divIcon({className:"",iconSize:[11,11],iconAnchor:[5,5],html:'<div class="mtgt"></div>'})})
-      .bindPopup(`<b>${esc(c.target.name)}</b><br>${c.dist_m>=1000?(c.dist_m/1000).toFixed(1)+" km":c.dist_m+" m"} away · reads ${c.clock} o'clock`);
-    LINK[c.id]=L.polyline([[c.pin.lat,c.pin.lon],[c.target.lat,c.target.lon]],{color:"#fff",weight:1.5,opacity:.8,dashArray:"4,6"});
+const HERE = L.circleMarker([0,0],{radius:8,color:"#fff",weight:3,fillColor:"#5ec8f2",fillOpacity:1,
+  pane:"markerPane"});
   }
 });
-let SHOWN=null;
 function focusBlock(id){
-  if(SHOWN && SHOWN!==id) [CUEM,TGTM,LINK].forEach(g=>{ if(g[SHOWN]&&map.hasLayer(g[SHOWN])) map.removeLayer(g[SHOWN]); });
-  SHOWN=id; const c=CUE[id]; if(!c||!c.pin) return;
-  CUEM[id].addTo(map); if(TGTM[id]) TGTM[id].addTo(map); if(LINK[id]) LINK[id].addTo(map);
-  const pts=[[c.pin.lat,c.pin.lon]]; if(c.target) pts.push([c.target.lat,c.target.lon]);
-  if(pts.length>1) map.fitBounds(L.latLngBounds(pts).pad(.45),{maxZoom:13}); else map.flyTo(pts[0],13,{duration:.5});
-  CUEM[id].openPopup();
+  const c=CUE[id];
+  if(!c||!c.pin){ return; }              // story block — leave the map where it is
+  HERE.setLatLng([c.pin.lat,c.pin.lon]).addTo(map);
+  map.panTo([c.pin.lat,c.pin.lon],{animate:true,duration:.4});
 }
 
 const list=document.getElementById("days");
