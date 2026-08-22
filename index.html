@@ -10,18 +10,17 @@
   :root{--bg:#0e1114;--panel:#161b21;--panel2:#1d242c;--line:#2b333d;--ink:#e8edf2;--mute:#93a1b0;--accent:#5ec8f2;--fs:16px;--lh:1.8}
   *{box-sizing:border-box}
   html,body{margin:0;height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
-  #wrap{display:flex;height:100%;overflow:hidden}
-  #side{width:430px;min-width:430px;background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column}
-  #head{padding:16px 20px 13px;border-bottom:1px solid var(--line)}
-  #head h1{margin:0;font-size:16px;line-height:1.3}
-  #head p{margin:6px 0 0;font-size:11.5px;color:var(--mute);line-height:1.5}
-  #ctl{padding:10px 20px;border-bottom:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap}
-  button{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:7px 12px;font-size:13px;cursor:pointer;font-family:inherit}
-  button:hover{border-color:var(--accent);color:var(--accent)}
-  button.on{border-color:#5ec8f2;color:#5ec8f2}
-  #find{flex:1;min-width:120px;background:var(--panel2);border:1px solid var(--line);border-radius:7px;color:var(--ink);font:12px/1 inherit;padding:6px 10px;outline:none}
-  #find:focus{border-color:var(--accent)}
-  #days{overflow-y:auto;flex:1;padding:10px 12px 60px;font-size:var(--fs);line-height:var(--lh)}
+  #wrap{display:flex;flex-direction:column;height:100%;overflow:hidden}
+  #map{flex:none;height:34%;min-height:180px;position:relative}
+  #secbar,#blkbar{flex:none;display:flex;align-items:stretch;gap:8px;padding:7px 10px;border-top:1px solid var(--line);background:var(--panel2)}
+  #blkbar{background:var(--panel)}
+  #secbar button,#blkbar button{flex:none;width:54px;font-size:22px;line-height:1;padding:0;border-radius:9px}
+  #secbar button:disabled,#blkbar button:disabled{opacity:.25;cursor:default;color:var(--mute);border-color:var(--line)}
+  .mid{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-align:center}
+  #stitle,#btitle{font-size:13.5px;font-weight:600;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+  #stitle{color:#9fe0ff}
+  #scount,#bcount{font-size:11px;color:var(--mute)}
+  #days{overflow-y:auto;flex:1;padding:14px 14px 40px;font-size:var(--fs);line-height:var(--lh);border-top:1px solid var(--line)}
   .blkbody{max-width:66ch}
   .day{border:1px solid var(--line);border-radius:10px;margin-bottom:10px;background:var(--panel2);overflow:hidden}
   .dayhead{display:flex;align-items:center;gap:10px;padding:11px 13px;cursor:pointer;user-select:none}
@@ -88,23 +87,18 @@
 </head>
 <body>
 <div id="wrap">
-  <div id="side">
-    <div id="head">
-      <h1>Golden Circle Direct</h1>
-      <p>BSÍ → Þingvellir → Geysir → Gullfoss → Skálholt → Kerið → BSÍ</p>
-    </div>
-    <div id="ctl">
-      <button id="all">Show all sections</button>
-      <button id="none">Hide all</button>
-      <button id="fit">Fit route</button>
-      <button id="tsm" title="Smaller text">A−</button>
-      <button id="tsp" title="Bigger text">A+</button>
-      <input id="find" placeholder="Search the script…">
-    </div>
-    <div id="days"></div>
-    <div id="foot"></div>
-  </div>
   <div id="map"><div id="zhint">Zoom in further to show place names</div></div>
+  <div id="secbar">
+    <button id="sprev" aria-label="Previous drive section">‹</button>
+    <div class="mid"><div id="stitle"></div><div id="scount"></div></div>
+    <button id="snext" aria-label="Next drive section">›</button>
+  </div>
+  <div id="blkbar">
+    <button id="bprev" aria-label="Previous block">‹</button>
+    <div class="mid"><div id="btitle"></div><div id="bcount"></div></div>
+    <button id="bnext" aria-label="Next block">›</button>
+  </div>
+  <div id="days"></div>
 </div>
 
 <script src="vendor/leaflet.js"></script>
@@ -224,66 +218,63 @@ function blockRow(b, kind){
       ${say?`<details class="say"><summary><span class="chev">▶</span><span class="sublab">🗣️ How to say it</span><span class="cnt">${(b.say||[]).length}</span></summary>${say}</details>`:""}
     </div>`;
 }
-function render(filter){
-  const f=(filter||"").trim().toLowerCase();
-  list.innerHTML="";
-  S.sections.forEach((sec,si)=>{
-    const blocks=sec.blocks.filter(b=>!f || JSON.stringify(b).toLowerCase().includes(f));
-    if(!blocks.length) return;
-    const col=COL[sec.kind];
-    const el=document.createElement("div"); el.className="day"; el.dataset.i=si;
-    el.innerHTML=`<div class="dayhead"><span class="dot" style="background:${col}"></span>
-        <span class="t">${sec.kind==="stop"?"📍":"🚌"} ${esc(sec.title)}</span>
-        <span class="m">${blocks.length} block${blocks.length>1?"s":""}</span></div>
-      <div class="body">${blocks.map(b=>blockRow(b,sec.kind)).join("")}</div>`;
-    el.querySelector(".dayhead").onclick=()=>{
-      const open=el.classList.toggle("open"); el.classList.toggle("shown",open);
-    };
-    el.querySelectorAll(".stop[data-key]").forEach(row=>{
-      row.addEventListener("click",ev=>{
-        if(ev.target.closest("a")) return;
-        row.classList.toggle("open");
-        focusBlock(row.dataset.key);
-      });
-    });
-    list.appendChild(el);
-    if(f){ el.classList.add("open"); el.querySelectorAll(".stop").forEach(r=>r.classList.add("open")); }
-  });
+let SI=0, BI=0;
+const flat=()=>{const o=[];S.sections.forEach((sec,si)=>sec.blocks.forEach((b,bi)=>o.push({si,bi})));return o;};
+const $=id=>document.getElementById(id);
+
+function render(){
+  const sec=S.sections[SI], b=sec.blocks[BI];
+  list.innerHTML=`<div class="body">${blockRow(b,sec.kind)}</div>`;
+  list.querySelectorAll(".stop[data-key]").forEach(r=>r.classList.add("open"));
+  list.scrollTop=0;
+
+  $("stitle").textContent=(sec.kind==="stop"?"📍 ":"🚌 ")+sec.title;
+  $("scount").textContent=(SI+1)+" of "+S.sections.length;
+  $("btitle").textContent=(b.emoji?b.emoji+" ":"")+b.title;
+  $("bcount").textContent=(BI+1)+" of "+sec.blocks.length;
+
+  $("sprev").disabled = SI===0;
+  $("snext").disabled = SI===S.sections.length-1;
+  const f=flat(), pos=f.findIndex(x=>x.si===SI&&x.bi===BI);
+  $("bprev").disabled = pos<=0;
+  $("bnext").disabled = pos>=f.length-1;
+
+  focusBlock(b.id);
 }
-document.getElementById("all").onclick=()=>document.querySelectorAll(".day").forEach(e=>{e.classList.add("open");e.classList.add("shown");});
-document.getElementById("none").onclick=()=>document.querySelectorAll(".day").forEach(e=>{e.classList.remove("open");e.classList.remove("shown");});
-document.getElementById("fit").onclick=()=>{
-  if(SHOWN){[CUEM,TGTM,LINK].forEach(g=>{if(g[SHOWN]&&map.hasLayer(g[SHOWN]))map.removeLayer(g[SHOWN]);});SHOWN=null;}
-  map.fitBounds(routeLine.getBounds().pad(.06));
-};
-// Text size — reading comfort beats density. Steps 14->22px, remembered where storage allows.
-(function(){
-  const KEY="gcd-fs";
-  let fs=16;
-  try{ const v=parseFloat(localStorage.getItem(KEY)); if(v>=14&&v<=22) fs=v; }catch(e){}
-  const apply=()=>{
-    document.documentElement.style.setProperty("--fs", fs+"px");
-    try{ localStorage.setItem(KEY, fs); }catch(e){}
-  };
-  apply();
-  document.getElementById("tsm").onclick=()=>{ fs=Math.max(14,fs-1); apply(); };
-  document.getElementById("tsp").onclick=()=>{ fs=Math.min(22,fs+1); apply(); };
-})();
-document.getElementById("find").addEventListener("input",e=>render(e.target.value));
+function goSection(d){
+  const n=SI+d;
+  if(n<0||n>=S.sections.length) return;
+  SI=n; BI=0; render();
+  const pts=[];
+  S.sections[SI].blocks.forEach(x=>{const c=CUE[x.id]; if(c&&c.pin)pts.push([c.pin.lat,c.pin.lon]); if(c&&c.target)pts.push([c.target.lat,c.target.lon]);});
+  if(pts.length) map.fitBounds(L.latLngBounds(pts).pad(.25),{maxZoom:13});
+}
+function goBlock(d){
+  const f=flat(), pos=f.findIndex(x=>x.si===SI&&x.bi===BI)+d;
+  if(pos<0||pos>=f.length) return;
+  SI=f[pos].si; BI=f[pos].bi; render();
+}
+$("sprev").onclick=()=>goSection(-1);
+$("snext").onclick=()=>goSection(1);
+$("bprev").onclick=()=>goBlock(-1);
+$("bnext").onclick=()=>goBlock(1);
+document.addEventListener("keydown",e=>{
+  if(e.key==="ArrowLeft"){e.preventDefault();goBlock(-1);}
+  if(e.key==="ArrowRight"){e.preventDefault();goBlock(1);}
+  if(e.key==="ArrowUp"){e.preventDefault();goSection(-1);}
+  if(e.key==="ArrowDown"){e.preventDefault();goSection(1);}
+});
 map.on("zoomend",()=>{document.getElementById("zhint").style.display=map.getZoom()>=11?"none":"block";});
 
-const nB=S.sections.reduce((a,s)=>a+s.blocks.length,0), nT=CUES.filter(c=>c.target).length;
-document.getElementById("foot").innerHTML=
-  `${nB} script blocks · ${nT} pinned to something you can point at · ${nB-nT} story blocks with no view. `+
-  `Route ${R.km} km, coach-legal roads only. Coordinates verified against OpenStreetMap, 8 Aug 2026.<br>`+
-  `Basemap © Esri / OpenStreetMap / CARTO. <span id="sw"></span>`;
 
 if("serviceWorker" in navigator) window.addEventListener("load",()=>{
   navigator.serviceWorker.register("sw.js").then(()=>{const el=document.getElementById("sw");if(el){el.textContent="· Offline ready";el.style.color="#9fdcae";}}).catch(()=>{});
 });
 
-render("");
-map.fitBounds(routeLine.getBounds().pad(.06));
+render();
+{ const pts=[];
+  S.sections[0].blocks.forEach(x=>{const c=CUE[x.id]; if(c&&c.pin)pts.push([c.pin.lat,c.pin.lon]); if(c&&c.target)pts.push([c.target.lat,c.target.lon]);});
+  map.fitBounds(pts.length?L.latLngBounds(pts).pad(.25):routeLine.getBounds().pad(.06),{maxZoom:13}); }
 </script>
 </body>
 </html>
