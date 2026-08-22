@@ -1554,15 +1554,20 @@ const COL = {drive:"#5ec8f2", stop:"#c8a2f2"};
 // Turning the fade off makes tiles opaque the moment they arrive.
 const map = L.map("map",{fadeAnimation:false}).setView([64.15,-20.9],8);
 
+// Esri has real imagery to z18 over the whole route. z19 is only Reykjavik —
+// everywhere else it serves a flat grey "no data" tile, so 18 is the honest cap.
+// detectRetina asks for one zoom deeper on 2x/3x screens and draws it at half
+// size: genuinely twice the pixels on a phone, and Leaflet clamps at maxNativeZoom
+// so it never reaches for the grey.
 const SAT = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-  {maxZoom:19, maxNativeZoom:17, attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'});
+  {maxZoom:19, maxNativeZoom:18, detectRetina:true, attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'});
 const TERRAIN = L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
   {maxZoom:19, maxNativeZoom:15, attribution:'&copy; OpenTopoMap, &copy; OpenStreetMap contributors'});
 const DARK = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",{maxZoom:19,
   attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'});
 // Road casings and place names printed over the imagery — satellite alone is pretty and useless.
 const SATLBL = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
-  {maxZoom:19, maxNativeZoom:16, attribution:''});
+  {maxZoom:19, maxNativeZoom:16, detectRetina:true, attribution:''});
 
 // Sentinel-2 cloudless (EOX, CC-BY) as a second imagery source. Esri is better where it
 // has coverage, but if anything blocks it — a preview pane, an ad blocker, a corporate
