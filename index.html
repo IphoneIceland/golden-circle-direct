@@ -208,12 +208,11 @@ function blockRow(b, kind){
   const pre=(b.pre||[]).map(p=>`<div class="sublab">${esc(p[0])}</div><div class="pre">${esc(p[1])}</div>`).join("");
   const S2=[];
   if(b.cue) S2.push(`<span class="lb">CUE</span><span class="v">${esc(b.cue)}</span>`);
-  if(c.target) S2.push(`<span class="dr">◇ ${esc(c.target.name)} · ${c.dist_m>=1000?(c.dist_m/1000).toFixed(1)+" km":c.dist_m+" m"} · ${c.clock} o'clock</span>`);
+
   return `<div class="stop" data-key="${b.id}"><div class="num${c.target?"":" noview"}" style="${c.target?`background:${col}`:""}">${b.id}</div>
       <div class="sc"><div class="sn">${b.emoji?b.emoji+" ":""}${esc(b.title)}</div>
       ${b.sub?`<div class="sub">${esc(b.sub)}</div>`:""}
       ${(b.tags||[]).length?`<div class="thr">🧵 ${b.tags.join(" ")}</div>`:""}
-      ${!c.target?`<div class="legln">no view — tell it anywhere on this stretch</div>`:""}
       ${S2.length?`<div class="tstrip">${S2.join('<span class="sep">·</span>')}</div>`:""}</div></div>
     <div class="blkbody">
       ${b.hook?`<div class="hook">🎣 ${md(b.hook)}</div>`:""}
@@ -222,7 +221,6 @@ function blockRow(b, kind){
       ${b.point?`<div class="pt">🎯 ${md(b.point)}</div>`:""}
       ${b.mic?`<div class="mc">🎤 ${md(b.mic)}</div>`:""}
       ${b.weather?`<div class="wx">🌫️ ${md(b.weather)}</div>`:""}
-      ${b.flag?`<div class="flag"><b>Check this:</b> ${esc(b.flag)}</div>`:""}
       ${say?`<details class="say"><summary><span class="chev">▶</span><span class="sublab">🗣️ How to say it</span><span class="cnt">${(b.say||[]).length}</span></summary>${say}</details>`:""}
     </div>`;
 }
