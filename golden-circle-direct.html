@@ -675,14 +675,26 @@ svg.leaflet-image-layer.leaflet-interactive path {
   html,body{margin:0;height:100%;height:100dvh;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
   #wrap{display:flex;flex-direction:column;height:100%;height:100dvh;overflow:hidden}
   #map{flex:none;height:34%;min-height:160px;position:relative}
-  #secbar,#blkbar{flex:0 0 auto;display:flex;align-items:stretch;gap:8px;padding:7px 10px;border-top:1px solid var(--line);background:var(--panel2)}
-  #blkbar{background:var(--panel)}
-  #secbar button,#blkbar button{flex:none;width:54px;font-size:22px;line-height:1;padding:0;border-radius:9px}
+  /* The drive section is the parent band. The block bar is drawn as its child:
+     indented, darker, hanging off a spine down the left. */
+  #secbar{flex:0 0 auto;display:flex;align-items:stretch;gap:8px;padding:9px 10px 10px;
+          background:#16222b;border-top:3px solid var(--accent)}
+  #secbar.stop{border-top-color:#c8a2f2;background:#1e1a2a}
+  #secbar button{flex:none;width:46px;font-size:19px;line-height:1;padding:0;border-radius:8px;
+                 background:transparent;border-color:#2f4250;color:#8fb6cc}
+  #blkbar{flex:0 0 auto;display:flex;align-items:stretch;gap:8px;
+          margin:0 0 0 22px;padding:9px 10px 10px 12px;background:var(--panel);
+          border-left:3px solid #2f4250}
+  #blkbar button{flex:none;width:52px;font-size:22px;line-height:1;padding:0;border-radius:9px}
   #secbar button:disabled,#blkbar button:disabled{opacity:.25;cursor:default;color:var(--mute);border-color:var(--line)}
-  .mid{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-align:center}
-  #stitle,#btitle{font-size:13.5px;font-weight:600;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
-  #stitle{color:#9fe0ff}
-  #scount,#bcount{font-size:11px;color:var(--mute)}
+  .mid{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-align:center}
+  #skind,#bkind{font:700 9.5px/1 -apple-system,sans-serif;letter-spacing:.14em}
+  #skind{color:var(--accent)}
+  #secbar.stop #skind{color:#c8a2f2}
+  #bkind{color:#7d8fa0}
+  #stitle{font-size:14px;font-weight:700;line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%;color:#dff1fb}
+  #secbar.stop #stitle{color:#eadffb}
+  #btitle{font-size:14px;font-weight:600;line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%;color:var(--ink)}
   #days{flex:1 1 auto;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;
         padding:14px 14px calc(48px + env(safe-area-inset-bottom));font-size:var(--fs);line-height:var(--lh);border-top:1px solid var(--line)}
   .blkbody{max-width:66ch}
@@ -752,12 +764,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
   <div id="map"><div id="zhint">Zoom in further to show place names</div></div>
   <div id="secbar">
     <button id="sprev" aria-label="Previous drive section">‹</button>
-    <div class="mid"><div id="stitle"></div><div id="scount"></div></div>
+    <div class="mid"><div id="skind">DRIVE 1 OF 6</div><div id="stitle"></div></div>
     <button id="snext" aria-label="Next drive section">›</button>
   </div>
   <div id="blkbar">
     <button id="bprev" aria-label="Previous block">‹</button>
-    <div class="mid"><div id="btitle"></div><div id="bcount"></div></div>
+    <div class="mid"><div id="bkind">PART 1 OF 11</div><div id="btitle"></div></div>
     <button id="bnext" aria-label="Next block">›</button>
   </div>
   <div id="days"></div>
@@ -1711,10 +1723,12 @@ function render(){
   list.querySelectorAll(".stop[data-key]").forEach(r=>r.classList.add("open"));
   list.scrollTop=0;
 
-  $("stitle").textContent=(sec.kind==="stop"?"📍 ":"🚌 ")+sec.title;
-  $("scount").textContent=(SI+1)+" of "+S.sections.length;
-  $("btitle").textContent=(b.emoji?b.emoji+" ":"")+b.title;
-  $("bcount").textContent=(BI+1)+" of "+sec.blocks.length;
+  const stop = sec.kind==="stop";
+  $("secbar").classList.toggle("stop", stop);
+  $("skind").textContent = (stop?"STOP":"DRIVE")+" "+(SI+1)+" OF "+S.sections.length;
+  $("stitle").textContent = sec.title;
+  $("bkind").textContent = "PART "+(BI+1)+" OF "+sec.blocks.length;
+  $("btitle").textContent = b.title;
 
   $("sprev").disabled = SI===0;
   $("snext").disabled = SI===S.sections.length-1;
