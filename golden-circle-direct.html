@@ -1663,7 +1663,7 @@ const $=id=>document.getElementById(id);
 
 function render(){
   const sec=S.sections[SI], b=sec.blocks[BI];
-  list.innerHTML=`<div class="body">${blockRow(b,sec.kind)}</div>`;
+  list.innerHTML=blockRow(b,sec.kind);   // no .body wrapper — that rule is display:none outside an open .day
   list.querySelectorAll(".stop[data-key]").forEach(r=>r.classList.add("open"));
   list.scrollTop=0;
 
