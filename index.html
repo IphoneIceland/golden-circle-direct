@@ -200,11 +200,9 @@ const PROG = (()=>{
 function esc(s){ return (s||"").replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
 function md(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g,"<i>$1</i>"); }
 
-// Markers built once and never rebuilt — a rebuild-on-zoom is what raced the old map's popups.
+// One marker: where you are now.
 const HERE = L.circleMarker([0,0],{radius:8,color:"#fff",weight:3,fillColor:"#5ec8f2",fillOpacity:1,
   pane:"markerPane"});
-  }
-});
 function focusBlock(id){
   const c=CUE[id];
   if(!c||!c.pin){ return; }              // story block — leave the map where it is
