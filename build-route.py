@@ -18,12 +18,46 @@ PLACES = {
   "SOLH":"Sólheimajökull, Iceland", "REYN":"Reynisfjara, Iceland",
   "VIK":"Vík í Mýrdal, Iceland", "SKOG":"Skógafoss, Iceland",
   "SELJ":"Seljalandsfoss, Iceland",
+  # Golden Circle stops — 1.0 through 4.0
+  "THIN":"Þingvellir National Park, Iceland", "GEYS":"Geysir, Haukadalur, Iceland",
+  "GULL":"Gullfoss, Iceland", "FRID":"Friðheimar, Reykholt, Iceland",
+  # 7.0 Glacial Lagoon, out east
+  "KIRK":"Kirkjubæjarklaustur, Iceland", "FJAL":"Fjallsárlón, Iceland",
+  "JOKU":"Jökulsárlón, Iceland", "FELL":"Breiðamerkursandur Diamond Beach, Iceland",
 }
 NICE = {"BSI":"BSÍ Bus Terminal","HVOL":"Hvolsvöllur","SOLH":"Sólheimajökull",
-        "REYN":"Reynisfjara","VIK":"Vík í Mýrdal","SKOG":"Skógafoss","SELJ":"Seljalandsfoss"}
-MATCH = [("Hvolsvöllur","HVOL"),("Sólheimajökull","SOLH"),("Reynisfjara","REYN"),
-         ("Vík","VIK"),("Skógafoss","SKOG"),("Seljalandsfoss","SELJ"),
-         ("Reykjavík","BSI"),("BSÍ","BSI")]
+        "REYN":"Reynisfjara","VIK":"Vík í Mýrdal","SKOG":"Skógafoss","SELJ":"Seljalandsfoss",
+        "THIN":"Þingvellir","GEYS":"Geysir","GULL":"Gullfoss","FRID":"Friðheimar",
+        "KIRK":"Kirkjubæjarklaustur","FJAL":"Fjallsárlón","JOKU":"Jökulsárlón",
+        "FELL":"Fellsfjara"}
+
+# Order matters: this is a substring match, first hit wins. Reykjavík sits above
+# Vík so a heading that ends "→ Reykjavík" can never be read as the Vík stop,
+# and Jökulsárlón above Fjallsárlón for the same reason.
+MATCH = [("Reykjavík","BSI"),("BSÍ","BSI"),
+         ("Hvolsvöllur","HVOL"),("Sólheimajökull","SOLH"),("Reynisfjara","REYN"),
+         ("Skógafoss","SKOG"),("Seljalandsfoss","SELJ"),
+         ("Kirkjubæjarklaustur","KIRK"),("Jökulsárlón","JOKU"),("Fjallsárlón","FJAL"),
+         ("Fellsfjara","FELL"),("Diamond Beach","FELL"),
+         ("Þingvellir","THIN"),("Haukadalur","GEYS"),("Geysir","GEYS"),
+         ("Gullfoss","GULL"),("Friðheimar","FRID"),("Fríðheimar","FRID"),
+         ("Vík","VIK")]
+
+# Anything in here is pinned by hand and never geocoded.
+# The four Golden Circle stops take the EXACT pins tour 1.0 already uses and
+# Ritchie has already stood in — 4.0 drives the same loop backwards, so it must
+# stop in the same places, not 200 m away because a geocoder felt differently.
+# (Nominatim resolves "Geysir, Haukadalur" to Geysir Cottages, a hotel.)
+FIXED = {
+  "THIN": (64.26362, -21.13039),   # = cue 1.11 pin, Þingvellir
+  "GEYS": (64.31167, -20.29869),   # = cue 1.20 pin, the geothermal field
+  "GULL": (64.32526, -20.13084),   # = cue 1.21 pin, Gullfoss
+  "FRID": (64.17833, -20.44761),   # = cue 1.23 pin, Friðheimar
+}
+
+# Iceland's bounding box. A geocoder that hands back a Fjallsárlón in Norway
+# should stop the build, not quietly bend the route across the Atlantic.
+BOUNDS = (63.2, 66.6, -24.6, -13.4)
 
 def fetch(url):
     # this Python has no CA bundle wired up; curl does
@@ -56,7 +90,14 @@ print("stops:", " → ".join(NICE[k] for k in seq))
 
 PIN={}
 for k in dict.fromkeys(seq):
-    PIN[k]=geocode(PLACES[k]); print("  %-16s %s"%(NICE[k],PIN[k])); time.sleep(1.1)
+    if k in FIXED:
+        PIN[k]=FIXED[k]; print("  %-18s %s  (pinned by hand)"%(NICE[k],PIN[k])); continue
+    PIN[k]=geocode(PLACES[k])
+    la,lo=PIN[k]
+    if not (BOUNDS[0]<=la<=BOUNDS[1] and BOUNDS[2]<=lo<=BOUNDS[3]):
+        raise SystemExit("%s geocoded to %s — that is not in Iceland. Pin it in FIXED."
+                         % (NICE[k], PIN[k]))
+    print("  %-18s %s"%(NICE[k],PIN[k])); time.sleep(1.1)
 
 co=";".join("%f,%f"%(PIN[k][1],PIN[k][0]) for k in seq)
 r=fetch("http://router.project-osrm.org/route/v1/driving/%s?overview=full&geometries=geojson"%co)["routes"][0]
