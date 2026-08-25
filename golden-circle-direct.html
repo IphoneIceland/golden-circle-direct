@@ -699,7 +699,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .dot2.done{background:#3f647a}
   .dot2.now{background:var(--accent);height:8px}
   #days{flex:1 1 auto;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;
-        padding:14px 14px calc(48px + env(safe-area-inset-bottom));font-size:var(--fs);line-height:var(--lh);border-top:1px solid var(--line)}
+        padding:16px 16px 34px;font-size:var(--fs);line-height:var(--lh);border-top:1px solid var(--line)}
   .blkbody{max-width:66ch}
   .day{border:1px solid var(--line);border-radius:10px;margin-bottom:10px;background:var(--panel2);overflow:hidden}
   .dayhead{display:flex;align-items:center;gap:10px;padding:11px 13px;cursor:pointer;user-select:none}
@@ -709,7 +709,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .dayhead .m{font-size:.82em;color:var(--mute);white-space:nowrap;text-align:right;line-height:1.5}
   .body{display:none;padding:2px 13px 13px}
   .day.open .body{display:block}
-  .stop{display:flex;gap:11px;padding:13px 0;border-top:1px solid #262e37}
+  .stop{display:block;padding:2px 0 0;border-top:none}
+  .look{font-size:.97em;line-height:1.5;color:#9fdcae;margin-top:8px}
   .stop[data-key]{cursor:pointer;border-radius:6px;margin:0 -6px;padding-left:6px;padding-right:6px;transition:background .12s}
   .stop[data-key]:hover{background:#232c35}
   .stop[data-key]:hover .sn{color:var(--accent)}
@@ -755,7 +756,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .say i{color:#f4d5a0;font-style:normal;font-family:ui-monospace,Menlo,monospace;font-size:.9em}
   .legln{font-size:.9em;color:#8496a5;margin-top:5px;line-height:1.55}
   .tags{font-size:10px;color:#5b6b7a;margin-top:8px}
-  #map{flex:0 0 34%;min-height:150px;position:relative;border-top:1px solid var(--line)}
+  #map{flex:0 0 34%;box-shadow:0 -14px 18px -6px rgba(14,17,20,.95);z-index:2;min-height:150px;position:relative;border-top:1px solid var(--line)}
   #zhint{position:absolute;z-index:500;bottom:14px;left:14px;background:rgba(22,27,33,.92);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--mute)}
   #foot{padding:11px 20px;border-top:1px solid var(--line);font-size:10.5px;color:var(--mute);line-height:1.6}
   #foot a{color:var(--accent)}
@@ -1684,27 +1685,21 @@ function focusBlock(id){
 }
 
 function blockRow(b, kind){
-  const c=CUE[b.id]||{};
-  const col = kind==="stop" ? COL.stop : COL.drive;
   const say=(b.say||[]).map(s=>`<div><i>[${esc(s[1])}]</i> — <b>${esc(s[0])}</b>${s[2]?` <span class="gloss">(${esc(s[2])})</span>`:""}</div>`).join("");
   const heads=(b.heads||[]).map(h=>`<div class="sublab">${esc(h[0])}</div><ul>${h[1].map(x=>`<li>${md(x)}</li>`).join("")}</ul>`).join("");
   const pre=(b.pre||[]).map(p=>`<div class="sublab">${esc(p[0])}</div><div class="pre">${esc(p[1])}</div>`).join("");
-  const S2=[];
-  if(b.cue) S2.push(`<span class="lb">CUE</span><span class="v">${esc(b.cue)}</span>`);
-
-  return `<div class="stop" data-key="${b.id}"><div class="num${c.target?"":" noview"}" style="${c.target?`background:${col}`:""}">${b.id}</div>
+  return `<div class="stop" data-key="${b.id}">
       <div class="sc"><div class="sn">${b.emoji?b.emoji+" ":""}${esc(b.title)}</div>
       ${b.sub?`<div class="sub">${esc(b.sub)}</div>`:""}
-      ${(b.tags||[]).length?`<div class="thr">🧵 ${b.tags.join(" ")}</div>`:""}
-      ${S2.length?`<div class="tstrip">${S2.join('<span class="sep">·</span>')}</div>`:""}</div></div>
+      ${b.cue?`<div class="look">${esc(b.cue)}</div>`:""}</div></div>
     <div class="blkbody">
-      ${b.hook?`<div class="hook">🎣 ${md(b.hook)}</div>`:""}
+      ${b.hook?`<div class="hook">${md(b.hook)}</div>`:""}
       ${heads}${pre}
-      ${(b.bullets&&b.bullets.length)?`<div class="storylab">📖 The story</div><ul>${b.bullets.map(x=>`<li>${md(x)}</li>`).join("")}</ul>`:""}
-      ${b.point?`<div class="pt">🎯 ${md(b.point)}</div>`:""}
-      ${b.mic?`<div class="mc">🎤 ${md(b.mic)}</div>`:""}
-      ${b.weather?`<div class="wx">🌫️ ${md(b.weather)}</div>`:""}
-      ${say?`<details class="say"><summary><span class="chev">▶</span><span class="sublab">🗣️ How to say it</span><span class="cnt">${(b.say||[]).length}</span></summary>${say}</details>`:""}
+      ${(b.bullets&&b.bullets.length)?`<ul>${b.bullets.map(x=>`<li>${md(x)}</li>`).join("")}</ul>`:""}
+      ${b.point?`<div class="pt">${md(b.point)}</div>`:""}
+      ${b.mic?`<div class="mc">${md(b.mic)}</div>`:""}
+      ${b.weather?`<div class="wx">${md(b.weather)}</div>`:""}
+      ${say?`<details class="say"><summary><span class="chev">▶</span><span class="sublab">How to say it</span><span class="cnt">${(b.say||[]).length}</span></summary>${say}</details>`:""}
     </div>`;
 }
 let SI=0, BI=0;
