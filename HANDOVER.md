@@ -4,6 +4,7 @@
 
 **Changelog**
 - 25 Aug 2026 — **1.0 resynced from the corrected Craft manuscript.** Re-exported the Craft doc and re-ran `build-script.py`; 6 sections / 35 blocks / block ids all unchanged. Five delivery cues were wrong on the bus and are now right — **Hekla** right at **1 o'clock** (was 11, and its weather pivot and pronunciation gloss carried the old clock too), **Rauðhólar left at 9** (was right at 3), **Ölfusárbrú** "we're crossing it now — look down" (was right at 3), **Kjalarnes** left at 9, **ten kilometres off** (was "At Kjalarnes"), **Esja** "left and ahead" (was ahead at 12). Note for the next chat: this `build-script.py` regenerates everything from Craft and **does** import `cue` from each block's italic line, so cues need no separate sync — the older parser that treated `cue` as a protected route fact is gone. Facts fixed: Kjarval's **1968 bequest** replaces "roughly 5,000 works", Kerið is **one of a dozen or so Grímsnes eruptions** and its duplicated scoria/hematite bullets are merged, Hveragerði **~3,350 (3,344 at the start of 2026)** not 2,982, Ölfusá **400 m³/s** not 423, the cave family is **Iceland's** last not Europe's, and it's the **Hreppar block**, not the Hreppar Fault. `sw.js` → `gcd29-v2`. **`golden-circle-direct.html` no longer contains any tour script** — since the multi-tour split, `index.html` loads `script-<id>.js` at runtime, so the single file and the backup gist are the shell only, and the gist is no longer a working offline copy of the script.
+- 25 Aug 2026 — **drive legs are just the bus now.** A bus icon in a tour app already says *drive*; printing `Þingvellir → Ha…` next to it spent half the row on a label nobody needed and clipped it anyway. Drives shrink to a **40px icon**, stops take the freed width. The full section title survives as `title`/`aria-label`, so a long-press or a screen reader still gets `Þingvellir → Haukadalur Valley`. **Golden Circle now reads clean at 390px** — every stop name whole, nothing clipped. **South Coast has ten legs and never will**, so `#track` scrolls horizontally (scrollbar hidden) with stops floored at **84px**, and `paintTrack()` centres the current leg in the row on every render. Verified: 0 clipped names on either tour, and after 28 forward steps the current leg is still inside the visible box on both. `sw.js` -> `gcd39-v1`.
 - 25 Aug 2026 — **the `LANGUAGE` label is gone.** A flag and the word *English* sitting in a dropdown do not need a caption telling you they are a language. The full-width `<select>` now opens the screen on its own. The string survives as the select's `aria-label` and still swaps with the language (`Sprache`, `Sprache`… from `ui.language`), so screen readers lose nothing. `sw.js` -> `gcd37-v1`.
 - 25 Aug 2026 — **the one-file build was a working welcome screen bolted to three dead buttons.** Found by opening `golden-circle-direct.html` on its own in an empty directory, which nobody had done since the picker started loading tour data on demand: `build-single.py` folded in linked stylesheets and `<script src>` tags, and walked straight past everything else. Three holes, all fixed. **(1)** The picker fetches `route-/script-/cues-<id>.js` at click time and a lone HTML file has no siblings to fetch — every tour's data now rides along in a `<script id="bundle" type="application/json">` tag and `loadScript()` reads that instead of the network. Read **lazily**, not at parse time: the tag sits at the end of `<body>`, after the script that wants it, so an eager read always found nothing. **(2)** The `@font-face` rules live in the *inline* `<style>`, not a linked sheet — the backup had been coming out in fallback serif with no Norse at all. **(3)** The logo is a plain `<img src="images/…">` and rendered as a broken-image icon. Fonts and logo are now base64 data URIs. The build asserts on all three (2 fonts, ≥1 image, every tour file present) so it fails loudly rather than shipping another silent hole. File **256 KB -> 938 KB**, which is the honest size of an app that actually contains three tours. Verified by copying the file alone into an empty directory: all 21 languages, all three tours, 35/31/31 blocks, correct km and geometry, home button, zero console errors. `sw.js` -> `gcd36-v1`.
 - 25 Aug 2026 — **the top bar joins the rest of the app.** First cut was a solid gold blob and a 12px system-font tour name — correct behaviour, wrong wardrobe. Now: tour name in **Norse bold 19px, gold `#d4a94a`**, same treatment as `#pick h1` and `.tcard b`; house **outlined** in `rgba(212,169,74,.45)` on `--panel`, filling gold on press, which is the `.nav` button's language rather than a foreign one; bar background moved `--panel` -> `--panel2` so it and `#track` read as **one continuous band** instead of two stacked chrome strips. Verified computed: Norse resolves and is actually loaded (`document.fonts.check`), colour is the accent token, bar and track backgrounds now match exactly. `sw.js` -> `gcd34-v1`.
@@ -96,7 +97,7 @@ route-6.0.js               417.9 km / 439 min, 7 legs, 5,873 points (via Skógaf
 cues-6.0.js                31 cues
 fonts/                     Norse.woff2, NorseBold.woff2 — self-hosted, no CDN
 images/                    iguide-logo-stacked.svg, iguide-logo-line.svg, favicon-64.png
-sw.js                      service worker. Cache-first, versioned. **gcd37-v1**
+sw.js                      service worker. Cache-first, versioned. **gcd39-v1**
 manifest.webmanifest       PWA manifest — installs to the home screen
 icon-192.png icon-512.png
 vendor/                    Leaflet 1.9.4, vendored. No CDN.
@@ -112,8 +113,8 @@ build-single.py            inlines everything into golden-circle-direct.html
 
 ### Checksums at handover
 ```
-index.html                7bd7e6dc2c17de15d2ae4ff41d563d700206fde32b6e1a593d4fd0d1313a09dd
-golden-circle-direct.html 946c27d7579e1867da3e1dcbcd46284928f845511a96298b245c7f7fec90ec55
+index.html                d5222895c70bdcbc2a0759fce80aa5e1b3480ad5b2e11eeaaa4f5904697759ec
+golden-circle-direct.html fc65bc5c7e888e5318579fe5fdf066679eefb3bd9d79c0d7f3a9e6db7378692e
 tours.js                  9746ab3e217921af8f1712c93511a6b6b2adcd60b3820a0c6caf426fa089f47e
 briefing.js               08b59d2574b9ea5b29d5796f01411858ae0a92f0e7ecec5120ef2b4f704c35eb
 script-1.0.js             344c9c479cf43d957960a54bf2b9cf72f00341594ca68da0ff12b76a5fed4967
@@ -125,7 +126,7 @@ cues-5.0.js               85fe7febea6cb08cb4fc797f70335d091ac4cbdcb5c051aed3e9d4
 script-6.0.js             d1d6f5007461b11274554569acdbc0f4c9911b50cd8afc62cdcd44412f6cdb07
 route-6.0.js              c8a40cacddd8f307bdbfd8c5de6f3ec3fa1249f31d1341502b64ac061dfc3b9c
 cues-6.0.js               18a420a2a05e83415cb07253029380ac365a0179c7b2dedd1839a07257c85b2b
-sw.js                     aef0ae6fac40f7ff39f28cef91b9a76ac9b20bced619288983e837f44e5b5324
+sw.js                     7f8ac8888dea4c0f66455e9f0ecab2fe599c00295cf60149eb90e7a236edbce5
 i18n/*.js (rolled up)     1758e332712f12657d00c5fb2907ef0a92ab08782e31f14c8c794935c4350e56
 ```
 
@@ -298,4 +299,4 @@ gh gist edit 6ace26177d8f304a4dc8d77c5dccba7a -a golden-circle-direct.html
 - [ ] `build-route.py`'s `PLACES` table only knows the South Coast stops — 2.0, 3.0, 4.0 and 7.0 need entries adding before they can be routed
 - [ ] South Coast pins are OSM town/landmark centroids, not the coach bays. Fine for now; worth nudging once you've stood in them
 - [ ] The 🧵 in the "Three Names" title comes from the Craft heading itself — a document edit, not an app one
-- [ ] The leg-track chips (`.leg .nm`) are still 8.5px `-apple-system` grey — the last bit of the app not wearing the theme
+
