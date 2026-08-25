@@ -140,14 +140,15 @@
      deliberate: home stays top-left in all 21 languages, RTL included, because
      top-left IS the home corner and a house doesn't mirror. */
   #topbar{flex:0 0 auto;direction:ltr;display:flex;align-items:center;gap:10px;
-          padding:7px 10px;background:var(--panel);border-bottom:1px solid var(--line)}
+          padding:8px 10px 7px;background:var(--panel2)}
   #home{flex:none;display:inline-flex;align-items:center;justify-content:center;
-        width:44px;height:44px;padding:0;border-radius:11px;cursor:pointer;
-        background:var(--accent);border:1px solid var(--accent);color:#0d0d0f}
-  #home:hover,#home:active{background:var(--accent-2);border-color:var(--accent-2)}
-  #home svg{width:23px;height:23px;display:block;flex:none}
-  #tourname{flex:1 1 auto;min-width:0;text-align:right;font-size:12px;color:var(--mute);
-            overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+        width:42px;height:42px;padding:0;border-radius:10px;cursor:pointer;
+        background:var(--panel);border:1px solid rgba(212,169,74,.45);color:var(--accent)}
+  #home:hover,#home:active{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+  #home svg{width:22px;height:22px;display:block;flex:none}
+  #tourname{flex:1 1 auto;min-width:0;text-align:right;
+            font-family:"Norse",var(--serif);font-weight:700;font-size:19px;letter-spacing:.01em;
+            color:var(--accent);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   #zhint{position:absolute;z-index:500;bottom:14px;left:14px;background:rgba(22,27,33,.92);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--mute)}
   #foot{padding:11px 20px;border-top:1px solid var(--line);font-size:10.5px;color:var(--mute);line-height:1.6}
   #foot a{color:var(--accent)}
