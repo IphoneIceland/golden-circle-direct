@@ -1,8 +1,17 @@
 # HANDOVER — Golden Circle Direct
 
-**True as of 10 Aug 2026, 07:45.** Paste this into a fresh chat and you lose nothing.
+**True as of 25 Aug 2026, 15:36 GMT.** Paste this into a fresh chat and you lose nothing.
 
 **Changelog**
+- 25 Aug 2026 — **twenty-one languages, and two of them read backwards.** The welcome, the safety briefing and the UI furniture now exist in **English plus 20**: de, fr, es, it, nl, pt, pl, da, sv, no, fi, is, zh, ja, ko, ru, ar, hi, tr, he. Each `i18n/xx.js` carries `ui` (4 strings), `welcome` (3 items) and `briefing` (11 items) — checked programmatically, all 21 render 3 welcome items and 11 safety items with no console errors. `ar` and `he` carry `rtl:true`, and a new `applyDir()` puts that on `<html dir>` so Arabic and Hebrew actually flip the page instead of just claiming to. **The tour scripts themselves are still English only** — that's the next mountain, roughly 7,000 words x 20 languages x 3 tours. `sw.js` -> `gcd29-v1`.
+- 25 Aug 2026 — **one welcome screen, in the order a guest meets it.** Language first, then who we are and how the app works, then safety, then the tours. Languages are a **flag dropdown** rather than 21 buttons eating the screen — `<select>` gets the native phone picker for free, and the choice sticks in `localStorage` under `gcd-lang`. Anything not yet translated shows greyed with "- not yet", so nobody picks a dead end.
+- 25 Aug 2026 — **the safety briefing, on the way in.** Eleven items: seatbelts, doors, wind on the door handle, the timings, headcounts, footwear, the weather, the "if you get separated" line. Lives in `briefing.js` as `window.__BRIEFING__`, rendered as icon + heading + body so it scans on a phone instead of reading like terms and conditions.
+- 25 Aug 2026 — **iGuide Iceland theme.** Gold `#d4a94a` on near-black `#0d0d0f`, Norse for headings (`fonts/Norse.woff2`, `fonts/NorseBold.woff2`, self-hosted, no CDN), Cormorant Garamond for body, and the stacked logo on the welcome screen. Same palette as the website, so the app doesn't look like a stranger borrowed the bus.
+- 25 Aug 2026 — **one app, three tours.** `tours.js` lists them; the picker loads `route-/script-/cues-<id>.js` on demand rather than shipping every tour's payload to every guest. Adding 2.0, 3.0, 4.0 or 7.0 later is three data files and one line. **South Coast 5.0 and 6.0 are live**: 31 blocks, 122 bullets and 139 pronunciations each, 10 sections, routes from OSRM with stops pinned off OpenStreetMap. Both total **417.9 km / 439 min** — genuine coincidence, not a copy-paste: they split at Hvolsvöllur, 5.0 via **Sólheimajökull** (legs 106.6 / 73.8 / 35.2 / 10.9 / 34.6 / 29.4 / 127.4) and 6.0 via **Skógafoss** (106.6 / 48.9 / 34.9 / 10.9 / 38.9 / 50.3 / 127.4), and 1,729 of their 5,873 geometry points differ. `build-any.py` reads **both** Craft export shapes, old and new.
+- 25 Aug 2026 — **swipe the story.** Left and right on the text pane moves a block; the trackpad's two-finger swipe does the same. The wheel listener sits on `window` with `capture:true` plus `overscroll-behavior-x:none`, because on `#days` alone the browser ate the gesture and went Back instead.
+- 25 Aug 2026 — **this is a guest app, not a guide app.** Off the map: id pills, CUE labels, hashtags, marker emoji, dashed sightlines, target squares. The guide's furniture was never meant for the person in seat 14. Map moved to the **bottom** at a fixed 34% — a stale `order:-1` in the 860px query and a duplicate `#map{flex:1}` had been fighting each other and winning.
+- 25 Aug 2026 — **the journey is the navigation.** The two abstract paginators are gone. There's a **leg track** across the top with a dot per part; you can see where you are in the day the way you'd see it out the window.
+- 22 Aug 2026 — **the route draws itself as you go.** The map no longer opens with the whole loop already finished, which rather gave the ending away. Geometry is sliced by cumulative distance against each block's `progress` percent, interpolated between anchors and forced monotonic, so the road only ever grows. **Sharper satellite:** Esri has real imagery to **z18** over the route (z19 outside Reykjavík is a flat grey "no data" tile — verified as the identical 2,521-byte file at both Þingvellir and Geysir), so `maxNativeZoom:18` plus `detectRetina` is the honest ceiling. Also: the script pane finally scrolls on a phone (`min-height:0` on the flex child, `100dvh`, safe-area padding) and the drive band sits above an indented block bar so the nesting is obvious.
 - 20 Aug 2026 — **content resynced from Craft, and the parser taught the current export shape.** The local export was still 13 July; Craft has since gained ~60 fact bullets and a batch of Tier-1 corrections. `build-script.py` now reads today's Craft format — emoji between number and title, `<callout>` hooks, `-` bullets with no `📖`, `**Name** [**PRON**] — gloss` pronunciations, 🧵 tags last, and the 🌫️ line (used only where the app has no `weather` of its own). All **35 blocks matched by title, none unmatched**; bullets **133 → 193**. Corrections now live: Kerið **5,000–6,000 years** and **gjallgígur/scoria cone** (not an explosion crater), Skálholt's see formally moved in **1801**, Hveragerði's first geothermal greenhouse **1924, Mosfellssveit**. The Norse Expansion keeps its hand-built `heads`/`pre` — now enforced by a `HAND_STRUCTURED` set instead of by luck. New `build-single.py` does the inlining step that produces `golden-circle-direct.html` (verified byte-identical against the previous build before use). `sw.js` → `gcd11-v5`.
 - 10 Aug 2026 — **the space belongs to the script now.** Four stacked bars between map and first word — title, section, block, controls, search — cut to **one 86px bar**. `#head` (app name + route line) hidden under 860px; the map and the bar already say where you are. All sections / Hide all / Fit route / A− / A+ / search moved behind a **⋯** button (`#ctl.hid`), which opens with search focused. Fixed a flex bug where `#bnavrow>button` was also matching `#bmid` and pinning the block button to 54px — it read as a squashed "Start …" chip; now `#bprev,#bnext` are targeted explicitly and `#bmid` gets `flex:1 1 auto`. Script starts **532px down a 900px phone instead of ~790px**. `sw.js` → `gcd11-v4`.
 - 10 Aug 2026 — **header condensed, and three ways of getting stuck fixed.** The section name was rendering **twice** — once in the nav bar, once as the list's own `.dayhead` — which read as two identical drive sections; `.day.solo` now hides the header whenever a single section is on screen. Two stacked nav bars merged into one (~200px of chrome down to **91px**): section name small on top with its own compact arrows, block arrows big underneath. **Tap the middle of the block bar to fold the block away** and get the map back — there was no way out of a long block before. Block arrows now run off a **flat 35-block index** (`CURS` + `CURB`) instead of being scoped to the current section, so they keep working in *All sections* and after search, where they used to go dead. `sw.js` → `gcd11-v3`.
@@ -67,31 +76,62 @@ Search box hits any word anywhere in the script — `Björk` → 1.26, `tölt` �
 
 ### Files
 ```
-index.html                 the app — sidebar, sections, map. 16.6 KB
-script-1.0.js              all 35 blocks, verbatim. 84.7 KB
-route-1.0.js               route geometry + legs. 102.8 KB
-cues-1.0.js                cue point + target + clock per block. 7.9 KB
-sw.js                      service worker. Network-first. 3.3 KB
+index.html                 the app — welcome, picker, track, script, map. 32 KB
+tours.js                   the tour list the picker reads. 1.0, 5.0, 6.0
+briefing.js                English welcome (3 items), safety briefing (11 items), the 21-language list
+i18n/xx.js                 20 translations of the above + the UI strings. 88 KB the lot
+script-1.0.js              Golden Circle Direct — 6 sections, 35 blocks, 208 bullets, 181 pronunciations
+route-1.0.js               252.4 km, 8 legs, 4,482 geometry points
+cues-1.0.js                35 cues — cue point + target + clock per block
+script-5.0.js              South Coast — 10 sections, 31 blocks, 122 bullets, 139 pronunciations
+route-5.0.js               417.9 km / 439 min, 7 legs, 5,873 points (via Sólheimajökull)
+cues-5.0.js                31 cues
+script-6.0.js              South Coast Combo — 10 sections, 31 blocks, 122 bullets, 139 pronunciations
+route-6.0.js               417.9 km / 439 min, 7 legs, 5,873 points (via Skógafoss)
+cues-6.0.js                31 cues
+fonts/                     Norse.woff2, NorseBold.woff2 — self-hosted, no CDN
+images/                    iguide-logo-stacked.svg, iguide-logo-line.svg, favicon-64.png
+sw.js                      service worker. Cache-first, versioned. **gcd29-v1**
 manifest.webmanifest       PWA manifest — installs to the home screen
 icon-192.png icon-512.png
 vendor/                    Leaflet 1.9.4, vendored. No CDN.
-golden-circle-direct.html  the whole app as ONE self-contained file (369 KB) — this is what's in the gist
+golden-circle-direct.html  the whole app as ONE self-contained file (256 KB) — this is what's in the gist
+
+build-script.py            regenerates script-1.0.js from the Craft export (new format)
+build-any.py               regenerates any tour from either Craft format:
+                             python3 build-any.py "5.0 South Coast" script-5.0.js
+build-route.py             geocodes stops (Nominatim) + routes them (OSRM): python3 build-route.py 5.0
+build-single.py            inlines everything into golden-circle-direct.html
 ```
 
 ### Checksums at handover
 ```
-index.html                43dde2d85f023e967d028cc88aa4ce49dad8048f68ba11f7d5527039793c5c7d
-golden-circle-direct.html ba760bf98078845438306384fc1aaf83e04e0a4ee8650270a5f5a15fbd4545c3
-script-1.0.js             070255a93d1abd2d974e5e3dcfc872dadb8dcf6c37faba90486771a40140cd9d
+index.html                14b00b8a4b99ca62a118b2d748709df6eb04bf40e2564cf2fbee5d7b043a638b
+golden-circle-direct.html 080334f018f0d56108874f8a27f7b639edfb0d34ece410bd58ec84376a7dfeb4
+tours.js                  9746ab3e217921af8f1712c93511a6b6b2adcd60b3820a0c6caf426fa089f47e
+briefing.js               08b59d2574b9ea5b29d5796f01411858ae0a92f0e7ecec5120ef2b4f704c35eb
+script-1.0.js             cdb393103e85752e89b965ed72dd4199fe71ed4474ab133dc0b9c03e6e4402f9
 route-1.0.js              e44a25d98d169782e063e72d7ca356c75c6aeb37b6d623519bd9a7078e98087d
 cues-1.0.js               fe39b54a9ef0cdb257746bb2c3c93767780a601988f75064b961b3567794bbe2
-sw.js                     78f04c26c7ee3d45da39b6ac69104a044fa2b238b791b4ebe4de0172c9b19bee
+script-5.0.js             5f790c0f4d2341f919e301a6ca9f8cb0c83dabc3d3274b43fd4b0e3efbe15442
+route-5.0.js              c4082022bdcafcf424bf7a8b7b4cafd97ee41452a6994de07299ab93310d9a8d
+cues-5.0.js               85fe7febea6cb08cb4fc797f70335d091ac4cbdcb5c051aed3e9d43f8ca2f0d2
+script-6.0.js             d1d6f5007461b11274554569acdbc0f4c9911b50cd8afc62cdcd44412f6cdb07
+route-6.0.js              c8a40cacddd8f307bdbfd8c5de6f3ec3fa1249f31d1341502b64ac061dfc3b9c
+cues-6.0.js               18a420a2a05e83415cb07253029380ac365a0179c7b2dedd1839a07257c85b2b
+sw.js                     912d45ff9c7e00bf92ad868f277b60d1fcb9dc2a6291e10d7d06b0e8746094b0
+i18n/*.js (rolled up)     1758e332712f12657d00c5fb2907ef0a92ab08782e31f14c8c794935c4350e56
 ```
 
 ### Git
 ```
-109bf06  Rename to Golden Circle Direct throughout
-fddf630  1.0 Golden Circle Direct — on-mic script pinned to the route, 35 blocks
+8844519  Twenty-one languages live for the welcome, safety and UI   ← HEAD, pushed, clean
+e4e9299  Five languages live for the welcome, safety and UI
+20da830  Language as a flag dropdown
+0f775f5  One welcome screen: language, welcome, safety, then the tours
+6c7bff3  iGuide Iceland theme: gold on near-black, Norse headings, logo on the picker
+8cf58cd  One app, three tours: picker on launch, data loaded per tour
+b8ba091  South Coast 5.0 and 6.0: routes from OSRM, stops pinned from OpenStreetMap
 origin → https://github.com/IphoneIceland/golden-circle-direct.git   (pushed, clean)
 ```
 
@@ -238,3 +278,7 @@ gh gist edit 6ace26177d8f304a4dc8d77c5dccba7a -a golden-circle-direct.html
 - [ ] Þingvellir and Gullfoss both have a second candidate pin (P5 Valhöll; the marked bus bays 250 m past the visitor centre car park). One-line changes if you want the other one
 - [ ] No offline test on an actual phone yet
 - [ ] Sections 2.0 Snowmobiling, 3.0 Lagoons and 4.0 Friðheimar exist in Craft and have no map
+- [ ] **The tour scripts are English only.** The welcome, safety and UI speak 21 languages; the actual stories speak one. ~7,000 words × 20 languages × 3 tours
+- [ ] `build-route.py`'s `PLACES` table only knows the South Coast stops — 2.0, 3.0, 4.0 and 7.0 need entries adding before they can be routed
+- [ ] South Coast pins are OSM town/landmark centroids, not the coach bays. Fine for now; worth nudging once you've stood in them
+- [ ] The 🧵 in the "Three Names" title comes from the Craft heading itself — a document edit, not an app one
