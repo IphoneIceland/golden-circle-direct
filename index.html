@@ -168,6 +168,21 @@
 <script src="i18n/es.js"></script>
 <script src="i18n/it.js"></script>
 <script src="i18n/nl.js"></script>
+<script src="i18n/pt.js"></script>
+<script src="i18n/pl.js"></script>
+<script src="i18n/da.js"></script>
+<script src="i18n/sv.js"></script>
+<script src="i18n/no.js"></script>
+<script src="i18n/fi.js"></script>
+<script src="i18n/is.js"></script>
+<script src="i18n/zh.js"></script>
+<script src="i18n/ja.js"></script>
+<script src="i18n/ko.js"></script>
+<script src="i18n/ru.js"></script>
+<script src="i18n/ar.js"></script>
+<script src="i18n/hi.js"></script>
+<script src="i18n/tr.js"></script>
+<script src="i18n/he.js"></script>
 <script>
 // ---- tour picker -------------------------------------------------------
 const TOURS = window.__TOURS__;
@@ -213,7 +228,7 @@ function showLangs(){
     if(!l||!l.live){ e.target.value=LANG; return; }
     LANG=l.code;
     try{ localStorage.setItem("gcd-lang",LANG); }catch(err){}
-    showWelcome(); showSafety(); showPicker();
+    applyDir(); showWelcome(); showSafety(); showPicker();
     const t=T();
     document.getElementById("langs").querySelector("label").textContent=(t&&t.ui.language)||"Language";
     document.getElementById("whichtour").textContent=(t&&t.ui.whichTour)||"Which tour?";
@@ -229,6 +244,11 @@ const block = i => '<div class="bitem"><div class="bi">'+i.icon+'</div><div><h2>
 // English lives in briefing.js; every other language overrides it from i18n/.
 let LANG="en";
 const T = () => (LANG==="en" ? null : (window.__I18N__||{})[LANG]);
+// Arabic and Hebrew read right to left. The flag says so; the <html> element has to hear it.
+function applyDir(){
+  const t=T();
+  document.documentElement.dir = (t && t.rtl) ? "rtl" : "ltr";
+}
 function showWelcome(){
   const t=T();
   const W=(t&&t.welcome)||window.__WELCOME__;
@@ -268,6 +288,7 @@ function showPicker(){
   });
 }
 try{ const v=localStorage.getItem("gcd-lang"); if(v) LANG=v; }catch(e){}
+applyDir();
 showLangs();
 showWelcome();
 showSafety();

@@ -52,27 +52,27 @@ window.__WELCOME__ = {
   ]
 };
 
-// The languages the app will offer. English is live; the rest are queued.
+// The languages the app offers. All 21 are live for the welcome, safety and UI.
 window.__LANGS__ = [
   {code:"en", flag:"🇬🇧", name:"English",    live:true},
   {code:"de", live:true, flag:"🇩🇪", name:"Deutsch"},
   {code:"fr", live:true, flag:"🇫🇷", name:"Français"},
   {code:"es", live:true, flag:"🇪🇸", name:"Español"},
   {code:"it", live:true, flag:"🇮🇹", name:"Italiano"},
-  {code:"pt", flag:"🇵🇹", name:"Português"},
+  {live:true, code:"pt", flag:"🇵🇹", name:"Português"},
   {code:"nl", live:true, flag:"🇳🇱", name:"Nederlands"},
-  {code:"pl", flag:"🇵🇱", name:"Polski"},
-  {code:"da", flag:"🇩🇰", name:"Dansk"},
-  {code:"sv", flag:"🇸🇪", name:"Svenska"},
-  {code:"no", flag:"🇳🇴", name:"Norsk"},
-  {code:"fi", flag:"🇫🇮", name:"Suomi"},
-  {code:"is", flag:"🇮🇸", name:"Íslenska"},
-  {code:"zh", flag:"🇨🇳", name:"中文"},
-  {code:"ja", flag:"🇯🇵", name:"日本語"},
-  {code:"ko", flag:"🇰🇷", name:"한국어"},
-  {code:"ru", flag:"🇷🇺", name:"Русский"},
-  {code:"ar", flag:"🇸🇦", name:"العربية"},
-  {code:"hi", flag:"🇮🇳", name:"हिन्दी"},
-  {code:"tr", flag:"🇹🇷", name:"Türkçe"},
-  {code:"he", flag:"🇮🇱", name:"עברית"}
+  {live:true, code:"pl", flag:"🇵🇱", name:"Polski"},
+  {live:true, code:"da", flag:"🇩🇰", name:"Dansk"},
+  {live:true, code:"sv", flag:"🇸🇪", name:"Svenska"},
+  {live:true, code:"no", flag:"🇳🇴", name:"Norsk"},
+  {live:true, code:"fi", flag:"🇫🇮", name:"Suomi"},
+  {live:true, code:"is", flag:"🇮🇸", name:"Íslenska"},
+  {live:true, code:"zh", flag:"🇨🇳", name:"中文"},
+  {live:true, code:"ja", flag:"🇯🇵", name:"日本語"},
+  {live:true, code:"ko", flag:"🇰🇷", name:"한국어"},
+  {live:true, code:"ru", flag:"🇷🇺", name:"Русский"},
+  {live:true, code:"ar", flag:"🇸🇦", name:"العربية"},
+  {live:true, code:"hi", flag:"🇮🇳", name:"हिन्दी"},
+  {live:true, code:"tr", flag:"🇹🇷", name:"Türkçe"},
+  {live:true, code:"he", flag:"🇮🇱", name:"עברית"}
 ];
