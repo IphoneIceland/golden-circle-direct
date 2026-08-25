@@ -3008,16 +3008,15 @@ document.addEventListener("keydown",e=>{
 map.on("zoomend",()=>{document.getElementById("zhint").style.display=map.getZoom()>=11?"none":"block";});
 
 
-}   // end boot()
-
-if("serviceWorker" in navigator) window.addEventListener("load",()=>{
-  navigator.serviceWorker.register("sw.js").then(()=>{const el=document.getElementById("sw");if(el){el.textContent="· Offline ready";el.style.color="#9fdcae";}}).catch(()=>{});
-});
-
 render();
 { const c=CUE[S.sections[0].blocks[0].id];
   const p=(c&&c.pin)?[c.pin.lat,c.pin.lon]:GEO[0];
   map.setView(p,13); }
+}   // end boot()
+
+if("serviceWorker" in navigator) window.addEventListener("load",()=>{
+  navigator.serviceWorker.register("sw.js").catch(()=>{});
+});
 </script>
 </body>
 </html>
