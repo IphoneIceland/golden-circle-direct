@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Inline the app into ONE self-contained file: golden-circle-direct.html.
+Inline the app into ONE self-contained file: iguide-iceland.html.
 
   python3 build-single.py
 
@@ -14,7 +14,7 @@ import re, os, base64, mimetypes
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 SRC = "index.html"
-OUT = "golden-circle-direct.html"
+OUT = "iguide-iceland.html"
 
 
 def rd(p):

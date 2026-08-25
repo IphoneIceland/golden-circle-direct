@@ -1,10 +1,10 @@
-/* Golden Circle Direct — service worker.
+/* iGuide - Iceland — service worker.
    Two caches, on purpose:
      SHELL  cache-first, versioned. The app itself. Bump VERSION to ship an update.
      TILES  stale-while-revalidate, capped. Map imagery you have already looked at.
    Load the page once on hotel wifi, pan the loop, and the whole day survives
    the dead patch past Laugarvatn. */
-const VERSION = "gcd41-v1";
+const VERSION = "gcd42-v1";
 const SHELL   = VERSION + "-shell";
 const TILES   = VERSION + "-tiles";
 const TILE_CAP = 900;

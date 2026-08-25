@@ -1,12 +1,12 @@
 {
-  "name": "Golden Circle Direct",
-  "short_name": "Golden Circle",
+  "name": "iGuide - Iceland",
+  "short_name": "iGuide",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0e1114",
-  "theme_color": "#0e1114",
-  "description": "Golden Circle loop from Hótel Geysir — any date, any start time. Works offline.",
+  "background_color": "#0d0d0f",
+  "theme_color": "#0d0d0f",
+  "description": "Your tour, laid out the way we actually drive it. Three tours, twenty-one languages, works offline.",
   "icons": [
     {
       "src": "icon-192.png",
