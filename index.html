@@ -135,8 +135,14 @@
   .tcard:hover{border-color:var(--accent)}
   .tcard b{display:block;font-family:"Norse",var(--serif);font-weight:700;font-size:21px;margin-bottom:5px;letter-spacing:.01em}
   .tcard span{font-size:12.5px;color:var(--mute);line-height:1.5}
-  #back{flex:none;width:34px;height:30px;font-size:14px;padding:0;border-radius:7px;
-        background:transparent;border-color:transparent;color:var(--mute)}
+  #back{flex:none;align-self:center;display:flex;align-items:center;justify-content:center;
+        min-width:44px;height:44px;padding:0 12px;border-radius:9px;
+        background:var(--panel);border:1px solid var(--accent);color:var(--accent);
+        font-size:22px;line-height:1;cursor:pointer;margin-right:6px}
+  #back:hover,#back:active{background:var(--accent);color:var(--bg)}
+  #back .bk{display:block;transform:translateY(-2px)}
+  html[dir="rtl"] #back .bk{transform:translateY(-2px) scaleX(-1)}
+  html[dir="rtl"] #back{margin-right:0;margin-left:6px}
   #zhint{position:absolute;z-index:500;bottom:14px;left:14px;background:rgba(22,27,33,.92);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--mute)}
   #foot{padding:11px 20px;border-top:1px solid var(--line);font-size:10.5px;color:var(--mute);line-height:1.6}
   #foot a{color:var(--accent)}
@@ -190,6 +196,17 @@ const PICK  = document.getElementById("pick");
 const WRAP  = document.getElementById("wrap");
 const KEYT  = "gcd-tour";
 
+// Leaving a tour reloads rather than unpicking boot() by hand: one code path,
+// no half-torn-down map, and the shell comes straight out of the service worker.
+function leaveTour(){
+  try{ localStorage.removeItem(KEYT); }catch(e){}
+  location.replace(location.pathname);
+}
+// A guest's instinct is the phone's own back gesture, not a button we drew.
+// Opening a tour pushes a history entry so back lands on the picker instead of
+// leaving the site entirely.
+window.addEventListener("popstate",()=>{ if(!WRAP.hidden) leaveTour(); });
+
 function loadScript(src){
   return new Promise((ok,bad)=>{
     const el=document.createElement("script");
@@ -208,6 +225,7 @@ async function openTour(t){
     return;
   }
   try{ localStorage.setItem(KEYT,t.id); }catch(e){}
+  try{ history.pushState({tour:t.id},"","#"+t.id); }catch(e){}
   PICK.remove();
   WRAP.hidden=false;
   boot(t);
@@ -455,9 +473,11 @@ steps.innerHTML='<button class="nav" id="pv">‹</button><div id="dots"></div><b
 
 function paintTrack(){
   track.innerHTML="";
-  { const back=document.createElement("button");
-    back.id="back"; back.textContent="☰"; back.title="Choose another tour";
-    back.onclick=()=>{ try{localStorage.removeItem(KEYT);}catch(e){} location.reload(); };
+  { const t=T(), lbl=(t&&t.ui&&t.ui.back)||"Choose another tour";
+    const back=document.createElement("button");
+    back.id="back"; back.innerHTML='<span class="bk">‹</span>';
+    back.title=lbl; back.setAttribute("aria-label",lbl);
+    back.onclick=leaveTour;
     track.appendChild(back); }
   S.sections.forEach((sec,i)=>{
     const el=document.createElement("div");
