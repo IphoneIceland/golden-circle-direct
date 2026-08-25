@@ -38,3 +38,31 @@ window.__BRIEFING__ = {
       "Example: *\"Look at 9 o'clock to see Perlan\"* = look to your left."]}
   ]
 };
+
+// Step 1 — the welcome, shown before the safety briefing.
+window.__WELCOME__ = {
+  step: "Step 1 — welcome",
+  title: "Welcome onboard",
+  lead: "Here's your tour for today, laid out the way we'll actually drive it.",
+  items: [
+    {icon:"🚌", head:"Drive sections", body:["The stretches of road between stops. Stories to listen to while we roll."]},
+    {icon:"📍", head:"Our stops today",  body:["Where we get off the bus. Tap any one along the top to jump to it."]},
+    {icon:"👆", head:"Moving through it", body:["**Swipe left and right** on the text to move between parts, or use the arrows.",
+                                                "The map at the bottom draws the road as we travel it."]}
+  ]
+};
+
+// The languages the app will offer. English is live; the rest are queued.
+window.__LANGS__ = [
+  {code:"en", name:"English",    live:true},
+  {code:"de", name:"Deutsch"},      {code:"fr", name:"Français"},
+  {code:"es", name:"Español"},      {code:"it", name:"Italiano"},
+  {code:"pt", name:"Português"},    {code:"nl", name:"Nederlands"},
+  {code:"pl", name:"Polski"},       {code:"da", name:"Dansk"},
+  {code:"sv", name:"Svenska"},      {code:"no", name:"Norsk"},
+  {code:"fi", name:"Suomi"},        {code:"is", name:"Íslenska"},
+  {code:"zh", name:"中文"},          {code:"ja", name:"日本語"},
+  {code:"ko", name:"한국어"},         {code:"ru", name:"Русский"},
+  {code:"ar", name:"العربية"},       {code:"hi", name:"हिन्दी"},
+  {code:"tr", name:"Türkçe"},       {code:"he", name:"עברית"}
+];
