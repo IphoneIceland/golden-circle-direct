@@ -46,6 +46,30 @@ def repl_js(m):
 out = re.sub(r'<link rel="stylesheet" href="([^"]+)">', repl_css, rd(SRC))
 out = re.sub(r'<script src="([^"]+)"></script>', repl_js, out)
 
+# The theme lives in the INLINE <style> — @font-face pointing at fonts/*.woff2 —
+# and the logo is a plain <img>. Neither is a linked stylesheet or a script src,
+# so the passes above walked straight past them and the one-file build came out
+# in fallback serif with a broken logo. Fold them in too.
+def local_datauri(path):
+    if not os.path.isfile(path):
+        raise SystemExit("missing %s — cannot build a complete single file" % path)
+    mt = mimetypes.guess_type(path)[0] or "application/octet-stream"
+    if path.endswith(".woff2"):
+        mt = "font/woff2"
+    if path.endswith(".svg"):
+        mt = "image/svg+xml"
+    return "data:%s;base64,%s" % (mt, base64.b64encode(open(path, "rb").read()).decode())
+
+def inline_font(m):
+    return "url(%s)" % local_datauri(m.group(1))
+out, nfonts = re.subn(r"url\('(fonts/[^']+)'\)", inline_font, out)
+
+def inline_img(m):
+    return '%s"%s"%s' % (m.group(1), local_datauri(m.group(2)), m.group(3))
+out, nimgs = re.subn(r'(<img[^>]*\ssrc=)"(images/[^"]+)"([^>]*>)', inline_img, out)
+assert nfonts == 2, "expected 2 @font-face urls, rewrote %d" % nfonts
+assert nimgs >= 1, "expected at least one local <img>, rewrote %d" % nimgs
+
 # The picker fetches route-/script-/cues-<id>.js on demand. A single file has no
 # siblings to fetch, so every tour's data rides along in a #bundle tag and
 # loadScript() reads that instead of the network. Without this the one-file
@@ -66,4 +90,5 @@ assert "</body>" in out
 out = out.replace("</body>", tag + "</body>", 1)
 
 open(OUT, "w", encoding="utf-8").write(out)
-print("wrote %s (%d bytes, %d tours bundled: %s)" % (OUT, len(out), len(tours), ", ".join(tours)))
+print("wrote %s (%d bytes, %d tours, %d fonts, %d images: %s)"
+      % (OUT, len(out), len(tours), nfonts, nimgs, ", ".join(tours)))
