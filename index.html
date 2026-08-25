@@ -163,6 +163,11 @@
 <script src="vendor/leaflet.js"></script>
 <script src="tours.js"></script>
 <script src="briefing.js"></script>
+<script src="i18n/de.js"></script>
+<script src="i18n/fr.js"></script>
+<script src="i18n/es.js"></script>
+<script src="i18n/it.js"></script>
+<script src="i18n/nl.js"></script>
 <script>
 // ---- tour picker -------------------------------------------------------
 const TOURS = window.__TOURS__;
@@ -201,9 +206,18 @@ function showLangs(){
       L.map(l=>'<option value="'+l.code+'"'+(l.live?"":" disabled")+(l.code==="en"?" selected":"")+'>'+
                l.flag+"  "+l.name+(l.live?"":" — not yet")+'</option>').join("")+
     '</select>';
-  document.getElementById("lang").onchange=e=>{
+  const sel=document.getElementById("lang");
+  sel.value=LANG;
+  sel.onchange=e=>{
     const l=L.find(x=>x.code===e.target.value);
-    if(!l||!l.live) e.target.value="en";
+    if(!l||!l.live){ e.target.value=LANG; return; }
+    LANG=l.code;
+    try{ localStorage.setItem("gcd-lang",LANG); }catch(err){}
+    showWelcome(); showSafety(); showPicker();
+    const t=T();
+    document.getElementById("langs").querySelector("label").textContent=(t&&t.ui.language)||"Language";
+    document.getElementById("whichtour").textContent=(t&&t.ui.whichTour)||"Which tour?";
+    document.getElementById("pick").scrollTop=0;
   };
 }
 
@@ -212,14 +226,19 @@ const MD = t => t.replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g
 const block = i => '<div class="bitem"><div class="bi">'+i.icon+'</div><div><h2>'+i.head+'</h2>'+
                    i.body.map(x=>"<p>"+MD(x)+"</p>").join("")+'</div></div>';
 
+// English lives in briefing.js; every other language overrides it from i18n/.
+let LANG="en";
+const T = () => (LANG==="en" ? null : (window.__I18N__||{})[LANG]);
 function showWelcome(){
-  const W=window.__WELCOME__;
+  const t=T();
+  const W=(t&&t.welcome)||window.__WELCOME__;
   document.getElementById("welcome").innerHTML=
     '<div class="step">'+W.step+'</div><h1>'+W.title+'</h1>'+
     '<p class="lead">'+W.lead+'</p>'+ W.items.map(block).join("");
 }
 function showSafety(){
-  const B=window.__BRIEFING__;
+  const t=T();
+  const B=(t&&t.briefing)||window.__BRIEFING__;
   document.getElementById("safety").innerHTML=
     '<div class="step">'+B.step+'</div><h1>'+B.title+'</h1>'+ B.items.map(block).join("");
 }
@@ -248,6 +267,7 @@ function showPicker(){
     list.appendChild(b);
   });
 }
+try{ const v=localStorage.getItem("gcd-lang"); if(v) LANG=v; }catch(e){}
 showLangs();
 showWelcome();
 showSafety();

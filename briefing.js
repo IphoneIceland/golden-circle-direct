@@ -55,12 +55,12 @@ window.__WELCOME__ = {
 // The languages the app will offer. English is live; the rest are queued.
 window.__LANGS__ = [
   {code:"en", flag:"🇬🇧", name:"English",    live:true},
-  {code:"de", flag:"🇩🇪", name:"Deutsch"},
-  {code:"fr", flag:"🇫🇷", name:"Français"},
-  {code:"es", flag:"🇪🇸", name:"Español"},
-  {code:"it", flag:"🇮🇹", name:"Italiano"},
+  {code:"de", live:true, flag:"🇩🇪", name:"Deutsch"},
+  {code:"fr", live:true, flag:"🇫🇷", name:"Français"},
+  {code:"es", live:true, flag:"🇪🇸", name:"Español"},
+  {code:"it", live:true, flag:"🇮🇹", name:"Italiano"},
   {code:"pt", flag:"🇵🇹", name:"Português"},
-  {code:"nl", flag:"🇳🇱", name:"Nederlands"},
+  {code:"nl", live:true, flag:"🇳🇱", name:"Nederlands"},
   {code:"pl", flag:"🇵🇱", name:"Polski"},
   {code:"da", flag:"🇩🇰", name:"Dansk"},
   {code:"sv", flag:"🇸🇪", name:"Svenska"},
