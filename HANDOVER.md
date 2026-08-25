@@ -4,7 +4,7 @@
 
 **Changelog**
 - 25 Aug 2026 — **1.0 resynced from the corrected Craft manuscript.** Re-exported the Craft doc and re-ran `build-script.py`; 6 sections / 35 blocks / block ids all unchanged. Five delivery cues were wrong on the bus and are now right — **Hekla** right at **1 o'clock** (was 11, and its weather pivot and pronunciation gloss carried the old clock too), **Rauðhólar left at 9** (was right at 3), **Ölfusárbrú** "we're crossing it now — look down" (was right at 3), **Kjalarnes** left at 9, **ten kilometres off** (was "At Kjalarnes"), **Esja** "left and ahead" (was ahead at 12). Note for the next chat: this `build-script.py` regenerates everything from Craft and **does** import `cue` from each block's italic line, so cues need no separate sync — the older parser that treated `cue` as a protected route fact is gone. Facts fixed: Kjarval's **1968 bequest** replaces "roughly 5,000 works", Kerið is **one of a dozen or so Grímsnes eruptions** and its duplicated scoria/hematite bullets are merged, Hveragerði **~3,350 (3,344 at the start of 2026)** not 2,982, Ölfusá **400 m³/s** not 423, the cave family is **Iceland's** last not Europe's, and it's the **Hreppar block**, not the Hreppar Fault. `sw.js` → `gcd29-v2`. **`golden-circle-direct.html` no longer contains any tour script** — since the multi-tour split, `index.html` loads `script-<id>.js` at runtime, so the single file and the backup gist are the shell only, and the gist is no longer a working offline copy of the script.
-- 25 Aug 2026 — **a way back out of a tour.** There *was* an exit — a dim grey `☰` in the corner of the leg track — and nobody found it, which is the same as there not being one. Now it's a **solid gold 46px button with an arrow-into-a-bar icon**, deliberately a different shape and weight from the outlined `‹ ›` block arrows sitting directly underneath it (two identical stacked chevrons read as one paginator with a stutter). Tooltip and aria-label come from `ui.back`, so it speaks all 21 languages, and the icon mirrors under `dir="rtl"`. Opening a tour now also **pushes a history entry**, so the phone's own back gesture lands on the picker instead of leaving the site — which is what a guest reaches for first. Both paths run through one `leaveTour()`: clear `gcd-tour`, `location.replace(location.pathname)`. Reloading rather than un-picking `boot()` by hand means no half-torn-down map, and the shell comes straight out of the service worker. Verified headless: button, phone gesture, language survives the trip, label translates, chevron mirrors. `sw.js` -> `gcd30-v1`.
+- 25 Aug 2026 — **a way home, in words.** There *was* an exit — a dim grey `☰` in the corner of the leg track — and nobody found it, which is the same as there not being one. Two icon-only attempts failed the same test: a gold `‹` sat directly above the outlined block arrows and read as one paginator with a stutter, and an arrow-into-a-bar glyph was just a shape nobody had to decode. **An icon is not a way home.** What shipped is a **top bar**: a solid gold button that says the words — *Choose another tour* / *Andere Tour wählen* / *اختيار جولة أخرى* — with the tour's name on the other end, so you also know where you are. Label and aria-label come from `ui.back`, so it speaks all 21 languages; longest is Russian at **259px of 390**, no overflow anywhere. Under `dir="rtl"` the bar mirrors and the arrow flips. Opening a tour also **pushes a history entry**, so the phone's own back gesture lands on the picker rather than leaving the site. Both paths run one `leaveTour()`: clear `gcd-tour`, `location.replace(location.pathname)` — reloading rather than un-picking `boot()` by hand means no half-torn-down map, and the shell comes straight out of the service worker. Costs **53px** of vertical. Verified headless across en/de/ru/ja/ar and all three tours, zero console errors. `sw.js` -> `gcd31-v1`.
 - 25 Aug 2026 — **twenty-one languages, and two of them read backwards.** The welcome, the safety briefing and the UI furniture now exist in **English plus 20**: de, fr, es, it, nl, pt, pl, da, sv, no, fi, is, zh, ja, ko, ru, ar, hi, tr, he. Each `i18n/xx.js` carries `ui` (4 strings), `welcome` (3 items) and `briefing` (11 items) — checked programmatically, all 21 render 3 welcome items and 11 safety items with no console errors. `ar` and `he` carry `rtl:true`, and a new `applyDir()` puts that on `<html dir>` so Arabic and Hebrew actually flip the page instead of just claiming to. **The tour scripts themselves are still English only** — that's the next mountain, roughly 7,000 words x 20 languages x 3 tours. `sw.js` -> `gcd29-v1`.
 - 25 Aug 2026 — **one welcome screen, in the order a guest meets it.** Language first, then who we are and how the app works, then safety, then the tours. Languages are a **flag dropdown** rather than 21 buttons eating the screen — `<select>` gets the native phone picker for free, and the choice sticks in `localStorage` under `gcd-lang`. Anything not yet translated shows greyed with "- not yet", so nobody picks a dead end.
 - 25 Aug 2026 — **the safety briefing, on the way in.** Eleven items: seatbelts, doors, wind on the door handle, the timings, headcounts, footwear, the weather, the "if you get separated" line. Lives in `briefing.js` as `window.__BRIEFING__`, rendered as icon + heading + body so it scans on a phone instead of reading like terms and conditions.
@@ -93,7 +93,7 @@ route-6.0.js               417.9 km / 439 min, 7 legs, 5,873 points (via Skógaf
 cues-6.0.js                31 cues
 fonts/                     Norse.woff2, NorseBold.woff2 — self-hosted, no CDN
 images/                    iguide-logo-stacked.svg, iguide-logo-line.svg, favicon-64.png
-sw.js                      service worker. Cache-first, versioned. **gcd30-v1**
+sw.js                      service worker. Cache-first, versioned. **gcd31-v1**
 manifest.webmanifest       PWA manifest — installs to the home screen
 icon-192.png icon-512.png
 vendor/                    Leaflet 1.9.4, vendored. No CDN.
@@ -108,8 +108,8 @@ build-single.py            inlines everything into golden-circle-direct.html
 
 ### Checksums at handover
 ```
-index.html                16a4d2a71490e0404704f542c40d8ff92dab0f26fd0ed149e6ce3be5f7f4e6b2
-golden-circle-direct.html 1b2fc7d56dcd3012df0c8b938f2603bfb90a290c4599eb20cd9716faff7a294c
+index.html                992928e95436d5ccb53886190026cd8146f2f162daf1eb0f9ed1f08652ba600f
+golden-circle-direct.html 825eadf312eb7d163d770f2672575c5f3d98c5443666ab8767936f5419a89b58
 tours.js                  9746ab3e217921af8f1712c93511a6b6b2adcd60b3820a0c6caf426fa089f47e
 briefing.js               08b59d2574b9ea5b29d5796f01411858ae0a92f0e7ecec5120ef2b4f704c35eb
 script-1.0.js             344c9c479cf43d957960a54bf2b9cf72f00341594ca68da0ff12b76a5fed4967
@@ -121,13 +121,14 @@ cues-5.0.js               85fe7febea6cb08cb4fc797f70335d091ac4cbdcb5c051aed3e9d4
 script-6.0.js             d1d6f5007461b11274554569acdbc0f4c9911b50cd8afc62cdcd44412f6cdb07
 route-6.0.js              c8a40cacddd8f307bdbfd8c5de6f3ec3fa1249f31d1341502b64ac061dfc3b9c
 cues-6.0.js               18a420a2a05e83415cb07253029380ac365a0179c7b2dedd1839a07257c85b2b
-sw.js                     fe79e0907e9c3a8f4930f187739806be86786e0e54f1612931ec49e630081b45
+sw.js                     9aaf6bb230396cb28bdd26efd5915edc0618756071be03a8f220d1bd42fc9d0e
 i18n/*.js (rolled up)     1758e332712f12657d00c5fb2907ef0a92ab08782e31f14c8c794935c4350e56
 ```
 
 ### Git
 ```
-6a44076  sw.js gcd30-v1   (HANDOVER commits sit on top of this)
+SWHASH  sw.js gcd31-v1, single file rebuilt   (HANDOVER commits sit on top of this)
+7cbcd4a  A way home that says so in words, at the top of the screen
 e9c1f09  Make the way out a different shape from the block arrows
 8bdde3d  A way out of a tour: a real back button, and the phone's own back gesture
 f40d03b  Resync 1.0 script from corrected Craft manuscript
