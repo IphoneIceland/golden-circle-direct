@@ -94,13 +94,27 @@
   .legln{font-size:.9em;color:#8496a5;margin-top:5px;line-height:1.55}
   .tags{font-size:10px;color:#5b6b7a;margin-top:8px}
   #map{flex:0 0 34%;box-shadow:0 -14px 18px -6px rgba(14,17,20,.95);z-index:2;min-height:150px;position:relative;border-top:1px solid var(--line)}
+  #pick{position:fixed;inset:0;z-index:900;background:var(--bg);padding:26px 18px;overflow-y:auto}
+  #pick h1{margin:6px 0 18px;font-size:19px}
+  #picklist{display:flex;flex-direction:column;gap:10px}
+  .tcard{text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:12px;
+         padding:15px 16px;cursor:pointer;font-family:inherit;color:var(--ink);width:100%}
+  .tcard:hover{border-color:var(--accent)}
+  .tcard b{display:block;font-size:16px;margin-bottom:4px}
+  .tcard span{font-size:12.5px;color:var(--mute);line-height:1.5}
+  #back{flex:none;width:34px;height:30px;font-size:14px;padding:0;border-radius:7px;
+        background:transparent;border-color:transparent;color:var(--mute)}
   #zhint{position:absolute;z-index:500;bottom:14px;left:14px;background:rgba(22,27,33,.92);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--mute)}
   #foot{padding:11px 20px;border-top:1px solid var(--line);font-size:10.5px;color:var(--mute);line-height:1.6}
   #foot a{color:var(--accent)}
 </style>
 </head>
 <body>
-<div id="wrap">
+<div id="pick">
+  <h1>Which tour?</h1>
+  <div id="picklist"></div>
+</div>
+<div id="wrap" hidden>
   <div id="track"></div>
   <div id="steps"></div>
   <div id="days"></div>
@@ -109,10 +123,51 @@
 </div>
 
 <script src="vendor/leaflet.js"></script>
-<script src="route-1.0.js"></script>
-<script src="script-1.0.js"></script>
-<script src="cues-1.0.js"></script>
+<script src="tours.js"></script>
 <script>
+// ---- tour picker -------------------------------------------------------
+const TOURS = window.__TOURS__;
+const PICK  = document.getElementById("pick");
+const WRAP  = document.getElementById("wrap");
+const KEYT  = "gcd-tour";
+
+function loadScript(src){
+  return new Promise((ok,bad)=>{
+    const el=document.createElement("script");
+    el.src=src; el.onload=ok; el.onerror=()=>bad(new Error("could not load "+src));
+    document.head.appendChild(el);
+  });
+}
+async function openTour(t){
+  PICK.innerHTML='<h1>Loading '+t.name+'…</h1>';
+  try{
+    await loadScript("route-"+t.id+".js");
+    await loadScript("script-"+t.id+".js");
+    await loadScript("cues-"+t.id+".js");
+  }catch(err){
+    PICK.innerHTML='<h1>'+t.name+' would not load</h1><p style="color:#ffb3b3">'+err.message+'</p>';
+    return;
+  }
+  try{ localStorage.setItem(KEYT,t.id); }catch(e){}
+  PICK.remove();
+  WRAP.hidden=false;
+  boot(t);
+}
+function showPicker(){
+  const list=document.getElementById("picklist");
+  list.innerHTML="";
+  TOURS.forEach(t=>{
+    const b=document.createElement("button");
+    b.className="tcard";
+    b.innerHTML="<b>"+t.name+"</b><span>"+t.sub+"</span>";
+    b.onclick=()=>openTour(t);
+    list.appendChild(b);
+  });
+}
+showPicker();
+
+// ---- the app -----------------------------------------------------------
+function boot(TOUR){
 const R = window.__ROUTE__, S = window.__SCRIPT__, CUES = window.__CUES__;
 const CUE = {}; CUES.forEach(c => CUE[c.id] = c);
 const COL = {drive:"#5ec8f2", stop:"#c8a2f2"};
@@ -272,6 +327,10 @@ steps.innerHTML='<button class="nav" id="pv">‹</button><div id="dots"></div><b
 
 function paintTrack(){
   track.innerHTML="";
+  { const back=document.createElement("button");
+    back.id="back"; back.textContent="☰"; back.title="Choose another tour";
+    back.onclick=()=>{ try{localStorage.removeItem(KEYT);}catch(e){} location.reload(); };
+    track.appendChild(back); }
   S.sections.forEach((sec,i)=>{
     const el=document.createElement("div");
     el.className="leg"+(i<SI?" done":"")+(i===SI?" now":"")+(sec.kind==="stop"?" stop":"");
@@ -363,6 +422,8 @@ document.addEventListener("keydown",e=>{
 });
 map.on("zoomend",()=>{document.getElementById("zhint").style.display=map.getZoom()>=11?"none":"block";});
 
+
+}   // end boot()
 
 if("serviceWorker" in navigator) window.addEventListener("load",()=>{
   navigator.serviceWorker.register("sw.js").then(()=>{const el=document.getElementById("sw");if(el){el.textContent="· Offline ready";el.style.color="#9fdcae";}}).catch(()=>{});

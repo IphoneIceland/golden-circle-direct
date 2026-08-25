@@ -4,14 +4,19 @@
      TILES  stale-while-revalidate, capped. Map imagery you have already looked at.
    Load the page once on hotel wifi, pan the loop, and the whole day survives
    the dead patch past Laugarvatn. */
-const VERSION = "gcd21-v3";
+const VERSION = "gcd22-v1";
 const SHELL   = VERSION + "-shell";
 const TILES   = VERSION + "-tiles";
 const TILE_CAP = 900;
 
 const SHELL_FILES = [
-  "./", "./index.html", "./route-1.0.js", "./script-1.0.js", "./cues-1.0.js",
-  "./vendor/leaflet.js", "./vendor/leaflet.css", "./vendor/images/marker-icon.png", "./vendor/images/marker-shadow.png", "./vendor/images/layers.png", "./vendor/images/layers-2x.png",
+  "./", "./index.html", "./tours.js",
+  "./route-1.0.js", "./script-1.0.js", "./cues-1.0.js",
+  "./route-5.0.js", "./script-5.0.js", "./cues-5.0.js",
+  "./route-6.0.js", "./script-6.0.js", "./cues-6.0.js",
+  "./vendor/leaflet.js", "./vendor/leaflet.css",
+  "./vendor/images/marker-icon.png", "./vendor/images/marker-shadow.png",
+  "./vendor/images/layers.png", "./vendor/images/layers-2x.png",
   "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"
 ];
 
