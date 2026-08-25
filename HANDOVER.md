@@ -127,7 +127,7 @@ i18n/*.js (rolled up)     1758e332712f12657d00c5fb2907ef0a92ab08782e31f14c8c7949
 
 ### Git
 ```
-9d8e0f0  sw.js gcd30-v1                                             ← HEAD, pushed, clean
+6a44076  sw.js gcd30-v1                                             ← HEAD, pushed, clean
 e9c1f09  Make the way out a different shape from the block arrows
 8bdde3d  A way out of a tour: a real back button, and the phone's own back gesture
 f40d03b  Resync 1.0 script from corrected Craft manuscript
