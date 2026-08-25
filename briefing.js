@@ -54,15 +54,25 @@ window.__WELCOME__ = {
 
 // The languages the app will offer. English is live; the rest are queued.
 window.__LANGS__ = [
-  {code:"en", name:"English",    live:true},
-  {code:"de", name:"Deutsch"},      {code:"fr", name:"Français"},
-  {code:"es", name:"Español"},      {code:"it", name:"Italiano"},
-  {code:"pt", name:"Português"},    {code:"nl", name:"Nederlands"},
-  {code:"pl", name:"Polski"},       {code:"da", name:"Dansk"},
-  {code:"sv", name:"Svenska"},      {code:"no", name:"Norsk"},
-  {code:"fi", name:"Suomi"},        {code:"is", name:"Íslenska"},
-  {code:"zh", name:"中文"},          {code:"ja", name:"日本語"},
-  {code:"ko", name:"한국어"},         {code:"ru", name:"Русский"},
-  {code:"ar", name:"العربية"},       {code:"hi", name:"हिन्दी"},
-  {code:"tr", name:"Türkçe"},       {code:"he", name:"עברית"}
+  {code:"en", flag:"🇬🇧", name:"English",    live:true},
+  {code:"de", flag:"🇩🇪", name:"Deutsch"},
+  {code:"fr", flag:"🇫🇷", name:"Français"},
+  {code:"es", flag:"🇪🇸", name:"Español"},
+  {code:"it", flag:"🇮🇹", name:"Italiano"},
+  {code:"pt", flag:"🇵🇹", name:"Português"},
+  {code:"nl", flag:"🇳🇱", name:"Nederlands"},
+  {code:"pl", flag:"🇵🇱", name:"Polski"},
+  {code:"da", flag:"🇩🇰", name:"Dansk"},
+  {code:"sv", flag:"🇸🇪", name:"Svenska"},
+  {code:"no", flag:"🇳🇴", name:"Norsk"},
+  {code:"fi", flag:"🇫🇮", name:"Suomi"},
+  {code:"is", flag:"🇮🇸", name:"Íslenska"},
+  {code:"zh", flag:"🇨🇳", name:"中文"},
+  {code:"ja", flag:"🇯🇵", name:"日本語"},
+  {code:"ko", flag:"🇰🇷", name:"한국어"},
+  {code:"ru", flag:"🇷🇺", name:"Русский"},
+  {code:"ar", flag:"🇸🇦", name:"العربية"},
+  {code:"hi", flag:"🇮🇳", name:"हिन्दी"},
+  {code:"tr", flag:"🇹🇷", name:"Türkçe"},
+  {code:"he", flag:"🇮🇱", name:"עברית"}
 ];
