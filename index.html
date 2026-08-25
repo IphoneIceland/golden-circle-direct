@@ -34,6 +34,8 @@
      worth reading, so the drives shrink to the icon and hand over the width. */
   .leg.drive{flex:0 0 auto;min-width:40px;padding:11px 8px 10px}
   .leg.drive .ic{font-size:15px}
+  .leg.drive.origin{min-width:52px;padding:6px 6px 5px}
+  .leg.drive.origin .ic{font-size:12px}
   .leg.stop{flex:1 1 auto;min-width:84px;max-width:130px}
   .leg.done{background:#1e1a12}
   .leg.now{background:#2a2418;border-top-color:var(--accent)}
@@ -523,8 +525,17 @@ function paintTrack(){
     const el=document.createElement("div");
     const isStop = sec.kind==="stop";
     el.className="leg"+(i<SI?" done":"")+(i===SI?" now":"")+(isStop?" stop":" drive");
+    // Every other drive is obvious from the stops either side of it. The first one
+    // isn't — nothing precedes it — so it names where the day starts. Origin is the
+    // text before the arrow, cut to its first word so "BSÍ Bus Terminal" reads "BSÍ".
+    let label = isStop ? sec.title : "";
+    if(!isStop && i===0){
+      const from=(sec.title.split("\u2192")[0]||"").trim();
+      label = from.length>9 ? from.split(/\s+/)[0] : from;
+    }
+    if(!isStop && i===0) el.classList.add("origin");
     el.innerHTML='<div class="ic">'+(isStop?"📍":"🚌")+'</div>'+
-                 (isStop?'<span class="nm">'+esc(sec.title)+'</span>':"");
+                 (label?'<span class="nm">'+esc(label)+'</span>':"");
     el.title=sec.title;
     el.setAttribute("aria-label",sec.title);
     el.onclick=()=>{ SI=i; BI=0; render(); };
