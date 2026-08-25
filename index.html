@@ -217,7 +217,24 @@ function leaveTour(){
 // leaving the site entirely.
 window.addEventListener("popstate",()=>{ if(!WRAP.hidden) leaveTour(); });
 
+// The one-file build (the gist backup) carries every tour's data inline in a
+// #bundle tag, because the picker fetches tour data on demand and a lone HTML
+// file has no siblings to fetch. Live, there is no #bundle and this falls
+// straight through to the network as before.
+let BUNDLE, BUNDLE_READ=false;
+function bundle(){
+  if(BUNDLE_READ) return BUNDLE;
+  BUNDLE_READ=true;
+  const el=document.getElementById("bundle");
+  try{ BUNDLE = el ? JSON.parse(el.textContent) : null; }catch(e){ BUNDLE=null; }
+  return BUNDLE;
+}
 function loadScript(src){
+  const B=bundle();
+  if(B && B[src]){
+    try{ (0,eval)(B[src]); return Promise.resolve(); }
+    catch(e){ return Promise.reject(new Error("bundled "+src+" failed: "+e.message)); }
+  }
   return new Promise((ok,bad)=>{
     const el=document.createElement("script");
     el.src=src; el.onload=ok; el.onerror=()=>bad(new Error("could not load "+src));

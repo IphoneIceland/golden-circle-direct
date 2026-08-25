@@ -45,5 +45,25 @@ def repl_js(m):
 
 out = re.sub(r'<link rel="stylesheet" href="([^"]+)">', repl_css, rd(SRC))
 out = re.sub(r'<script src="([^"]+)"></script>', repl_js, out)
+
+# The picker fetches route-/script-/cues-<id>.js on demand. A single file has no
+# siblings to fetch, so every tour's data rides along in a #bundle tag and
+# loadScript() reads that instead of the network. Without this the one-file
+# build is a working welcome screen bolted to three dead buttons.
+import json
+tours = re.findall(r'id:"([^"]+)"', rd("tours.js"))
+assert tours, "no tours found in tours.js"
+bundle = {}
+for tid in tours:
+    for kind in ("route", "script", "cues"):
+        name = "%s-%s.js" % (kind, tid)
+        if not os.path.isfile(name):
+            raise SystemExit("missing %s — cannot build a complete single file" % name)
+        bundle[name] = rd(name)
+blob = json.dumps(bundle, ensure_ascii=False).replace("<", "\\u003c")
+tag = '<script id="bundle" type="application/json">' + blob + '</script>\n'
+assert "</body>" in out
+out = out.replace("</body>", tag + "</body>", 1)
+
 open(OUT, "w", encoding="utf-8").write(out)
-print("wrote %s (%d bytes)" % (OUT, len(out)))
+print("wrote %s (%d bytes, %d tours bundled: %s)" % (OUT, len(out), len(tours), ", ".join(tours)))
