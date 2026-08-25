@@ -4,6 +4,10 @@
 
 **Changelog**
 - 25 Aug 2026 — **1.0 resynced from the corrected Craft manuscript.** Re-exported the Craft doc and re-ran `build-script.py`; 6 sections / 35 blocks / block ids all unchanged. Five delivery cues were wrong on the bus and are now right — **Hekla** right at **1 o'clock** (was 11, and its weather pivot and pronunciation gloss carried the old clock too), **Rauðhólar left at 9** (was right at 3), **Ölfusárbrú** "we're crossing it now — look down" (was right at 3), **Kjalarnes** left at 9, **ten kilometres off** (was "At Kjalarnes"), **Esja** "left and ahead" (was ahead at 12). Note for the next chat: this `build-script.py` regenerates everything from Craft and **does** import `cue` from each block's italic line, so cues need no separate sync — the older parser that treated `cue` as a protected route fact is gone. Facts fixed: Kjarval's **1968 bequest** replaces "roughly 5,000 works", Kerið is **one of a dozen or so Grímsnes eruptions** and its duplicated scoria/hematite bullets are merged, Hveragerði **~3,350 (3,344 at the start of 2026)** not 2,982, Ölfusá **400 m³/s** not 423, the cave family is **Iceland's** last not Europe's, and it's the **Hreppar block**, not the Hreppar Fault. `sw.js` → `gcd29-v2`. **`golden-circle-direct.html` no longer contains any tour script** — since the multi-tour split, `index.html` loads `script-<id>.js` at runtime, so the single file and the backup gist are the shell only, and the gist is no longer a working offline copy of the script.
+- 25 Aug 2026 — **the tour scripts speak twenty languages.** Not the welcome and the safety card — **the stories themselves**. `i18n-strings.py` pulls every translatable line out of all three tours into one corpus: **864 unique strings, 19,801 words**, deduplicated across tours, each keyed by a **hash of its own English text**. Nothing is keyed by position, so a line shared between 1.0 and 5.0 is translated once and lands in both, a future tour reuses whatever it already has in common, and reordering blocks can never shift a translation onto the wrong line. `i18n-chunks.py` splits the corpus into three even-by-WORDS chunks; sixty translation passes filled them; `i18n-build.py` validates and emits `i18n/tours/<lang>.js` — **3.3 MB for the twenty**, loaded one at a time when a tour opens. Deliberately NOT translated: the name and the pronunciation in `🗣️ How to say it` — only the gloss that explains it. Icelandic stays Icelandic.
+  **Validation is not optional here and the validator earned its keep.** Several translation passes shared a scratch directory and had their input swapped underneath them mid-run; most caught it themselves, **`sv-3` did not** — it came back the right length with **255 of its 308 lines carrying ids from a different chunk**. `i18n-build.py --check` compares every id against the chunk it claims to come from, in order, and refuses to build on a mismatch. It caught it, that chunk was redone, and the rebuild is clean: **864/864 in all twenty, zero unbalanced `**` spans, zero untranslated leftovers.** The remaining flags were read and cleared by hand — "numbers lost" is spelled-out numerals (`klukkan níu`, `九点钟方向`, `XII i XIII wiek`), "bold count differs" is an emphasis span split by grammar (`**Iceland's second**` -> `**İzlanda**'nın **ikinci**`). No fact moved.
+  In the app: `translateTour()` runs between loading a tour and booting it, swapping the strings in place via the same FNV-1a hash the build computes; if a language pack will not load, the tour stays English rather than showing a guest a broken page. The first leg's `BSÍ` chip is now derived from the **English** title before translation — "Busbahnhof BSÍ" would otherwise have reduced to "Busbahnhof". The packs are precached **after** the shell and best-effort, so a guest who boards with no signal and picks Japanese still gets a Japanese tour, but one flaky 3 MB download on hotel wifi can no longer take the whole install down with it. Verified in a browser across all 21 languages: 35/31/31 blocks, `BSÍ` right everywhere, names and pronunciations untouched, **~100% of lines translated** (the handful that match English are titles that are pure proper nouns, e.g. `🏢 Ölgerðin Egill Skallagrímsson`), zero console errors. One-file build **256 KB -> 3.6 MB**. `sw.js` -> `gcd41-v1`.
+  **These are AI translations. No native speaker has read them.** They are accurate to the facts and checked mechanically; they have not been checked for the thing only a native ear catches.
 - 25 Aug 2026 — **the first drive says where the day starts.** Every other drive is legible from the stops either side of it; the first one has nothing before it, so a lone bus icon left the row starting from nowhere. It now carries the origin under the bus — **BSÍ** on all three tours. The label is the text before the `→`, cut to its first word when the whole thing runs past 9 characters, so `BSÍ Bus Terminal` reads `BSÍ` without a hand-kept lookup table to fall out of date. Chip widens 40px -> 52px; full title still on `title`/`aria-label`. Verified on all three tours: exactly one named drive each, `BSÍ`, nothing clipped. `sw.js` -> `gcd40-v1`.
 - 25 Aug 2026 — **drive legs are just the bus now.** A bus icon in a tour app already says *drive*; printing `Þingvellir → Ha…` next to it spent half the row on a label nobody needed and clipped it anyway. Drives shrink to a **40px icon**, stops take the freed width. The full section title survives as `title`/`aria-label`, so a long-press or a screen reader still gets `Þingvellir → Haukadalur Valley`. **Golden Circle now reads clean at 390px** — every stop name whole, nothing clipped. **South Coast has ten legs and never will**, so `#track` scrolls horizontally (scrollbar hidden) with stops floored at **84px**, and `paintTrack()` centres the current leg in the row on every render. Verified: 0 clipped names on either tour, and after 28 forward steps the current leg is still inside the visible box on both. `sw.js` -> `gcd39-v1`.
 - 25 Aug 2026 — **the `LANGUAGE` label is gone.** A flag and the word *English* sitting in a dropdown do not need a caption telling you they are a language. The full-width `<select>` now opens the screen on its own. The string survives as the select's `aria-label` and still swaps with the language (`Sprache`, `Sprache`… from `ui.language`), so screen readers lose nothing. `sw.js` -> `gcd37-v1`.
@@ -87,6 +91,7 @@ index.html                 the app — welcome, picker, track, script, map. 32 K
 tours.js                   the tour list the picker reads. 1.0, 5.0, 6.0
 briefing.js                English welcome (3 items), safety briefing (11 items), the 21-language list
 i18n/xx.js                 20 translations of the above + the UI strings. 88 KB the lot
+i18n/tours/xx.js           the TOUR SCRIPTS in 20 languages. 864 strings each, 3.3 MB the lot
 script-1.0.js              Golden Circle Direct — 6 sections, 35 blocks, 208 bullets, 181 pronunciations
 route-1.0.js               252.4 km, 8 legs, 4,482 geometry points
 cues-1.0.js                35 cues — cue point + target + clock per block
@@ -98,11 +103,12 @@ route-6.0.js               417.9 km / 439 min, 7 legs, 5,873 points (via Skógaf
 cues-6.0.js                31 cues
 fonts/                     Norse.woff2, NorseBold.woff2 — self-hosted, no CDN
 images/                    iguide-logo-stacked.svg, iguide-logo-line.svg, favicon-64.png
-sw.js                      service worker. Cache-first, versioned. **gcd40-v1**
+sw.js                      service worker. Cache-first, versioned. **gcd41-v1**
 manifest.webmanifest       PWA manifest — installs to the home screen
 icon-192.png icon-512.png
 vendor/                    Leaflet 1.9.4, vendored. No CDN.
-golden-circle-direct.html  the whole app as ONE self-contained file (938 KB) — all three tours,
+golden-circle-direct.html  the whole app as ONE self-contained file (3.6 MB) — all three tours,
+                           all twenty language packs,
                            both Norse fonts and the logo inlined. This is what's in the gist
 
 build-script.py            regenerates script-1.0.js from the Craft export (new format)
@@ -110,12 +116,16 @@ build-any.py               regenerates any tour from either Craft format:
                              python3 build-any.py "5.0 South Coast" script-5.0.js
 build-route.py             geocodes stops (Nominatim) + routes them (OSRM): python3 build-route.py 5.0
 build-single.py            inlines everything into golden-circle-direct.html
+i18n-strings.py            pulls every translatable line into _tr/corpus.json
+i18n-chunks.py             splits the corpus into even-by-words translation chunks
+i18n-build.py              validates _tr/out/*.jsonl and writes i18n/tours/<lang>.js
+                             python3 i18n-build.py --check   # validate, write nothing
 ```
 
 ### Checksums at handover
 ```
-index.html                a4e1d6179fe76222c5ad645251e9242a459d3b7be33cbe76a638ec2a62aedc29
-golden-circle-direct.html 236df5dca167d45e9fed2a2bbeb487de87224d0f78d850407cf786a6ab7b4d86
+index.html                43caa5a7237b6f83aa7f211b0333079140961ec258b585639bd2c62ba12d68ef
+golden-circle-direct.html 167b7417542cdd0393d7203013ca1458907e8e0a2ba6649984858f1ff42adb21
 tours.js                  9746ab3e217921af8f1712c93511a6b6b2adcd60b3820a0c6caf426fa089f47e
 briefing.js               08b59d2574b9ea5b29d5796f01411858ae0a92f0e7ecec5120ef2b4f704c35eb
 script-1.0.js             344c9c479cf43d957960a54bf2b9cf72f00341594ca68da0ff12b76a5fed4967
@@ -127,7 +137,7 @@ cues-5.0.js               85fe7febea6cb08cb4fc797f70335d091ac4cbdcb5c051aed3e9d4
 script-6.0.js             d1d6f5007461b11274554569acdbc0f4c9911b50cd8afc62cdcd44412f6cdb07
 route-6.0.js              c8a40cacddd8f307bdbfd8c5de6f3ec3fa1249f31d1341502b64ac061dfc3b9c
 cues-6.0.js               18a420a2a05e83415cb07253029380ac365a0179c7b2dedd1839a07257c85b2b
-sw.js                     35dec5dccbbbe553151d62e84efce41577d5908233e302529ea9a2debe5a5fc7
+sw.js                     37a3ee87fbc60b81076b754aa8271058658cc504d640f2193fec87c718f05170
 i18n/*.js (rolled up)     1758e332712f12657d00c5fb2907ef0a92ab08782e31f14c8c794935c4350e56
 ```
 
@@ -296,7 +306,7 @@ gh gist edit 6ace26177d8f304a4dc8d77c5dccba7a -a golden-circle-direct.html
 - [ ] Þingvellir and Gullfoss both have a second candidate pin (P5 Valhöll; the marked bus bays 250 m past the visitor centre car park). One-line changes if you want the other one
 - [ ] No offline test on an actual phone yet
 - [ ] Sections 2.0 Snowmobiling, 3.0 Lagoons and 4.0 Friðheimar exist in Craft and have no map
-- [ ] **The tour scripts are English only.** The welcome, safety and UI speak 21 languages; the actual stories speak one. ~7,000 words × 20 languages × 3 tours
+- [ ] **No native speaker has read the twenty translations.** They are machine-made, fact-checked mechanically, and never heard by an ear that would catch a clanger. Get each one read before it goes on the mic in anger
 - [ ] `build-route.py`'s `PLACES` table only knows the South Coast stops — 2.0, 3.0, 4.0 and 7.0 need entries adding before they can be routed
 - [ ] South Coast pins are OSM town/landmark centroids, not the coach bays. Fine for now; worth nudging once you've stood in them
 - [ ] The 🧵 in the "Three Names" title comes from the Craft heading itself — a document edit, not an app one
