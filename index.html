@@ -11,27 +11,30 @@
   *{box-sizing:border-box}
   html,body{margin:0;height:100%;height:100dvh;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
   #wrap{display:flex;flex-direction:column;height:100%;height:100dvh;overflow:hidden}
-  #map{flex:none;height:34%;min-height:160px;position:relative}
-  /* The drive section is the parent band. The block bar is drawn as its child:
-     indented, darker, hanging off a spine down the left. */
-  #secbar{flex:0 0 auto;display:flex;align-items:stretch;gap:8px;padding:9px 10px 10px;
-          background:#16222b;border-top:3px solid var(--accent)}
-  #secbar.stop{border-top-color:#c8a2f2;background:#1e1a2a}
-  #secbar button{flex:none;width:46px;font-size:19px;line-height:1;padding:0;border-radius:8px;
-                 background:transparent;border-color:#2f4250;color:#8fb6cc}
-  #blkbar{flex:0 0 auto;display:flex;align-items:stretch;gap:8px;
-          margin:0 0 0 22px;padding:9px 10px 10px 12px;background:var(--panel);
-          border-left:3px solid #2f4250}
-  #blkbar button{flex:none;width:52px;font-size:22px;line-height:1;padding:0;border-radius:9px}
-  #secbar button:disabled,#blkbar button:disabled{opacity:.25;cursor:default;color:var(--mute);border-color:var(--line)}
-  .mid{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-align:center}
-  #skind,#bkind{font:700 9.5px/1 -apple-system,sans-serif;letter-spacing:.14em}
-  #skind{color:var(--accent)}
-  #secbar.stop #skind{color:#c8a2f2}
-  #bkind{color:#7d8fa0}
-  #stitle{font-size:14px;font-weight:700;line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%;color:#dff1fb}
-  #secbar.stop #stitle{color:#eadffb}
-  #btitle{font-size:14px;font-weight:600;line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%;color:var(--ink)}
+
+  /* the whole journey, one row. six legs, your position on it */
+  #track{flex:0 0 auto;display:flex;gap:3px;padding:10px 10px 8px;background:var(--panel2)}
+  .leg{flex:1;min-width:0;background:#243039;border-radius:5px;padding:6px 4px 5px;text-align:center;
+       cursor:pointer;border-top:3px solid transparent;transition:background .15s}
+  .leg .ic{font-size:12px;line-height:1}
+  .leg .nm{display:block;font:600 8.5px/1.2 -apple-system,sans-serif;color:#7d8fa0;margin-top:3px;
+           overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .leg.done{background:#1b323f}
+  .leg.now{background:#2b4f63;border-top-color:var(--accent)}
+  .leg.now .nm{color:#dff1fb}
+  .leg.now.stop{background:#3a2f52;border-top-color:#c8a2f2}
+
+  /* the parts of the leg you are in */
+  #steps{flex:0 0 auto;display:flex;align-items:center;gap:6px;padding:0 10px 10px;background:var(--panel2);
+         border-bottom:1px solid var(--line)}
+  #steps .nav{flex:none;width:40px;height:34px;font-size:19px;line-height:1;padding:0;border-radius:8px;
+              background:var(--panel);border:1px solid var(--line);color:var(--ink)}
+  #steps .nav:disabled{opacity:.25}
+  #dots{flex:1;min-width:0;display:flex;gap:5px;align-items:center;overflow-x:auto;scrollbar-width:none}
+  #dots::-webkit-scrollbar{display:none}
+  .dot2{flex:none;height:6px;min-width:14px;flex:1 1 auto;background:#2f3d4a;border-radius:3px;cursor:pointer}
+  .dot2.done{background:#3f647a}
+  .dot2.now{background:var(--accent);height:8px}
   #days{flex:1 1 auto;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;
         padding:14px 14px calc(48px + env(safe-area-inset-bottom));font-size:var(--fs);line-height:var(--lh);border-top:1px solid var(--line)}
   .blkbody{max-width:66ch}
@@ -98,18 +101,11 @@
 </head>
 <body>
 <div id="wrap">
-  <div id="map"><div id="zhint">Zoom in further to show place names</div></div>
-  <div id="secbar">
-    <button id="sprev" aria-label="Previous drive section">‹</button>
-    <div class="mid"><div id="skind">DRIVE 1 OF 6</div><div id="stitle"></div></div>
-    <button id="snext" aria-label="Next drive section">›</button>
-  </div>
-  <div id="blkbar">
-    <button id="bprev" aria-label="Previous block">‹</button>
-    <div class="mid"><div id="bkind">PART 1 OF 11</div><div id="btitle"></div></div>
-    <button id="bnext" aria-label="Next block">›</button>
-  </div>
+  <div id="track"></div>
+  <div id="steps"></div>
   <div id="days"></div>
+  <div id="map"><div id="zhint">Zoom in further to show place names</div></div>
+</div>
 </div>
 
 <script src="vendor/leaflet.js"></script>
@@ -249,7 +245,6 @@ function focusBlock(id){
   map.panTo([c.pin.lat,c.pin.lon],{animate:true,duration:.4});
 }
 
-const list=document.getElementById("days");
 function blockRow(b, kind){
   const c=CUE[b.id]||{};
   const col = kind==="stop" ? COL.stop : COL.drive;
@@ -277,48 +272,51 @@ function blockRow(b, kind){
 let SI=0, BI=0;
 const flat=()=>{const o=[];S.sections.forEach((sec,si)=>sec.blocks.forEach((b,bi)=>o.push({si,bi})));return o;};
 const $=id=>document.getElementById(id);
+const track=$("track"), steps=$("steps"), list=$("days");
+
+steps.innerHTML='<button class="nav" id="pv">‹</button><div id="dots"></div><button class="nav" id="nx">›</button>';
+
+function paintTrack(){
+  track.innerHTML="";
+  S.sections.forEach((sec,i)=>{
+    const el=document.createElement("div");
+    el.className="leg"+(i<SI?" done":"")+(i===SI?" now":"")+(sec.kind==="stop"?" stop":"");
+    el.innerHTML='<div class="ic">'+(sec.kind==="stop"?"📍":"🚌")+'</div><span class="nm">'+esc(sec.title)+'</span>';
+    el.onclick=()=>{ SI=i; BI=0; render(); };
+    track.appendChild(el);
+  });
+  const dots=$("dots"); dots.innerHTML="";
+  S.sections[SI].blocks.forEach((b,i)=>{
+    const d=document.createElement("div");
+    d.className="dot2"+(i<BI?" done":"")+(i===BI?" now":"");
+    d.title=b.title;
+    d.onclick=()=>{ BI=i; render(); };
+    dots.appendChild(d);
+  });
+  const f=flat(), pos=f.findIndex(x=>x.si===SI&&x.bi===BI);
+  $("pv").disabled = pos<=0;
+  $("nx").disabled = pos>=f.length-1;
+}
 
 function render(){
   const sec=S.sections[SI], b=sec.blocks[BI];
-  list.innerHTML=blockRow(b,sec.kind);   // no .body wrapper — that rule is display:none outside an open .day
+  list.innerHTML=blockRow(b,sec.kind);
   list.querySelectorAll(".stop[data-key]").forEach(r=>r.classList.add("open"));
   list.scrollTop=0;
-
-  const stop = sec.kind==="stop";
-  $("secbar").classList.toggle("stop", stop);
-  $("skind").textContent = (stop?"STOP":"DRIVE")+" "+(SI+1)+" OF "+S.sections.length;
-  $("stitle").textContent = sec.title;
-  $("bkind").textContent = "PART "+(BI+1)+" OF "+sec.blocks.length;
-  $("btitle").textContent = b.title;
-
-  $("sprev").disabled = SI===0;
-  $("snext").disabled = SI===S.sections.length-1;
-  const f=flat(), pos=f.findIndex(x=>x.si===SI&&x.bi===BI);
-  $("bprev").disabled = pos<=0;
-  $("bnext").disabled = pos>=f.length-1;
-
+  paintTrack();
   routeLine.setLatLngs(travelled(PROG[b.id]));
   focusBlock(b.id);
 }
-function goSection(d){
-  const n=SI+d;
-  if(n<0||n>=S.sections.length) return;
-  SI=n; BI=0; render();
-}
-function goBlock(d){
+function step(d){
   const f=flat(), pos=f.findIndex(x=>x.si===SI&&x.bi===BI)+d;
   if(pos<0||pos>=f.length) return;
   SI=f[pos].si; BI=f[pos].bi; render();
 }
-$("sprev").onclick=()=>goSection(-1);
-$("snext").onclick=()=>goSection(1);
-$("bprev").onclick=()=>goBlock(-1);
-$("bnext").onclick=()=>goBlock(1);
+$("pv").onclick=()=>step(-1);
+$("nx").onclick=()=>step(1);
 document.addEventListener("keydown",e=>{
-  if(e.key==="ArrowLeft"){e.preventDefault();goBlock(-1);}
-  if(e.key==="ArrowRight"){e.preventDefault();goBlock(1);}
-  if(e.key==="ArrowUp"){e.preventDefault();goSection(-1);}
-  if(e.key==="ArrowDown"){e.preventDefault();goSection(1);}
+  if(e.key==="ArrowLeft"){e.preventDefault();step(-1);}
+  if(e.key==="ArrowRight"){e.preventDefault();step(1);}
 });
 map.on("zoomend",()=>{document.getElementById("zhint").style.display=map.getZoom()>=11?"none":"block";});
 
