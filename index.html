@@ -7,9 +7,16 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="stylesheet" href="vendor/leaflet.css">
 <style>
-  :root{--bg:#0e1114;--panel:#161b21;--panel2:#1d242c;--line:#2b333d;--ink:#e8edf2;--mute:#93a1b0;--accent:#5ec8f2;--fs:16px;--lh:1.8}
+  @font-face{font-family:'Norse';src:url('fonts/Norse.woff2') format('woff2');font-weight:400;font-display:swap}
+  @font-face{font-family:'Norse';src:url('fonts/NorseBold.woff2') format('woff2');font-weight:700;font-display:swap}
+  /* iGuide Iceland tokens, lifted from the site's style.css */
+  :root{--bg:#0d0d0f;--panel:#14141a;--panel2:#1a1a20;--line:rgba(244,240,230,.14);
+        --ink:#f4f0e6;--mute:#cbc4b0;--dim:#837e6f;--accent:#d4a94a;--accent-2:#b48a2f;
+        --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+        --sans:"Inter",ui-sans-serif,system-ui,-apple-system,sans-serif;
+        --fs:16px;--lh:1.8}
   *{box-sizing:border-box}
-  html,body{margin:0;height:100%;height:100dvh;overflow:hidden;overscroll-behavior-x:none;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+  html,body{margin:0;height:100%;height:100dvh;overflow:hidden;overscroll-behavior-x:none;font-family:var(--sans);background:var(--bg);color:var(--ink)}
   #wrap{display:flex;flex-direction:column;height:100%;height:100dvh;overflow:hidden}
 
   /* the whole journey, one row. six legs, your position on it */
@@ -19,10 +26,10 @@
   .leg .ic{font-size:12px;line-height:1}
   .leg .nm{display:block;font:600 8.5px/1.2 -apple-system,sans-serif;color:#7d8fa0;margin-top:3px;
            overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .leg.done{background:#1b323f}
-  .leg.now{background:#2b4f63;border-top-color:var(--accent)}
+  .leg.done{background:#1e1a12}
+  .leg.now{background:#2a2418;border-top-color:var(--accent)}
   .leg.now .nm{color:#dff1fb}
-  .leg.now.stop{background:#3a2f52;border-top-color:#c8a2f2}
+  .leg.now.stop{background:#2a2418;border-top-color:var(--accent)}
 
   /* the parts of the leg you are in */
   #steps{flex:0 0 auto;display:flex;align-items:center;gap:6px;padding:0 10px 10px;background:var(--panel2);
@@ -33,7 +40,7 @@
   #dots{flex:1;min-width:0;display:flex;gap:5px;align-items:center;overflow-x:auto;scrollbar-width:none}
   #dots::-webkit-scrollbar{display:none}
   .dot2{flex:none;height:6px;min-width:14px;flex:1 1 auto;background:#2f3d4a;border-radius:3px;cursor:pointer}
-  .dot2.done{background:#3f647a}
+  .dot2.done{background:var(--accent-2)}
   .dot2.now{background:var(--accent);height:8px}
   #days{flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;
         padding:16px 16px 34px;font-size:var(--fs);line-height:var(--lh);border-top:1px solid var(--line)}
@@ -47,7 +54,7 @@
   .body{display:none;padding:2px 13px 13px}
   .day.open .body{display:block}
   .stop{display:block;padding:2px 0 0;border-top:none}
-  .look{font-size:.97em;line-height:1.5;color:#9fdcae;margin-top:8px}
+  .look{font-size:.97em;line-height:1.5;color:var(--accent);margin-top:9px}
   .stop[data-key]{cursor:pointer;border-radius:6px;margin:0 -6px;padding-left:6px;padding-right:6px;transition:background .12s}
   .stop[data-key]:hover{background:#232c35}
   .stop[data-key]:hover .sn{color:var(--accent)}
@@ -55,10 +62,10 @@
   .num{flex:none;min-width:26px;height:26px;padding:0 6px;border-radius:13px;display:flex;align-items:center;justify-content:center;font:700 .78em/1 ui-monospace,Menlo,monospace;color:#0e1114}
   .num.noview{background:transparent;border:1.5px dashed #93a1b0;color:#93a1b0}
   .sc{flex:1;min-width:0}
-  .sn{font-size:1.08em;font-weight:600;line-height:1.45;letter-spacing:.005em}
-  .sub{font-size:.97em;line-height:1.55;color:#9ec8dd;margin-top:4px}
+  .sn{font-family:"Norse",var(--serif);font-weight:700;font-size:1.5em;line-height:1.2;letter-spacing:.01em;color:var(--ink)}
+  .sub{font-family:var(--serif);font-size:1.12em;line-height:1.4;color:var(--accent);margin-top:5px}
   .thr{font-size:.82em;font-weight:600;color:#7d8fa0;margin-top:7px;line-height:1.5}
-  .storylab{font-size:.85em;font-weight:700;color:#8fa3b4;margin-top:16px;margin-bottom:2px}
+  .storylab{font-size:.78em;font-weight:700;color:var(--dim);margin-top:18px;margin-bottom:2px;letter-spacing:.11em;text-transform:uppercase}
   .sd{font-size:11.5px;color:var(--mute);line-height:1.5;margin-top:1px}
   .tstrip{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;margin-top:10px}
   .tstrip .lb{font-size:.76em;font-weight:700;color:#8fa3b4;margin-right:3px}
@@ -68,11 +75,11 @@
   .tstrip .sep{color:#39434e}
   .blkbody{display:none;padding:2px 0 6px}
   .stop.open + .blkbody{display:block}
-  .hook{margin-top:14px;padding:13px 14px;border-radius:9px;background:#0f2530;border:1px solid #1d4b5e;color:#cdeaf7;font-size:1em;line-height:var(--lh)}
+  .hook{margin-top:15px;padding:14px 16px;border-radius:10px;background:#17150f;border:1px solid rgba(212,169,74,.35);color:var(--ink);font-family:var(--serif);font-size:1.22em;line-height:1.55}
   .blkbody ul{margin:8px 0 0;padding-left:20px}
-  .blkbody li{font-size:1em;line-height:var(--lh);color:#d3dde6;margin-bottom:14px;padding-left:2px}
-  .pt{margin-top:14px;padding:13px 14px;border-radius:9px;background:#12251a;border:1px solid #2c4a34;color:#cfeeda;font-size:1em;line-height:var(--lh)}
-  .mc{margin-top:12px;padding:13px 14px;border-radius:9px;background:#2a1e0d;border:1px solid #5c3f14;color:#f6dfab;font-size:1em;line-height:var(--lh);font-weight:500}
+  .blkbody li{font-size:1em;line-height:var(--lh);color:var(--mute);margin-bottom:14px;padding-left:2px}
+  .pt{margin-top:14px;padding:12px 15px;background:transparent;border:none;border-left:3px solid var(--accent);color:var(--mute);font-size:1em;line-height:var(--lh)}
+  .mc{margin-top:12px;padding:13px 15px;border-radius:10px;background:#1f1a10;border:1px solid rgba(212,169,74,.28);color:var(--accent);font-family:var(--serif);font-size:1.18em;line-height:1.5}
   .wx{margin-top:12px;padding:12px 14px;border-radius:9px;background:#1a2027;border:1px solid #2b3641;color:#adc0ce;font-size:.95em;line-height:var(--lh)}
   .flag{margin-top:12px;padding:13px 14px;border-radius:9px;background:#33191a;border:1px solid #6b2b2b;color:#ffc4c4;font-size:1em;line-height:var(--lh)}
   .pre{margin-top:9px;padding:9px 10px;border-radius:7px;background:#11161b;border:1px solid #232c35;color:#9fb3c2;font:10.5px/1.55 ui-monospace,Menlo,monospace;overflow-x:auto;white-space:pre}
@@ -88,19 +95,20 @@
   .say>div:first-of-type{margin-top:7px}
   .say div{font-size:.95em;line-height:1.85;color:#b6c3ce;margin-bottom:7px}
   .say b{color:#e8edf2;font-weight:600}
-  .blkbody li b,.hook b,.pt b,.flag b,.mc b{font-weight:600;color:#ffffff}
+  .blkbody li b,.hook b,.pt b,.flag b,.mc b{font-weight:700;color:var(--ink)}
   .say .gloss{color:#7f8f9d}
   .say i{color:#f4d5a0;font-style:normal;font-family:ui-monospace,Menlo,monospace;font-size:.9em}
   .legln{font-size:.9em;color:#8496a5;margin-top:5px;line-height:1.55}
   .tags{font-size:10px;color:#5b6b7a;margin-top:8px}
   #map{flex:0 0 34%;box-shadow:0 -14px 18px -6px rgba(14,17,20,.95);z-index:2;min-height:150px;position:relative;border-top:1px solid var(--line)}
+  #logo{display:block;width:min(190px,52vw);margin:6px auto 22px}
   #pick{position:fixed;inset:0;z-index:900;background:var(--bg);padding:26px 18px;overflow-y:auto}
-  #pick h1{margin:6px 0 18px;font-size:19px}
+  #pick h1{margin:4px 0 18px;font-family:"Norse",var(--serif);font-weight:700;font-size:28px;letter-spacing:.02em}
   #picklist{display:flex;flex-direction:column;gap:10px}
   .tcard{text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:12px;
          padding:15px 16px;cursor:pointer;font-family:inherit;color:var(--ink);width:100%}
   .tcard:hover{border-color:var(--accent)}
-  .tcard b{display:block;font-size:16px;margin-bottom:4px}
+  .tcard b{display:block;font-family:"Norse",var(--serif);font-weight:700;font-size:21px;margin-bottom:5px;letter-spacing:.01em}
   .tcard span{font-size:12.5px;color:var(--mute);line-height:1.5}
   #back{flex:none;width:34px;height:30px;font-size:14px;padding:0;border-radius:7px;
         background:transparent;border-color:transparent;color:var(--mute)}
@@ -111,6 +119,7 @@
 </head>
 <body>
 <div id="pick">
+  <img id="logo" src="images/iguide-logo-stacked.svg" alt="iGuide Iceland">
   <h1>Which tour?</h1>
   <div id="picklist"></div>
 </div>
