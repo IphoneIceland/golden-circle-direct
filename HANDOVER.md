@@ -4,6 +4,7 @@
 
 **Changelog**
 - 25 Aug 2026 — **1.0 resynced from the corrected Craft manuscript.** Re-exported the Craft doc and re-ran `build-script.py`; 6 sections / 35 blocks / block ids all unchanged. Five delivery cues were wrong on the bus and are now right — **Hekla** right at **1 o'clock** (was 11, and its weather pivot and pronunciation gloss carried the old clock too), **Rauðhólar left at 9** (was right at 3), **Ölfusárbrú** "we're crossing it now — look down" (was right at 3), **Kjalarnes** left at 9, **ten kilometres off** (was "At Kjalarnes"), **Esja** "left and ahead" (was ahead at 12). Note for the next chat: this `build-script.py` regenerates everything from Craft and **does** import `cue` from each block's italic line, so cues need no separate sync — the older parser that treated `cue` as a protected route fact is gone. Facts fixed: Kjarval's **1968 bequest** replaces "roughly 5,000 works", Kerið is **one of a dozen or so Grímsnes eruptions** and its duplicated scoria/hematite bullets are merged, Hveragerði **~3,350 (3,344 at the start of 2026)** not 2,982, Ölfusá **400 m³/s** not 423, the cave family is **Iceland's** last not Europe's, and it's the **Hreppar block**, not the Hreppar Fault. `sw.js` → `gcd29-v2`. **`golden-circle-direct.html` no longer contains any tour script** — since the multi-tour split, `index.html` loads `script-<id>.js` at runtime, so the single file and the backup gist are the shell only, and the gist is no longer a working offline copy of the script.
+- 25 Aug 2026 — **the one-file build was a working welcome screen bolted to three dead buttons.** Found by opening `golden-circle-direct.html` on its own in an empty directory, which nobody had done since the picker started loading tour data on demand: `build-single.py` folded in linked stylesheets and `<script src>` tags, and walked straight past everything else. Three holes, all fixed. **(1)** The picker fetches `route-/script-/cues-<id>.js` at click time and a lone HTML file has no siblings to fetch — every tour's data now rides along in a `<script id="bundle" type="application/json">` tag and `loadScript()` reads that instead of the network. Read **lazily**, not at parse time: the tag sits at the end of `<body>`, after the script that wants it, so an eager read always found nothing. **(2)** The `@font-face` rules live in the *inline* `<style>`, not a linked sheet — the backup had been coming out in fallback serif with no Norse at all. **(3)** The logo is a plain `<img src="images/…">` and rendered as a broken-image icon. Fonts and logo are now base64 data URIs. The build asserts on all three (2 fonts, ≥1 image, every tour file present) so it fails loudly rather than shipping another silent hole. File **256 KB -> 938 KB**, which is the honest size of an app that actually contains three tours. Verified by copying the file alone into an empty directory: all 21 languages, all three tours, 35/31/31 blocks, correct km and geometry, home button, zero console errors. `sw.js` -> `gcd36-v1`.
 - 25 Aug 2026 — **the top bar joins the rest of the app.** First cut was a solid gold blob and a 12px system-font tour name — correct behaviour, wrong wardrobe. Now: tour name in **Norse bold 19px, gold `#d4a94a`**, same treatment as `#pick h1` and `.tcard b`; house **outlined** in `rgba(212,169,74,.45)` on `--panel`, filling gold on press, which is the `.nav` button's language rather than a foreign one; bar background moved `--panel` -> `--panel2` so it and `#track` read as **one continuous band** instead of two stacked chrome strips. Verified computed: Norse resolves and is actually loaded (`document.fonts.check`), colour is the accent token, bar and track backgrounds now match exactly. `sw.js` -> `gcd34-v1`.
 - 25 Aug 2026 — **a home button.** There *was* an exit — a dim grey `☰` in the corner of the leg track — and nobody found it, which is the same as there not being one. Four attempts to fix it, three wrong: a gold `‹` that sat directly above the outlined block arrows and read as one paginator with a stutter; an arrow-into-a-bar glyph nobody should have to decode; a labelled `← Choose another tour` bar, where the arrow still had a **direction to misread** — left-to-right readers see an arrow and think *forward to something else*, not *back to home*. What shipped is the obvious thing: a **44px gold house, top-left, no text**. A house has no direction, needs no reading, and works the same in all 21 languages. It sits in a new `#topbar` with the tour's name on the right, so you also know where you are. `title`/`aria-label` still come from `ui.back` for screen readers and long-press. The bar is `direction:ltr` on purpose — **home stays top-left even in Arabic and Hebrew**, because top-left is the home corner and a house doesn't mirror. Opening a tour also **pushes a history entry**, so the phone's own back gesture lands on the picker rather than leaving the site. Both paths run one `leaveTour()`: clear `gcd-tour`, `location.replace(location.pathname)` — reloading rather than un-picking `boot()` by hand means no half-torn-down map, and the shell comes straight out of the service worker. Costs **58px** of vertical. Verified headless across en/de/ru/ja/ar/he/zh and all three tours — button at x=10 in every one, zero console errors. `sw.js` -> `gcd33-v1`.
 - 25 Aug 2026 — **twenty-one languages, and two of them read backwards.** The welcome, the safety briefing and the UI furniture now exist in **English plus 20**: de, fr, es, it, nl, pt, pl, da, sv, no, fi, is, zh, ja, ko, ru, ar, hi, tr, he. Each `i18n/xx.js` carries `ui` (4 strings), `welcome` (3 items) and `briefing` (11 items) — checked programmatically, all 21 render 3 welcome items and 11 safety items with no console errors. `ar` and `he` carry `rtl:true`, and a new `applyDir()` puts that on `<html dir>` so Arabic and Hebrew actually flip the page instead of just claiming to. **The tour scripts themselves are still English only** — that's the next mountain, roughly 7,000 words x 20 languages x 3 tours. `sw.js` -> `gcd29-v1`.
@@ -94,11 +95,12 @@ route-6.0.js               417.9 km / 439 min, 7 legs, 5,873 points (via Skógaf
 cues-6.0.js                31 cues
 fonts/                     Norse.woff2, NorseBold.woff2 — self-hosted, no CDN
 images/                    iguide-logo-stacked.svg, iguide-logo-line.svg, favicon-64.png
-sw.js                      service worker. Cache-first, versioned. **gcd34-v1**
+sw.js                      service worker. Cache-first, versioned. **gcd36-v1**
 manifest.webmanifest       PWA manifest — installs to the home screen
 icon-192.png icon-512.png
 vendor/                    Leaflet 1.9.4, vendored. No CDN.
-golden-circle-direct.html  the whole app as ONE self-contained file (256 KB) — this is what's in the gist
+golden-circle-direct.html  the whole app as ONE self-contained file (938 KB) — all three tours,
+                           both Norse fonts and the logo inlined. This is what's in the gist
 
 build-script.py            regenerates script-1.0.js from the Craft export (new format)
 build-any.py               regenerates any tour from either Craft format:
@@ -109,8 +111,8 @@ build-single.py            inlines everything into golden-circle-direct.html
 
 ### Checksums at handover
 ```
-index.html                ae6fd13fc94202cc4461e7a16667db69540930c8a91efc87b8cf7dd801bc7345
-golden-circle-direct.html 391dec85a9566f3bae8243eb607d3e99759820694e0ad73b77f39b24ae573bef
+index.html                bcab786495a2fbbf26aaa41e3cea84035aa90824e8d330d545cf0f90c381db89
+golden-circle-direct.html 887be65600e43ef20307e320f526343362fd67592991afad3b5a05fba4b303f5
 tours.js                  9746ab3e217921af8f1712c93511a6b6b2adcd60b3820a0c6caf426fa089f47e
 briefing.js               08b59d2574b9ea5b29d5796f01411858ae0a92f0e7ecec5120ef2b4f704c35eb
 script-1.0.js             344c9c479cf43d957960a54bf2b9cf72f00341594ca68da0ff12b76a5fed4967
@@ -122,13 +124,15 @@ cues-5.0.js               85fe7febea6cb08cb4fc797f70335d091ac4cbdcb5c051aed3e9d4
 script-6.0.js             d1d6f5007461b11274554569acdbc0f4c9911b50cd8afc62cdcd44412f6cdb07
 route-6.0.js              c8a40cacddd8f307bdbfd8c5de6f3ec3fa1249f31d1341502b64ac061dfc3b9c
 cues-6.0.js               18a420a2a05e83415cb07253029380ac365a0179c7b2dedd1839a07257c85b2b
-sw.js                     d50576e372251523fc514491542842d693b0239f1295b2ed2d3220b92c3560a4
+sw.js                     6789022a97283a47630b89222284acd0b21f8c7702b6f1669ff9b7bf3ad54b30
 i18n/*.js (rolled up)     1758e332712f12657d00c5fb2907ef0a92ab08782e31f14c8c794935c4350e56
 ```
 
 ### Git
 ```
-f78ddc2  Top bar wears the iGuide theme   (HANDOVER commits sit on top of this)
+82ce6ba  One-file build carries the Norse fonts and the logo too   (HANDOVER commits sit on top of this)
+42cdc88  One-file build carries every tour, not just the welcome screen
+f78ddc2  Top bar wears the iGuide theme
 e1d420c  Home button, no label — sw gcd33-v1
 3bf5449  Home is a house, top-left, in every language
 7cbcd4a  A way home that says so in words, at the top of the screen
