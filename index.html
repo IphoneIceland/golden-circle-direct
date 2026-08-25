@@ -9,7 +9,7 @@
 <style>
   :root{--bg:#0e1114;--panel:#161b21;--panel2:#1d242c;--line:#2b333d;--ink:#e8edf2;--mute:#93a1b0;--accent:#5ec8f2;--fs:16px;--lh:1.8}
   *{box-sizing:border-box}
-  html,body{margin:0;height:100%;height:100dvh;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+  html,body{margin:0;height:100%;height:100dvh;overflow:hidden;overscroll-behavior-x:none;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
   #wrap{display:flex;flex-direction:column;height:100%;height:100dvh;overflow:hidden}
 
   /* the whole journey, one row. six legs, your position on it */
@@ -333,22 +333,26 @@ function step(d){
   },{passive:true});
 })();
 
-// Trackpad: a two-finger sideways swipe steps a block. Without this the browser
-// takes it as a back/forward gesture and walks out of the app.
+// Two-finger sideways swipe, anywhere in the app.
+// Listening on window rather than the text pane: the pointer is often over the
+// map or the track, and Safari hands the gesture to history if nobody claims it.
 (function(){
-  const pane=$("days");
-  let acc=0, lock=false;
-  pane.addEventListener("wheel",e=>{
-    if(Math.abs(e.deltaX)<=Math.abs(e.deltaY)) { acc=0; return; }  // vertical: let it scroll
-    if(e.cancelable) e.preventDefault();
+  let acc=0, lock=false, reset=null;
+  const onWheel = e=>{
+    const ax=Math.abs(e.deltaX), ay=Math.abs(e.deltaY);
+    if(ax<=ay){ acc=0; return; }                 // vertical — leave it to scroll
+    if(e.cancelable) e.preventDefault();          // stop Safari's back/forward
     if(lock) return;
-    acc+=e.deltaX;
-    if(Math.abs(acc)>90){
-      step(acc>0?1:-1);
-      acc=0; lock=true;
-      setTimeout(()=>{lock=false;},420);
+    acc += e.deltaX;
+    clearTimeout(reset);
+    reset = setTimeout(()=>{acc=0;}, 220);        // a gesture that stalls is dropped
+    if(Math.abs(acc) > 55){
+      step(acc > 0 ? 1 : -1);
+      acc = 0; lock = true;
+      setTimeout(()=>{ lock=false; }, 380);
     }
-  },{passive:false});
+  };
+  window.addEventListener("wheel", onWheel, {passive:false, capture:true});
 })();
 
 $("pv").onclick=()=>step(-1);
