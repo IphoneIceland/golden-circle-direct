@@ -231,6 +231,42 @@ window.addEventListener("popstate",()=>{ if(!WRAP.hidden) leaveTour(); });
 // #bundle tag, because the picker fetches tour data on demand and a lone HTML
 // file has no siblings to fetch. Live, there is no #bundle and this falls
 // straight through to the network as before.
+// FNV-1a, 32-bit, over UTF-8 bytes — the exact hash i18n-build.py keys by.
+// Translations are looked up by the English string itself, so a block can move,
+// a tour can be reordered, and nothing lands on the wrong line.
+const TE = new TextEncoder();
+function h32(s){
+  let x = 0x811c9dc5;
+  const b = TE.encode(s);
+  for(let i=0;i<b.length;i++){ x ^= b[i]; x = Math.imul(x, 0x01000193) >>> 0; }
+  return x.toString(16).padStart(8,"0");
+}
+
+// Swap the loaded tour into the chosen language, in place. English is the file
+// on disk, so there is nothing to do for it. If the language pack will not load
+// the tour simply stays English rather than showing a guest a broken page.
+async function translateTour(){
+  if(LANG === "en") return;
+  try{ await loadScript("i18n/tours/"+LANG+".js"); }
+  catch(e){ return; }
+  const M = (window.__TR__||{})[LANG];
+  if(!M) return;
+  const tr = s => (typeof s === "string" && M[h32(s)]) || s;
+  const S = window.__SCRIPT__;
+  S.sections.forEach(sec=>{
+    sec.title = tr(sec.title);
+    (sec.blocks||[]).forEach(b=>{
+      b.title = tr(b.title);
+      ["cue","point","mic","weather","pre"].forEach(k=>{ if(b[k]) b[k] = tr(b[k]); });
+      if(b.bullets) b.bullets = b.bullets.map(tr);
+      if(b.heads)   b.heads   = b.heads.map(tr);
+      // The name and the pronunciation are the whole point of the line —
+      // only the gloss that explains it gets translated.
+      if(b.say)     b.say     = b.say.map(x=>[x[0], x[1], tr(x[2])]);
+    });
+  });
+}
+
 let BUNDLE, BUNDLE_READ=false;
 function bundle(){
   if(BUNDLE_READ) return BUNDLE;
@@ -261,6 +297,18 @@ async function openTour(t){
     PICK.innerHTML='<h1>'+t.name+' would not load</h1><p style="color:#ffb3b3">'+err.message+'</p>';
     return;
   }
+  // The first leg's chip is labelled off the ENGLISH title, before translation:
+  // "Busbahnhof BSÍ" would otherwise reduce to "Busbahnhof", which starts the
+  // day nowhere in particular.
+  try{
+    const s0 = window.__SCRIPT__.sections[0];
+    if(s0 && s0.kind !== "stop"){
+      const from = (s0.title.split("\u2192")[0]||"").trim();
+      window.__SCRIPT__.origin = from.length>9 ? from.split(/\s+/)[0] : from;
+    }
+  }catch(e){}
+  PICK.innerHTML='<h1>'+((T()&&T().ui.loading)||"Loading")+' '+t.name+'…</h1>';
+  await translateTour();
   try{ localStorage.setItem(KEYT,t.id); }catch(e){}
   try{ history.pushState({tour:t.id},"","#"+t.id); }catch(e){}
   PICK.remove();
@@ -529,10 +577,7 @@ function paintTrack(){
     // isn't — nothing precedes it — so it names where the day starts. Origin is the
     // text before the arrow, cut to its first word so "BSÍ Bus Terminal" reads "BSÍ".
     let label = isStop ? sec.title : "";
-    if(!isStop && i===0){
-      const from=(sec.title.split("\u2192")[0]||"").trim();
-      label = from.length>9 ? from.split(/\s+/)[0] : from;
-    }
+    if(!isStop && i===0) label = S.origin || "";
     if(!isStop && i===0) el.classList.add("origin");
     el.innerHTML='<div class="ic">'+(isStop?"📍":"🚌")+'</div>'+
                  (label?'<span class="nm">'+esc(label)+'</span>':"");

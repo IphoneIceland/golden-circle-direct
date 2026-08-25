@@ -84,6 +84,10 @@ for tid in tours:
         if not os.path.isfile(name):
             raise SystemExit("missing %s — cannot build a complete single file" % name)
         bundle[name] = rd(name)
+# The tour translations load on demand too, so they have the same problem.
+for name in sorted(os.listdir("i18n/tours")):
+    if name.endswith(".js"):
+        bundle["i18n/tours/" + name] = rd("i18n/tours/" + name)
 blob = json.dumps(bundle, ensure_ascii=False).replace("<", "\\u003c")
 tag = '<script id="bundle" type="application/json">' + blob + '</script>\n'
 assert "</body>" in out

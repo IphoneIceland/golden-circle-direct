@@ -4,7 +4,7 @@
      TILES  stale-while-revalidate, capped. Map imagery you have already looked at.
    Load the page once on hotel wifi, pan the loop, and the whole day survives
    the dead patch past Laugarvatn. */
-const VERSION = "gcd40-v1";
+const VERSION = "gcd41-v1";
 const SHELL   = VERSION + "-shell";
 const TILES   = VERSION + "-tiles";
 const TILE_CAP = 900;
@@ -26,8 +26,19 @@ const SHELL_FILES = [
   "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"
 ];
 
+// The twenty tour translations are ~3 MB all told. They are cached best-effort
+// AFTER the shell lands: a guest who boards without signal and picks Japanese
+// still gets a Japanese tour, but one flaky download on hotel wifi can no
+// longer take the whole install down with it.
+const TOUR_TR = ["de","fr","es","it","nl","pt","pl","da","sv","no",
+                 "fi","is","zh","ja","ko","ru","ar","hi","tr","he"]
+                .map(l => "./i18n/tours/" + l + ".js");
+
 self.addEventListener("install", e=>{
-  e.waitUntil(caches.open(SHELL).then(c=>c.addAll(SHELL_FILES)).then(()=>self.skipWaiting()));
+  e.waitUntil(caches.open(SHELL)
+    .then(c => c.addAll(SHELL_FILES)
+                .then(() => Promise.all(TOUR_TR.map(u => c.add(u).catch(()=>null)))))
+    .then(()=>self.skipWaiting()));
 });
 
 self.addEventListener("activate", e=>{
