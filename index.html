@@ -108,6 +108,10 @@
   .lang.on{background:var(--accent);border-color:var(--accent);color:#17150f}
   .lang.soon{opacity:.42;cursor:not-allowed}
   #langnote{font-size:11.5px;color:var(--dim);margin:-6px 0 16px}
+  #pick .step{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin:26px 0 4px}
+  #pick h1{margin:0 0 12px}
+  #pick .lead{color:var(--mute);font-size:15px;line-height:1.6;margin:0 0 12px}
+  #whichtour{margin-top:30px}
   #brief{position:fixed;inset:0;z-index:880;background:var(--bg);overflow-y:auto;
          padding:24px 18px calc(96px + env(safe-area-inset-bottom))}
   #brief h1{margin:2px 0 4px;font-family:"Norse",var(--serif);font-weight:700;font-size:28px;letter-spacing:.02em}
@@ -141,7 +145,9 @@
 <div id="pick">
   <div id="langs"></div>
   <img id="logo" src="images/iguide-logo-stacked.svg" alt="iGuide Iceland">
-  <h1>Which tour?</h1>
+  <div id="welcome"></div>
+  <div id="safety"></div>
+  <h1 id="whichtour">Which tour?</h1>
   <div id="picklist"></div>
 </div>
 <div id="brief" hidden></div>
@@ -182,7 +188,8 @@ async function openTour(t){
   }
   try{ localStorage.setItem(KEYT,t.id); }catch(e){}
   PICK.remove();
-  showWelcome(()=> showBriefing(()=>{ WRAP.hidden=false; boot(t); }));
+  WRAP.hidden=false;
+  boot(t);
 }
 function showLangs(){
   const box=document.getElementById("langs");
@@ -197,21 +204,23 @@ function showLangs(){
 }
 
 // Step 1, then step 2, then the tour.
-function showWelcome(done){
-  const W=window.__WELCOME__, el=document.getElementById("brief");
-  const md=t=>t.replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g,"<i>$1</i>");
-  el.innerHTML='<div class="step">'+W.step+'</div><h1>'+W.title+'</h1>'+
-    '<p style="color:var(--mute);font-size:15px;line-height:1.6;margin:0 0 14px">'+W.lead+'</p>'+
-    W.items.map(i=>'<div class="bitem"><div class="bi">'+i.icon+'</div><div><h2>'+i.head+'</h2>'+
-      i.body.map(x=>"<p>"+md(x)+"</p>").join("")+'</div></div>').join("");
-  el.hidden=false; el.scrollTop=0;
-  const go=document.createElement("button");
-  go.id="go"; go.textContent="Next — safety";
-  go.onclick=()=>{ go.remove(); done(); };
-  document.body.appendChild(go);
+const MD = t => t.replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g,"<i>$1</i>");
+const block = i => '<div class="bitem"><div class="bi">'+i.icon+'</div><div><h2>'+i.head+'</h2>'+
+                   i.body.map(x=>"<p>"+MD(x)+"</p>").join("")+'</div></div>';
+
+function showWelcome(){
+  const W=window.__WELCOME__;
+  document.getElementById("welcome").innerHTML=
+    '<div class="step">'+W.step+'</div><h1>'+W.title+'</h1>'+
+    '<p class="lead">'+W.lead+'</p>'+ W.items.map(block).join("");
+}
+function showSafety(){
+  const B=window.__BRIEFING__;
+  document.getElementById("safety").innerHTML=
+    '<div class="step">'+B.step+'</div><h1>'+B.title+'</h1>'+ B.items.map(block).join("");
 }
 
-function showBriefing(done){
+function showBriefingUnused(done){
   const B=window.__BRIEFING__, el=document.getElementById("brief");
   el.scrollTop=0;
   const md=t=>t.replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g,"<i>$1</i>");
@@ -236,6 +245,8 @@ function showPicker(){
   });
 }
 showLangs();
+showWelcome();
+showSafety();
 showPicker();
 
 // ---- the app -----------------------------------------------------------
