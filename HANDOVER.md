@@ -127,7 +127,7 @@ i18n/*.js (rolled up)     1758e332712f12657d00c5fb2907ef0a92ab08782e31f14c8c7949
 
 ### Git
 ```
-SWHASH  sw.js gcd31-v1, single file rebuilt   (HANDOVER commits sit on top of this)
+3827b29  sw.js gcd31-v1, single file rebuilt   (HANDOVER commits sit on top of this)
 7cbcd4a  A way home that says so in words, at the top of the screen
 e9c1f09  Make the way out a different shape from the block arrows
 8bdde3d  A way out of a tour: a real back button, and the phone's own back gesture
