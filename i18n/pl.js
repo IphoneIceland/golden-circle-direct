@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.pl = {
-  ui: { language:"Język", whichTour:"Która wycieczka?", loading:"Ładowanie", back:"Wybierz inną wycieczkę" },
+  ui: { language:"Język", whichTour:"Która wycieczka?", loading:"Ładowanie", back:"Wybierz inną wycieczkę", soon:"Wkrótce" },
   welcome: {
     step:"Krok 1 — Witamy", title:"Witamy na pokładzie",
     lead:"Oto dzisiejsza wycieczka, ułożona tak, jak naprawdę będziemy jechać.",

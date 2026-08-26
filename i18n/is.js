@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.is = {
-  ui: { language:"Tungumál", whichTour:"Hvaða ferð?", loading:"Hleð", back:"Velja aðra ferð" },
+  ui: { language:"Tungumál", whichTour:"Hvaða ferð?", loading:"Hleð", back:"Velja aðra ferð", soon:"Væntanleg" },
   welcome: {
     step:"Skref 1 — Velkomin", title:"Velkomin um borð",
     lead:"Hér er ferðin þín í dag, sett upp í þeirri röð sem við keyrum hana.",

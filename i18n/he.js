@@ -1,7 +1,7 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.he = {
   rtl: true,
-  ui: { language:"שפה", whichTour:"איזה סיור?", loading:"טוען", back:"בחירת סיור אחר" },
+  ui: { language:"שפה", whichTour:"איזה סיור?", loading:"טוען", back:"בחירת סיור אחר", soon:"בקרוב" },
   welcome: {
     step:"שלב 1 — ברוכים הבאים", title:"ברוכים הבאים לאוטובוס",
     lead:"זהו הסיור שלכם היום, מסודר לפי הסדר שבו נסע בפועל.",

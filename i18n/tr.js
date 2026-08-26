@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.tr = {
-  ui: { language:"Dil", whichTour:"Hangi tur?", loading:"Yükleniyor", back:"Başka bir tur seç" },
+  ui: { language:"Dil", whichTour:"Hangi tur?", loading:"Yükleniyor", back:"Başka bir tur seç", soon:"Yakında" },
   welcome: {
     step:"1. Adım — Hoş geldiniz", title:"Aramıza hoş geldiniz",
     lead:"İşte bugünkü turunuz; gerçekte süreceğimiz sırayla dizildi.",

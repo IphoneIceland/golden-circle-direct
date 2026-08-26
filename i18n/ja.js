@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.ja = {
-  ui: { language:"言語", whichTour:"ツアーを選ぶ", loading:"読み込み中", back:"別のツアーを選ぶ" },
+  ui: { language:"言語", whichTour:"ツアーを選ぶ", loading:"読み込み中", back:"別のツアーを選ぶ", soon:"近日公開" },
   welcome: {
     step:"ステップ 1 — ようこそ", title:"ご乗車ありがとうございます",
     lead:"本日のツアーを、実際に走る順番どおりに並べてあります。",

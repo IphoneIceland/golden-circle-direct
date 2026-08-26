@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.fi = {
-  ui: { language:"Kieli", whichTour:"Mikä retki?", loading:"Ladataan", back:"Valitse toinen retki" },
+  ui: { language:"Kieli", whichTour:"Mikä retki?", loading:"Ladataan", back:"Valitse toinen retki", soon:"Tulossa pian" },
   welcome: {
     step:"Vaihe 1 — Tervetuloa", title:"Tervetuloa kyytiin",
     lead:"Tässä on tämän päivän retki siinä järjestyksessä kuin sen todella ajamme.",

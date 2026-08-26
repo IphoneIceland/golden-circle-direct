@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.de = {
-  ui: { language:"Sprache", whichTour:"Welche Tour?", loading:"Wird geladen", back:"Andere Tour wählen" },
+  ui: { language:"Sprache", whichTour:"Welche Tour?", loading:"Wird geladen", back:"Andere Tour wählen", soon:"Bald verfügbar" },
   welcome: {
     step:"Schritt 1 — Willkommen", title:"Willkommen an Bord",
     lead:"Hier ist Ihre Tour für heute, aufgebaut wie wir tatsächlich fahren.",

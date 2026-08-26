@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.zh = {
-  ui: { language:"语言", whichTour:"选择行程", loading:"加载中", back:"更换行程" },
+  ui: { language:"语言", whichTour:"选择行程", loading:"加载中", back:"更换行程", soon:"敬请期待" },
   welcome: {
     step:"第 1 步 — 欢迎", title:"欢迎登车",
     lead:"这是今天的行程，按照我们实际行驶的顺序排列。",

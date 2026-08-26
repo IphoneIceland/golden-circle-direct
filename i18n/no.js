@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.no = {
-  ui: { language:"Språk", whichTour:"Hvilken tur?", loading:"Laster", back:"Velg en annen tur" },
+  ui: { language:"Språk", whichTour:"Hvilken tur?", loading:"Laster", back:"Velg en annen tur", soon:"Kommer snart" },
   welcome: {
     step:"Trinn 1 — Velkommen", title:"Velkommen om bord",
     lead:"Her er turen din i dag, satt opp i den rekkefølgen vi faktisk kjører den.",

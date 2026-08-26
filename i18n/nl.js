@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.nl = {
-  ui: { language:"Taal", whichTour:"Welke tour?", loading:"Laden", back:"Kies een andere tour" },
+  ui: { language:"Taal", whichTour:"Welke tour?", loading:"Laden", back:"Kies een andere tour", soon:"Binnenkort" },
   welcome: {
     step:"Stap 1 — Welkom", title:"Welkom aan boord",
     lead:"Dit is uw tour van vandaag, in de volgorde waarin we hem echt rijden.",

@@ -1,7 +1,7 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.ar = {
   rtl: true,
-  ui: { language:"اللغة", whichTour:"أي جولة؟", loading:"جارٍ التحميل", back:"اختيار جولة أخرى" },
+  ui: { language:"اللغة", whichTour:"أي جولة؟", loading:"جارٍ التحميل", back:"اختيار جولة أخرى", soon:"قريباً" },
   welcome: {
     step:"الخطوة ١ — أهلاً بكم", title:"أهلاً بكم على متن الحافلة",
     lead:"هذه جولتكم اليوم، مرتّبة بالترتيب الذي سنقطعه فعلاً.",

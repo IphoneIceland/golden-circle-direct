@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.ko = {
-  ui: { language:"언어", whichTour:"어떤 투어인가요?", loading:"불러오는 중", back:"다른 투어 선택" },
+  ui: { language:"언어", whichTour:"어떤 투어인가요?", loading:"불러오는 중", back:"다른 투어 선택", soon:"곧 공개" },
   welcome: {
     step:"1단계 — 환영합니다", title:"탑승을 환영합니다",
     lead:"오늘의 투어를 실제 주행 순서대로 정리했습니다.",

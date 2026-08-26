@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.pt = {
-  ui: { language:"Idioma", whichTour:"Qual excursão?", loading:"A carregar", back:"Escolher outra excursão" },
+  ui: { language:"Idioma", whichTour:"Qual excursão?", loading:"A carregar", back:"Escolher outra excursão", soon:"Em breve" },
   welcome: {
     step:"Passo 1 — Bem-vindos", title:"Bem-vindos a bordo",
     lead:"Esta é a excursão de hoje, pela ordem em que a vamos mesmo percorrer.",
