@@ -75,15 +75,24 @@ assert nimgs >= 1, "expected at least one local <img>, rewrote %d" % nimgs
 # loadScript() reads that instead of the network. Without this the one-file
 # build is a working welcome screen bolted to three dead buttons.
 import json
-tours = re.findall(r'id:"([^"]+)"', rd("tours.js"))
+tours = re.findall(r'\{id:"([^"]+)"', rd("tours.js"))
 assert tours, "no tours found in tours.js"
+# tours.js lists tours that are not built yet (ready:false). Those have no data
+# to bundle and must not stop the build — but a tour the picker WILL open and
+# whose files are missing is a real hole, so that still fails loudly.
+ready = re.findall(r'\{id:"([^"]+)",\s*ready:true', rd("tours.js"))
 bundle = {}
 for tid in tours:
-    for kind in ("route", "script", "cues"):
-        name = "%s-%s.js" % (kind, tid)
-        if not os.path.isfile(name):
-            raise SystemExit("missing %s — cannot build a complete single file" % name)
-        bundle[name] = rd(name)
+    files = ["%s-%s.js" % (k, tid) for k in ("route", "script", "cues")]
+    missing = [f for f in files if not os.path.isfile(f)]
+    if missing:
+        if tid in ready:
+            raise SystemExit("tour %s is ready:true but %s missing — "
+                             "the picker would open a dead tour" % (tid, ", ".join(missing)))
+        print("  skipping %s — not built yet" % tid)
+        continue
+    for f in files:
+        bundle[f] = rd(f)
 # The tour translations load on demand too, so they have the same problem.
 for name in sorted(os.listdir("i18n/tours")):
     if name.endswith(".js"):
@@ -94,5 +103,6 @@ assert "</body>" in out
 out = out.replace("</body>", tag + "</body>", 1)
 
 open(OUT, "w", encoding="utf-8").write(out)
-print("wrote %s (%d bytes, %d tours, %d fonts, %d images: %s)"
-      % (OUT, len(out), len(tours), nfonts, nimgs, ", ".join(tours)))
+built = sorted({k.split("-",1)[1][:-3] for k in bundle if k.startswith("route-")})
+print("wrote %s (%d bytes, %d tours bundled, %d fonts, %d images: %s)"
+      % (OUT, len(out), len(built), nfonts, nimgs, ", ".join(built)))

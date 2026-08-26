@@ -807,7 +807,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
   #picklist{display:flex;flex-direction:column;gap:10px}
   .tcard{text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:12px;
          padding:15px 16px;cursor:pointer;font-family:inherit;color:var(--ink);width:100%}
-  .tcard:hover{border-color:var(--accent)}
+  .tcard:hover:not(:disabled){border-color:var(--accent)}
+  .tcard.soon{opacity:.42;cursor:default}
+  .tcard .soonlbl{display:block;margin-top:7px;font-style:normal;font-size:11px;
+                  letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
   .tcard b{display:block;font-family:"Norse",var(--serif);font-weight:700;font-size:21px;margin-bottom:5px;letter-spacing:.01em}
   .tcard span{font-size:12.5px;color:var(--mute);line-height:1.5}
   /* A house, with the words next to it. No arrow — an arrow has a direction to
@@ -860,11 +863,35 @@ svg.leaflet-image-layer.leaflet-interactive path {
 //# sourceMappingURL=leaflet.js.map
 </script>
 <script>
-// Every tour the app can run. Add one here and it appears in the picker.
+// Every tour the app knows about.
+//
+// ready:true  = script/route/cues files exist and the picker will open it
+// ready:false = listed but greyed out, the way an untranslated language is
+//
+// Do NOT flip ready by hand — `python3 add-tour.py <id>` builds the three data
+// files and flips it for you, so the flag can never claim a tour that is not
+// actually on disk.
 window.__TOURS__ = [
-  {id:"1.0", name:"Golden Circle Direct",   sub:"BSÍ → Þingvellir → Geysir → Gullfoss → Kerið → BSÍ"},
-  {id:"5.0", name:"South Coast",            sub:"BSÍ → Hvolsvöllur → Sólheimajökull → Reynisfjara → Vík"},
-  {id:"6.0", name:"South Coast Combo",      sub:"BSÍ → Hvolsvöllur → Skógafoss → Reynisfjara → Vík"}
+  {id:"1.0", ready:true,  name:"Golden Circle Direct",
+   sub:"BSÍ → Þingvellir → Geysir → Gullfoss → Kerið → BSÍ"},
+
+  {id:"2.0", ready:false, name:"Golden Circle Snowmobiling",
+   sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ"},
+
+  {id:"3.0", ready:false, name:"Golden Circle Lagoons",
+   sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ"},
+
+  {id:"4.0", ready:false, name:"Golden Circle Friðheimar",
+   sub:"Anticlockwise — BSÍ → Friðheimar → Gullfoss → Geysir → Þingvellir → BSÍ"},
+
+  {id:"5.0", ready:true,  name:"South Coast",
+   sub:"BSÍ → Hvolsvöllur → Sólheimajökull → Reynisfjara → Vík"},
+
+  {id:"6.0", ready:true,  name:"South Coast Combo",
+   sub:"BSÍ → Hvolsvöllur → Skógafoss → Reynisfjara → Vík"},
+
+  {id:"7.0", ready:false, name:"Glacial Lagoon",
+   sub:"BSÍ → Skógafoss → Kirkjubæjarklaustur → Jökulsárlón → Vík → Reykjavík"}
 ];
 
 </script>
@@ -1681,6 +1708,8 @@ function showLangs(){
 }
 
 // Step 1, then step 2, then the tour.
+// Shared by the picker and the tour, so it has to sit outside boot().
+function esc(s){ return (s||"").replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
 const MD = t => t.replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g,"<i>$1</i>");
 const block = i => '<div class="bitem"><div class="bi">'+i.icon+'</div><div><h2>'+i.head+'</h2>'+
                    i.body.map(x=>"<p>"+MD(x)+"</p>").join("")+'</div></div>';
@@ -1725,9 +1754,14 @@ function showPicker(){
   list.innerHTML="";
   TOURS.forEach(t=>{
     const b=document.createElement("button");
-    b.className="tcard";
-    b.innerHTML="<b>"+t.name+"</b><span>"+t.sub+"</span>";
-    b.onclick=()=>openTour(t);
+    // A tour can be listed before its data is built. Greyed out and unclickable
+    // beats a card that loads a spinner and dies — same rule as the languages.
+    const ready = t.ready !== false;
+    b.className="tcard"+(ready?"":" soon");
+    b.disabled=!ready;
+    b.innerHTML="<b>"+esc(t.name)+"</b><span>"+esc(t.sub)+"</span>"+
+                (ready?"":'<em class="soonlbl">'+((T()&&T().ui.soon)||"coming soon")+'</em>');
+    if(ready) b.onclick=()=>openTour(t);
     list.appendChild(b);
   });
 }
@@ -1859,7 +1893,6 @@ const PROG = (()=>{
   return m;
 })();
 
-function esc(s){ return (s||"").replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
 function md(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g,"<i>$1</i>"); }
 
 // One marker: where you are now.
