@@ -1,9 +1,13 @@
 # HANDOVER — iGuide - Iceland
 
-**True as of 25 Aug 2026, 23:20 GMT.** Paste this into a fresh chat and you lose nothing.
+**True as of 26 Aug 2026, 02:05 GMT.** Paste this into a fresh chat and you lose nothing.
 
 **Changelog**
 - 25 Aug 2026 — **1.0 resynced from the corrected Craft manuscript.** Re-exported the Craft doc and re-ran `build-script.py`; 6 sections / 35 blocks / block ids all unchanged. Five delivery cues were wrong on the bus and are now right — **Hekla** right at **1 o'clock** (was 11, and its weather pivot and pronunciation gloss carried the old clock too), **Rauðhólar left at 9** (was right at 3), **Ölfusárbrú** "we're crossing it now — look down" (was right at 3), **Kjalarnes** left at 9, **ten kilometres off** (was "At Kjalarnes"), **Esja** "left and ahead" (was ahead at 12). Note for the next chat: this `build-script.py` regenerates everything from Craft and **does** import `cue` from each block's italic line, so cues need no separate sync — the older parser that treated `cue` as a protected route fact is gone. Facts fixed: Kjarval's **1968 bequest** replaces "roughly 5,000 works", Kerið is **one of a dozen or so Grímsnes eruptions** and its duplicated scoria/hematite bullets are merged, Hveragerði **~3,350 (3,344 at the start of 2026)** not 2,982, Ölfusá **400 m³/s** not 423, the cave family is **Iceland's** last not Europe's, and it's the **Hreppar block**, not the Hreppar Fault. `sw.js` → `gcd29-v2`. **`golden-circle-direct.html` no longer contains any tour script** — since the multi-tour split, `index.html` loads `script-<id>.js` at runtime, so the single file and the backup gist are the shell only, and the gist is no longer a working offline copy of the script. **[Corrected later the same day — see the 25 Aug one-file entry below: the single file now bundles all three tours and all twenty language packs, and the gist is a working offline copy again. It is also now named `iguide-iceland.html`.]**
+- 26 Aug 2026 — **the app is now built for seven tours, not three.** Scripts for 2.0, 3.0, 4.0 and 7.0 live in Craft but have no route, pins or translations yet, so the app had no way to show them without lying. `tours.js` gains a **`ready` flag**; the picker greys and disables anything not built and prints *coming soon* — the same treatment an untranslated language gets, and `ui.soon` was added to **all twenty language packs** so it isn't a lone English word on a Japanese screen.
+  New **`add-tour.py <id>`** takes a Craft export all the way to a live tour in one command: finds the export, runs `build-any.py`, runs `build-route.py`, verifies all three files load, checks **one cue per block**, flips `ready:true`, regenerates `SHELL_FILES` in `sw.js` from `tours.js` (so the cache list can no longer drift from reality), bumps `VERSION`, and prints the translation steps still owed. It refuses to flip `ready` on a tour whose data is missing or short — a half-built tour in the picker is worse than no tour. `--check` dry-runs it, and it rejects a Craft export under 20 KB as a truncated pull.
+  `build-single.py` now **skips unbuilt tours** instead of dying — but still fails loudly if a `ready:true` tour has no data, because that is a picker card that opens onto nothing.
+  **Caught before shipping:** `esc()` was declared *inside* `boot()`, and the picker calls it long before `boot()` ever runs — the new escaping would have thrown a ReferenceError on the very first screen every guest sees. Hoisted to module scope, single definition. `sw.js` -> `gcd44-v1`.
 - 25 Aug 2026 — **Kjalarnesþing's pin was 6.2 km past the site, and there are TWO pre-Alþingi assemblies, not one that moved.** Ritchie spotted the pin. Chasing it down took Minjastofnun's own `fornleifaskráning` WFS (`gis.lmi.is/geoserver/Minjastofnun/wfs`, layers `fornleifaskraning_punktar` / `_flakar`, EPSG:3057) — the national register, with survey coordinates, not prose. It holds both as separate entries:
   · **Leiðvöllur, on Esjuberg, Kjalarnes** — `1896-30`, `minjaheild: þingminjar`, `hlutverk: búð`, **`aldur: 930-`**, `tegund: heimild` (known from written source), `astand: sést ekki` (nothing visible), `verndun: friðað`. **64.206967, -21.732971.**
   · **The assembly at Elliðavatn** — **13 entries**, `1000-013`…`1000-025`, `serheiti: Kjalarnesþing`, `hlutverk: þingstaður`, `tegund: tóft` (twelve) + one `hleðsla`, **`aldur: 800-1100`**, `verndun: friðlýst`, surveyed **25 June 2025**. Site is **70 m × 45 m**. **64.081037, -21.787356.**
@@ -95,7 +99,8 @@ Search box hits any word anywhere in the script — `Björk` → 1.26, `tölt` �
 ### Files
 ```
 index.html                 the app — welcome, picker, track, script, map. 32 KB
-tours.js                   the tour list the picker reads. 1.0, 5.0, 6.0
+tours.js                   the tour list the picker reads. 7 listed, 3 ready (1.0, 5.0, 6.0)
+add-tour.py                Craft export -> live tour, one command: python3 add-tour.py 7.0
 briefing.js                English welcome (3 items), safety briefing (11 items), the 21-language list
 i18n/xx.js                 20 translations of the above + the UI strings. 88 KB the lot
 i18n/tours/xx.js           the TOUR SCRIPTS in 20 languages. 864 strings each, 3.3 MB the lot
@@ -110,7 +115,7 @@ route-6.0.js               417.9 km / 439 min, 7 legs, 5,873 points (via Skógaf
 cues-6.0.js                31 cues
 fonts/                     Norse.woff2, NorseBold.woff2 — self-hosted, no CDN
 images/                    iguide-logo-stacked.svg, iguide-logo-line.svg, favicon-64.png
-sw.js                      service worker. Cache-first, versioned. **gcd43-v1**
+sw.js                      service worker. Cache-first, versioned. **gcd44-v1**
 manifest.webmanifest       PWA manifest — installs to the home screen
 icon-192.png icon-512.png
 vendor/                    Leaflet 1.9.4, vendored. No CDN.
@@ -131,9 +136,9 @@ i18n-build.py              validates _tr/out/*.jsonl and writes i18n/tours/<lang
 
 ### Checksums at handover
 ```
-index.html                53456fbf28f974abf286a9bf1ab053e260cb7a5c9bbc863e217cd615aaf2e899
-iguide-iceland.html       fb261126737ee98f1f4c09c40cf30e9fd144f1c4f9090a1b79bb123df1c37f7c
-tours.js                  9746ab3e217921af8f1712c93511a6b6b2adcd60b3820a0c6caf426fa089f47e
+index.html                e7d4537f475b7b85864722a95f0a02d6873698a5e2563eda6ece04b7937feb0b
+iguide-iceland.html       b76e35853c584d63115e8087fa4e6eb81cad36a47a48ded35fe9e323b0a9e438
+tours.js                  4789b77459ad8b29e023b95d10e8ead1ec5eae42b94944271081965a2866e4f5
 briefing.js               08b59d2574b9ea5b29d5796f01411858ae0a92f0e7ecec5120ef2b4f704c35eb
 script-1.0.js             344c9c479cf43d957960a54bf2b9cf72f00341594ca68da0ff12b76a5fed4967
 route-1.0.js              e44a25d98d169782e063e72d7ca356c75c6aeb37b6d623519bd9a7078e98087d
@@ -144,7 +149,7 @@ cues-5.0.js               85fe7febea6cb08cb4fc797f70335d091ac4cbdcb5c051aed3e9d4
 script-6.0.js             d1d6f5007461b11274554569acdbc0f4c9911b50cd8afc62cdcd44412f6cdb07
 route-6.0.js              c8a40cacddd8f307bdbfd8c5de6f3ec3fa1249f31d1341502b64ac061dfc3b9c
 cues-6.0.js               18a420a2a05e83415cb07253029380ac365a0179c7b2dedd1839a07257c85b2b
-sw.js                     f82b796cb19ef3740263af222dfd94207f6117f2b41cbc1025d45672e78d1d27
+sw.js                     58e5a783f33dc59cf5bb9ed8bd8a9325e1a0a1c8b5153e2a2a9ff1dc8e274f34
 i18n/*.js (rolled up)     1758e332712f12657d00c5fb2907ef0a92ab08782e31f14c8c794935c4350e56
 ```
 
