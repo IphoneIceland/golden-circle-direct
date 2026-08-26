@@ -1,9 +1,15 @@
 # HANDOVER — iGuide - Iceland
 
-**True as of 25 Aug 2026, 22:15 GMT.** Paste this into a fresh chat and you lose nothing.
+**True as of 25 Aug 2026, 23:20 GMT.** Paste this into a fresh chat and you lose nothing.
 
 **Changelog**
 - 25 Aug 2026 — **1.0 resynced from the corrected Craft manuscript.** Re-exported the Craft doc and re-ran `build-script.py`; 6 sections / 35 blocks / block ids all unchanged. Five delivery cues were wrong on the bus and are now right — **Hekla** right at **1 o'clock** (was 11, and its weather pivot and pronunciation gloss carried the old clock too), **Rauðhólar left at 9** (was right at 3), **Ölfusárbrú** "we're crossing it now — look down" (was right at 3), **Kjalarnes** left at 9, **ten kilometres off** (was "At Kjalarnes"), **Esja** "left and ahead" (was ahead at 12). Note for the next chat: this `build-script.py` regenerates everything from Craft and **does** import `cue` from each block's italic line, so cues need no separate sync — the older parser that treated `cue` as a protected route fact is gone. Facts fixed: Kjarval's **1968 bequest** replaces "roughly 5,000 works", Kerið is **one of a dozen or so Grímsnes eruptions** and its duplicated scoria/hematite bullets are merged, Hveragerði **~3,350 (3,344 at the start of 2026)** not 2,982, Ölfusá **400 m³/s** not 423, the cave family is **Iceland's** last not Europe's, and it's the **Hreppar block**, not the Hreppar Fault. `sw.js` → `gcd29-v2`. **`golden-circle-direct.html` no longer contains any tour script** — since the multi-tour split, `index.html` loads `script-<id>.js` at runtime, so the single file and the backup gist are the shell only, and the gist is no longer a working offline copy of the script. **[Corrected later the same day — see the 25 Aug one-file entry below: the single file now bundles all three tours and all twenty language packs, and the gist is a working offline copy again. It is also now named `iguide-iceland.html`.]**
+- 25 Aug 2026 — **Kjalarnesþing's pin was 6.2 km past the site, and there are TWO pre-Alþingi assemblies, not one that moved.** Ritchie spotted the pin. Chasing it down took Minjastofnun's own `fornleifaskráning` WFS (`gis.lmi.is/geoserver/Minjastofnun/wfs`, layers `fornleifaskraning_punktar` / `_flakar`, EPSG:3057) — the national register, with survey coordinates, not prose. It holds both as separate entries:
+  · **Leiðvöllur, on Esjuberg, Kjalarnes** — `1896-30`, `minjaheild: þingminjar`, `hlutverk: búð`, **`aldur: 930-`**, `tegund: heimild` (known from written source), `astand: sést ekki` (nothing visible), `verndun: friðað`. **64.206967, -21.732971.**
+  · **The assembly at Elliðavatn** — **13 entries**, `1000-013`…`1000-025`, `serheiti: Kjalarnesþing`, `hlutverk: þingstaður`, `tegund: tóft` (twelve) + one `hleðsla`, **`aldur: 800-1100`**, `verndun: friðlýst`, surveyed **25 June 2025**. Site is **70 m × 45 m**. **64.081037, -21.787356.**
+  **Elliðavatn is the OLDER of the two (800 vs 930)** — the register has it the opposite way round from the script's "started on Kjalarnes, later shuffled down to Þingnes". Two mistakes of mine on the way, both corrected: I first pinned **Þingneshólmi**, an islet 400 m north of the real ruins, and then treated the two assemblies as one moving þing — misled by the register filing the *Elliðavatn* ruins under the name `Kjalarnesþing`. They are 14.2 km apart.
+  **Shipped:** cue `1.5`'s target moves `Kjalarnes (64.2421793, -21.8315022)` -> `Leiðvöllur, Esjuberg (Kjalarnesþing)`. Distance **10,471 m -> 4,327 m**, clock stays **9** (coach heading 43°, target bearing 317°), and it is now genuinely *at the foot of Esja* as the cue claims. `sw.js` -> `gcd43-v1`.
+  **NOT shipped, needs Ritchie:** the Elliðavatn assembly has **no block of its own** — it is only a passing mention inside the Elliðavatn/Rauðhólar text. From cue `1.34` (Rauðhólar) it is **2.8 km at 225°**, an easy point-out on the way home. If it gets a block, `64.081037, -21.787356` is the pin. The script's ordering of the two þings should be revisited in Craft against `aldur 800-1100` vs `930-`.
 - 25 Aug 2026 — **renamed: the app is iGuide - Iceland.** It stopped being "Golden Circle Direct" the moment it grew a tour picker — that is one of the three tours inside it, not the thing itself. Changed: `<title>`, `apple-mobile-web-app-title` (**iGuide** — that is what fits under a home-screen icon), `application-name`, and the manifest's `name` / `short_name` / `description`. Manifest `theme_color` and `background_color` were still `#0e1114` from before the theme port and are now `#0d0d0f`, so the splash and status bar match the app instead of sitting a shade off it. The one-file build is now **`iguide-iceland.html`** — `git mv`'d, `build-single.py` updated, and the gist carries the new filename. **The repo and the live URL deliberately did NOT change:** renaming the repo moves the GitHub Pages address, and that link is being tested tomorrow morning. It stays `iphoneiceland.github.io/golden-circle-direct/` until there is a quiet day to move it. `sw.js` -> `gcd42-v1`.
 - 25 Aug 2026 — **the tour scripts speak twenty languages.** Not the welcome and the safety card — **the stories themselves**. `i18n-strings.py` pulls every translatable line out of all three tours into one corpus: **864 unique strings, 19,801 words**, deduplicated across tours, each keyed by a **hash of its own English text**. Nothing is keyed by position, so a line shared between 1.0 and 5.0 is translated once and lands in both, a future tour reuses whatever it already has in common, and reordering blocks can never shift a translation onto the wrong line. `i18n-chunks.py` splits the corpus into three even-by-WORDS chunks; sixty translation passes filled them; `i18n-build.py` validates and emits `i18n/tours/<lang>.js` — **3.3 MB for the twenty**, loaded one at a time when a tour opens. Deliberately NOT translated: the name and the pronunciation in `🗣️ How to say it` — only the gloss that explains it. Icelandic stays Icelandic.
   **Validation is not optional here and the validator earned its keep.** Several translation passes shared a scratch directory and had their input swapped underneath them mid-run; most caught it themselves, **`sv-3` did not** — it came back the right length with **255 of its 308 lines carrying ids from a different chunk**. `i18n-build.py --check` compares every id against the chunk it claims to come from, in order, and refuses to build on a mismatch. It caught it, that chunk was redone, and the rebuild is clean: **864/864 in all twenty, zero unbalanced `**` spans, zero untranslated leftovers.** The remaining flags were read and cleared by hand — "numbers lost" is spelled-out numerals (`klukkan níu`, `九点钟方向`, `XII i XIII wiek`), "bold count differs" is an emphasis span split by grammar (`**Iceland's second**` -> `**İzlanda**'nın **ikinci**`). No fact moved.
@@ -104,7 +110,7 @@ route-6.0.js               417.9 km / 439 min, 7 legs, 5,873 points (via Skógaf
 cues-6.0.js                31 cues
 fonts/                     Norse.woff2, NorseBold.woff2 — self-hosted, no CDN
 images/                    iguide-logo-stacked.svg, iguide-logo-line.svg, favicon-64.png
-sw.js                      service worker. Cache-first, versioned. **gcd42-v1**
+sw.js                      service worker. Cache-first, versioned. **gcd43-v1**
 manifest.webmanifest       PWA manifest — installs to the home screen
 icon-192.png icon-512.png
 vendor/                    Leaflet 1.9.4, vendored. No CDN.
@@ -126,19 +132,19 @@ i18n-build.py              validates _tr/out/*.jsonl and writes i18n/tours/<lang
 ### Checksums at handover
 ```
 index.html                53456fbf28f974abf286a9bf1ab053e260cb7a5c9bbc863e217cd615aaf2e899
-iguide-iceland.html       b95bdc952f391bf03a80626479dc21ca86bfe36706e9e41cc130325d348172e1
+iguide-iceland.html       fb261126737ee98f1f4c09c40cf30e9fd144f1c4f9090a1b79bb123df1c37f7c
 tours.js                  9746ab3e217921af8f1712c93511a6b6b2adcd60b3820a0c6caf426fa089f47e
 briefing.js               08b59d2574b9ea5b29d5796f01411858ae0a92f0e7ecec5120ef2b4f704c35eb
 script-1.0.js             344c9c479cf43d957960a54bf2b9cf72f00341594ca68da0ff12b76a5fed4967
 route-1.0.js              e44a25d98d169782e063e72d7ca356c75c6aeb37b6d623519bd9a7078e98087d
-cues-1.0.js               fe39b54a9ef0cdb257746bb2c3c93767780a601988f75064b961b3567794bbe2
+cues-1.0.js               085cf49b69b8b85e43eac3f8a5c1c30683e2fd7eff84c7fb714fa5b9e2d49713
 script-5.0.js             5f790c0f4d2341f919e301a6ca9f8cb0c83dabc3d3274b43fd4b0e3efbe15442
 route-5.0.js              c4082022bdcafcf424bf7a8b7b4cafd97ee41452a6994de07299ab93310d9a8d
 cues-5.0.js               85fe7febea6cb08cb4fc797f70335d091ac4cbdcb5c051aed3e9d43f8ca2f0d2
 script-6.0.js             d1d6f5007461b11274554569acdbc0f4c9911b50cd8afc62cdcd44412f6cdb07
 route-6.0.js              c8a40cacddd8f307bdbfd8c5de6f3ec3fa1249f31d1341502b64ac061dfc3b9c
 cues-6.0.js               18a420a2a05e83415cb07253029380ac365a0179c7b2dedd1839a07257c85b2b
-sw.js                     fa72675bc26e0ce517f12347e5de1f9b422d5f1a2334d572087de890b026d0c2
+sw.js                     f82b796cb19ef3740263af222dfd94207f6117f2b41cbc1025d45672e78d1d27
 i18n/*.js (rolled up)     1758e332712f12657d00c5fb2907ef0a92ab08782e31f14c8c794935c4350e56
 ```
 
@@ -301,6 +307,8 @@ gh gist edit 6ace26177d8f304a4dc8d77c5dccba7a -a iguide-iceland.html
 ## 10. What isn't done
 
 - [ ] Five cue directions above — decide and apply
+- [ ] **The Elliðavatn assembly (800–1100) has no block.** Pin `64.081037, -21.787356`, visible 2.8 km at 225° from Rauðhólar. And the script's order of the two þings contradicts the register — fix in Craft
+- [ ] **Minjastofnun's WFS is now a Tier-1 source for anything on the ground in Iceland** — `gis.lmi.is/geoserver/Minjastofnun/wfs`, ISN93/EPSG:3057, bbox queries in 3057 (4326 bbox returns nothing). Beats guessing from prose
 - [ ] Selfoss bridge dates — verify and correct
 - [ ] The seven internal contradictions — resolve in Craft, then regenerate `script-1.0.js`
 - [ ] 1.16 Laugarvatn's cue point is 19 km from the lake; the cursor logic pushed it past. Cosmetic, worth a nudge
