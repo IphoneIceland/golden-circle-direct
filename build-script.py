@@ -16,7 +16,20 @@ import json, re, os, sys
 CRAFT = os.path.expanduser("~/Documents/RitchWiki/Tour Scripts/1.0 Golden Circle Direct.md")
 OUT   = "script-1.0.js"
 
+
+def _dedent(raw):
+    """Craft sometimes exports the whole document shifted right by a uniform
+    margin, which silently breaks every ^-anchored pattern here. Strip the
+    common indent; relative indentation (say-lists, children) survives."""
+    lines = raw.split("\n")
+    pads = [len(l) - len(l.lstrip(" ")) for l in lines if l.strip()]
+    common = min(pads) if pads else 0
+    if not common:
+        return raw
+    return "\n".join(l[common:] if l.strip() else "" for l in lines)
+
 raw = open(CRAFT, encoding="utf-8").read()
+raw = _dedent(raw)
 lines = raw.split("\n")
 
 def clean(t):

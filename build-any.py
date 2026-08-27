@@ -13,11 +13,28 @@ import json, re, os, sys
 
 name, out = sys.argv[1], sys.argv[2]
 src = os.path.expanduser("~/Documents/RitchWiki/Tour Scripts/%s.md" % name)
+
+def _dedent(raw):
+    """Craft sometimes exports the whole document shifted right by a uniform
+    margin, which silently breaks every ^-anchored pattern here. Strip the
+    common indent; relative indentation (say-lists, children) survives."""
+    lines = raw.split("\n")
+    pads = [len(l) - len(l.lstrip(" ")) for l in lines if l.strip()]
+    common = min(pads) if pads else 0
+    if not common:
+        return raw
+    return "\n".join(l[common:] if l.strip() else "" for l in lines)
+
 raw = open(src, encoding="utf-8").read()
+raw = _dedent(raw)
+
 raw = re.split(r'^\s*\+? ?#{1,2} 🧵 Threads', raw, flags=re.M)[0]
 
 NEW = bool(re.search(r'^\+ #{1,2}\s', raw, re.M))
-SEC = re.compile(r'^\+ #{1,2}\s+(.*)$') if NEW else re.compile(r'^## \s*(.*)$')
+# Craft freely mixes "## " and "+ ## " headings inside ONE export, so the
+# section pattern accepts both, always. Non-route headings (the doc title,
+# safety card) are filtered below by their emoji, not by their markup.
+SEC = re.compile(r'^\+? ?#{1,2}\s+(.*)$')
 BLK = re.compile(r'^\s*> #{2,3}\s+(.*)$')
 CUE = re.compile(r'^\s*> \*(.+?)\*\s*$')
 SAYH= re.compile(r'^\s*(?:\+ #{2,3}\s*)?🗣️')
@@ -47,8 +64,8 @@ for ln in raw.split("\n"):
     if m:
         head = clean(m.group(1))
         close_section()
-        if head.startswith("⚠️") or head.startswith("🧵"):
-            sec = None; continue                     # safety briefing / index: not script
+        if not (head.startswith("📍") or head.startswith("🚌")):
+            sec = None; continue    # doc title, safety card, threads index: not script
         kind = "stop" if head.startswith("📍") else "drive"
         sec = {"title": re.sub(r'^[📍🚌]\s*','',head).rstrip("."), "kind": kind, "blocks": []}
         in_say=False; continue

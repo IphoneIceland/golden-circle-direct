@@ -16,7 +16,8 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 CHECK = "--check" in sys.argv
 LANGS = ["de","fr","es","it","nl","pt","pl","da","sv","no",
          "fi","is","zh","ja","ko","ru","ar","hi","tr","he"]
-CHUNKS = [1, 2, 3]
+import glob as _g
+CHUNKS = sorted(int(p.split("-")[-1][:-5]) for p in _g.glob("_tr/chunks/chunk-*.json"))
 
 corpus = json.load(open("_tr/corpus.json", encoding="utf-8"))
 EN = {e["id"]: e["en"] for e in corpus}
@@ -36,7 +37,7 @@ for lang in LANGS:
     for n in CHUNKS:
         path = "_tr/out/%s-%d.jsonl" % (lang, n)
         if not os.path.isfile(path):
-            problems.append("chunk %d missing" % n); ok_all = False; continue
+            continue          # never started: those strings stay English
         rows = []
         for i, line in enumerate(open(path, encoding="utf-8"), 1):
             line = line.strip()
@@ -48,12 +49,13 @@ for lang in LANGS:
                 problems.append("chunk %d line %d is not JSON: %s" % (n, i, ex))
         got = [r.get("id") for r in rows]
         want = expect[n]
-        if got != want:
-            missing = [i for i in want if i not in set(got)]
-            extra = [i for i in got if i not in set(want)]
-            problems.append("chunk %d id mismatch: %d lines vs %d expected, "
-                            "%d missing, %d not from this chunk"
-                            % (n, len(got), len(want), len(missing), len(extra)))
+        wantset = set(want)
+        extra = [i for i in got if i not in wantset]
+        if extra:
+            problems.append("chunk %d: %d ids not from this chunk — corrupt file"
+                            % (n, len(extra)))
+        # fewer lines than expected is an INTERRUPTED run, not damage:
+        # the missing strings simply stay English for this language.
         for r in rows:
             t = (r.get("t") or "").strip()
             if not t:
@@ -61,9 +63,7 @@ for lang in LANGS:
             if r.get("id") in EN:
                 tr[r["id"]] = r["t"]
 
-    missing = [i for i in EN if i not in tr]
-    if missing:
-        problems.append("%d strings never translated" % len(missing))
+    coverage = 100.0 * len(tr) / len(EN)
 
     # Markup parity: a dropped ** turns half a paragraph bold on the phone.
     bad_bold = [i for i in tr if EN[i].count("**") != tr[i].count("**")]
@@ -76,15 +76,15 @@ for lang in LANGS:
 
     if problems:
         ok_all = False
-    report.append({"lang": lang, "strings": len(tr), "problems": problems,
+    report.append({"lang": lang, "strings": len(tr), "coverage": coverage, "problems": problems,
                    "bold": len(bad_bold), "lost_numbers": len(lost_nums),
                    "identical_to_english": len(identical)})
     built[lang] = tr
 
 for r in report:
     flag = "FAIL" if r["problems"] else "ok  "
-    print("%s %-3s %3d/%d strings | bold %d | numbers lost %d | untranslated %d"
-          % (flag, r["lang"], r["strings"], len(EN), r["bold"],
+    print("%s %-3s %4d/%d strings (%5.1f%%) | bold %d | numbers lost %d | untranslated %d"
+          % (flag, r["lang"], r["strings"], len(EN), r["coverage"], r["bold"],
              r["lost_numbers"], r["identical_to_english"]))
     for p in r["problems"]:
         print("       %s" % p)

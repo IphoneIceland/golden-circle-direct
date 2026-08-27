@@ -10,13 +10,13 @@ window.__TOURS__ = [
   {id:"1.0", ready:true,  name:"Golden Circle Direct",
    sub:"BSÍ → Þingvellir → Geysir → Gullfoss → Kerið → BSÍ"},
 
-  {id:"2.0", ready:false, name:"Golden Circle Snowmobiling",
+  {id:"2.0", ready:true , name:"Golden Circle Snowmobiling",
    sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ"},
 
-  {id:"3.0", ready:false, name:"Golden Circle Lagoons",
+  {id:"3.0", ready:true , name:"Golden Circle Lagoons",
    sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ"},
 
-  {id:"4.0", ready:false, name:"Golden Circle Friðheimar",
+  {id:"4.0", ready:true , name:"Golden Circle Friðheimar",
    sub:"Anticlockwise — BSÍ → Friðheimar → Gullfoss → Geysir → Þingvellir → BSÍ"},
 
   {id:"5.0", ready:true,  name:"South Coast",
@@ -25,6 +25,6 @@ window.__TOURS__ = [
   {id:"6.0", ready:true,  name:"South Coast Combo",
    sub:"BSÍ → Hvolsvöllur → Skógafoss → Reynisfjara → Vík"},
 
-  {id:"7.0", ready:false, name:"Glacial Lagoon",
+  {id:"7.0", ready:true , name:"Glacial Lagoon",
    sub:"BSÍ → Skógafoss → Kirkjubæjarklaustur → Jökulsárlón → Vík → Reykjavík"}
 ];
