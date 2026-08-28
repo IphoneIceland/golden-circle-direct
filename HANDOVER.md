@@ -1,9 +1,12 @@
 # HANDOVER — iGuide - Iceland
 
-**True as of 26 Aug 2026, 02:05 GMT.** Paste this into a fresh chat and you lose nothing.
+**True as of 26 Aug 2026, morning.** Paste this into a fresh chat and you lose nothing.
 
 **Changelog**
 - 25 Aug 2026 — **1.0 resynced from the corrected Craft manuscript.** Re-exported the Craft doc and re-ran `build-script.py`; 6 sections / 35 blocks / block ids all unchanged. Five delivery cues were wrong on the bus and are now right — **Hekla** right at **1 o'clock** (was 11, and its weather pivot and pronunciation gloss carried the old clock too), **Rauðhólar left at 9** (was right at 3), **Ölfusárbrú** "we're crossing it now — look down" (was right at 3), **Kjalarnes** left at 9, **ten kilometres off** (was "At Kjalarnes"), **Esja** "left and ahead" (was ahead at 12). Note for the next chat: this `build-script.py` regenerates everything from Craft and **does** import `cue` from each block's italic line, so cues need no separate sync — the older parser that treated `cue` as a protected route fact is gone. Facts fixed: Kjarval's **1968 bequest** replaces "roughly 5,000 works", Kerið is **one of a dozen or so Grímsnes eruptions** and its duplicated scoria/hematite bullets are merged, Hveragerði **~3,350 (3,344 at the start of 2026)** not 2,982, Ölfusá **400 m³/s** not 423, the cave family is **Iceland's** last not Europe's, and it's the **Hreppar block**, not the Hreppar Fault. `sw.js` → `gcd29-v2`. **`golden-circle-direct.html` no longer contains any tour script** — since the multi-tour split, `index.html` loads `script-<id>.js` at runtime, so the single file and the backup gist are the shell only, and the gist is no longer a working offline copy of the script. **[Corrected later the same day — see the 25 Aug one-file entry below: the single file now bundles all three tours and all twenty language packs, and the gist is a working offline copy again. It is also now named `iguide-iceland.html`.]**
+- 26 Aug 2026 — **ALL SEVEN TOURS ARE LIVE**, built from tonight's fresh Craft exports via `add-tour.py`: 2.0 (37 blocks, 231.4 km), 3.0 (37, 231.4), 4.0 (37, 238.3, anticlockwise), 7.0 (43, 779.9). 1.0 resynced — the Craft renumbering to per-section ids broke the cue join, so `cues-1.0.js` was **remapped by title** (emoji-stripped fallback) and the new **Laxnes Horse Farm** block got a pin (64.1839, -21.5916); 36/36 joined. Parser fixes that mattered: Craft exports arrive **indented by a uniform margin** (both builders now dedent first) and **mix `## ` with `+ ## ` headings in one document** (section regex accepts both; route sections are recognised by their 🚌/📍 emoji, not markup — this also stopped three literal heading lines being swallowed as bullets in 6.0).
+  **Translations: the corpus is now 1,984 strings / 43,905 words.** Five languages are at **100%: de, fr, es, it, nl.** Partial (new strings fall back to English per-string at runtime, never break): pt 83%, no 60%, pl 57%, sv 56%, da 52%, and fi/is/zh/ja/ko/ru/ar/hi/tr/he at 35.5% (welcome/safety/UI + the original three tours' shared lines). `i18n-build.py` now tolerates interrupted chunk files — only corrupt lines fail. Four damaged pt lines were quarantined. **The account's weekly limit kept cutting translation agents; the remaining 14 languages' chunks 4–7 resume from `_tr/out/<lang>-<n>.jsonl` whenever credits allow.**
+  Shipped as `sw.js` **gcd48-v1**, one-file build 5.5 MB (7 tours), gist refreshed and md5-matched. Verified in-browser: 4.0 opens in Italian end-to-end (37 blocks, 9 legs, BSÍ origin, anticlockwise track Friðheimar→Gullfoss→Geysir→Þingvellir), zero console errors.
 - 26 Aug 2026 — **the app is now built for seven tours, not three.** Scripts for 2.0, 3.0, 4.0 and 7.0 live in Craft but have no route, pins or translations yet, so the app had no way to show them without lying. `tours.js` gains a **`ready` flag**; the picker greys and disables anything not built and prints *coming soon* — the same treatment an untranslated language gets, and `ui.soon` was added to **all twenty language packs** so it isn't a lone English word on a Japanese screen.
   New **`add-tour.py <id>`** takes a Craft export all the way to a live tour in one command: finds the export, runs `build-any.py`, runs `build-route.py`, verifies all three files load, checks **one cue per block**, flips `ready:true`, regenerates `SHELL_FILES` in `sw.js` from `tours.js` (so the cache list can no longer drift from reality), bumps `VERSION`, and prints the translation steps still owed. It refuses to flip `ready` on a tour whose data is missing or short — a half-built tour in the picker is worse than no tour. `--check` dry-runs it, and it rejects a Craft export under 20 KB as a truncated pull.
   `build-single.py` now **skips unbuilt tours** instead of dying — but still fails loudly if a `ready:true` tour has no data, because that is a picker card that opens onto nothing.
@@ -99,7 +102,7 @@ Search box hits any word anywhere in the script — `Björk` → 1.26, `tölt` �
 ### Files
 ```
 index.html                 the app — welcome, picker, track, script, map. 32 KB
-tours.js                   the tour list the picker reads. 7 listed, 3 ready (1.0, 5.0, 6.0)
+tours.js                   the tour list the picker reads. ALL 7 ready
 add-tour.py                Craft export -> live tour, one command: python3 add-tour.py 7.0
 briefing.js                English welcome (3 items), safety briefing (11 items), the 21-language list
 i18n/xx.js                 20 translations of the above + the UI strings. 88 KB the lot
@@ -115,7 +118,7 @@ route-6.0.js               417.9 km / 439 min, 7 legs, 5,873 points (via Skógaf
 cues-6.0.js                31 cues
 fonts/                     Norse.woff2, NorseBold.woff2 — self-hosted, no CDN
 images/                    iguide-logo-stacked.svg, iguide-logo-line.svg, favicon-64.png
-sw.js                      service worker. Cache-first, versioned. **gcd44-v1**
+sw.js                      service worker. Cache-first, versioned. **gcd48-v1**
 manifest.webmanifest       PWA manifest — installs to the home screen
 icon-192.png icon-512.png
 vendor/                    Leaflet 1.9.4, vendored. No CDN.
