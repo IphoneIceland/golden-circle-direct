@@ -77,6 +77,17 @@ button.mini{padding:2px 8px;font-size:12px}
     </div>
   </div>
 </div>
+<script>
+// ---- PIN gate. Change the PIN here. ----
+const BACKOFFICE_PIN="731905";
+(function(){
+  try{ if(localStorage.getItem("bo-ok")===BACKOFFICE_PIN) return; }catch(e){}
+  const a=prompt("PIN");
+  if(a===BACKOFFICE_PIN){ try{localStorage.setItem("bo-ok",a);}catch(e){} return; }
+  document.documentElement.innerHTML="<body style=\'background:#0d0d0f\'></body>";
+  throw new Error("no");
+})();
+</script>
 <script src="tours.js"></script>
 <script>
 const TOURS = window.__TOURS__.filter(t=>t.ready!==false);
