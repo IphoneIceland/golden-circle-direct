@@ -24,12 +24,23 @@ PLACES = {
   # 7.0 Glacial Lagoon, out east
   "KIRK":"Kirkjubæjarklaustur, Iceland", "FJAL":"Fjallsárlón, Iceland",
   "JOKU":"Jökulsárlón, Iceland", "FELL":"Breiðamerkursandur Diamond Beach, Iceland",
+  # 8.0 Snæfellsnes — the likely stop vocabulary; the script's headings pick
+  # which of these actually get used, in what order
+  "BORG":"Borgarnes, Iceland", "YTRI":"Ytri-Tunga, Snæfellsbær, Iceland",
+  "BUDI":"Búðir, Snæfellsbær, Iceland", "ARNA":"Arnarstapi, Iceland",
+  "HELN":"Hellnar, Iceland", "DJUP":"Djúpalónssandur, Iceland",
+  "VATN":"Vatnshellir, Iceland", "OLAF":"Ólafsvík, Iceland",
+  "KIRF":"Kirkjufellsfoss, Grundarfjörður, Iceland",
+  "STYK":"Stykkishólmur, Iceland", "BERS":"Berserkjahraun, Iceland",
 }
 NICE = {"BSI":"BSÍ Bus Terminal","HVOL":"Hvolsvöllur","SOLH":"Sólheimajökull",
         "REYN":"Reynisfjara","VIK":"Vík í Mýrdal","SKOG":"Skógafoss","SELJ":"Seljalandsfoss",
         "THIN":"Þingvellir","GEYS":"Geysir","GULL":"Gullfoss","FRID":"Friðheimar",
         "KIRK":"Kirkjubæjarklaustur","FJAL":"Fjallsárlón","JOKU":"Jökulsárlón",
-        "FELL":"Fellsfjara"}
+        "FELL":"Fellsfjara",
+        "BORG":"Borgarnes","YTRI":"Ytri-Tunga","BUDI":"Búðir","ARNA":"Arnarstapi",
+        "HELN":"Hellnar","DJUP":"Djúpalónssandur","VATN":"Vatnshellir","OLAF":"Ólafsvík",
+        "KIRF":"Kirkjufell","STYK":"Stykkishólmur","BERS":"Berserkjahraun"}
 
 # Order matters: this is a substring match, first hit wins. Reykjavík sits above
 # Vík so a heading that ends "→ Reykjavík" can never be read as the Vík stop,
@@ -41,6 +52,11 @@ MATCH = [("Reykjavík","BSI"),("BSÍ","BSI"),
          ("Fellsfjara","FELL"),("Diamond Beach","FELL"),
          ("Þingvellir","THIN"),("Haukadalur","GEYS"),("Geysir","GEYS"),
          ("Gullfoss","GULL"),("Friðheimar","FRID"),("Fríðheimar","FRID"),
+         ("Borgarnes","BORG"),("Ytri-Tunga","YTRI"),("Ytri Tunga","YTRI"),
+         ("Búðir","BUDI"),("Búðakirkja","BUDI"),("Arnarstapi","ARNA"),
+         ("Hellnar","HELN"),("Djúpalónssandur","DJUP"),("Vatnshellir","VATN"),
+         ("Ólafsvík","OLAF"),("Kirkjufell","KIRF"),("Grundarfjörður","KIRF"),
+         ("Stykkishólmur","STYK"),("Berserkjahraun","BERS"),
          ("Vík","VIK")]
 
 # Anything in here is pinned by hand and never geocoded.
@@ -49,6 +65,8 @@ MATCH = [("Reykjavík","BSI"),("BSÍ","BSI"),
 # stop in the same places, not 200 m away because a geocoder felt differently.
 # (Nominatim resolves "Geysir, Haukadalur" to Geysir Cottages, a hotel.)
 FIXED = {
+  "YTRI": (64.80697, -23.07516),   # the Snæfellsnes seal beach — Iceland has a
+                                   # second Ytri-Tunga up north Nominatim prefers
   "THIN": (64.26362, -21.13039),   # = cue 1.11 pin, Þingvellir
   "GEYS": (64.31167, -20.29869),   # = cue 1.20 pin, the geothermal field
   "GULL": (64.32526, -20.13084),   # = cue 1.21 pin, Gullfoss
