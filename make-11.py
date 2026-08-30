@@ -12,6 +12,9 @@ import re, os
 SRC = next(p for p in [os.path.expanduser("~/Documents/RitchWiki"), os.path.expanduser("~/mnt/RitchWiki")] if os.path.isdir(p)) + "/Tour Scripts/_source Solar Eclipse (for 11.0).md"
 OUT = next(p for p in [os.path.expanduser("~/Documents/RitchWiki"), os.path.expanduser("~/mnt/RitchWiki")] if os.path.isdir(p)) + "/Tour Scripts/11.0 Snæfellsnes.md"
 
+import sys as _sys
+if os.path.exists(OUT):
+    _sys.exit("REFUSING: %s already exists — it has hand edits (eclipse excision). Move it aside first if you really want to regenerate." % OUT)
 raw = open(SRC, encoding="utf-8").read()
 lines = raw.split("\n")
 
