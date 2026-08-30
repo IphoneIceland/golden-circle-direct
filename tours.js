@@ -28,6 +28,6 @@ window.__TOURS__ = [
   {id:"7.0", ready:true , name:"Glacial Lagoon",
    sub:"BSÍ → Skógafoss → Kirkjubæjarklaustur → Jökulsárlón → Vík → Reykjavík"},
 
-  {id:"11.0", ready:false, name:"Snæfellsnes",
+  {id:"11.0", ready:true , name:"Snæfellsnes",
    sub:"BSÍ → Ytri-Tunga → Arnarstapi → Djúpalónssandur → Kirkjufell → BSÍ"}
 ];

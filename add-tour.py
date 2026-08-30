@@ -6,7 +6,7 @@ Take a tour from a Craft export to live in the app, in one command.
   python3 add-tour.py 7.0 --check      # say what would happen, change nothing
 
 It does, in order:
-  1. finds the Craft export for that tour under ~/Documents/RitchWiki/Tour Scripts
+  1. finds the Craft export for that tour under ~/Documents/RitchWiki (or ~/mnt/RitchWiki when linked)/Tour Scripts
   2. build-any.py   -> script-<id>.js     (content, verbatim from the document)
   3. build-route.py -> route-<id>.js + cues-<id>.js  (geocode + OSRM)
   4. flips ready:true in tours.js
@@ -26,7 +26,7 @@ if not args:
     sys.exit("usage: python3 add-tour.py <tour id, e.g. 7.0> [--check]")
 TID = args[0]
 
-SCRIPTS = os.path.expanduser("~/Documents/RitchWiki/Tour Scripts")
+SCRIPTS = next(p for p in [os.path.expanduser("~/Documents/RitchWiki"), os.path.expanduser("~/mnt/RitchWiki")] if os.path.isdir(p)) + "/Tour Scripts"
 TOURS   = open("tours.js", encoding="utf-8").read()
 
 entry = re.search(r'\{id:"%s".*?\}' % re.escape(TID), TOURS, re.S)

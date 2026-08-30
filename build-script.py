@@ -4,7 +4,7 @@ Generates script-1.0.js from the Craft document. Nothing else goes in.
 
   python3 build-script.py [--check]
 
-Source: ~/Documents/RitchWiki/Tour Scripts/1.0 Golden Circle Direct.md
+Source: ~/Documents/RitchWiki (or ~/mnt/RitchWiki when linked)/Tour Scripts/1.0 Golden Circle Direct.md
 
 Sections are its top-level "+ #" / "+ ##" headings, blocks its "> ##" / "> ###"
 headings, in document order. A block carries only what the document carries:
@@ -13,7 +13,7 @@ fenced blocks, and the 🗣️ list. Nothing is invented, nothing is dropped.
 """
 import json, re, os, sys
 
-CRAFT = os.path.expanduser("~/Documents/RitchWiki/Tour Scripts/1.0 Golden Circle Direct.md")
+CRAFT = next(p for p in [os.path.expanduser("~/Documents/RitchWiki"), os.path.expanduser("~/mnt/RitchWiki")] if os.path.isdir(p)) + "/Tour Scripts/1.0 Golden Circle Direct.md"
 OUT   = "script-1.0.js"
 
 

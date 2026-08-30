@@ -12,7 +12,7 @@ Only what the document holds goes in. Nothing invented.
 import json, re, os, sys
 
 name, out = sys.argv[1], sys.argv[2]
-src = os.path.expanduser("~/Documents/RitchWiki/Tour Scripts/%s.md" % name)
+src = next(p for p in [os.path.expanduser("~/Documents/RitchWiki"), os.path.expanduser("~/mnt/RitchWiki")] if os.path.isdir(p)) + "/Tour Scripts/%s.md" % name
 
 def _dedent(raw):
     """Craft sometimes exports the whole document shifted right by a uniform
