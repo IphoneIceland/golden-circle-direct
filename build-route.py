@@ -122,17 +122,39 @@ r=fetch("http://router.project-osrm.org/route/v1/driving/%s?overview=full&geomet
 geo=[[round(c[1],5),round(c[0],5)] for c in r["geometry"]["coordinates"]]
 legs=[{"km":round(l["distance"]/1000,1),"min":round(l["duration"]/60)} for l in r["legs"]]
 tot=sum(l["km"] for l in legs)
+
 prog=[0.0]; a=0.0
 for l in legs: a+=l["km"]; prog.append(round(a/tot*100,2))
-at={}
-for i,k in enumerate(seq): at.setdefault(k,prog[i])
-
-ends=[]; hi=0.0
+# Walk the stop sequence with a CURSOR, so a tour that returns to its start
+# maps the final "→ BSÍ" to the journey's END, not to BSÍ's first appearance
+# at 0% — which used to freeze the drawn route halfway on every loop tour.
+ends=[]; cursor=0; hi=0.0
 for sec in S["sections"]:
     dest = sec["title"].split("→")[-1] if "→" in sec["title"] else sec["title"]
-    p=at.get(keyfor(dest), prog[-1])
+    k=keyfor(dest)
+    p=None
+    if k is not None:
+        for j in range(cursor,len(seq)):
+            if seq[j]==k:
+                p=prog[j]; cursor=j; break
+    if p is None: p=prog[-1]
     if p<hi: p=hi
-    hi=p; ends.append((p,keyfor(dest)))
+    hi=p; ends.append((p,k))
+# the last section always closes the journey
+if ends: ends[-1]=(prog[-1],ends[-1][1])
+
+# cumulative distance table, so a drive block's pin can sit ON the road at its
+# own progress — the dot then travels every block, as tour 1.0 already does
+import math as _m
+def _hav(a,c):
+    R=6371.0;p1,p2=_m.radians(a[0]),_m.radians(c[0])
+    dp=p2-p1;dl=_m.radians(c[1]-a[1])
+    h=_m.sin(dp/2)**2+_m.cos(p1)*_m.cos(p2)*_m.sin(dl/2)**2
+    return 2*R*_m.asin(_m.sqrt(h))
+
+cum=[0.0]
+for _i in range(1,len(geo)): cum.append(cum[-1]+_hav(geo[_i-1],geo[_i]))
+tot=cum[-1] if cum[-1]>0 else tot
 
 cues=[]
 for si,sec in enumerate(S["sections"]):
@@ -144,8 +166,10 @@ for si,sec in enumerate(S["sections"]):
             cues.append({"id":b["id"],"progress":round(end,2),"pin":{"lat":lat,"lon":lon},
                          "target":{"lat":lat,"lon":lon,"name":NICE[key]}})
         else:
-            cues.append({"id":b["id"],"progress":round(start+(end-start)*((bi+1)/n),2),
-                         "pin":None,"target":None})
+            pgs=round(start+(end-start)*((bi+1)/n),2)
+            gi=min(range(len(cum)),key=lambda x:abs(cum[x]-tot*pgs/100.0))
+            cues.append({"id":b["id"],"progress":pgs,
+                         "pin":{"lat":geo[gi][0],"lon":geo[gi][1]},"target":None})
 
 open("route-%s.js"%tag,"w",encoding="utf-8").write(
  "// %s route — OSRM driving via %s. Stop coordinates from OpenStreetMap.\nwindow.__ROUTE__ = %s;\n"
