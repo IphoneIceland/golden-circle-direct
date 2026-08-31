@@ -905,6 +905,15 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .endbtn.ghost{background:rgba(20,20,26,.7);color:var(--ink)}
   #endclose{position:absolute;top:16px;left:16px;background:none;border:1px solid var(--line);border-radius:10px;
     width:44px;height:44px;color:var(--accent);font-size:20px;cursor:pointer}
+  @media (min-width: 900px){
+    #wrap{display:grid;grid-template-rows:auto auto auto minmax(0,1fr);
+          grid-template-columns:minmax(0,11fr) minmax(0,9fr)}
+    #topbar,#track,#steps{grid-column:1/-1}
+    #days{grid-row:4;grid-column:1;border-right:1px solid var(--line)}
+    #map{grid-row:4;grid-column:2;flex:none;height:auto;min-height:0;border-top:none;
+         box-shadow:none}
+    .slbl{font-size:13px}
+  }
   #uptoast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%) translateY(80px);z-index:9999;
   background:#16161a;color:#d4a94a;border:1px solid #d4a94a;border-radius:12px;padding:.7rem 1.1rem;
   font-weight:600;letter-spacing:.02em;box-shadow:0 6px 24px rgba(0,0,0,.5);cursor:pointer;
@@ -2197,9 +2206,9 @@ function updateWX(){
   el.style.display="none";
   if(!navigator.onLine) return;
   const sec=S.sections[SI];
-  if(sec.kind==="stop") return;
   let ns=null;
-  for(let i=SI+1;i<S.sections.length;i++) if(S.sections[i].kind==="stop"){ ns=S.sections[i]; break; }
+  if(sec.kind==="stop") ns=sec;            // here and now
+  else for(let i=SI+1;i<S.sections.length;i++) if(S.sections[i].kind==="stop"){ ns=S.sections[i]; break; }
   if(!ns) return;
   const c=ns.blocks.map(b=>CUE[b.id]).find(x=>x&&x.pin);
   if(!c) return;
@@ -2225,6 +2234,7 @@ function render(){
   try{ localStorage.setItem("gcd-pos",JSON.stringify({id:TOUR.id,si:SI,bi:BI})); }catch(e){}
   updateWX();
   list.innerHTML=blockRow(b,sec.kind);
+  try{ list.animate([{opacity:.45},{opacity:1}],{duration:160,easing:"ease-out"}); }catch(e){}
   list.querySelectorAll(".stop[data-key]").forEach(r=>r.classList.add("open"));
   list.scrollTop=0;
   paintTrack();
@@ -2349,6 +2359,8 @@ document.addEventListener("keydown",e=>{
   if(e.key==="ArrowRight"){e.preventDefault();step(1);}
 });
 map.on("zoomend",()=>{document.getElementById("zhint").style.display=map.getZoom()>=11?"none":"block";});
+let __rsz;window.addEventListener("resize",()=>{clearTimeout(__rsz);__rsz=setTimeout(()=>map.invalidateSize(),200);});
+setTimeout(()=>map.invalidateSize(),400);
 
 
 render();
