@@ -610,11 +610,7 @@ const map = L.map("map",{fadeAnimation:false}).setView([64.15,-20.9],8);
 // size: genuinely twice the pixels on a phone, and Leaflet clamps at maxNativeZoom
 // so it never reaches for the grey.
 const SAT = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-  // maxNativeZoom 14, NOT 18: Esri's World_Imagery has no high-zoom cover over
-  // Thingvellir - z15+ there returns its grey "Map data not yet available" tile
-  // (8.5 KB placeholder vs ~12 KB real). Capping at 14 makes Leaflet upscale a
-  // real tile instead of drawing grey. Verified 31 Aug 2026 against the tile server.
-  {maxZoom:19, maxNativeZoom:14, detectRetina:true, attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'});
+  {maxZoom:19, maxNativeZoom:18, detectRetina:true, attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'});
 const TERRAIN = L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
   {maxZoom:19, maxNativeZoom:15, attribution:'&copy; OpenTopoMap, &copy; OpenStreetMap contributors'});
 const DARK = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",{maxZoom:19,
