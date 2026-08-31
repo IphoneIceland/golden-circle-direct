@@ -273,7 +273,7 @@
         flex:none;min-width:2.1rem}
   .trkb{min-width:0}
   .trkt{font-family:'Norse',var(--sans);font-size:1.2rem;letter-spacing:.035em;color:var(--ink);margin:0 0 .1rem}
-  .trka{color:var(--accent);font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;margin:0 0 .5rem}
+  .trka{display:inline;color:var(--accent);font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;margin:0}.trka::before{content:' \2014 ';color:rgba(212,169,74,.55)}.actcard{display:flex;gap:.85rem;align-items:flex-start;margin:1.5rem 0 .9rem;padding:.85rem .95rem;border-radius:14px;background:linear-gradient(180deg,rgba(212,169,74,.10),rgba(212,169,74,.03));border:1px solid rgba(212,169,74,.32)}.actn{font-family:'Norse',var(--sans);font-size:1.7rem;line-height:1;color:var(--accent);flex:none;min-width:2.1rem;text-align:center}.actt{font-family:'Norse',var(--sans);font-size:1.15rem;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin:0 0 .35rem}
   .trkq{color:var(--mute);font-size:.94rem;line-height:1.6}
   .trkth{display:inline-block;margin-top:.6rem;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;
          color:var(--accent);border:1px solid rgba(212,169,74,.4);border-radius:999px;padding:.2rem .7rem}
@@ -741,9 +741,17 @@ function trkCard(s){
   const th = /\s*\[([^\]]+)\]\s*$/.exec(story);
   if(th){ thread = th[1]; story = story.slice(0, th.index); }
   return `<li class="trkcard"><span class="trkn">${esc(m[1])}</span><div class="trkb">`
-       + `<div class="trkt">${esc(m[2])}</div><div class="trka">${esc(m[3])}</div>`
+       + `<div class="trkt">${esc(m[2])}<span class="trka">${esc(m[3])}</span></div>`
        + (story?`<div class="trkq">${md(story)}</div>`:"")
        + (thread?`<span class="trkth">${esc(thread)}</span>`:"")
+       + `</div></li>`;
+}
+function actCard(s){
+  const m = /^\*\*ACT\s+([IVX]+)\s+—\s+([^*]+?)\.?\*\*\s*([\s\S]*)$/.exec(s);
+  if(!m) return null;
+  return `<li class="actcard"><span class="actn">${esc(m[1])}</span><div class="trkb">`
+       + `<div class="actt">${esc(m[2])}</div>`
+       + (m[3]?`<div class="trkq">${md(m[3])}</div>`:"")
        + `</div></li>`;
 }
 function md(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g,"<i>$1</i>"); }
@@ -809,7 +817,7 @@ function blockRow(b, kind){
     <div class="blkbody">
       ${b.hook?`<div class="hook">${md(b.hook)}</div>`:""}
       ${heads}${pre}
-      ${(b.bullets&&b.bullets.length)?`<ul class="blist">${b.bullets.map(x=>trkCard(x)||`<li>${md(x)}</li>`).join("")}</ul>`:""}
+      ${(b.bullets&&b.bullets.length)?`<ul class="blist">${b.bullets.map(x=>trkCard(x)||actCard(x)||`<li>${md(x)}</li>`).join("")}</ul>`:""}
       ${b.point?`<div class="pt">${md(b.point)}</div>`:""}
       ${b.mic?`<div class="mc">${md(b.mic)}</div>`:""}
       ${b.weather?`<div class="wx">${md(b.weather)}</div>`:""}
