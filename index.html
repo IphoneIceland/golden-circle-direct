@@ -221,17 +221,11 @@
     border-radius:12px;padding:10px 12px;margin:0 0 14px;font:500 12.5px/1.5 var(--sans);color:var(--mute)}
   #a2hs b{color:var(--ink)}
   #a2hs button{margin-left:auto;background:none;border:none;color:var(--accent);font-size:16px;cursor:pointer;padding:4px}
-  #wx{position:absolute;z-index:640;left:10px;bottom:26px;background:rgba(13,13,15,.82);
-    border:1px solid var(--line);border-radius:99px;padding:6px 12px;
-    font:600 11px/1 var(--sans);letter-spacing:.04em;color:var(--ink);display:none;
-    -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
-  #wx .wl{color:var(--accent)}
-  /* GPS-fed "next stop" chip: sits one shelf above the weather */
-  #eta{position:absolute;z-index:640;left:10px;bottom:64px;background:rgba(13,13,15,.85);
-    border:1px solid var(--accent);border-radius:99px;padding:6px 12px;
-    font:600 11px/1 var(--sans);letter-spacing:.04em;color:var(--ink);display:none;
-    -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
-  #eta .el{color:var(--accent)}
+  /* One pill in the topbar: next stop, distance, time, weather. The map keeps its corners. */
+  #chip{flex:0 1 auto;min-width:0;max-width:62%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+    margin-left:auto;background:rgba(13,13,15,.85);border:1px solid var(--accent);border-radius:99px;
+    padding:7px 12px;font:600 11px/1 var(--sans);letter-spacing:.04em;color:var(--ink);display:none}
+  #chip .cl{color:var(--accent)}
   /* Night mode: the map is a torch on a dark bus, so the tiles dim first */
   #nightbtn{width:44px;height:44px;border-radius:10px;background:none;border:1px solid var(--line);
     color:var(--dim);font-size:17px;line-height:1;cursor:pointer;margin-left:8px;font-family:var(--sans)}
@@ -352,12 +346,13 @@
     <button id="fontbtn" title="Text size" aria-label="Text size">Aa</button>
     <button id="nightbtn" title="Night mode: auto" aria-label="Night mode">☾</button><a id="gnp" href="#" target="_blank" rel="noopener" aria-live="polite" hidden><img id="gnpArt" alt=""><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="t" id="gnpTxt"></span></a>
     <span id="offpill" data-en="OFFLINE · ALL GOOD">OFFLINE · ALL GOOD</span>
+    <span id="chip"></span>
     <span id="tourname"></span>
   </div>
   <div id="track"></div>
   <div id="steps"></div>
   <div id="days"></div>
-  <div id="map"><div id="zhint">Zoom in further to show place names</div><button id="gpsbtn" title="Follow the bus" aria-label="Follow the bus">➤</button><div id="wx"></div><div id="eta"></div></div>
+  <div id="map"><div id="zhint">Zoom in further to show place names</div><button id="gpsbtn" title="Follow the bus" aria-label="Follow the bus">➤</button></div>
 </div>
 </div>
 
@@ -928,32 +923,42 @@ function paintTrack(){
 }
 
 const WXC={};
+// One chip, two feeders: updateWX names the stop and fetches its weather;
+// the GPS loop adds distance and minutes when it has a fix. paintChip merges.
+const CHIP={name:null,km:null,min:null,wx:null};
+function paintChip(){
+  const el=document.getElementById("chip");
+  if(!CHIP.name){ el.style.display="none"; return; }
+  let h='<span class="cl">'+esc(CHIP.name)+'</span>';
+  if(CHIP.km!=null) h+=' · '+(CHIP.km<10?CHIP.km.toFixed(1):Math.round(CHIP.km))+' km · ~'+CHIP.min+' min';
+  const w=CHIP.wx;
+  if(w){ h+=' · '+Math.round(w.t)+'°';
+         if(w.pp>=25) h+=' ☔'+Math.round(w.pp)+'%';
+         if(w.ws>=10) h+=' 💨'+Math.round(w.ws); }
+  el.innerHTML=h; el.style.display="inline-block";
+}
+window.__setEta=(name,km,min)=>{ if(name) CHIP.name=name; CHIP.km=km; CHIP.min=min; paintChip(); };
 function updateWX(){
-  const el=document.getElementById("wx");
-  el.style.display="none";
-  if(!navigator.onLine) return;
   const sec=S.sections[SI];
   let ns=null;
   if(sec.kind==="stop") ns=sec;            // here and now
   else for(let i=SI+1;i<S.sections.length;i++) if(S.sections[i].kind==="stop"){ ns=S.sections[i]; break; }
-  if(!ns) return;
+  if(!ns){ if(CHIP.km==null){ CHIP.name=null; } paintChip(); return; }
+  if(CHIP.km==null) CHIP.name=ns.title;    // while GPS is driving, its stop name wins
+  if(!navigator.onLine){ CHIP.wx=null; paintChip(); return; }
   const c=ns.blocks.map(b=>CUE[b.id]).find(x=>x&&x.pin);
-  if(!c) return;
+  if(!c){ paintChip(); return; }
   const key=c.pin.lat.toFixed(2)+","+c.pin.lon.toFixed(2);
   const now=Date.now();
-  const paint=w=>{
-    el.innerHTML='<span class="wl">'+esc(ns.title)+'</span> · '+Math.round(w.t)+'°C · '+
-                 Math.round(w.ws)+' m/s'+(w.pp>=25?' · ☔'+Math.round(w.pp)+'%':'');
-    el.style.display="block";
-  };
-  if(WXC[key] && now-WXC[key].at<9e5){ paint(WXC[key]); return; }
+  if(WXC[key] && now-WXC[key].at<9e5){ CHIP.wx=WXC[key]; paintChip(); return; }
+  paintChip();
   fetch("https://api.open-meteo.com/v1/forecast?latitude="+c.pin.lat+"&longitude="+c.pin.lon+
         "&current=temperature_2m,wind_speed_10m,precipitation_probability&wind_speed_unit=ms")
     .then(r=>r.json()).then(j=>{
       const cu=j.current||{};
       const w={t:cu.temperature_2m,ws:cu.wind_speed_10m,pp:cu.precipitation_probability||0,at:Date.now()};
       if(typeof w.t!=="number") return;
-      WXC[key]=w; paint(w);
+      WXC[key]=w; CHIP.wx=w; paintChip();
     }).catch(()=>{});
 }
 function render(){
@@ -1047,22 +1052,18 @@ function step(d){
   async function grabLock(){ try{ wl=await navigator.wakeLock.request("screen"); }catch(e){} }
   function dropLock(){ try{ if(wl) wl.release(); }catch(e){} wl=null; }
   document.addEventListener("visibilitychange",()=>{ if(watch!=null && !document.hidden) grabLock(); });
-  // Next-stop chip: how far, how long, fed by the same GPS fix
-  const eta=document.getElementById("eta");
+  // Distance + minutes for the topbar chip, fed by the same GPS fix
   function updateETA(pr){
-    if(pr==null){ eta.style.display="none"; return; }
+    if(pr==null){ __setEta(null,null,null); return; }
     let ns=null, sp=0;
     for(const sec of S.sections){
       if(sec.kind!=="stop"||!sec.blocks.length) continue;
       const p=PROG[sec.blocks[0].id];
       if(p>pr+0.05){ ns=sec; sp=p; break; }
     }
-    if(!ns){ eta.style.display="none"; return; }
+    if(!ns){ __setEta(null,null,null); return; }
     const km=(sp-pr)/100*TOTAL;      // CUM/TOTAL are km already
-    const min=Math.max(1,Math.round(km*(R.min/R.km)));
-    eta.innerHTML='<span class="el">'+esc(ns.title)+'</span> · '+
-                  (km<10?km.toFixed(1):Math.round(km))+' km · ~'+min+' min';
-    eta.style.display="block";
+    __setEta(ns.title, km, Math.max(1,Math.round(km*(R.min/R.km))));
   }
   function nearestProgress(la,lo){
     let bd=1e18,bi=0;
@@ -1098,12 +1099,12 @@ function step(d){
       navigator.geolocation.clearWatch(watch); watch=null; pausedUntil=0;
       btn.classList.remove("on","paused");
       if(mark){mark.remove();mark=null;} if(ring){ring.remove();ring=null;}
-      eta.style.display="none"; dropLock();
+      __setEta(null,null,null); dropLock();
       return;
     }
     watch=navigator.geolocation.watchPosition(tick,err=>{
       navigator.geolocation.clearWatch(watch); watch=null; btn.classList.remove("on");
-      eta.style.display="none"; dropLock();
+      __setEta(null,null,null); dropLock();
       banner("Location unavailable — check permissions in your browser settings.");
       setTimeout(()=>{const w=document.getElementById("tilewarn"); if(w) w.remove();},6000);
     },{enableHighAccuracy:true,maximumAge:4000,timeout:15000});
