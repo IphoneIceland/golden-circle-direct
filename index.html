@@ -191,7 +191,7 @@
             font-family:"Norse",var(--serif);font-weight:700;font-size:19px;letter-spacing:.01em;
             color:var(--accent);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   /* a postcard from the place you just parked at */
-  .stopphoto{margin:14px 0 4px;border-radius:14px;overflow:hidden;border:1px solid var(--line);
+  .stopphoto{margin:4px 0 14px;border-radius:14px;overflow:hidden;border:1px solid var(--line);
     box-shadow:0 4px 18px rgba(0,0,0,.35)}
   .stopphoto img{display:block;width:100%;max-height:240px;object-fit:cover}
   .stopphoto figcaption{font:500 9.5px/1.4 var(--sans);color:var(--dim);padding:5px 10px;
@@ -215,6 +215,10 @@
   #gpsbtn.on{border-color:var(--accent);color:var(--accent);box-shadow:0 0 14px rgba(212,169,74,.35)}
   #gpsbtn.paused{border-color:var(--accent);color:var(--accent);opacity:.55}
   @keyframes gpspulse{0%{box-shadow:0 0 0 0 rgba(94,200,242,.5)}70%{box-shadow:0 0 0 14px rgba(94,200,242,0)}100%{box-shadow:0 0 0 0 rgba(94,200,242,0)}}
+  .heredot{width:12px;height:12px;border-radius:50%;background:var(--accent);
+    border:2px solid #fff;box-sizing:border-box;animation:herepulse 2.4s ease-out infinite}
+  @keyframes herepulse{0%{box-shadow:0 0 0 0 rgba(212,169,74,.55)}
+    70%{box-shadow:0 0 0 9px rgba(212,169,74,0)}100%{box-shadow:0 0 0 0 rgba(212,169,74,0)}}
   .gpsdot{width:14px;height:14px;border-radius:50%;background:#5ec8f2;border:2.5px solid #fff;
       animation:gpspulse 2s infinite}
   #resume{display:flex;align-items:center;gap:12px;width:100%;text-align:left;cursor:pointer;
@@ -814,8 +818,9 @@ function actCard(s){
 function md(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g,"<i>$1</i>"); }
 
 // One marker: where you are now.
-const HERE = L.circleMarker([0,0],{radius:8,color:"#fff",weight:3,fillColor:"#5ec8f2",fillOpacity:1,
-  pane:"markerPane"});
+// The story dot: smaller, gold, breathing - and no longer dressed like the GPS dot.
+const HERE = L.marker([0,0],{interactive:false,zIndexOffset:900,pane:"markerPane",
+  icon:L.divIcon({className:"",iconSize:[12,12],iconAnchor:[6,6],html:'<div class="heredot"></div>'})});
 // Faint sightline from the bus to whatever the cue says to look at.
 const SIGHT = L.polyline([],{color:"#d4a94a",weight:1.5,opacity:.6,dashArray:"2,7",interactive:false});
 const SIGHTDOT = L.circleMarker([0,0],{radius:4,color:"#d4a94a",weight:1.5,fill:false,opacity:.75,interactive:false});
@@ -903,8 +908,8 @@ function blockRow(b, kind){
       <div class="sc"><div class="sn">${b.emoji?b.emoji+" ":""}${esc(b.title)}</div>
       ${b.sub?`<div class="sub">${esc(b.sub)}</div>`:""}
       ${b.cue?`<div class="look">${esc(b.cue)}</div>`:""}</div></div>
-    ${ph?`<figure class="stopphoto"><img src="${ph.src}" alt="" loading="lazy"><figcaption>📷 ${esc(ph.cr)}</figcaption></figure>`:""}
     <div class="blkbody">
+      ${ph?`<figure class="stopphoto"><img src="${ph.src}" alt="" loading="lazy"><figcaption>📷 ${esc(ph.cr)}</figcaption></figure>`:""}
       ${b.hook?`<div class="hook">${md(b.hook)}</div>`:""}
       ${heads}${pre}
       ${(b.bullets&&b.bullets.length)?`<ul class="blist">${b.bullets.map(x=>trkCard(x)||actCard(x)||`<li>${md(x)}</li>`).join("")}</ul>`:""}
