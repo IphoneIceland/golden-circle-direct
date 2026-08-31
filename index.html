@@ -290,6 +290,27 @@
   .trkq{color:var(--mute);font-size:.94rem;line-height:1.6}
   .trkth{display:inline-block;margin-top:.6rem;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;
          color:var(--accent);border:1px solid rgba(212,169,74,.4);border-radius:999px;padding:.2rem .7rem}
+
+/* ---- what's on the bus stereo, live from Spotify -----------------------
+   Same feed as the website (/now on our own Spotify worker). Sits low and
+   small so it never fights the script, and only exists while music is
+   actually playing. -------------------------------------------------- */
+#gnp{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom,0px) + 10px);
+  z-index:40;display:none;align-items:center;gap:.55rem;max-width:min(88vw,22rem);
+  padding:.4rem .8rem .4rem .4rem;border-radius:999px;text-decoration:none;
+  background:rgba(18,18,22,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border:1px solid rgba(212,169,74,.28);box-shadow:0 6px 22px rgba(0,0,0,.5);
+  color:var(--mute,#cbc4b0)}
+#gnp.on{display:flex}
+#gnp img{width:28px;height:28px;border-radius:6px;object-fit:cover;flex:none;background:rgba(244,240,230,.06)}
+#gnp .t{min-width:0;font-size:.78rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  color:var(--ink,#f4f0e6)}
+#gnp .eq{display:inline-flex;align-items:flex-end;gap:2px;height:11px;flex:none}
+#gnp .eq i{width:2.5px;border-radius:2px;background:var(--accent,#d4a94a);height:3px;
+  animation:gnpb .9s ease-in-out infinite}
+#gnp .eq i:nth-child(2){animation-delay:.15s}#gnp .eq i:nth-child(3){animation-delay:.3s}
+@keyframes gnpb{0%,100%{height:3px;opacity:.6}50%{height:11px;opacity:1}}
+@media (prefers-reduced-motion:reduce){#gnp .eq i{animation:none;height:7px}}
 </style>
 </head>
 <body>
@@ -1152,6 +1173,31 @@ if("serviceWorker" in navigator) window.addEventListener("load",()=>{
     });
   }).catch(()=>{});
 });
+</script>
+<a id="gnp" href="#" target="_blank" rel="noopener" aria-live="polite">
+<img id="gnpArt" alt=""><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+<span class="t" id="gnpTxt"></span></a>
+<script>
+/* ---- now playing, straight from our own Spotify worker ------------------ */
+(function(){
+  var el=document.getElementById('gnp');
+  if(!el) return;
+  var art=document.getElementById('gnpArt'), txt=document.getElementById('gnpTxt');
+  var SRC='https://little-limit-8eeb.richardjsuffling.workers.dev/now';
+  function tick(){
+    if(document.hidden) return;
+    fetch(SRC,{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
+      if(!d||!d.playing||!d.title){ el.classList.remove('on'); return }
+      txt.textContent=d.title+(d.artist?' \u2014 '+d.artist:'');
+      if(d.art){ if(art.getAttribute('src')!==d.art) art.src=d.art; art.style.display=''; }
+      else art.style.display='none';
+      if(d.url) el.href=d.url;
+      el.classList.add('on');
+    }).catch(function(){ el.classList.remove('on') });
+  }
+  tick(); setInterval(tick,30000);
+  document.addEventListener('visibilitychange',function(){ if(!document.hidden) tick() });
+})();
 </script>
 </body>
 </html>
