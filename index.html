@@ -292,24 +292,27 @@
          color:var(--accent);border:1px solid rgba(212,169,74,.4);border-radius:999px;padding:.2rem .7rem}
 
 /* ---- what's on the bus stereo, live from Spotify -----------------------
-   Same feed as the website (/now on our own Spotify worker). Sits low and
-   small so it never fights the script, and only exists while music is
-   actually playing. -------------------------------------------------- */
-#gnp{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom,0px) + 10px);
-  z-index:40;display:none;align-items:center;gap:.55rem;max-width:min(88vw,22rem);
-  padding:.4rem .8rem .4rem .4rem;border-radius:999px;text-decoration:none;
-  background:rgba(18,18,22,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
-  border:1px solid rgba(212,169,74,.28);box-shadow:0 6px 22px rgba(0,0,0,.5);
-  color:var(--mute,#cbc4b0)}
-#gnp.on{display:flex}
-#gnp img{width:28px;height:28px;border-radius:6px;object-fit:cover;flex:none;background:rgba(244,240,230,.06)}
-#gnp .t{min-width:0;font-size:.78rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-  color:var(--ink,#f4f0e6)}
+   Sits in the toolbar beside the night button, same 44px rhythm as Aa and
+   the moon. Same feed as the website. Only appears while music is playing,
+   so the toolbar is never carrying a dead control. -------------------- */
+#gnp{display:none;align-items:center;gap:6px;height:44px;margin-left:8px;
+  padding:0 10px 0 6px;border-radius:10px;border:1px solid var(--line);
+  background:none;text-decoration:none;color:var(--dim);
+  max-width:min(42vw,220px);min-width:0}
+#gnp[hidden]{display:none!important}
+#gnp.on{display:inline-flex}
+#gnp:active{border-color:var(--accent)}
+#gnp img{width:30px;height:30px;border-radius:6px;object-fit:cover;flex:none;
+  background:rgba(244,240,230,.06)}
+#gnp .t{min-width:0;font-size:12px;line-height:1.15;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
 #gnp .eq{display:inline-flex;align-items:flex-end;gap:2px;height:11px;flex:none}
-#gnp .eq i{width:2.5px;border-radius:2px;background:var(--accent,#d4a94a);height:3px;
+#gnp .eq i{width:2.5px;border-radius:2px;background:var(--accent);height:3px;
   animation:gnpb .9s ease-in-out infinite}
 #gnp .eq i:nth-child(2){animation-delay:.15s}#gnp .eq i:nth-child(3){animation-delay:.3s}
 @keyframes gnpb{0%,100%{height:3px;opacity:.6}50%{height:11px;opacity:1}}
+/* the title is the first thing to go when the bar gets tight */
+@media (max-width:430px){ #gnp .t{display:none} #gnp{max-width:none;padding:0 8px} }
 @media (prefers-reduced-motion:reduce){#gnp .eq i{animation:none;height:7px}}
 </style>
 </head>
@@ -340,7 +343,7 @@
   <div id="topbar">
     <button id="home"></button>
     <button id="fontbtn" title="Text size" aria-label="Text size">Aa</button>
-    <button id="nightbtn" title="Night mode: auto" aria-label="Night mode">☾</button>
+    <button id="nightbtn" title="Night mode: auto" aria-label="Night mode">☾</button><a id="gnp" href="#" target="_blank" rel="noopener" aria-live="polite" hidden><img id="gnpArt" alt=""><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="t" id="gnpTxt"></span></a>
     <span id="offpill" data-en="OFFLINE · ALL GOOD">OFFLINE · ALL GOOD</span>
     <span id="tourname"></span>
   </div>
@@ -1174,9 +1177,6 @@ if("serviceWorker" in navigator) window.addEventListener("load",()=>{
   }).catch(()=>{});
 });
 </script>
-<a id="gnp" href="#" target="_blank" rel="noopener" aria-live="polite">
-<img id="gnpArt" alt=""><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
-<span class="t" id="gnpTxt"></span></a>
 <script>
 /* ---- now playing, straight from our own Spotify worker ------------------ */
 (function(){
@@ -1187,13 +1187,13 @@ if("serviceWorker" in navigator) window.addEventListener("load",()=>{
   function tick(){
     if(document.hidden) return;
     fetch(SRC,{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
-      if(!d||!d.playing||!d.title){ el.classList.remove('on'); return }
+      if(!d||!d.playing||!d.title){ el.classList.remove('on'); el.hidden=true; return }
       txt.textContent=d.title+(d.artist?' \u2014 '+d.artist:'');
       if(d.art){ if(art.getAttribute('src')!==d.art) art.src=d.art; art.style.display=''; }
       else art.style.display='none';
       if(d.url) el.href=d.url;
-      el.classList.add('on');
-    }).catch(function(){ el.classList.remove('on') });
+      el.hidden=false; el.classList.add('on');
+    }).catch(function(){ el.classList.remove('on'); el.hidden=true; });
   }
   tick(); setInterval(tick,30000);
   document.addEventListener('visibilitychange',function(){ if(!document.hidden) tick() });
