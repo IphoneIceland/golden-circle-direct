@@ -17,7 +17,7 @@ PLACES = {
   "BSI":"BSÍ Bus Terminal, Reykjavík, Iceland", "HVOL":"Hvolsvöllur, Iceland",
   "SOLH":"Sólheimajökull, Iceland", "REYN":"Reynisfjara, Iceland",
   "VIK":"Vík í Mýrdal, Iceland", "SKOG":"Skógafoss, Iceland",
-  "SELJ":"Seljalandsfoss, Iceland", "SELF":"Selfoss, Árborg, Iceland",
+  "SELJ":"Seljalandsfoss, Iceland",
   # Golden Circle stops — 1.0 through 4.0
   "THIN":"Þingvellir National Park, Iceland", "GEYS":"Geysir, Haukadalur, Iceland",
   "GULL":"Gullfoss, Iceland", "FRID":"Friðheimar, Reykholt, Iceland",
@@ -35,7 +35,6 @@ PLACES = {
 }
 NICE = {"BSI":"BSÍ Bus Terminal","HVOL":"Hvolsvöllur","SOLH":"Sólheimajökull",
         "REYN":"Reynisfjara","VIK":"Vík í Mýrdal","SKOG":"Skógafoss","SELJ":"Seljalandsfoss",
-        "SELF":"Selfoss",
         "THIN":"Þingvellir","GEYS":"Geysir","GULL":"Gullfoss","FRID":"Friðheimar",
         "KIRK":"Kirkjubæjarklaustur","FJAL":"Fjallsárlón","JOKU":"Jökulsárlón",
         "FELL":"Fellsfjara",
@@ -74,8 +73,6 @@ FIXED = {
   "GEYS": (64.31167, -20.29869),   # = cue 1.20 pin, the geothermal field
   "GULL": (64.32526, -20.13084),   # = cue 1.21 pin, Gullfoss
   "FRID": (64.17833, -20.44761),   # = cue 1.23 pin, Friðheimar
-  "SELF": (63.936809, -21.003532), # Selfoss town, Árborg (OSM). NEVER geocode "Selfoss" —
-                                   # Nominatim also answers with the waterfall up by Dettifoss.
 }
 
 # Iceland's bounding box. A geocoder that hands back a Fjallsárlón in Norway
@@ -109,11 +106,6 @@ for sec in S["sections"]:
     k=keyfor(dest)
     if k and k!=seq[-1]: seq.append(k)
 if seq[-1]!="BSI": seq.append("BSI")
-VIA = {"1.0":[("GULL","SELF")], "2.0":[("GULL","SELF")], "3.0":[("GULL","SELF")]}
-for after, ins in VIA.get(tag, []):
-    if after in seq and ins not in seq:
-        seq.insert(seq.index(after)+1, ins)
-
 print("stops:", " → ".join(NICE[k] for k in seq))
 
 PIN={}

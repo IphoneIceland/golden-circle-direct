@@ -493,7 +493,7 @@ sections: [
  tags:["#geology","#women","#film"],
 },
 ]},
-{title:"Gullfoss → Selfoss", kind:"drive", blocks:[
+{title:"Gullfoss → Reykjavík", kind:"drive", blocks:[
 {id:"1.0.6.1", title:"🎧 Music Leg", sub:"ACTS 1 & 2: Iceland Through the Years", cue:"Leaving Gullfoss. Playlist on, mic live between stops.",
  point:"Two acts, and somewhere in the middle a country stops borrowing and starts exporting.",
  mic:"Everything from here is Icelandic. Listen out around track twenty-two — that is the exact moment this small, cold, sheep-heavy island stopped copying everyone else and started getting copied.",
@@ -638,9 +638,7 @@ sections: [
  ],
  tags:["#geology"],
 },
-]},
-{title:"Selfoss → Reykjavík", kind:"drive", blocks:[
-{id:"1.0.7.1", title:"🎧 Music Leg", sub:"Rícharður's Mix: The Road Home", cue:"Into Selfoss — cue “Selfoss” by SVVN. Then Rícharður's Mix to BSÍ, with SVVN's “Hveragerði” as we drive through Hveragerði.",
+{id:"1.0.6.9", title:"🎧 Music Leg", sub:"Rícharður's Mix: The Road Home", cue:"Into Selfoss — cue “Selfoss” by SVVN. Then Rícharður's Mix to BSÍ, with SVVN's “Hveragerði” as we drive through Hveragerði.",
  point:"Eighteen tracks that go quiet, then loud, in exactly the shape of a good day ending.",
  mic:"The song playing right now is called Selfoss. We are, at this precise moment, in Selfoss. I would love to tell you I planned that.",
  bullets:[
@@ -649,7 +647,7 @@ sections: [
   "**Comes home loud.** **Of Monsters and Men**, *Coming Home* by Sjonni's Friends, Agent Fresco, *Fröken Reykjavík*, and **Emilíana Torrini** — closing on *Takk fyrir allt*. Thank you for everything. Seemed like the right last word.",
  ],
 },
-{id:"1.0.7.2", title:"🏗️ Selfoss", sub:"The Great Milk Collapse", cue:"We're crossing it now — look down. Ölfusárbrú.",
+{id:"1.0.6.10", title:"🏗️ Selfoss", sub:"The Great Milk Collapse", cue:"We're crossing it now — look down. Ölfusárbrú.",
  point:"The enemy that took out the Selfoss bridge wasn't an army. It was two overloaded trucks and a bridge built for lighter days.",
  mic:"The war couldn't blow this bridge up. A couple of dairy trucks did it on a Tuesday afternoon.",
  bullets:[
@@ -664,7 +662,7 @@ sections: [
  ],
  tags:["#wwii"],
 },
-{id:"1.0.7.3", title:"🧭 Ingólfur Arnarson", sub:"The Founder's Path", cue:"Look ahead at 12 o'clock — the Ring Road (Leið 1).",
+{id:"1.0.6.11", title:"🧭 Ingólfur Arnarson", sub:"The Founder's Path", cue:"Look ahead at 12 o'clock — the Ring Road (Leið 1).",
  point:"The modern Ring Road is the last chapter of that story — stitching together the coast Ingólfur started.",
  mic:"The saga begins with a man chasing two pillars. It ends with a whole nation driving the road that traces his coastline.",
  bullets:[
@@ -679,7 +677,7 @@ sections: [
  ],
  tags:["#migration"],
 },
-{id:"1.0.7.4", title:"🌋 Hveragerði", sub:"Quakes, Cakes and Steam", cue:"Look right at 3 o'clock — Hveragerði.",
+{id:"1.0.6.12", title:"🌋 Hveragerði", sub:"Quakes, Cakes and Steam", cue:"Look right at 3 o'clock — Hveragerði.",
  point:"Pizza baked by a volcano. Beer brewed with geothermal heat. A shopping mall built on an earthquake crack. Yes, all in the same town.",
  mic:"Most towns hide their disasters. Hveragerði put theirs in the lobby and charged admission.",
  bullets:[
@@ -698,7 +696,7 @@ sections: [
  ],
  tags:["#geology"],
 },
-{id:"1.0.7.5", title:"🏢 Hellisheiðarvirkjun", sub:"The Dragon's Breath", cue:"Look right at 2 o'clock — Hellisheiði geothermal plant.",
+{id:"1.0.6.13", title:"🏢 Hellisheiðarvirkjun", sub:"The Dragon's Breath", cue:"Look right at 2 o'clock — Hellisheiði geothermal plant.",
  point:"While the world debates carbon capture, Iceland dissolves the problem in water, files it under \"rocks,\" and moves on.",
  mic:"Your shower in Reykjavík tonight was heated by the same volcano that's currently filing CO₂ as gravel under your feet.",
  bullets:[
@@ -718,7 +716,7 @@ sections: [
  ],
  tags:["#technology","#geology"],
 },
-{id:"1.0.7.6", title:"⛰️ Kristnitökuhraun", sub:"The Decision Rock", cue:"Look left at 9 o'clock — Kristnitökuhraun, the Christianity Lava.",
+{id:"1.0.6.14", title:"⛰️ Kristnitökuhraun", sub:"The Decision Rock", cue:"Look left at 9 o'clock — Kristnitökuhraun, the Christianity Lava.",
  point:"A whole country's religion settled by a single, calm geology question.",
  mic:"The pagans claimed a volcano was voting. Snorri pointed out the ballot box was older than the religion.",
  bullets:[
@@ -736,7 +734,7 @@ sections: [
  ],
  tags:["#geology","#literature","#religion"],
 },
-{id:"1.0.7.7", title:"⛰️ Rauðhólar", sub:"The Mars Impostors", cue:"Look left at 9 o'clock — Rauðhólar.",
+{id:"1.0.6.15", title:"⛰️ Rauðhólar", sub:"The Mars Impostors", cue:"Look left at 9 o'clock — Rauðhólar.",
  point:"Two armies and one city carved up Iceland's Mars lab and paved it into a runway.",
  mic:"Eighty cones. One Mars classroom. Half of it now under your runway.",
  bullets:[
