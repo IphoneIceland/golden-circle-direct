@@ -267,11 +267,11 @@
   <button id="endclose" aria-label="Back to the tour">‹</button>
   <img src="images/logo-crest.webp" alt="iGuide Iceland">
   <h1>Takk fyrir!</h1>
-  <p>That's the tour — thank you for riding with iGuide Iceland. If today earned it, a review or a share means the world to a one-guide operation.</p>
-  <a class="endbtn gold" id="revbtn" hidden href="#" target="_blank" rel="noopener">⭐ Leave a Google review</a>
+  <p>That's the tour — thank you for riding with iGuide Iceland. If today earned it, leave a review — and please use Ritchie's name in it. That's the bit that actually counts.</p>
+  <a class="endbtn gold" href="https://www.tripadvisor.com/Attraction_Review-g189970-d1556635-Reviews-Reykjavik_Excursions_by_Icelandia-Reykjavik_Capital_Region.html" target="_blank" rel="noopener">⭐ Review on Tripadvisor</a>
   <a class="endbtn ghost" href="https://wa.me/3546441011" target="_blank" rel="noopener">💬 WhatsApp Ritchie</a>
   <a class="endbtn ghost" href="https://instagram.com/iguide.iceland" target="_blank" rel="noopener">📸 @iguide.iceland</a>
-  <button class="endbtn ghost" id="sharebtn">🔗 Share this app</button>
+  <a class="endbtn ghost" href="https://www.iguideiceland.is" target="_blank" rel="noopener">🌋 iguideiceland.is</a>
 </div>
 <div id="brief" hidden></div>
 <div id="wrap" hidden>
@@ -868,21 +868,8 @@ function render(){
   routeLine.setLatLngs(travelled(PROG[b.id]));
   focusBlock(b.id);
 }
-const REVIEW_URL="";   // Ritchie's Google-review link goes here when he sends it
-function showEnd(){
-  const es=document.getElementById("endscreen");
-  const rb=document.getElementById("revbtn");
-  if(REVIEW_URL){ rb.hidden=false; rb.href=REVIEW_URL; }
-  es.classList.add("show");
-}
+function showEnd(){ document.getElementById("endscreen").classList.add("show"); }
 document.getElementById("endclose").onclick=()=>document.getElementById("endscreen").classList.remove("show");
-document.getElementById("sharebtn").onclick=()=>{
-  const u="https://www.iguideiceland.is/app";
-  if(navigator.share) navigator.share({title:"iGuide Iceland",url:u}).catch(()=>{});
-  else if(navigator.clipboard) navigator.clipboard.writeText(u).then(()=>{
-    document.getElementById("sharebtn").textContent="✓ Link copied";
-  }).catch(()=>{});
-};
 function step(d){
   const f=flat(), pos=f.findIndex(x=>x.si===SI&&x.bi===BI)+d;
   if(pos>=f.length){ showEnd(); return; }
