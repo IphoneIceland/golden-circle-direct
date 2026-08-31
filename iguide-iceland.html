@@ -1802,7 +1802,7 @@ function showPicker(){
     const meta = [t.blocks?t.blocks+" stories":"", t.km?t.km+" km":"", dur?"~"+dur+" drive":""]
                  .filter(Boolean).join(" · ");
     b.innerHTML='<span class="off" data-tid="'+t.id+'">✓ ON THIS PHONE</span>'+
-                "<b>"+esc((t.group&&t.name.startsWith(t.group)&&t.name!==t.group)?t.name.slice(t.group.length).trim():t.name)+"</b><span>"+esc(t.sub)+"</span>"+
+                "<b>"+esc(t.group?(t.name===t.group?"Classic":(t.name.startsWith(t.group)?t.name.slice(t.group.length).trim():t.name)):t.name)+"</b><span>"+esc(t.sub)+"</span>"+
                 (meta?'<span class="meta">'+meta+'</span>':"")+
                 (ready?"":'<em class="soonlbl">'+((T()&&T().ui.soon)||"coming soon")+'</em>');
     if(ready) b.onclick=()=>openTour(t);
