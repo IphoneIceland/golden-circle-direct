@@ -1,1577 +1,2157 @@
 [
  {
-  "id": "6aec1c2a6d",
-  "ctx": "gloss for the name \"Almannagjá\" — tour 4.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "en": "the big crack you walk through; its west wall is the North American plate"
+  "id": "d477ca9d88",
+  "ctx": "block title — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🧍 Jóhannes Sveinsson Kjarval",
+  "en": "🧍 Jóhannes Sveinsson Kjarval"
  },
  {
-  "id": "dace608088",
-  "ctx": "gloss for the name \"Silfra\" — tour 4.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "en": "the clear pool of filtered glacier meltwater, visibility up to 120 m"
+  "id": "e091e45fb8",
+  "ctx": "fact bullet — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "en": "Upstream, on a low spit in **Elliðavatn** called **Þingnes**, sits the ground identified since **1841** as the **Kjalarnesþing** — **Iceland's first assembly**, held by **Þorsteinn Ingólfsson** (the first settler's son) before the national **Alþingi** of **930**. **Ari fróði** put that þing on **Kjalarnes**; the ruins are here, fourteen kilometres away, and nobody has ever closed the gap. The old ground now lies **partly underwater** since the river was dammed. Very Icelandic: invent democracy, mislay it, then flood it. (More on parliaments shortly.)"
  },
  {
-  "id": "1a6039bf87",
-  "ctx": "gloss for the name \"Langjökull\" — tour 4.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "en": "the glacier that water left 30–100 years ago"
+  "id": "3ec6a5020f",
+  "ctx": "cue, tells the guest where to look — tour 1.0 / BSÍ Bus Terminal → Þingvellir / ⚖️ Kjalarnesþing",
+  "en": "Look left at 9 o'clock — across Kollafjörður to Kjalarnes, under the foot of Esja, four kilometres off. We turn east before it."
  },
  {
-  "id": "84c74c5648",
-  "ctx": "gloss for the name \"Lögberg\" — tour 4.0 / Þingvellir / ⚖️ The Althing",
-  "en": "the \"Law Rock,\" the cliff wall that carried the spoken law across the valley"
+  "id": "28f54ff4c3",
+  "ctx": "fact bullet — tour 1.0 / BSÍ Bus Terminal → Þingvellir / ⚖️ Kjalarnesþing",
+  "en": "**Þorsteinn Ingólfsson** — son of **Ingólfur Arnarson**, Iceland's first settler — held the **Kjalarnesþing** before the national **Alþingi of 930**. Our only near-contemporary source is **Ari fróði**, writing around **1122–33**: *\"en áðr var þing á Kjalarnesi\"* — before that, the þing was on Kjalarnes. Tradition even credits Þorsteinn with **consecrating** that later national parliament — so the founder's son didn't just build the prototype, he blessed the sequel."
  },
  {
-  "id": "2caca7a97f",
-  "ctx": "gloss for the name \"goði / goðar\" — tour 4.0 / Þingvellir / ⚖️ The Althing",
-  "en": "the roughly 36 chieftain-priests who ran it, with no king"
+  "id": "fb46a7fdd8",
+  "ctx": "fact bullet — tour 1.0 / BSÍ Bus Terminal → Þingvellir / ⚖️ Kjalarnesþing",
+  "en": "**Here's the catch: nobody has ever found it on Kjalarnes.** **Jónas Hallgrímsson** went looking in **1841**, examined **Leiðvöllur** on the farm **Esjuberg**, and decided it was a footpath. The national register still lists that spot as *sést ekki* — nothing to see. What he found instead was **14 km away, at Þingnes on Elliðavatn**: around **20 booth foundations** and a **judgement ring 43 feet across** with a heap of stones in the middle. He proposed that was the Kjalarnesþing, and in **1930** the state made it official — the protection order calls Þingnes *hinn forni Kjalarnessþingstaður*. **Thirteen ruins are protected there today**, last surveyed in **June 2025**. The join between Ari's Kjalarnes and Jónas's Þingnes has **never been proven** — so Iceland's first parliament is a place we can name and can't quite find."
  },
  {
-  "id": "83588594af",
+  "id": "7a3601d2dc",
+  "ctx": "fact bullet — tour 1.0 / BSÍ Bus Terminal → Þingvellir / ⚖️ Kjalarnesþing",
+  "en": "Nothing was written down — Iceland had no writing worth the name — so **Úlfljótur carried the whole code home inside his head.** He was sent **shortly before 930** and spent **three winters** in Norway, landing home in time for the founding of the **Alþingi in 930**. What he recited is **Úlfljótslög**, the oldest law this country has. Úlfljótur supplied the text. Þingvellir only supplied the venue."
+ },
+ {
+  "id": "2ad849b7be",
+  "ctx": "gloss for the name \"Kjalarnesþing\" — tour 1.0 / BSÍ Bus Terminal → Þingvellir / ⚖️ Kjalarnesþing",
+  "en": "the assembly held before Alþingi; Ari places it on Kjalarnes"
+ },
+ {
+  "id": "d2e0a68308",
+  "ctx": "fact bullet — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Mosfellsdalur",
+  "en": "Two stops in the next kilometre: **Laxnes**, the farm that gave him his name — then **Gljúfrasteinn**, the house he built with the proceeds. Both coming up on the left."
+ },
+ {
+  "id": "d7ea2d26f4",
+  "ctx": "block title — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎬 Laxnes Horse Farm",
+  "en": "🎬 Laxnes Horse Farm"
+ },
+ {
+  "id": "7361ab703d",
+  "ctx": "cue, tells the guest where to look — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎬 Laxnes Horse Farm",
+  "en": "Look left on Route 36 — Laxnes, about 400 metres up the side road."
+ },
+ {
+  "id": "4e2c7da489",
+  "ctx": "the point of the block — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎬 Laxnes Horse Farm",
+  "en": "One small farm exported a breed to Hollywood **and** a surname to Stockholm."
+ },
+ {
+  "id": "b656b1bc7d",
+  "ctx": "the spoken close — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎬 Laxnes Horse Farm",
+  "en": "Some of these horses grazing by the road have better screen credits than most working actors. Don't ask for autographs — they only sign with a hoof."
+ },
+ {
+  "id": "76338d5217",
+  "ctx": "fact bullet — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎬 Laxnes Horse Farm",
+  "en": "**Ragnheiður Gíslason** and **Þórarinn \"Þóri\" Jónasson** moved onto the run-down farm in **1967** and started the riding business in **1968**, after a visitor asked out of nowhere whether they'd take him out on horseback. Six horses, summers only. It grew into **Iceland's oldest continuously running riding-tour company** — **120 horses** and around **15,000 riders a year** by **2018**, **85% of them from abroad**."
+ },
+ {
+  "id": "1910d3cdcc",
+  "ctx": "fact bullet — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎬 Laxnes Horse Farm",
+  "en": "Their horses work on screen too. The Mosfellsbær local paper *Mosfellingur* puts it plainly: **\"hestar frá Laxnesi birst í nokkrum bíómyndum eins og Game of Thrones\"** — horses from Laxnes have appeared in several films, *Game of Thrones* among them. In **1992** Þóri shipped Icelandic horses to the **United States** to show them off near Hollywood and ended up on **CBS and CNN**."
+ },
+ {
+  "id": "42441ac105",
+  "ctx": "fact bullet — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎬 Laxnes Horse Farm",
+  "en": "And the name. **Halldór Guðjónsson** was raised on this farm from the age of **three**. When he started publishing he took the farm's name — **Laxness** — and in **1955** that name won Iceland's **only Nobel Prize in Literature**. The house he built, **Gljúfrasteinn**, is **600 metres further up the valley**: our next stop."
+ },
+ {
+  "id": "b9f76409dd",
+  "ctx": "gloss for the name \"Laxnes\" — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎬 Laxnes Horse Farm",
+  "en": "the farm on the left: riding tours since 1968, and the boyhood home that gave Halldór his pen-name"
+ },
+ {
+  "id": "ac067fbf6c",
+  "ctx": "gloss for the name \"Mosfellsdalur\" — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎬 Laxnes Horse Farm",
+  "en": "the valley it sits in, off Route 36"
+ },
+ {
+  "id": "21d13907cf",
+  "ctx": "gloss for the name \"Ragnheiður Gíslason\" — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎬 Laxnes Horse Farm",
+  "en": "co-founder, who moved onto the farm in 1967"
+ },
+ {
+  "id": "98703ac038",
+  "ctx": "gloss for the name \"Þórarinn Jónasson\" — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎬 Laxnes Horse Farm",
+  "en": "her husband, known as Þóri"
+ },
+ {
+  "id": "0604997520",
+  "ctx": "gloss for the name \"Halldór Laxness\" — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎬 Laxnes Horse Farm",
+  "en": "the boy from this farm; Nobel Prize, 1955"
+ },
+ {
+  "id": "e63e967ba7",
+  "ctx": "cue, tells the guest where to look — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Gljúfrasteinn",
+  "en": "Look left — the white house by the river Kaldakvísl, right on Route 36."
+ },
+ {
+  "id": "e93e7a54fd",
+  "ctx": "fact bullet — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Gljúfrasteinn",
+  "en": "The typist was **Auður Sveinsdóttir**, born at **Eyrarbakki on 30 July 1918**, and she didn't just type it — she ran the build. She married **Halldór Laxness** that **Christmas Eve, 1945**. The architect was **Ágúst Pálsson**; the house was home from **1945** until Halldór died on **8 February 1998**. Auður outlived him by fourteen years, dying **29 October 2012**, aged **94**."
+ },
+ {
+  "id": "5f33f7f2f6",
+  "ctx": "fact bullet — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Gljúfrasteinn",
+  "en": "**1955:** Halldór takes Iceland's **only Nobel Prize in Literature** — *\"for his vivid epic power which has renewed the great narrative art of Iceland.\"* Auður marked it the way a textile artist would: she made **Maríuklæðið**, \"Mary's Cloth\", to commemorate it."
+ },
+ {
+  "id": "d7dff2b576",
+  "ctx": "fact bullet — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Gljúfrasteinn",
+  "en": "The **Icelandic state bought the house and its art in 2002**, a hundred years to the year since Halldór was born, and opened it to the public on **4 September 2004**. His **typewriter is still on the desk**."
+ },
+ {
+  "id": "e6d6c8de8d",
+  "ctx": "gloss for the name \"Gljúfrasteinn\" — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Gljúfrasteinn",
+  "en": "the poet's house: home from 1945, museum since 2004, typewriter still on the desk"
+ },
+ {
+  "id": "7d44dc0928",
+  "ctx": "gloss for the name \"Auður Sveinsdóttir\" — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Gljúfrasteinn",
+  "en": "his wife, who typed the contract and ran the build"
+ },
+ {
+  "id": "f5e4ca56e9",
+  "ctx": "gloss for the name \"Ágúst Pálsson\" — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Gljúfrasteinn",
+  "en": "the architect who designed the house"
+ },
+ {
+  "id": "1d9bca38bc",
+  "ctx": "gloss for the name \"Maríuklæðið\" — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Gljúfrasteinn",
+  "en": "\"Mary's Cloth\", the textile Auður made for the Nobel"
+ },
+ {
+  "id": "fb3f2bc0e3",
+  "ctx": "gloss for the name \"Kaldakvísl\" — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Gljúfrasteinn",
+  "en": "the river the house stands beside"
+ },
+ {
+  "id": "c4b1864b0c",
+  "ctx": "fact bullet — tour 1.0 / Gullfoss → Reykjavík / ⛰️ Rauðhólar",
+  "en": "One full-circle glance before the city: behind the cones lies **Elliðavatn** — and on a low spit in it, **Þingnes**, the only ground anyone has ever dug an assembly out of from this era: around **20 booth foundations** and a **judgement ring**, protected since **1930** as *the ancient Kjalarnesþing site*. Whether it really is the þing **Ari fróði** put on **Kjalarnes**, fourteen kilometres that way, nobody has ever proven — so you're leaving the Golden Circle past the country's first parliament grounds. Probably."
+ },
+ {
+  "id": "654ddecd90",
+  "ctx": "gloss for the name \"Borgarfjörður eystri\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🧍 Jóhannes Sveinsson Kjarval",
+  "en": "the east fjord where he was fostered out"
+ },
+ {
+  "id": "b63237a98b",
+  "ctx": "gloss for the name \"Geitavík\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🧍 Jóhannes Sveinsson Kjarval",
+  "en": "the foster farm that still calls him \"Jói í Geitavík\""
+ },
+ {
+  "id": "e3f448856e",
+  "ctx": "gloss for the name \"Appelsín\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🏢 Ölgerðin Egill Skallagrímsson",
+  "en": "their orange soda, drowned in malt every Christmas since 1955"
+ },
+ {
+  "id": "e9f673bb23",
+  "ctx": "gloss for the name \"Tómas Tómasson\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🏢 Ölgerðin Egill Skallagrímsson",
+  "en": "the founder, who started it in two basement bedrooms"
+ },
+ {
+  "id": "84c73ba947",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "en": "Iceland's *actual* first hydro plant was humbler: in **1904** a Hafnarfjörður carpenter, **Jóhannes Reykdal**, wired a generator to his workshop stream and lit **15 houses — the school and the Good Templars' hall among them — plus four street lamps**: officially \"Iceland's first power station,\" realistically a shed with big dreams."
+ },
+ {
+  "id": "b13ca44d99",
+  "ctx": "gloss for the name \"Elliðaárdalur\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "en": "the valley on the right that feeds, waters and powers the city"
+ },
+ {
+  "id": "ea510dccfb",
+  "ctx": "gloss for the name \"Elliðaá\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "en": "the river through it, with a wild Atlantic salmon run"
+ },
+ {
+  "id": "6e197ee904",
+  "ctx": "gloss for the name \"Elliðavatn\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "en": "the lake upstream, by the springs that give the city its tap water"
+ },
+ {
+  "id": "60a04d3ea1",
+  "ctx": "gloss for the name \"Þingnes\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "en": "the spit in that lake where Iceland's first assembly met"
+ },
+ {
+  "id": "519cd4734f",
+  "ctx": "gloss for the name \"Hafnarfjörður\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "en": "the town with Iceland's first power station, 1904"
+ },
+ {
+  "id": "17b07ec90c",
+  "ctx": "gloss for the name \"Reykdal\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "en": "Jóhannes Reykdal, the carpenter who wired it up"
+ },
+ {
+  "id": "d78406fc67",
+  "ctx": "gloss for the name \"Esja\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / ⛰️ Mount Esja",
+  "en": "the striped volcanic range on the skyline, Reykjavík's weather gauge"
+ },
+ {
+  "id": "5dfa0ca80e",
+  "ctx": "gloss for the name \"Hábunga\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / ⛰️ Mount Esja",
+  "en": "its true summit, 914 m, which almost nobody climbs"
+ },
+ {
+  "id": "564594ae29",
+  "ctx": "gloss for the name \"Steinn\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / ⛰️ Mount Esja",
+  "en": "the boulder near the top where hikers turn back"
+ },
+ {
+  "id": "17722266db",
+  "ctx": "gloss for the name \"móberg\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / ⛰️ Mount Esja",
+  "en": "the pale rock, lava shattered under a glacier"
+ },
+ {
+  "id": "8f256ca49b",
+  "ctx": "gloss for the name \"Úlfljótr\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / ⚖️ Kjalarnesþing",
+  "en": "the man sent to Norway for three years to bring back a law code"
+ },
+ {
+  "id": "454d75df41",
+  "ctx": "gloss for the name \"Gulating\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / ⚖️ Kjalarnesþing",
+  "en": "the Norwegian law he studied and adapted for home"
+ },
+ {
+  "id": "7f0134c23b",
+  "ctx": "gloss for the name \"Ólafur Arnalds\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🎵 Mosfellsbær",
+  "en": "the quiet-piano composer born here in 1986"
+ },
+ {
+  "id": "1d7c6fd6d5",
+  "ctx": "gloss for the name \"Kaleo\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🎵 Mosfellsbær",
+  "en": "the blues-rock band formed here in 2012"
+ },
+ {
+  "id": "1eb2eb1d27",
+  "ctx": "gloss for the name \"Nanna Bryndís\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🎵 Mosfellsbær",
+  "en": "of Of Monsters and Men, who sings on \"Particles\""
+ },
+ {
+  "id": "5ef98a2e39",
+  "ctx": "gloss for the name \"Vor í Vaglaskógi\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🎵 Mosfellsbær",
+  "en": "the Kaleo song, a cover of an Icelandic classic about a forest up north"
+ },
+ {
+  "id": "1acaa8b464",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Mosfellsdalur",
+  "en": "**The Nobel:** born **Halldór Guðjónsson** in **1902**, raised from age three at the farm **Laxnes** just here in the valley — when he needed an author's name, **he took the farm's**. **Nobel Prize for Literature, 1955** — Iceland's only laureate, largely for ***Sjálfstætt fólk*** (*Independent People*)."
+ },
+ {
+  "id": "be852a6f8c",
+  "ctx": "gloss for the name \"Mosfellsdalur\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Mosfellsdalur",
+  "en": "the valley all around us, with a Nobel and a buried fortune in it"
+ },
+ {
+  "id": "c072901676",
+  "ctx": "gloss for the name \"Halldór Laxness\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Mosfellsdalur",
+  "en": "the writer raised in this valley, Iceland's only Nobel laureate"
+ },
+ {
+  "id": "f92e8f7e45",
+  "ctx": "gloss for the name \"Sjálfstætt fólk\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Mosfellsdalur",
+  "en": "Independent People, the novel that won him the 1955 Nobel"
+ },
+ {
+  "id": "d0a7e6af24",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "**Raids & trade — who, why, what moved**"
+ },
+ {
+  "id": "e27947ff76",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "| **Region** | **Main targets** | **Why they came** | **Took/traded (N→S)** | **Got back (S→N)** |"
+ },
+ {
+  "id": "fcf91ba950",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "| --- | --- | --- | --- | --- |"
+ },
+ {
+  "id": "7b3eb8d7df",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "| England | Monasteries, towns | Wealth, slaves, land | Furs, amber, slaves, timber | Silver, gold, weapons |"
+ },
+ {
+  "id": "b25629a253",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "| Ireland | Monasteries, towns | Wealth, slaves, trade towns | Furs, amber, slaves, timber | Silver, gold, weapons |"
+ },
+ {
+  "id": "6cff1d40b6",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "| Scotland | Islands, towns | Land, cattle, slaves | Furs, amber, timber | Silver, weapons |"
+ },
+ {
+  "id": "1370633b19",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "| France | River towns, Paris | Ransom, loot, settlement | Furs, amber, timber, slaves | Silver, silk, weapons |"
+ },
+ {
+  "id": "f8c6eaddd6",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "| Spain/Portugal | Coastal cities | Slaves, spices, plunder | Furs, amber, timber, slaves | Silver, gold, silk, spices |"
+ },
+ {
+  "id": "4d478f4087",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "| Low Countries | Coastal towns | Trade control, markets | Furs, amber, timber, slaves | Silver, gold, luxury goods |"
+ },
+ {
+  "id": "19b08e2c41",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "| Baltic | Trading centres | Furs, amber, slaves | Furs, amber, timber, slaves | Silver, silk, spices |"
+ },
+ {
+  "id": "1a667d118f",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "| Eastern Europe | River trade towns | River-route control, silver | Furs, amber, slaves, timber | Silver (Arab coins), silk, spices |"
+ },
+ {
+  "id": "cdbf878ba8",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "| North Atlantic | Islands, new land | Farmland, resources | Furs, amber, timber, walrus ivory | Silver, weapons, exotic goods |"
+ },
+ {
+  "id": "c07b8e9459",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "| Morocco | Nekor (c. 859) | Gold, silver, fame | Slaves, furs, amber, timber | Gold, silver, spices, textiles |"
+ },
+ {
+  "id": "8d8b06c035",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "**North → South:** furs, amber, slaves, timber, walrus ivory → Europe, Byzantium, the Islamic world."
+ },
+ {
+  "id": "cab35fec98",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "Trade network: Volga → Islamic world, Dnieper → Byzantium, Atlantic → West Europe & N. America."
+ },
+ {
+  "id": "1c97ecaecc",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "Arabic silver coins in Scandinavia; deep slave networks; new market integration."
+ },
+ {
+  "id": "49899c647b",
+  "ctx": "fact bullet — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "**Vínland — the one hard proof:** the Norse site at **L'Anse aux Meadows**, Newfoundland (excavated **1960**, UNESCO **1978**) is the only confirmed Norse settlement in North America — ~500 years before Columbus."
+ },
+ {
+  "id": "5933633531",
+  "ctx": "gloss for the name \"Ingólfur Arnarson\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "the first settler of Iceland, 870"
+ },
+ {
+  "id": "89c344d7e9",
+  "ctx": "gloss for the name \"Leifur Eiríksson\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "the man who reached Vínland, North America, in 1000"
+ },
+ {
+  "id": "5738f06321",
+  "ctx": "gloss for the name \"Haraldur harðráði\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "Harald Hardrada, whose defeat in 1066 closed the Viking Age"
+ },
+ {
+  "id": "ffb0f3ed3b",
+  "ctx": "gloss for the name \"Rúrik\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "who arrived in Novgorod in 862 and founded the Rurikid line in Rus'"
+ },
+ {
+  "id": "3a70ccd81f",
+  "ctx": "gloss for the name \"Óleg\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "who took Kiev in 882 and founded Kievan Rus'"
+ },
+ {
+  "id": "0b2dd9c004",
+  "ctx": "gloss for the name \"Hedeby\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "the Danish trading town on the southern route, from 804"
+ },
+ {
+  "id": "b25a048bfe",
+  "ctx": "gloss for the name \"Mikligarður\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "\"Great City\", the Norse name for Constantinople"
+ },
+ {
+  "id": "9df3626a73",
+  "ctx": "gloss for the name \"Vínland\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "\"Wine Land\", the Norse name for North America"
+ },
+ {
+  "id": "5d823bd75e",
+  "ctx": "gloss for the name \"Landnám\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🏘️ Landnám",
+  "en": "the \"Land-Taking\", the roughly 60 years that filled Iceland"
+ },
+ {
+  "id": "11ee866cca",
+  "ctx": "gloss for the name \"Landnámabók\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🏘️ Landnám",
+  "en": "The Book of Settlements, which names 400 settlers and their farms"
+ },
+ {
+  "id": "0812493083",
+  "ctx": "gloss for the name \"Papar\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🏘️ Landnám",
+  "en": "the Irish monks who left the moment the longships appeared"
+ },
+ {
+  "id": "5e812320eb",
+  "ctx": "gloss for the name \"Alþingi\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🏘️ Landnám",
+  "en": "the parliament the chieftains launched at Þingvellir in 930"
+ },
+ {
+  "id": "2201e5021d",
+  "ctx": "gloss for the name \"Lögberg\" — tour 2.0 / Þingvellir / ⚖️ The Althing",
+  "en": "the \"Law Rock\", the cliff wall that carried the spoken law"
+ },
+ {
+  "id": "a3be31486b",
+  "ctx": "gloss for the name \"Lögsögumaður\" — tour 2.0 / Þingvellir / ⚖️ The Althing",
+  "en": "the Law-Speaker, who recited a third of the law code from memory each year"
+ },
+ {
+  "id": "05701a7fe3",
+  "ctx": "gloss for the name \"goði / goðar\" — tour 2.0 / Þingvellir / ⚖️ The Althing",
+  "en": "the chieftain-priests who ran it, about 36 of them"
+ },
+ {
+  "id": "2d2d7cb407",
+  "ctx": "the point of the block — tour 2.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "en": "Most tectonic plate boundaries sit invisible under 2 km of ocean. Here, **you can stand on it, walk it, and drink from the cracks**."
+ },
+ {
+  "id": "668586429a",
+  "ctx": "fact bullet — tour 2.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "en": "Forget the postcard version where you \"touch two continents at once.\" **Þingvellir** sits on the **Mid-Atlantic Ridge**, and what you're standing in is a **seven-kilometre-wide graben** — a strip of valley floor **sinking between two fault walls** as the plates pull apart about **2 cm a year**, the speed your fingernails grow."
+ },
+ {
+  "id": "40516b0dd4",
+  "ctx": "fact bullet — tour 2.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "en": "The cracks have names — **Almannagjá**, the big one you walk through, is the **torn edge on the North American side**. The plates never touch here: the valley floor between the fault walls belongs to **neither continent** — it's the seam, still ripping. Filling it is **Þingvallavatn**, Iceland's largest natural lake."
+ },
+ {
+  "id": "fa816fc39c",
+  "ctx": "gloss for the name \"Þingvellir\" — tour 2.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "en": "the rift valley we are standing in, between two continents"
+ },
+ {
+  "id": "70235bb8fd",
+  "ctx": "gloss for the name \"Almannagjá\" — tour 2.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "en": "the big crack you walk through, the edge of the North American plate"
+ },
+ {
+  "id": "154d45213d",
+  "ctx": "gloss for the name \"Silfra\" — tour 2.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "en": "the clear meltwater pool you can drink from, visibility up to 120 m"
+ },
+ {
+  "id": "e16845f2b5",
+  "ctx": "fact bullet — tour 2.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "**Laugarvatnshellir** is a pair of man-made caves hacked out of soft **palagonite tuff** (solidified volcanic ash) on the Lyngdalsheiði heath, between Þingvellir and Laugarvatn."
+ },
+ {
+  "id": "28f0356d0e",
+  "ctx": "fact bullet — tour 2.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "First in, **1910**: the carpenter **Indriði Guðmundsson** and **Guðrún Kolbeinsdóttir**, who lasted about **eleven months** and ran a **coffee-bread-and-cakes tent** for passing Golden Circle travellers — Iceland's original roadside café, carved edition."
+ },
+ {
+  "id": "fde0c2eb7f",
+  "ctx": "gloss for the name \"Laugarvatnshellir\" — tour 2.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "the man-made caves out there that families lived in until 1922"
+ },
+ {
+  "id": "289acc82b9",
+  "ctx": "gloss for the name \"Laugarvatn\" — tour 2.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "the place down the road the caves are named after"
+ },
+ {
+  "id": "6c755a63d6",
+  "ctx": "gloss for the name \"Guðrún Kolbeinsdóttir\" — tour 2.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "the other 1910 tenant; the two of them lasted eleven months and ran a coffee tent"
+ },
+ {
+  "id": "c3fc1c1e13",
+  "ctx": "gloss for the name \"Jón Þorvarðsson\" — tour 2.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "the father who delivered his own daughter in the cave"
+ },
+ {
+  "id": "a1a758098f",
+  "ctx": "gloss for the name \"Vigdís Helgadóttir\" — tour 2.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "the mother who raised three children in the rock"
+ },
+ {
+  "id": "a77e119d3b",
+  "ctx": "gloss for the name \"Ragnheiður\" — tour 2.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "the daughter born in the cave when a blizzard blocked the midwife"
+ },
+ {
+  "id": "e8d0623725",
+  "ctx": "gloss for the name \"Lyngdalsheiði\" — tour 2.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "the heath the caves are dug into"
+ },
+ {
+  "id": "bb8042dac0",
+  "ctx": "gloss for the name \"Hekla\" — tour 2.0 / Þingvellir → Haukadalur Valley / 🌋 Hekla",
+  "en": "the 1,491 m volcano medieval Europe called the front door of Hell"
+ },
+ {
+  "id": "8e1a69879b",
+  "ctx": "gloss for the name \"tephra\" — tour 2.0 / Þingvellir → Haukadalur Valley / 🌋 Hekla",
+  "en": "volcanic ash and fragments; the 1104 blast dropped about 2 km³ of it"
+ },
+ {
+  "id": "e1ce40cd94",
+  "ctx": "gloss for the name \"Þorgeir Ljósvetningagoði\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
+  "en": "the pagan Lawspeaker who chose Christianity for everyone"
+ },
+ {
+  "id": "41efce7e68",
+  "ctx": "gloss for the name \"Þangbrandur\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
+  "en": "the Saxon priest who fought duels with the poets who mocked him"
+ },
+ {
+  "id": "4b5064ca56",
+  "ctx": "gloss for the name \"Ólafur Tryggvason\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
+  "en": "the Norwegian king who squeezed Iceland into converting"
+ },
+ {
+  "id": "3829753675",
+  "ctx": "gloss for the name \"Laugarvatn\" — tour 2.0 / Þingvellir → Haukadalur Valley / 🛁 Laugarvatn & Apavatn",
+  "en": "\"Pool Lake\" on the right, warmed by springs at 35 to 40°C"
+ },
+ {
+  "id": "289c83bed0",
+  "ctx": "gloss for the name \"Apavatn\" — tour 2.0 / Þingvellir → Haukadalur Valley / 🛁 Laugarvatn & Apavatn",
+  "en": "\"Marsh Lake\" next door, where the 1238 ambush happened"
+ },
+ {
+  "id": "8caf88819a",
+  "ctx": "gloss for the name \"Vígðalaug\" — tour 2.0 / Þingvellir → Haukadalur Valley / 🛁 Laugarvatn & Apavatn",
+  "en": "the \"Consecrated Pool\", the warm spring the converts were baptised in"
+ },
+ {
+  "id": "0fdb7d1ef6",
+  "ctx": "gloss for the name \"Fontana\" — tour 2.0 / Þingvellir → Haukadalur Valley / 🛁 Laugarvatn & Apavatn",
+  "en": "the geothermal baths on that same warm shore today"
+ },
+ {
+  "id": "0cf4b3685b",
+  "ctx": "fact bullet — tour 2.0 / Þingvellir → Haukadalur Valley / 💙 Brúará",
+  "en": "In the famine year **1602**, the steward of **Skálholt**, the great church estate we'll visit this afternoon — with the knowledge of the bishop's wife, **Helga Jónsdóttir** — had the arch **deliberately destroyed** to stop displaced, starving people crossing to reach the estate's fertile land. Charity, Skálholt-style: demolish the bridge so the hungry can't walk over it."
+ },
+ {
+  "id": "6cdf2b2f44",
+  "ctx": "gloss for the name \"Brúará\" — tour 2.0 / Þingvellir → Haukadalur Valley / 💙 Brúará",
+  "en": "\"Bridge-River\", the one we are crossing"
+ },
+ {
+  "id": "c0c94e76f3",
+  "ctx": "gloss for the name \"Helga Jónsdóttir\" — tour 2.0 / Þingvellir → Haukadalur Valley / 💙 Brúará",
+  "en": "the bishop's wife who knew the stone arch was being destroyed in 1602"
+ },
+ {
+  "id": "67992b89f3",
+  "ctx": "gloss for the name \"Jón Gerreksson\" — tour 2.0 / Þingvellir → Haukadalur Valley / 💙 Brúará",
+  "en": "the disgraced bishop drowned here in a sack in 1433"
+ },
+ {
+  "id": "9ff086569f",
+  "ctx": "gloss for the name \"Skálholt\" — tour 2.0 / Þingvellir → Haukadalur Valley / 💙 Brúará",
+  "en": "the estate whose steward had the bridge knocked down — we visit it this afternoon"
+ },
+ {
+  "id": "8ddb723184",
+  "ctx": "gloss for the name \"Sturlungaöld\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ The Sturlung Age",
+  "en": "the civil war of roughly 1220 to 1262 that ended the republic"
+ },
+ {
+  "id": "efc23e786f",
+  "ctx": "gloss for the name \"Snorri Sturluson\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ The Sturlung Age",
+  "en": "the saga-writer murdered in his own cellar in 1241"
+ },
+ {
+  "id": "ab467c5b5d",
+  "ctx": "gloss for the name \"Örlygsstaðir\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ The Sturlung Age",
+  "en": "the 1238 battle, the largest ever fought on Icelandic soil"
+ },
+ {
+  "id": "81195b0630",
+  "ctx": "gloss for the name \"Sturla Sighvatsson\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ The Sturlung Age",
+  "en": "the Sturlungar chief who sprang that ambush"
+ },
+ {
+  "id": "249e1985f3",
+  "ctx": "gloss for the name \"Gizur Þorvaldsson\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ The Sturlung Age",
+  "en": "his rival, who swore an oath here and broke it"
+ },
+ {
+  "id": "7c0dbca8c4",
+  "ctx": "gloss for the name \"Flugumýri\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ The Sturlung Age",
+  "en": "the 1253 wedding ambush, the hall torched with the family inside"
+ },
+ {
+  "id": "cc368fe24e",
+  "ctx": "the spoken close — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ Haukadalur",
+  "en": "You can't throw a stone in Haukadalur without hitting something that became famous worldwide."
+ },
+ {
+  "id": "987187f1c3",
+  "ctx": "fact bullet — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ Haukadalur",
+  "en": "**Haukadalur** means **\"Valley of the Hawks\"** — known now for steam, but historically one of Iceland's great **education centres**."
+ },
+ {
+  "id": "71bebca9f2",
+  "ctx": "fact bullet — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ Haukadalur",
+  "en": "In the 11th century the farm was home to **Teitur Ísleifsson** — son of **Ísleifur Gissurarson, Iceland's first bishop** — who ran a **famous school** at the farm (the *first*-school crown belongs to **Skálholt**). One of its boarders, from about **age seven**: **Ari fróði Þorgilsson** (\"the Wise,\" c. 1067–1148), who grew up to write **Íslendingabók**, Iceland's foundational history and the reason we have any firm early dates at all."
+ },
+ {
+  "id": "3255cf9c44",
+  "ctx": "fact bullet — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ Haukadalur",
+  "en": "So the alphabet, the legal training and the historical record of a whole country came out of **one farm**."
+ },
+ {
+  "id": "3ff4399070",
+  "ctx": "fact bullet — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ Haukadalur",
+  "en": "But steam is only the valley's modern job: this was also a **chieftain's seat** — the home farm of the **Haukdælir**, one of the great power families of the Icelandic Commonwealth, with schoolmaster **Teitur Ísleifsson** as their patriarch."
+ },
+ {
+  "id": "b965524cc5",
+  "ctx": "gloss for the name \"Haukadalur\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ Haukadalur",
+  "en": "\"Valley of the Hawks\", home of the school that taught Ari the Wise"
+ },
+ {
+  "id": "1d67879747",
+  "ctx": "gloss for the name \"Teitur Ísleifsson\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ Haukadalur",
+  "en": "the bishop's son who ran that school"
+ },
+ {
+  "id": "f28da58337",
+  "ctx": "gloss for the name \"Ari fróði\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ Haukadalur",
+  "en": "\"the Wise\", the boy schooled here who became the first historian in Iceland"
+ },
+ {
+  "id": "54ff10df21",
+  "ctx": "gloss for the name \"Íslendingabók\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ Haukadalur",
+  "en": "the book he wrote, Iceland's foundational history"
+ },
+ {
+  "id": "82aa517262",
+  "ctx": "gloss for the name \"Geysir\" — tour 2.0 / Geysir / ⛲ Geysir",
+  "en": "the original hot spring that gave every language the word geyser"
+ },
+ {
+  "id": "93e23a90b5",
+  "ctx": "gloss for the name \"Strokkur\" — tour 2.0 / Geysir / ⛲ Geysir",
+  "en": "\"the Churn\", its reliable cousin that fires every 6 to 10 minutes"
+ },
+ {
+  "id": "70cdba7c45",
+  "ctx": "gloss for the name \"Gullfoss\" — tour 2.0 / Gullfoss / 💧 Hvítá & Gullfoss",
+  "en": "\"Golden Falls\", the two-tier 32 m drop in front of you"
+ },
+ {
+  "id": "67aac652a3",
+  "ctx": "gloss for the name \"Hvítá\" — tour 2.0 / Gullfoss / 💧 Hvítá & Gullfoss",
+  "en": "the glacial river that makes it, meltwater off Langjökull"
+ },
+ {
+  "id": "6026a03a62",
+  "ctx": "gloss for the name \"Sigríður Tómasdóttir\" — tour 2.0 / Gullfoss / 💧 Hvítá & Gullfoss",
+  "en": "the farmer's daughter who fought the dam and lost in court"
+ },
+ {
+  "id": "421c42cce4",
+  "ctx": "gloss for the name \"Langjökull\" — tour 2.0 / Gullfoss / 💧 Hvítá & Gullfoss",
+  "en": "the glacier feeding the Hvítá"
+ },
+ {
+  "id": "2a824e22b7",
+  "ctx": "block title — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "🏔️ Langjökull"
+ },
+ {
+  "id": "b388cec5e8",
+  "ctx": "cue, tells the guest where to look — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "Heading up onto Langjökull — Iceland's second-largest ice cap."
+ },
+ {
+  "id": "252dfc06bf",
+  "ctx": "the point of the block — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "You are riding a snowmobile across a **1,400-metre-high freshwater reservoir that sits on two volcanoes and is quietly melting on a deadline.** Nowhere else does \"just a bit of snow\" carry that much backstory."
+ },
+ {
+  "id": "6776a58c15",
+  "ctx": "the spoken close — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "We put you on a snowmobile on top of the very glacier that feeds every waterfall, geyser pool and fissure you've admired all day. Ride gently — you're on the source code."
+ },
+ {
+  "id": "7c832d6d58",
+  "ctx": "fact bullet — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "**Langjökull** means **\"Long Glacier\"** — Icelandic place-naming at its most ruthlessly literal, like nicknaming a tall bloke \"Tall Man.\" It's **Iceland's second-largest ice cap** (after Vatnajökull): roughly **870–900 km²**, about **50 km long, up to 20 km wide**, holding on the order of **190 km³ of ice** up to **~580 m thick** and topping out just over **1,400 metres**. You'll be snowmobiling on more frozen water than most countries own."
+ },
+ {
+  "id": "78aeb480e6",
+  "ctx": "fact bullet — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "**Fire directly under the ice:** this isn't just frozen scenery — it's a **lid on two active volcanic systems**, **Prestahnúkur** and **Hveravellir**. The calm white surface you're carving across has a temper it simply hasn't used lately."
+ },
+ {
+  "id": "1b60c37326",
+  "ctx": "fact bullet — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "**The waterworks of the whole Golden Circle:** Langjökull's meltwater feeds the **Hvítá** — the river that becomes **Gullfoss** — plus the **Ölfusá** system, and, via groundwater filtered through porous lava, the eerily clear **Silfra** fissure back at Þingvellir. Everything wet you've seen today drained off the glacier under your skis."
+ },
+ {
+  "id": "ebfcc2f802",
+  "ctx": "fact bullet — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "**The timer:** Langjökull has been **losing mass steadily for decades**, and Institute of Earth Sciences modelling projects it could be **largely gone within about 150 years** on present warming — the fastest-shrinking of Iceland's big caps. Snowmobiling here is less \"extreme sport,\" more \"**visiting a patient you'll outlive.**\""
+ },
+ {
+  "id": "5818fcc5fd",
+  "ctx": "fact bullet — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "For the fully indoors version, the **\"Into the Glacier\"** ice tunnel — the world's largest man-made bore into a glacier, **~500 m** long, opened **1 June 2015** from the Húsafell side — lets you walk *inside* Langjökull past ice older than the settlement of Iceland. A museum you have to dig."
+ },
+ {
+  "id": "0db156bbef",
+  "ctx": "gloss for the name \"Langjökull\" — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "the \"Long Glacier\" under your skis, second-largest ice cap in Iceland"
+ },
+ {
+  "id": "5515760791",
+  "ctx": "gloss for the name \"jökull\" — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "the Icelandic word for glacier or ice cap"
+ },
+ {
+  "id": "9b30ec762d",
+  "ctx": "gloss for the name \"Prestahnúkur\" — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "one of the two active volcanic systems under this ice"
+ },
+ {
+  "id": "4163c5d106",
+  "ctx": "gloss for the name \"Hveravellir\" — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "the second volcanic system under the ice"
+ },
+ {
+  "id": "077c515a99",
+  "ctx": "gloss for the name \"Vatnajökull\" — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "the only Icelandic ice cap bigger than the one under your skis"
+ },
+ {
+  "id": "2822819b8b",
+  "ctx": "gloss for the name \"Hvítá\" — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "the meltwater river off this ice that becomes Gullfoss"
+ },
+ {
+  "id": "e925cf310a",
+  "ctx": "gloss for the name \"Tungufljót\" — tour 2.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
+  "en": "\"Tongue-River\", the one we are crossing"
+ },
+ {
+  "id": "f1e47add6c",
+  "ctx": "gloss for the name \"Faxi\" — tour 2.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
+  "en": "Vatnsleysufoss, its wide 7 m falls with a salmon ladder built in"
+ },
+ {
+  "id": "28b29259cc",
+  "ctx": "gloss for the name \"Brúárvirkjun\" — tour 2.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
+  "en": "the small hydro station damming the upper river"
+ },
+ {
+  "id": "77aca203ab",
+  "ctx": "gloss for the name \"Reykholt\" — tour 2.0 / Gullfoss → Reykjavík / 🍅 Reykholt & Friðheimar",
+  "en": "\"smoky hill\", the village here"
+ },
+ {
+  "id": "a3bebadba7",
+  "ctx": "gloss for the name \"Friðheimar\" — tour 2.0 / Gullfoss → Reykjavík / 🍅 Reykholt & Friðheimar",
+  "en": "its geothermal tomato greenhouse, where you eat lunch among the vines"
+ },
+ {
+  "id": "dafc16c045",
+  "ctx": "gloss for the name \"Bláskógabyggð\" — tour 2.0 / Gullfoss → Reykjavík / 🍅 Reykholt & Friðheimar",
+  "en": "the municipality the village sits in"
+ },
+ {
+  "id": "37447154d3",
+  "ctx": "gloss for the name \"tölt\" — tour 2.0 / Gullfoss → Reykjavík / 🐎 Icelandic Horses",
+  "en": "the smooth four-beat gait you could carry a full beer through"
+ },
+ {
+  "id": "a9a996b7c8",
+  "ctx": "gloss for the name \"Þorlákur\" — tour 2.0 / Gullfoss → Reykjavík / ⛪ Skálholt",
+  "en": "Iceland's only saint, whose feast day still anchors Christmas"
+ },
+ {
+  "id": "461b537313",
+  "ctx": "fact bullet — tour 2.0 / Gullfoss → Reykjavík / 🎵 Grímsnes & Kerið",
+  "en": "**Kerið** is a **5,000–6,000-year-old volcanic crater** — about **270 m long, 170 m wide, 55 m deep** (deep enough to swallow a 17-storey building)."
+ },
+ {
+  "id": "3be6fd35c4",
+  "ctx": "fact bullet — tour 2.0 / Gullfoss → Reykjavík / 🎵 Grímsnes & Kerið",
+  "en": "The walls are **red scoria** — iron-rich basalt cinders whose iron has **oxidised to hematite**, rust essentially, helped along by groundwater; give it a few thousand more years and it'll blacken like its neighbours. The lake is **groundwater** (7–14 m deep) with **no inlet or outlet** — it just tracks the water table, turquoise because the water absorbs red light first against a dark floor. There's even life in it: a 2014 study found **10 kinds of zooplankton**."
+ },
+ {
+  "id": "b2c147fd7b",
+  "ctx": "gloss for the name \"Kerið\" — tour 2.0 / Gullfoss → Reykjavík / 🎵 Grímsnes & Kerið",
+  "en": "the red crater with the blue lake at the bottom, 5,000 to 6,000 years old"
+ },
+ {
+  "id": "aa8b3d3867",
+  "ctx": "gloss for the name \"Björk\" — tour 2.0 / Gullfoss → Reykjavík / 🎵 Grímsnes & Kerið",
+  "en": "who was on the bill here at 21, at the 1987 floating-stage concert"
+ },
+ {
+  "id": "2c262dace8",
+  "ctx": "gloss for the name \"Kristinn Sigmundsson\" — tour 2.0 / Gullfoss → Reykjavík / 🎵 Grímsnes & Kerið",
+  "en": "the opera bass who actually headlined that 1987 concert"
+ },
+ {
+  "id": "adc1d61e79",
+  "ctx": "fact bullet — tour 2.0 / Gullfoss → Reykjavík / ⚡ Sog River",
+  "en": "Three plants: **Ljósafoss (1937, 14.6 MW)**, **Írafoss (1953, 48 MW)** and **Steingrímsstöð (1959, 26 MW)** — a combined ~**90 MW** that ran roughly **half of Iceland's electricity** through the 1960s–70s, until the bigger highland plants on the Þjórsá took over."
+ },
+ {
+  "id": "ef344cc618",
+  "ctx": "gloss for the name \"Sog\" — tour 2.0 / Gullfoss → Reykjavík / ⚡ Sog River",
+  "en": "the 20 km river we are crossing, Iceland's largest spring-fed one"
+ },
+ {
+  "id": "4c17f87132",
+  "ctx": "gloss for the name \"Ljósafoss\" — tour 2.0 / Gullfoss → Reykjavík / ⚡ Sog River",
+  "en": "its first hydro plant, 1937"
+ },
+ {
+  "id": "ee4dbdaf61",
+  "ctx": "gloss for the name \"Steingrímsstöð\" — tour 2.0 / Gullfoss → Reykjavík / ⚡ Sog River",
+  "en": "the third plant on it, 1959"
+ },
+ {
+  "id": "d3708cfbcb",
+  "ctx": "gloss for the name \"Þjórsá\" — tour 2.0 / Gullfoss → Reykjavík / ⚡ Sog River",
+  "en": "Iceland's longest river, whose bigger highland plants took over the job"
+ },
+ {
+  "id": "927e402174",
+  "ctx": "gloss for the name \"Ölfusá\" — tour 2.0 / Gullfoss → Reykjavík / 🌊 Ölfusá",
+  "en": "the river ahead, Iceland's biggest by discharge"
+ },
+ {
+  "id": "439fc4c5e6",
+  "ctx": "gloss for the name \"Hvítá\" — tour 2.0 / Gullfoss → Reykjavík / 🌊 Ölfusá",
+  "en": "the glacial trunk river running down from Langjökull"
+ },
+ {
+  "id": "3078d8cac2",
+  "ctx": "gloss for the name \"Sog\" — tour 2.0 / Gullfoss → Reykjavík / 🌊 Ölfusá",
+  "en": "the spring-fed trunk river draining Þingvallavatn"
+ },
+ {
+  "id": "3bc734ac69",
+  "ctx": "gloss for the name \"Brúará\" — tour 2.0 / Gullfoss → Reykjavík / 🌊 Ölfusá",
+  "en": "one of the two rivers the Hvítá gathers on the way"
+ },
+ {
+  "id": "7221861096",
+  "ctx": "gloss for the name \"Langjökull\" — tour 2.0 / Gullfoss → Reykjavík / 🌊 Ölfusá",
+  "en": "the glacier the Hvítá runs from"
+ },
+ {
+  "id": "bd6f544fdc",
+  "ctx": "gloss for the name \"Tungufljót\" — tour 2.0 / Gullfoss → Reykjavík / 🌊 Ölfusá",
+  "en": "the other river it gathers"
+ },
+ {
+  "id": "b2d064324a",
+  "ctx": "gloss for the name \"Selfoss\" — tour 2.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
+  "en": "the town that grew up around the crossing"
+ },
+ {
+  "id": "2f3aab91f3",
+  "ctx": "gloss for the name \"Tryggvi Gunnarsson\" — tour 2.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
+  "en": "the MP and banker who pushed it through the Alþingi"
+ },
+ {
+  "id": "d8ea9e6a15",
+  "ctx": "gloss for the name \"Leið 1\" — tour 2.0 / Gullfoss → Reykjavík / 🧭 Ingólfur Arnarson",
+  "en": "the Ring Road we are on, only completed in 1974"
+ },
+ {
+  "id": "d1cfdf167f",
+  "ctx": "gloss for the name \"Ingólfur Arnarson\" — tour 2.0 / Gullfoss → Reykjavík / 🧭 Ingólfur Arnarson",
+  "en": "the first permanent Norse settler, who followed his high-seat pillars"
+ },
+ {
+  "id": "b4b29d41aa",
+  "ctx": "gloss for the name \"Höfn\" — tour 2.0 / Gullfoss → Reykjavík / 🧭 Ingólfur Arnarson",
+  "en": "the south-east port, hundreds of extra km away before the Ring Road"
+ },
+ {
+  "id": "3380e16099",
+  "ctx": "gloss for the name \"Hveragerði\" — tour 2.0 / Gullfoss → Reykjavík / 🌋 Hveragerði",
+  "en": "the greenhouse town on the right, with steam vents between the houses"
+ },
+ {
+  "id": "130648ff8a",
+  "ctx": "gloss for the name \"Skjálftinn\" — tour 2.0 / Gullfoss → Reykjavík / 🌋 Hveragerði",
+  "en": "\"The Quake\", the exhibition built over the 2008 crack"
+ },
+ {
+  "id": "f16adb760b",
+  "ctx": "gloss for the name \"Sunnumörk\" — tour 2.0 / Gullfoss → Reykjavík / 🌋 Hveragerði",
+  "en": "the shopping centre it sits in"
+ },
+ {
+  "id": "2b5eb95cb5",
+  "ctx": "gloss for the name \"Hellisheiðarvirkjun\" — tour 2.0 / Gullfoss → Reykjavík / 🏢 Hellisheiðarvirkjun",
+  "en": "Iceland's largest geothermal power station, on the right"
+ },
+ {
+  "id": "97dfab687d",
+  "ctx": "gloss for the name \"Hengill\" — tour 2.0 / Gullfoss → Reykjavík / 🏢 Hellisheiðarvirkjun",
+  "en": "the volcanic system it sits on, a triple junction on dry land"
+ },
+ {
+  "id": "cfecc8eed5",
+  "ctx": "gloss for the name \"Hellisheiði\" — tour 2.0 / Gullfoss → Reykjavík / 🏢 Hellisheiðarvirkjun",
+  "en": "the heath and pass it is named after"
+ },
+ {
+  "id": "b6bba6b9f1",
+  "ctx": "gloss for the name \"Kristnitökuhraun\" — tour 2.0 / Gullfoss → Reykjavík / ⛰️ Kristnitökuhraun",
+  "en": "the \"Christianity Lava\" on the left, named for the year-1000 conversion"
+ },
+ {
+  "id": "7fd1266098",
+  "ctx": "gloss for the name \"Svínahraun\" — tour 2.0 / Gullfoss → Reykjavík / ⛰️ Kristnitökuhraun",
+  "en": "the three-flow lava stack it tops"
+ },
+ {
+  "id": "7752200a1d",
+  "ctx": "gloss for the name \"Snorri Goði\" — tour 2.0 / Gullfoss → Reykjavík / ⛰️ Kristnitökuhraun",
+  "en": "the chieftain who asked what the gods were angry about when this rock was made"
+ },
+ {
+  "id": "684521d792",
+  "ctx": "gloss for the name \"Hellisheiði\" — tour 2.0 / Gullfoss → Reykjavík / ⛰️ Kristnitökuhraun",
+  "en": "the heath where lava was reported flowing mid-debate"
+ },
+ {
+  "id": "d6ee087fd5",
+  "ctx": "gloss for the name \"Rauðhólar\" — tour 2.0 / Gullfoss → Reykjavík / ⛰️ Rauðhólar",
+  "en": "the red fake craters on the left, rootless cones with no magma pipe"
+ },
+ {
+  "id": "0063ccca30",
+  "ctx": "gloss for the name \"Leitahraun\" — tour 2.0 / Gullfoss → Reykjavík / ⛰️ Rauðhólar",
+  "en": "the lava from the Leiti shield volcano that made them"
+ },
+ {
+  "id": "8643bc42d8",
+  "ctx": "gloss for the name \"Heiðmörk\" — tour 2.0 / Gullfoss → Reykjavík / ⛰️ Rauðhólar",
+  "en": "the wetland the lava rolled over, flashing its water to steam"
+ },
+ {
+  "id": "326c8d5c82",
+  "ctx": "gloss for the name \"Elliðaárdalur\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "en": "the city valley that feeds, waters and powers Reykjavík"
+ },
+ {
+  "id": "d40db87e9c",
+  "ctx": "gloss for the name \"Elliðaá\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "en": "the river running through it, with a wild salmon run the city bought outright in 1906"
+ },
+ {
+  "id": "bd22e9bfa3",
+  "ctx": "gloss for the name \"Elliðavatn\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "en": "the lake upstream, where the city first drew its drinking water in 1909"
+ },
+ {
+  "id": "09567da3c5",
+  "ctx": "gloss for the name \"Þingnes\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "en": "the low spit in Elliðavatn where Iceland's first assembly sat"
+ },
+ {
+  "id": "edbe5f5b24",
+  "ctx": "gloss for the name \"Hafnarfjörður\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "en": "the town where Iceland's first power station was wired up in 1904"
+ },
+ {
+  "id": "a1e22df982",
+  "ctx": "gloss for the name \"Reykdal\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "en": "Jóhannes Reykdal, the carpenter behind that 9 kW generator"
+ },
+ {
+  "id": "8bb62d85be",
+  "ctx": "gloss for the name \"Esja\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / ⛰️ Mount Esja",
+  "en": "the volcanic range on Reykjavík's skyline"
+ },
+ {
+  "id": "f1bb7fd0d0",
+  "ctx": "gloss for the name \"Hábunga\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / ⛰️ Mount Esja",
+  "en": "Esja's true summit, 914 m"
+ },
+ {
+  "id": "dcb88f6b7f",
+  "ctx": "gloss for the name \"Þverfellshorn\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / ⛰️ Mount Esja",
+  "en": "the peak everyone actually hikes, ~780 m"
+ },
+ {
+  "id": "8b3da2c09c",
+  "ctx": "gloss for the name \"Steinn\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / ⛰️ Mount Esja",
+  "en": "the marker boulder 200 m below the top where hikers turn back"
+ },
+ {
+  "id": "9388749880",
+  "ctx": "gloss for the name \"móberg\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / ⛰️ Mount Esja",
+  "en": "the pale tuff, lava shattered under a glacier"
+ },
+ {
+  "id": "566e73fc81",
+  "ctx": "gloss for the name \"Þorsteinn Ingólfsson\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / ⚖️ Kjalarnesþing",
+  "en": "the first settler's son, who set it up around 900 CE"
+ },
+ {
+  "id": "aadd13b64a",
+  "ctx": "gloss for the name \"Úlfljótr\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / ⚖️ Kjalarnesþing",
+  "en": "the man sent to Norway who wrote Iceland's first law code"
+ },
+ {
+  "id": "0ae09d9b0a",
+  "ctx": "gloss for the name \"Gulating\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / ⚖️ Kjalarnesþing",
+  "en": "the Norwegian law code it was based on"
+ },
+ {
+  "id": "bb50183649",
+  "ctx": "gloss for the name \"Mosfellsbær\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🎵 Mosfellsbær",
+  "en": "the commuter town of ~13,700 all around us"
+ },
+ {
+  "id": "09a62aa2ce",
+  "ctx": "gloss for the name \"Ólafur Arnalds\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🎵 Mosfellsbær",
+  "en": "composer born here in 1986, BAFTA winner for Broadchurch"
+ },
+ {
+  "id": "76e09d8850",
+  "ctx": "gloss for the name \"Mosfellsdalur\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Mosfellsdalur",
+  "en": "the valley all around us, of buried silver and a Nobel prize"
+ },
+ {
+  "id": "5cf76d70ab",
+  "ctx": "gloss for the name \"Halldór Laxness\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Mosfellsdalur",
+  "en": "Iceland's only Nobel laureate, who grew up in this valley"
+ },
+ {
+  "id": "1048ffd105",
+  "ctx": "gloss for the name \"Sjálfstætt fólk\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Mosfellsdalur",
+  "en": "Independent People, the novel that largely won him the 1955 Nobel"
+ },
+ {
+  "id": "bc64a50e05",
+  "ctx": "gloss for the name \"Hrísbrú\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Mosfellsdalur",
+  "en": "the dig site where the saga says Egil's bones were moved"
+ },
+ {
+  "id": "2db348ec8c",
+  "ctx": "gloss for the name \"Ingólfur Arnarson\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "first settler of Iceland, 870"
+ },
+ {
+  "id": "6bdeaf542e",
+  "ctx": "gloss for the name \"Erik the Red\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "settled Greenland in 985"
+ },
+ {
+  "id": "02ac826a3a",
+  "ctx": "gloss for the name \"Leifur Eiríksson\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "reached Vínland, North America, around 1000"
+ },
+ {
+  "id": "87176e0677",
+  "ctx": "gloss for the name \"Haraldur harðráði\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "Harald Hardrada, whose defeat at Stamford Bridge closed the Viking Age"
+ },
+ {
+  "id": "219e4cfa2d",
+  "ctx": "gloss for the name \"Rúrik\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "founder of the Rurikid line in Rus', arrived in Novgorod 862"
+ },
+ {
+  "id": "dbfcab2b8a",
+  "ctx": "gloss for the name \"Óleg\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "took Kiev in 882 and founded Kievan Rus'"
+ },
+ {
+  "id": "e9c654125a",
+  "ctx": "gloss for the name \"Landnám\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🏘️ Landnám",
+  "en": "the \"Land-Taking\", the ~60-year settlement of Iceland"
+ },
+ {
+  "id": "94fba7b119",
+  "ctx": "gloss for the name \"Landnámabók\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🏘️ Landnám",
+  "en": "The Book of Settlements, naming 400 settlers and their farms"
+ },
+ {
+  "id": "c527fe0d2c",
+  "ctx": "gloss for the name \"Papar\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🏘️ Landnám",
+  "en": "the Irish monks already here, who left when the longships appeared"
+ },
+ {
+  "id": "a56b1fd9e7",
+  "ctx": "gloss for the name \"Alþingi\" — tour 3.0 / Þingvellir / ⚖️ The Althing",
+  "en": "the national assembly founded here in 930, the world's oldest parliament still in use"
+ },
+ {
+  "id": "502335a71a",
+  "ctx": "gloss for the name \"goði / goðar\" — tour 3.0 / Þingvellir / ⚖️ The Althing",
+  "en": "the roughly 36 chieftain-priests who ran it by consensus"
+ },
+ {
+  "id": "3d506212a8",
+  "ctx": "gloss for the name \"Þingvellir\" — tour 3.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "en": "the rift valley sitting on the Mid-Atlantic Ridge"
+ },
+ {
+  "id": "697355aaf7",
+  "ctx": "gloss for the name \"Langjökull\" — tour 3.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "en": "the glacier that meltwater left 30–100 years ago"
+ },
+ {
+  "id": "d196a0a697",
+  "ctx": "gloss for the name \"Laugarvatnshellir\" — tour 3.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "the man-made caves families lived in until 1922"
+ },
+ {
+  "id": "82927ebdb3",
+  "ctx": "gloss for the name \"Laugarvatn\" — tour 3.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "the neighbouring village; the caves sit between it and Þingvellir"
+ },
+ {
+  "id": "525cd25edc",
+  "ctx": "gloss for the name \"Guðrún Kolbeinsdóttir\" — tour 3.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "the other 1910 tenant; the pair ran a coffee tent for passing travellers"
+ },
+ {
+  "id": "a13e99aeb2",
+  "ctx": "gloss for the name \"Jón Þorvarðsson\" — tour 3.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "the father who raised three children in the rock, 1918–22"
+ },
+ {
+  "id": "3be922e031",
+  "ctx": "gloss for the name \"Vigdís Helgadóttir\" — tour 3.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "the mother of that cave family"
+ },
+ {
+  "id": "cc0034ef8c",
+  "ctx": "gloss for the name \"Ragnheiður\" — tour 3.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "the daughter Jón delivered himself when a blizzard blocked the midwife"
+ },
+ {
+  "id": "d3ca1aa0b3",
+  "ctx": "gloss for the name \"Lyngdalsheiði\" — tour 3.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "the heath the caves are cut into"
+ },
+ {
+  "id": "c9ed0ebfda",
+  "ctx": "gloss for the name \"Hekla\" — tour 3.0 / Þingvellir → Haukadalur Valley / 🌋 Hekla",
+  "en": "the 1,491 m volcano medieval Europe called the gateway to Hell"
+ },
+ {
+  "id": "5e2cead083",
+  "ctx": "gloss for the name \"Þorgeir Ljósvetningagoði\" — tour 3.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
+  "en": "the pagan Lawspeaker who ruled for Christianity"
+ },
+ {
+  "id": "b0e4e9c001",
+  "ctx": "gloss for the name \"Þangbrandur\" — tour 3.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
+  "en": "the Saxon priest who fought duels with poets who mocked his sermons"
+ },
+ {
+  "id": "4fdb74dde3",
+  "ctx": "gloss for the name \"Ólafur Tryggvason\" — tour 3.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
+  "en": "Norway's king, who squeezed Iceland with trade bans and hostages"
+ },
+ {
+  "id": "538d6d209d",
+  "ctx": "gloss for the name \"Laugarvatn\" — tour 3.0 / Þingvellir → Haukadalur Valley / 🛁 Laugarvatn & Apavatn",
+  "en": "\"Pool Lake\", warmed to 35–40°C by springs in its bed"
+ },
+ {
+  "id": "c6d7047600",
+  "ctx": "gloss for the name \"Apavatn\" — tour 3.0 / Þingvellir → Haukadalur Valley / 🛁 Laugarvatn & Apavatn",
+  "en": "\"Marsh Lake\" next door, where Gizur was ambushed in 1238"
+ },
+ {
+  "id": "8a462be658",
+  "ctx": "gloss for the name \"Vígðalaug\" — tour 3.0 / Þingvellir → Haukadalur Valley / 🛁 Laugarvatn & Apavatn",
+  "en": "the \"Consecrated Pool\", the warm spring converts were baptised in"
+ },
+ {
+  "id": "b2d328552c",
+  "ctx": "gloss for the name \"Fontana\" — tour 3.0 / Þingvellir → Haukadalur Valley / 🛁 Laugarvatn & Apavatn",
+  "en": "the geothermal baths at Laugarvatn today"
+ },
+ {
+  "id": "1e4e3a0f66",
+  "ctx": "gloss for the name \"Brúará\" — tour 3.0 / Þingvellir → Haukadalur Valley / 💙 Brúará",
+  "en": "\"Bridge-River\", the clear spring-fed river we're crossing"
+ },
+ {
+  "id": "adc46a0c84",
+  "ctx": "gloss for the name \"Hvítá\" — tour 3.0 / Þingvellir → Haukadalur Valley / 💙 Brúará",
+  "en": "the glacial river Brúará feeds"
+ },
+ {
+  "id": "fa045f892f",
+  "ctx": "gloss for the name \"Skálholt\" — tour 3.0 / Þingvellir → Haukadalur Valley / 💙 Brúará",
+  "en": "the former bishopric whose steward ordered the arch smashed — we visit it this afternoon"
+ },
+ {
+  "id": "1bba57db8e",
+  "ctx": "gloss for the name \"Sturlungaöld\" — tour 3.0 / Þingvellir → Haukadalur Valley / ⚖️ The Sturlung Age",
+  "en": "the Sturlung Age, Iceland's civil war of roughly 1220–1262"
+ },
+ {
+  "id": "16298e01fc",
+  "ctx": "gloss for the name \"Örlygsstaðir\" — tour 3.0 / Þingvellir → Haukadalur Valley / ⚖️ The Sturlung Age",
+  "en": "the 1238 battle that wiped out the northern Sturlungar"
+ },
+ {
+  "id": "fd3dd085ce",
+  "ctx": "gloss for the name \"Sturla Sighvatsson\" — tour 3.0 / Þingvellir → Haukadalur Valley / ⚖️ The Sturlung Age",
+  "en": "the Sturlungar chieftain who sprang that ambush"
+ },
+ {
+  "id": "8165cd57a3",
+  "ctx": "gloss for the name \"Gizur Þorvaldsson\" — tour 3.0 / Þingvellir → Haukadalur Valley / ⚖️ The Sturlung Age",
+  "en": "his rival, who broke the oath and won at Örlygsstaðir"
+ },
+ {
+  "id": "d60283821c",
+  "ctx": "gloss for the name \"Teitur Ísleifsson\" — tour 3.0 / Þingvellir → Haukadalur Valley / ⚖️ Haukadalur",
+  "en": "the first bishop's son, who ran that school"
+ },
+ {
+  "id": "2d652425ec",
+  "ctx": "gloss for the name \"Ari fróði\" — tour 3.0 / Þingvellir → Haukadalur Valley / ⚖️ Haukadalur",
+  "en": "\"the Wise\", the boy schooled here who became Iceland's first historian"
+ },
+ {
+  "id": "9aadc944d8",
+  "ctx": "gloss for the name \"Íslendingabók\" — tour 3.0 / Þingvellir → Haukadalur Valley / ⚖️ Haukadalur",
+  "en": "his book, Iceland's foundational history"
+ },
+ {
+  "id": "1ca6db743e",
+  "ctx": "gloss for the name \"Geysir\" — tour 3.0 / Geysir / ⛲ Geysir",
+  "en": "the original geyser, first recorded in 1294 and mostly dormant now"
+ },
+ {
+  "id": "205e5dc7bb",
+  "ctx": "gloss for the name \"Strokkur\" — tour 3.0 / Geysir / ⛲ Geysir",
+  "en": "\"the Churn\", its reliable cousin, firing every 6–10 minutes"
+ },
+ {
+  "id": "b362891e6d",
+  "ctx": "gloss for the name \"Gullfoss\" — tour 3.0 / Gullfoss / 💧 Hvítá & Gullfoss",
+  "en": "\"Golden Falls\", a 32 m drop down two staircase tiers"
+ },
+ {
+  "id": "c02ab88bf4",
+  "ctx": "gloss for the name \"Hvítá\" — tour 3.0 / Gullfoss / 💧 Hvítá & Gullfoss",
+  "en": "the glacial river that pours over it"
+ },
+ {
+  "id": "9884210360",
+  "ctx": "gloss for the name \"Sigríður Tómasdóttir\" — tour 3.0 / Gullfoss / 💧 Hvítá & Gullfoss",
+  "en": "the farmer's daughter who fought the dam, now called Iceland's first environmentalist"
+ },
+ {
+  "id": "89569f1d8b",
+  "ctx": "gloss for the name \"Langjökull\" — tour 3.0 / Gullfoss / 💧 Hvítá & Gullfoss",
+  "en": "the glacier the Hvítá's meltwater comes from"
+ },
+ {
+  "id": "b1b2c9dd1e",
+  "ctx": "block title — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
+  "en": "♨️ Gamla Laugin"
+ },
+ {
+  "id": "5ce5b8663a",
+  "ctx": "cue, tells the guest where to look — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
+  "en": "At Flúðir — the Secret Lagoon."
+ },
+ {
+  "id": "4b6303bd0b",
+  "ctx": "the point of the block — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
+  "en": "The oldest pool in the country, the classroom where Iceland learned to swim, and a live geyser for a tap — all in one steaming field off the Golden Circle."
+ },
+ {
+  "id": "bb3a6c346f",
+  "ctx": "the spoken close — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
+  "en": "Iceland's worst-kept secret: a 135-year-old bath that taught a nation to swim, took a 67-year nap, and woke up still warm."
+ },
+ {
+  "id": "d8554934e6",
+  "ctx": "fact bullet — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
+  "en": "**Gamla Laugin** (\"the Old Pool\") at **Hverahólmi** by Flúðir was **built in 1891** — **Iceland's oldest surviving swimming pool**, older than the national grid, the republic, and your great-grandparents. The \"Secret Lagoon\" branding was bolted on 120-odd years later; the water never went anywhere."
+ },
+ {
+  "id": "e8f60c5ae4",
+  "ctx": "fact bullet — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
+  "en": "Before it was a pool it was a **parliament**: the local Flúðir assembly met on this exact patch until **1894**. Iceland's founding instinct, again — find a warm bit of ground and hold a vote on it."
+ },
+ {
+  "id": "df41ae802d",
+  "ctx": "fact bullet — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
+  "en": "In **1909** it hosted **Iceland's first formal swimming lessons** — **32 men** in the debut course, girls following by **1911** — and taught the district every summer until **1947**. In a country ringed by a lethal North Atlantic, teaching the nation to swim in a hot bath was a genuinely brilliant life-hack."
+ },
+ {
+  "id": "1278044a3a",
+  "ctx": "fact bullet — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
+  "en": "Then it was **abandoned for nearly 70 years** — the village built a modern pool and left the old one to the algae. Scrubbed up and reborn on **7 June 2014**, history intact."
+ },
+ {
+  "id": "1f00e26de5",
+  "ctx": "fact bullet — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
+  "en": "The water sits at **38–40°C year-round**, sulphur-rich, kept topped up **100% by the surrounding hot springs** — including a **baby geyser, Litli Geysir**, that fires every few minutes just off the deck. The one hot tub on Earth plumbed straight into a working geyser."
+ },
+ {
+  "id": "0a440e072c",
+  "ctx": "gloss for the name \"Gamla Laugin\" — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
+  "en": "\"the Old Pool\", a.k.a. the Secret Lagoon, built 1891"
+ },
+ {
+  "id": "14c3dc04f9",
+  "ctx": "gloss for the name \"Hverahólmi\" — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
+  "en": "the geothermal spot by Flúðir it sits on"
+ },
+ {
+  "id": "a29d0a7c02",
+  "ctx": "gloss for the name \"Flúðir\" — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
+  "en": "the greenhouse-and-mushroom village beside it, whose assembly met here until 1894"
+ },
+ {
+  "id": "92bff85eac",
+  "ctx": "gloss for the name \"Litli Geysir\" — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
+  "en": "the baby geyser off the deck that fires every few minutes"
+ },
+ {
+  "id": "0a0e47b1da",
+  "ctx": "gloss for the name \"Tungufljót\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
+  "en": "\"Tongue-River\", the tributary we're crossing"
+ },
+ {
+  "id": "adcc7f34e5",
+  "ctx": "gloss for the name \"Faxi\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
+  "en": "Vatnsleysufoss, its wide ~7 m falls with a salmon ladder built in"
+ },
+ {
+  "id": "320bc4040c",
+  "ctx": "gloss for the name \"Brúárvirkjun\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
+  "en": "the small Landsvirkjun hydro station on the upper river"
+ },
+ {
+  "id": "ce287cf7fe",
+  "ctx": "gloss for the name \"Hvítá\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
+  "en": "the glacial river it drains into"
+ },
+ {
+  "id": "4a07424f06",
+  "ctx": "gloss for the name \"Reykholt\" — tour 3.0 / Gullfoss → Reykjavík / 🍅 Reykholt & Friðheimar",
+  "en": "\"smoky hill\", the village Friðheimar sits in"
+ },
+ {
+  "id": "bfea20f7c2",
+  "ctx": "gloss for the name \"Friðheimar\" — tour 3.0 / Gullfoss → Reykjavík / 🍅 Reykholt & Friðheimar",
+  "en": "its geothermal tomato greenhouses, where you eat lunch among the vines"
+ },
+ {
+  "id": "952bac6c4c",
+  "ctx": "gloss for the name \"Bláskógabyggð\" — tour 3.0 / Gullfoss → Reykjavík / 🍅 Reykholt & Friðheimar",
+  "en": "the municipality it all sits in"
+ },
+ {
+  "id": "e2daba85e6",
+  "ctx": "gloss for the name \"Skálholt\" — tour 3.0 / Gullfoss → Reykjavík / ⛪ Skálholt",
+  "en": "Iceland's first bishop's seat, founded 1056"
+ },
+ {
+  "id": "89c40226d9",
+  "ctx": "gloss for the name \"Þorlákur\" — tour 3.0 / Gullfoss → Reykjavík / ⛪ Skálholt",
+  "en": "Þorlákur Þórhallsson, Iceland's only saint"
+ },
+ {
+  "id": "a2bf85bb50",
+  "ctx": "fact bullet — tour 3.0 / Gullfoss → Reykjavík / 🎵 Grímsnes & Kerið",
+  "en": "The walls are **red scoria** — iron-rich basalt cinders so young the iron is **still rusting**; give it a few thousand more years and it'll blacken like its neighbours. The lake is **groundwater** (7–14 m deep) with **no inlet or outlet** — it just tracks the water table, turquoise because the water absorbs red light first against a dark floor. There's even life in it: a 2014 study found **10 kinds of zooplankton**."
+ },
+ {
+  "id": "2118fd5b97",
+  "ctx": "gloss for the name \"Kerið\" — tour 3.0 / Gullfoss → Reykjavík / 🎵 Grímsnes & Kerið",
+  "en": "the 5,000–6,000-year-old crater with the blue lake in the bottom"
+ },
+ {
+  "id": "dc61fa5f56",
+  "ctx": "gloss for the name \"Björk\" — tour 3.0 / Gullfoss → Reykjavík / 🎵 Grímsnes & Kerið",
+  "en": "on the bill, aged 21, at the crater's floating-stage concert in 1987"
+ },
+ {
+  "id": "7b68282f63",
+  "ctx": "gloss for the name \"Kristinn Sigmundsson\" — tour 3.0 / Gullfoss → Reykjavík / 🎵 Grímsnes & Kerið",
+  "en": "the operatic bass who headlined that 1987 concert"
+ },
+ {
+  "id": "14970fc505",
+  "ctx": "fact bullet — tour 3.0 / Gullfoss → Reykjavík / ⚡ Sog River",
+  "en": "The consequence was entirely domestic. **Ljósafoss quadrupled the electricity available to the capital region**, and **Reykjavík households abandoned their coal ranges for electric cookers.** A whole city stopped smelling of smoke because of a drop in a river none of them had ever visited."
+ },
+ {
+  "id": "3641ee5015",
+  "ctx": "fact bullet — tour 3.0 / Gullfoss → Reykjavík / ⚡ Sog River",
+  "en": "**Steingrímsstöð** very nearly did not happen at all — its dam **gave way during construction in the storm of 17 June 1959.** Losing a dam on the national day is the sort of detail Icelanders do not bring up."
+ },
+ {
+  "id": "ee7dec5a16",
+  "ctx": "gloss for the name \"Sog\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Sog River",
+  "en": "the 20 km river out of Þingvallavatn, Iceland's largest clearwater river"
+ },
+ {
+  "id": "9d99d1a444",
+  "ctx": "gloss for the name \"Ljósafoss\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Sog River",
+  "en": "the first of its three hydro plants, 1937, 14.6 MW"
+ },
+ {
+  "id": "572aa9ecad",
+  "ctx": "gloss for the name \"Steingrímsstöð\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Sog River",
+  "en": "the last of the three, 1959, 26 MW"
+ },
+ {
+  "id": "cb2709a3fd",
+  "ctx": "gloss for the name \"Ölfusá\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Sog River",
+  "en": "the big drain river the two of them form"
+ },
+ {
+  "id": "157961bb8e",
+  "ctx": "gloss for the name \"Þjórsá\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Sog River",
+  "en": "Iceland's longest river, whose bigger highland plants took over"
+ },
+ {
+  "id": "7f4f67f0be",
+  "ctx": "gloss for the name \"Ölfusá\" — tour 3.0 / Gullfoss → Reykjavík / 🌊 Ölfusá",
+  "en": "Iceland's biggest river by discharge, ~400 m³/s"
+ },
+ {
+  "id": "a4ed51c4d1",
+  "ctx": "gloss for the name \"Hvítá\" — tour 3.0 / Gullfoss → Reykjavík / 🌊 Ölfusá",
+  "en": "the glacial trunk river running south from Langjökull"
+ },
+ {
+  "id": "0b5ad342d6",
+  "ctx": "gloss for the name \"Brúará\" — tour 3.0 / Gullfoss → Reykjavík / 🌊 Ölfusá",
+  "en": "one of the tributaries the Hvítá gathers"
+ },
+ {
+  "id": "ba2b83efee",
+  "ctx": "gloss for the name \"Tungufljót\" — tour 3.0 / Gullfoss → Reykjavík / 🌊 Ölfusá",
+  "en": "the other tributary it gathers on the way"
+ },
+ {
+  "id": "fb5ed58194",
+  "ctx": "gloss for the name \"Ölfusárbrú\" — tour 3.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
+  "en": "the 1891 bridge, Iceland's first suspension bridge"
+ },
+ {
+  "id": "15ea70a2b0",
+  "ctx": "gloss for the name \"Leið 1\" — tour 3.0 / Gullfoss → Reykjavík / 🧭 Ingólfur Arnarson",
+  "en": "Route 1, the Ring Road, only completed in 1974"
+ },
+ {
+  "id": "5b334edcd5",
+  "ctx": "gloss for the name \"Ingólfur Arnarson\" — tour 3.0 / Gullfoss → Reykjavík / 🧭 Ingólfur Arnarson",
+  "en": "the first permanent Norse settler, who named Reykjavík"
+ },
+ {
+  "id": "54b1bb758d",
+  "ctx": "gloss for the name \"Höfn\" — tour 3.0 / Gullfoss → Reykjavík / 🧭 Ingólfur Arnarson",
+  "en": "the south-east port the Ring Road finally made easy to reach"
+ },
+ {
+  "id": "ba38ce67f9",
+  "ctx": "gloss for the name \"Hveragerði\" — tour 3.0 / Gullfoss → Reykjavík / 🌋 Hveragerði",
+  "en": "the greenhouse town of about 3,350 (3,344 at the start of 2026) on a tectonic triple junction"
+ },
+ {
+  "id": "854bcd84bd",
+  "ctx": "gloss for the name \"Skjálftinn\" — tour 3.0 / Gullfoss → Reykjavík / 🌋 Hveragerði",
+  "en": "\"The Quake\", the exhibition built over the 2008 fissure"
+ },
+ {
+  "id": "e3330208a9",
+  "ctx": "gloss for the name \"Hellisheiðarvirkjun\" — tour 3.0 / Gullfoss → Reykjavík / 🏢 Hellisheiðarvirkjun",
+  "en": "Iceland's largest geothermal power station, 303 MW"
+ },
+ {
+  "id": "ed0655b769",
+  "ctx": "gloss for the name \"Hengill\" — tour 3.0 / Gullfoss → Reykjavík / 🏢 Hellisheiðarvirkjun",
+  "en": "the volcanic system under it, a plate-boundary triple junction on dry land"
+ },
+ {
+  "id": "ad5594f5e0",
+  "ctx": "gloss for the name \"Kristnitökuhraun\" — tour 3.0 / Gullfoss → Reykjavík / ⛰️ Kristnitökuhraun",
+  "en": "the \"Christianity Lava\", dated to around 1000 CE"
+ },
+ {
+  "id": "0221f91dfb",
+  "ctx": "gloss for the name \"Rauðhólar\" — tour 3.0 / Gullfoss → Reykjavík / ⛰️ Rauðhólar",
+  "en": "the red pseudocraters, fake volcanoes with no magma pipe"
+ },
+ {
+  "id": "34587d3071",
+  "ctx": "gloss for the name \"Heiðmörk\" — tour 3.0 / Gullfoss → Reykjavík / ⛰️ Rauðhólar",
+  "en": "the wetland that lava rolled over"
+ },
+ {
+  "id": "56e90186f5",
   "ctx": "section title",
-  "en": "Þingvellir → BSÍ Bus Terminal"
+  "en": "BSÍ Bus Terminal → Reykholt / Friðheimar"
  },
  {
-  "id": "0ebf8ffd98",
-  "ctx": "cue, tells the guest where to look — tour 4.0 / Þingvellir → BSÍ Bus Terminal / 🪶 Gljúfrasteinn",
-  "en": "Look right — the white house by the river Kaldakvísl, just off Route 36."
+  "id": "15240edfb6",
+  "ctx": "the point of the block — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🧵 Three Names to Keep in Your Pocket",
+  "en": "One valley — **Mosfellsdalur, my literature valley** — ties a Viking's buried silver, a rejected painting and a Nobel medal into the last twenty minutes of our drive home."
  },
  {
-  "id": "508a5c7929",
-  "ctx": "cue, tells the guest where to look — tour 4.0 / Þingvellir → BSÍ Bus Terminal / 🎬 Laxnes Horse Farm",
-  "en": "Look right on Route 36 — Laxnes, about 400 metres up the side road."
+  "id": "20d66c931d",
+  "ctx": "the spoken close — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🧵 Three Names to Keep in Your Pocket",
+  "en": "Keep the three names in your pocket. By the time we come back through the valley at the end of the day, you'll know why the painting, the beer and the book all end up in the same house."
  },
  {
-  "id": "e04005bf1d",
-  "ctx": "fact bullet — tour 4.0 / Þingvellir → BSÍ Bus Terminal / 🎬 Laxnes Horse Farm",
-  "en": "And the name. **Halldór Guðjónsson** was raised on this farm from the age of **three**. When he started publishing he took the farm's name — **Laxness** — and in **1955** that name won Iceland's **only Nobel Prize in Literature**. **Gljúfrasteinn**, the house he built, is the white one we passed **600 metres back up the valley**."
+  "id": "b1a6073aa9",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🧵 Three Names to Keep in Your Pocket",
+  "en": "**Kjarval** — the painter. His story opens the tour two minutes from now — and the **elf-filled altarpiece the church refused to bless** will be waiting for us in a valley at the end of our day."
  },
  {
-  "id": "145d432825",
-  "ctx": "gloss for the name \"Laxnes\" — tour 4.0 / Þingvellir → BSÍ Bus Terminal / 🎬 Laxnes Horse Farm",
-  "en": "the farm on the right: riding tours since 1968, and the boyhood home that gave Halldór his pen-name"
+  "id": "3894e3b2f5",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🧵 Three Names to Keep in Your Pocket",
+  "en": "**Tómas** — the brewer. He named his brewery after **Egill Skallagrímsson**, a Viking warrior-poet who could drink a hall dry — and who, as an old man, **buried a fortune in silver** in a valley we'll drive through on the way home."
  },
  {
-  "id": "948482f025",
-  "ctx": "fact bullet — tour 4.0 / Þingvellir → BSÍ Bus Terminal / 🪶 Mosfellsdalur",
-  "en": "Both just behind us: **Gljúfrasteinn**, the house he built — and **Laxnes**, the farm that gave him his name."
+  "id": "2430ae0fb8",
+  "ctx": "gloss for the name \"Mosfellsdalur\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🧵 Three Names to Keep in Your Pocket",
+  "en": "the literature valley where the threads tie off, on our way home"
  },
  {
-  "id": "94b7669a94",
-  "ctx": "gloss for the name \"Mosfellsdalur\" — tour 4.0 / Þingvellir → BSÍ Bus Terminal / 🪶 Mosfellsdalur",
-  "en": "the valley all around us, with buried Viking silver and a Nobel prize in it"
+  "id": "dc96ea1095",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🧍 Jóhannes Sveinsson Kjarval",
+  "en": "In **1968** he handed the city a huge part of everything he owned — the museum's Kjarval collection runs to **thousands of works** — and he died **owning almost nothing.** That grey block in Klambratún is **Kjarvalsstaðir**, Iceland's **first purpose-built art museum** (1973); since **1995** his face is on the **2,000-króna note** — the only cod fisherman ever **promoted to legal tender.**"
  },
  {
-  "id": "2a934c350f",
-  "ctx": "gloss for the name \"Skallagrímsson\" — tour 4.0 / Þingvellir → BSÍ Bus Terminal / 🪶 Mosfellsdalur",
-  "en": "Egill Skallagrímsson, the warrior-poet who buried his silver out here"
+  "id": "4f4d05c744",
+  "ctx": "gloss for the name \"Meðalland\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🧍 Jóhannes Sveinsson Kjarval",
+  "en": "the south-Iceland district where he was born, at Efri-Ey farm"
  },
  {
-  "id": "dc95331e50",
-  "ctx": "gloss for the name \"Hrísbrú\" — tour 4.0 / Þingvellir → BSÍ Bus Terminal / 🪶 Mosfellsdalur",
-  "en": "the dig site nearby where the saga says Egil's bones were moved"
+  "id": "b2c45a3354",
+  "ctx": "gloss for the name \"Borgarfjörður eystri\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🧍 Jóhannes Sveinsson Kjarval",
+  "en": "the east-Iceland fjord he was fostered out to"
  },
  {
-  "id": "2921ce4b7a",
-  "ctx": "gloss for the name \"Ólafur Arnalds\" — tour 4.0 / Þingvellir → BSÍ Bus Terminal / 🎵 Mosfellsbær",
-  "en": "the composer born here in 1986, BAFTA winner for scoring Broadchurch"
+  "id": "87c630ee1e",
+  "ctx": "gloss for the name \"Geitavík\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🧍 Jóhannes Sveinsson Kjarval",
+  "en": "the foster farm there; the fjord still calls him \"Jói í Geitavík\""
  },
  {
-  "id": "f01adee69d",
-  "ctx": "gloss for the name \"Nanna Bryndís\" — tour 4.0 / Þingvellir → BSÍ Bus Terminal / 🎵 Mosfellsbær",
-  "en": "of Of Monsters and Men, who sang on \"Particles\""
+  "id": "6059b93bb4",
+  "ctx": "gloss for the name \"Appelsín\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏢 Ölgerðin Egill Skallagrímsson",
+  "en": "the orange fizzy drink drowned in malt every Christmas, launched 1955"
  },
  {
-  "id": "4d042c4a1f",
-  "ctx": "gloss for the name \"Vor í Vaglaskógi\" — tour 4.0 / Þingvellir → BSÍ Bus Terminal / 🎵 Mosfellsbær",
-  "en": "the Kaleo cover of an Icelandic classic about a forest up north"
+  "id": "3620d78190",
+  "ctx": "gloss for the name \"Bjórdagurinn\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏢 Ölgerðin Egill Skallagrímsson",
+  "en": "\"Beer Day,\" 1 March, when real beer came back in 1989"
  },
  {
-  "id": "8b7eab8a49",
-  "ctx": "cue, tells the guest where to look — tour 4.0 / Þingvellir → BSÍ Bus Terminal / ⚖️ Kjalarnesþing",
-  "en": "Out to the right across the bay — Kjalarnes, under the foot of Esja, ten kilometres off."
+  "id": "ed7c65bb1f",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏞️ Elliðaárdalur",
+  "en": "The lights? In **1921** they dammed it for **Elliðaárstöð** — **Reykjavík's first power station**, and by a wide margin the biggest in the country when it opened — switched on by King **Christian X** in person on **27 June 1921** and still running a century later."
  },
  {
-  "id": "869cf6d5fe",
-  "ctx": "gloss for the name \"Þorsteinn Ingólfsson\" — tour 4.0 / Þingvellir → BSÍ Bus Terminal / ⚖️ Kjalarnesþing",
-  "en": "the first settler's son, who set this assembly up"
+  "id": "02388e517c",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏞️ Elliðaárdalur",
+  "en": "Iceland's *actual* first hydro plant was humbler: in **1904** a Hafnarfjörður carpenter, **Jóhannes Reykdal**, wired a **9 kW** generator to his workshop stream and lit **15 houses — the school and the Good Templars' hall among them — plus four street lamps**: officially \"Iceland's first power station,\" realistically a shed with big dreams."
  },
  {
-  "id": "74b72f3d00",
-  "ctx": "gloss for the name \"Elliðavatn\" — tour 4.0 / Þingvellir → BSÍ Bus Terminal / ⚖️ Kjalarnesþing",
-  "en": "the lake it later moved to, at Þingnes, which we passed this morning"
+  "id": "e1a9858020",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏞️ Elliðaárdalur",
+  "en": "Upstream, on a low spit in **Elliðavatn** called **Þingnes**, sits the ground identified since **1841** as the **Kjalarnesþing** — **Iceland's first assembly**, held by **Þorsteinn Ingólfsson** (the first settler's son) before the national **Alþingi** of **930**. **Ari fróði** put that þing on **Kjalarnes**; the ruins are here, fourteen kilometres away, and nobody has ever closed the gap. The old ground now lies **partly underwater** since the river was dammed. Very Icelandic: invent democracy, mislay it, then flood it. (More on parliaments right at the end of the day — hold that thought.)"
  },
  {
-  "id": "ff722f11a1",
-  "ctx": "gloss for the name \"Gulating\" — tour 4.0 / Þingvellir → BSÍ Bus Terminal / ⚖️ Kjalarnesþing",
-  "en": "the Norwegian law code Úlfljótr studied and adapted"
+  "id": "a63d0f32e8",
+  "ctx": "gloss for the name \"Elliðaárdalur\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏞️ Elliðaárdalur",
+  "en": "the river valley that feeds, waters and powers the capital"
  },
  {
-  "id": "35b6139ccf",
-  "ctx": "cue, tells the guest where to look — tour 4.0 / Þingvellir → BSÍ Bus Terminal / ⛰️ Mount Esja",
-  "en": "Look right at 2 o'clock — Esja on the skyline."
+  "id": "88eb1b75bb",
+  "ctx": "gloss for the name \"Elliðaá\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏞️ Elliðaárdalur",
+  "en": "the river itself, with a wild salmon run the city bought in 1906"
  },
  {
-  "id": "1fff6a806e",
-  "ctx": "gloss for the name \"Esja\" — tour 4.0 / Þingvellir → BSÍ Bus Terminal / ⛰️ Mount Esja",
-  "en": "the striped volcanic range on the skyline to the right"
+  "id": "68ff90c634",
+  "ctx": "gloss for the name \"Elliðavatn\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏞️ Elliðaárdalur",
+  "en": "the lake upstream whose springs give the city its tap water"
  },
  {
-  "id": "e28ec24041",
-  "ctx": "gloss for the name \"Hábunga\" — tour 4.0 / Þingvellir → BSÍ Bus Terminal / ⛰️ Mount Esja",
-  "en": "its true summit, 914 m, which almost nobody bothers with"
+  "id": "8ebecc5026",
+  "ctx": "gloss for the name \"Rauðhólar\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / ⛰️ Rauðhólar",
+  "en": "the field of little red fake volcanoes on our right"
  },
  {
-  "id": "18fdcb77b9",
-  "ctx": "gloss for the name \"Þverfellshorn\" — tour 4.0 / Þingvellir → BSÍ Bus Terminal / ⛰️ Mount Esja",
-  "en": "the ~780 m peak everyone actually hikes"
+  "id": "a86795dca4",
+  "ctx": "gloss for the name \"Heiðmörk\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / ⛰️ Rauðhólar",
+  "en": "the wetland that lava rolled over ~5,000 years ago"
  },
  {
-  "id": "a5df7af7dd",
-  "ctx": "gloss for the name \"Steinn\" — tour 4.0 / Þingvellir → BSÍ Bus Terminal / ⛰️ Mount Esja",
-  "en": "the boulder 200 m below the top; touch it and you climbed Esja"
+  "id": "a406b3915b",
+  "ctx": "cue, tells the guest where to look — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / ⛰️ Kristnitökuhraun",
+  "en": "Look right at 3 o'clock — Kristnitökuhraun, the Christianity Lava."
  },
  {
-  "id": "869e5c8849",
-  "ctx": "gloss for the name \"móberg\" — tour 4.0 / Þingvellir → BSÍ Bus Terminal / ⛰️ Mount Esja",
-  "en": "the pale tuff, lava that shattered under a glacier"
+  "id": "1f24845871",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / ⛰️ Kristnitökuhraun",
+  "en": "The field is the fresh top of the three-flow **Svínahraun** stack, radiocarbon-dated to around **1000 CE**, so it **inherited its name** from the conversion it coincided with. Fitting footnote: today the **CarbFix** project uses this very basalt to turn CO₂ into stone — the rock that once \"proved\" divine anger now mops up industrial emissions."
  },
  {
-  "id": "7c134d2f71",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧍 Jóhannes Sveinsson Kjarval",
-  "en": "Born **15 October 1885** at **Efri-Ey** farm in **Meðalland**, right here in south Iceland — **9th of 13 kids** (his parents clearly had stamina). Fostered out east to **Borgarfjörður eystri**; too poor for paint, he drew with **calf blood, soot and wool dye** — then went to sea."
+  "id": "c4357c6613",
+  "ctx": "gloss for the name \"Kristnitökuhraun\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / ⛰️ Kristnitökuhraun",
+  "en": "the \"Christianity Lava\" on our right, dated to around 1000 CE"
  },
  {
-  "id": "460a5687cd",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧍 Jóhannes Sveinsson Kjarval",
-  "en": "The crew saw his sketches, **passed the hat**, the fishermen's union topped it up. **1911**: he tried **London** — the **Royal Academy slammed the door**. The rejection was the redirect: **Copenhagen** and the **Royal Danish Academy** (graduated **1917**)."
+  "id": "dfd69f73aa",
+  "ctx": "gloss for the name \"Hellisheiði\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / ⛰️ Kristnitökuhraun",
+  "en": "the heath and pass where the lava was reported flowing"
  },
  {
-  "id": "e9febf2c1a",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧍 Jóhannes Sveinsson Kjarval",
-  "en": "Home again, he painted Iceland like no-one had — knelt over the **moss and lava three inches from his nose**, and swore he saw **elves and hidden folk** in the cracks. (In Iceland, that's not a diagnosis. That's a career.)"
+  "id": "e1c4d03f20",
+  "ctx": "cue, tells the guest where to look — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏢 Hellisheiðarvirkjun",
+  "en": "Look left at 10 o'clock — the Hellisheiði geothermal plant, up on the shoulder of Skarðsmýrarfjall."
  },
  {
-  "id": "8e564456e5",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧍 Jóhannes Sveinsson Kjarval",
-  "en": "In **1968** he handed the city a huge part of everything he owned — the museum's Kjarval collection runs to **thousands of works** — and he died **owning almost nothing.** The grey block in Klambratún is **Kjarvalsstaðir**, Iceland's **first purpose-built art museum** (1973); since **1995** his face is on the **2,000-króna note** — the only cod fisherman ever **promoted to legal tender.**"
+  "id": "70f2b1564b",
+  "ctx": "block title — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "en": "🌊 Ölfusá Intro"
  },
  {
-  "id": "67e5262eef",
-  "ctx": "the point of the block — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
-  "en": "Tómas didn't outrun Prohibition. He **outlived it** — on near-beer and a royal warrant."
+  "id": "427cb73659",
+  "ctx": "cue, tells the guest where to look — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "en": "Look right at 1–2 o'clock — Ölfusá, ahead in the lowlands."
  },
  {
-  "id": "3c005eca8b",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
-  "en": "**1913**: **Tómas Tómasson** starts Ölgerðin in a Reykjavík basement — at first just **malt extract** — and names it after **Egill Skallagrímsson**, the Viking warrior-poet who could spin stunning verse and drink a whole hall under the table."
+  "id": "ac4d2d9202",
+  "ctx": "the point of the block — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "en": "From up here it's just a pale line on the flats. Down at Selfoss, it's the biggest river in the country."
  },
  {
-  "id": "b16a55f503",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
-  "en": "Two years later Iceland bans **all alcohol** (1915). Wine creeps back in 1922, spirits in 1935 — but **beer stays illegal until 1989**. Why beer alone? It was seen as **Danish**, and sipping a Danish lager while fighting Denmark for independence felt like treason."
+  "id": "34cb2012f1",
+  "ctx": "the spoken close — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "en": "At the far end of that pale line: two harbours that lost their trade, and one address nobody checks out of early."
  },
  {
-  "id": "2f9badc607",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
-  "en": "So Ölgerðin cheats: brews **Egils Pilsner kept just under the legal 2.25%** — beer that technically wasn't beer. A loophole in a glass. (The orange **Appelsín** everyone drowns in malt at Christmas? That came later — **1955**.)"
+  "id": "15a1988e11",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "en": "That pale line across the lowlands ahead is the **Ölfusá**. Every drop of water we'll see today ends up in it — but save the numbers, we'll be standing on its bank at Selfoss."
  },
  {
-  "id": "8c2645c76b",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
-  "en": "The irony: Ölgerðin became a **purveyor to the Danish royal court** under King **Christian X** — a Danish royal warrant, in a country half-banning beer for being too Danish."
+  "id": "904608f337",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "en": "What's worth knowing from up here is what sits at the far end of it — the two villages where it meets the sea, and the prison just inland."
  },
  {
-  "id": "27c00796e7",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
-  "en": "Real beer finally returned **1 March 1989** — now **Bjórdagurinn, \"Beer Day.\"** Egils didn't fight for shelf space; they already owned it."
+  "id": "f571d27478",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "en": "It empties by **Eyrarbakki** and **Stokkseyri** — once among Iceland's busiest harbours, until the deeper port at Þorlákshöfn stole the trade."
  },
  {
-  "id": "04ffff7d34",
-  "ctx": "gloss for the name \"Ölgerðin\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
-  "en": "Iceland's most famous brewery, started in a Reykjavík basement in 1913"
+  "id": "0ce704b357",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "en": "Just inland sits **Litla-Hraun**, Iceland's main maximum-security prison."
  },
  {
-  "id": "49fd26697d",
-  "ctx": "gloss for the name \"Appelsín\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
-  "en": "the orange fizzy drink everyone drowns in malt at Christmas, from 1955"
+  "id": "85dca4140b",
+  "ctx": "gloss for the name \"Ölfusá\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "en": "the big river ahead in the lowlands"
  },
  {
-  "id": "b60e8506ba",
-  "ctx": "gloss for the name \"Tómas Tómasson\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
-  "en": "the founder, who started the brewery in 1913"
+  "id": "0a1cc3daa4",
+  "ctx": "gloss for the name \"Litla-Hraun\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "en": "Iceland's main maximum-security prison, just inland"
  },
  {
-  "id": "f77c2e5638",
-  "ctx": "gloss for the name \"Bjórdagurinn\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
-  "en": "Beer Day, 1 March, when real beer came back in 1989"
+  "id": "0f7499ae86",
+  "ctx": "gloss for the name \"Brúará\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "en": "\"Bridge-River,\" one of the streams the Hvítá gathers on the way"
  },
  {
-  "id": "e090923e7d",
-  "ctx": "block title — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
-  "en": "🏞️ Elliðaárdalur & Paradísardalur"
+  "id": "1df444c538",
+  "ctx": "gloss for the name \"Hvítá\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "en": "the glacial river that meets the Sog to form the Ölfusá"
  },
  {
-  "id": "ffba57a862",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
-  "en": "The whole valley was redesigned **~5,000 years ago** when **Leiti** erupted: lava poured down, hit the river and **split it in two**. Before, one river; after, two."
+  "id": "f9b455c387",
+  "ctx": "gloss for the name \"Tungufljót\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "en": "\"Tongue-River,\" another of the Hvítá's tributaries"
  },
  {
-  "id": "8c6edab028",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
-  "en": "Every waterfall here is the river's 5,000-year project to saw back through solid basalt to the sea."
+  "id": "2c08536e43",
+  "ctx": "gloss for the name \"Þorlákshöfn\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "en": "the deeper port that stole the trade from Eyrarbakki and Stokkseyri"
  },
  {
-  "id": "f393698013",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
-  "en": "This one kilometre has hosted a **1750s wool mill**, a **drowning pool at Skötufoss** for women convicted of \"moral crimes,\" outlaws in lava tubes, **British WWII Quonset huts**, a century-old hydro plant — and, most Icelandically, a **1998 burst pipe** that exposed 10,000 years of buried history in a weekend."
+  "id": "025bbfc29d",
+  "ctx": "cue, tells the guest where to look — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌋 Hveragerði",
+  "en": "Look left at 9–10 o'clock — Hveragerði."
  },
  {
-  "id": "b9485290f8",
-  "ctx": "gloss for the name \"Elliðaárdalur\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
-  "en": "the river valley on the right, split in two by lava"
+  "id": "68bff9d517",
+  "ctx": "gloss for the name \"Hveragerði\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌋 Hveragerði",
+  "en": "the greenhouse town of about 3,350 (3,344 at the start of 2026) on our left, steaming between the houses"
  },
  {
-  "id": "06d56be2ba",
-  "ctx": "gloss for the name \"Paradísardalur\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
-  "en": "the valley named alongside Elliðaárdalur at this stop"
+  "id": "b107ad9f1e",
+  "ctx": "gloss for the name \"Skjálftinn\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌋 Hveragerði",
+  "en": "\"The Quake,\" the exhibition built over the 2008 fissure"
  },
  {
-  "id": "055952606f",
-  "ctx": "gloss for the name \"Leitahraun\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
-  "en": "the lava from Leiti that split the river about 5,000 years ago"
+  "id": "492f04fc25",
+  "ctx": "gloss for the name \"Sunnumörk\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌋 Hveragerði",
+  "en": "the shopping centre it sits inside, torn through by that quake"
  },
  {
-  "id": "1edf6cdaf2",
-  "ctx": "gloss for the name \"Skötufoss\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
-  "en": "the waterfall used as a drowning pool for women convicted of “moral crimes”"
+  "id": "9063ef610a",
+  "ctx": "gloss for the name \"Ingólfur Arnarson\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🧭 Ingólfur Arnarson",
+  "en": "remembered as Iceland's first permanent Norse settler"
  },
  {
-  "id": "2188b8a259",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Rauðhólar",
-  "en": "These are **pseudocraters** — no magma pipe, no roots. Fake volcanoes."
+  "id": "4b7ff24402",
+  "ctx": "gloss for the name \"Höfn\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🧭 Ingólfur Arnarson",
+  "en": "the south-east port that was hundreds of extra km away before the Ring Road"
  },
  {
-  "id": "15858aea0f",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Rauðhólar",
-  "en": "**~5,000 years ago** lava from the **Leiti** volcano rolled over the **Heiðmörk** wetland; trapped water flashed to steam and **blew back out** through the molten lava, frozen mid-blast in red scoria (iron oxide — rust)."
+  "id": "8424f6c2ee",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏗️ Selfoss",
+  "en": "Then in **September 1944**, after 53 years, **two trucks crossed at the same time**. The eastern bearing cables couldn't take the concentrated weight, **snapped, and dropped the bridge into the river**. Both drivers survived. A replacement opened in **December 1945**, fifteen months later — and the war it was supposed to outlast had already ended that summer."
  },
  {
-  "id": "105495295f",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Rauðhólar",
-  "en": "Originally ~**80 cones**. NASA compared them to shapes on **Mars** as \"Earth analogues\" for buried water."
+  "id": "155c40467c",
+  "ctx": "gloss for the name \"Selfoss\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏗️ Selfoss",
+  "en": "the town that grew up around the river crossing"
  },
  {
-  "id": "3430d56cde",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Rauðhólar",
-  "en": "Just before the cones, that shallow lake on the right is **Rauðavatn**, “Red Water” — and the scruffy belt of trees beside it is the **oldest deliberate woodland in the Reykjavík area**. In **1901** around eighty shareholders founded **Skógræktarfélag Reykjavíkur**, bought **six hectares** by the lake, and put the Danish forester **C. E. Flensborg** in charge of the summers. (How do you find your way out of an Icelandic forest? Stand up. This is where somebody first tried to ruin that joke.)"
+  "id": "8654308fae",
+  "ctx": "gloss for the name \"Ölfusárbrú\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏗️ Selfoss",
+  "en": "the Ölfusá bridge, Iceland's first suspension bridge, 1891"
  },
  {
-  "id": "61b6680217",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Rauðhólar",
-  "en": "**Ari the Wise** wrote in *Íslendingabók* that at settlement Iceland was **viði vaxið milli fjalls og fjöru** — wooded from the mountains to the shore; today woodland covers about **1.5% of the country.** They dug **8,600 holes** here in **1902** and planted about **8,000 rowan** the next summer — frost killed nearly all of it, and the fence never held (a newspaper in **1918** grumbled that the livestock **gengur þar inn og út**, in and out as they pleased). Only after the Second World War, with **close to 60,000 plants**, did it stick. The oldest **mountain pines** by the lake are now **over 100 years old** — a national repair job running since 1901."
+  "id": "a1d469b44f",
+  "ctx": "gloss for the name \"Ölfusá\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá",
+  "en": "Iceland's biggest river by discharge, four rivers under one name"
  },
  {
-  "id": "160b867dd2",
-  "ctx": "gloss for the name \"Rauðhólar\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Rauðhólar",
-  "en": "the red pseudocraters out the right window; fake volcanoes with no magma pipe"
+  "id": "26d0156ade",
+  "ctx": "gloss for the name \"Brúará\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá",
+  "en": "\"Bridge-River,\" gathered by the Hvítá on the way down"
  },
  {
-  "id": "fab78c84f2",
-  "ctx": "gloss for the name \"Leitahraun\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Rauðhólar",
-  "en": "the lava from Leiti that rolled over the wetland here"
+  "id": "8f29b5981c",
+  "ctx": "gloss for the name \"Langjökull\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá",
+  "en": "the glacier the Hvítá runs south from"
  },
  {
-  "id": "d90137d7e1",
-  "ctx": "gloss for the name \"Heiðmörk\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Rauðhólar",
-  "en": "the wetland whose trapped water flashed to steam and blew the craters out"
+  "id": "66413c5df3",
+  "ctx": "gloss for the name \"Tungufljót\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá",
+  "en": "\"Tongue-River,\" also gathered by the Hvítá"
  },
  {
-  "id": "ee9949d733",
-  "ctx": "gloss for the name \"Rauðavatn\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Rauðhólar",
-  "en": "“Red Water”, the shallow lake and little wood just west of the craters"
+  "id": "14ccb94bad",
+  "ctx": "gloss for the name \"Sog\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / ⚡ Sog River",
+  "en": "Iceland's largest spring-fed river, only 20 km long"
  },
  {
-  "id": "a57e7b58f4",
-  "ctx": "gloss for the name \"Skógræktarfélag Reykjavíkur\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Rauðhólar",
-  "en": "the Reykjavík Forestry Society, founded 1901, who bought that land and started the planting"
+  "id": "c79d1005f6",
+  "ctx": "gloss for the name \"Hvítá\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / ⚡ Sog River",
+  "en": "the glacial river the Sog joins to form the Ölfusá"
  },
  {
-  "id": "648bae4347",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Kristnitökuhraun",
-  "en": "At peak tension a messenger reported **the ground tearing open on Hellisheiði**. Pagans cried \"the gods are angry!\""
+  "id": "be7d79ae7e",
+  "ctx": "gloss for the name \"Þjórsá\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / ⚡ Sog River",
+  "en": "Iceland's longest river, whose highland plants took over from the Sog"
  },
  {
-  "id": "62dbd0baa8",
-  "ctx": "gloss for the name \"Kristnitökuhraun\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Kristnitökuhraun",
-  "en": "the Christianity Lava on the right, the field tied to the year-1000 conversion"
+  "id": "84039d1b21",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🎵 Grímsnes & Kerið",
+  "en": "The lake is **groundwater** (7–14 m deep) with **no inlet or outlet** — it just tracks the water table, turquoise because the water absorbs red light first against a dark floor. There's even life in it: a 2014 study found **10 kinds of zooplankton**."
  },
  {
-  "id": "89a5b99709",
-  "ctx": "gloss for the name \"Snorri Goði\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Kristnitökuhraun",
-  "en": "the chieftain whose one calm question settled the conversion"
+  "id": "caa4bf9032",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🎵 Grímsnes & Kerið",
+  "en": "The walls are **red scoria** — iron-rich basalt cinders whose iron has **oxidised to hematite**, rust essentially, helped along by groundwater. It's so young the iron is **still rusting**; give it a few thousand more years and it'll blacken like its neighbours."
  },
  {
-  "id": "c81dff786b",
-  "ctx": "gloss for the name \"Hellisheiði\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Kristnitökuhraun",
-  "en": "the heath, or pass, where the ground was reported tearing open"
+  "id": "b2b3e1f591",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🎵 Grímsnes & Kerið",
+  "en": "It sits in the **Grímsnes** volcanic field on the western rift — the northernmost of a four-crater row, and the product of **one of a dozen or so Grímsnes eruptions** that built the **Grímsneshraun** lava field. (No single big bang, then — this one was built up slowly, the way Iceland does most things.)"
  },
  {
-  "id": "4bf5d86704",
-  "ctx": "cue, tells the guest where to look — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
-  "en": "Look left at 10 o'clock — the Hellisheiði geothermal plant."
+  "id": "66f72377df",
+  "ctx": "gloss for the name \"Kerið\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🎵 Grímsnes & Kerið",
+  "en": "the 5,000–6,000-year-old red crater with the blue lake in the bottom"
  },
  {
-  "id": "cf0ac6b131",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
-  "en": "We're on the **Hengill volcanic system**. Water goes down, returns at nearly **300°C**, and spins turbines — the white plumes are **steam**, not smoke."
+  "id": "c2ff5ed7d3",
+  "ctx": "gloss for the name \"Grímsnes\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🎵 Grímsnes & Kerið",
+  "en": "the volcanic field the crater sits in"
  },
  {
-  "id": "976d56b1ac",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
-  "en": "After generating **303 MW**, the hot water travels **27 km** in insulated pipes to heat most of the capital region."
+  "id": "8dd91279a7",
+  "ctx": "gloss for the name \"Björk\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🎵 Grímsnes & Kerið",
+  "en": "the Icelandic singer, 21 and on the bill at the 1987 crater concert"
  },
  {
-  "id": "73a3002d7a",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
-  "en": "Via **CarbFix**, CO₂ is dissolved in water and pumped into hot basalt, turning to **solid rock in under 2 years**."
+  "id": "bfd17aaa4e",
+  "ctx": "gloss for the name \"Kristinn Sigmundsson\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🎵 Grímsnes & Kerið",
+  "en": "the operatic bass who actually headlined it"
  },
  {
-  "id": "618ce95b96",
-  "ctx": "gloss for the name \"Hellisheiðarvirkjun\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
-  "en": "the geothermal power station on the left; those white plumes are steam, not smoke"
+  "id": "78f0fc0b3a",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 💙 Brúará",
+  "en": "In the famine year **1602**, the steward of nearby **Skálholt** — with the knowledge of the bishop's wife, **Helga Jónsdóttir** — had the arch **deliberately destroyed** to stop displaced, starving people crossing to reach the estate's fertile land. Charity, Skálholt-style: demolish the bridge so the hungry can't walk over it."
  },
  {
-  "id": "e983e4cff4",
-  "ctx": "gloss for the name \"Hengill\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
-  "en": "the volcanic system underneath us that the plant taps"
+  "id": "3f07a68e61",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 💙 Brúará",
+  "en": "The river had form: back in **1433** the disgraced bishop **Jón Gerreksson** was **drowned in it in a sack** as an execution. Not a lucky river to owe a bishop money."
  },
  {
-  "id": "d85224d787",
-  "ctx": "gloss for the name \"Hellisheiði\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
-  "en": "the heath, or pass, the plant is named after"
+  "id": "32f44f5b31",
+  "ctx": "gloss for the name \"Brúará\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 💙 Brúará",
+  "en": "\"Bridge-River,\" the clear spring-fed river we are crossing"
  },
  {
-  "id": "99793e0400",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌋 Hveragerði",
-  "en": "Hveragerði sits directly on the **Hengill volcanic system**. On **29 May 2008** the ground threw a **doublet**: Veðurstofa announced a **6.3** that afternoon; the papers later showed it was **two quakes three seconds apart** — **Mw 5.8 under Ingólfsfjall** and **Mw 5.9 on the Kross fault five kilometres west** — **composite Mw 6.1**. It opened new hot springs in gardens and split buildings."
+  "id": "062324f4f8",
+  "ctx": "gloss for the name \"Brúarfoss\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 💙 Brúará",
+  "en": "its showpiece, an electric-blue waterfall"
  },
  {
-  "id": "214eabd93d",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌋 Hveragerði",
-  "en": "Rather than hide it, locals built the **Quake 2008** exhibition inside the shopping centre — stand on the actual floor fissure and ride a shaking simulator."
+  "id": "62b55380a6",
+  "ctx": "gloss for the name \"Skálholt\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 💙 Brúará",
+  "en": "the church estate next door whose steward had the arch smashed"
  },
  {
-  "id": "6f0ff3efd6",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌋 Hveragerði",
-  "en": "The hot ground makes it the **greenhouse capital** of the north: geothermal tomatoes, cucumbers, flowers — and the famous **bananas**. Myth-bust: the agricultural school planted those around **1950** as an *experiment*, and they were **never commercial**. Iceland is not, and never was, a banana republic."
+  "id": "4be7c91e7d",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / ⛪ Skálholt",
+  "en": "**Skálholt** was Iceland's first **episcopal see**, founded **1056** — for 700 years the country's brain: bishops, Iceland's **first school** — **Skálholtsskóli**, a school from Ísleifur's time — a scriptorium and a library, all bankrolled by a guaranteed **church tithe from 1097**."
  },
  {
-  "id": "ede7519624",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌋 Hveragerði",
-  "en": "For scale: **about 140 people at the end of 1941**, **about 400 by 1946** — the year the district was formally constituted — and **about 3,350 today (3,344 at the start of 2026).** The name is far older than the town. **Hveragerði first appears in Fitjaannáll shortly before 1700**, in an account of an erupting hot spring that **shifted position during earthquakes in 1597**, and by the description of Ölfus written in **1703** the springs were already in daily use for **bathing, boiling and washing.**"
+  "id": "789452424d",
+  "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / ⛪ Skálholt",
+  "en": "The school ran from **Ísleifur's time until 1785**, with short interruptions. Seven centuries of teaching, on a farm."
  },
  {
-  "id": "975bba5180",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌋 Hveragerði",
-  "en": "Veðurstofa Íslands logged that quake to the minute — **fimmtudaginn 29. maí kl. 15:45**, epicentre at **Ingólfsfjall in Ölfus, about 5 km north-west of Selfoss**, with a very large number of aftershocks behind it. (Two quakes, one bang; nobody in town stopped to count.) And the best thing in **Sunnumörk** was never meant to be an exhibit at all: when the centre was under construction in **2003** an **earthquake fissure was found in the ground beneath it**, and instead of filling it in they **lit it and left it on show.** **Admission is free** — you pay only if you want a turn in the simulator, which runs at **over 6 on the Richter scale.**"
+  "id": "6e4c0eb828",
+  "ctx": "gloss for the name \"Þorlákur\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / ⛪ Skálholt",
+  "en": "Þorlákur Þórhallsson, Iceland's only saint, declared holy in 1198"
  },
  {
-  "id": "26f9fbcccc",
-  "ctx": "gloss for the name \"Hveragerði\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌋 Hveragerði",
-  "en": "the greenhouse town of about 3,350 on the left, sat on the Hengill system"
+  "id": "a0d032042b",
+  "ctx": "gloss for the name \"tölt\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🐎 Icelandic Horses",
+  "en": "the smooth four-beat running walk this breed has and most others don't"
  },
  {
-  "id": "b680039680",
-  "ctx": "the point of the block — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
-  "en": "Every drop that falls on the Golden Circle — glaciers, geysers, lakes — eventually squeezes through this one 25 km channel."
+  "id": "3a87e0848d",
+  "ctx": "section title",
+  "en": "Friðheimar"
  },
  {
-  "id": "98bb408887",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
-  "en": "Ölfusá is **Iceland's largest river by discharge — about 400 m³ a second** off a **5,760 km² basin.** Not the longest; just the one shifting the most water, which is the number that mattered when nobody could get across it."
+  "id": "f421bedc86",
+  "ctx": "the point of the block — tour 4.0 / Friðheimar / 🍅 Reykholt & Friðheimar",
+  "en": "Just south of the Arctic you shouldn't be able to grow a tomato — so Iceland grows a big share of its own on volcano heat and skips the shipping."
  },
  {
-  "id": "ea7741d265",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
-  "en": "It's **four systems in disguise.** Just north of here the glacial **Hvítá** — the silt-heavy water that thunders over **Gullfoss** — collides with the clear spring **Sog** draining **Þingvallavatn**, Iceland's biggest natural lake. Glacial grey plus lake-clear, welded into one."
+  "id": "5372e86530",
+  "ctx": "fact bullet — tour 4.0 / Friðheimar / 🍅 Reykholt & Friðheimar",
+  "en": "**Reykholt** (\"smoky hill\") in **Bláskógabyggð** is the village — a whole cluster of geothermal greenhouses (**Friðheimar, Espiflöt, Jarðarberjaland** — literally \"strawberry land,\" and more). **Friðheimar** is the headliner: a working tomato greenhouse where you eat lunch **among the vines**, soup ladled three feet from the plant that grew it."
  },
  {
-  "id": "9961991532",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
-  "en": "By then Hvítá has already gathered **Tungufljót** and **Brúará**, so this single channel drains a huge slice of the highlands."
+  "id": "aed82689c3",
+  "ctx": "fact bullet — tour 4.0 / Friðheimar / 🍅 Reykholt & Friðheimar",
+  "en": "The crop drinks the volcano: **~95°C geothermal water** piped straight from a borehole heats the glasshouse, **LED grow-lights** fake a summer through the black winter, and the vines fruit **12 months a year — about 370 tonnes**, roughly **a tonne a day**, a serious slice of every Icelandic tomato. The same volcanic heat that warms Reykjavík's living rooms, just aimed at lunch."
  },
  {
-  "id": "eca6c3f45f",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
-  "en": "For centuries it was the **ultimate obstacle**: **unfordable**, no bridge, just nervous ferrymen at **Laugardælir** paid in **cattle or cod** to reach the harbour at **Eyrarbakki**."
+  "id": "091ecd79e0",
+  "ctx": "fact bullet — tour 4.0 / Friðheimar / 🍅 Reykholt & Friðheimar",
+  "en": "No native insect can pollinate a tomato flower this far north, so Friðheimar **flew in Dutch bumblebees** — a striped workforce knocking out **up to 2,000 flowers a day**. Iceland outsourced its pollination department to the Netherlands and never looked back."
  },
  {
-  "id": "96fdcf6b00",
-  "ctx": "gloss for the name \"Ölfusá\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
-  "en": "Iceland's largest river by discharge, about 400 m³ a second"
+  "id": "b97f0290a8",
+  "ctx": "gloss for the name \"Reykholt\" — tour 4.0 / Friðheimar / 🍅 Reykholt & Friðheimar",
+  "en": "\"smoky hill,\" the greenhouse village we are passing"
  },
  {
-  "id": "bd608c0afd",
-  "ctx": "gloss for the name \"Hvítá\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
-  "en": "the glacial river that thunders over Gullfoss before joining it"
+  "id": "1cb6ba5122",
+  "ctx": "gloss for the name \"Friðheimar\" — tour 4.0 / Friðheimar / 🍅 Reykholt & Friðheimar",
+  "en": "the tomato greenhouse where you eat lunch among the vines"
  },
  {
-  "id": "81c8b789f4",
-  "ctx": "gloss for the name \"Sog\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
-  "en": "the clear spring river draining Þingvallavatn into it"
+  "id": "d7e9214c28",
+  "ctx": "gloss for the name \"Jarðarberjaland\" — tour 4.0 / Friðheimar / 🍅 Reykholt & Friðheimar",
+  "en": "literally \"strawberry land,\" another greenhouse in the cluster"
  },
  {
-  "id": "b10e290386",
-  "ctx": "gloss for the name \"Tungufljót\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
-  "en": "one of the rivers Hvítá gathers on the way"
+  "id": "e603d46431",
+  "ctx": "fact bullet — tour 4.0 / Friðheimar → Gullfoss / ⚖️ The Sturlung Age",
+  "en": "Power had pooled in a few big clans, especially the **Sturlungar** (yes, saga-writer **Snorri Sturluson**'s family). Disputes moved from the Althing to **swords, fires and assassinations**. At **Örlygsstaðir (1238)**, the largest battle on Icelandic soil, the northern Sturlungar were wiped out in one afternoon."
  },
  {
-  "id": "8ecbb5fad4",
-  "ctx": "gloss for the name \"Brúará\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
-  "en": "the other river Hvítá gathers on the way"
+  "id": "7e301bd5ae",
+  "ctx": "gloss for the name \"Örlygsstaðir\" — tour 4.0 / Friðheimar → Gullfoss / ⚖️ The Sturlung Age",
+  "en": "the largest battle ever fought on Icelandic soil, 1238"
  },
  {
-  "id": "00c8153ef6",
-  "ctx": "gloss for the name \"Laugardælir\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
-  "en": "the old ferry crossing, where ferrymen were paid in cattle or cod"
+  "id": "6ef6e4a1f3",
+  "ctx": "gloss for the name \"Reykholt\" — tour 4.0 / Friðheimar → Gullfoss / ⚖️ The Sturlung Age",
+  "en": "Snorri's estate, where he was murdered in 1241"
  },
  {
-  "id": "94a5c55c7b",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
-  "en": "Per the saga, first settler **Ingólfur Arnarson** threw his carved **high-seat pillars** overboard and vowed to settle wherever they washed up."
+  "id": "94c6b133d8",
+  "ctx": "gloss for the name \"Flugumýri\" — tour 4.0 / Friðheimar → Gullfoss / ⚖️ The Sturlung Age",
+  "en": "the hall torched with the wedding party inside in 1253"
  },
  {
-  "id": "581b4b97fc",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
-  "en": "It took his slaves **three years** to find them — in a bay full of steam from hot springs, which he named **Reykjavík**, \"Smoky Bay.\""
+  "id": "1d6daa09fa",
+  "ctx": "the point of the block — tour 4.0 / Friðheimar → Gullfoss / ⚖️ Haukadalur",
+  "en": "Iceland's first school. Iceland's first historian. Iceland's first geyser. **Same valley. Same farm.**"
  },
  {
-  "id": "6efe74bad4",
-  "ctx": "gloss for the name \"Ingólfur Arnarson\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
-  "en": "the first settler, who followed his high-seat pillars to Reykjavík"
+  "id": "e2e63cf261",
+  "ctx": "fact bullet — tour 4.0 / Friðheimar → Gullfoss / ⚖️ Haukadalur",
+  "en": "**Haukadalur** means **\"Valley of the Hawks\"** — known now for steam, but historically Iceland's first **education centre**."
  },
  {
-  "id": "2776b93cbb",
-  "ctx": "gloss for the name \"Höfn\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
-  "en": "the south-east port that took hundreds of extra km to reach before the Ring Road"
+  "id": "4a505eba9c",
+  "ctx": "fact bullet — tour 4.0 / Friðheimar → Gullfoss / ⚖️ Haukadalur",
+  "en": "For two centuries this was also a **chieftain's seat**: the home farm of the **Haukdælir**, one of the great power families of the Icelandic Commonwealth."
  },
  {
-  "id": "6a1ac50f06",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏗️ Selfoss",
-  "en": "In **WWII**, British troops guarded this bridge day and night — a key Reykjavík–south-coast link."
+  "id": "720a196801",
+  "ctx": "gloss for the name \"Haukadalur\" — tour 4.0 / Friðheimar → Gullfoss / ⚖️ Haukadalur",
+  "en": "\"Valley of the Hawks,\" Iceland's first education centre"
  },
  {
-  "id": "896009056a",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏗️ Selfoss",
-  "en": "But in **September 1944** a milk truck tried to tow another broken-down milk truck across the old **1891 suspension bridge**. The cables couldn't take the concentrated weight, snapped, and both trucks dropped into the gorge."
+  "id": "239e4485fa",
+  "ctx": "gloss for the name \"Teitur Ísleifsson\" — tour 4.0 / Friðheimar → Gullfoss / ⚖️ Haukadalur",
+  "en": "the bishop's son who ran the famous school here"
  },
  {
-  "id": "072912e461",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏗️ Selfoss",
-  "en": "Both drivers survived — one clung to a **loose spare tyre** until he drifted ashore. The replacement opened **17 December 1945** — built in about **five and a half months**, because a town's only lifeline doesn't stay broken."
+  "id": "56df99d985",
+  "ctx": "gloss for the name \"Ari fróði\" — tour 4.0 / Friðheimar → Gullfoss / ⚖️ Haukadalur",
+  "en": "\"the Wise,\" the boy schooled here who became Iceland's first historian"
  },
  {
-  "id": "666e26fd0f",
-  "ctx": "gloss for the name \"Selfoss\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏗️ Selfoss",
-  "en": "the town whose bridge two milk trucks brought down in September 1944"
+  "id": "14b311dc20",
+  "ctx": "gloss for the name \"Gullfoss\" — tour 4.0 / Gullfoss / 💧 Hvítá & Gullfoss",
+  "en": "\"Golden Falls,\" the 32 m two-tier waterfall we are standing at"
  },
  {
-  "id": "2304dd0cd8",
-  "ctx": "gloss for the name \"Ölfusárbrú\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏗️ Selfoss",
-  "en": "that bridge, rebuilt in about five and a half months and opened 17 December 1945"
+  "id": "e66022f3d5",
+  "ctx": "gloss for the name \"Hvítá\" — tour 4.0 / Gullfoss / 💧 Hvítá & Gullfoss",
+  "en": "the glacial river that drops over it"
  },
  {
-  "id": "42cb07bf9a",
-  "ctx": "block title — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
-  "en": "🌊 Þjórsá"
+  "id": "cf2b507439",
+  "ctx": "gloss for the name \"Sigríður Tómasdóttir\" — tour 4.0 / Gullfoss / 💧 Hvítá & Gullfoss",
+  "en": "the farmer's daughter who fought to save the falls"
  },
  {
-  "id": "950e413811",
-  "ctx": "the point of the block — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
-  "en": "Every crossing passes over the main drain for a big chunk of Iceland's backbone — and its biggest battery."
+  "id": "b3ae2bc477",
+  "ctx": "gloss for the name \"Tungufljót\" — tour 4.0 / Gullfoss → Geysir / ⚡ Tungufljót",
+  "en": "\"Tongue-River,\" the river we are crossing"
  },
  {
-  "id": "d4d02ac6c6",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
-  "en": "Midstream sits the island of **Árnes**, which in the settlement era hosted its own **Þing** — a local assembly. Give an Icelander a defensible rock in a fast river and their first instinct is to hold a meeting on it."
+  "id": "4336af8768",
+  "ctx": "gloss for the name \"Faxi\" — tour 4.0 / Gullfoss → Geysir / ⚡ Tungufljót",
+  "en": "also called Vatnsleysufoss, its broad ~7 m falls with a salmon ladder"
  },
  {
-  "id": "b5c3d13a9d",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
-  "en": "It does **more electrical work than any river in Iceland**: **six power stations** on the Þjórsá–Tungnaá system (Búrfell first, 1969) feed the grid — chiefly the **aluminium smelters** that are the reason a country of 380,000 makes so much power."
+  "id": "76fcd2a982",
+  "ctx": "gloss for the name \"Brúárvirkjun\" — tour 4.0 / Gullfoss → Geysir / ⚡ Tungufljót",
+  "en": "the small Landsvirkjun hydro station on its upper river"
  },
  {
-  "id": "4b38b4c596",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
-  "en": "Those wide braided channels in the fields are **floodpaths**: when the glaciers melt fast, Þjórsá spreads across its plains rather than politely staying in one channel."
+  "id": "bbef1c3362",
+  "ctx": "gloss for the name \"Geysir\" — tour 4.0 / Geysir / ⛲ Geysir",
+  "en": "the original hot spring that gave every language the word \"geyser\""
  },
  {
-  "id": "a2f8092b66",
-  "ctx": "gloss for the name \"Þjórsá\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
-  "en": "Iceland's longest river, 230 km from ice cap to sea"
+  "id": "ded4f2c11e",
+  "ctx": "gloss for the name \"Strokkur\" — tour 4.0 / Geysir / ⛲ Geysir",
+  "en": "\"the Churn,\" its reliable cousin, firing every 6–10 minutes"
  },
  {
-  "id": "1cb6d9eb27",
-  "ctx": "gloss for the name \"Hofsjökull\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
-  "en": "the ice cap the river rises off"
+  "id": "b0478569ad",
+  "ctx": "section title",
+  "en": "Geysir → Þingvellir"
  },
  {
-  "id": "b3cf1b9e21",
-  "ctx": "gloss for the name \"Árnes\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
-  "en": "the midstream island that hosted its own Þing, a local assembly"
+  "id": "754b63a0a2",
+  "ctx": "cue, tells the guest where to look — tour 4.0 / Geysir → Þingvellir / 🛁 Laugarvatn & Apavatn",
+  "en": "Look left at 9 o'clock — Laugarvatn."
  },
  {
-  "id": "4581081cab",
-  "ctx": "block title — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🕳️ Hella",
-  "en": "🕳️ Hella"
+  "id": "6b7734d5ae",
+  "ctx": "the point of the block — tour 4.0 / Geysir → Þingvellir / 🛁 Laugarvatn & Apavatn",
+  "en": "Most countries hold political summits in glass towers. Iceland held one in a hot lake."
  },
  {
-  "id": "fec8e72df5",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🕳️ Hella",
-  "en": "Carved into the soft rock beside the **Ytri-Rangá** river is a cluster of **man-made caves**, some with simple **crosses** and **stone benches** cut into the wall."
+  "id": "fbf8697857",
+  "ctx": "the spoken close — tour 4.0 / Geysir → Þingvellir / 🛁 Laugarvatn & Apavatn",
+  "en": "The Vikings invented hot-tub diplomacy a thousand years before Davos."
  },
  {
-  "id": "08862dad10",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🕳️ Hella",
-  "en": "A popular theory ties them to the **Papar** — the Irish monks that **Íslendingabók** and **Landnámabók** both say were in Iceland *before* the Norse and legged it the moment longships appeared. Tempting, but honest: **no archaeological dating has confirmed a pre-Norse origin** for the Hella caves, and the work is still ongoing."
+  "id": "9c379d8855",
+  "ctx": "fact bullet — tour 4.0 / Geysir → Þingvellir / 🛁 Laugarvatn & Apavatn",
+  "en": "Neighbour lake **Apavatn** (\"Marsh Lake\") is where the \"cold politics\" happened. In **spring 1238**, during the Sturlung Age, **Sturla Sighvatsson** (Sturlungar) ambushed and captured his rival **Gizur Þorvaldsson** (Haukdælir) right here — forcing him to swear on the Bible to give up power and sail to Norway."
  },
  {
-  "id": "00dd5c9a75",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🕳️ Hella",
-  "en": "What's certain is that people hollowed homes and barns **straight out of the hillside** — the town proper is a newcomer by comparison, founded **1927** around a store and a slaughterhouse, in the heart of **Rangárvellir** horse country."
+  "id": "d8b61cdf40",
+  "ctx": "fact bullet — tour 4.0 / Geysir → Þingvellir / 🛁 Laugarvatn & Apavatn",
+  "en": "Gizur had his fingers crossed. He broke the oath, teamed up with **Kolbeinn ungi**, and five months later — **~1,700 men against ~1,000** — crushed the Sturlungar at **Örlygsstaðir (21 August 1238)**, the largest battle ever fought on Icelandic soil. Sturla's ancient family spear **Grásíða kept bending in his hands** as the tide turned; Gizur is said to have struck the fatal blow. So much for hot-tub diplomacy at the lake next door."
  },
  {
-  "id": "8191cda372",
-  "ctx": "gloss for the name \"Hella\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🕳️ Hella",
-  "en": "the town on the left, founded 1927, with man-made caves cut into the hillside"
+  "id": "7e5338c2d1",
+  "ctx": "gloss for the name \"Laugarvatn\" — tour 4.0 / Geysir → Þingvellir / 🛁 Laugarvatn & Apavatn",
+  "en": "\"Pool Lake,\" the bath-warm lake on our left"
  },
  {
-  "id": "b9aee04ddb",
-  "ctx": "gloss for the name \"Papar\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🕳️ Hella",
-  "en": "the Irish monks said to have been here before the Norse"
+  "id": "352a10f6ce",
+  "ctx": "gloss for the name \"Gizur Þorvaldsson\" — tour 4.0 / Geysir → Þingvellir / 🛁 Laugarvatn & Apavatn",
+  "en": "his Haukdælir rival, who broke the oath and won"
  },
  {
-  "id": "ee00928e57",
-  "ctx": "gloss for the name \"Ytri-Rangá\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🕳️ Hella",
-  "en": "the river the caves are carved beside"
+  "id": "2a05a644ce",
+  "ctx": "gloss for the name \"Örlygsstaðir\" — tour 4.0 / Geysir → Þingvellir / 🛁 Laugarvatn & Apavatn",
+  "en": "the 1238 battle where Gizur crushed the Sturlungar"
  },
  {
-  "id": "d3b3858943",
-  "ctx": "block title — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏡 Keldur",
-  "en": "🏡 Keldur"
+  "id": "3754ca69b1",
+  "ctx": "gloss for the name \"Vígðalaug\" — tour 4.0 / Geysir → Þingvellir / 🛁 Laugarvatn & Apavatn",
+  "en": "the \"Consecrated Pool,\" the warm spring the converts were baptised in"
  },
  {
-  "id": "da766c9050",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏡 Keldur",
-  "en": "**Keldur** is the **oldest standing house in Iceland** — medieval in origin, traced to the **late 1100s**. About **eight hundred years**. One of the finest **passageway-style** turf farmhouses left."
+  "id": "d40bfe7c00",
+  "ctx": "gloss for the name \"Fontana\" — tour 4.0 / Geysir → Þingvellir / 🛁 Laugarvatn & Apavatn",
+  "en": "the geothermal baths on that lake today"
  },
  {
-  "id": "6879bf90a1",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏡 Keldur",
-  "en": "It was a seat of the **Oddaverjar**, the clan the sagas call the **\"Kings of the South,\"** and it stands square in **Njáll's saga** country."
+  "id": "2c78fce2a0",
+  "ctx": "gloss for the name \"Þangbrandur\" — tour 4.0 / Geysir → Þingvellir / ⚖️ Kristnitaka",
+  "en": "the Saxon priest who fought duels with poets who mocked him"
  },
  {
-  "id": "11b6b6064b",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏡 Keldur",
-  "en": "The thick turf walls weren't decorative — they were **climate tech**: keeping people, animals and food alive through long wet winters with almost no timber to spare."
+  "id": "7d2b15e523",
+  "ctx": "cue, tells the guest where to look — tour 4.0 / Geysir → Þingvellir / 🌋 Hekla",
+  "en": "Look back over your left shoulder — Hekla, sixty kilometres out. Clear days only."
  },
  {
-  "id": "b724c3d97e",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏡 Keldur",
-  "en": "In **1932** a hidden **underground tunnel** was found running from the hall down toward a stream — not romantic, purely practical: an **escape route** if enemies tried to torch the house with everyone asleep inside. Saga-age arson was a known hazard, not a plot device."
+  "id": "3c116818f7",
+  "ctx": "gloss for the name \"tephra\" — tour 4.0 / Geysir → Þingvellir / 🌋 Hekla",
+  "en": "volcanic ash and fragments; Hekla dropped ~2 km³ of it in 1104"
  },
  {
-  "id": "4c7b682987",
-  "ctx": "gloss for the name \"Keldur\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏡 Keldur",
-  "en": "the oldest standing house in Iceland, with its own escape tunnel"
+  "id": "a7bf20cca7",
+  "ctx": "gloss for the name \"Laugarvatnshellir\" — tour 4.0 / Geysir → Þingvellir / 🕳️ The Cave People",
+  "en": "the pair of man-made caves hacked out of soft tuff"
  },
  {
-  "id": "32f921f386",
-  "ctx": "gloss for the name \"Oddaverjar\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏡 Keldur",
-  "en": "the clan the sagas call the Kings of the South, who held Keldur"
+  "id": "9f890d2f59",
+  "ctx": "gloss for the name \"Laugarvatn\" — tour 4.0 / Geysir → Þingvellir / 🕳️ The Cave People",
+  "en": "the lake village at one end of the heath these caves sit on"
  },
  {
-  "id": "aabe3d9ab8",
-  "ctx": "gloss for the name \"Njáll\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏡 Keldur",
-  "en": "the saga hero whose country this farm stands in"
+  "id": "c78b7f3ba7",
+  "ctx": "gloss for the name \"Guðrún Kolbeinsdóttir\" — tour 4.0 / Geysir → Þingvellir / 🕳️ The Cave People",
+  "en": "the other 1910 tenant; the two ran a coffee-and-cakes tent for travellers"
  },
  {
-  "id": "946b89408d",
-  "ctx": "block title — tour 5.0 / Hvolsvöllur / 🏘️ Hvolsvöllur",
-  "en": "🏘️ Hvolsvöllur"
+  "id": "42afc9aee1",
+  "ctx": "gloss for the name \"Jón Þorvarðsson\" — tour 4.0 / Geysir → Þingvellir / 🕳️ The Cave People",
+  "en": "the father here 1918–1922, who delivered his own daughter in a blizzard"
  },
  {
-  "id": "deee4617d7",
-  "ctx": "the point of the block — tour 5.0 / Hvolsvöllur / 🏘️ Hvolsvöllur",
-  "en": "Most towns have a petrol station and a supermarket. This one has a community tapestry of **betrayals, burnings and bad decisions** — and a museum wired to the next eruption."
+  "id": "147422ba71",
+  "ctx": "gloss for the name \"Ragnheiður\" — tour 4.0 / Geysir → Þingvellir / 🕳️ The Cave People",
+  "en": "the daughter born in the cave, delivered by her own father"
  },
  {
-  "id": "bcea38af8b",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur / 🏘️ Hvolsvöllur",
-  "en": "Just east lies **Bergþórshvoll**, the farm of **Njáll Þorgeirsson**, where the saga's set-piece — the **brenna**, the burning of Njáll, his wife Bergþóra and their sons, around **the year 1011** — is placed by scholars right where the road now runs. *Game of Thrones,* except half the cast also had to be home for the haymaking."
+  "id": "83dd87b9b4",
+  "ctx": "gloss for the name \"Erik the Red\" — tour 4.0 / Geysir → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "the Norseman who settled Greenland in 985"
  },
  {
-  "id": "4a25ad90fe",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur / 🏘️ Hvolsvöllur",
-  "en": "Also here: the **LAVA Centre** (opened **2017**), sat deliberately between **four active volcanic systems** — Hekla, Katla, Eyjafjallajökull and the Westman Islands, all within 50 km — with a live seismograph reading the ground under your feet."
+  "id": "236e51e584",
+  "ctx": "gloss for the name \"Leifur Eiríksson\" — tour 4.0 / Geysir → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "the Norseman who reached Vínland around 1000"
  },
  {
-  "id": "e0d5d87c83",
-  "ctx": "gloss for the name \"Hvolsvöllur\" — tour 5.0 / Hvolsvöllur / 🏘️ Hvolsvöllur",
-  "en": "the last full-service fuel stop before Vík"
+  "id": "1b04a4030d",
+  "ctx": "gloss for the name \"Rúrik\" — tour 4.0 / Geysir → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "founder of the Rurikid line, who arrived in Novgorod in 862"
  },
  {
-  "id": "f903bde464",
-  "ctx": "gloss for the name \"Njáll\" — tour 5.0 / Hvolsvöllur / 🏘️ Hvolsvöllur",
-  "en": "the saga hero burned in his own farmhouse around the year 1011"
+  "id": "9c23645c41",
+  "ctx": "gloss for the name \"Óleg\" — tour 4.0 / Geysir → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "the Varangian who took Kiev in 882 and founded Kievan Rus'"
  },
  {
-  "id": "4af0d6fe3b",
-  "ctx": "gloss for the name \"Brennu-Njáls saga\" — tour 5.0 / Hvolsvöllur / 🏘️ Hvolsvöllur",
-  "en": "“Burnt Njáll”, Iceland's longest and bloodiest family saga"
+  "id": "99e5b53a3e",
+  "ctx": "gloss for the name \"Hedeby\" — tour 4.0 / Geysir → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "the Danish trading town on the southern route, founded 804"
  },
  {
-  "id": "7bd0c28e39",
-  "ctx": "gloss for the name \"Bergþórshvoll\" — tour 5.0 / Hvolsvöllur / 🏘️ Hvolsvöllur",
-  "en": "Njáll's farm just east of here, site of the burning"
+  "id": "35fa1da450",
+  "ctx": "gloss for the name \"Mikligarður\" — tour 4.0 / Geysir → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "the \"Great City,\" Old Norse for Constantinople"
  },
  {
-  "id": "b295e44282",
-  "ctx": "gloss for the name \"brenna\" — tour 5.0 / Hvolsvöllur / 🏘️ Hvolsvöllur",
-  "en": "a saga burning-in, the set-piece where Njáll's household died"
+  "id": "6bc79bea51",
+  "ctx": "gloss for the name \"Vínland\" — tour 4.0 / Geysir → Þingvellir / 🚢 The Norse Expansion (793–1066 CE)",
+  "en": "\"Wine Land,\" the Norse name for North America"
  },
  {
-  "id": "5205722587",
-  "ctx": "gloss for the name \"Vík\" — tour 5.0 / Hvolsvöllur / 🏘️ Hvolsvöllur",
-  "en": "the coastal town ahead; this is the last full-service fuel stop before it"
+  "id": "48ea4ff65d",
+  "ctx": "gloss for the name \"Landnám\" — tour 4.0 / Geysir → Þingvellir / 🏘️ Landnám",
+  "en": "the \"Land-Taking,\" the ~60-year settlement of Iceland"
  },
  {
-  "id": "3558f16d73",
-  "ctx": "block title — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🐦 Vestmannaeyjar",
-  "en": "🐦 Vestmannaeyjar"
- },
- {
-  "id": "0e5477c45e",
-  "ctx": "cue, tells the guest where to look — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🐦 Vestmannaeyjar",
-  "en": "Look right at 2 o'clock — the Westman Islands out to sea."
- },
- {
-  "id": "b81b59a8f0",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🐦 Vestmannaeyjar",
-  "en": "Just after midnight on **23 January 1973** a **1.6 km fissure** tore open at the edge of town on **Heimaey**, and a brand-new volcano — **Eldfell**, \"Fire Mountain\" — began throwing lava through the eastern half of the streets."
- },
- {
-  "id": "965671a36a",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🐦 Vestmannaeyjar",
-  "en": "The lucky break was weather: a storm the day before had kept the whole **fishing fleet in harbour**, so of about **5,300 residents, roughly 5,000 were evacuated in around eight hours** — Iceland has **no army**, so the fishermen ran the evacuation themselves."
- },
- {
-  "id": "a11cf14088",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🐦 Vestmannaeyjar",
-  "en": "The eruption ran **five months** and buried about **400 buildings**. To save the harbour, crews pumped **millions of litres of North Atlantic seawater** onto the advancing lava for weeks — and the cooled flow left the entrance **deeper and more sheltered than before.**"
- },
- {
-  "id": "fbdadeb5f3",
-  "ctx": "gloss for the name \"Vestmannaeyjar\" — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🐦 Vestmannaeyjar",
-  "en": "the Westman Islands out to sea on the right, nearly wiped off the map in 1973"
- },
- {
-  "id": "74476705a3",
-  "ctx": "gloss for the name \"Heimaey\" — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🐦 Vestmannaeyjar",
-  "en": "the inhabited island where the 1973 fissure tore open at the edge of town"
- },
- {
-  "id": "2c52f54ece",
-  "ctx": "gloss for the name \"Eldfell\" — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🐦 Vestmannaeyjar",
-  "en": "Fire Mountain, the brand-new volcano that threw lava through the streets"
- },
- {
-  "id": "c3216dfb4c",
-  "ctx": "block title — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "en": "🌊 Landeyjar Plains"
- },
- {
-  "id": "b622e19de6",
-  "ctx": "the spoken close — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "en": "\"There's nothing here,\" they say. Under you: old seabed. Ahead: glacial wash-plain. Left: ghost coastline. That's a lot of nothing."
- },
- {
-  "id": "92cffe0c81",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "en": "The name gives it away: **Landeyjar means \"land islands\"** — grassy patches that stood up out of the marsh and sand. Waves once rolled over where this road runs, the sea reaching right up to that **cliff line on your left**."
- },
- {
-  "id": "e042cc2929",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "en": "Then the land rose, the rivers kept dumping sand, and the coastline **marched south, kilometre by kilometre** — the shore is now several km further out than the cliffs that used to be beach."
- },
- {
-  "id": "cb033bb2ce",
-  "ctx": "gloss for the name \"Landeyjar\" — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "en": "land islands, the flat plains of old seabed we're crossing"
- },
- {
-  "id": "0fc8535db6",
-  "ctx": "block title — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🛡️ Markarfljót & Hlíðarendi",
-  "en": "🛡️ Markarfljót & Hlíðarendi"
- },
- {
-  "id": "2ec6927c25",
-  "ctx": "the spoken close — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🛡️ Markarfljót & Hlíðarendi",
-  "en": "Out there: grass and sheep. In the sagas: a man who chose his view over his life — and didn't survive the choice."
- },
- {
-  "id": "c9a16129a0",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🛡️ Markarfljót & Hlíðarendi",
-  "en": "In front of you, the **Markarfljót** runs **~100 km** to the sea, fed by two ice caps — **Mýrdalsjökull** and **Eyjafjallajökull** — that both sit on live volcanoes, which is why it has a temper. In **2010** engineers **deliberately breached the Ring Road embankment** to let the Eyjafjallajökull meltwater flood through and **save the bridge.** Sacrifice the road to keep the crossing."
- },
- {
-  "id": "2513b74a1f",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🛡️ Markarfljót & Hlíðarendi",
-  "en": "Tucked into the far slopes is **Hlíðarendi**, home of **Gunnar** of **Njáll's saga** — the best of the saga heroes."
- },
- {
-  "id": "a629554180",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🛡️ Markarfljót & Hlíðarendi",
-  "en": "Sentenced to exile, Gunnar rode out, looked back and said the line every Icelander knows: *\"Fair is the hillside… I will not go away.\"*"
- },
- {
-  "id": "57ca2c557e",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🛡️ Markarfljót & Hlíðarendi",
-  "en": "That one glance cost him everything: he **turned back**, stayed, and was killed defending his farm."
- },
- {
-  "id": "c3ca3c27c5",
-  "ctx": "gloss for the name \"Markarfljót\" — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🛡️ Markarfljót & Hlíðarendi",
-  "en": "the glacial river in front of us, about 100 km long and fed by two ice caps"
- },
- {
-  "id": "dd30d4a93c",
-  "ctx": "gloss for the name \"Hlíðarendi\" — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🛡️ Markarfljót & Hlíðarendi",
-  "en": "Gunnar's farm on the far slopes, the hillside he refused to leave"
- },
- {
-  "id": "11c234d2ad",
-  "ctx": "gloss for the name \"Njáll\" — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🛡️ Markarfljót & Hlíðarendi",
-  "en": "the saga hero whose saga tells Gunnar's story"
- },
- {
-  "id": "58e0a42045",
-  "ctx": "block title — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌋 Eyjafjallajökull",
-  "en": "🌋 Eyjafjallajökull"
- },
- {
-  "id": "f967709b8e",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌋 Eyjafjallajökull",
-  "en": "**Eyjafjallajökull** — an **~800,000-year-old** stratovolcano, summit **1,651 m**, under an ice cap now shrunk to about **66 km²** — sits there looking like a tidy white lid over green fields."
- },
- {
-  "id": "e40942530a",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌋 Eyjafjallajökull",
-  "en": "By volcanic standards **2010 was small: a VEI 4, only ~0.27 km³ of ash.** But it fired a **plume 8–9 km high** straight into the **jet stream** — and the glassy particles turn jet engines into **expensive sandblasters.**"
- },
- {
-  "id": "9d8adb41a5",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌋 Eyjafjallajökull",
-  "en": "Result: the **worst aviation shutdown in Europe since WWII** — **104,000 flights cancelled over eight days, 15–22 April**, about **48% of expected European traffic**, leaving roughly **10 million passengers unable to fly**, with airspace over some **20 countries** closed. Europe learned volcanoes don't read timetables."
- },
- {
-  "id": "5c5b42ba38",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌋 Eyjafjallajökull",
-  "en": "At farms like **Þorvaldseyri** right at its foot, **500–800 people were evacuated overnight** as meltwater poured off the ice; farmers **milked cows in respirator masks** and scraped ash off the roofs — then built a small visitor centre, because if a volcano rewrites your year you may as well sell the story."
- },
- {
-  "id": "6d0e6d9d43",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌋 Eyjafjallajökull",
-  "en": "Guest question, every time: does it trigger **Katla** next door? Historically the 920, 1612 and 1821 eruptions each were — but in **2010 Katla stayed shut.** Eyjafjallajökull is a **warning light, not a trigger.**"
- },
- {
-  "id": "ce4b1a0902",
-  "ctx": "gloss for the name \"Eyjafjallajökull\" — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌋 Eyjafjallajökull",
-  "en": "the glacier volcano whose 2010 ash cloud grounded European air travel"
- },
- {
-  "id": "5b2c10263a",
-  "ctx": "gloss for the name \"Þorvaldseyri\" — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌋 Eyjafjallajökull",
-  "en": "the farm right at its foot, evacuated overnight in 2010"
- },
- {
-  "id": "c4bbbb7c04",
-  "ctx": "block title — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🪨 Drangurinn",
-  "en": "🪨 Drangurinn"
- },
- {
-  "id": "0977638b39",
-  "ctx": "cue, tells the guest where to look — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🪨 Drangurinn",
-  "en": "Look left at 10 o'clock — Drangurinn, under the cliffs of Eyjafjöll."
- },
- {
-  "id": "94df77b12f",
-  "ctx": "the point of the block — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🪨 Drangurinn",
-  "en": "A single stone that lets you flip between two ways of seeing Iceland — geology and saga — at the same time."
- },
- {
-  "id": "43c03554ea",
-  "ctx": "the spoken close — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🪨 Drangurinn",
-  "en": "Geologists see a subglacial tuff plug. Storytellers see a giant's bite mark on a rock that never finished becoming gravel."
- },
- {
-  "id": "2d572ad57c",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🪨 Drangurinn",
-  "en": "**Drangurinn** stands alone in the field like a stubborn leftover — a block of **palagonite tuff (móberg)**, the same subglacial-eruption rock that built nearby **Pétursey**, left behind when the softer cliff around it eroded away. Farmers were so unbothered they used it as a **natural barn**."
- },
- {
-  "id": "32dd525680",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🪨 Drangurinn",
-  "en": "The saga version: **Grettir the Strong** — Iceland's great troublemaking outlaw — supposedly tore the rock from the mountain and hurled it here, leaving a **bite-mark notch in the ridge above**."
- },
- {
-  "id": "335e73ce29",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🪨 Drangurinn",
-  "en": "Once you know the story, that notch stops looking like erosion and starts looking like a **missing tooth**. And a boulder this dramatic naturally comes with **elf traditions** — recorded in **Jón Árnason's folktales** — and a film career: it starred in the Viking film *Hrafninn flýgur* (\"When the Raven Flies\")."
- },
- {
-  "id": "43d4a1dc78",
-  "ctx": "gloss for the name \"Drangurinn\" — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🪨 Drangurinn",
-  "en": "the lone standing rock in the field, used by farmers as a natural barn"
- },
- {
-  "id": "b3e1b88574",
-  "ctx": "gloss for the name \"Drangshlíð\" — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🪨 Drangurinn",
-  "en": "the farms beside that rock"
- },
- {
-  "id": "5dbb246523",
-  "ctx": "block title — tour 5.0 / Sólheimajökull / 🧊 Sólheimajökull",
-  "en": "🧊 Sólheimajökull"
- },
- {
-  "id": "22812a9cd1",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull / 🧊 Sólheimajökull",
-  "en": "A gravel path pulls you toward **Sólheimajökull**, an outlet tongue of **Mýrdalsjökull** — **Iceland's 4th-largest ice cap** — wedged neatly between the volcanoes **Katla** and **Eyjafjallajökull**."
- },
- {
-  "id": "64e4a86178",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull / 🧊 Sólheimajökull",
-  "en": "In front sits a **blue-green proglacial lagoon** with small icebergs calving off; the colour is **glacial flour**, rock ground so fine it turns the water to liquid stone-dust."
- },
- {
-  "id": "9e595a8a9c",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull / 🧊 Sólheimajökull",
-  "en": "The tongue is **retreating around 40 m a year** — a bus-length of ice a summer. Signs along the path mark where the front *used* to reach: \"here… and here… and here.\" You've just walked **decades of retreat in a few minutes.**"
- },
- {
-  "id": "c782f09511",
-  "ctx": "gloss for the name \"Sólheimajökull\" — tour 5.0 / Sólheimajökull / 🧊 Sólheimajökull",
-  "en": "the glacier tongue in front of us, retreating around 40 m a year"
- },
- {
-  "id": "81919a4e55",
-  "ctx": "gloss for the name \"Mýrdalsjökull\" — tour 5.0 / Sólheimajökull / 🧊 Sólheimajökull",
-  "en": "Iceland's 4th-largest ice cap, the one this tongue flows from"
- },
- {
-  "id": "86e48f0585",
-  "ctx": "gloss for the name \"Katla\" — tour 5.0 / Sólheimajökull / 🧊 Sólheimajökull",
-  "en": "one of the two volcanoes this glacier is wedged between"
- },
- {
-  "id": "8e9562ac50",
-  "ctx": "gloss for the name \"Eyjafjallajökull\" — tour 5.0 / Sólheimajökull / 🧊 Sólheimajökull",
-  "en": "the other volcano it is wedged between"
- },
- {
-  "id": "09535a123a",
-  "ctx": "block title — tour 5.0 / Sólheimajökull → Reynisfjara / ✈️ The DC-3 Wreck",
-  "en": "✈️ The DC-3 Wreck"
- },
- {
-  "id": "f7e71b23fa",
-  "ctx": "the point of the block — tour 5.0 / Sólheimajökull → Reynisfjara / ✈️ The DC-3 Wreck",
-  "en": "It's a **modern layer on the geology**: Katla built the sandur, the Americans accidentally parked a plane on it, and social media did the rest."
- },
- {
-  "id": "d14691074e",
-  "ctx": "the spoken close — tour 5.0 / Sólheimajökull → Reynisfjara / ✈️ The DC-3 Wreck",
-  "en": "From the bus, you mostly see empty blackness. The drama is the crew who glided this thing engine-out into the middle of nowhere — and all seven lived."
- },
- {
-  "id": "5aad420d1f",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / ✈️ The DC-3 Wreck",
-  "en": "On **21 November 1973** a **US Navy Douglas C-117D** — a beefed-up \"Super DC-3,\" though everyone insists on calling it a plain DC-3 — was flying **Höfn to Keflavík** when **both engines choked on carburettor ice over Vatnajökull.** Myth-bust: it did **not** \"run out of fuel.\""
- },
- {
-  "id": "faed3697d1",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / ✈️ The DC-3 Wreck",
-  "en": "The co-pilot turned the powerless plane — \"a massively overweight glider\" — **south for the coast** and put it down on the black sand. **All seven crew walked away.** The Navy stripped the useful parts and left the bare hull."
- },
- {
-  "id": "64527f1a54",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / ✈️ The DC-3 Wreck",
-  "en": "For decades a quiet local landmark; then **Justin Bieber** (2015) and the Bollywood hit *Dilwale* filmed here and **Instagram** did the rest. Today visitors walk a **4 km track each way** — the road was closed to cars in **2016** — across old ocean floor just to touch a wingless plane in a volcanic desert."
- },
- {
-  "id": "719644e06e",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / ✈️ The DC-3 Wreck",
-  "en": "Not a joke in bad weather: the plain has **no shelter at all**, and **two visitors died of hypothermia** near the wreck in a January 2020 storm."
- },
- {
-  "id": "09b482b55c",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / ✈️ The DC-3 Wreck",
-  "en": "🎬 **On screen:** This lonely wreck is a music-video magnet — **Justin Bieber's** \"I'll Show You\" (2015), Sigur Rós's *Heima* documentary (2007), and Bollywood's *Dilwale* (\"Gerua\") all used the plane and the black desert around it."
- },
- {
-  "id": "eeb5d7ca8b",
-  "ctx": "gloss for the name \"Sólheimasandur\" — tour 5.0 / Sólheimajökull → Reynisfjara / ✈️ The DC-3 Wreck",
-  "en": "the black outwash plain the wreck sits on, built by Katla"
- },
- {
-  "id": "c6f5336875",
-  "ctx": "block title — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
-  "en": "⛰️ Pétursey"
- },
- {
-  "id": "85a57b87b5",
-  "ctx": "cue, tells the guest where to look — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
-  "en": "Look right at 1–2 o'clock — the steep, isolated mountain."
- },
- {
-  "id": "60066da90e",
-  "ctx": "the point of the block — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
-  "en": "Geology, saga, seabirds and elves — all stacked on one piece of frozen ash."
- },
- {
-  "id": "5c9d1edff1",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
-  "en": "**Pétursey** (\"Peter's Island\") is **móberg** — the ash-and-rubble palagonite rock formed when a volcano **erupts under ice or sea** in the last Ice Age; hot magma met cold water, shattered mid-blast, and cemented into these steep walls. Same recipe as nearby **Drangurinn**."
- },
- {
-  "id": "eda1c643db",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
-  "en": "Its old name was literally **\"Tall Island\"** — because for much of the Holocene the Atlantic really did surround it and sailors used it as a **landmark**, until **Katla**'s black sand slowly filled the gap and tethered it to the mainland."
- },
- {
-  "id": "6c439866d7",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
-  "en": "In the **Sturlungaöld** civil war, some **200 armed men fortified the summit** as a defensible keep — a 360° view and one way up."
- },
- {
-  "id": "d9107206a9",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
-  "en": "The cliffs still work as a **seabird colony** — fulmars and **puffins** circle it as if it never stopped being an island — and, this being Iceland, the mound is thick with **hidden-folk and elf legends**. At the base today: two farms, **Eystri-** and **Vestri-Pétursey**."
- },
- {
-  "id": "fb0190a885",
-  "ctx": "gloss for the name \"Pétursey\" — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
-  "en": "“Peter's Island”, the steep móberg mountain on the right, once a real island"
- },
- {
-  "id": "7134a55f8e",
-  "ctx": "gloss for the name \"móberg\" — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
-  "en": "the ash-and-rubble palagonite rock made when a volcano erupts under ice or sea"
- },
- {
-  "id": "2f3b1bff27",
-  "ctx": "gloss for the name \"Katla\" — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
-  "en": "the volcano whose black sand filled the gap and tethered it to the mainland"
- },
- {
-  "id": "f32fad84ff",
-  "ctx": "gloss for the name \"Sturlungaöld\" — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
-  "en": "the civil-war era, c. 1220–1264, when 200 armed men fortified the summit"
- },
- {
-  "id": "fc403c6dce",
-  "ctx": "gloss for the name \"Eystri-Pétursey\" — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
-  "en": "the east farm at its base"
- },
- {
-  "id": "a4d6ece5fe",
-  "ctx": "gloss for the name \"Vestri-Pétursey\" — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
-  "en": "the west farm at its base"
- },
- {
-  "id": "9618173244",
-  "ctx": "block title — tour 5.0 / Sólheimajökull → Reynisfjara / ⛪ Skeiðflatarkirkja",
-  "en": "⛪ Skeiðflatarkirkja"
- },
- {
-  "id": "774477720b",
-  "ctx": "the spoken close — tour 5.0 / Sólheimajökull → Reynisfjara / ⛪ Skeiðflatarkirkja",
-  "en": "If you squint, you can almost see Hallgrímskirkja **hiding inside** this little red-roofed church — it just needed a son with a big imagination."
- },
- {
-  "id": "87fd1cd4d9",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / ⛪ Skeiðflatarkirkja",
-  "en": "This modest country church was built by the carpenter **Samúel Jónsson**."
- },
- {
-  "id": "71a80ca8ef",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / ⛪ Skeiðflatarkirkja",
-  "en": "His son **Guðjón Samúelsson** grew up here and became **Iceland's State Architect** — the man behind **Hallgrímskirkja**, the basalt-column church on the Reykjavík hill, *and* the concrete lighthouse out at **Dýrhólaey** we'll pass."
- },
- {
-  "id": "d2f645ecaf",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / ⛪ Skeiðflatarkirkja",
-  "en": "Hallgrímskirkja was **commissioned in 1937** but took a marathon to build — finally **consecrated in 1986, 36 years after Guðjón died in 1950.** He never saw his own masterpiece finished."
- },
- {
-  "id": "f73890251f",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / ⛪ Skeiðflatarkirkja",
-  "en": "You can feel these **simple, sturdy rural churches**, built to shrug off wind, rain and ash, echoing in the capital's skyline — Iceland's grandest church is a farm chapel that went to architecture school."
- },
- {
-  "id": "62dbdc6241",
-  "ctx": "gloss for the name \"Skeiðflatarkirkja\" — tour 5.0 / Sólheimajökull → Reynisfjara / ⛪ Skeiðflatarkirkja",
-  "en": "the small red-roofed country church in the fields on the left"
- },
- {
-  "id": "aa6a30a5f3",
-  "ctx": "gloss for the name \"Guðjón Samúelsson\" — tour 5.0 / Sólheimajökull → Reynisfjara / ⛪ Skeiðflatarkirkja",
-  "en": "the son who grew up here and became Iceland's State Architect"
- },
- {
-  "id": "f47800c90b",
-  "ctx": "gloss for the name \"Hallgrímskirkja\" — tour 5.0 / Sólheimajökull → Reynisfjara / ⛪ Skeiðflatarkirkja",
-  "en": "the basalt-column church on the Reykjavík hill that he designed"
- },
- {
-  "id": "7d894e46e1",
-  "ctx": "gloss for the name \"Jónsson\" — tour 5.0 / Sólheimajökull → Reynisfjara / ⛪ Skeiðflatarkirkja",
-  "en": "as in Samúel Jónsson, the carpenter who built this church"
- },
- {
-  "id": "74b518e785",
-  "ctx": "block title — tour 5.0 / Sólheimajökull → Reynisfjara / 🚪 Dýrhólaey",
-  "en": "🚪 Dýrhólaey"
- },
- {
-  "id": "3cbd276c43",
-  "ctx": "the point of the block — tour 5.0 / Sólheimajökull → Reynisfjara / 🚪 Dýrhólaey",
-  "en": "A teaching stop par excellence: glacial plains, old islands and active coastal erosion all visible in **one slow spin of your head**."
- },
- {
-  "id": "089da782c5",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / 🚪 Dýrhólaey",
-  "en": "**Dýrhólaey** (\"door-hill island\") formed about **100,000 years ago** in a **submarine eruption**, then waves hammered a huge natural **sea arch** through it — the \"door\" of the name — under **~100 m cliffs**."
- },
- {
-  "id": "851105ac19",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / 🚪 Dýrhólaey",
-  "en": "On top sits a castle-like lighthouse: Iceland's **first landfall light and its brightest**, visible **43 km (27 nautical miles)** out to sea — first tower 1910, the concrete one **1927 by Guðjón Samúelsson**, the same architect as the church a few stops back."
- },
- {
-  "id": "ba33fd7714",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / 🚪 Dýrhólaey",
-  "en": "Long called the **southernmost point of the mainland** — until **Katla's 1918 flood built Kötlutangi**, which took the title off it **for several decades**, before the sea carried that sand west again. The volcano moved the goalposts; the Atlantic moved them back."
- },
- {
-  "id": "0b8c517302",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / 🚪 Dýrhólaey",
-  "en": "And in **October 1993**, pilot **Arngrímur Jóhannsson** and MP **Árni Johnsen** flew a light aircraft through the arch — three passes, to prove the first wasn't luck."
- },
- {
-  "id": "d79ff789b9",
-  "ctx": "fact bullet — tour 5.0 / Sólheimajökull → Reynisfjara / 🚪 Dýrhólaey",
-  "en": "🎬 **On screen:** *Game of Thrones* used the beach below as **Eastwatch-by-the-Sea** (Season 7), and it's shown up in *Vikings* and *Beowulf & Grendel* as well."
- },
- {
-  "id": "a8dfa9653d",
-  "ctx": "gloss for the name \"Dýrhólaey\" — tour 5.0 / Sólheimajökull → Reynisfjara / 🚪 Dýrhólaey",
-  "en": "“door-hill island”, the headland with the lighthouse and the sea arch"
- },
- {
-  "id": "0cc6abdc0a",
-  "ctx": "gloss for the name \"Reynisdrangar\" — tour 5.0 / Sólheimajökull → Reynisfjara / 🚪 Dýrhólaey",
-  "en": "the sea-stack needles ahead along the coast"
- },
- {
-  "id": "f4f7a6e18e",
-  "ctx": "gloss for the name \"Kötlutangi\" — tour 5.0 / Sólheimajökull → Reynisfjara / 🚪 Dýrhólaey",
-  "en": "the spit Katla's 1918 flood built, the mainland's southernmost point for several decades afterwards"
- },
- {
-  "id": "519dd1e6be",
-  "ctx": "block title — tour 5.0 / Reynisfjara / 🌊 Reynisfjara & Reynisdrangar",
-  "en": "🌊 Reynisfjara & Reynisdrangar"
- },
- {
-  "id": "5387d5669b",
-  "ctx": "fact bullet — tour 5.0 / Reynisfjara / 🌊 Reynisfjara & Reynisdrangar",
-  "en": "Out in the surf stand the **Reynisdrangar sea stacks**, the last of an old headland where tough basalt held while the softer cliff was chewed away — the \"stack\" at the end of the crack-cave-arch-stack sequence. The cliffs above are a **puffin colony** in summer."
- },
- {
-  "id": "99ddf6ca2b",
-  "ctx": "fact bullet — tour 5.0 / Reynisfjara / 🌊 Reynisfjara & Reynisdrangar",
-  "en": "In the legend, those stacks are **two trolls and a ship**, caught by sunrise mid-theft and turned to stone. Trolls in Iceland are strictly nocturnal; daylight is their kryptonite."
- },
- {
-  "id": "56fb361a6c",
-  "ctx": "fact bullet — tour 5.0 / Reynisfjara / 🌊 Reynisfjara & Reynisdrangar",
-  "en": "🎬 **On screen:** Hollywood's favourite black beach — *Rogue One: A Star Wars Story* (2016), *Star Trek Into Darkness* (2013, standing in for an alien planet), *Noah* (2014), and *Game of Thrones* as the Eastwatch coast, plus several Indian films (*Aadhavan*, *Naayak*)."
- },
- {
-  "id": "5b2313e35d",
-  "ctx": "gloss for the name \"Reynisfjara\" — tour 5.0 / Reynisfjara / 🌊 Reynisfjara & Reynisdrangar",
-  "en": "the black sand beach we're on: Iceland's most beautiful and most dangerous"
- },
- {
-  "id": "ca1d3c7106",
-  "ctx": "gloss for the name \"Reynisdrangar\" — tour 5.0 / Reynisfjara / 🌊 Reynisfjara & Reynisdrangar",
-  "en": "the sea stacks out in the surf; in the legend, two trolls and a ship"
- },
- {
-  "id": "34011735d0",
-  "ctx": "gloss for the name \"Hálsanefshellir\" — tour 5.0 / Reynisfjara / 🌊 Reynisfjara & Reynisdrangar",
-  "en": "the shallow cave with the pipe-organ wall of hexagonal columns"
- },
- {
-  "id": "36716ff485",
-  "ctx": "gloss for the name \"Garðar\" — tour 5.0 / Reynisfjara / 🌊 Reynisfjara & Reynisdrangar",
-  "en": "the basalt cliff the cave sits under"
- },
- {
-  "id": "da60facf13",
-  "ctx": "block title — tour 5.0 / Reynisfjara → Vík / 🌋 Katla",
-  "en": "🌋 Katla"
- },
- {
-  "id": "a53241a946",
-  "ctx": "fact bullet — tour 5.0 / Reynisfjara → Vík / 🌋 Katla",
-  "en": "Under that ice sits **Katla** — a **~10 km-wide caldera**, summit **1,512 m** — one of Iceland's biggest, angriest volcanoes. The cap above is **Mýrdalsjökull**, Iceland's **4th-largest ice cap** — **520 km² as measured in 2019**, down from about **607 km² around the year 2000** and **736 km² at its Little Ice Age peak around 1890** — acting as a several-hundred-metre insulating blanket over a furnace."
- },
- {
-  "id": "489d019a6e",
-  "ctx": "fact bullet — tour 5.0 / Reynisfjara → Vík / 🌋 Katla",
-  "en": "She's produced **at least 21 eruptions in the last 1,100 years**, typically **VEI 4–5** — bigger than famous neighbour Eyjafjallajökull's 2010 show. The last one to come up through the ice, **1918**, ran **24 days** and dumped so much flood sediment — **about 200 million m³ (0.2 km³) of sand** — that it **pushed the shore south of Hjörleifshöfði out by more than 3 km.** A volcano that does land reclamation."
- },
- {
-  "id": "3341cdf4ba",
-  "ctx": "fact bullet — tour 5.0 / Reynisfjara → Vík / 🌋 Katla",
-  "en": "The gaps between her eruptions have run from **about 13 years to about 80, averaging just under 50** — and it is now **108 years since 1918, the longest quiet spell on record.** (Her system also produced **Eldgjá**, which began in the **spring of 939 CE** and ran on, at least episodically, into the **autumn of 940** — one of the largest lava floods of the last 2,000 years.)"
- },
- {
-  "id": "550ff6cc56",
-  "ctx": "fact bullet — tour 5.0 / Reynisfjara → Vík / 🌋 Katla",
-  "en": "Erupting under ice, she produces a **jökulhlaup** — a glacial flood that can push **up to ~300,000 m³ a second** to the sea, faster than a galloping horse. The town ahead, **Vík**, has drilled for this for decades."
- },
- {
-  "id": "10d22aba32",
-  "ctx": "fact bullet — tour 5.0 / Reynisfjara → Vík / 🌋 Katla",
-  "en": "🎬 **On screen:** The ice up here, Mýrdalsjökull, doubled as the land **beyond the Wall** in *Game of Thrones* Season 2 — the Night's Watch / Fist of the First Men scenes."
- },
- {
-  "id": "1d6d361f53",
-  "ctx": "gloss for the name \"Katla\" — tour 5.0 / Reynisfjara → Vík / 🌋 Katla",
-  "en": "the volcano under that ice, a caldera about 10 km wide and overdue"
- },
- {
-  "id": "83972dae8c",
-  "ctx": "gloss for the name \"Mýrdalsjökull\" — tour 5.0 / Reynisfjara → Vík / 🌋 Katla",
-  "en": "the ice cap covering her, Iceland's 4th-largest"
- },
- {
-  "id": "790b8d6802",
-  "ctx": "gloss for the name \"jökulhlaup\" — tour 5.0 / Reynisfjara → Vík / 🌋 Katla",
-  "en": "a glacial outburst flood, up to about 300,000 m³ a second"
- },
- {
-  "id": "7b5f1596b8",
-  "ctx": "gloss for the name \"Vík\" — tour 5.0 / Reynisfjara → Vík / 🌋 Katla",
-  "en": "the town up ahead, which has drilled for that flood for decades"
- },
- {
-  "id": "12f4cbc724",
-  "ctx": "block title — tour 5.0 / Vík í Mýrdal / ⛪ Víkurkirkja",
-  "en": "⛪ Víkurkirkja"
- },
- {
-  "id": "73ec6a1afb",
-  "ctx": "the point of the block — tour 5.0 / Vík í Mýrdal / ⛪ Víkurkirkja",
-  "en": "The town's most beautiful building is also its most practical piece of **safety equipment**."
- },
- {
-  "id": "4aea398bda",
-  "ctx": "fact bullet — tour 5.0 / Vík í Mýrdal / ⛪ Víkurkirkja",
-  "en": "**Víkurkirkja**, **consecrated in 1934**, sits high on the hill for one reason: **Katla**."
- },
- {
-  "id": "2dcd8b9d92",
-  "ctx": "fact bullet — tour 5.0 / Vík í Mýrdal / ⛪ Víkurkirkja",
-  "en": "Every resident is trained to **run to this church** the moment the sirens sound — and the drills assume they may have only about **15 minutes** to get clear."
- },
- {
-  "id": "b5711fd97d",
-  "ctx": "gloss for the name \"Víkurkirkja\" — tour 5.0 / Vík í Mýrdal / ⛪ Víkurkirkja",
-  "en": "the church above town, consecrated 1934, the spot the whole village runs to if Katla wakes"
- },
- {
-  "id": "6f1aa800be",
-  "ctx": "gloss for the name \"Mýrdalsjökull\" — tour 5.0 / Vík í Mýrdal / ⛪ Víkurkirkja",
-  "en": "the ice cap Katla would erupt under, sending the flood"
- },
- {
-  "id": "c81ebfd7bb",
-  "ctx": "block title — tour 5.0 / Vík í Mýrdal / 🏘️ Vík í Mýrdal",
-  "en": "🏘️ Vík í Mýrdal"
- },
- {
-  "id": "b6146b71b5",
-  "ctx": "fact bullet — tour 5.0 / Vík í Mýrdal / 🏘️ Vík í Mýrdal",
-  "en": "You'll see Vík — Iceland's **southernmost mainland village**, and with no natural harbour, historically a place you rowed boats out through the surf from an open shore — strung along the beach, with **Víkurkirkja** parked safely up on the hill."
- },
- {
-  "id": "a1e106d502",
-  "ctx": "fact bullet — tour 5.0 / Vík í Mýrdal / 🏘️ Vík í Mýrdal",
-  "en": "In **1918 Katla** erupted under the ice and sent a **jökulhlaup** to sea so vast it **pushed the shore south of Hjörleifshöfði out by more than 3 km**, burying everything under fresh sand."
- },
- {
-  "id": "3ef82c6a61",
-  "ctx": "fact bullet — tour 5.0 / Vík í Mýrdal / 🏘️ Vík í Mýrdal",
-  "en": "To the east, **Hjörleifshöfði** — a saga headland that once sat by open sea — is now stranded **inland**, the gap quietly filled by a century of Katla's black sand."
- },
- {
-  "id": "9806f6753b",
-  "ctx": "fact bullet — tour 5.0 / Vík í Mýrdal / 🏘️ Vík í Mýrdal",
-  "en": "Odd bragging rights: **Vík shares the title of Iceland's warmest weather station with Vestmannaeyjar** — around **5.9 °C** a year on the recent normals. It's also **one of the wettest inhabited places in Iceland** — about **2,330 mm** a year, roughly triple Reykjavík. The actual record-holder is **Kvísker**, out east under Öræfajökull, which took **4,630 mm in 2002 alone.** The church above town is the official \"**run here if Katla wakes**\" point."
- },
- {
-  "id": "605518ec1b",
-  "ctx": "fact bullet — tour 5.0 / Vík í Mýrdal / 🏘️ Vík í Mýrdal",
-  "en": "🎬 **On screen:** The mountains right behind town played **Siberia** in *Captain America: Civil War* (2016), and Vík is the whole backdrop for Netflix's Icelandic series *Katla* (2021)."
- },
- {
-  "id": "969a6f90ba",
-  "ctx": "gloss for the name \"Vík í Mýrdal\" — tour 5.0 / Vík í Mýrdal / 🏘️ Vík í Mýrdal",
-  "en": "Iceland's southernmost mainland village; it shares the title of the country's warmest weather station with Vestmannaeyjar, and is one of the wettest inhabited places"
- },
- {
-  "id": "d19187679a",
-  "ctx": "gloss for the name \"Víkurkirkja\" — tour 5.0 / Vík í Mýrdal / 🏘️ Vík í Mýrdal",
-  "en": "the church parked safely up on the hill above the village"
- },
- {
-  "id": "42a418bac8",
-  "ctx": "gloss for the name \"Hjörleifshöfði\" — tour 5.0 / Vík í Mýrdal / 🏘️ Vík í Mýrdal",
-  "en": "the saga headland to the east, once by open sea and now stranded inland"
- },
- {
-  "id": "0689ccfbca",
-  "ctx": "block title — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "🛡️ Hjörleifshöfði"
- },
- {
-  "id": "74b4ddacb7",
-  "ctx": "the point of the block — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "Iceland's history didn't start with peace. It started with **blood feuds** — and a vengeful housekeeper who lives in the ice."
- },
- {
-  "id": "631db73fc5",
-  "ctx": "the spoken close — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "Most countries' founding stories are statues and speeches. Iceland's is a body, a brother, and a witch in a skyr-vat."
- },
- {
-  "id": "7bccf65997",
-  "ctx": "fact bullet — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "**Hjörleifshöfði** is a **221 m palagonite (móberg) inselberg** named after **Hjörleifur Hróðmarsson**, the sworn **blood-brother** of Iceland's first settler **Ingólfur Arnarson**."
- },
- {
-  "id": "8906e8d359",
-  "ctx": "fact bullet — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "Per *Landnámabók*, Hjörleifur settled here around **874** and, **within a year (c. 875)**, was **murdered by his own enslaved Irish/Hebridean men** — one of the very few slave revolts the sagas record. Ingólfur tracked them to the islands on the horizon and killed them in revenge."
- },
- {
-  "id": "f0eadc048b",
-  "ctx": "fact bullet — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "Here's the payoff on the map: those islands are the **Vestmannaeyjar** — the **\"Isles of the West Men.\"** *Vestmenn* was the Norse word for the **Gaels of Ireland and the Hebrides** — so the archipelago out there is **named after the enslaved Gaels themselves.** The romantic image of free, self-made Viking farmers is missing a chapter."
- },
- {
-  "id": "9f884413be",
-  "ctx": "fact bullet — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "At its base sits **Kötluklettur**, \"Katla's Rock.\" The tale: **Katla**, a housekeeper at nearby **Þykkvabæjarklaustur** with **magic breeches** that made her run impossibly fast, killed the shepherd boy **Barði** for borrowing them and hid him in a **vat of skyr** — then, as the whey dropped and discovery loomed, threw herself into the glacier. Every eruption, they say, is her ghost. **The volcano is named after her.**"
- },
- {
-  "id": "c2ebb0f84d",
-  "ctx": "fact bullet — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "Like Pétursey, this cape **was once an island**, now tethered to the coast by miles of Katla's black sand."
- },
- {
-  "id": "e01ece8ed1",
-  "ctx": "fact bullet — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "🎬 **On screen:** This headland and the black sands around it (Hafursey, Mýrdalssandur) became the planet **Lah'mu** — Jyn Erso's childhood home — in *Rogue One* (2016). The famous \"Yoda Cave\" (Gigjagjá) is tucked into this very massif."
- },
- {
-  "id": "57ddd26c8e",
-  "ctx": "gloss for the name \"Hjörleifshöfði\" — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "the flat-topped 221 m inselberg ahead, once an offshore island"
- },
- {
-  "id": "f498ddac54",
-  "ctx": "gloss for the name \"Hjörleifur Hróðmarsson\" — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "Ingólfur's sworn blood-brother, murdered here around 875"
- },
- {
-  "id": "669e54aa64",
-  "ctx": "gloss for the name \"Ingólfur Arnarson\" — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "Iceland's first settler, who hunted down the killers"
- },
- {
-  "id": "6ee680029a",
-  "ctx": "gloss for the name \"Vestmannaeyjar\" — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "“Isles of the West Men”, named after the enslaved Gaels themselves"
- },
- {
-  "id": "3ad8a62470",
-  "ctx": "gloss for the name \"Kötluklettur\" — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "“Katla's Rock”, at the base of the headland"
- },
- {
-  "id": "aab010e0bc",
-  "ctx": "gloss for the name \"Katla\" — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "the housekeeper of the tale, and the volcano named after her"
- },
- {
-  "id": "22596e19ee",
-  "ctx": "gloss for the name \"Þykkvabæjarklaustur\" — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "the monastery nearby where she kept house"
- },
- {
-  "id": "5112c3bfd6",
-  "ctx": "gloss for the name \"Barði\" — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "the shepherd boy she killed for borrowing her magic breeches"
- },
- {
-  "id": "63ebfb48e1",
-  "ctx": "gloss for the name \"skyr\" — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "Icelandic strained dairy; the vat she hid the body in"
- },
- {
-  "id": "35afd300bf",
-  "ctx": "gloss for the name \"Pétursey\" — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "en": "the other one-time island back down the road, now tethered by black sand"
- },
- {
-  "id": "1627bf5bda",
-  "ctx": "block title — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
-  "en": "🏞️ Skógafoss"
- },
- {
-  "id": "2943991dda",
-  "ctx": "fact bullet — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
-  "en": "The **Skógá river** skips the rapids and walks straight off the old sea-cliff — a clean **60 m drop, 25 m wide** — free-falling into a deep pool before racing across the sandur to the Atlantic."
- },
- {
-  "id": "ea11ce1b99",
-  "ctx": "fact bullet — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
-  "en": "At the base you have to **shout to be heard** — which is why most videos from here are people silently pointing. The metal staircase on the right is your free fitness test; at the top begins the **Fimmvörðuháls trail**, which climbs the river **between Eyjafjallajökull and Mýrdalsjökull** — the same gap the 2010 eruption first cracked open."
- },
- {
-  "id": "8b2471bb2b",
-  "ctx": "fact bullet — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
-  "en": "This cliff is the **coastline of thousands of years ago**: textbook waterfall geology — hard cap-rock over soft, undercut and collapsing, so the fall eats **upstream** and leaves a gorge behind it. The land then lifted, rivers dumped black sand, and the real shore marched several km south — Skógafoss never moved."
- },
- {
-  "id": "000f24760a",
-  "ctx": "fact bullet — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
-  "en": "Behind the car park: **Skógar Museum** (turf houses, old church, farm buildings) and a **bonus waterfall, Kvernufoss**, hiding in a green gorge next door. Plus the legend of **Þrasi's treasure** — a settler's gold chest hidden behind the falls; would-be looters snapped off the iron ring, which ended up on the **church door**. The gold did not follow."
- },
- {
-  "id": "f8e37ab086",
-  "ctx": "fact bullet — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
-  "en": "🎬 **On screen:** The big one for filmmakers — *Thor: The Dark World* (2013), *Vikings* (Floki's storyline, Season 5), a *Game of Thrones* aerial sequence in the final season, the old *Beowulf & Grendel* (2005), India's *Dilwale*, *Aadhavan* and *Namo Venkatesa* — and yes, **Justin Bieber** clambered up it for his \"I'll Show You\" video."
- },
- {
-  "id": "0e7c7da8ce",
-  "ctx": "gloss for the name \"Skógafoss\" — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
-  "en": "the waterfall in front of us, a clean 60 m drop off the old sea-cliff"
- },
- {
-  "id": "9b65b83fd2",
-  "ctx": "gloss for the name \"Skógá\" — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
-  "en": "the river that walks straight off that cliff"
- },
- {
-  "id": "907a47f5b5",
-  "ctx": "gloss for the name \"Fimmvörðuháls\" — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
-  "en": "the trail from the top, climbing between the two ice caps"
- },
- {
-  "id": "ef12656346",
-  "ctx": "gloss for the name \"Eyjafjallajökull\" — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
-  "en": "one of the two glaciers that trail climbs between"
- },
- {
-  "id": "c1c51c7857",
-  "ctx": "gloss for the name \"Mýrdalsjökull\" — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
-  "en": "the ice cap on the other side of that trail"
- },
- {
-  "id": "cbb8cccff3",
-  "ctx": "gloss for the name \"Skógar\" — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
-  "en": "the museum village behind the car park: turf houses, old church, farm buildings"
- },
- {
-  "id": "70914cc5a6",
-  "ctx": "gloss for the name \"Kvernufoss\" — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
-  "en": "the bonus waterfall hiding in a green gorge next door"
- },
- {
-  "id": "89a6455df1",
-  "ctx": "block title — tour 5.0 / Seljalandsfoss / 💧 Seljalandsfoss & Gljúfrabúi",
-  "en": "💧 Seljalandsfoss & Gljúfrabúi"
- },
- {
-  "id": "66dbf42963",
-  "ctx": "fact bullet — tour 5.0 / Seljalandsfoss / 💧 Seljalandsfoss & Gljúfrabúi",
-  "en": "The cliff is an **old sea cliff from just after the Ice Age**, when the Atlantic reached the foot of the **Eyjafjöll**; rivers then filled the lowlands and the coast is now several km south — the same drowned-then-stranded coastline as Skógafoss down the road."
- },
- {
-  "id": "993199009e",
-  "ctx": "fact bullet — tour 5.0 / Seljalandsfoss / 💧 Seljalandsfoss & Gljúfrabúi",
-  "en": "🎬 **On screen:** A proper film star too — *Beowulf & Grendel* (2005), Bollywood's *Dilwale* (2015) and a run of Indian blockbusters (*Namo Venkatesa*, *Aadhavan*), plus **Justin Bieber** getting thoroughly soaked here in \"I'll Show You\" (2015)."
- },
- {
-  "id": "7315ccc208",
-  "ctx": "gloss for the name \"Seljalandsfoss\" — tour 5.0 / Seljalandsfoss / 💧 Seljalandsfoss & Gljúfrabúi",
-  "en": "the 60 m waterfall you can walk behind"
- },
- {
-  "id": "bbb6435d0a",
-  "ctx": "gloss for the name \"Seljalandsá\" — tour 5.0 / Seljalandsfoss / 💧 Seljalandsfoss & Gljúfrabúi",
-  "en": "the river that feeds it, running off the glacier above"
- },
- {
-  "id": "476138fa16",
-  "ctx": "gloss for the name \"Gljúfrabúi\" — tour 5.0 / Seljalandsfoss / 💧 Seljalandsfoss & Gljúfrabúi",
-  "en": "“the canyon-dweller”, the second falls hidden in a narrow mossy gorge"
- },
- {
-  "id": "89011dc7fd",
-  "ctx": "gloss for the name \"Eyjafjallajökull\" — tour 5.0 / Seljalandsfoss / 💧 Seljalandsfoss & Gljúfrabúi",
-  "en": "the glacier that river runs off"
- },
- {
-  "id": "e45402e9ae",
-  "ctx": "gloss for the name \"Eyjafjöll\" — tour 5.0 / Seljalandsfoss / 💧 Seljalandsfoss & Gljúfrabúi",
-  "en": "the mountain range the Atlantic once reached the foot of"
- },
- {
-  "id": "70e7ecbb70",
-  "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧍 Jóhannes Sveinsson Kjarval",
-  "en": "Born **15 October 1885** at **Efri-Ey** farm in **Meðalland**, south Iceland — **9th of 13 kids** (his parents clearly had stamina). Fostered east to **Geitavík** in **Borgarfjörður eystri**, where the fjord still calls him **\"Jói í Geitavík.\"** Too poor for paint, he drew with **calf blood, soot and wool dye** — then went to sea."
- },
- {
-  "id": "b5f4e20f00",
-  "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧍 Jóhannes Sveinsson Kjarval",
-  "en": "The crew saw his sketches, **passed the hat**, and the labour union topped it up. **1911**: he tried **London** — the **Royal Academy slammed the door**. The rejection was the redirect: **1912** he reached **Copenhagen** and the **Royal Danish Academy** (graduated **1917**)."
- },
- {
-  "id": "c03b00ab7d",
-  "ctx": "gloss for the name \"Geitavík\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧍 Jóhannes Sveinsson Kjarval",
-  "en": "the foster farm out east; the fjord still calls him “Jói í Geitavík”"
- },
- {
-  "id": "da8058b9d2",
-  "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
-  "en": "**1913**: **Tómas Tómasson** starts Ölgerðin in a Reykjavík basement — at first just **malt extract** — and names it after **Egill Skallagrímsson**, the Viking warrior-poet who could spin a masterpiece and drink a whole hall under the table on the same afternoon."
- },
- {
-  "id": "6cccf6b995",
-  "ctx": "gloss for the name \"Tómas Tómasson\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
-  "en": "the founder, who started Ölgerðin in a basement in 1913"
- },
- {
-  "id": "95c8a9cc1b",
-  "ctx": "gloss for the name \"Bjórdagurinn\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
-  "en": "Beer Day, 1 March, when beer became legal again in 1989"
- },
- {
-  "id": "33fac9d6e8",
-  "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
-  "en": "The whole valley was redesigned **~5,200 years ago** when **Leiti** erupted: lava poured down, hit the river and **split it in two**. Before, one river; after, two. Every waterfall here is the river's **5,000-year project** to saw back through solid basalt to the sea."
- },
- {
-  "id": "7bf7569590",
-  "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
-  "en": "One kilometre of valley has hosted a **1750s wool mill**, a **drowning pool at Skötufoss** for women convicted of \"moral crimes,\" outlaws in the lava tubes, **British WWII Quonset huts**, and a century-old hydro plant — **Elliðaárstöð (1921)**, the city's first, still humming."
- },
- {
-  "id": "361c62822e",
-  "ctx": "gloss for the name \"Elliðaárdalur\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
-  "en": "the river valley on our right, split in two by lava"
- },
- {
-  "id": "ca966cffa1",
-  "ctx": "gloss for the name \"Paradísardalur\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
-  "en": "the neighbouring valley named alongside it here"
- },
- {
-  "id": "46d9b94776",
-  "ctx": "gloss for the name \"Leitahraun\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
-  "en": "the lava from Leiti that poured down and split the river"
- },
- {
-  "id": "b8a6d33714",
-  "ctx": "gloss for the name \"Skötufoss\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
-  "en": "the drowning-pool waterfall down in the valley"
- },
- {
-  "id": "13d8845c57",
-  "ctx": "gloss for the name \"Leitahraun\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Rauðhólar",
-  "en": "the lava from the Leiti volcano that made them"
- },
- {
-  "id": "fa1b0135f9",
-  "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Kristnitökuhraun",
-  "en": "Deadpan geology footnote: you're driving on **three flows stacked like pancakes** — **Leitahraun (~5,000 yrs)**, an **~2,000-year** layer, and **Kristnitökuhraun** on top, dated to **around 1000 CE**. Snorri's \"old rock\" trick worked because the ground really was older than the argument."
- },
- {
-  "id": "58cf9acea1",
-  "ctx": "gloss for the name \"Kristnitökuhraun\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Kristnitökuhraun",
-  "en": "the Christianity Lava on our right, dated to around 1000 CE"
- },
- {
-  "id": "657de8e9d2",
-  "ctx": "gloss for the name \"Hellisheiði\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Kristnitökuhraun",
-  "en": "the heath and pass where the ground was reported tearing open"
- },
- {
-  "id": "d233173853",
-  "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
-  "en": "We're on the **Hengill volcanic system** — Hengill sits where **three volcanic and seismic zones meet**: the **Reykjanes rift**, the **Western Volcanic Zone** and the **South Iceland earthquake belt**. Water goes down, returns at nearly **300°C**, and spins turbines. The white plumes are **steam**, not smoke."
- },
- {
-  "id": "a7b785c43b",
-  "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
-  "en": "After generating **303 MW** of electricity — plus half the capital region's hot water — the plant runs it **27 km** in insulated pipes to keep Reykjavík from reaching for a jumper."
- },
- {
-  "id": "759406c73a",
-  "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
-  "en": "Via **CarbFix**, CO₂ is dissolved in water and pumped into hot basalt, turning to **solid rock in a couple of years**. Next door, **Climeworks' \"Mammoth\"** fans (2024) suck CO₂ straight out of thin air and hand it to the same rock."
- },
- {
-  "id": "6d1b84c80a",
-  "ctx": "gloss for the name \"Hellisheiðarvirkjun\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
-  "en": "the geothermal power station on our left, 303 MW"
- },
- {
-  "id": "809e6adb86",
-  "ctx": "gloss for the name \"Hengill\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
-  "en": "the volcanic system underneath it, where three volcanic and seismic zones meet"
- },
- {
-  "id": "0f208fad27",
-  "ctx": "the point of the block — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌋 Hveragerði",
-  "en": "Pizza baked by a volcano. Salad grown on steam. A museum built on an earthquake crack. Yes, all in the same town."
- },
- {
-  "id": "773d08b542",
-  "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌋 Hveragerði",
-  "en": "Hveragerði sits on the **Hengill system**, where **three volcanic and seismic zones meet** — the **Reykjanes rift**, the **Western Volcanic Zone** and the **South Iceland earthquake belt**. Geothermal *and* seismic at once, which is a rough combination for a postcode. Hot springs, steam vents and boiling mud pots break the surface **between the houses.**"
- },
- {
-  "id": "3bd6867eee",
-  "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌋 Hveragerði",
-  "en": "On **29 May 2008** the ground threw a **doublet** — **Mw 5.8 beneath Ingólfsfjall**, then **Mw 5.9 on the Kross fault about 5 km to the west**, the two starting **within 3 seconds of each other** for a **composite Mw 6.1** — and shook the town with ground acceleration up to **0.88 g** (near 1 g, the earth is shoving as hard as gravity). Rather than hide it, locals built the **Quake 2008** exhibition **on top of the fissure it opened**, crack left showing."
+  "id": "500c417562",
+  "ctx": "gloss for the name \"Þingvellir\" — tour 4.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "en": "the rift valley we are standing in, sitting on the Mid-Atlantic Ridge"
  }
 ]
