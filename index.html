@@ -9,9 +9,11 @@
 <meta name="application-name" content="iGuide - Iceland">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="preload" href="fonts/Norse.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/NorseBold.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-  @font-face{font-family:'Norse';src:url('fonts/Norse.woff2') format('woff2');font-weight:400;font-display:swap}
-  @font-face{font-family:'Norse';src:url('fonts/NorseBold.woff2') format('woff2');font-weight:700;font-display:swap}
+  @font-face{font-family:'Norse';src:url('fonts/Norse.woff2') format('woff2');font-weight:400;font-display:block}
+  @font-face{font-family:'Norse';src:url('fonts/NorseBold.woff2') format('woff2');font-weight:700;font-display:block}
   /* iGuide Iceland tokens, lifted from the site's style.css */
   :root{--bg:#0d0d0f;--panel:#14141a;--panel2:#1a1a20;--line:rgba(244,240,230,.14);
         --ink:#f4f0e6;--mute:#d8d2c0;--dim:#837e6f;--accent:#d4a94a;--accent-2:#b48a2f;
