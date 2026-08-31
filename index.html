@@ -1027,7 +1027,7 @@ function step(d){
       if(p>pr+0.05){ ns=sec; sp=p; break; }
     }
     if(!ns){ eta.style.display="none"; return; }
-    const km=(sp-pr)/100*TOTAL/1000;
+    const km=(sp-pr)/100*TOTAL;      // CUM/TOTAL are km already
     const min=Math.max(1,Math.round(km*(R.min/R.km)));
     eta.innerHTML='<span class="el">'+esc(ns.title)+'</span> · '+
                   (km<10?km.toFixed(1):Math.round(km))+' km · ~'+min+' min';
