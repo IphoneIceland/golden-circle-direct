@@ -659,7 +659,7 @@ sections: [
  tags:["#geology","#film"],
 },
 ]},
-{title:"Grundarfjörður → BSÍ Bus Terminal", kind:"drive", blocks:[
+{title:"Kirkjufell → Reykjavík", kind:"drive", blocks:[
 {id:"10.0.13.1", title:"🪨 Berserkjahraun", sub:"The Severance Package Was a Bath", cue:"Crossing the rust-red lava on Road 54 — Berserkjahraun on both sides.",
  point:"A 4,000-year-old lava field, a 1,000-year-old road, and the oldest lesson in construction: **get paid up front.**",
  mic:"Two berserkers built the first road through here. The pay was a farmer's daughter — and the severance package was a bath they never left.",

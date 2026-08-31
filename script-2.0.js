@@ -99,7 +99,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"2.0.1.6", title:"⚖️ Kjalarnesþing", sub:"The Parliament Before the Parliament", cue:"Look left at 9 o'clock — across Kollafjörður to Kjalarnes, under the foot of Esja, four kilometres off. We turn east before it.",
- point:"The big show at Þingvellir was the sequel. Kjalarnes wrote the pilot — and got no credit.",
+ point:"Þingvellir wasn't Kjalarnes moved house — it was something new and national. Kjalarnes just proved Icelanders could hold a parliament without a king.",
  mic:"Kjalarnes did the homework. Þingvellir took the credit, the fame, and the tourists.",
  bullets:[
   "**Þorsteinn Ingólfsson** — son of **Ingólfur Arnarson**, Iceland's first settler — held the **Kjalarnesþing** before the national **Alþingi of 930**. Our only near-contemporary source is **Ari fróði**, writing around **1122–33**: *\"en áðr var þing á Kjalarnesi\"* — before that, the þing was on Kjalarnes. Tradition even credits Þorsteinn with **consecrating** that later national parliament — so the founder's son didn't just build the prototype, he blessed the sequel.",
@@ -518,8 +518,16 @@ sections: [
  tags:["#geology","#climate"],
 },
 ]},
-{title:"Gullfoss → BSÍ", kind:"drive", blocks:[
-{id:"2.0.6.1", title:"⚡ Tungufljót", sub:"The Quiet Tributary & Brú Power Plant", cue:"Crossing the Tungufljót river.",
+{title:"Gullfoss → Selfoss", kind:"drive", blocks:[
+{id:"2.0.6.1", title:"🎧 Music Leg", sub:"ACTS 1 & 2: Iceland Through the Years", cue:"Leaving Gullfoss. Playlist on, mic live between stops.",
+ point:"Two acts, and somewhere in the middle a country stops borrowing and starts exporting.",
+ mic:"Everything from here is Icelandic. Listen out around track twenty-two — that is the exact moment this small, cold, sheep-heavy island stopped copying everyone else and started getting copied.",
+ bullets:[
+  "**ACT I — Borrowed clothes.** Raquel Rastenni, Sigfús Halldórsson, Haukur Morthens, Elly Vilhjálms, Hljómar. Iceland singing in a suit cut for somebody else — Danish schlager, American swing, British beat.",
+  "**ACT II — Finding the voice.** Mannakorn, Brimkló, Spilverk þjóðanna, Grýlurnar, Dúkkulísurnar — and then **The Sugarcubes** and **Björk** kick the door clean off its hinges.",
+ ],
+},
+{id:"2.0.6.2", title:"⚡ Tungufljót", sub:"The Quiet Tributary & Brú Power Plant", cue:"Crossing the Tungufljót river.",
  point:"Iceland's most-photographed waterfall is Gullfoss. Its most useful one is **this tributary you're crossing**, doing the actual work of keeping the lights on.",
  mic:"Gullfoss gets the photos. Tungufljót gets the electricity bill paid.",
  bullets:[
@@ -535,7 +543,7 @@ sections: [
  ],
  tags:["#technology"],
 },
-{id:"2.0.6.2", title:"🍅 Reykholt & Friðheimar", sub:"Tomatoes in the Arctic", cue:"Passing Friðheimar, Reykholt.",
+{id:"2.0.6.3", title:"🍅 Reykholt & Friðheimar", sub:"Tomatoes in the Arctic", cue:"Passing Friðheimar, Reykholt.",
  point:"Just south of the Arctic, you shouldn't be able to grow a tomato — so Iceland grows a big share of its own tomatoes and cucumbers on volcano heat and skips the shipping.",
  mic:"At our latitude, you shouldn't be able to grow a tomato. So we built a farm on a volcano and flew in Dutch bees to run it.",
  bullets:[
@@ -554,7 +562,7 @@ sections: [
  ],
  tags:["#geology","#technology"],
 },
-{id:"2.0.6.3", title:"🐎 Icelandic Horses", sub:"Living Viking Heritage", cue:"Look at the horses in the field.",
+{id:"2.0.6.4", title:"🐎 Icelandic Horses", sub:"Living Viking Heritage", cue:"Look at the horses in the field.",
  point:"A horse breed Vikings would still recognise — kept intact for a millennium by isolation, hard winters, and a one-way export door.",
  mic:"You can take an Icelandic horse out of Iceland. You just can't bring it back. The country runs a one-way door for its own livestock.",
  bullets:[
@@ -569,7 +577,7 @@ sections: [
  ],
  tags:["#law"],
 },
-{id:"2.0.6.4", title:"⛪ Skálholt", sub:"Bishops, Heads, and Rock Bands", cue:"At Skálholt.",
+{id:"2.0.6.5", title:"⛪ Skálholt", sub:"Bishops, Heads, and Rock Bands", cue:"At Skálholt.",
  point:"Iceland's centre of power didn't fall to an invasion. It fell to a fault line — and politics finished the job.",
  mic:"A 700-year capital, ended by a single earthquake and a Danish administrative form.",
  bullets:[
@@ -591,7 +599,7 @@ sections: [
  ],
  tags:["#geology","#religion"],
 },
-{id:"2.0.6.5", title:"🎵 Grímsnes & Kerið", sub:"Red Walls, Blue Lake, Björk on a Raft", cue:"At Kerið crater.",
+{id:"2.0.6.6", title:"🎵 Grímsnes & Kerið", sub:"Red Walls, Blue Lake, Björk on a Raft", cue:"At Kerið crater.",
  point:"A crater that doubles as the world's most exclusive natural amphitheatre — built by a volcano, booked by an opera singer and a young Björk.",
  mic:"Most countries put concerts in arenas. Iceland puts them in volcanoes.",
  bullets:[
@@ -610,7 +618,7 @@ sections: [
  ],
  tags:["#geology"],
 },
-{id:"2.0.6.6", title:"⚡ Sog River", sub:"The River That Ran Everything", cue:"Crossing the Sog.",
+{id:"2.0.6.7", title:"⚡ Sog River", sub:"The River That Ran Everything", cue:"Crossing the Sog.",
  point:"Three small hydro plants on one short river — and they kept the country running for half a century.",
  mic:"Big rivers get the postcards. The Sog quietly ran the lights.",
  bullets:[
@@ -629,7 +637,7 @@ sections: [
  ],
  tags:["#geology","#law","#technology"],
 },
-{id:"2.0.6.7", title:"🌊 Ölfusá", sub:"The Final Drain", cue:"Look right at 1–2 o'clock — Ölfusá.",
+{id:"2.0.6.8", title:"🌊 Ölfusá", sub:"The Final Drain", cue:"Look right at 1–2 o'clock — Ölfusá.",
  point:"Every drop of water that fell on the Golden Circle — glaciers, geysers, lakes — eventually squeezes through this one channel.",
  mic:"Four rivers. One channel. Centuries of cattle-and-cod toll. All Golden Circle water leads here.",
  bullets:[
@@ -648,7 +656,18 @@ sections: [
  ],
  tags:["#geology"],
 },
-{id:"2.0.6.8", title:"🏗️ Selfoss", sub:"The Great Milk Collapse", cue:"We're crossing it now — look down. Ölfusárbrú.",
+]},
+{title:"Selfoss → Reykjavík", kind:"drive", blocks:[
+{id:"2.0.7.1", title:"🎧 Music Leg", sub:"Rícharður's Mix: The Road Home", cue:"Into Selfoss — cue “Selfoss” by SVVN. Then Rícharður's Mix to BSÍ, with SVVN's “Hveragerði” as we drive through Hveragerði.",
+ point:"Eighteen tracks that go quiet, then loud, in exactly the shape of a good day ending.",
+ mic:"The song playing right now is called Selfoss. We are, at this precise moment, in Selfoss. I would love to tell you I planned that.",
+ bullets:[
+  "**Opens quiet.** Hafdís Huld, **Jóhann Jóhannsson**, Gabríel Ólafs, **Laufey** — music for people who have been on their feet since eight this morning.",
+  "**Warms over the pass.** Sóley, Elín Hall, **Ásgeir**, **BRÍET**, Valdimar.",
+  "**Comes home loud.** **Of Monsters and Men**, *Coming Home* by Sjonni's Friends, Agent Fresco, *Fröken Reykjavík*, and **Emilíana Torrini** — closing on *Takk fyrir allt*. Thank you for everything. Seemed like the right last word.",
+ ],
+},
+{id:"2.0.7.2", title:"🏗️ Selfoss", sub:"The Great Milk Collapse", cue:"We're crossing it now — look down. Ölfusárbrú.",
  point:"The enemy that took out the Selfoss bridge wasn't an army. It was two overloaded trucks and a bridge built for lighter days.",
  mic:"The war couldn't blow this bridge up. A couple of dairy trucks did it on a Tuesday afternoon.",
  bullets:[
@@ -663,7 +682,7 @@ sections: [
  ],
  tags:["#wwii"],
 },
-{id:"2.0.6.9", title:"🧭 Ingólfur Arnarson", sub:"The Founder's Path", cue:"Look ahead at 12 o'clock — the Ring Road (Leið 1).",
+{id:"2.0.7.3", title:"🧭 Ingólfur Arnarson", sub:"The Founder's Path", cue:"Look ahead at 12 o'clock — the Ring Road (Leið 1).",
  point:"The modern Ring Road is the last chapter of that story — stitching together the coast Ingólfur started.",
  mic:"The saga begins with a man chasing two pillars. It ends with a whole nation driving the road that traces his coastline.",
  bullets:[
@@ -678,7 +697,7 @@ sections: [
  ],
  tags:["#migration"],
 },
-{id:"2.0.6.10", title:"🌋 Hveragerði", sub:"Quakes, Cakes and Steam", cue:"Look right at 3 o'clock — Hveragerði.",
+{id:"2.0.7.4", title:"🌋 Hveragerði", sub:"Quakes, Cakes and Steam", cue:"Look right at 3 o'clock — Hveragerði.",
  point:"Pizza baked by a volcano. Beer brewed with geothermal heat. A shopping mall built on an earthquake crack. Yes, all in the same town.",
  mic:"Most towns hide their disasters. Hveragerði put theirs in the lobby and charged admission.",
  bullets:[
@@ -697,7 +716,7 @@ sections: [
  ],
  tags:["#geology"],
 },
-{id:"2.0.6.11", title:"🏢 Hellisheiðarvirkjun", sub:"The Dragon's Breath", cue:"Look right at 2 o'clock — Hellisheiði geothermal plant.",
+{id:"2.0.7.5", title:"🏢 Hellisheiðarvirkjun", sub:"The Dragon's Breath", cue:"Look right at 2 o'clock — Hellisheiði geothermal plant.",
  point:"While the world debates carbon capture, Iceland dissolves the problem in water, files it under \"rocks,\" and moves on.",
  mic:"Your shower in Reykjavík tonight was heated by the same volcano that's currently filing CO₂ as gravel under your feet.",
  bullets:[
@@ -712,7 +731,7 @@ sections: [
  ],
  tags:["#technology","#geology"],
 },
-{id:"2.0.6.12", title:"⛰️ Kristnitökuhraun", sub:"The Decision Rock", cue:"Look left at 9 o'clock — Kristnitökuhraun, the Christianity Lava.",
+{id:"2.0.7.6", title:"⛰️ Kristnitökuhraun", sub:"The Decision Rock", cue:"Look left at 9 o'clock — Kristnitökuhraun, the Christianity Lava.",
  point:"A whole country's religion settled by a single, calm geology question.",
  mic:"The pagans claimed a volcano was voting. Snorri pointed out the ballot box was older than the religion.",
  bullets:[
@@ -729,7 +748,7 @@ sections: [
  ],
  tags:["#geology","#literature","#religion"],
 },
-{id:"2.0.6.13", title:"⛰️ Rauðhólar", sub:"The Mars Impostors", cue:"Look left at 9 o'clock — Rauðhólar.",
+{id:"2.0.7.7", title:"⛰️ Rauðhólar", sub:"The Mars Impostors", cue:"Look left at 9 o'clock — Rauðhólar.",
  point:"Two armies and one city carved up Iceland's Mars lab and paved it into a runway.",
  mic:"Eighty cones. One Mars classroom. Half of it now under your runway.",
  bullets:[

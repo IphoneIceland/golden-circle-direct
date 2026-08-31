@@ -95,7 +95,7 @@ open("tours.js", "w", encoding="utf-8").write(TOURS)
 print("  tours.js: %s is ready" % TID)
 
 # ---- 5. sw.js: shell list regenerated, never hand-kept -------------------
-ready = re.findall(r'\{id:"([^"]+)"[^}]*?ready:\s*true', TOURS)
+ready = re.findall(r'\{id:"([^"]+)",\s*ready:true', TOURS)
 sw = open("sw.js", encoding="utf-8").read()
 lines = []
 for i in range(0, len(ready), 3):

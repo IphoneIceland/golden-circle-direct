@@ -528,8 +528,14 @@ sections: [
  tags:["#geology","#migration","#film"],
 },
 ]},
+{title:"Vík → Sólheimajökull", kind:"drive", blocks:[
+{id:"6.0.9.1", title:"🎧 Music Leg", sub:"ACT 1: Iceland Through the Years", cue:"Pulling out of Vík. Mic down, volume up.",
+ point:"They've had a full day of my voice. Now they get the country's own.",
+ mic:"Right — I've talked at you since breakfast. From here, Iceland does the talking. Window seat, volume up, and if a track grabs you, come and ask me at the front.",
+},
+]},
 {title:"Sólheimajökull", kind:"stop", blocks:[
-{id:"6.0.9.1", title:"🧊 Sólheimajökull", sub:"The Living Climate Graph", cue:"At Sólheimajökull car park.",
+{id:"6.0.10.1", title:"🧊 Sólheimajökull", sub:"The Living Climate Graph", cue:"At Sólheimajökull car park.",
  point:"Textbook diagrams of glaciers, erosion and climate change — laid out in front of you. **Point, don't draw.**",
  mic:"You don't have to give a climate lecture here. You point at where the ice used to be — and the **missing glacier** does the talking.",
  bullets:[
@@ -548,7 +554,7 @@ sections: [
 },
 ]},
 {title:"Seljalandsfoss", kind:"stop", blocks:[
-{id:"6.0.10.1", title:"💧 Seljalandsfoss & Gljúfrabúi", sub:"Inside the Waterfall", cue:"At Seljalandsfoss car park.",
+{id:"6.0.11.1", title:"💧 Seljalandsfoss & Gljúfrabúi", sub:"Inside the Waterfall", cue:"At Seljalandsfoss car park.",
  point:"Same cliff. Same Ice-Age coastline. **One tiny change in the rock** = two completely different waterfall personalities.",
  mic:"Stand in front of the old sea cliff. Walk behind the waterfall. If you have dry socks after Gljúfrabúi, you've done something wrong.",
  bullets:[
@@ -566,6 +572,12 @@ sections: [
   ["Eyjafjöll","EI-ya-fyutl","the mountain range the Atlantic once reached the foot of"],
  ],
  tags:["#geology","#film"],
+},
+]},
+{title:"Seljalandsfoss → Reykjavík", kind:"drive", blocks:[
+{id:"6.0.12.1", title:"🎧 Music Leg", sub:"ACT 2: Selfoss, and the Road Home", cue:"Coming into Selfoss — cue “Selfoss” by SVVN, then Rícharður's Mix through to BSÍ.",
+ point:"Last stretch of the day. Nobody wants a lecture at this hour; everybody wants the window.",
+ mic:"The song is called Selfoss. The town is called Selfoss. I would love to tell you I planned that, but I just got lucky with the timing.",
 },
 ]},
 ]};

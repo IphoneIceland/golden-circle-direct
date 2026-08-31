@@ -685,7 +685,7 @@ sections: [
  tags:["#wildlife"],
 },
 ]},
-{title:"Ytri-Tunga → BSÍ Bus Terminal", kind:"drive", blocks:[
+{title:"Ytri-Tunga → Reykjavík", kind:"drive", blocks:[
 {id:"9.0.15.1", title:"🦅 Löngufjörur", sub:"The Sea Floor That Got Promoted", cue:"Look right at 3 o'clock — flat pale sand running to the horizon; the cliffs inland on your left are old sea cliffs.",
  point:"Left of the bus: the old sea floor. Right of the bus: the old sea shore. The land stood up after the Ice Age, and one in seven of Iceland's white-tailed eagle pairs moved into the gap.",
  mic:"Ten pairs of white-tailed eagles nest along this coast — about one in seven of the entire Icelandic population. If something big drifts over the flats with fingers on the ends of its wings, that's them.",
