@@ -885,9 +885,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
   #a2hs b{color:var(--ink)}
   #a2hs button{margin-left:auto;background:none;border:none;color:var(--accent);font-size:16px;cursor:pointer;padding:4px}
   /* One pill in the topbar: next stop, distance, time, weather. The map keeps its corners. */
-  #chip{flex:0 1 auto;min-width:112px;max-width:calc(100% - 142px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
-    margin-left:auto;background:rgba(13,13,15,.85);border:1px solid var(--accent);border-radius:99px;
-    padding:7px 10px;font:600 10.5px/1 var(--sans);letter-spacing:.02em;color:var(--ink);display:none}
+  #chip{flex:0 1 auto;min-width:0;max-width:56%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+    background:rgba(13,13,15,.85);border:1px solid var(--accent);border-radius:99px;
+    padding:8px 12px;font:600 11px/1 var(--sans);letter-spacing:.03em;color:var(--ink);display:none}
   #chip .cl{color:var(--accent)}
   /* Night mode: the map is a torch on a dark bus, so the tiles dim first */
   #nightbtn{width:40px;height:42px;border-radius:10px;background:none;border:1px solid var(--line);
@@ -896,14 +896,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   body.night .leaflet-tile{filter:brightness(.52) contrast(1.07) saturate(.75)}
   body.night #map{background:#000}
   body.night{--ink:#e6e1d6;--mute:#c9c3b2}
-  /* Both the stereo and the next-stop chip awake on a phone: music keeps its
-     album art, the chip keeps its facts, the tour name takes the day off. */
-  @media (max-width:600px){
-    body.hasgnp.haschip #tourname{display:none}
-    body.hasgnp.haschip #gnp .t,
-    body.hasgnp.haschip #gnp .eq{display:none}
-    body.hasgnp.haschip #gnp{padding:0 6px;min-width:42px}
-  }
+
   #endscreen{position:fixed;inset:0;z-index:950;display:none;flex-direction:column;align-items:center;
     justify-content:center;gap:14px;padding:30px 22px;text-align:center;overflow-y:auto;
     background:
@@ -1017,7 +1010,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
     <button id="fontbtn" title="Text size" aria-label="Text size">Aa</button>
     <button id="nightbtn" title="Night mode: auto" aria-label="Night mode">☾</button><a id="gnp" href="#" target="_blank" rel="noopener" aria-live="polite" hidden><img id="gnpArt" alt=""><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="t" id="gnpTxt"></span></a>
     <span id="offpill" data-en="OFFLINE · ALL GOOD">OFFLINE · ALL GOOD</span>
-    <span id="chip"></span>
     <span id="tourname"></span>
   </div>
   <div id="track"></div>
@@ -2256,7 +2248,7 @@ const track=$("track"), steps=$("steps"), list=$("days");
   home.onclick=leaveTour;
   $("tourname").textContent=TOUR.name; }
 
-steps.innerHTML='<button class="nav" id="pv">‹</button><div id="dots"></div><button class="nav" id="nx">›</button>';
+steps.innerHTML='<button class="nav" id="pv">‹</button><div id="dots"></div><span id="chip"></span><button class="nav" id="nx">›</button>';
 
 function paintTrack(){
   track.innerHTML="";
@@ -2304,9 +2296,7 @@ function paintChip(){
   let h='<span class="cl">'+esc(CHIP.name)+'</span>';
   if(CHIP.km!=null) h+=d+(CHIP.km<10?CHIP.km.toFixed(1):Math.round(CHIP.km))+'\u2009km'+d+CHIP.min+'\u2009min';
   const w=CHIP.wx;
-  // with the stereo pill also up on a phone, the chip trades weather for whole km+min
-  const tight=document.body.classList.contains("hasgnp")&&window.innerWidth<600&&CHIP.km!=null;
-  if(w&&!tight){ h+=d+Math.round(w.t)+'°';
+  if(w){ h+=d+Math.round(w.t)+'°';
          if(w.pp>=25) h+='\u2009☔'+Math.round(w.pp)+'%';
          if(w.ws>=10) h+='\u2009💨'+Math.round(w.ws); }
   el.innerHTML=h; el.style.display="inline-block";
