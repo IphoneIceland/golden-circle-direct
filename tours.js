@@ -7,28 +7,21 @@
 // files and flips it for you, so the flag can never claim a tour that is not
 // actually on disk.
 window.__TOURS__ = [
-  {id:"1.0", ready:true,  name:"Golden Circle Direct",
+  {id:"1.0", group:"Golden Circle", ready:true,  name:"Golden Circle Direct",
    sub:"BSÍ → Þingvellir → Geysir → Gullfoss → Kerið → BSÍ", km:252, blocks:36},
-
-  {id:"2.0", ready:true , name:"Golden Circle Snowmobiling",
+  {id:"2.0", group:"Golden Circle", ready:true , name:"Golden Circle Snowmobiling",
    sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ", km:230, min:221, blocks:37},
-
-  {id:"3.0", ready:true , name:"Golden Circle Lagoons",
+  {id:"3.0", group:"Golden Circle", ready:true , name:"Golden Circle Lagoons",
    sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ", km:230, min:221, blocks:37},
-
-  {id:"4.0", ready:true , name:"Golden Circle Friðheimar",
+  {id:"4.0", group:"Golden Circle", ready:true , name:"Golden Circle Friðheimar",
    sub:"Anticlockwise — BSÍ → Friðheimar → Gullfoss → Geysir → Þingvellir → BSÍ", km:237, min:222, blocks:36},
-
-  {id:"5.0", ready:true,  name:"South Coast",
+  {id:"5.0", group:"South Coast", ready:true,  name:"South Coast",
    sub:"BSÍ → Hvolsvöllur → Sólheimajökull → Reynisfjara → Vík", km:417, min:437, blocks:31},
-
-  {id:"6.0", ready:true,  name:"South Coast Combo",
+  {id:"6.0", group:"South Coast", ready:true,  name:"South Coast Combo",
    sub:"BSÍ → Hvolsvöllur → Skógafoss → Reynisfjara → Vík", km:417, min:437, blocks:31},
-
-  {id:"7.0", ready:true , name:"Glacial Lagoon",
+  {id:"7.0", group:"South Coast", ready:true , name:"Glacial Lagoon",
    sub:"BSÍ → Skógafoss → Kirkjubæjarklaustur → Jökulsárlón → Vík → Reykjavík", km:779, min:782, blocks:43},
-
-  {id:"10.0", ready:true, name:"Snæfellsnes North", sub:"BSÍ → Selvallafoss → Kirkjufell → Djúpalónssandur → Arnarstapi → Ytri-Tunga → BSÍ", km:450, min:451, blocks:38},
-{id:"11.0", ready:true , name:"Snæfellsnes",
+  {id:"10.0", group:"Snæfellsnes", ready:true, name:"Snæfellsnes North", sub:"BSÍ → Selvallafoss → Kirkjufell → Djúpalónssandur → Arnarstapi → Ytri-Tunga → BSÍ", km:450, min:451, blocks:38},
+  {id:"11.0", group:"Snæfellsnes", ready:true , name:"Snæfellsnes",
    sub:"BSÍ → Ytri-Tunga → Arnarstapi → Djúpalónssandur → Kirkjufell → BSÍ", km:450, min:451, blocks:37}
 ];

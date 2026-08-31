@@ -806,6 +806,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
   #pick{position:fixed;inset:0;z-index:900;background:var(--bg);padding:26px 18px;overflow-y:auto}
   #pick h1{margin:4px 0 18px;font-family:"Norse",var(--serif);font-weight:700;font-size:28px;letter-spacing:.02em}
   #picklist{display:flex;flex-direction:column;gap:10px}
+  .pgroup{margin:14px 0 2px;font-family:"Norse",var(--serif);font-weight:700;font-size:20px;
+      letter-spacing:.04em;color:var(--accent);display:flex;align-items:center;gap:10px}
+  .pgroup::after{content:"";flex:1;height:1px;background:linear-gradient(to right,var(--accent-2),transparent)}
+  .pgroup:first-child{margin-top:0}
   .tcard{text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:12px;
          padding:15px 16px;cursor:pointer;font-family:inherit;color:var(--ink);width:100%}
   .tcard:hover:not(:disabled){border-color:var(--accent)}
@@ -902,29 +906,22 @@ svg.leaflet-image-layer.leaflet-interactive path {
 // files and flips it for you, so the flag can never claim a tour that is not
 // actually on disk.
 window.__TOURS__ = [
-  {id:"1.0", ready:true,  name:"Golden Circle Direct",
+  {id:"1.0", group:"Golden Circle", ready:true,  name:"Golden Circle Direct",
    sub:"BSÍ → Þingvellir → Geysir → Gullfoss → Kerið → BSÍ", km:252, blocks:36},
-
-  {id:"2.0", ready:true , name:"Golden Circle Snowmobiling",
+  {id:"2.0", group:"Golden Circle", ready:true , name:"Golden Circle Snowmobiling",
    sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ", km:230, min:221, blocks:37},
-
-  {id:"3.0", ready:true , name:"Golden Circle Lagoons",
+  {id:"3.0", group:"Golden Circle", ready:true , name:"Golden Circle Lagoons",
    sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ", km:230, min:221, blocks:37},
-
-  {id:"4.0", ready:true , name:"Golden Circle Friðheimar",
+  {id:"4.0", group:"Golden Circle", ready:true , name:"Golden Circle Friðheimar",
    sub:"Anticlockwise — BSÍ → Friðheimar → Gullfoss → Geysir → Þingvellir → BSÍ", km:237, min:222, blocks:36},
-
-  {id:"5.0", ready:true,  name:"South Coast",
+  {id:"5.0", group:"South Coast", ready:true,  name:"South Coast",
    sub:"BSÍ → Hvolsvöllur → Sólheimajökull → Reynisfjara → Vík", km:417, min:437, blocks:31},
-
-  {id:"6.0", ready:true,  name:"South Coast Combo",
+  {id:"6.0", group:"South Coast", ready:true,  name:"South Coast Combo",
    sub:"BSÍ → Hvolsvöllur → Skógafoss → Reynisfjara → Vík", km:417, min:437, blocks:31},
-
-  {id:"7.0", ready:true , name:"Glacial Lagoon",
+  {id:"7.0", group:"South Coast", ready:true , name:"Glacial Lagoon",
    sub:"BSÍ → Skógafoss → Kirkjubæjarklaustur → Jökulsárlón → Vík → Reykjavík", km:779, min:782, blocks:43},
-
-  {id:"10.0", ready:true, name:"Snæfellsnes North", sub:"BSÍ → Selvallafoss → Kirkjufell → Djúpalónssandur → Arnarstapi → Ytri-Tunga → BSÍ", km:450, min:451, blocks:38},
-{id:"11.0", ready:true , name:"Snæfellsnes",
+  {id:"10.0", group:"Snæfellsnes", ready:true, name:"Snæfellsnes North", sub:"BSÍ → Selvallafoss → Kirkjufell → Djúpalónssandur → Arnarstapi → Ytri-Tunga → BSÍ", km:450, min:451, blocks:38},
+  {id:"11.0", group:"Snæfellsnes", ready:true , name:"Snæfellsnes",
    sub:"BSÍ → Ytri-Tunga → Arnarstapi → Djúpalónssandur → Kirkjufell → BSÍ", km:450, min:451, blocks:37}
 ];
 
@@ -1786,7 +1783,14 @@ function showBriefingUnused(done){
 function showPicker(){
   const list=document.getElementById("picklist");
   list.innerHTML="";
+  let lastGroup=null;
   TOURS.forEach(t=>{
+    const g=t.group||"";
+    if(g && g!==lastGroup){
+      lastGroup=g;
+      const h=document.createElement("div"); h.className="pgroup"; h.textContent=g;
+      list.appendChild(h);
+    }
     const b=document.createElement("button");
     // A tour can be listed before its data is built. Greyed out and unclickable
     // beats a card that loads a spinner and dies — same rule as the languages.
@@ -1798,7 +1802,7 @@ function showPicker(){
     const meta = [t.blocks?t.blocks+" stories":"", t.km?t.km+" km":"", dur?"~"+dur+" drive":""]
                  .filter(Boolean).join(" · ");
     b.innerHTML='<span class="off" data-tid="'+t.id+'">✓ ON THIS PHONE</span>'+
-                "<b>"+esc(t.name)+"</b><span>"+esc(t.sub)+"</span>"+
+                "<b>"+esc((t.group&&t.name.startsWith(t.group)&&t.name!==t.group)?t.name.slice(t.group.length).trim():t.name)+"</b><span>"+esc(t.sub)+"</span>"+
                 (meta?'<span class="meta">'+meta+'</span>':"")+
                 (ready?"":'<em class="soonlbl">'+((T()&&T().ui.soon)||"coming soon")+'</em>');
     if(ready) b.onclick=()=>openTour(t);
