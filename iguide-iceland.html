@@ -889,6 +889,19 @@ svg.leaflet-image-layer.leaflet-interactive path {
     font:600 11px/1 var(--sans);letter-spacing:.04em;color:var(--ink);display:none;
     -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
   #wx .wl{color:var(--accent)}
+  /* GPS-fed "next stop" chip: sits one shelf above the weather */
+  #eta{position:absolute;z-index:640;left:10px;bottom:64px;background:rgba(13,13,15,.85);
+    border:1px solid var(--accent);border-radius:99px;padding:6px 12px;
+    font:600 11px/1 var(--sans);letter-spacing:.04em;color:var(--ink);display:none;
+    -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+  #eta .el{color:var(--accent)}
+  /* Night mode: the map is a torch on a dark bus, so the tiles dim first */
+  #nightbtn{width:44px;height:44px;border-radius:10px;background:none;border:1px solid var(--line);
+    color:var(--dim);font-size:17px;line-height:1;cursor:pointer;margin-left:8px;font-family:var(--sans)}
+  #nightbtn.on{color:var(--accent);border-color:var(--accent)}
+  body.night .leaflet-tile{filter:brightness(.52) contrast(1.07) saturate(.75)}
+  body.night #map{background:#000}
+  body.night{--ink:#e6e1d6;--mute:#c9c3b2}
   #endscreen{position:fixed;inset:0;z-index:950;display:none;flex-direction:column;align-items:center;
     justify-content:center;gap:14px;padding:30px 22px;text-align:center;overflow-y:auto;
     background:
@@ -969,13 +982,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
   <div id="topbar">
     <button id="home"></button>
     <button id="fontbtn" title="Text size" aria-label="Text size">Aa</button>
+    <button id="nightbtn" title="Night mode: auto" aria-label="Night mode">☾</button>
     <span id="offpill" data-en="OFFLINE · ALL GOOD">OFFLINE · ALL GOOD</span>
     <span id="tourname"></span>
   </div>
   <div id="track"></div>
   <div id="steps"></div>
   <div id="days"></div>
-  <div id="map"><div id="zhint">Zoom in further to show place names</div><button id="gpsbtn" title="Follow the bus" aria-label="Follow the bus">➤</button><div id="wx"></div></div>
+  <div id="map"><div id="zhint">Zoom in further to show place names</div><button id="gpsbtn" title="Follow the bus" aria-label="Follow the bus">➤</button><div id="wx"></div><div id="eta"></div></div>
 </div>
 </div>
 
@@ -2356,8 +2370,30 @@ function step(d){
 (function(){
   const btn=document.getElementById("gpsbtn");
   if(!btn||!("geolocation" in navigator)){ if(btn) btn.style.display="none"; return; }
-  let watch=null, mark=null, ring=null, pausedUntil=0;
+  let watch=null, mark=null, ring=null, pausedUntil=0, wl=null;
   window.__gpsPause=()=>{ if(watch!=null){ pausedUntil=Date.now()+60000; btn.classList.add("paused"); } };
+  // The dashboard phone must not fall asleep mid-tour: hold a screen wake lock
+  // while following, and take it back whenever the app returns to the front.
+  async function grabLock(){ try{ wl=await navigator.wakeLock.request("screen"); }catch(e){} }
+  function dropLock(){ try{ if(wl) wl.release(); }catch(e){} wl=null; }
+  document.addEventListener("visibilitychange",()=>{ if(watch!=null && !document.hidden) grabLock(); });
+  // Next-stop chip: how far, how long, fed by the same GPS fix
+  const eta=document.getElementById("eta");
+  function updateETA(pr){
+    if(pr==null){ eta.style.display="none"; return; }
+    let ns=null, sp=0;
+    for(const sec of S.sections){
+      if(sec.kind!=="stop"||!sec.blocks.length) continue;
+      const p=PROG[sec.blocks[0].id];
+      if(p>pr+0.05){ ns=sec; sp=p; break; }
+    }
+    if(!ns){ eta.style.display="none"; return; }
+    const km=(sp-pr)/100*TOTAL/1000;
+    const min=Math.max(1,Math.round(km*(R.min/R.km)));
+    eta.innerHTML='<span class="el">'+esc(ns.title)+'</span> · '+
+                  (km<10?km.toFixed(1):Math.round(km))+' km · ~'+min+' min';
+    eta.style.display="block";
+  }
   function nearestProgress(la,lo){
     let bd=1e18,bi=0;
     for(let i=0;i<GEO.length;i++){
@@ -2374,9 +2410,10 @@ function step(d){
         icon:L.divIcon({className:"",iconSize:[14,14],iconAnchor:[7,7],html:'<div class="gpsdot"></div>'})}).addTo(map);
       ring=L.circle([la,lo],{radius:acc,color:"#5ec8f2",weight:1,opacity:.35,fillOpacity:.08,interactive:false}).addTo(map);
     }else{ mark.setLatLng([la,lo]); ring.setLatLng([la,lo]).setRadius(acc); }
+    const pr=nearestProgress(la,lo);
+    updateETA(pr);                             // the chip keeps counting even while paging is paused
     if(Date.now()<pausedUntil) return;
     btn.classList.remove("paused");
-    const pr=nearestProgress(la,lo);
     if(pr==null) return;                       // off the route — just show the dot
     const f=flat(); let best=-1;
     for(let i=0;i<f.length;i++){
@@ -2391,14 +2428,17 @@ function step(d){
       navigator.geolocation.clearWatch(watch); watch=null; pausedUntil=0;
       btn.classList.remove("on","paused");
       if(mark){mark.remove();mark=null;} if(ring){ring.remove();ring=null;}
+      eta.style.display="none"; dropLock();
       return;
     }
     watch=navigator.geolocation.watchPosition(tick,err=>{
       navigator.geolocation.clearWatch(watch); watch=null; btn.classList.remove("on");
+      eta.style.display="none"; dropLock();
       banner("Location unavailable — check permissions in your browser settings.");
       setTimeout(()=>{const w=document.getElementById("tilewarn"); if(w) w.remove();},6000);
     },{enableHighAccuracy:true,maximumAge:4000,timeout:15000});
     btn.classList.add("on");
+    grabLock();
   };
 })();
 
@@ -2418,6 +2458,44 @@ render();
   const p=(c&&c.pin)?[c.pin.lat,c.pin.lon]:GEO[0];
   map.setView(p,13); }
 }   // end boot()
+
+// ---- Night mode ------------------------------------------------------------
+// The app is dark already; night mode is for the bus after sundown, when even
+// the map tiles read like headlights. Auto follows the actual sun (solar
+// altitude at Icelandic latitude, threshold just past civil dusk), and the moon
+// button overrides: auto -> on -> off.
+(function(){
+  const btn=document.getElementById("nightbtn");
+  if(!btn) return;
+  let mode="auto";
+  try{ mode=localStorage.getItem("gcd-night")||"auto"; }catch(e){}
+  const rad=Math.PI/180;
+  function sunAlt(lat,lon){
+    const d=(Date.now()/86400000)+2440587.5-2451545.0;      // days since J2000
+    const g=(357.529+0.98560028*d)*rad;                     // mean anomaly
+    const L=((280.459+0.98564736*d)+1.915*Math.sin(g)+0.020*Math.sin(2*g))*rad; // ecliptic longitude
+    const e=23.439*rad;
+    const RA=Math.atan2(Math.cos(e)*Math.sin(L),Math.cos(L));
+    const dec=Math.asin(Math.sin(e)*Math.sin(L));
+    const gmst=(18.697374558+24.06570982441908*d)%24;
+    const ha=((gmst+lon/15)*15*rad)-RA;
+    return Math.asin(Math.sin(lat*rad)*Math.sin(dec)+Math.cos(lat*rad)*Math.cos(dec)*Math.cos(ha))/rad;
+  }
+  function apply(){
+    const dark = mode==="on" || (mode==="auto" && sunAlt(64.5,-21.5) < -4);
+    document.body.classList.toggle("night",dark);
+    btn.classList.toggle("on",dark);
+    btn.textContent = mode==="auto" ? "☾" : (mode==="on" ? "☾" : "☀");
+    btn.title = "Night mode: "+mode;
+  }
+  btn.onclick=()=>{
+    mode = mode==="auto" ? "on" : (mode==="on" ? "off" : "auto");
+    try{ localStorage.setItem("gcd-night",mode); }catch(e){}
+    apply();
+  };
+  setInterval(apply,300000);
+  apply();
+})();
 
 if("serviceWorker" in navigator) window.addEventListener("load",()=>{
   navigator.serviceWorker.register("sw.js").then(reg=>{
