@@ -311,8 +311,15 @@
   animation:gnpb .9s ease-in-out infinite}
 #gnp .eq i:nth-child(2){animation-delay:.15s}#gnp .eq i:nth-child(3){animation-delay:.3s}
 @keyframes gnpb{0%,100%{height:3px;opacity:.6}50%{height:11px;opacity:1}}
-/* the title is the first thing to go when the bar gets tight */
-@media (max-width:430px){ #gnp .t{display:none} #gnp{max-width:none;padding:0 8px} }
+/* On a phone the title shrinks rather than vanishes — knowing it is playing
+   is half the point, knowing WHAT is playing is the other half. */
+@media (max-width:430px){
+  #gnp{max-width:none;padding:0 8px 0 5px;gap:5px}
+  #gnp img{width:26px;height:26px}
+  #gnp .t{max-width:88px;font-size:11px}
+  #gnp .eq{display:none}
+}
+@media (max-width:340px){ #gnp .t{display:none} }
 @media (prefers-reduced-motion:reduce){#gnp .eq i{animation:none;height:7px}}
 </style>
 </head>
