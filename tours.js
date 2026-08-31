@@ -8,27 +8,27 @@
 // actually on disk.
 window.__TOURS__ = [
   {id:"1.0", ready:true,  name:"Golden Circle Direct",
-   sub:"BSÍ → Þingvellir → Geysir → Gullfoss → Kerið → BSÍ"},
+   sub:"BSÍ → Þingvellir → Geysir → Gullfoss → Kerið → BSÍ", km:252, blocks:36},
 
   {id:"2.0", ready:true , name:"Golden Circle Snowmobiling",
-   sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ"},
+   sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ", km:230, min:221, blocks:37},
 
   {id:"3.0", ready:true , name:"Golden Circle Lagoons",
-   sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ"},
+   sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ", km:230, min:221, blocks:37},
 
   {id:"4.0", ready:true , name:"Golden Circle Friðheimar",
-   sub:"Anticlockwise — BSÍ → Friðheimar → Gullfoss → Geysir → Þingvellir → BSÍ"},
+   sub:"Anticlockwise — BSÍ → Friðheimar → Gullfoss → Geysir → Þingvellir → BSÍ", km:237, min:222, blocks:36},
 
   {id:"5.0", ready:true,  name:"South Coast",
-   sub:"BSÍ → Hvolsvöllur → Sólheimajökull → Reynisfjara → Vík"},
+   sub:"BSÍ → Hvolsvöllur → Sólheimajökull → Reynisfjara → Vík", km:417, min:437, blocks:31},
 
   {id:"6.0", ready:true,  name:"South Coast Combo",
-   sub:"BSÍ → Hvolsvöllur → Skógafoss → Reynisfjara → Vík"},
+   sub:"BSÍ → Hvolsvöllur → Skógafoss → Reynisfjara → Vík", km:417, min:437, blocks:31},
 
   {id:"7.0", ready:true , name:"Glacial Lagoon",
-   sub:"BSÍ → Skógafoss → Kirkjubæjarklaustur → Jökulsárlón → Vík → Reykjavík"},
+   sub:"BSÍ → Skógafoss → Kirkjubæjarklaustur → Jökulsárlón → Vík → Reykjavík", km:779, min:782, blocks:43},
 
-  {id:"10.0", ready:true, name:"Snæfellsnes North", sub:"BSÍ → Selvallafoss → Kirkjufell → Djúpalónssandur → Arnarstapi → Ytri-Tunga → BSÍ"},
+  {id:"10.0", ready:true, name:"Snæfellsnes North", sub:"BSÍ → Selvallafoss → Kirkjufell → Djúpalónssandur → Arnarstapi → Ytri-Tunga → BSÍ", km:450, min:451, blocks:38},
 {id:"11.0", ready:true , name:"Snæfellsnes",
-   sub:"BSÍ → Ytri-Tunga → Arnarstapi → Djúpalónssandur → Kirkjufell → BSÍ"}
+   sub:"BSÍ → Ytri-Tunga → Arnarstapi → Djúpalónssandur → Kirkjufell → BSÍ", km:450, min:451, blocks:37}
 ];

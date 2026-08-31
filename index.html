@@ -14,7 +14,7 @@
   @font-face{font-family:'Norse';src:url('fonts/NorseBold.woff2') format('woff2');font-weight:700;font-display:swap}
   /* iGuide Iceland tokens, lifted from the site's style.css */
   :root{--bg:#0d0d0f;--panel:#14141a;--panel2:#1a1a20;--line:rgba(244,240,230,.14);
-        --ink:#f4f0e6;--mute:#cbc4b0;--dim:#837e6f;--accent:#d4a94a;--accent-2:#b48a2f;
+        --ink:#f4f0e6;--mute:#d8d2c0;--dim:#837e6f;--accent:#d4a94a;--accent-2:#b48a2f;
         --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
         --sans:"Inter",ui-sans-serif,system-ui,-apple-system,sans-serif;
         --fs:16px;--lh:1.8}
@@ -28,7 +28,7 @@
   #track{flex:0 0 auto;display:flex;gap:3px;padding:10px 10px 8px;background:var(--panel2);
          overflow-x:auto;scrollbar-width:none}
   #track::-webkit-scrollbar{display:none}
-  .leg{flex:1 1 auto;min-width:0;background:#243039;border-radius:5px;padding:6px 4px 5px;text-align:center;
+  .leg{flex:1 1 auto;min-width:0;background:#243039;border-radius:5px;padding:9px 4px 8px;text-align:center;
        cursor:pointer;border-top:3px solid transparent;transition:background .15s}
   .leg .ic{font-size:12px;line-height:1}
   .leg .nm{display:block;font:600 9.5px/1.2 var(--sans);color:#7d8fa0;margin-top:3px;
@@ -53,7 +53,7 @@
   #steps .nav:disabled{opacity:.25}
   #dots{flex:1;min-width:0;display:flex;gap:5px;align-items:center;overflow-x:auto;scrollbar-width:none}
   #dots::-webkit-scrollbar{display:none}
-  .dot2{flex:none;height:6px;min-width:14px;flex:1 1 auto;background:#2f3d4a;border-radius:3px;cursor:pointer}
+  .dot2{flex:none;height:9px;min-width:18px;flex:1 1 auto;background:#2f3d4a;border-radius:3px;cursor:pointer}
   .dot2.done{background:var(--accent-2)}
   .dot2.now{background:var(--accent);height:8px}
   #days{flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;
@@ -168,7 +168,25 @@
   #zhint{position:absolute;z-index:500;bottom:14px;left:14px;background:rgba(22,27,33,.92);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--mute)}
   #foot{padding:11px 20px;border-top:1px solid var(--line);font-size:10.5px;color:var(--mute);line-height:1.6}
   #foot a{color:var(--accent)}
-#uptoast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%) translateY(80px);z-index:9999;
+  .tcard .meta{display:block;margin-top:7px;font:600 10.5px/1 var(--sans);letter-spacing:.08em;
+      text-transform:uppercase;color:var(--dim)}
+  .tcard .meta b{display:inline;font-family:var(--sans);font-size:10.5px;color:var(--accent);margin:0}
+  .tcard .off{float:right;font:600 10px/1 var(--sans);letter-spacing:.06em;color:#7fe3ab;opacity:0;transition:opacity .3s}
+  .tcard .off.on{opacity:.9}
+  #fontbtn{width:44px;height:44px;border-radius:10px;background:none;border:1px solid var(--line);
+      color:var(--accent);font:700 15px/1 var(--serif);cursor:pointer;margin-left:8px}
+  #offpill{display:none;font:700 9.5px/1 var(--sans);letter-spacing:.1em;color:var(--accent);
+      border:1px solid var(--accent);border-radius:99px;padding:4px 8px;margin-left:auto;margin-right:10px}
+  body.isoffline #offpill{display:inline-block}
+  #gpsbtn{position:absolute;z-index:650;right:10px;bottom:26px;width:46px;height:46px;border-radius:50%;
+      background:var(--panel);border:1.5px solid var(--line);color:var(--dim);font-size:20px;cursor:pointer;
+      box-shadow:0 3px 12px rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center}
+  #gpsbtn.on{border-color:var(--accent);color:var(--accent);box-shadow:0 0 14px rgba(212,169,74,.35)}
+  #gpsbtn.paused{border-color:var(--accent);color:var(--accent);opacity:.55}
+  @keyframes gpspulse{0%{box-shadow:0 0 0 0 rgba(94,200,242,.5)}70%{box-shadow:0 0 0 14px rgba(94,200,242,0)}100%{box-shadow:0 0 0 0 rgba(94,200,242,0)}}
+  .gpsdot{width:14px;height:14px;border-radius:50%;background:#5ec8f2;border:2.5px solid #fff;
+      animation:gpspulse 2s infinite}
+  #uptoast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%) translateY(80px);z-index:9999;
   background:#16161a;color:#d4a94a;border:1px solid #d4a94a;border-radius:12px;padding:.7rem 1.1rem;
   font-weight:600;letter-spacing:.02em;box-shadow:0 6px 24px rgba(0,0,0,.5);cursor:pointer;
   transition:transform .35s ease;white-space:nowrap}
@@ -192,12 +210,14 @@
 <div id="wrap" hidden>
   <div id="topbar">
     <button id="home"></button>
+    <button id="fontbtn" title="Text size" aria-label="Text size">Aa</button>
+    <span id="offpill">OFFLINE · ALL GOOD</span>
     <span id="tourname"></span>
   </div>
   <div id="track"></div>
   <div id="steps"></div>
   <div id="days"></div>
-  <div id="map"><div id="zhint">Zoom in further to show place names</div></div>
+  <div id="map"><div id="zhint">Zoom in further to show place names</div><button id="gpsbtn" title="Follow the bus" aria-label="Follow the bus">➤</button></div>
 </div>
 </div>
 
@@ -405,13 +425,43 @@ function showPicker(){
     const ready = t.ready !== false;
     b.className="tcard"+(ready?"":" soon");
     b.disabled=!ready;
-    b.innerHTML="<b>"+esc(t.name)+"</b><span>"+esc(t.sub)+"</span>"+
+    const hrs = t.min ? (t.min/60) : null;
+    const dur = hrs ? (Math.round(hrs*2)/2)+" h" : "";
+    const meta = [t.blocks?t.blocks+" stories":"", t.km?t.km+" km":"", dur?"~"+dur+" drive":""]
+                 .filter(Boolean).join(" · ");
+    b.innerHTML='<span class="off" data-tid="'+t.id+'">✓ ON THIS PHONE</span>'+
+                "<b>"+esc(t.name)+"</b><span>"+esc(t.sub)+"</span>"+
+                (meta?'<span class="meta">'+meta+'</span>':"")+
                 (ready?"":'<em class="soonlbl">'+((T()&&T().ui.soon)||"coming soon")+'</em>');
     if(ready) b.onclick=()=>openTour(t);
     list.appendChild(b);
   });
+  // mark tours whose files are actually in the offline cache
+  if(window.caches) caches.keys().then(ks=>{
+    const k=ks.find(x=>/^gcd/.test(x)); if(!k) return;
+    return caches.open(k).then(c=>{
+      document.querySelectorAll(".off[data-tid]").forEach(el=>{
+        c.match("./route-"+el.dataset.tid+".js").then(hit=>{ if(hit) el.classList.add("on"); });
+      });
+    });
+  }).catch(()=>{});
 }
 try{ const v=localStorage.getItem("gcd-lang"); if(v) LANG=v; }catch(e){}
+// text size: three steps, remembered on this phone
+(function(){
+  const SIZES=[16,18.5,21];
+  let fi=0; try{ fi=Math.min(2,Math.max(0,+localStorage.getItem("gcd-font")||0)); }catch(e){}
+  const apply=()=>document.documentElement.style.setProperty("--fs",SIZES[fi]+"px");
+  apply();
+  document.getElementById("fontbtn").onclick=()=>{
+    fi=(fi+1)%SIZES.length; apply();
+    try{ localStorage.setItem("gcd-font",fi); }catch(e){}
+  };
+})();
+// offline pill
+window.addEventListener("offline",()=>document.body.classList.add("isoffline"));
+window.addEventListener("online",()=>document.body.classList.remove("isoffline"));
+if(navigator.onLine===false) document.body.classList.add("isoffline");
 applyDir();
 showLangs();
 showWelcome();
@@ -626,7 +676,7 @@ function paintTrack(){
                  (label?'<span class="nm">'+esc(label)+'</span>':"");
     el.title=sec.title;
     el.setAttribute("aria-label",sec.title);
-    el.onclick=()=>{ SI=i; BI=0; render(); };
+    el.onclick=()=>{ if(window.__gpsPause) __gpsPause(); SI=i; BI=0; render(); };
     track.appendChild(el);
   });
   { const now=track.querySelector(".leg.now");
@@ -637,7 +687,7 @@ function paintTrack(){
     const d=document.createElement("div");
     d.className="dot2"+(i<BI?" done":"")+(i===BI?" now":"");
     d.title=b.title;
-    d.onclick=()=>{ BI=i; render(); };
+    d.onclick=()=>{ if(window.__gpsPause) __gpsPause(); BI=i; render(); };
     dots.appendChild(d);
   });
   const f=flat(), pos=f.findIndex(x=>x.si===SI&&x.bi===BI);
@@ -680,6 +730,7 @@ function step(d){
     const t=e.changedTouches[0];
     const dx=t.clientX-x0, dy=t.clientY-y0, ms=Date.now()-t0;
     if(Math.abs(dx)<60 || Math.abs(dx)<Math.abs(dy)*1.5 || ms>800) return;
+    if(window.__gpsPause) __gpsPause();
     step(dx<0 ? 1 : -1);
     pane.animate([{opacity:.35,transform:`translateX(${dx<0?18:-18}px)`},{opacity:1,transform:"none"}],
                  {duration:180,easing:"ease-out"});
@@ -700,6 +751,7 @@ function step(d){
     clearTimeout(reset);
     reset = setTimeout(()=>{acc=0;}, 220);        // a gesture that stalls is dropped
     if(Math.abs(acc) > 55){
+      if(window.__gpsPause) __gpsPause();
       step(acc > 0 ? 1 : -1);
       acc = 0; lock = true;
       setTimeout(()=>{ lock=false; }, 380);
@@ -708,8 +760,60 @@ function step(d){
   window.addEventListener("wheel", onWheel, {passive:false, capture:true});
 })();
 
-$("pv").onclick=()=>step(-1);
-$("nx").onclick=()=>step(1);
+// ---- GPS: follow the bus ---------------------------------------------------
+// The app watches your position, finds where you are along the road, and turns
+// the pages itself. Swiping by hand pauses it for a minute, then it resumes.
+(function(){
+  const btn=document.getElementById("gpsbtn");
+  if(!btn||!("geolocation" in navigator)){ if(btn) btn.style.display="none"; return; }
+  let watch=null, mark=null, ring=null, pausedUntil=0;
+  window.__gpsPause=()=>{ if(watch!=null){ pausedUntil=Date.now()+60000; btn.classList.add("paused"); } };
+  function nearestProgress(la,lo){
+    let bd=1e18,bi=0;
+    for(let i=0;i<GEO.length;i++){
+      const dy=(GEO[i][0]-la)*111320, dx=(GEO[i][1]-lo)*111320*Math.cos(la*Math.PI/180);
+      const d=dy*dy+dx*dx;
+      if(d<bd){ bd=d; bi=i; }
+    }
+    return Math.sqrt(bd)<=400 ? CUM[bi]/TOTAL*100 : null;
+  }
+  function tick(pos){
+    const la=pos.coords.latitude, lo=pos.coords.longitude, acc=pos.coords.accuracy||0;
+    if(!mark){
+      mark=L.marker([la,lo],{interactive:false,zIndexOffset:1000,
+        icon:L.divIcon({className:"",iconSize:[14,14],iconAnchor:[7,7],html:'<div class="gpsdot"></div>'})}).addTo(map);
+      ring=L.circle([la,lo],{radius:acc,color:"#5ec8f2",weight:1,opacity:.35,fillOpacity:.08,interactive:false}).addTo(map);
+    }else{ mark.setLatLng([la,lo]); ring.setLatLng([la,lo]).setRadius(acc); }
+    if(Date.now()<pausedUntil) return;
+    btn.classList.remove("paused");
+    const pr=nearestProgress(la,lo);
+    if(pr==null) return;                       // off the route — just show the dot
+    const f=flat(); let best=-1;
+    for(let i=0;i<f.length;i++){
+      const id=S.sections[f[i].si].blocks[f[i].bi].id;
+      if(PROG[id]<=pr+0.2) best=i;
+    }
+    const cur=f.findIndex(x=>x.si===SI&&x.bi===BI);
+    if(best>cur){ SI=f[best].si; BI=f[best].bi; render(); }
+  }
+  btn.onclick=()=>{
+    if(watch!=null){
+      navigator.geolocation.clearWatch(watch); watch=null; pausedUntil=0;
+      btn.classList.remove("on","paused");
+      if(mark){mark.remove();mark=null;} if(ring){ring.remove();ring=null;}
+      return;
+    }
+    watch=navigator.geolocation.watchPosition(tick,err=>{
+      navigator.geolocation.clearWatch(watch); watch=null; btn.classList.remove("on");
+      banner("Location unavailable — check permissions in your browser settings.");
+      setTimeout(()=>{const w=document.getElementById("tilewarn"); if(w) w.remove();},6000);
+    },{enableHighAccuracy:true,maximumAge:4000,timeout:15000});
+    btn.classList.add("on");
+  };
+})();
+
+$("pv").onclick=()=>{ if(window.__gpsPause) __gpsPause(); step(-1); };
+$("nx").onclick=()=>{ if(window.__gpsPause) __gpsPause(); step(1); };
 document.addEventListener("keydown",e=>{
   if(e.key==="ArrowLeft"){e.preventDefault();step(-1);}
   if(e.key==="ArrowRight"){e.preventDefault();step(1);}
