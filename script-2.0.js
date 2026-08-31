@@ -525,7 +525,6 @@ sections: [
  bullets:[
   "**ACT I — Borrowed clothes.** Iceland still working out who it sounds like. Five of the biggest singalongs here are secretly Anglo-American hits in Icelandic disguise — *Mambo Italiano*, *California Dreamin'*, *I Will*, Ray Sharpe rockabilly, and a Brita Borg banger out of Stockholm. The mambo arrived secondhand, via 1950s Manhattan. Post-war crooners, dancehall ballads, and Keflavík kids who saw The Beatles in Bournemouth and ran home to start a band.",
   "**ACT II — Finding the voice.** Iceland stops borrowing and starts getting copied. *Með allt á hreinu* eats half the country's box office — **120,000 tickets, 230,000 people**. Grýlurnar weaponise punk, and the band rivalry becomes the actual plot of the film. The Sugarcubes go global. Björk goes solo. GusGus turn out to be a twelve-person filmmaking collective who picked up instruments halfway through.",
-  "**ACT III — Iceland everywhere.** múm record an album in an abandoned lighthouse. Ólafur Arnalds builds his own self-playing-piano software. Russell Crowe tweets a song about Daði's daughter and a global pop hit happens during a cancelled Eurovision. The state pays for a song that insults the state.",
  ],
 },
 {id:"2.0.6.2", title:"⚡ Tungufljót", sub:"The Quiet Tributary & Brú Power Plant", cue:"Crossing the Tungufljót river.",
@@ -698,6 +697,7 @@ sections: [
   "The **Garðyrkjuskóli ríkisins** at **Reykir** — the state horticultural college — turned out **its first qualified horticulturists in the spring of 1941**, and most of them went straight out and built nurseries of their own here. The count tells it better than any adjective could: **seven horticultural stations in Hveragerði by 1940, twenty by 1950.** Flower growing took off across the forties and the place became **blómabærinn**, the flower town.",
   "For scale: **about 140 people at the end of 1941**, **about 400 by 1946** — the year the district was formally constituted — and **about 3,350 today, 3,344 at the start of 2026.** The name is far older than the town. **Hveragerði first appears in Fitjaannáll shortly before 1700**, in an account of an erupting hot spring that **shifted position during earthquakes in 1597**, and by the description of Ölfus written in **1703** the springs were already in daily use for **bathing, boiling and washing.**",
   "Veðurstofa Íslands logged the 2008 quake to the minute — **fimmtudaginn 29. maí kl. 15:45**, announced that afternoon at magnitude **6.3** (the Met Office's English release settles on **6.1** for the composite event), epicentre at **Ingólfsfjall in Ölfus, about 5 km north-west of Selfoss**, with a very large number of aftershocks behind it. And the best thing in **Sunnumörk** was never meant to be an exhibit at all: when the centre was under construction in **2003** an **earthquake fissure was found in the ground beneath it**, and instead of filling it in they **lit it and left it on show.** **Admission is free** — you pay only if you want a turn in the simulator, which runs at **over 6 on the Richter scale.**",
+  "And there is a song for this town. **SVVN**, the Icelandic producer who names his tracks after the places on this drive, has one called **Hveragerði** — so this is exactly where it goes on.",
  ],
  say:[
   ["Hveragerði","KVE-ra-ger-dhi","the greenhouse town on the right, with steam vents between the houses"],
@@ -710,9 +710,9 @@ sections: [
  point:"Eighteen tracks that go quiet, then loud, in exactly the shape of a good day ending.",
  mic:"That is my own playlist from here in. If a track gets you, come and ask me at the front and I will write the name down.",
  bullets:[
-  "**ACT I — Silence.** You have been awake since six, gawped at Geysir and been floored by Gullfoss. The day is in your bones. Lullabies, piano, glass-cool modern classical — Iceland's quietest version of itself, played quietly, while heads sink toward windows.",
-  "**ACT II — Eyes Open.** Over **Hellisheiði**, the pass with the geothermal plant steaming on the right, the warmth creeps in. Laufey waltzes. Little Dragon dreams sideways. Sóley unravels. **Elín Hall** sings about her dad running *toward* the lava — not a metaphor; the mountain we are crossing has farms buried under it. Then **Ásgeir's** own father writes his son a song called *The Journey Home*, and the bus suddenly knows where it is going.",
-  "**ACT III — Bags Packed.** **Esja** appears on the right horizon, Reykjavík widens ahead, and the coming-home tracks stack three deep. Reykjavík's own mystery woman finally gets a name, seventy years late. **Ingó Veðurguð** has the last word with *Takk fyrir mig* — the Þjóðhátíð song for the year the festival was cancelled.",
+  "**ACT I — Silence.** You have been awake since six and the whole day is in your bones. Lullabies, piano, glass-cool modern classical — Iceland's quietest version of itself, played quietly, while heads sink toward windows.",
+  "**ACT II — Eyes Open.** As we climb, the warmth creeps in. Laufey waltzes. Little Dragon dreams sideways. Sóley unravels. **Elín Hall** sings about her father running *toward* the lava — not a metaphor, and not a small thing in a country built on the stuff. Then **Ásgeir's** own father writes his son a song called *The Journey Home*, and the bus suddenly knows where it is going.",
+  "**ACT III — Bags Packed.** The mountains give way, Reykjavík widens ahead, and the coming-home tracks stack three deep. Reykjavík's own mystery woman finally gets a name, seventy years late. **Ingó Veðurguð** has the last word with *Takk fyrir mig* — the Þjóðhátíð song for the year the festival was cancelled.",
  ],
 },
 {id:"2.0.6.13", title:"🏢 Hellisheiðarvirkjun", sub:"The Dragon's Breath", cue:"Look right at 2 o'clock — Hellisheiði geothermal plant.",

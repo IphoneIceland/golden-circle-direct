@@ -439,7 +439,15 @@ sections: [
 },
 ]},
 {title:"Geysir → Þingvellir", kind:"drive", blocks:[
-{id:"4.0.7.1", title:"🛁 Laugarvatn & Apavatn", sub:"Warm Lakes, Cold Politics", cue:"Look left at 9 o'clock — Laugarvatn.",
+{id:"4.0.7.1", title:"🎧 Music Leg", sub:"Iceland Through the Years", cue:"Leaving Geysir for Þingvellir. Playlist on, mic live between the stops.",
+ point:"The exact moment a country stops importing pop and starts exporting it — and you can hear it happen.",
+ mic:"Everything from here is Icelandic. Listen out around track twenty-two: that is this small, cold, sheep-heavy island going from copying everybody to being copied.",
+ bullets:[
+  "**ACT I — Borrowed clothes.** Iceland still working out who it sounds like. Five of the biggest singalongs here are secretly Anglo-American hits in Icelandic disguise — *Mambo Italiano*, *California Dreamin'*, *I Will*, Ray Sharpe rockabilly, and a Brita Borg banger out of Stockholm. The mambo arrived secondhand, via 1950s Manhattan. Post-war crooners, dancehall ballads, and Keflavík kids who saw The Beatles in Bournemouth and ran home to start a band.",
+  "**ACT II — Finding the voice.** Iceland stops borrowing and starts getting copied. *Með allt á hreinu* eats half the country's box office — **120,000 tickets, 230,000 people**. Grýlurnar weaponise punk, and the band rivalry becomes the actual plot of the film. The Sugarcubes go global. Björk goes solo. GusGus turn out to be a twelve-person filmmaking collective who picked up instruments halfway through.",
+ ],
+},
+{id:"4.0.7.2", title:"🛁 Laugarvatn & Apavatn", sub:"Warm Lakes, Cold Politics", cue:"Look left at 9 o'clock — Laugarvatn.",
  point:"Most countries hold political summits in glass towers. Iceland held one in a hot lake.",
  mic:"The Vikings invented hot-tub diplomacy a thousand years before Davos.",
  bullets:[
@@ -461,7 +469,7 @@ sections: [
  ],
  tags:["#religion"],
 },
-{id:"4.0.7.2", title:"⚖️ Kristnitaka", sub:"Iceland's Conversion to Christianity", cue:"Look ahead — Þingvellir, where the decision was made.",
+{id:"4.0.7.3", title:"⚖️ Kristnitaka", sub:"Iceland's Conversion to Christianity", cue:"Look ahead — Þingvellir, where the decision was made.",
  point:"Most national religions are imposed by kings or won by armies. Iceland's was decided by **a man taking a nap**.",
  mic:"Calmly, collectively, and after a really good night's sleep. That's how Iceland became Christian. Most countries weren't given the option.",
  bullets:[
@@ -477,7 +485,7 @@ sections: [
  ],
  tags:["#religion","#law"],
 },
-{id:"4.0.7.3", title:"🌋 Hekla", sub:"The Gateway to Hell", cue:"Look back over your left shoulder — Hekla, sixty kilometres out. Clear days only.",
+{id:"4.0.7.4", title:"🌋 Hekla", sub:"The Gateway to Hell", cue:"Look back over your left shoulder — Hekla, sixty kilometres out. Clear days only.",
  point:"Most volcanoes get a Wikipedia entry. Hekla got a **theological one** — used to scare medieval Europe straight for 800 years.",
  mic:"Welcome to the gateway to Hell. It gives you barely **an hour and a half's notice** to send the postcards.",
  bullets:[
@@ -496,7 +504,7 @@ sections: [
  ],
  tags:["#geology"],
 },
-{id:"4.0.7.4", title:"🕳️ The Cave People", sub:"Iceland's Last Cave Family", cue:"Driving past Laugarvatnshellir.",
+{id:"4.0.7.5", title:"🕳️ The Cave People", sub:"Iceland's Last Cave Family", cue:"Driving past Laugarvatnshellir.",
  point:"Twentieth-century Europe had jazz, cars and radio. It also had **a family raising kids in a cave**, because that's what was available.",
  mic:"Legend says a shepherd here was repeatedly **dragged out of the cave by invisible hands** — right before a blizzard that would have killed him inside. In Iceland, even the hidden folk do their own weather warnings.",
  bullets:[
@@ -517,7 +525,7 @@ sections: [
  ],
  tags:["#geology"],
 },
-{id:"4.0.7.5", title:"🚢 The Norse Expansion (793–1066 CE)", sub:"Key Facts & Routes", cue:"Approaching Þingvellir.",
+{id:"4.0.7.6", title:"🚢 The Norse Expansion (793–1066 CE)", sub:"Key Facts & Routes", cue:"Approaching Þingvellir.",
  bullets:[
   "**Social** — competition among ambitious young men (polygyny, inheritance); population outgrew the land.",
   "**Economic** — silver, silk, spices, and a profitable **slave trade**.",
@@ -568,7 +576,7 @@ sections: [
  ],
  tags:["#warfare","#migration"],
 },
-{id:"4.0.7.6", title:"🏘️ Landnám", sub:"Sixty Years to Build a Country", cue:"Crossing the Settlement Era.",
+{id:"4.0.7.7", title:"🏘️ Landnám", sub:"Sixty Years to Build a Country", cue:"Crossing the Settlement Era.",
  point:"Most countries are built over centuries by armies. Iceland was built in **two generations**, by farmers with notebooks.",
  mic:"Founding-fathers? We've got 400. We named them all. They're still in the book.",
  bullets:[
@@ -632,7 +640,16 @@ sections: [
 },
 ]},
 {title:"Þingvellir → Reykjavík", kind:"drive", blocks:[
-{id:"4.0.9.1", title:"🪶 Gljúfrasteinn", sub:"The Poet's House", cue:"Look right — the white house by the river Kaldakvísl, just off Route 36.",
+{id:"4.0.9.1", title:"🎧 Music Leg", sub:"Rícharður's Mix, The Road Home", cue:"Leaving Þingvellir — my own playlist from here to BSÍ.",
+ point:"Eighteen tracks that go quiet, then loud, in exactly the shape of a good day ending.",
+ mic:"That is my own playlist from here in. If a track gets you, come and ask me at the front and I will write the name down.",
+ bullets:[
+  "**ACT I — Silence.** You have been awake since six and the whole day is in your bones. Lullabies, piano, glass-cool modern classical — Iceland's quietest version of itself, played quietly, while heads sink toward windows.",
+  "**ACT II — Eyes Open.** As we climb, the warmth creeps in. Laufey waltzes. Little Dragon dreams sideways. Sóley unravels. **Elín Hall** sings about her father running *toward* the lava — not a metaphor, and not a small thing in a country built on the stuff. Then **Ásgeir's** own father writes his son a song called *The Journey Home*, and the bus suddenly knows where it is going.",
+  "**ACT III — Bags Packed.** The mountains give way, Reykjavík widens ahead, and the coming-home tracks stack three deep. Reykjavík's own mystery woman finally gets a name, seventy years late. **Ingó Veðurguð** has the last word with *Takk fyrir mig* — the Þjóðhátíð song for the year the festival was cancelled.",
+ ],
+},
+{id:"4.0.9.2", title:"🪶 Gljúfrasteinn", sub:"The Poet's House", cue:"Look right — the white house by the river Kaldakvísl, just off Route 36.",
  point:"Iceland's only Nobel came home to a quiet valley — to a house that doubles as the country's smallest gallery of rejected art.",
  mic:"A Nobel on the shelf, a rejected altarpiece on the wall — Gljúfrasteinn is where Iceland keeps the things the gatekeepers got wrong.",
  bullets:[
@@ -656,7 +673,7 @@ sections: [
  ],
  tags:["#literature","#art"],
 },
-{id:"4.0.9.2", title:"🎬 Laxnes Horse Farm", sub:"The Cast With Four Legs", cue:"Look right on Route 36 — Laxnes, about 400 metres up the side road.",
+{id:"4.0.9.3", title:"🎬 Laxnes Horse Farm", sub:"The Cast With Four Legs", cue:"Look right on Route 36 — Laxnes, about 400 metres up the side road.",
  point:"One small farm exported a breed to Hollywood **and** a surname to Stockholm.",
  mic:"Some of these horses grazing by the road have better screen credits than most working actors. Don't ask for autographs — they only sign with a hoof.",
  bullets:[
@@ -673,7 +690,7 @@ sections: [
  ],
  tags:["#film","#literature","#history"],
 },
-{id:"4.0.9.3", title:"🪶 Mosfellsdalur", sub:"A Valley of Buried Silver and a Nobel Prize", cue:"All around — Mosfellsdalur.",
+{id:"4.0.9.4", title:"🪶 Mosfellsdalur", sub:"A Valley of Buried Silver and a Nobel Prize", cue:"All around — Mosfellsdalur.",
  point:"A buried fortune no-one's ever found, and a Nobel written five minutes up the road from it.",
  mic:"One man hid his fortune. The other left his on the shelves.",
  bullets:[
@@ -691,7 +708,7 @@ sections: [
  ],
  tags:["#literature","#law"],
 },
-{id:"4.0.9.4", title:"🎵 Mosfellsbær", sub:"A Town That Punches Above Its Weight", cue:"All around — Mosfellsbær.",
+{id:"4.0.9.5", title:"🎵 Mosfellsbær", sub:"A Town That Punches Above Its Weight", cue:"All around — Mosfellsbær.",
  point:"A town this size shouldn't manage one global act. Mosfellsbær made two — whisper-quiet piano and stadium blues, from the same patch of moss.",
  mic:"Two acts, one small town, zero chill.",
  bullets:[
@@ -709,7 +726,7 @@ sections: [
  ],
  tags:["#music"],
 },
-{id:"4.0.9.5", title:"⚖️ Kjalarnesþing", sub:"The Parliament Before the Parliament", cue:"Out to the right across the bay — Kjalarnes, under the foot of Esja, four kilometres off.",
+{id:"4.0.9.6", title:"⚖️ Kjalarnesþing", sub:"The Parliament Before the Parliament", cue:"Out to the right across the bay — Kjalarnes, under the foot of Esja, four kilometres off.",
  point:"Þingvellir wasn't Kjalarnes moved house — it was something new and national. Kjalarnes just proved Icelanders could hold a parliament without a king.",
  mic:"Kjalarnes did the homework. Þingvellir took the credit, the fame, and the tourists.",
  bullets:[
@@ -730,7 +747,7 @@ sections: [
  ],
  tags:["#law","#migration"],
 },
-{id:"4.0.9.6", title:"⛰️ Mount Esja", sub:"A Layer Cake of Climate", cue:"Look right at 2 o'clock — Esja on the skyline.",
+{id:"4.0.9.7", title:"⛰️ Mount Esja", sub:"A Layer Cake of Climate", cue:"Look right at 2 o'clock — Esja on the skyline.",
  point:"Dark = warm, pale = frozen. One glance up and you've read **11 ice ages** before the lights change.",
  mic:"Reykjavíkers don't check the weather app — they check if they can still see Esja. If Esja's gone, your phone is the least of your problems.",
  bullets:[
