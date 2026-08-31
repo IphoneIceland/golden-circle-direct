@@ -208,6 +208,38 @@
   @keyframes gpspulse{0%{box-shadow:0 0 0 0 rgba(94,200,242,.5)}70%{box-shadow:0 0 0 14px rgba(94,200,242,0)}100%{box-shadow:0 0 0 0 rgba(94,200,242,0)}}
   .gpsdot{width:14px;height:14px;border-radius:50%;background:#5ec8f2;border:2.5px solid #fff;
       animation:gpspulse 2s infinite}
+  #resume{display:flex;align-items:center;gap:12px;width:100%;text-align:left;cursor:pointer;
+    background:linear-gradient(135deg,rgba(212,169,74,.16),rgba(20,20,26,.82));
+    border:1px solid var(--accent);border-radius:14px;padding:14px 16px;color:var(--ink);
+    font-family:inherit;margin-bottom:4px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+  #resume .rp{font-size:22px;color:var(--accent)}
+  #resume .rt{font-family:"Norse",var(--serif);font-weight:700;font-size:19px;color:var(--accent)}
+  #resume .rs{display:block;font:600 11px/1.4 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+  #a2hs{display:flex;gap:10px;align-items:center;background:rgba(20,20,26,.78);border:1px solid var(--line);
+    border-radius:12px;padding:10px 12px;margin:0 0 14px;font:500 12.5px/1.5 var(--sans);color:var(--mute)}
+  #a2hs b{color:var(--ink)}
+  #a2hs button{margin-left:auto;background:none;border:none;color:var(--accent);font-size:16px;cursor:pointer;padding:4px}
+  #wx{position:absolute;z-index:640;left:10px;bottom:26px;background:rgba(13,13,15,.82);
+    border:1px solid var(--line);border-radius:99px;padding:6px 12px;
+    font:600 11px/1 var(--sans);letter-spacing:.04em;color:var(--ink);display:none;
+    -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+  #wx .wl{color:var(--accent)}
+  #endscreen{position:fixed;inset:0;z-index:950;display:none;flex-direction:column;align-items:center;
+    justify-content:center;gap:14px;padding:30px 22px;text-align:center;overflow-y:auto;
+    background:
+      radial-gradient(ellipse at 100% 100%, rgba(212,169,74,.45) 0%, rgba(180,138,47,.22) 30%, rgba(13,13,15,0) 62%),
+      linear-gradient(135deg, rgba(13,13,15,.9) 0%, rgba(26,21,18,.82) 45%, rgba(58,42,18,.66) 75%, rgba(107,74,26,.62) 100%),
+      var(--bg) url("images/hero-road.webp") center/cover no-repeat}
+  #endscreen.show{display:flex}
+  #endscreen img{width:104px;height:104px;border-radius:50%;box-shadow:0 6px 26px rgba(0,0,0,.6)}
+  #endscreen h1{margin:2px 0 0;font-family:"Norse",var(--serif);font-weight:700;font-size:40px;color:var(--accent);letter-spacing:.03em}
+  #endscreen p{margin:0;color:var(--ink);font-size:15.5px;line-height:1.6;max-width:30rem}
+  .endbtn{display:block;width:min(320px,86vw);padding:14px;border-radius:12px;text-decoration:none;
+    font:700 15px/1.2 var(--sans);cursor:pointer;border:1px solid var(--line-strong,rgba(244,240,230,.18))}
+  .endbtn.gold{background:var(--accent);color:#121110;border-color:var(--accent)}
+  .endbtn.ghost{background:rgba(20,20,26,.7);color:var(--ink)}
+  #endclose{position:absolute;top:16px;left:16px;background:none;border:1px solid var(--line);border-radius:10px;
+    width:44px;height:44px;color:var(--accent);font-size:20px;cursor:pointer}
   #uptoast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%) translateY(80px);z-index:9999;
   background:#16161a;color:#d4a94a;border:1px solid #d4a94a;border-radius:12px;padding:.7rem 1.1rem;
   font-weight:600;letter-spacing:.02em;box-shadow:0 6px 24px rgba(0,0,0,.5);cursor:pointer;
@@ -231,6 +263,16 @@
   <h1 id="whichtour">Which tour?</h1>
   <div id="picklist"></div>
 </div>
+<div id="endscreen">
+  <button id="endclose" aria-label="Back to the tour">‹</button>
+  <img src="images/logo-crest.webp" alt="iGuide Iceland">
+  <h1>Takk fyrir!</h1>
+  <p>That's the tour — thank you for riding with iGuide Iceland. If today earned it, a review or a share means the world to a one-guide operation.</p>
+  <a class="endbtn gold" id="revbtn" hidden href="#" target="_blank" rel="noopener">⭐ Leave a Google review</a>
+  <a class="endbtn ghost" href="https://wa.me/3546441011" target="_blank" rel="noopener">💬 WhatsApp Ritchie</a>
+  <a class="endbtn ghost" href="https://instagram.com/iguide.iceland" target="_blank" rel="noopener">📸 @iguide.iceland</a>
+  <button class="endbtn ghost" id="sharebtn">🔗 Share this app</button>
+</div>
 <div id="brief" hidden></div>
 <div id="wrap" hidden>
   <div id="topbar">
@@ -242,7 +284,7 @@
   <div id="track"></div>
   <div id="steps"></div>
   <div id="days"></div>
-  <div id="map"><div id="zhint">Zoom in further to show place names</div><button id="gpsbtn" title="Follow the bus" aria-label="Follow the bus">➤</button></div>
+  <div id="map"><div id="zhint">Zoom in further to show place names</div><button id="gpsbtn" title="Follow the bus" aria-label="Follow the bus">➤</button><div id="wx"></div></div>
 </div>
 </div>
 
@@ -279,7 +321,7 @@ const KEYT  = "gcd-tour";
 // Leaving a tour reloads rather than unpicking boot() by hand: one code path,
 // no half-torn-down map, and the shell comes straight out of the service worker.
 function leaveTour(){
-  try{ localStorage.removeItem(KEYT); }catch(e){}
+  try{ localStorage.removeItem(KEYT); localStorage.removeItem("gcd-pos"); }catch(e){}
   location.replace(location.pathname);
 }
 // A guest's instinct is the phone's own back gesture, not a button we drew.
@@ -449,6 +491,28 @@ function groupsOf(){
 function showGroups(){
   const list=document.getElementById("picklist");
   list.innerHTML="";
+  // pick up where the phone-lock left off
+  try{
+    const rp=JSON.parse(localStorage.getItem("gcd-pos")||"null");
+    const rt=rp && TOURS.find(x=>x.id===rp.id && x.ready!==false);
+    if(rt){
+      const r=document.createElement("button"); r.id="resume";
+      r.innerHTML='<span class="rp">▶</span><span><span class="rt">'+esc(rt.name)+'</span>'+
+                  '<span class="rs">Continue where you left off</span></span>';
+      r.onclick=()=>openTour(rt);
+      list.appendChild(r);
+    }
+  }catch(e){}
+  // one-time add-to-home-screen hint for iPhone Safari
+  try{
+    const ios=/iP(hone|ad|od)/.test(navigator.userAgent), standalone=navigator.standalone===true;
+    if(ios && !standalone && !localStorage.getItem("gcd-a2hs") && !document.getElementById("a2hs")){
+      const a=document.createElement("div"); a.id="a2hs";
+      a.innerHTML='<span>📲 Keep me for the ride: tap <b>Share</b> → <b>Add to Home Screen</b> — works with no signal.</span><button aria-label="Dismiss">✕</button>';
+      a.querySelector("button").onclick=()=>{ a.remove(); try{localStorage.setItem("gcd-a2hs","1");}catch(e){} };
+      list.parentNode.insertBefore(a,list);
+    }
+  }catch(e){}
   groupsOf().forEach(g=>{
     const ts=TOURS.filter(t=>(t.group||t.name)===g);
     const b=document.createElement("button");
@@ -689,6 +753,10 @@ function blockRow(b, kind){
     </div>`;
 }
 let SI=0, BI=0;
+try{
+  const rp=JSON.parse(localStorage.getItem("gcd-pos")||"null");
+  if(rp && rp.id===TOUR.id && S.sections[rp.si] && S.sections[rp.si].blocks[rp.bi]){ SI=rp.si; BI=rp.bi; }
+}catch(e){}
 const flat=()=>{const o=[];S.sections.forEach((sec,si)=>sec.blocks.forEach((b,bi)=>o.push({si,bi})));return o;};
 const $=id=>document.getElementById(id);
 const track=$("track"), steps=$("steps"), list=$("days");
@@ -739,11 +807,42 @@ function paintTrack(){
   });
   const f=flat(), pos=f.findIndex(x=>x.si===SI&&x.bi===BI);
   $("pv").disabled = pos<=0;
-  $("nx").disabled = pos>=f.length-1;
+  $("nx").disabled = false;
 }
 
+const WXC={};
+function updateWX(){
+  const el=document.getElementById("wx");
+  el.style.display="none";
+  if(!navigator.onLine) return;
+  const sec=S.sections[SI];
+  if(sec.kind==="stop") return;
+  let ns=null;
+  for(let i=SI+1;i<S.sections.length;i++) if(S.sections[i].kind==="stop"){ ns=S.sections[i]; break; }
+  if(!ns) return;
+  const c=ns.blocks.map(b=>CUE[b.id]).find(x=>x&&x.pin);
+  if(!c) return;
+  const key=c.pin.lat.toFixed(2)+","+c.pin.lon.toFixed(2);
+  const now=Date.now();
+  const paint=w=>{
+    el.innerHTML='<span class="wl">'+esc(ns.title)+'</span> · '+Math.round(w.t)+'°C · '+
+                 Math.round(w.ws)+' m/s'+(w.pp>=25?' · ☔'+Math.round(w.pp)+'%':'');
+    el.style.display="block";
+  };
+  if(WXC[key] && now-WXC[key].at<9e5){ paint(WXC[key]); return; }
+  fetch("https://api.open-meteo.com/v1/forecast?latitude="+c.pin.lat+"&longitude="+c.pin.lon+
+        "&current=temperature_2m,wind_speed_10m,precipitation_probability&wind_speed_unit=ms")
+    .then(r=>r.json()).then(j=>{
+      const cu=j.current||{};
+      const w={t:cu.temperature_2m,ws:cu.wind_speed_10m,pp:cu.precipitation_probability||0,at:Date.now()};
+      if(typeof w.t!=="number") return;
+      WXC[key]=w; paint(w);
+    }).catch(()=>{});
+}
 function render(){
   const sec=S.sections[SI], b=sec.blocks[BI];
+  try{ localStorage.setItem("gcd-pos",JSON.stringify({id:TOUR.id,si:SI,bi:BI})); }catch(e){}
+  updateWX();
   list.innerHTML=blockRow(b,sec.kind);
   list.querySelectorAll(".stop[data-key]").forEach(r=>r.classList.add("open"));
   list.scrollTop=0;
@@ -751,9 +850,25 @@ function render(){
   routeLine.setLatLngs(travelled(PROG[b.id]));
   focusBlock(b.id);
 }
+const REVIEW_URL="";   // Ritchie's Google-review link goes here when he sends it
+function showEnd(){
+  const es=document.getElementById("endscreen");
+  const rb=document.getElementById("revbtn");
+  if(REVIEW_URL){ rb.hidden=false; rb.href=REVIEW_URL; }
+  es.classList.add("show");
+}
+document.getElementById("endclose").onclick=()=>document.getElementById("endscreen").classList.remove("show");
+document.getElementById("sharebtn").onclick=()=>{
+  const u="https://www.iguideiceland.is/app";
+  if(navigator.share) navigator.share({title:"iGuide Iceland",url:u}).catch(()=>{});
+  else if(navigator.clipboard) navigator.clipboard.writeText(u).then(()=>{
+    document.getElementById("sharebtn").textContent="✓ Link copied";
+  }).catch(()=>{});
+};
 function step(d){
   const f=flat(), pos=f.findIndex(x=>x.si===SI&&x.bi===BI)+d;
-  if(pos<0||pos>=f.length) return;
+  if(pos>=f.length){ showEnd(); return; }
+  if(pos<0) return;
   SI=f[pos].si; BI=f[pos].bi; render();
 }
 // Swipe the script sideways to change block. Vertical drags are left alone so
