@@ -67,7 +67,7 @@ MATCH = [("Reykjavík","BSI"),("BSÍ","BSI"),
 FIXED = {
   "YTRI": (64.802742, -23.080318), # the Snæfellsnes seal beach car park (Ritchie's
                                    # research GPS) — a second Ytri-Tunga up north fools Nominatim
-  "KIRF": (64.9391, -23.3096),     # Kirkjufellsfoss car park — Nominatim lands in Grundarfjörður town
+  "KIRF": (64.92616, -23.31236),   # Kirkjufellsfoss car park (OSM node for the falls; the 64.939 "fix" of 31 Aug was wrong — that is the mountain base)
   "THIN": (64.26362, -21.13039),   # = cue 1.11 pin, Þingvellir
   "GEYS": (64.31167, -20.29869),   # = cue 1.20 pin, the geothermal field
   "GULL": (64.32526, -20.13084),   # = cue 1.21 pin, Gullfoss
