@@ -117,7 +117,7 @@
   #map{flex:0 0 34%;box-shadow:0 -14px 18px -6px rgba(14,17,20,.95);z-index:2;min-height:150px;position:relative;border-top:1px solid var(--line)}
   #langs{display:flex;align-items:center;padding:2px 0 16px}
   #lang{flex:1;min-width:0;appearance:none;-webkit-appearance:none;
-        background:var(--panel2) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%23d4a94a' stroke-width='2' fill='none'/></svg>") no-repeat right 14px center;
+        background:rgba(20,20,26,.82) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%23d4a94a' stroke-width='2' fill='none'/></svg>") no-repeat right 14px center;
         border:1px solid var(--line);border-radius:10px;color:var(--ink);
         font:600 15px/1 var(--sans);padding:12px 38px 12px 14px;cursor:pointer}
   #lang:focus{outline:none;border-color:var(--accent)}
@@ -140,10 +140,21 @@
       padding:15px;border-radius:12px;background:var(--accent);color:#17150f;border:none;
       font:700 16px/1 var(--sans);cursor:pointer}
   #logo{display:block;width:min(190px,52vw);margin:6px auto 22px}
-  #pick{position:fixed;inset:0;z-index:900;background:var(--bg);padding:26px 18px;overflow-y:auto}
+  #pick{position:fixed;inset:0;z-index:900;padding:26px 18px;overflow-y:auto;
+    background:
+      radial-gradient(ellipse at 100% 100%, rgba(212,169,74,.45) 0%, rgba(180,138,47,.22) 30%, rgba(13,13,15,0) 62%),
+      linear-gradient(135deg, rgba(13,13,15,.88) 0%, rgba(26,21,18,.78) 45%, rgba(58,42,18,.62) 75%, rgba(107,74,26,.6) 100%),
+      var(--bg) url("images/hero-road.webp") center/cover no-repeat fixed}
+  #brand{display:flex;align-items:center;gap:14px;margin:2px 0 22px}
+  #brand img{width:76px;height:76px;border-radius:50%;object-fit:cover;background:#000;
+      box-shadow:0 4px 18px rgba(0,0,0,.5)}
+  #brand .bn{font-family:var(--serif);font-size:29px;font-weight:500;letter-spacing:.01em;color:var(--accent);line-height:1}
+  #brand .bs{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--mute);margin-top:5px}
+  #pick .card, #welcome, #safety{background:rgba(20,20,26,.78);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+      border:1px solid var(--line);border-radius:14px;padding:16px 16px 14px;margin-bottom:6px}
   #pick h1{margin:4px 0 18px;font-family:"Norse",var(--serif);font-weight:700;font-size:28px;letter-spacing:.02em}
   #picklist{display:flex;flex-direction:column;gap:10px}
-  .gbtn{text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:14px;
+  .gbtn{text-align:left;background:rgba(20,20,26,.78);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;
       padding:22px 18px;cursor:pointer;font-family:inherit;color:var(--ink);width:100%;
       display:flex;align-items:center;gap:14px}
   .gbtn:hover{border-color:var(--accent)}
@@ -154,7 +165,7 @@
       color:var(--accent);font-family:"Norse",var(--serif);font-weight:700;font-size:22px;letter-spacing:.03em;
       padding:4px 0 12px}
   #groupback .bk{font-size:18px}
-  .tcard{text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:12px;
+  .tcard{text-align:left;background:rgba(20,20,26,.82);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:12px;
          padding:15px 16px;cursor:pointer;font-family:inherit;color:var(--ink);width:100%}
   .tcard:hover:not(:disabled){border-color:var(--accent)}
   .tcard.soon{opacity:.42;cursor:default}
@@ -211,7 +222,10 @@
 <body>
 <div id="pick">
   <div id="langs"></div>
-  <img id="logo" src="images/iguide-logo-stacked.svg" alt="iGuide Iceland">
+  <div id="brand">
+    <img src="images/logo-crest.webp" alt="iGuide Iceland crest">
+    <div><div class="bn">iGuide Iceland</div><div class="bs">Local guide · Tour services</div></div>
+  </div>
   <div id="welcome"></div>
   <div id="safety"></div>
   <h1 id="whichtour">Which tour?</h1>
