@@ -35,8 +35,16 @@ for(const id of ids){
       if(b.point)   out.push({tour:id, ctx:"the point of the block — "+where, t:b.point});
       if(b.mic)     out.push({tour:id, ctx:"the spoken close — "+where, t:b.mic});
       if(b.weather) out.push({tour:id, ctx:"bad-weather alternative — "+where, t:b.weather});
-      if(b.pre)     out.push({tour:id, ctx:"intro paragraph — "+where, t:b.pre});
-      (b.heads||[]).forEach(x=>out.push({tour:id, ctx:"sub-heading — "+where, t:x}));
+      if(b.sub)     out.push({tour:id, ctx:"subtitle under the block title — "+where, t:b.sub});
+      if(b.hook)    out.push({tour:id, ctx:"opening hook line — "+where, t:b.hook});
+      if(b.pre){ (Array.isArray(b.pre)?b.pre:[b.pre]).forEach(p=>{
+        if(Array.isArray(p)){ out.push({tour:id, ctx:"intro label — "+where, t:p[0]});
+                              out.push({tour:id, ctx:"intro paragraph — "+where, t:p[1]}); }
+        else out.push({tour:id, ctx:"intro paragraph — "+where, t:p}); }); }
+      (b.heads||[]).forEach(x=>{
+        if(Array.isArray(x)){ out.push({tour:id, ctx:"sub-heading — "+where, t:x[0]});
+                              (x[1]||[]).forEach(it=>out.push({tour:id, ctx:"sub-heading item — "+where, t:it})); }
+        else out.push({tour:id, ctx:"sub-heading — "+where, t:x}); });
       (b.bullets||[]).forEach(x=>out.push({tour:id, ctx:"fact bullet — "+where, t:x}));
       (b.say||[]).forEach(x=>{ if(x[2]) out.push({tour:id,
         ctx:"gloss for the name \""+x[0]+"\" — "+where, t:x[2]}); });
