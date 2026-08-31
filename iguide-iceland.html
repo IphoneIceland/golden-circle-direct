@@ -806,10 +806,17 @@ svg.leaflet-image-layer.leaflet-interactive path {
   #pick{position:fixed;inset:0;z-index:900;background:var(--bg);padding:26px 18px;overflow-y:auto}
   #pick h1{margin:4px 0 18px;font-family:"Norse",var(--serif);font-weight:700;font-size:28px;letter-spacing:.02em}
   #picklist{display:flex;flex-direction:column;gap:10px}
-  .pgroup{margin:14px 0 2px;font-family:"Norse",var(--serif);font-weight:700;font-size:20px;
-      letter-spacing:.04em;color:var(--accent);display:flex;align-items:center;gap:10px}
-  .pgroup::after{content:"";flex:1;height:1px;background:linear-gradient(to right,var(--accent-2),transparent)}
-  .pgroup:first-child{margin-top:0}
+  .gbtn{text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:14px;
+      padding:22px 18px;cursor:pointer;font-family:inherit;color:var(--ink);width:100%;
+      display:flex;align-items:center;gap:14px}
+  .gbtn:hover{border-color:var(--accent)}
+  .gbtn .gname{font-family:"Norse",var(--serif);font-weight:700;font-size:26px;letter-spacing:.03em;color:var(--accent)}
+  .gbtn .gcount{margin-left:auto;font:600 11px/1 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--dim)}
+  .gbtn .gchev{color:var(--accent);font-size:20px;margin-left:8px}
+  #groupback{display:flex;align-items:center;gap:10px;background:none;border:none;cursor:pointer;
+      color:var(--accent);font-family:"Norse",var(--serif);font-weight:700;font-size:22px;letter-spacing:.03em;
+      padding:4px 0 12px}
+  #groupback .bk{font-size:18px}
   .tcard{text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:12px;
          padding:15px 16px;cursor:pointer;font-family:inherit;color:var(--ink);width:100%}
   .tcard:hover:not(:disabled){border-color:var(--accent)}
@@ -1780,20 +1787,36 @@ function showBriefingUnused(done){
   go.onclick=()=>{ go.remove(); el.remove(); done(); };
   document.body.appendChild(go);
 }
-function showPicker(){
+function showPicker(){ showGroups(); }
+function groupsOf(){
+  const gs=[]; const seen={};
+  TOURS.forEach(t=>{ const g=t.group||t.name; if(!seen[g]){seen[g]=true; gs.push(g);} });
+  return gs;
+}
+function showGroups(){
   const list=document.getElementById("picklist");
   list.innerHTML="";
-  let lastGroup=null;
-  TOURS.forEach(t=>{
-    const g=t.group||"";
-    if(g && g!==lastGroup){
-      lastGroup=g;
-      const h=document.createElement("div"); h.className="pgroup"; h.textContent=g;
-      list.appendChild(h);
-    }
+  groupsOf().forEach(g=>{
+    const ts=TOURS.filter(t=>(t.group||t.name)===g);
     const b=document.createElement("button");
-    // A tour can be listed before its data is built. Greyed out and unclickable
-    // beats a card that loads a spinner and dies — same rule as the languages.
+    b.className="gbtn";
+    b.innerHTML='<span class="gname">'+esc(g)+'</span>'+
+                '<span class="gcount">'+ts.length+(ts.length===1?" tour":" tours")+'</span>'+
+                '<span class="gchev">›</span>';
+    b.onclick=()=>showGroupTours(g);
+    list.appendChild(b);
+  });
+}
+function showGroupTours(g){
+  const list=document.getElementById("picklist");
+  list.innerHTML="";
+  const back=document.createElement("button");
+  back.id="groupback";
+  back.innerHTML='<span class="bk">‹</span><span>'+esc(g)+'</span>';
+  back.onclick=showGroups;
+  list.appendChild(back);
+  TOURS.filter(t=>(t.group||t.name)===g).forEach(t=>{
+    const b=document.createElement("button");
     const ready = t.ready !== false;
     b.className="tcard"+(ready?"":" soon");
     b.disabled=!ready;
@@ -1808,7 +1831,6 @@ function showPicker(){
     if(ready) b.onclick=()=>openTour(t);
     list.appendChild(b);
   });
-  // mark tours whose files are actually in the offline cache
   if(window.caches) caches.keys().then(ks=>{
     const k=ks.find(x=>/^gcd/.test(x)); if(!k) return;
     return caches.open(k).then(c=>{
