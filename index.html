@@ -297,9 +297,16 @@
   background:rgba(244,240,230,.06)}
 /* One seat, two guests: while the stereo plays, the track title gets the topbar
    and the tour name sits out. Silence brings the Norse gold back. */
+/* long titles glide across the pill like a car stereo - never cut off */
+#gnp .t{overflow:hidden;white-space:nowrap;min-width:0}
+#gnp .t.scroll span{display:inline-block;padding-right:24px;
+  animation:gnpscroll 10s linear infinite}
+@keyframes gnpscroll{0%,12%{transform:translateX(0)}88%,100%{transform:translateX(calc(-1 * var(--ov,0px)))}}
 @media (max-width:640px){
-  body.hasgnp #tourname{display:none}
-  #gnp{flex:1 1 auto;max-width:none}   /* the bar is yours, maestro */
+  /* music playing: the title stacks into a narrow gold column - GOLDEN / CIRCLE / DIRECT */
+  body.hasgnp #tourname{white-space:normal;font-size:12.5px;line-height:1.12;letter-spacing:.02em;
+    flex:0 0 auto;max-width:96px;overflow:visible;text-overflow:clip}
+  body.hasgnp #gnp{flex:1 1 auto;max-width:none}
 }
 #gnp .t{min-width:0;font-size:12px;line-height:1.15;white-space:nowrap;
   overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
@@ -1165,7 +1172,14 @@ if("serviceWorker" in navigator) window.addEventListener("load",()=>{
     if(document.hidden) return;
     fetch(SRC,{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
       if(!d||!d.playing||!d.title){ el.classList.remove('on'); el.hidden=true; document.body.classList.remove('hasgnp'); if(window.__repaintChip) __repaintChip(); return }
-      txt.textContent=d.title+(d.artist?' \u2014 '+d.artist:'');
+      var full=d.title+(d.artist?' \u2014 '+d.artist:'');
+      var sp=document.createElement('span'); sp.textContent=full;
+      txt.replaceChildren(sp);
+      requestAnimationFrame(function(){
+        var ov=sp.scrollWidth-txt.clientWidth;
+        if(ov>4){ txt.style.setProperty('--ov',(ov+24)+'px'); txt.classList.add('scroll'); }
+        else txt.classList.remove('scroll');
+      });
       if(d.art){ if(art.getAttribute('src')!==d.art) art.src=d.art; art.style.display=''; }
       else art.style.display='none';
       if(d.url) el.href=d.url;
