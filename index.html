@@ -289,7 +289,7 @@
   <div id="topbar">
     <button id="home"></button>
     <button id="fontbtn" title="Text size" aria-label="Text size">Aa</button>
-    <span id="offpill">OFFLINE · ALL GOOD</span>
+    <span id="offpill" data-en="OFFLINE · ALL GOOD">OFFLINE · ALL GOOD</span>
     <span id="tourname"></span>
   </div>
   <div id="track"></div>
@@ -509,7 +509,7 @@ function showGroups(){
     if(rt){
       const r=document.createElement("button"); r.id="resume";
       r.innerHTML='<span class="rp">▶</span><span><span class="rt">'+esc(rt.name)+'</span>'+
-                  '<span class="rs">Continue where you left off</span></span>';
+                  '<span class="rs">'+esc((T()&&T().ui&&T().ui.cont)||"Continue where you left off")+'</span></span>';
       r.onclick=()=>openTour(rt);
       list.appendChild(r);
     }
@@ -529,7 +529,7 @@ function showGroups(){
     const b=document.createElement("button");
     b.className="gbtn";
     b.innerHTML='<span class="gname">'+esc(g)+'</span>'+
-                '<span class="gcount">'+ts.length+(ts.length===1?" tour":" tours")+'</span>'+
+                '<span class="gcount">'+ts.length+" "+esc((T()&&T().ui&&T().ui.tours)||(ts.length===1?"tour":"tours"))+'</span>'+
                 '<span class="gchev">›</span>';
     b.onclick=()=>showGroupTours(g);
     list.appendChild(b);
@@ -550,9 +550,10 @@ function showGroupTours(g){
     b.disabled=!ready;
     const hrs = t.min ? (t.min/60) : null;
     const dur = hrs ? (Math.round(hrs*2)/2)+" h" : "";
-    const meta = [t.blocks?t.blocks+" stories":"", t.km?t.km+" km":"", dur?"~"+dur+" drive":""]
+    const U=(k,f)=>((T()&&T().ui&&T().ui[k])||f);
+    const meta = [t.blocks?t.blocks+" "+U("stories","stories"):"", t.km?t.km+" km":"", dur?"~"+dur+" "+U("drive","drive"):""]
                  .filter(Boolean).join(" · ");
-    b.innerHTML='<span class="off" data-tid="'+t.id+'">✓ ON THIS PHONE</span>'+
+    b.innerHTML='<span class="off" data-tid="'+t.id+'">✓ '+esc(U("onphone","ON THIS PHONE"))+'</span>'+
                 "<b>"+esc(t.group?(t.name===t.group?"Classic":(t.name.startsWith(t.group)?t.name.slice(t.group.length).trim():t.name)):t.name)+"</b><span>"+esc(t.sub)+"</span>"+
                 (meta?'<span class="meta">'+meta+'</span>':"")+
                 (ready?"":'<em class="soonlbl">'+((T()&&T().ui.soon)||"coming soon")+'</em>');
@@ -584,6 +585,7 @@ try{ const v=localStorage.getItem("gcd-lang"); if(v) LANG=v; }catch(e){}
 window.addEventListener("offline",()=>document.body.classList.add("isoffline"));
 window.addEventListener("online",()=>document.body.classList.remove("isoffline"));
 if(navigator.onLine===false) document.body.classList.add("isoffline");
+setInterval(()=>{ try{const u=T()&&T().ui; if(u&&u.offline) document.getElementById("offpill").textContent=u.offline;}catch(e){} },4000);
 applyDir();
 showLangs();
 showWelcome();
@@ -880,7 +882,14 @@ function render(){
   routeLine.setLatLngs(travelled(PROG[b.id]));
   focusBlock(b.id);
 }
-function showEnd(){ document.getElementById("endscreen").classList.add("show"); }
+function showEnd(){
+  try{
+    const u=T()&&T().ui;
+    if(u&&u.thanks) document.querySelector("#endscreen p").textContent=u.thanks;
+    if(u&&u.offline) document.getElementById("offpill").textContent=u.offline;
+  }catch(e){}
+  document.getElementById("endscreen").classList.add("show");
+}
 document.getElementById("endclose").onclick=()=>document.getElementById("endscreen").classList.remove("show");
 function step(d){
   const f=flat(), pos=f.findIndex(x=>x.si===SI&&x.bi===BI)+d;
@@ -1018,7 +1027,7 @@ if("serviceWorker" in navigator) window.addEventListener("load",()=>{
       if(!hadCtrl){ hadCtrl=true; return; }   // first install, not an update
       let tst=document.getElementById("uptoast");
       if(!tst){ tst=document.createElement("div"); tst.id="uptoast";
-        tst.textContent="✨ Updated — tap to reload"; document.body.appendChild(tst);
+        tst.textContent=(window.T&&T()&&T().ui&&T().ui.updated)||"✨ Updated — tap to reload"; document.body.appendChild(tst);
         tst.addEventListener("click",()=>location.reload());
         requestAnimationFrame(()=>tst.classList.add("show")); }
     });

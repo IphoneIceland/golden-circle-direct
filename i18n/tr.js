@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.tr = {
-  ui: { language:"Dil", whichTour:"Hangi tur?", loading:"Yükleniyor", back:"Başka bir tur seç", soon:"Yakında" },
+  ui: { language:"Dil", whichTour:"Hangi tur?", loading:"Yükleniyor", back:"Başka bir tur seç", soon:"Yakında" , stories:"hikâye", tours:"tur", drive:"sürüş", cont:"Kaldığın yerden devam et", onphone:"BU TELEFONDA", updated:"✨ Güncellendi – yenilemek için dokun", offline:"ÇEVRİMDIŞI · HER ŞEY YOLUNDA", thanks:"Tur burada bitiyor — benimle yolculuk ettiğiniz için teşekkürler. Gün bunu hak ettiyse bir yorum bırakın — ve lütfen içinde adımı (Ritchie Rich) geçirin. Asıl önemli olan kısım bu."},
   welcome: {
     step:"1. Adım — Hoş geldiniz", title:"Aramıza hoş geldiniz",
     lead:"İşte bugünkü turunuz; gerçekte süreceğimiz sırayla dizildi.",

@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.is = {
-  ui: { language:"Tungumál", whichTour:"Hvaða ferð?", loading:"Hleð", back:"Velja aðra ferð", soon:"Væntanleg" },
+  ui: { language:"Tungumál", whichTour:"Hvaða ferð?", loading:"Hleð", back:"Velja aðra ferð", soon:"Væntanleg" , stories:"sögur", tours:"ferðir", drive:"akstur", cont:"Halda áfram þar sem frá var horfið", onphone:"Á ÞESSU TÆKI", updated:"✨ Uppfært – smelltu til að endurhlaða", offline:"ÓNETTENGT · ALLT Í GÓÐU", thanks:"Þá er ferðinni lokið – takk fyrir að ferðast með mér. Ef dagurinn átti það skilið, skildu eftir umsögn – og nefndu endilega nafnið mitt (Ritchie Rich). Það er það sem skiptir raunverulega máli."},
   welcome: {
     step:"Skref 1 — Velkomin", title:"Velkomin um borð",
     lead:"Hér er ferðin þín í dag, sett upp í þeirri röð sem við keyrum hana.",

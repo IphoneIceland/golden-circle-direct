@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.de = {
-  ui: { language:"Sprache", whichTour:"Welche Tour?", loading:"Wird geladen", back:"Andere Tour wählen", soon:"Bald verfügbar" },
+  ui: { language:"Sprache", whichTour:"Welche Tour?", loading:"Wird geladen", back:"Andere Tour wählen", soon:"Bald verfügbar" , stories:"Geschichten", tours:"Touren", drive:"Fahrt", cont:"Weitermachen, wo Sie aufgehört haben", onphone:"AUF DIESEM GERÄT", updated:"✨ Aktualisiert – zum Neuladen tippen", offline:"OFFLINE · ALLES GUT", thanks:"Das war die Tour – danke, dass Sie mit mir gefahren sind. Wenn der Tag es verdient hat, hinterlassen Sie eine Bewertung – und nennen Sie darin bitte meinen Namen (Ritchie Rich). Das ist der Teil, der wirklich zählt."},
   welcome: {
     step:"Schritt 1 — Willkommen", title:"Willkommen an Bord",
     lead:"Hier ist Ihre Tour für heute, aufgebaut wie wir tatsächlich fahren.",

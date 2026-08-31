@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.fr = {
-  ui: { language:"Langue", whichTour:"Quelle excursion ?", loading:"Chargement", back:"Choisir une autre excursion", soon:"Bientôt disponible" },
+  ui: { language:"Langue", whichTour:"Quelle excursion ?", loading:"Chargement", back:"Choisir une autre excursion", soon:"Bientôt disponible" , stories:"histoires", tours:"circuits", drive:"de route", cont:"Reprendre où vous en étiez", onphone:"SUR CE TÉLÉPHONE", updated:"✨ Mis à jour – touchez pour recharger", offline:"HORS LIGNE · TOUT VA BIEN", thanks:"C"était la visite – merci d"avoir voyagé avec moi. Si la journée l"a mérité, laissez un avis – et citez-y mon nom (Ritchie Rich). C"est ce qui compte vraiment."},
   welcome: {
     step:"Étape 1 — Bienvenue", title:"Bienvenue à bord",
     lead:"Voici votre excursion du jour, présentée dans l'ordre où nous allons rouler.",

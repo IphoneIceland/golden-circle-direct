@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.da = {
-  ui: { language:"Sprog", whichTour:"Hvilken tur?", loading:"Indlæser", back:"Vælg en anden tur", soon:"Kommer snart" },
+  ui: { language:"Sprog", whichTour:"Hvilken tur?", loading:"Indlæser", back:"Vælg en anden tur", soon:"Kommer snart" , stories:"historier", tours:"ture", drive:"kørsel", cont:"Fortsæt hvor du slap", onphone:"PÅ DENNE TELEFON", updated:"✨ Opdateret – tryk for at genindlæse", offline:"OFFLINE · ALT ER GODT", thanks:"Det var turen – tak, fordi du kørte med mig. Hvis dagen fortjente det, så skriv en anmeldelse – og nævn gerne mit navn (Ritchie Rich). Det er det, der virkelig tæller."},
   welcome: {
     step:"Trin 1 — Velkommen", title:"Velkommen ombord",
     lead:"Her er din tur i dag, sat op i den rækkefølge vi rent faktisk kører den.",

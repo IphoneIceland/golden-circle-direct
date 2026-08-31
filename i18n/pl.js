@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.pl = {
-  ui: { language:"Język", whichTour:"Która wycieczka?", loading:"Ładowanie", back:"Wybierz inną wycieczkę", soon:"Wkrótce" },
+  ui: { language:"Język", whichTour:"Która wycieczka?", loading:"Ładowanie", back:"Wybierz inną wycieczkę", soon:"Wkrótce" , stories:"opowieści", tours:"trasy", drive:"jazdy", cont:"Kontynuuj od miejsca przerwania", onphone:"NA TYM TELEFONIE", updated:"✨ Zaktualizowano – dotknij, aby odświeżyć", offline:"OFFLINE · WSZYSTKO GRA", thanks:"To koniec wycieczki — dziękuję, że jechaliście ze mną. Jeśli dzień na to zasłużył, zostawcie opinię — i proszę, wspomnijcie w niej moje imię (Ritchie Rich). To właśnie się liczy."},
   welcome: {
     step:"Krok 1 — Witamy", title:"Witamy na pokładzie",
     lead:"Oto dzisiejsza wycieczka, ułożona tak, jak naprawdę będziemy jechać.",

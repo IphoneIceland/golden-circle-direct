@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.nl = {
-  ui: { language:"Taal", whichTour:"Welke tour?", loading:"Laden", back:"Kies een andere tour", soon:"Binnenkort" },
+  ui: { language:"Taal", whichTour:"Welke tour?", loading:"Laden", back:"Kies een andere tour", soon:"Binnenkort" , stories:"verhalen", tours:"tours", drive:"rijden", cont:"Ga verder waar je gebleven was", onphone:"OP DEZE TELEFOON", updated:"✨ Bijgewerkt – tik om te herladen", offline:"OFFLINE · ALLES IN ORDE", thanks:"Dat was de tour – bedankt dat je met mij meereed. Als de dag het verdiende, laat dan een review achter – en noem daarin mijn naam (Ritchie Rich). Dát is wat echt telt."},
   welcome: {
     step:"Stap 1 — Welkom", title:"Welkom aan boord",
     lead:"Dit is uw tour van vandaag, in de volgorde waarin we hem echt rijden.",

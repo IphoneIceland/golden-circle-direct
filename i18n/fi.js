@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.fi = {
-  ui: { language:"Kieli", whichTour:"Mikä retki?", loading:"Ladataan", back:"Valitse toinen retki", soon:"Tulossa pian" },
+  ui: { language:"Kieli", whichTour:"Mikä retki?", loading:"Ladataan", back:"Valitse toinen retki", soon:"Tulossa pian" , stories:"tarinaa", tours:"retkeä", drive:"ajoa", cont:"Jatka siitä mihin jäit", onphone:"TÄLLÄ PUHELIMELLA", updated:"✨ Päivitetty – lataa napauttamalla", offline:"OFFLINE · KAIKKI HYVIN", thanks:"Siinä oli retki – kiitos, että matkustit kanssani. Jos päivä sen ansaitsi, jätä arvostelu – ja mainitse siinä nimeni (Ritchie Rich). Se on se osa, jolla on oikeasti väliä."},
   welcome: {
     step:"Vaihe 1 — Tervetuloa", title:"Tervetuloa kyytiin",
     lead:"Tässä on tämän päivän retki siinä järjestyksessä kuin sen todella ajamme.",

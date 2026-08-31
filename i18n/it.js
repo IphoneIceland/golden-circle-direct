@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.it = {
-  ui: { language:"Lingua", whichTour:"Quale tour?", loading:"Caricamento", back:"Scegli un altro tour", soon:"Prossimamente" },
+  ui: { language:"Lingua", whichTour:"Quale tour?", loading:"Caricamento", back:"Scegli un altro tour", soon:"Prossimamente" , stories:"storie", tours:"tour", drive:"di viaggio", cont:"Riprendi da dove eri rimasto", onphone:"SU QUESTO TELEFONO", updated:"✨ Aggiornato – tocca per ricaricare", offline:"OFFLINE · TUTTO OK", thanks:"Il tour finisce qui: grazie per aver viaggiato con me. Se la giornata lo merita, lascia una recensione e, per favore, fai il mio nome (Ritchie Rich). È quello che conta davvero."},
   welcome: {
     step:"Passo 1 — Benvenuti", title:"Benvenuti a bordo",
     lead:"Ecco il vostro tour di oggi, nell'ordine in cui lo percorreremo davvero.",

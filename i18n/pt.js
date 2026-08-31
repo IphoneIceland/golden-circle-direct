@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.pt = {
-  ui: { language:"Idioma", whichTour:"Qual excursão?", loading:"A carregar", back:"Escolher outra excursão", soon:"Em breve" },
+  ui: { language:"Idioma", whichTour:"Qual excursão?", loading:"A carregar", back:"Escolher outra excursão", soon:"Em breve" , stories:"histórias", tours:"tours", drive:"de estrada", cont:"Continuar de onde parou", onphone:"NESTE TELEMÓVEL", updated:"✨ Atualizado – toque para recarregar", offline:"OFFLINE · TUDO BEM", thanks:"E assim termina o tour — obrigado por viajar comigo. Se o dia mereceu, deixe uma avaliação — e, por favor, mencione o meu nome (Ritchie Rich). É isso que conta de verdade."},
   welcome: {
     step:"Passo 1 — Bem-vindos", title:"Bem-vindos a bordo",
     lead:"Esta é a excursão de hoje, pela ordem em que a vamos mesmo percorrer.",
