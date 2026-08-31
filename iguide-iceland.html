@@ -960,11 +960,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
   background:rgba(244,240,230,.06)}
 /* One seat, two guests: while the stereo plays, the track title gets the topbar
    and the tour name sits out. Silence brings the Norse gold back. */
-/* long titles glide across the pill like a car stereo - never cut off */
-#gnp .t{overflow:hidden;white-space:nowrap;min-width:0}
+/* the pill alternates: song title... then artist... crossfading like a car
+   stereo; a name still too long for the pill glides across, never cut off */
+#gnp .t{overflow:hidden;white-space:nowrap;min-width:0;transition:opacity .35s ease}
+#gnp .t.fade{opacity:0}
 #gnp .t.scroll span{display:inline-block;padding-right:24px;
-  animation:gnpscroll 10s linear infinite}
-@keyframes gnpscroll{0%,12%{transform:translateX(0)}88%,100%{transform:translateX(calc(-1 * var(--ov,0px)))}}
+  animation:gnpscroll 8s linear infinite}
+@keyframes gnpscroll{0%,15%{transform:translateX(0)}85%,100%{transform:translateX(calc(-1 * var(--ov,0px)))}}
 @media (max-width:640px){
   /* music playing: the title stacks into a narrow gold column - GOLDEN / CIRCLE / DIRECT */
   body.hasgnp #tourname{white-space:normal;font-size:12.5px;line-height:1.12;letter-spacing:.02em;
@@ -2529,18 +2531,30 @@ if("serviceWorker" in navigator) window.addEventListener("load",()=>{
   if(!el) return;
   var art=document.getElementById('gnpArt'), txt=document.getElementById('gnpTxt');
   var SRC='https://little-limit-8eeb.richardjsuffling.workers.dev/now';
+  var PART=0;
+  function showPart(p){
+    var parts=[el.dataset.song, el.dataset.artist].filter(Boolean);
+    if(!parts.length) return;
+    PART=p%parts.length;
+    var sp=document.createElement('span'); sp.textContent=parts[PART];
+    txt.replaceChildren(sp);
+    requestAnimationFrame(function(){
+      var ov=sp.scrollWidth-txt.clientWidth;
+      if(ov>4){ txt.style.setProperty('--ov',(ov+24)+'px'); txt.classList.add('scroll'); }
+      else txt.classList.remove('scroll');
+    });
+  }
+  setInterval(function(){
+    if(el.hidden||!el.dataset.song) return;
+    txt.classList.add('fade');
+    setTimeout(function(){ showPart(PART+1); txt.classList.remove('fade'); },360);
+  },4500);
   function tick(){
     if(document.hidden) return;
     fetch(SRC,{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
       if(!d||!d.playing||!d.title){ el.classList.remove('on'); el.hidden=true; document.body.classList.remove('hasgnp'); if(window.__repaintChip) __repaintChip(); return }
-      var full=d.title+(d.artist?' \u2014 '+d.artist:'');
-      var sp=document.createElement('span'); sp.textContent=full;
-      txt.replaceChildren(sp);
-      requestAnimationFrame(function(){
-        var ov=sp.scrollWidth-txt.clientWidth;
-        if(ov>4){ txt.style.setProperty('--ov',(ov+24)+'px'); txt.classList.add('scroll'); }
-        else txt.classList.remove('scroll');
-      });
+      el.dataset.song=d.title; el.dataset.artist=d.artist||'';
+      if(!el.dataset.cycling){ el.dataset.cycling='1'; showPart(0); }
       if(d.art){ if(art.getAttribute('src')!==d.art) art.src=d.art; art.style.display=''; }
       else art.style.display='none';
       if(d.url) el.href=d.url;
