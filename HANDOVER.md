@@ -366,3 +366,5 @@ gh gist edit 6ace26177d8f304a4dc8d77c5dccba7a -a iguide-iceland.html
 
 
 - 2026-08-31: qr/guest-app.png rebuilt with 21 country flags (matches A5 seat-back card). QR -> /app, decode-verified.
+
+- 2026-08-31 gcd117-v1: Craft rebuild (gcd91) had wiped landmark pins + sightlines on 1.0-7.0 (even spacing put Kjalarnesþing at Ártúnsbrekka, Esja at BSÍ — Ritchie caught it). Rebuilt placement from the gcd84 landmark DB onto the new geometry: 176 sightline targets restored, before-abeam in each tour's travel direction (4.0 is reversed vs 1.0), stop-section targets back (Skjaldbreiður from Hakið, Lögberg, Strokkur). Sólheimajökull + Reynisfjara stop pins snapped onto the route (rebuild had pinned the POI, not the car park). Tungufljót on 4.0 pinned at the actual Gullfoss→Geysir bridge (Overpass river geometry x route, 64.31391,-20.26632); stale southern-crossing target dropped. LAW: any content rebuild that regenerates cues-*.js must re-run pin placement — evenly-spaced pins are content-blind. Engine + landmark DB: session pinfix replace.py (gist-able on request). Scripts-chat flag: 4.0.9.7 cue says "2 o'clock" but southbound Esja sits right/3-4 o'clock.
