@@ -8,7 +8,7 @@
 // actually on disk.
 window.__TOURS__ = [
   {id:"1.0", group:"Golden Circle", ready:true,  name:"Golden Circle Direct",
-   sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ", km:247, blocks:36},
+   sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ", km:246, blocks:36},
   {id:"2.0", group:"Golden Circle", ready:true , name:"Golden Circle Snowmobiling",
    sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ", km:230, min:221, blocks:37},
   {id:"3.0", group:"Golden Circle", ready:true , name:"Golden Circle Lagoons",
@@ -20,7 +20,7 @@ window.__TOURS__ = [
   {id:"6.0", group:"South Coast", ready:true,  name:"South Coast Combo",
    sub:"BSÍ → Hvolsvöllur → Skógafoss → Reynisfjara → Vík", km:417, min:437, blocks:31},
   {id:"7.0", group:"South Coast", ready:true , name:"Glacial Lagoon",
-   sub:"BSÍ → Skógafoss → Kirkjubæjarklaustur → Jökulsárlón → Vík → Reykjavík", km:779, min:782, blocks:43},
+   sub:"BSÍ → Skógafoss → Kirkjubæjarklaustur → Jökulsárlón → Vík → Reykjavík", km:765, min:782, blocks:43},
   {id:"10.0", group:"Snæfellsnes", ready:true, name:"Snæfellsnes North", sub:"BSÍ → Selvallafoss → Kirkjufell → Djúpalónssandur → Arnarstapi → Ytri-Tunga → BSÍ", km:450, min:451, blocks:38},
   {id:"11.0", group:"Snæfellsnes", ready:true , name:"Snæfellsnes South",
    sub:"BSÍ → Ytri-Tunga → Arnarstapi → Djúpalónssandur → Kirkjufell → BSÍ", km:450, min:451, blocks:37}

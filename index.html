@@ -711,9 +711,27 @@ const SIGHTDOT = L.circleMarker([0,0],{radius:4,color:"#d4a94a",weight:1.5,fill:
 let SIGHTARROW=null, SIGHTLBL=null;
 function brg(a,b){const r=Math.PI/180,la1=a[0]*r,la2=b[0]*r,dl=(b[1]-a[1])*r;
   return (Math.atan2(Math.sin(dl)*Math.cos(la2),Math.cos(la1)*Math.sin(la2)-Math.sin(la1)*Math.cos(la2)*Math.cos(dl))*180/Math.PI+360)%360;}
+function pointAt(pct){
+  const want=TOTAL*Math.max(0,Math.min(100,pct))/100;
+  for(let i=0;i<GEO.length;i++) if(CUM[i]>=want) return GEO[i];
+  return GEO[GEO.length-1];
+}
 function focusBlock(id){
   const c=CUE[id];
-  if(!c||!c.pin){ return; }              // story block — leave the map where it is
+  if(!c||!c.pin){
+    // story block: the dot keeps rolling down the road instead of camping on
+    // the previous landmark, and the old sightline doesn't linger.
+    SIGHT.remove(); SIGHTDOT.remove();
+    if(SIGHTARROW){SIGHTARROW.remove();SIGHTARROW=null;}
+    if(SIGHTLBL){SIGHTLBL.remove();SIGHTLBL=null;}
+    const pr=PROG[id];
+    if(pr!=null){
+      const pt=pointAt(pr);
+      HERE.setLatLng(pt).addTo(map);
+      map.panTo(pt,{animate:true,duration:.4});
+    }
+    return;
+  }
   HERE.setLatLng([c.pin.lat,c.pin.lon]).addTo(map);
   if(c.target){
     SIGHT.setLatLngs([[c.pin.lat,c.pin.lon],[c.target.lat,c.target.lon]]).addTo(map);
