@@ -664,7 +664,7 @@ sections: [
  ],
  tags:["#geology"],
 },
-{id:"1.0.6.9", title:"🏗️ Selfoss", sub:"The Great Milk Collapse", cue:"We're crossing it now — look down. Ölfusárbrú.",
+{id:"1.0.6.9", title:"🏗️ Selfoss", sub:"The Great Milk Collapse",
  point:"The enemy that took out the Selfoss bridge wasn't an army. It was two overloaded trucks and a bridge built for lighter days.",
  mic:"The war couldn't blow this bridge up. A couple of dairy trucks did it on a Tuesday afternoon.",
  bullets:[
