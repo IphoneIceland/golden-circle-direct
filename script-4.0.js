@@ -125,19 +125,6 @@ sections: [
   ["Hellisheiðarvirkjun","HEL-li-shay-thar-VIRK-yun","Iceland's largest geothermal power station, 303 MW"],
   ["Hengill","HEN-gitl","the volcanic system underneath it, a plate-boundary triple junction on dry land"],
   ["Hellisheiði","HEL-lis-HAY-thi","the heath and pass the plant is named after"],
- ],
- tags:["#technology","#geology"],
-},
-{id:"4.0.1.8", title:"🌊 Ölfusá Intro", sub:"The Big Drain Ahead", cue:"Look right at 1–2 o'clock — Ölfusá, ahead in the lowlands.",
- point:"From up here it's just a pale line on the flats. Down at Selfoss, it's the biggest river in the country.",
- mic:"At the far end of that pale line: two harbours that lost their trade, and one address nobody checks out of early.",
- bullets:[
-  "That pale line across the lowlands ahead is the **Ölfusá**. Every drop of water we'll see today ends up in it — but save the numbers, we'll be standing on its bank at Selfoss.",
-  "What's worth knowing from up here is what sits at the far end of it — the two villages where it meets the sea, and the prison just inland.",
-  "It empties by **Eyrarbakki** and **Stokkseyri** — once among Iceland's busiest harbours, until the deeper port at Þorlákshöfn stole the trade.",
-  "Just inland sits **Litla-Hraun**, Iceland's main maximum-security prison.",
- ],
- say:[
   ["Ölfusá","UL-vus-ow","the big river ahead in the lowlands"],
   ["Litla-Hraun","LIT-la-HROY-n","Iceland's main maximum-security prison, just inland"],
   ["Brúará","BROO-au-rou","\"Bridge-River,\" one of the streams the Hvítá gathers on the way"],
@@ -147,7 +134,7 @@ sections: [
  ],
  tags:["#geology"],
 },
-{id:"4.0.1.9", title:"🌋 Hveragerði", sub:"Quakes, Cakes and Steam", cue:"Look left at 9–10 o'clock — Hveragerði.",
+{id:"4.0.1.8", title:"🌋 Hveragerði", sub:"Quakes, Cakes and Steam", cue:"Look left at 9–10 o'clock — Hveragerði.",
  point:"Pizza baked by a volcano. Beer brewed with geothermal heat. A shopping mall built on an earthquake crack. Yes, all in the same town.",
  mic:"Most towns hide their disasters. Hveragerði put theirs in the lobby and charged admission.",
  bullets:[
@@ -166,7 +153,7 @@ sections: [
  ],
  tags:["#geology"],
 },
-{id:"4.0.1.10", title:"🧭 Ingólfur Arnarson", sub:"The Founder's Path", cue:"Look ahead at 12 o'clock — the Ring Road (Leið 1).",
+{id:"4.0.1.9", title:"🧭 Ingólfur Arnarson", sub:"The Founder's Path", cue:"Look ahead at 12 o'clock — the Ring Road (Leið 1).",
  point:"The modern Ring Road is the last chapter of that story — stitching together the coast Ingólfur started.",
  mic:"The saga begins with a man chasing two pillars. It ends with a whole nation driving the road that traces his coastline.",
  bullets:[
@@ -181,7 +168,7 @@ sections: [
  ],
  tags:["#migration"],
 },
-{id:"4.0.1.11", title:"🏗️ Selfoss", sub:"The Great Milk Collapse", cue:"We're crossing it now — look down. Ölfusárbrú.",
+{id:"4.0.1.10", title:"🏗️ Selfoss", sub:"The Great Milk Collapse", cue:"We're crossing it now — look down. Ölfusárbrú.",
  point:"The enemy that took out the Selfoss bridge wasn't an army. It was two overloaded trucks and a bridge built for lighter days.",
  mic:"The war couldn't blow this bridge up. A couple of dairy trucks did it on a Tuesday afternoon.",
  bullets:[
@@ -196,7 +183,7 @@ sections: [
  ],
  tags:["#wwii"],
 },
-{id:"4.0.1.12", title:"🌊 Ölfusá", sub:"The Big Drain", cue:"Look right at 1–2 o'clock — Ölfusá.",
+{id:"4.0.1.11", title:"🌊 Ölfusá", sub:"The Big Drain", cue:"Look right at 1–2 o'clock — Ölfusá.",
  point:"Every drop of water that fell on the Golden Circle — glaciers, geysers, lakes — eventually squeezes through this one channel.",
  mic:"Four rivers. One channel. Centuries of cattle-and-cod toll. All Golden Circle water leads here.",
  bullets:[
@@ -215,7 +202,7 @@ sections: [
  ],
  tags:["#geology"],
 },
-{id:"4.0.1.13", title:"⚡ Sog River", sub:"The River That Ran Everything", cue:"Crossing the Sog.",
+{id:"4.0.1.12", title:"⚡ Sog River", sub:"The River That Ran Everything", cue:"Crossing the Sog.",
  point:"Three small hydro plants on one short river — and they kept the country running for half a century.",
  mic:"Big rivers get the postcards. The Sog quietly ran the lights.",
  bullets:[
@@ -234,7 +221,7 @@ sections: [
  ],
  tags:["#geology","#law","#technology"],
 },
-{id:"4.0.1.14", title:"🎵 Grímsnes & Kerið", sub:"Red Walls, Blue Lake, Björk on a Raft", cue:"At Kerið crater.",
+{id:"4.0.1.13", title:"🎵 Grímsnes & Kerið", sub:"Red Walls, Blue Lake, Björk on a Raft", cue:"At Kerið crater.",
  point:"A crater that doubles as the world's most exclusive natural amphitheatre — built by a volcano, booked by an opera singer and a young Björk.",
  mic:"Most countries put concerts in arenas. Iceland puts them in volcanoes.",
  bullets:[
@@ -253,7 +240,7 @@ sections: [
  ],
  tags:["#geology"],
 },
-{id:"4.0.1.15", title:"💙 Brúará", sub:"The River That Lost Its Bridge", cue:"Crossing Brúará.",
+{id:"4.0.1.14", title:"💙 Brúará", sub:"The River That Lost Its Bridge", cue:"Crossing Brúará.",
  point:"A river named after a bridge — that lost the bridge because the church was tired of the poor arriving.",
  mic:"The cheapest border policy in Icelandic history: knock down the only bridge and let the river do the rest.",
  bullets:[
@@ -271,7 +258,7 @@ sections: [
  ],
  tags:["#law"],
 },
-{id:"4.0.1.16", title:"⛪ Skálholt", sub:"Bishops, Heads, and Rock Bands", cue:"At Skálholt.",
+{id:"4.0.1.15", title:"⛪ Skálholt", sub:"Bishops, Heads, and Rock Bands", cue:"At Skálholt.",
  point:"Iceland's centre of power didn't fall to an invasion. It fell to a fault line — and politics finished the job.",
  mic:"A 700-year capital, ended by a single earthquake and a Danish administrative form.",
  bullets:[
@@ -293,7 +280,7 @@ sections: [
  ],
  tags:["#geology","#religion"],
 },
-{id:"4.0.1.17", title:"🐎 Icelandic Horses", sub:"Living Viking Heritage", cue:"Look at the horses in the field.",
+{id:"4.0.1.16", title:"🐎 Icelandic Horses", sub:"Living Viking Heritage", cue:"Look at the horses in the field.",
  point:"A horse breed Vikings would still recognise — kept intact for a millennium by isolation, hard winters, and a one-way export door.",
  mic:"You can take an Icelandic horse out of Iceland. You just can't bring it back. The country runs a one-way door for its own livestock.",
  bullets:[
