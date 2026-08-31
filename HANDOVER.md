@@ -364,3 +364,5 @@ gh gist edit 6ace26177d8f304a4dc8d77c5dccba7a -a iguide-iceland.html
 - [ ] South Coast pins are OSM town/landmark centroids, not the coach bays. Fine for now; worth nudging once you've stood in them
 - [ ] The 🧵 in the "Three Names" title comes from the Craft heading itself — a document edit, not an app one
 
+
+- 2026-08-31: qr/guest-app.png rebuilt with 21 country flags (matches A5 seat-back card). QR -> /app, decode-verified.
