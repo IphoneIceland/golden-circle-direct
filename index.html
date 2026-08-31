@@ -56,7 +56,7 @@
   /* every step dash stays on screen - they squeeze rather than scroll,
      so the whole row reads: where you are, what's left, what's next */
   #dots{flex:1 1 auto;min-width:0;display:flex;gap:3px;align-items:center}
-  .dot2{flex:1 1 20px;min-width:6px;height:9px;background:#2f3d4a;border-radius:3px;cursor:pointer}
+  .dot2{flex:1 1 18px;min-width:7px;height:9px;background:#2f3d4a;border-radius:3px;cursor:pointer}
   .dot2.done{background:var(--accent-2)}
   .dot2.now{background:var(--accent);height:8px}
   #days{flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;
@@ -224,7 +224,7 @@
   #a2hs button{margin-left:auto;background:none;border:none;color:var(--accent);font-size:16px;cursor:pointer;padding:4px}
   /* One pill in the topbar: next stop, distance, time, weather. The map keeps its corners. */
   /* the chip borrows the row's slack; the step dashes always win the space fight */
-  #chip{flex:0 0 auto;max-width:64%;margin-left:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  #chip{flex:0 1 auto;min-width:150px;max-width:58%;margin-left:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
     background:rgba(13,13,15,.85);border:1px solid var(--accent);border-radius:99px;
     padding:8px 12px;font:600 11px/1 var(--sans);letter-spacing:.03em;color:var(--ink);display:none}
   #chip .cl{color:var(--accent)}
@@ -301,6 +301,7 @@
 #gnp:active{border-color:var(--accent)}
 #gnp img{width:30px;height:30px;border-radius:6px;object-fit:cover;flex:none;
   background:rgba(244,240,230,.06)}
+@media (max-width:520px){ #gnp .t{display:none} #gnp{padding:0 8px 0 6px} }
 #gnp .t{min-width:0;font-size:12px;line-height:1.15;white-space:nowrap;
   overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
 #gnp .eq{display:inline-flex;align-items:flex-end;gap:2px;height:11px;flex:none}
