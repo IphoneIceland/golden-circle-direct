@@ -190,6 +190,12 @@
   #tourname{flex:1 1 auto;min-width:0;text-align:right;
             font-family:"Norse",var(--serif);font-weight:700;font-size:19px;letter-spacing:.01em;
             color:var(--accent);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  /* a postcard from the place you just parked at */
+  .stopphoto{margin:14px 0 4px;border-radius:14px;overflow:hidden;border:1px solid var(--line);
+    box-shadow:0 4px 18px rgba(0,0,0,.35)}
+  .stopphoto img{display:block;width:100%;max-height:240px;object-fit:cover}
+  .stopphoto figcaption{font:500 9.5px/1.4 var(--sans);color:var(--dim);padding:5px 10px;
+    background:var(--panel);text-align:right;letter-spacing:.03em}
   #zhint{position:absolute;z-index:500;bottom:14px;left:14px;background:rgba(22,27,33,.92);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--mute)}
   #foot{padding:11px 20px;border-top:1px solid var(--line);font-size:10.5px;color:var(--mute);line-height:1.6}
   #foot a{color:var(--accent)}
@@ -857,14 +863,47 @@ function focusBlock(id){
   }
 }
 
+const STOPPHOTOS=[
+  {la:64.766,lo:-23.628,src:"images/stops/arnarstapi.webp",cr:"Ilya Grigorik / CC BY-SA 3.0"},
+  {la:64.538,lo:-21.921,src:"images/stops/borgarnes.webp",cr:"Eysteinn Guðni Guðnason / CC BY-SA 4.0"},
+  {la:64.753,lo:-23.895,src:"images/stops/djupalonssandur.webp",cr:"Bultro / CC BY-SA 3.0"},
+  {la:64.043,lo:-16.182,src:"images/stops/fellsfjara.webp",cr:"Andreas Tille / CC BY-SA 4.0"},
+  {la:64.011,lo:-16.387,src:"images/stops/fjallsarlon.webp",cr:"Jakub Hałun / CC BY 4.0"},
+  {la:64.178,lo:-20.448,src:"images/stops/fridheimar.webp",cr:"Pierre-Selim Huard / CC BY 4.0"},
+  {la:64.312,lo:-20.299,src:"images/stops/geysir.webp",cr:"Andreas Tille / CC BY-SA 3.0"},
+  {la:64.325,lo:-20.131,src:"images/stops/gullfoss.webp",cr:"Diego Delso / CC BY-SA 4.0"},
+  {la:63.751,lo:-20.2235,src:"images/stops/hvolsvollur.webp",cr:"Diego Delso / CC BY-SA 4.0"},
+  {la:64.038,lo:-16.276,src:"images/stops/jokulsarlon.webp",cr:"Jakub Hałun / CC BY 4.0"},
+  {la:63.793,lo:-18.042,src:"images/stops/kirkjubaejarklaustur.webp",cr:"Eysteinn Guðni Guðnason / CC BY-SA 4.0"},
+  {la:64.928,lo:-23.311,src:"images/stops/kirkjufell.webp",cr:"Steven Diaz stevendiazphoto / CC0"},
+  {la:64.896,lo:-23.709,src:"images/stops/olafsvik.webp",cr:"Marek Ślusarczyk (Tupungato) Photo portfolio / CC BY 3.0"},
+  {la:63.4054,lo:-19.0486,src:"images/stops/reynisfjara.webp",cr:"Bernd Thaller from Graz, Austria / CC BY 2.0"},
+  {la:63.616,lo:-19.992,src:"images/stops/seljalandsfoss.webp",cr:"Jakub Hałun / CC BY 4.0"},
+  {la:64.942,lo:-22.904,src:"images/stops/selvallafoss.webp",cr:"Codas / CC BY-SA 4.0"},
+  {la:63.531,lo:-19.519,src:"images/stops/skogafoss.webp",cr:"Jakub Hałun / CC BY 4.0"},
+  {la:63.566,lo:-19.269,src:"images/stops/solheimajokull.webp",cr:"Netha Hussain / CC BY-SA 4.0"},
+  {la:64.264,lo:-21.13,src:"images/stops/thingvellir.webp",cr:"Diego Delso / CC BY-SA 4.0"},
+  {la:63.419,lo:-19.005,src:"images/stops/vik.webp",cr:"AstroAnthony / CC BY 4.0"},
+  {la:64.804,lo:-23.081,src:"images/stops/ytri-tunga.webp",cr:"Jakub Hałun / CC BY-SA 4.0"}
+];
+function stopPhoto(pin){
+  if(!pin) return null;
+  for(const p of STOPPHOTOS){
+    const dy=(p.la-pin.lat)*111.32, dx=(p.lo-pin.lon)*111.32*Math.cos(pin.lat*Math.PI/180);
+    if(dy*dy+dx*dx < 0.36) return p;   // within ~600 m of the stop
+  }
+  return null;
+}
 function blockRow(b, kind){
   const say=(b.say||[]).map(s=>`<div><i>[${esc(s[1])}]</i> — <b>${esc(s[0])}</b>${s[2]?` <span class="gloss">(${esc(s[2])})</span>`:""}</div>`).join("");
   const heads=(b.heads||[]).map(h=>`<div class="sublab">${esc(h[0])}</div><ul>${h[1].map(x=>`<li>${md(x)}</li>`).join("")}</ul>`).join("");
   const pre=(b.pre||[]).map(p=>`<div class="sublab">${esc(p[0])}</div><div class="pre">${esc(p[1])}</div>`).join("");
+  const ph = kind==="stop" ? stopPhoto((CUE[b.id]||{}).pin) : null;
   return `<div class="stop" data-key="${b.id}">
       <div class="sc"><div class="sn">${b.emoji?b.emoji+" ":""}${esc(b.title)}</div>
       ${b.sub?`<div class="sub">${esc(b.sub)}</div>`:""}
       ${b.cue?`<div class="look">${esc(b.cue)}</div>`:""}</div></div>
+    ${ph?`<figure class="stopphoto"><img src="${ph.src}" alt="" loading="lazy"><figcaption>📷 ${esc(ph.cr)}</figcaption></figure>`:""}
     <div class="blkbody">
       ${b.hook?`<div class="hook">${md(b.hook)}</div>`:""}
       ${heads}${pre}
