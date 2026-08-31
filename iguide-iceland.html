@@ -960,7 +960,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
   background:rgba(244,240,230,.06)}
 /* One seat, two guests: while the stereo plays, the track title gets the topbar
    and the tour name sits out. Silence brings the Norse gold back. */
-@media (max-width:640px){ body.hasgnp #tourname{display:none} }
+@media (max-width:640px){
+  body.hasgnp #tourname{display:none}
+  #gnp{flex:1 1 auto;max-width:none}   /* the bar is yours, maestro */
+}
 #gnp .t{min-width:0;font-size:12px;line-height:1.15;white-space:nowrap;
   overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
 #gnp .eq{display:inline-flex;align-items:flex-end;gap:2px;height:11px;flex:none}
