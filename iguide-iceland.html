@@ -923,6 +923,21 @@ svg.leaflet-image-layer.leaflet-interactive path {
   border-bottom:10px solid #d4a94a;opacity:.8}
 .slbl{color:#d4a94a;font:600 11px/1 -apple-system,system-ui,sans-serif;letter-spacing:.08em;
   text-transform:uppercase;white-space:nowrap;text-shadow:0 1px 3px rgba(0,0,0,.9);opacity:.9}
+  /* Track cards — same shape as the .trk cards on iguideiceland.is/playlists */
+  .blist{list-style:none;margin:0;padding:0}
+  .blist>li{margin:0 0 8px;padding-left:1.1em;text-indent:-1.1em}
+  .blist>li:before{content:"\2022";color:var(--dim);padding-right:.6em}
+  .trkcard{display:flex;gap:14px;background:var(--panel2);border:1px solid var(--line);
+           border-radius:14px;padding:14px 16px;margin:0 0 10px;text-indent:0;padding-left:16px}
+  .trkcard:before{content:none}
+  .trkn{font-family:'Norse',var(--sans);font-size:1.7rem;line-height:1;color:rgba(212,169,74,.55);
+        flex:none;min-width:2.1rem}
+  .trkb{min-width:0}
+  .trkt{font-family:'Norse',var(--sans);font-size:1.2rem;letter-spacing:.035em;color:var(--ink);margin:0 0 .1rem}
+  .trka{color:var(--accent);font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;margin:0 0 .5rem}
+  .trkq{color:var(--mute);font-size:.94rem;line-height:1.6}
+  .trkth{display:inline-block;margin-top:.6rem;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;
+         color:var(--accent);border:1px solid rgba(212,169,74,.4);border-radius:999px;padding:.2rem .7rem}
 </style>
 </head>
 <body>
@@ -2078,6 +2093,18 @@ const PROG = (()=>{
   return m;
 })();
 
+function trkCard(s){
+  const m = /^\*\*(\d+)\s·\s([\s\S]+?)\*\*\s—\s\*([^*]+)\*\.?\s*([\s\S]*)$/.exec(s);
+  if(!m) return null;
+  let story = m[4] || "", thread = "";
+  const th = /\s*\[([^\]]+)\]\s*$/.exec(story);
+  if(th){ thread = th[1]; story = story.slice(0, th.index); }
+  return `<li class="trkcard"><span class="trkn">${esc(m[1])}</span><div class="trkb">`
+       + `<div class="trkt">${esc(m[2])}</div><div class="trka">${esc(m[3])}</div>`
+       + (story?`<div class="trkq">${md(story)}</div>`:"")
+       + (thread?`<span class="trkth">${esc(thread)}</span>`:"")
+       + `</div></li>`;
+}
 function md(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g,"<i>$1</i>"); }
 
 // One marker: where you are now.
@@ -2141,7 +2168,7 @@ function blockRow(b, kind){
     <div class="blkbody">
       ${b.hook?`<div class="hook">${md(b.hook)}</div>`:""}
       ${heads}${pre}
-      ${(b.bullets&&b.bullets.length)?`<ul>${b.bullets.map(x=>`<li>${md(x)}</li>`).join("")}</ul>`:""}
+      ${(b.bullets&&b.bullets.length)?`<ul class="blist">${b.bullets.map(x=>trkCard(x)||`<li>${md(x)}</li>`).join("")}</ul>`:""}
       ${b.point?`<div class="pt">${md(b.point)}</div>`:""}
       ${b.mic?`<div class="mc">${md(b.mic)}</div>`:""}
       ${b.weather?`<div class="wx">${md(b.weather)}</div>`:""}
