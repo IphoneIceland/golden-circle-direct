@@ -21,7 +21,7 @@ window.__TOURS__ = [
    sub:"BSÍ → Hvolsvöllur → Skógafoss → Reynisfjara → Vík", km:417, min:437, blocks:31},
   {id:"7.0", group:"South Coast", ready:true , name:"Glacial Lagoon",
    sub:"BSÍ → Skógafoss → Kirkjubæjarklaustur → Jökulsárlón → Vík → Reykjavík", km:765, min:782, blocks:43},
-  {id:"10.0", group:"Snæfellsnes", ready:true, name:"Snæfellsnes North", sub:"BSÍ → Selvallafoss → Kirkjufell → Djúpalónssandur → Arnarstapi → Ytri-Tunga → BSÍ", km:450, min:451, blocks:38},
-  {id:"11.0", group:"Snæfellsnes", ready:true , name:"Snæfellsnes South",
+  {id:"9.0", group:"Snæfellsnes", ready:true, name:"Snæfellsnes North", sub:"BSÍ → Selvallafoss → Kirkjufell → Djúpalónssandur → Arnarstapi → Ytri-Tunga → BSÍ", km:450, min:451, blocks:38},
+  {id:"10.0", group:"Snæfellsnes", ready:true , name:"Snæfellsnes South",
    sub:"BSÍ → Ytri-Tunga → Arnarstapi → Djúpalónssandur → Kirkjufell → BSÍ", km:450, min:451, blocks:37}
 ];
