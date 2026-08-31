@@ -30,7 +30,7 @@ PLACES = {
   "BUDI":"Búðir, Snæfellsbær, Iceland", "ARNA":"Arnarstapi, Iceland",
   "HELN":"Hellnar, Iceland", "DJUP":"Djúpalónssandur, Iceland",
   "VATN":"Vatnshellir, Iceland", "OLAF":"Ólafsvík, Iceland",
-  "KIRF":"Kirkjufellsfoss, Grundarfjörður, Iceland",
+  "KIRF":"Kirkjufellsfoss, Grundarfjörður, Iceland", "SELV":"Selvallafoss, Iceland",
   "STYK":"Stykkishólmur, Iceland", "BERS":"Berserkjahraun, Iceland",
 }
 NICE = {"BSI":"BSÍ Bus Terminal","HVOL":"Hvolsvöllur","SOLH":"Sólheimajökull",
@@ -40,7 +40,7 @@ NICE = {"BSI":"BSÍ Bus Terminal","HVOL":"Hvolsvöllur","SOLH":"Sólheimajökull
         "FELL":"Fellsfjara",
         "BORG":"Borgarnes","YTRI":"Ytri-Tunga","BUDI":"Búðir","ARNA":"Arnarstapi",
         "HELN":"Hellnar","DJUP":"Djúpalónssandur","VATN":"Vatnshellir","OLAF":"Ólafsvík",
-        "KIRF":"Kirkjufell","STYK":"Stykkishólmur","BERS":"Berserkjahraun"}
+        "KIRF":"Kirkjufell","STYK":"Stykkishólmur","BERS":"Berserkjahraun","SELV":"Selvallafoss"}
 
 # Order matters: this is a substring match, first hit wins. Reykjavík sits above
 # Vík so a heading that ends "→ Reykjavík" can never be read as the Vík stop,
@@ -55,7 +55,7 @@ MATCH = [("Reykjavík","BSI"),("BSÍ","BSI"),
          ("Borgarnes","BORG"),("Ytri-Tunga","YTRI"),("Ytri Tunga","YTRI"),
          ("Búðir","BUDI"),("Búðakirkja","BUDI"),("Arnarstapi","ARNA"),
          ("Hellnar","HELN"),("Djúpalónssandur","DJUP"),("Vatnshellir","VATN"),
-         ("Ólafsvík","OLAF"),("Kirkjufell","KIRF"),("Grundarfjörður","KIRF"),
+         ("Ólafsvík","OLAF"),("Selvallafoss","SELV"),("Kirkjufell","KIRF"),("Grundarfjörður","KIRF"),
          ("Stykkishólmur","STYK"),("Berserkjahraun","BERS"),
          ("Vík","VIK")]
 
@@ -67,6 +67,7 @@ MATCH = [("Reykjavík","BSI"),("BSÍ","BSI"),
 FIXED = {
   "YTRI": (64.802742, -23.080318), # the Snæfellsnes seal beach car park (Ritchie's
                                    # research GPS) — a second Ytri-Tunga up north fools Nominatim
+  "SELV": (64.94175, -22.90772),   # Selvallafoss on Vatnaleið (OSM)
   "KIRF": (64.92616, -23.31236),   # Kirkjufellsfoss car park (OSM node for the falls; the 64.939 "fix" of 31 Aug was wrong — that is the mountain base)
   "THIN": (64.26362, -21.13039),   # = cue 1.11 pin, Þingvellir
   "GEYS": (64.31167, -20.29869),   # = cue 1.20 pin, the geothermal field
