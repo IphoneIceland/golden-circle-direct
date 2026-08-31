@@ -228,13 +228,7 @@
     background:rgba(13,13,15,.85);border:1px solid var(--accent);border-radius:99px;
     padding:8px 12px;font:600 11px/1 var(--sans);letter-spacing:.03em;color:var(--ink);display:none}
   #chip .cl{color:var(--accent)}
-  /* Night mode: the map is a torch on a dark bus, so the tiles dim first */
-  #nightbtn{width:40px;height:42px;border-radius:10px;background:none;border:1px solid var(--line);
-    color:var(--dim);font-size:16px;line-height:1;cursor:pointer;margin-left:6px;font-family:var(--sans)}
-  #nightbtn.on{color:var(--accent);border-color:var(--accent)}
-  body.night .leaflet-tile{filter:brightness(.52) contrast(1.07) saturate(.75)}
-  body.night #map{background:#000}
-  body.night{--ink:#e6e1d6;--mute:#c9c3b2}
+
 
   #endscreen{position:fixed;inset:0;z-index:950;display:none;flex-direction:column;align-items:center;
     justify-content:center;gap:14px;padding:30px 22px;text-align:center;overflow-y:auto;
@@ -301,7 +295,9 @@
 #gnp:active{border-color:var(--accent)}
 #gnp img{width:30px;height:30px;border-radius:6px;object-fit:cover;flex:none;
   background:rgba(244,240,230,.06)}
-@media (max-width:520px){ #gnp .t{display:none} #gnp{padding:0 8px 0 6px} }
+/* One seat, two guests: while the stereo plays, the track title gets the topbar
+   and the tour name sits out. Silence brings the Norse gold back. */
+@media (max-width:640px){ body.hasgnp #tourname{display:none} }
 #gnp .t{min-width:0;font-size:12px;line-height:1.15;white-space:nowrap;
   overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
 #gnp .eq{display:inline-flex;align-items:flex-end;gap:2px;height:11px;flex:none}
@@ -348,7 +344,7 @@
   <div id="topbar">
     <button id="home"></button>
     <button id="fontbtn" title="Text size" aria-label="Text size">Aa</button>
-    <button id="nightbtn" title="Night mode: auto" aria-label="Night mode">☾</button><a id="gnp" href="#" target="_blank" rel="noopener" aria-live="polite" hidden><img id="gnpArt" alt=""><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="t" id="gnpTxt"></span></a>
+    <a id="gnp" href="#" target="_blank" rel="noopener" aria-live="polite" hidden><img id="gnpArt" alt=""><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="t" id="gnpTxt"></span></a>
     <span id="offpill" data-en="OFFLINE · ALL GOOD">OFFLINE · ALL GOOD</span>
     <span id="tourname"></span>
   </div>
@@ -1137,44 +1133,6 @@ render();
   const p=(c&&c.pin)?[c.pin.lat,c.pin.lon]:GEO[0];
   map.setView(p,13); }
 }   // end boot()
-
-// ---- Night mode ------------------------------------------------------------
-// The app is dark already; night mode is for the bus after sundown, when even
-// the map tiles read like headlights. Auto follows the actual sun (solar
-// altitude at Icelandic latitude, threshold just past civil dusk), and the moon
-// button overrides: auto -> on -> off.
-(function(){
-  const btn=document.getElementById("nightbtn");
-  if(!btn) return;
-  let mode="auto";
-  try{ mode=localStorage.getItem("gcd-night")||"auto"; }catch(e){}
-  const rad=Math.PI/180;
-  function sunAlt(lat,lon){
-    const d=(Date.now()/86400000)+2440587.5-2451545.0;      // days since J2000
-    const g=(357.529+0.98560028*d)*rad;                     // mean anomaly
-    const L=((280.459+0.98564736*d)+1.915*Math.sin(g)+0.020*Math.sin(2*g))*rad; // ecliptic longitude
-    const e=23.439*rad;
-    const RA=Math.atan2(Math.cos(e)*Math.sin(L),Math.cos(L));
-    const dec=Math.asin(Math.sin(e)*Math.sin(L));
-    const gmst=(18.697374558+24.06570982441908*d)%24;
-    const ha=((gmst+lon/15)*15*rad)-RA;
-    return Math.asin(Math.sin(lat*rad)*Math.sin(dec)+Math.cos(lat*rad)*Math.cos(dec)*Math.cos(ha))/rad;
-  }
-  function apply(){
-    const dark = mode==="on" || (mode==="auto" && sunAlt(64.5,-21.5) < -4);
-    document.body.classList.toggle("night",dark);
-    btn.classList.toggle("on",dark);
-    btn.textContent = mode==="auto" ? "☾" : (mode==="on" ? "☾" : "☀");
-    btn.title = "Night mode: "+mode;
-  }
-  btn.onclick=()=>{
-    mode = mode==="auto" ? "on" : (mode==="on" ? "off" : "auto");
-    try{ localStorage.setItem("gcd-night",mode); }catch(e){}
-    apply();
-  };
-  setInterval(apply,300000);
-  apply();
-})();
 
 if("serviceWorker" in navigator) window.addEventListener("load",()=>{
   navigator.serviceWorker.register("sw.js").then(reg=>{
