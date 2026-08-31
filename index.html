@@ -264,9 +264,11 @@
   .blist{list-style:none;margin:0;padding:0}
   .blist>li{margin:0 0 8px;padding-left:1.1em;text-indent:-1.1em}
   .blist>li:before{content:"\2022";color:var(--dim);padding-right:.6em}
-  .trkcard{display:flex;gap:14px;background:var(--panel2);border:1px solid var(--line);
-           border-radius:14px;padding:14px 16px;margin:0 0 10px;text-indent:0;padding-left:16px}
-  .trkcard:before{content:none}
+  /* must out-specify .blist>li, which sets the bullet and the hanging indent */
+  .blist>li.trkcard{display:flex;gap:14px;background:var(--panel2);border:1px solid var(--line);
+           border-radius:14px;padding:14px 16px;margin:0 0 10px;text-indent:0}
+  .blist>li.trkcard:before{content:none;padding:0}
+  .trkcard .trkq{text-indent:0}
   .trkn{font-family:'Norse',var(--sans);font-size:1.7rem;line-height:1;color:rgba(212,169,74,.55);
         flex:none;min-width:2.1rem}
   .trkb{min-width:0}
