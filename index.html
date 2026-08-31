@@ -233,6 +233,14 @@
   body.night .leaflet-tile{filter:brightness(.52) contrast(1.07) saturate(.75)}
   body.night #map{background:#000}
   body.night{--ink:#e6e1d6;--mute:#c9c3b2}
+  /* Both the stereo and the next-stop chip awake on a phone: music keeps its
+     album art, the chip keeps its facts, the tour name takes the day off. */
+  @media (max-width:600px){
+    body.hasgnp.haschip #tourname{display:none}
+    body.hasgnp.haschip #gnp .t,
+    body.hasgnp.haschip #gnp .eq{display:none}
+    body.hasgnp.haschip #gnp{padding:0 6px;min-width:42px}
+  }
   #endscreen{position:fixed;inset:0;z-index:950;display:none;flex-direction:column;align-items:center;
     justify-content:center;gap:14px;padding:30px 22px;text-align:center;overflow-y:auto;
     background:
@@ -930,7 +938,7 @@ const WXC={};
 const CHIP={name:null,km:null,min:null,wx:null};
 function paintChip(){
   const el=document.getElementById("chip");
-  if(!CHIP.name){ el.style.display="none"; return; }
+  if(!CHIP.name){ el.style.display="none"; document.body.classList.remove("haschip"); return; }
   const d='\u2009·\u2009';   // thin-space separators: three facts, one phone width
   let h='<span class="cl">'+esc(CHIP.name)+'</span>';
   if(CHIP.km!=null) h+=d+(CHIP.km<10?CHIP.km.toFixed(1):Math.round(CHIP.km))+'\u2009km'+d+CHIP.min+'\u2009min';
@@ -939,6 +947,7 @@ function paintChip(){
          if(w.pp>=25) h+='\u2009☔'+Math.round(w.pp)+'%';
          if(w.ws>=10) h+='\u2009💨'+Math.round(w.ws); }
   el.innerHTML=h; el.style.display="inline-block";
+  document.body.classList.add("haschip");
 }
 window.__setEta=(name,km,min)=>{ if(name) CHIP.name=name; CHIP.km=km; CHIP.min=min; paintChip(); };
 function updateWX(){
@@ -1198,13 +1207,13 @@ if("serviceWorker" in navigator) window.addEventListener("load",()=>{
   function tick(){
     if(document.hidden) return;
     fetch(SRC,{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
-      if(!d||!d.playing||!d.title){ el.classList.remove('on'); el.hidden=true; return }
+      if(!d||!d.playing||!d.title){ el.classList.remove('on'); el.hidden=true; document.body.classList.remove('hasgnp'); return }
       txt.textContent=d.title+(d.artist?' \u2014 '+d.artist:'');
       if(d.art){ if(art.getAttribute('src')!==d.art) art.src=d.art; art.style.display=''; }
       else art.style.display='none';
       if(d.url) el.href=d.url;
-      el.hidden=false; el.classList.add('on');
-    }).catch(function(){ el.classList.remove('on'); el.hidden=true; });
+      el.hidden=false; el.classList.add('on'); document.body.classList.add('hasgnp');
+    }).catch(function(){ el.classList.remove('on'); el.hidden=true; document.body.classList.remove('hasgnp'); });
   }
   tick(); setInterval(tick,30000);
   document.addEventListener('visibilitychange',function(){ if(!document.hidden) tick() });
