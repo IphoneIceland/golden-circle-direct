@@ -65,8 +65,9 @@ MATCH = [("Reykjavík","BSI"),("BSÍ","BSI"),
 # stop in the same places, not 200 m away because a geocoder felt differently.
 # (Nominatim resolves "Geysir, Haukadalur" to Geysir Cottages, a hotel.)
 FIXED = {
-  "YTRI": (64.80697, -23.07516),   # the Snæfellsnes seal beach — Iceland has a
-                                   # second Ytri-Tunga up north Nominatim prefers
+  "YTRI": (64.802742, -23.080318), # the Snæfellsnes seal beach car park (Ritchie's
+                                   # research GPS) — a second Ytri-Tunga up north fools Nominatim
+  "KIRF": (64.9391, -23.3096),     # Kirkjufellsfoss car park — Nominatim lands in Grundarfjörður town
   "THIN": (64.26362, -21.13039),   # = cue 1.11 pin, Þingvellir
   "GEYS": (64.31167, -20.29869),   # = cue 1.20 pin, the geothermal field
   "GULL": (64.32526, -20.13084),   # = cue 1.21 pin, Gullfoss
