@@ -2059,7 +2059,7 @@ const COL = {drive:"#5ec8f2", stop:"#c8a2f2"};
 // Leaflet's fade never flips tiles from opacity 0 to 1 — every tile downloads correctly
 // (naturalWidth 256) and then paints invisibly, so you get a blank map and no error anywhere.
 // Turning the fade off makes tiles opaque the moment they arrive.
-const map = L.map("map",{fadeAnimation:false}).setView([64.15,-20.9],8);
+const map = L.map("map",{fadeAnimation:false,zoomControl:false}).setView([64.15,-20.9],8);
 
 // Esri has real imagery to z18 over the whole route. z19 is only Reykjavik —
 // everywhere else it serves a flat grey "no data" tile, so 18 is the honest cap.
@@ -2087,8 +2087,7 @@ const SAT2 = L.tileLayer("https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_
   {maxZoom:19, maxNativeZoom:14, attribution:'Sentinel-2 cloudless &copy; EOX IT Services (CC BY-NC-SA 4.0)'});
 
 SAT.addTo(map); SATLBL.addTo(map);
-const layerCtl = L.control.layers({"Satellite (Esri)":SAT,"Satellite (Sentinel-2)":SAT2,"Terrain":TERRAIN,"Dark map":DARK},
-                 {"Names on satellite":SATLBL},{position:"topright"}).addTo(map);
+// Zoom and layer buttons retired: guests pinch, the app picks the imagery.
 
 // ---- imagery watchdog -------------------------------------------------------
 // Leaflet fires tileerror per failed tile. A handful is normal at the edges of coverage;
