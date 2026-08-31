@@ -168,6 +168,15 @@
   #zhint{position:absolute;z-index:500;bottom:14px;left:14px;background:rgba(22,27,33,.92);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--mute)}
   #foot{padding:11px 20px;border-top:1px solid var(--line);font-size:10.5px;color:var(--mute);line-height:1.6}
   #foot a{color:var(--accent)}
+#uptoast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%) translateY(80px);z-index:9999;
+  background:#16161a;color:#d4a94a;border:1px solid #d4a94a;border-radius:12px;padding:.7rem 1.1rem;
+  font-weight:600;letter-spacing:.02em;box-shadow:0 6px 24px rgba(0,0,0,.5);cursor:pointer;
+  transition:transform .35s ease;white-space:nowrap}
+#uptoast.show{transform:translateX(-50%) translateY(0)}
+.sarrow{width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;
+  border-bottom:10px solid #d4a94a;opacity:.8}
+.slbl{color:#d4a94a;font:600 11px/1 -apple-system,system-ui,sans-serif;letter-spacing:.08em;
+  text-transform:uppercase;white-space:nowrap;text-shadow:0 1px 3px rgba(0,0,0,.9);opacity:.9}
 </style>
 </head>
 <body>
@@ -538,6 +547,9 @@ const HERE = L.circleMarker([0,0],{radius:8,color:"#fff",weight:3,fillColor:"#5e
 // Faint sightline from the bus to whatever the cue says to look at.
 const SIGHT = L.polyline([],{color:"#d4a94a",weight:1.5,opacity:.6,dashArray:"2,7",interactive:false});
 const SIGHTDOT = L.circleMarker([0,0],{radius:4,color:"#d4a94a",weight:1.5,fill:false,opacity:.75,interactive:false});
+let SIGHTARROW=null, SIGHTLBL=null;
+function brg(a,b){const r=Math.PI/180,la1=a[0]*r,la2=b[0]*r,dl=(b[1]-a[1])*r;
+  return (Math.atan2(Math.sin(dl)*Math.cos(la2),Math.cos(la1)*Math.sin(la2)-Math.sin(la1)*Math.cos(la2)*Math.cos(dl))*180/Math.PI+360)%360;}
 function focusBlock(id){
   const c=CUE[id];
   if(!c||!c.pin){ return; }              // story block — leave the map where it is
@@ -545,9 +557,18 @@ function focusBlock(id){
   if(c.target){
     SIGHT.setLatLngs([[c.pin.lat,c.pin.lon],[c.target.lat,c.target.lon]]).addTo(map);
     SIGHTDOT.setLatLng([c.target.lat,c.target.lon]).addTo(map);
+    const ang=brg([c.pin.lat,c.pin.lon],[c.target.lat,c.target.lon]);
+    if(SIGHTARROW) SIGHTARROW.remove();
+    SIGHTARROW=L.marker([c.target.lat,c.target.lon],{interactive:false,icon:L.divIcon({className:"",iconSize:[10,10],iconAnchor:[5,10],
+      html:`<div class="sarrow" style="transform:rotate(${ang}deg);transform-origin:50% 100%"></div>`})}).addTo(map);
+    if(SIGHTLBL) SIGHTLBL.remove();
+    SIGHTLBL=c.target.name?L.marker([c.target.lat,c.target.lon],{interactive:false,icon:L.divIcon({className:"",iconSize:[0,0],iconAnchor:[-8,-6],
+      html:`<div class="slbl">${esc(c.target.name)}</div>`})}).addTo(map):null;
     map.fitBounds(L.latLngBounds([[c.pin.lat,c.pin.lon],[c.target.lat,c.target.lon]]).pad(0.25),{animate:true,duration:.4});
   }else{
     SIGHT.remove(); SIGHTDOT.remove();
+    if(SIGHTARROW){SIGHTARROW.remove();SIGHTARROW=null;}
+    if(SIGHTLBL){SIGHTLBL.remove();SIGHTLBL=null;}
     map.panTo([c.pin.lat,c.pin.lon],{animate:true,duration:.4});
   }
 }
@@ -703,7 +724,20 @@ render();
 }   // end boot()
 
 if("serviceWorker" in navigator) window.addEventListener("load",()=>{
-  navigator.serviceWorker.register("sw.js").catch(()=>{});
+  navigator.serviceWorker.register("sw.js").then(reg=>{
+    // check for a new build whenever the app comes back to the foreground
+    document.addEventListener("visibilitychange",()=>{ if(!document.hidden) reg.update().catch(()=>{}); });
+    // a new service worker took over -> the next load has the new version
+    let hadCtrl = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.addEventListener("controllerchange",()=>{
+      if(!hadCtrl){ hadCtrl=true; return; }   // first install, not an update
+      let tst=document.getElementById("uptoast");
+      if(!tst){ tst=document.createElement("div"); tst.id="uptoast";
+        tst.textContent="✨ Updated — tap to reload"; document.body.appendChild(tst);
+        tst.addEventListener("click",()=>location.reload());
+        requestAnimationFrame(()=>tst.classList.add("show")); }
+    });
+  }).catch(()=>{});
 });
 </script>
 </body>
