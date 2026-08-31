@@ -8,7 +8,7 @@
 // actually on disk.
 window.__TOURS__ = [
   {id:"1.0", group:"Golden Circle", ready:true,  name:"Golden Circle Direct",
-   sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ", km:252, blocks:36},
+   sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ", km:247, blocks:36},
   {id:"2.0", group:"Golden Circle", ready:true , name:"Golden Circle Snowmobiling",
    sub:"BSÍ → Þingvellir → Geysir → Gullfoss → BSÍ", km:230, min:221, blocks:37},
   {id:"3.0", group:"Golden Circle", ready:true , name:"Golden Circle Lagoons",
