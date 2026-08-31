@@ -222,7 +222,7 @@
   #a2hs b{color:var(--ink)}
   #a2hs button{margin-left:auto;background:none;border:none;color:var(--accent);font-size:16px;cursor:pointer;padding:4px}
   /* One pill in the topbar: next stop, distance, time, weather. The map keeps its corners. */
-  #chip{flex:0 0 auto;min-width:0;max-width:calc(100% - 142px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  #chip{flex:0 1 auto;min-width:112px;max-width:calc(100% - 142px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
     margin-left:auto;background:rgba(13,13,15,.85);border:1px solid var(--accent);border-radius:99px;
     padding:7px 10px;font:600 10.5px/1 var(--sans);letter-spacing:.02em;color:var(--ink);display:none}
   #chip .cl{color:var(--accent)}
@@ -289,10 +289,10 @@
    Sits in the toolbar beside the night button, same 44px rhythm as Aa and
    the moon. Same feed as the website. Only appears while music is playing,
    so the toolbar is never carrying a dead control. -------------------- */
-#gnp{display:none;align-items:center;gap:6px;height:44px;margin-left:8px;
+#gnp{display:none;align-items:center;gap:6px;height:42px;margin-left:6px;
   padding:0 10px 0 6px;border-radius:10px;border:1px solid var(--line);
-  background:none;text-decoration:none;color:var(--dim);
-  max-width:min(42vw,220px);min-width:0}
+  background:none;text-decoration:none;color:var(--dim);overflow:hidden;
+  flex:0 1 auto;max-width:min(42vw,220px);min-width:46px}
 #gnp[hidden]{display:none!important}
 #gnp.on{display:inline-flex}
 #gnp:active{border-color:var(--accent)}
@@ -427,9 +427,11 @@ async function translateTour(){
     sec.title = tr(sec.title);
     (sec.blocks||[]).forEach(b=>{
       b.title = tr(b.title);
-      ["cue","point","mic","weather","pre"].forEach(k=>{ if(b[k]) b[k] = tr(b[k]); });
+      ["cue","point","mic","weather","sub","hook"].forEach(k=>{ if(b[k]) b[k] = tr(b[k]); });
       if(b.bullets) b.bullets = b.bullets.map(tr);
-      if(b.heads)   b.heads   = b.heads.map(tr);
+      // heads and pre are [label, ...] pairs, not strings — translate the parts
+      if(b.heads)   b.heads   = b.heads.map(h=>Array.isArray(h)?[tr(h[0]),(h[1]||[]).map(tr)]:tr(h));
+      if(b.pre)     b.pre     = Array.isArray(b.pre)?b.pre.map(p=>Array.isArray(p)?[tr(p[0]),tr(p[1])]:tr(p)):tr(b.pre);
       // The name and the pronunciation are the whole point of the line —
       // only the gloss that explains it gets translated.
       if(b.say)     b.say     = b.say.map(x=>[x[0], x[1], tr(x[2])]);
