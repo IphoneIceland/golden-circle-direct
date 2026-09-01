@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iGuide - Iceland</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="apple-mobile-web-app-title" content="iGuide">
+<meta name="application-name" content="iGuide - Iceland">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="preload" href="fonts/Norse.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/NorseBold.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face{font-family:'Norse';src:url('fonts/Norse.woff2') format('woff2');font-weight:400;font-display:block}
+  @font-face{font-family:'Norse';src:url('fonts/NorseBold.woff2') format('woff2');font-weight:700;font-display:block}
+  /* iGuide Iceland tokens, lifted from the site's style.css */
+  :root{--bg:#0d0d0f;--panel:#14141a;--panel2:#1a1a20;--line:rgba(244,240,230,.14);
+        --ink:#f4f0e6;--mute:#d8d2c0;--dim:#837e6f;--accent:#d4a94a;--accent-2:#b48a2f;
+        --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+        --sans:"Inter",ui-sans-serif,system-ui,-apple-system,sans-serif;
+        --fs:16px;--lh:1.8}
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;height:100dvh;overflow:hidden;overscroll-behavior-x:none;font-family:var(--sans);background:var(--bg);color:var(--ink)}
+  #wrap{display:flex;flex-direction:column;height:100%;height:100dvh;overflow:hidden}
+
+  /* the whole journey, one row. six legs, your position on it */
+  /* Six legs fit a phone; ten do not. Rather than shave the stop names down to
+     four clipped characters, the row scrolls and the current leg is kept in view. */
+  #track{flex:0 0 auto;display:flex;gap:3px;padding:10px 10px 8px;background:var(--panel2);
+         overflow-x:auto;scrollbar-width:none}
+  #track::-webkit-scrollbar{display:none}
+  .leg{flex:1 1 auto;min-width:0;background:#243039;border-radius:5px;padding:9px 4px 8px;text-align:center;
+       cursor:pointer;border-top:3px solid transparent;transition:background .15s}
+  .leg .ic{font-size:12px;line-height:1}
+  .leg .nm{display:block;font:600 9.5px/1.2 var(--sans);color:#7d8fa0;margin-top:3px;
+           overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  /* A bus icon on a tour app already says "drive". The stop names are the ones
+     worth reading, so the drives shrink to the icon and hand over the width. */
+  .leg.drive{flex:0 0 auto;min-width:40px;padding:11px 8px 10px}
+  .leg.drive .ic{font-size:15px}
+  .leg.drive.origin{min-width:52px;padding:6px 6px 5px}
+  .leg.drive.origin .ic{font-size:12px}
+  .leg.stop{flex:1 1 auto;min-width:84px;max-width:130px}
+  .leg.done{background:#1e1a12}
+  .leg.now{background:#2a2418;border-top-color:var(--accent)}
+  .leg.now .nm{color:#dff1fb}
+  .leg.now.stop{background:#2a2418;border-top-color:var(--accent)}
+
+  /* the parts of the leg you are in */
+  #steps{flex:0 0 auto;display:flex;align-items:center;gap:6px;padding:0 10px 10px;background:var(--panel2);
+         border-bottom:1px solid var(--line)}
+  #steps .nav{flex:none;width:40px;height:34px;font-size:19px;line-height:1;padding:0;border-radius:8px;
+              background:var(--panel);border:1px solid var(--line);color:var(--ink)}
+  #steps .nav:disabled{opacity:.25}
+  /* every step dash stays on screen - they squeeze rather than scroll,
+     so the whole row reads: where you are, what's left, what's next */
+  #dots{flex:1 1 auto;min-width:0;display:flex;gap:3px;align-items:center}
+  .dot2{flex:1 1 18px;min-width:7px;height:9px;background:#2f3d4a;border-radius:3px;cursor:pointer}
+  .dot2.done{background:var(--accent-2)}
+  .dot2.now{background:var(--accent);height:8px}
+  #days{flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;
+        padding:16px 16px 34px;font-size:var(--fs);line-height:var(--lh);border-top:1px solid var(--line)}
+  .blkbody{max-width:66ch}
+  .day{border:1px solid var(--line);border-radius:10px;margin-bottom:10px;background:var(--panel2);overflow:hidden}
+  .dayhead{display:flex;align-items:center;gap:10px;padding:11px 13px;cursor:pointer;user-select:none}
+  .dot{width:11px;height:11px;border-radius:50%;flex:none}
+  .dayhead .t{font-size:1.02em;font-weight:600;flex:1;line-height:1.45}
+  .day.shown{border-color:#5ec8f2}
+  .dayhead .m{font-size:.82em;color:var(--mute);white-space:nowrap;text-align:right;line-height:1.5}
+  .body{display:none;padding:2px 13px 13px}
+  .day.open .body{display:block}
+  .stop{display:block;padding:2px 0 0;border-top:none}
+  .look{font-size:.97em;line-height:1.5;color:var(--accent);margin-top:9px}
+  .stop[data-key]{cursor:pointer;border-radius:6px;margin:0 -6px;padding-left:6px;padding-right:6px;transition:background .12s}
+  .stop[data-key]:hover{background:#232c35}
+  .stop[data-key]:hover .sn{color:var(--accent)}
+  .stop[data-key]:active{background:#2a343f}
+  .num{flex:none;min-width:26px;height:26px;padding:0 6px;border-radius:13px;display:flex;align-items:center;justify-content:center;font:700 .78em/1 ui-monospace,Menlo,monospace;color:#0e1114}
+  .num.noview{background:transparent;border:1.5px dashed #93a1b0;color:#93a1b0}
+  .sc{flex:1;min-width:0}
+  .sn{font-family:"Norse",var(--serif);font-weight:700;font-size:1.5em;line-height:1.2;letter-spacing:.01em;color:var(--ink)}
+  .sub{font-family:var(--serif);font-size:1.12em;line-height:1.4;color:var(--accent);margin-top:5px}
+  .thr{font-size:.82em;font-weight:600;color:#7d8fa0;margin-top:7px;line-height:1.5}
+  .storylab{font-size:.78em;font-weight:700;color:var(--dim);margin-top:18px;margin-bottom:2px;letter-spacing:.11em;text-transform:uppercase}
+  .sd{font-size:11.5px;color:var(--mute);line-height:1.5;margin-top:1px}
+  .tstrip{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;margin-top:10px}
+  .tstrip .lb{font-size:.76em;font-weight:700;color:#8fa3b4;margin-right:3px}
+  .tstrip .v{font-size:.98em;font-weight:700;color:#e8edf2;line-height:1.5}
+  .tstrip .v.dep{color:#9fe0ff}
+  .tstrip .dr{font-size:.88em;font-weight:600;color:#8fb6cc;white-space:nowrap;line-height:1.5}
+  .tstrip .sep{color:#39434e}
+  .blkbody{display:none;padding:2px 0 6px}
+  .stop.open + .blkbody{display:block}
+  .hook{margin-top:15px;padding:14px 16px;border-radius:10px;background:#17150f;border:1px solid rgba(212,169,74,.35);color:var(--ink);font-family:var(--serif);font-size:1.22em;line-height:1.55}
+  .blkbody ul{margin:8px 0 0;padding-left:20px}
+  .blkbody li{font-size:1em;line-height:var(--lh);color:var(--mute);margin-bottom:14px;padding-left:2px}
+  .pt{margin-top:14px;padding:12px 15px;background:transparent;border:none;border-left:3px solid var(--accent);color:var(--mute);font-size:1em;line-height:var(--lh)}
+  .mc{margin-top:12px;padding:13px 15px;border-radius:10px;background:#1f1a10;border:1px solid rgba(212,169,74,.28);color:var(--accent);font-family:var(--serif);font-size:1.18em;line-height:1.5}
+  .wx{margin-top:12px;padding:12px 14px;border-radius:9px;background:#1a2027;border:1px solid #2b3641;color:#adc0ce;font-size:.95em;line-height:var(--lh)}
+  .flag{margin-top:12px;padding:13px 14px;border-radius:9px;background:#33191a;border:1px solid #6b2b2b;color:#ffc4c4;font-size:1em;line-height:var(--lh)}
+  .pre{margin-top:9px;padding:9px 10px;border-radius:7px;background:#11161b;border:1px solid #232c35;color:#9fb3c2;font:10.5px/1.55 ui-monospace,Menlo,monospace;overflow-x:auto;white-space:pre}
+  .sublab{font-size:.85em;font-weight:700;color:#8fa3b4;margin-top:14px}
+  .say{margin-top:10px;border-top:1px solid #262e37;padding-top:8px}
+  .say>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:7px;user-select:none;padding:2px 0}
+  .say>summary::-webkit-details-marker{display:none}
+  .say>summary .sublab{margin-top:0}
+  .say>summary .chev{color:#8fa3b4;font-size:.72em;line-height:1;transition:transform .15s ease;display:inline-block}
+  .say[open]>summary .chev{transform:rotate(90deg)}
+  .say>summary .cnt{font-size:.8em;font-weight:700;color:#8fa3b4}
+  .say>summary:hover .sublab,.say>summary:hover .cnt,.say>summary:hover .chev{color:var(--accent)}
+  .say>div:first-of-type{margin-top:7px}
+  .say div{font-size:.95em;line-height:1.85;color:#b6c3ce;margin-bottom:7px}
+  .say b{color:#e8edf2;font-weight:600}
+  .blkbody li b,.hook b,.pt b,.flag b,.mc b{font-weight:700;color:var(--ink)}
+  .say .gloss{color:#7f8f9d}
+  .say i{color:#f4d5a0;font-style:normal;font-family:ui-monospace,Menlo,monospace;font-size:.9em}
+  .legln{font-size:.9em;color:#8496a5;margin-top:5px;line-height:1.55}
+  .tags{font-size:10px;color:#5b6b7a;margin-top:8px}
+  #map{flex:0 0 34%;box-shadow:0 -14px 18px -6px rgba(14,17,20,.95);z-index:2;min-height:150px;position:relative;border-top:1px solid var(--line)}
+  #langs{display:flex;align-items:center;padding:2px 0 16px}
+  #lang{flex:1;min-width:0;appearance:none;-webkit-appearance:none;
+        background:rgba(20,20,26,.82) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%23d4a94a' stroke-width='2' fill='none'/></svg>") no-repeat right 14px center;
+        border:1px solid var(--line);border-radius:10px;color:var(--ink);
+        font:600 15px/1 var(--sans);padding:12px 38px 12px 14px;cursor:pointer}
+  #lang:focus{outline:none;border-color:var(--accent)}
+  #lang option:disabled{color:var(--dim)}
+  #pick .step{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin:26px 0 4px}
+  #pick h1{margin:0 0 12px}
+  #pick .lead{color:var(--mute);font-size:15px;line-height:1.6;margin:0 0 12px}
+  #whichtour{margin-top:30px}
+  #brief{position:fixed;inset:0;z-index:880;background:var(--bg);overflow-y:auto;
+         padding:24px 18px calc(96px + env(safe-area-inset-bottom))}
+  #brief h1{margin:2px 0 4px;font-family:"Norse",var(--serif);font-weight:700;font-size:28px;letter-spacing:.02em}
+  #brief .step{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:20px}
+  .bitem{display:flex;gap:13px;padding:14px 0;border-top:1px solid var(--line)}
+  .bitem .bi{font-size:20px;line-height:1.2;flex:none;width:26px;text-align:center}
+  .bitem h2{margin:0 0 5px;font-size:15px;font-weight:700;color:var(--ink)}
+  .bitem p{margin:0 0 5px;font-size:14.5px;line-height:1.65;color:var(--mute)}
+  .bitem p b{color:var(--ink)}
+  .bitem p i{color:var(--accent);font-style:normal}
+  #go{position:fixed;left:14px;right:14px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:890;
+      padding:15px;border-radius:12px;background:var(--accent);color:#17150f;border:none;
+      font:700 16px/1 var(--sans);cursor:pointer}
+  #logo{display:block;width:min(190px,52vw);margin:6px auto 22px}
+  #pick{position:fixed;inset:0;z-index:900;padding:26px 18px;overflow-y:auto;
+    background:
+      radial-gradient(ellipse at 100% 100%, rgba(212,169,74,.45) 0%, rgba(180,138,47,.22) 30%, rgba(13,13,15,0) 62%),
+      linear-gradient(135deg, rgba(13,13,15,.88) 0%, rgba(26,21,18,.78) 45%, rgba(58,42,18,.62) 75%, rgba(107,74,26,.6) 100%),
+      var(--bg) url("images/hero-road.webp") center/cover no-repeat fixed}
+  #brand{display:flex;align-items:center;gap:14px;margin:2px 0 22px}
+  #brand img{width:76px;height:76px;border-radius:50%;object-fit:cover;background:#000;
+      box-shadow:0 4px 18px rgba(0,0,0,.5)}
+  #brand .bn{font-family:var(--serif);font-size:29px;font-weight:500;letter-spacing:.01em;color:var(--accent);line-height:1}
+  #brand .bs{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--mute);margin-top:5px}
+  #pick .card, #welcome, #safety{background:rgba(20,20,26,.78);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+      border:1px solid var(--line);border-radius:14px;padding:16px 16px 14px;margin-bottom:6px}
+  #pick h1{margin:4px 0 18px;font-family:"Norse",var(--serif);font-weight:700;font-size:28px;letter-spacing:.02em}
+  #picklist{display:flex;flex-direction:column;gap:10px}
+  .gbtn{text-align:left;background:rgba(20,20,26,.78);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;
+      padding:22px 18px;cursor:pointer;font-family:inherit;color:var(--ink);width:100%;
+      display:flex;align-items:center;gap:14px}
+  .gbtn:hover{border-color:var(--accent)}
+  .gbtn .gname{font-family:"Norse",var(--serif);font-weight:700;font-size:26px;letter-spacing:.03em;color:var(--accent)}
+  .gbtn .gcount{margin-left:auto;font:600 11px/1 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--dim)}
+  .gbtn .gchev{color:var(--accent);font-size:20px;margin-left:8px}
+  #groupback{display:flex;align-items:center;gap:10px;background:none;border:none;cursor:pointer;
+      color:var(--accent);font-family:"Norse",var(--serif);font-weight:700;font-size:22px;letter-spacing:.03em;
+      padding:4px 0 12px}
+  #groupback .bk{font-size:18px}
+  .tcard{text-align:left;background:rgba(20,20,26,.82);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:12px;
+         padding:15px 16px;cursor:pointer;font-family:inherit;color:var(--ink);width:100%}
+  .tcard:hover:not(:disabled){border-color:var(--accent)}
+  .tcard.soon{opacity:.42;cursor:default}
+  .tcard .soonlbl{display:block;margin-top:7px;font-style:normal;font-size:11px;
+                  letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+  .tcard b{display:block;font-family:"Norse",var(--serif);font-weight:700;font-size:21px;margin-bottom:5px;letter-spacing:.01em}
+  .tcard span{font-size:12.5px;color:var(--mute);line-height:1.5}
+  /* A house, with the words next to it. No arrow — an arrow has a direction to
+     misread, and half the point of a house is that it doesn't. direction:ltr is
+     deliberate: home stays top-left in all 21 languages, RTL included, because
+     top-left IS the home corner and a house doesn't mirror. */
+  #topbar{flex:0 0 auto;direction:ltr;display:flex;align-items:center;gap:10px;
+          padding:8px 10px 7px;background:var(--panel2)}
+  #home{flex:none;display:inline-flex;align-items:center;justify-content:center;
+        width:42px;height:42px;padding:0;border-radius:10px;cursor:pointer;
+        background:var(--panel);border:1px solid rgba(212,169,74,.45);color:var(--accent)}
+  #home:hover,#home:active{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+  #home svg{width:22px;height:22px;display:block;flex:none}
+  #tourname{flex:1 1 auto;min-width:0;text-align:right;
+            font-family:"Norse",var(--serif);font-weight:700;font-size:19px;letter-spacing:.01em;
+            color:var(--accent);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  /* a postcard from the place you just parked at */
+  .stopphoto{margin:4px 0 14px;border-radius:14px;overflow:hidden;border:1px solid var(--line);
+    box-shadow:0 4px 18px rgba(0,0,0,.35)}
+  .stopphoto img{display:block;width:100%;max-height:240px;object-fit:cover}
+  .stopphoto figcaption{font:500 9.5px/1.4 var(--sans);color:var(--dim);padding:5px 10px;
+    background:var(--panel);text-align:right;letter-spacing:.03em}
+  /* The map starts as a strip; a tap grows it back to full height. */
+  #map{transition:flex-basis .28s ease,min-height .28s ease}
+  #map.mini{flex:0 0 118px;min-height:118px}
+  #mapcover{position:absolute;inset:0;z-index:720;display:none;cursor:pointer;background:none}
+  #map.mini #mapcover{display:block}
+  #map.mini #gpsbtn{display:none}
+  #mapmin{position:absolute;z-index:730;left:10px;bottom:26px;width:38px;height:38px;border-radius:50%;
+    background:var(--panel);border:1.5px solid var(--line);color:var(--dim);font-size:17px;line-height:1;
+    cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 12px rgba(0,0,0,.45)}
+  #map.mini #mapmin{display:none}
+  #mapexpand{position:absolute;z-index:730;right:10px;bottom:10px;pointer-events:none;display:none;
+    font:600 10px/1 var(--sans);letter-spacing:.06em;color:var(--mute);background:rgba(13,13,15,.75);
+    border:1px solid var(--line);border-radius:99px;padding:5px 9px}
+  #map.mini #mapexpand{display:block}
+  #zhint{position:absolute;z-index:500;bottom:14px;left:14px;background:rgba(22,27,33,.92);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--mute)}
+  #foot{padding:11px 20px;border-top:1px solid var(--line);font-size:10.5px;color:var(--mute);line-height:1.6}
+  #foot a{color:var(--accent)}
+  .tcard .meta{display:block;margin-top:7px;font:600 10.5px/1 var(--sans);letter-spacing:.08em;
+      text-transform:uppercase;color:var(--dim)}
+  .tcard .meta b{display:inline;font-family:var(--sans);font-size:10.5px;color:var(--accent);margin:0}
+  .tcard .off{float:right;font:600 10px/1 var(--sans);letter-spacing:.06em;color:#7fe3ab;opacity:0;transition:opacity .3s}
+  .tcard .off.on{opacity:.9}
+  #fontbtn{width:40px;height:42px;border-radius:10px;background:none;border:1px solid var(--line);
+      color:var(--accent);font:700 15px/1 var(--serif);cursor:pointer;margin-left:6px}
+  #offpill{display:none;font:700 9.5px/1 var(--sans);letter-spacing:.1em;color:var(--accent);
+      border:1px solid var(--accent);border-radius:99px;padding:4px 8px;margin-left:auto;margin-right:10px}
+  body.isoffline #offpill{display:inline-block}
+  #gpsbtn{position:absolute;z-index:650;right:10px;bottom:26px;width:46px;height:46px;border-radius:50%;
+      background:var(--panel);border:1.5px solid var(--line);color:var(--dim);font-size:20px;cursor:pointer;
+      box-shadow:0 3px 12px rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center}
+  #gpsbtn.on{border-color:var(--accent);color:var(--accent);box-shadow:0 0 14px rgba(212,169,74,.35)}
+  #gpsbtn.paused{border-color:var(--accent);color:var(--accent);opacity:.55}
+  @keyframes gpspulse{0%{box-shadow:0 0 0 0 rgba(94,200,242,.5)}70%{box-shadow:0 0 0 14px rgba(94,200,242,0)}100%{box-shadow:0 0 0 0 rgba(94,200,242,0)}}
+  .heredot{width:12px;height:12px;border-radius:50%;background:var(--accent);
+    border:2px solid #fff;box-sizing:border-box;animation:herepulse 2.4s ease-out infinite}
+  @keyframes herepulse{0%{box-shadow:0 0 0 0 rgba(212,169,74,.55)}
+    70%{box-shadow:0 0 0 9px rgba(212,169,74,0)}100%{box-shadow:0 0 0 0 rgba(212,169,74,0)}}
+  .gpsdot{width:14px;height:14px;border-radius:50%;background:#5ec8f2;border:2.5px solid #fff;
+      animation:gpspulse 2s infinite}
+  #resume{display:flex;align-items:center;gap:12px;width:100%;text-align:left;cursor:pointer;
+    background:linear-gradient(135deg,rgba(212,169,74,.16),rgba(20,20,26,.82));
+    border:1px solid var(--accent);border-radius:14px;padding:14px 16px;color:var(--ink);
+    font-family:inherit;margin-bottom:4px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+  #resume .rp{font-size:22px;color:var(--accent)}
+  #resume .rt{font-family:"Norse",var(--serif);font-weight:700;font-size:19px;color:var(--accent)}
+  #resume .rs{display:block;font:600 11px/1.4 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+  #a2hs{display:flex;gap:10px;align-items:center;background:rgba(20,20,26,.78);border:1px solid var(--line);
+    border-radius:12px;padding:10px 12px;margin:0 0 14px;font:500 12.5px/1.5 var(--sans);color:var(--mute)}
+  #a2hs b{color:var(--ink)}
+  #a2hs button{margin-left:auto;background:none;border:none;color:var(--accent);font-size:16px;cursor:pointer;padding:4px}
+  /* One pill in the topbar: next stop, distance, time, weather. The map keeps its corners. */
+  /* the chip borrows the row's slack; the step dashes always win the space fight */
+  #chip{flex:0 1 auto;min-width:150px;max-width:58%;margin-left:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+    background:rgba(13,13,15,.85);border:1px solid var(--accent);border-radius:99px;
+    padding:8px 12px;font:600 11px/1 var(--sans);letter-spacing:.03em;color:var(--ink);display:none}
+  #chip .cl{color:var(--accent)}
+
+
+  #endscreen{position:fixed;inset:0;z-index:950;display:none;flex-direction:column;align-items:center;
+    justify-content:center;gap:14px;padding:30px 22px;text-align:center;overflow-y:auto;
+    background:
+      radial-gradient(ellipse at 100% 100%, rgba(212,169,74,.45) 0%, rgba(180,138,47,.22) 30%, rgba(13,13,15,0) 62%),
+      linear-gradient(135deg, rgba(13,13,15,.9) 0%, rgba(26,21,18,.82) 45%, rgba(58,42,18,.66) 75%, rgba(107,74,26,.62) 100%),
+      var(--bg) url("images/hero-road.webp") center/cover no-repeat}
+  #endscreen.show{display:flex}
+  #endscreen img{width:104px;height:104px;border-radius:50%;box-shadow:0 6px 26px rgba(0,0,0,.6)}
+  #endscreen h1{margin:2px 0 0;font-family:"Norse",var(--serif);font-weight:700;font-size:40px;color:var(--accent);letter-spacing:.03em}
+  #endscreen p{margin:0;color:var(--ink);font-size:15.5px;line-height:1.6;max-width:30rem}
+  .endbtn{display:block;width:min(320px,86vw);padding:14px;border-radius:12px;text-decoration:none;
+    font:700 15px/1.2 var(--sans);cursor:pointer;border:1px solid var(--line-strong,rgba(244,240,230,.18))}
+  .endbtn.gold{background:var(--accent);color:#121110;border-color:var(--accent)}
+  .endbtn.ghost{background:rgba(20,20,26,.7);color:var(--ink)}
+  #endclose{position:absolute;top:16px;left:16px;background:none;border:1px solid var(--line);border-radius:10px;
+    width:44px;height:44px;color:var(--accent);font-size:20px;cursor:pointer}
+  @media (min-width: 900px){
+    #wrap{display:grid;grid-template-rows:auto auto auto minmax(0,1fr);
+          grid-template-columns:minmax(0,11fr) minmax(0,9fr)}
+    #topbar,#track,#steps{grid-column:1/-1}
+    #days{grid-row:4;grid-column:1;border-right:1px solid var(--line)}
+    #map{grid-row:4;grid-column:2;flex:none;height:auto;min-height:0;border-top:none;
+         box-shadow:none}
+    #map.mini{flex:none;height:auto;min-height:0}
+    #mapcover,#mapexpand,#mapmin{display:none!important}
+    #map.mini #gpsbtn{display:flex}
+
+    .slbl{font-size:13px}
+  }
+  #uptoast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%) translateY(80px);z-index:9999;
+  background:#16161a;color:#d4a94a;border:1px solid #d4a94a;border-radius:12px;padding:.7rem 1.1rem;
+  font-weight:600;letter-spacing:.02em;box-shadow:0 6px 24px rgba(0,0,0,.5);cursor:pointer;
+  transition:transform .35s ease;white-space:nowrap}
+#uptoast.show{transform:translateX(-50%) translateY(0)}
+.sarrow{width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;
+  border-bottom:10px solid #d4a94a;opacity:.8}
+.slbl{color:#d4a94a;font:600 11px/1 -apple-system,system-ui,sans-serif;letter-spacing:.08em;
+  text-transform:uppercase;white-space:nowrap;text-shadow:0 1px 3px rgba(0,0,0,.9);opacity:.9}
+  /* Track cards — same shape as the .trk cards on iguideiceland.is/playlists */
+  .blist{list-style:none;margin:0;padding:0}
+  .blist>li{margin:0 0 8px;padding-left:1.1em;text-indent:-1.1em}
+  .blist>li:before{content:"\2022";color:var(--dim);padding-right:.6em}
+  /* must out-specify .blist>li, which sets the bullet and the hanging indent */
+  .blist>li.trkcard{display:flex;gap:14px;background:var(--panel2);border:1px solid var(--line);
+           border-radius:14px;padding:14px 16px;margin:0 0 10px;text-indent:0}
+  .blist>li.trkcard:before{content:none;padding:0}
+  .trkcard .trkq{text-indent:0}
+  .trkn{font-family:'Norse',var(--sans);font-size:1.7rem;line-height:1;color:rgba(212,169,74,.55);
+        flex:none;min-width:2.1rem}
+  .trkb{min-width:0}
+  .trkt{font-family:'Norse',var(--sans);font-size:1.2rem;letter-spacing:.035em;color:var(--ink);margin:0 0 .1rem}
+  .trka{display:inline;color:var(--accent);font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;margin:0}.trka::before{content:' \2014 ';color:rgba(212,169,74,.55)}.actcard{display:flex;gap:.85rem;align-items:flex-start;margin:1.5rem 0 .9rem;padding:.85rem .95rem;border-radius:14px;background:linear-gradient(180deg,rgba(212,169,74,.10),rgba(212,169,74,.03));border:1px solid rgba(212,169,74,.32)}.actn{font-family:'Norse',var(--sans);font-size:1.7rem;line-height:1;color:var(--accent);flex:none;min-width:2.1rem;text-align:center}.actt{font-family:'Norse',var(--sans);font-size:1.15rem;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin:0 0 .35rem}
+  .trkq{color:var(--mute);font-size:.94rem;line-height:1.6}
+  .trkth{display:inline-block;margin-top:.6rem;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;
+         color:var(--accent);border:1px solid rgba(212,169,74,.4);border-radius:999px;padding:.2rem .7rem}
+
+/* ---- what's on the bus stereo, live from Spotify -----------------------
+   Sits in the toolbar beside the night button, same 44px rhythm as Aa and
+   the moon. Same feed as the website. Only appears while music is playing,
+   so the toolbar is never carrying a dead control. -------------------- */
+#gnp{display:none;align-items:center;gap:6px;height:42px;margin-left:6px;
+  padding:0 10px 0 6px;border-radius:10px;border:1px solid var(--line);
+  background:none;text-decoration:none;color:var(--dim);overflow:hidden;
+  flex:0 1 auto;max-width:min(76vw,340px);min-width:46px}
+#gnp[hidden]{display:none!important}
+#gnp.on{display:inline-flex}
+#gnp:active{border-color:var(--accent)}
+#gnp img{width:30px;height:30px;border-radius:6px;object-fit:cover;flex:none;
+  background:rgba(244,240,230,.06)}
+/* One seat, two guests: while the stereo plays, the track title gets the topbar
+   and the tour name sits out. Silence brings the Norse gold back. */
+/* the pill alternates: song title... then artist... crossfading like a car
+   stereo; a name still too long for the pill glides across, never cut off */
+#gnp .t{overflow:hidden;white-space:nowrap;min-width:0;transition:opacity .35s ease}
+#gnp .t.fade{opacity:0}
+#gnp .t.scroll span{display:inline-block;padding-right:24px;
+  animation:gnpscroll 8s linear infinite}
+@keyframes gnpscroll{0%,15%{transform:translateX(0)}85%,100%{transform:translateX(calc(-1 * var(--ov,0px)))}}
+@media (max-width:640px){
+  /* music playing: the title stacks into a narrow gold column - GOLDEN / CIRCLE / DIRECT */
+  body.hasgnp #tourname{white-space:normal;font-size:12.5px;line-height:1.12;letter-spacing:.02em;
+    flex:0 0 auto;max-width:96px;overflow:visible;text-overflow:clip}
+  body.hasgnp #gnp{flex:1 1 auto;max-width:none}
+}
+#gnp .t{min-width:0;font-size:12px;line-height:1.15;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
+#gnp .eq{display:inline-flex;align-items:flex-end;gap:2px;height:11px;flex:none}
+#gnp .eq i{width:2.5px;border-radius:2px;background:var(--accent);height:3px;
+  animation:gnpb .9s ease-in-out infinite}
+#gnp .eq i:nth-child(2){animation-delay:.15s}#gnp .eq i:nth-child(3){animation-delay:.3s}
+@keyframes gnpb{0%,100%{height:3px;opacity:.6}50%{height:11px;opacity:1}}
+/* On a phone the title shrinks rather than vanishes — knowing it is playing
+   is half the point, knowing WHAT is playing is the other half. */
+@media (max-width:430px){
+  #gnp{max-width:none;padding:0 8px 0 5px;gap:5px}
+  #gnp img{width:26px;height:26px}
+  #gnp .t{font-size:11px}
+}
+@media (prefers-reduced-motion:reduce){#gnp .eq i{animation:none;height:7px}}
+</style>
+</head>
+<body>
+<div id="pick">
+  <div id="langs"></div>
+  <div id="brand">
+    <img src="images/logo-crest.webp" alt="iGuide Iceland crest">
+    <div><div class="bn">iGuide Iceland</div><div class="bs">Local guide · Tour services</div></div>
+  </div>
+  <div id="welcome"></div>
+  <div id="safety"></div>
+  <h1 id="whichtour">Which tour?</h1>
+  <div id="picklist"></div>
+</div>
+<div id="endscreen">
+  <button id="endclose" aria-label="Back to the tour">‹</button>
+  <img src="images/logo-crest.webp" alt="iGuide Iceland">
+  <h1>Takk fyrir!</h1>
+  <p>That's the tour — thank you for riding with me. If today earned it, leave a review — and please use my name (Ritchie Rich) in it. That's the bit that actually counts.</p>
+  <a class="endbtn gold" href="https://www.tripadvisor.com/Attraction_Review-g189970-d1556635-Reviews-Reykjavik_Excursions_by_Icelandia-Reykjavik_Capital_Region.html" target="_blank" rel="noopener">⭐ Review on Tripadvisor</a>
+  <a class="endbtn ghost" href="https://wa.me/3546441011" target="_blank" rel="noopener">💬 WhatsApp Ritchie</a>
+  <a class="endbtn ghost" href="https://instagram.com/iguide.iceland" target="_blank" rel="noopener">📸 @iguide.iceland</a>
+  <a class="endbtn ghost" href="https://www.iguideiceland.is" target="_blank" rel="noopener">🌋 iguideiceland.is</a>
+</div>
+<div id="brief" hidden></div>
+<div id="wrap" hidden>
+  <div id="topbar">
+    <button id="home"></button>
+    <button id="fontbtn" title="Text size" aria-label="Text size">Aa</button>
+    <a id="gnp" href="#" target="_blank" rel="noopener" aria-live="polite" hidden><img id="gnpArt" alt=""><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="t" id="gnpTxt"></span></a>
+    <span id="offpill" data-en="OFFLINE · ALL GOOD">OFFLINE · ALL GOOD</span>
+    <span id="tourname"></span>
+  </div>
+  <div id="track"></div>
+  <div id="steps"></div>
+  <div id="days"></div>
+  <div id="map"><div id="zhint">Zoom in further to show place names</div><button id="gpsbtn" title="Follow the bus" aria-label="Follow the bus">➤</button><div id="mapcover" role="button" aria-label="Expand map"></div><button id="mapmin" title="Shrink map" aria-label="Shrink map">⌄</button><span id="mapexpand">TAP TO EXPAND</span></div>
+</div>
+</div>
+
+<script src="vendor/leaflet.js"></script>
+<script src="tours.js"></script>
+<script src="briefing.js"></script>
+<script src="i18n/de.js"></script>
+<script src="i18n/fr.js"></script>
+<script src="i18n/es.js"></script>
+<script src="i18n/it.js"></script>
+<script src="i18n/nl.js"></script>
+<script src="i18n/pt.js"></script>
+<script src="i18n/pl.js"></script>
+<script src="i18n/da.js"></script>
+<script src="i18n/sv.js"></script>
+<script src="i18n/no.js"></script>
+<script src="i18n/fi.js"></script>
+<script src="i18n/is.js"></script>
+<script src="i18n/zh.js"></script>
+<script src="i18n/ja.js"></script>
+<script src="i18n/ko.js"></script>
+<script src="i18n/ru.js"></script>
+<script src="i18n/ar.js"></script>
+<script src="i18n/hi.js"></script>
+<script src="i18n/tr.js"></script>
+<script src="i18n/he.js"></script>
+<script>
+// ---- tour picker -------------------------------------------------------
+const TOURS = window.__TOURS__;
+const PICK  = document.getElementById("pick");
+const WRAP  = document.getElementById("wrap");
+const KEYT  = "gcd-tour";
+
+// Leaving a tour reloads rather than unpicking boot() by hand: one code path,
+// no half-torn-down map, and the shell comes straight out of the service worker.
+function leaveTour(){
+  try{ localStorage.removeItem(KEYT); localStorage.removeItem("gcd-pos"); }catch(e){}
+  location.replace(location.pathname);
+}
+// A guest's instinct is the phone's own back gesture, not a button we drew.
+// Opening a tour pushes a history entry so back lands on the picker instead of
+// leaving the site entirely.
+window.addEventListener("popstate",()=>{ if(!WRAP.hidden) leaveTour(); });
+
+// The one-file build (the gist backup) carries every tour's data inline in a
+// #bundle tag, because the picker fetches tour data on demand and a lone HTML
+// file has no siblings to fetch. Live, there is no #bundle and this falls
+// straight through to the network as before.
+// FNV-1a, 32-bit, over UTF-8 bytes — the exact hash i18n-build.py keys by.
+// Translations are looked up by the English string itself, so a block can move,
+// a tour can be reordered, and nothing lands on the wrong line.
+const TE = new TextEncoder();
+function h32(s){
+  let x = 0x811c9dc5;
+  const b = TE.encode(s);
+  for(let i=0;i<b.length;i++){ x ^= b[i]; x = Math.imul(x, 0x01000193) >>> 0; }
+  return x.toString(16).padStart(8,"0");
+}
+
+// Swap the loaded tour into the chosen language, in place. English is the file
+// on disk, so there is nothing to do for it. If the language pack will not load
+// the tour simply stays English rather than showing a guest a broken page.
+async function translateTour(){
+  if(LANG === "en") return;
+  try{ await loadScript("i18n/tours/"+LANG+".js"); }
+  catch(e){ return; }
+  const M = (window.__TR__||{})[LANG];
+  if(!M) return;
+  const tr = s => (typeof s === "string" && M[h32(s)]) || s;
+  const S = window.__SCRIPT__;
+  S.sections.forEach(sec=>{
+    sec.title = tr(sec.title);
+    (sec.blocks||[]).forEach(b=>{
+      b.title = tr(b.title);
+      ["cue","point","mic","weather","sub","hook"].forEach(k=>{ if(b[k]) b[k] = tr(b[k]); });
+      if(b.bullets) b.bullets = b.bullets.map(tr);
+      // heads and pre are [label, ...] pairs, not strings — translate the parts
+      if(b.heads)   b.heads   = b.heads.map(h=>Array.isArray(h)?[tr(h[0]),(h[1]||[]).map(tr)]:tr(h));
+      if(b.pre)     b.pre     = Array.isArray(b.pre)?b.pre.map(p=>Array.isArray(p)?[tr(p[0]),tr(p[1])]:tr(p)):tr(b.pre);
+      // The name and the pronunciation are the whole point of the line —
+      // only the gloss that explains it gets translated.
+      if(b.say)     b.say     = b.say.map(x=>[x[0], x[1], tr(x[2])]);
+    });
+  });
+}
+
+let BUNDLE, BUNDLE_READ=false;
+function bundle(){
+  if(BUNDLE_READ) return BUNDLE;
+  BUNDLE_READ=true;
+  const el=document.getElementById("bundle");
+  try{ BUNDLE = el ? JSON.parse(el.textContent) : null; }catch(e){ BUNDLE=null; }
+  return BUNDLE;
+}
+function loadScript(src){
+  const B=bundle();
+  if(B && B[src]){
+    try{ (0,eval)(B[src]); return Promise.resolve(); }
+    catch(e){ return Promise.reject(new Error("bundled "+src+" failed: "+e.message)); }
+  }
+  return new Promise((ok,bad)=>{
+    const el=document.createElement("script");
+    el.src=src; el.onload=ok; el.onerror=()=>bad(new Error("could not load "+src));
+    document.head.appendChild(el);
+  });
+}
+async function openTour(t){
+  PICK.innerHTML='<h1>Loading '+t.name+'…</h1>';
+  try{
+    await loadScript("route-"+t.id+".js");
+    await loadScript("script-"+t.id+".js");
+    await loadScript("cues-"+t.id+".js");
+  }catch(err){
+    PICK.innerHTML='<h1>'+t.name+' would not load</h1><p style="color:#ffb3b3">'+err.message+'</p>';
+    return;
+  }
+  // The first leg's chip is labelled off the ENGLISH title, before translation:
+  // "Busbahnhof BSÍ" would otherwise reduce to "Busbahnhof", which starts the
+  // day nowhere in particular.
+  try{
+    const s0 = window.__SCRIPT__.sections[0];
+    if(s0 && s0.kind !== "stop"){
+      const from = (s0.title.split("\u2192")[0]||"").trim();
+      window.__SCRIPT__.origin = from.length>9 ? from.split(/\s+/)[0] : from;
+    }
+  }catch(e){}
+  PICK.innerHTML='<h1>'+((T()&&T().ui.loading)||"Loading")+' '+t.name+'…</h1>';
+  await translateTour();
+  try{ localStorage.setItem(KEYT,t.id); }catch(e){}
+  try{ history.pushState({tour:t.id},"","#"+t.id); }catch(e){}
+  PICK.remove();
+  WRAP.hidden=false;
+  boot(t);
+}
+function showLangs(){
+  const box=document.getElementById("langs");
+  const L=window.__LANGS__;
+  box.innerHTML=
+    '<select id="lang" aria-label="Language">'+
+      L.map(l=>'<option value="'+l.code+'"'+(l.live?"":" disabled")+(l.code==="en"?" selected":"")+'>'+
+               l.flag+"  "+l.name+(l.live?"":" — not yet")+'</option>').join("")+
+    '</select>';
+  const sel=document.getElementById("lang");
+  sel.value=LANG;
+  sel.onchange=e=>{
+    const l=L.find(x=>x.code===e.target.value);
+    if(!l||!l.live){ e.target.value=LANG; return; }
+    LANG=l.code;
+    try{ localStorage.setItem("gcd-lang",LANG); }catch(err){}
+    applyDir(); showWelcome(); showSafety(); showPicker();
+    const t=T();
+    document.getElementById("lang").setAttribute("aria-label",(t&&t.ui.language)||"Language");
+    document.getElementById("whichtour").textContent=(t&&t.ui.whichTour)||"Which tour?";
+    document.getElementById("pick").scrollTop=0;
+  };
+}
+
+// Step 1, then step 2, then the tour.
+// Shared by the picker and the tour, so it has to sit outside boot().
+function esc(s){ return (s||"").replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+const MD = t => t.replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g,"<i>$1</i>");
+const block = i => '<div class="bitem"><div class="bi">'+i.icon+'</div><div><h2>'+i.head+'</h2>'+
+                   i.body.map(x=>"<p>"+MD(x)+"</p>").join("")+'</div></div>';
+
+// English lives in briefing.js; every other language overrides it from i18n/.
+let LANG="en";
+const T = () => (LANG==="en" ? null : (window.__I18N__||{})[LANG]);
+// Arabic and Hebrew read right to left. The flag says so; the <html> element has to hear it.
+function applyDir(){
+  const t=T();
+  document.documentElement.dir = (t && t.rtl) ? "rtl" : "ltr";
+}
+function showWelcome(){
+  const t=T();
+  const W=(t&&t.welcome)||window.__WELCOME__;
+  document.getElementById("welcome").innerHTML=
+    '<div class="step">'+W.step+'</div><h1>'+W.title+'</h1>'+
+    '<p class="lead">'+W.lead+'</p>'+ W.items.map(block).join("");
+}
+function showSafety(){
+  const t=T();
+  const B=(t&&t.briefing)||window.__BRIEFING__;
+  document.getElementById("safety").innerHTML=
+    '<div class="step">'+B.step+'</div><h1>'+B.title+'</h1>'+ B.items.map(block).join("");
+}
+
+function showBriefingUnused(done){
+  const B=window.__BRIEFING__, el=document.getElementById("brief");
+  el.scrollTop=0;
+  const md=t=>t.replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g,"<i>$1</i>");
+  el.innerHTML='<div class="step">'+B.step+'</div><h1>'+B.title+'</h1>'+
+    B.items.map(i=>'<div class="bitem"><div class="bi">'+i.icon+'</div><div><h2>'+i.head+'</h2>'+
+      i.body.map(x=>"<p>"+md(x)+"</p>").join("")+'</div></div>').join("");
+  el.hidden=false;
+  const go=document.createElement("button");
+  go.id="go"; go.textContent="Got it — start the tour";
+  go.onclick=()=>{ go.remove(); el.remove(); done(); };
+  document.body.appendChild(go);
+}
+function showPicker(){ showGroups(); }
+function groupsOf(){
+  const gs=[]; const seen={};
+  TOURS.forEach(t=>{ const g=t.group||t.name; if(!seen[g]){seen[g]=true; gs.push(g);} });
+  return gs;
+}
+function showGroups(){
+  const list=document.getElementById("picklist");
+  list.innerHTML="";
+  // pick up where the phone-lock left off
+  try{
+    const rp=JSON.parse(localStorage.getItem("gcd-pos")||"null");
+    const rt=rp && TOURS.find(x=>x.id===rp.id && x.ready!==false);
+    if(rt){
+      const r=document.createElement("button"); r.id="resume";
+      r.innerHTML='<span class="rp">▶</span><span><span class="rt">'+esc(rt.name)+'</span>'+
+                  '<span class="rs">'+esc((T()&&T().ui&&T().ui.cont)||"Continue where you left off")+'</span></span>';
+      r.onclick=()=>openTour(rt);
+      list.appendChild(r);
+    }
+  }catch(e){}
+  // one-time add-to-home-screen hint for iPhone Safari
+  try{
+    const ios=/iP(hone|ad|od)/.test(navigator.userAgent), standalone=navigator.standalone===true;
+    if(ios && !standalone && !localStorage.getItem("gcd-a2hs") && !document.getElementById("a2hs")){
+      const a=document.createElement("div"); a.id="a2hs";
+      a.innerHTML='<span>📲 Keep me for the ride: tap <b>Share</b> → <b>Add to Home Screen</b> — works with no signal.</span><button aria-label="Dismiss">✕</button>';
+      a.querySelector("button").onclick=()=>{ a.remove(); try{localStorage.setItem("gcd-a2hs","1");}catch(e){} };
+      list.parentNode.insertBefore(a,list);
+    }
+  }catch(e){}
+  groupsOf().forEach(g=>{
+    const ts=TOURS.filter(t=>(t.group||t.name)===g);
+    const b=document.createElement("button");
+    b.className="gbtn";
+    b.innerHTML='<span class="gname">'+esc(g)+'</span>'+
+                '<span class="gcount">'+ts.length+" "+esc((T()&&T().ui&&T().ui.tours)||(ts.length===1?"tour":"tours"))+'</span>'+
+                '<span class="gchev">›</span>';
+    b.onclick=()=>showGroupTours(g);
+    list.appendChild(b);
+  });
+}
+function showGroupTours(g){
+  const list=document.getElementById("picklist");
+  list.innerHTML="";
+  const back=document.createElement("button");
+  back.id="groupback";
+  back.innerHTML='<span class="bk">‹</span><span>'+esc(g)+'</span>';
+  back.onclick=showGroups;
+  list.appendChild(back);
+  TOURS.filter(t=>(t.group||t.name)===g).forEach(t=>{
+    const b=document.createElement("button");
+    const ready = t.ready !== false;
+    b.className="tcard"+(ready?"":" soon");
+    b.disabled=!ready;
+    const hrs = t.min ? (t.min/60) : null;
+    const dur = hrs ? (Math.round(hrs*2)/2)+" h" : "";
+    const U=(k,f)=>((T()&&T().ui&&T().ui[k])||f);
+    const meta = [t.blocks?t.blocks+" "+U("stories","stories"):"", t.km?t.km+" km":"", dur?"~"+dur+" "+U("drive","drive"):""]
+                 .filter(Boolean).join(" · ");
+    b.innerHTML='<span class="off" data-tid="'+t.id+'">✓ '+esc(U("onphone","ON THIS PHONE"))+'</span>'+
+                "<b>"+esc(t.group?(t.name===t.group?"Classic":(t.name.startsWith(t.group)?t.name.slice(t.group.length).trim():t.name)):t.name)+"</b><span>"+esc(t.sub)+"</span>"+
+                (meta?'<span class="meta">'+meta+'</span>':"")+
+                (ready?"":'<em class="soonlbl">'+((T()&&T().ui.soon)||"coming soon")+'</em>');
+    if(ready) b.onclick=()=>openTour(t);
+    list.appendChild(b);
+  });
+  if(window.caches) caches.keys().then(ks=>{
+    const k=ks.find(x=>/^gcd/.test(x)); if(!k) return;
+    return caches.open(k).then(c=>{
+      document.querySelectorAll(".off[data-tid]").forEach(el=>{
+        c.match("./route-"+el.dataset.tid+".js").then(hit=>{ if(hit) el.classList.add("on"); });
+      });
+    });
+  }).catch(()=>{});
+}
+try{ const v=localStorage.getItem("gcd-lang"); if(v) LANG=v; }catch(e){}
+// text size: three steps, remembered on this phone
+(function(){
+  const SIZES=[16,18.5,21];
+  let fi=0; try{ fi=Math.min(2,Math.max(0,+localStorage.getItem("gcd-font")||0)); }catch(e){}
+  const apply=()=>document.documentElement.style.setProperty("--fs",SIZES[fi]+"px");
+  apply();
+  document.getElementById("fontbtn").onclick=()=>{
+    fi=(fi+1)%SIZES.length; apply();
+    try{ localStorage.setItem("gcd-font",fi); }catch(e){}
+  };
+})();
+// offline pill
+window.addEventListener("offline",()=>document.body.classList.add("isoffline"));
+window.addEventListener("online",()=>document.body.classList.remove("isoffline"));
+if(navigator.onLine===false) document.body.classList.add("isoffline");
+setInterval(()=>{ try{const u=T()&&T().ui; if(u&&u.offline) document.getElementById("offpill").textContent=u.offline;}catch(e){} },4000);
+applyDir();
+showLangs();
+showWelcome();
+showSafety();
+showPicker();
+
+// ---- the app -----------------------------------------------------------
+function boot(TOUR){
+const R = window.__ROUTE__, S = window.__SCRIPT__, CUES = window.__CUES__;
+const CUE = {}; CUES.forEach(c => CUE[c.id] = c);
+const COL = {drive:"#5ec8f2", stop:"#c8a2f2"};
+
+// fadeAnimation:false is not cosmetic. With a service worker in front of the tile requests,
+// Leaflet's fade never flips tiles from opacity 0 to 1 — every tile downloads correctly
+// (naturalWidth 256) and then paints invisibly, so you get a blank map and no error anywhere.
+// Turning the fade off makes tiles opaque the moment they arrive.
+const map = L.map("map",{fadeAnimation:false,zoomControl:false}).setView([64.15,-20.9],8);
+
+// Esri has real imagery to z18 over the whole route. z19 is only Reykjavik —
+// everywhere else it serves a flat grey "no data" tile, so 18 is the honest cap.
+// detectRetina asks for one zoom deeper on 2x/3x screens and draws it at half
+// size: genuinely twice the pixels on a phone, and Leaflet clamps at maxNativeZoom
+// so it never reaches for the grey.
+const SAT = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  // maxNativeZoom 14, NOT 18: Esri's World_Imagery has no high-zoom cover over
+  // Thingvellir - z15+ there returns its grey "Map data not yet available" tile
+  // (8.5 KB placeholder vs ~12 KB real). Capping at 14 makes Leaflet upscale a
+  // real tile instead of drawing grey. Verified 31 Aug 2026 against the tile server.
+  {maxZoom:19, maxNativeZoom:14, detectRetina:true, attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'});
+const TERRAIN = L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+  {maxZoom:19, maxNativeZoom:15, attribution:'&copy; OpenTopoMap, &copy; OpenStreetMap contributors'});
+const DARK = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",{maxZoom:19,
+  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'});
+// Road casings and place names printed over the imagery — satellite alone is pretty and useless.
+const SATLBL = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
+  {maxZoom:19, maxNativeZoom:16, detectRetina:true, attribution:''});
+
+// Sentinel-2 cloudless (EOX, CC-BY) as a second imagery source. Esri is better where it
+// has coverage, but if anything blocks it — a preview pane, an ad blocker, a corporate
+// network — a grey rectangle is useless on a coach. Fall through instead of failing.
+const SAT2 = L.tileLayer("https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/g/{z}/{y}/{x}.jpg",
+  {maxZoom:19, maxNativeZoom:14, attribution:'Sentinel-2 cloudless &copy; EOX IT Services (CC BY-NC-SA 4.0)'});
+
+SAT.addTo(map); SATLBL.addTo(map);
+// Zoom and layer buttons retired: guests pinch, the app picks the imagery.
+
+// ---- imagery watchdog -------------------------------------------------------
+// Leaflet fires tileerror per failed tile. A handful is normal at the edges of coverage;
+// a wall of them means the source is blocked. Switch once, say so, and move on.
+let satErr = 0, satOK = 0, switched = false;
+SAT.on("tileload", ()=>{ satOK++; });
+SAT.on("tileerror", ()=>{
+  satErr++;
+  if(switched || satOK > 0 || satErr < 6) return;
+  switched = true;
+  map.removeLayer(SAT); SAT2.addTo(map);
+  banner("Esri imagery is blocked here — switched to Sentinel-2. Layers control, top right, to change it.");
+});
+SAT2.on("tileerror", ()=>{
+  if(!switched) return;
+  banner("Both satellite sources are blocked. You are almost certainly viewing this in a preview pane — open the file in a browser.");
+});
+function banner(msg){
+  let el = document.getElementById("tilewarn");
+  if(!el){
+    el = document.createElement("div"); el.id = "tilewarn";
+    el.style.cssText = "position:absolute;z-index:600;top:10px;left:10px;max-width:340px;background:#3a1a1a;"
+      + "border:1px solid #6b2b2b;color:#ffb3b3;border-radius:7px;padding:8px 11px;font:11.5px/1.5 -apple-system,sans-serif";
+    document.getElementById("map").appendChild(el);
+  }
+  el.textContent = msg;
+}
+
+// The road you have actually travelled. It grows as the tour does — nothing
+// ahead of you is drawn, because you haven't been there yet.
+const GEO = R.geometry;
+const CUM = (()=>{
+  const out=[0];
+  for(let i=1;i<GEO.length;i++){
+    const [a,b]=GEO[i-1], [c,d]=GEO[i];
+    const dy=(c-a)*111.32, dx=(d-b)*111.32*Math.cos((a+c)/2*Math.PI/180);
+    out.push(out[i-1]+Math.sqrt(dx*dx+dy*dy));
+  }
+  return out;
+})();
+const TOTAL = CUM[CUM.length-1];
+function travelled(pct){
+  if(pct==null) return [GEO[0]];
+  const want = TOTAL*Math.max(0,Math.min(100,pct))/100;
+  const out=[];
+  for(let i=0;i<GEO.length;i++){
+    out.push(GEO[i]);
+    if(CUM[i]>=want) break;
+  }
+  return out.length>1?out:[GEO[0],GEO[0]];
+}
+const routeLine = L.polyline(travelled(0),{color:"#5ec8f2",weight:4,opacity:.9}).addTo(map);
+// How far along the road each block sits.
+// Blocks with a pin are anchors. Blocks without one — the story blocks you tell
+// while driving — are spaced evenly between the anchors either side, so the line
+// creeps forward the whole way instead of standing still and then jumping.
+// Anchors are also forced to never go backwards.
+const PROG = (()=>{
+  const ids=[]; S.sections.forEach(sec=>sec.blocks.forEach(b=>ids.push(b.id)));
+  const val=ids.map(id=>{
+    const c=CUE[id];
+    return (c && typeof c.progress==="number") ? c.progress : null;
+  });
+  // no anchor can sit behind the one before it
+  let high=0;
+  for(let i=0;i<val.length;i++){
+    if(val[i]===null) continue;
+    if(val[i]<high) val[i]=high; else high=val[i];
+  }
+  if(val[0]===null) val[0]=0;
+  if(val[val.length-1]===null) val[val.length-1]=high;
+  // fill the gaps evenly
+  for(let i=0;i<val.length;i++){
+    if(val[i]!==null) continue;
+    let a=i-1; while(a>=0 && val[a]===null) a--;
+    let b=i+1; while(b<val.length && val[b]===null) b++;
+    const from=val[a], to=(b<val.length?val[b]:from);
+    let gapEnd=b; let n=gapEnd-a;
+    for(let k=i;k<gapEnd;k++) val[k]=from+(to-from)*((k-a)/n);
+    i=gapEnd-1;
+  }
+  const m={}; ids.forEach((id,i)=>m[id]=val[i]);
+  return m;
+})();
+
+function trkCard(s){
+  const m = /^\*\*(\d+)\s·\s([\s\S]+?)\*\*\s—\s\*([^*]+)\*\.?\s*([\s\S]*)$/.exec(s);
+  if(!m) return null;
+  let story = m[4] || "", thread = "";
+  const th = /\s*\[([^\]]+)\]\s*$/.exec(story);
+  if(th){ thread = th[1]; story = story.slice(0, th.index); }
+  return `<li class="trkcard"><span class="trkn">${esc(m[1])}</span><div class="trkb">`
+       + `<div class="trkt">${esc(m[2])}<span class="trka">${esc(m[3])}</span></div>`
+       + (story?`<div class="trkq">${md(story)}</div>`:"")
+       + (thread?`<span class="trkth">${esc(thread)}</span>`:"")
+       + `</div></li>`;
+}
+function actCard(s){
+  const m = /^\*\*ACT\s+([IVX]+)\s+—\s+([^*]+?)\.?\*\*\s*([\s\S]*)$/.exec(s);
+  if(!m) return null;
+  return `<li class="actcard"><span class="actn">${esc(m[1])}</span><div class="trkb">`
+       + `<div class="actt">${esc(m[2])}</div>`
+       + (m[3]?`<div class="trkq">${md(m[3])}</div>`:"")
+       + `</div></li>`;
+}
+function md(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\*([^*]+)\*/g,"<i>$1</i>"); }
+
+// One marker: where you are now.
+// The story dot: smaller, gold, breathing - and no longer dressed like the GPS dot.
+const HERE = L.marker([0,0],{interactive:false,zIndexOffset:900,pane:"markerPane",
+  icon:L.divIcon({className:"",iconSize:[12,12],iconAnchor:[6,6],html:'<div class="heredot"></div>'})});
+// Faint sightline from the bus to whatever the cue says to look at.
+const SIGHT = L.polyline([],{color:"#d4a94a",weight:1.5,opacity:.6,dashArray:"2,7",interactive:false});
+const SIGHTDOT = L.circleMarker([0,0],{radius:4,color:"#d4a94a",weight:1.5,fill:false,opacity:.75,interactive:false});
+let SIGHTARROW=null, SIGHTLBL=null;
+function brg(a,b){const r=Math.PI/180,la1=a[0]*r,la2=b[0]*r,dl=(b[1]-a[1])*r;
+  return (Math.atan2(Math.sin(dl)*Math.cos(la2),Math.cos(la1)*Math.sin(la2)-Math.sin(la1)*Math.cos(la2)*Math.cos(dl))*180/Math.PI+360)%360;}
+function pointAt(pct){
+  const want=TOTAL*Math.max(0,Math.min(100,pct))/100;
+  for(let i=0;i<GEO.length;i++) if(CUM[i]>=want) return GEO[i];
+  return GEO[GEO.length-1];
+}
+function focusBlock(id){
+  const c=CUE[id];
+  if(!c||!c.pin){
+    // story block: the dot keeps rolling down the road instead of camping on
+    // the previous landmark, and the old sightline doesn't linger.
+    SIGHT.remove(); SIGHTDOT.remove();
+    if(SIGHTARROW){SIGHTARROW.remove();SIGHTARROW=null;}
+    if(SIGHTLBL){SIGHTLBL.remove();SIGHTLBL=null;}
+    const pr=PROG[id];
+    if(pr!=null){
+      const pt=pointAt(pr);
+      HERE.setLatLng(pt).addTo(map);
+      map.setView(pt,13,{animate:true,duration:.4});
+    }
+    return;
+  }
+  HERE.setLatLng([c.pin.lat,c.pin.lon]).addTo(map);
+  if(c.target){
+    SIGHT.setLatLngs([[c.pin.lat,c.pin.lon],[c.target.lat,c.target.lon]]).addTo(map);
+    SIGHTDOT.setLatLng([c.target.lat,c.target.lon]).addTo(map);
+    const ang=brg([c.pin.lat,c.pin.lon],[c.target.lat,c.target.lon]);
+    if(SIGHTARROW) SIGHTARROW.remove();
+    SIGHTARROW=L.marker([c.target.lat,c.target.lon],{interactive:false,icon:L.divIcon({className:"",iconSize:[10,10],iconAnchor:[5,10],
+      html:`<div class="sarrow" style="transform:rotate(${ang}deg);transform-origin:50% 100%"></div>`})}).addTo(map);
+    if(SIGHTLBL) SIGHTLBL.remove();
+    SIGHTLBL=c.target.name?L.marker([c.target.lat,c.target.lon],{interactive:false,icon:L.divIcon({className:"",iconSize:[0,0],iconAnchor:[-8,-6],
+      html:`<div class="slbl">${esc(c.target.name)}</div>`})}).addTo(map):null;
+    // Zoom discipline: near targets get framed; far mountains get a steady wide
+    // view with the sightline running off-screen toward them - no more lurching
+    // from street level to satellite orbit between two swipes.
+    const tkm=Math.hypot((c.target.lat-c.pin.lat)*111.32,
+                         (c.target.lon-c.pin.lon)*111.32*Math.cos(c.pin.lat*Math.PI/180));
+    if(tkm<=8)
+      map.fitBounds(L.latLngBounds([[c.pin.lat,c.pin.lon],[c.target.lat,c.target.lon]]).pad(0.25),
+                    {animate:true,duration:.4,maxZoom:14});
+    else
+      map.setView([c.pin.lat,c.pin.lon],11,{animate:true,duration:.4});
+  }else{
+    SIGHT.remove(); SIGHTDOT.remove();
+    if(SIGHTARROW){SIGHTARROW.remove();SIGHTARROW=null;}
+    if(SIGHTLBL){SIGHTLBL.remove();SIGHTLBL=null;}
+    map.setView([c.pin.lat,c.pin.lon],14,{animate:true,duration:.4});
+  }
+}
+
+const STOPPHOTOS=[
+  {la:64.766,lo:-23.628,src:"images/stops/arnarstapi.webp",cr:"Ilya Grigorik / CC BY-SA 3.0"},
+  {la:64.538,lo:-21.921,src:"images/stops/borgarnes.webp",cr:"Eysteinn Guðni Guðnason / CC BY-SA 4.0"},
+  {la:64.753,lo:-23.895,src:"images/stops/djupalonssandur.webp",cr:"Bultro / CC BY-SA 3.0"},
+  {la:64.043,lo:-16.182,src:"images/stops/fellsfjara.webp",cr:"Andreas Tille / CC BY-SA 4.0"},
+  {la:64.011,lo:-16.387,src:"images/stops/fjallsarlon.webp",cr:"Jakub Hałun / CC BY 4.0"},
+  {la:64.178,lo:-20.448,src:"images/stops/fridheimar.webp",cr:"Pierre-Selim Huard / CC BY 4.0"},
+  {la:64.312,lo:-20.299,src:"images/stops/geysir.webp",cr:"Andreas Tille / CC BY-SA 3.0"},
+  {la:64.325,lo:-20.131,src:"images/stops/gullfoss.webp",cr:"Diego Delso / CC BY-SA 4.0"},
+  {la:63.751,lo:-20.2235,src:"images/stops/hvolsvollur.webp",cr:"Diego Delso / CC BY-SA 4.0"},
+  {la:64.038,lo:-16.276,src:"images/stops/jokulsarlon.webp",cr:"Jakub Hałun / CC BY 4.0"},
+  {la:63.793,lo:-18.042,src:"images/stops/kirkjubaejarklaustur.webp",cr:"Eysteinn Guðni Guðnason / CC BY-SA 4.0"},
+  {la:64.928,lo:-23.311,src:"images/stops/kirkjufell.webp",cr:"Steven Diaz stevendiazphoto / CC0"},
+  {la:64.896,lo:-23.709,src:"images/stops/olafsvik.webp",cr:"Marek Ślusarczyk (Tupungato) Photo portfolio / CC BY 3.0"},
+  {la:63.4054,lo:-19.0486,src:"images/stops/reynisfjara.webp",cr:"Bernd Thaller from Graz, Austria / CC BY 2.0"},
+  {la:63.616,lo:-19.992,src:"images/stops/seljalandsfoss.webp",cr:"Jakub Hałun / CC BY 4.0"},
+  {la:64.942,lo:-22.904,src:"images/stops/selvallafoss.webp",cr:"Codas / CC BY-SA 4.0"},
+  {la:63.531,lo:-19.519,src:"images/stops/skogafoss.webp",cr:"Jakub Hałun / CC BY 4.0"},
+  {la:63.566,lo:-19.269,src:"images/stops/solheimajokull.webp",cr:"Netha Hussain / CC BY-SA 4.0"},
+  {la:64.264,lo:-21.13,src:"images/stops/thingvellir.webp",cr:"Diego Delso / CC BY-SA 4.0"},
+  {la:63.419,lo:-19.005,src:"images/stops/vik.webp",cr:"AstroAnthony / CC BY 4.0"},
+  {la:64.804,lo:-23.081,src:"images/stops/ytri-tunga.webp",cr:"Jakub Hałun / CC BY-SA 4.0"}
+];
+function stopPhoto(pin){
+  if(!pin) return null;
+  for(const p of STOPPHOTOS){
+    const dy=(p.la-pin.lat)*111.32, dx=(p.lo-pin.lon)*111.32*Math.cos(pin.lat*Math.PI/180);
+    if(dy*dy+dx*dx < 0.36) return p;   // within ~600 m of the stop
+  }
+  return null;
+}
+function blockRow(b, kind){
+  const say=(b.say||[]).map(s=>`<div><i>[${esc(s[1])}]</i> — <b>${esc(s[0])}</b>${s[2]?` <span class="gloss">(${esc(s[2])})</span>`:""}</div>`).join("");
+  const heads=(b.heads||[]).map(h=>`<div class="sublab">${esc(h[0])}</div><ul>${h[1].map(x=>`<li>${md(x)}</li>`).join("")}</ul>`).join("");
+  const pre=(b.pre||[]).map(p=>`<div class="sublab">${esc(p[0])}</div><div class="pre">${esc(p[1])}</div>`).join("");
+  const ph = kind==="stop" ? stopPhoto((CUE[b.id]||{}).pin) : null;
+  return `<div class="stop" data-key="${b.id}">
+      <div class="sc"><div class="sn">${b.emoji?b.emoji+" ":""}${esc(b.title)}</div>
+      ${b.sub?`<div class="sub">${esc(b.sub)}</div>`:""}
+      ${b.cue?`<div class="look">${esc(b.cue)}</div>`:""}</div></div>
+    <div class="blkbody">
+      ${ph?`<figure class="stopphoto"><img src="${ph.src}" alt="" loading="lazy"><figcaption>📷 ${esc(ph.cr)}</figcaption></figure>`:""}
+      ${b.hook?`<div class="hook">${md(b.hook)}</div>`:""}
+      ${heads}${pre}
+      ${(b.bullets&&b.bullets.length)?`<ul class="blist">${b.bullets.map(x=>trkCard(x)||actCard(x)||`<li>${md(x)}</li>`).join("")}</ul>`:""}
+      ${b.point?`<div class="pt">${md(b.point)}</div>`:""}
+      ${b.mic?`<div class="mc">${md(b.mic)}</div>`:""}
+      ${b.weather?`<div class="wx">${md(b.weather)}</div>`:""}
+      ${say?`<details class="say"><summary><span class="chev">▶</span><span class="sublab">How to say it</span><span class="cnt">${(b.say||[]).length}</span></summary>${say}</details>`:""}
+    </div>`;
+}
+let SI=0, BI=0;
+try{
+  const rp=JSON.parse(localStorage.getItem("gcd-pos")||"null");
+  if(rp && rp.id===TOUR.id && S.sections[rp.si] && S.sections[rp.si].blocks[rp.bi]){ SI=rp.si; BI=rp.bi; }
+}catch(e){}
+const flat=()=>{const o=[];S.sections.forEach((sec,si)=>sec.blocks.forEach((b,bi)=>o.push({si,bi})));return o;};
+const $=id=>document.getElementById(id);
+const track=$("track"), steps=$("steps"), list=$("days");
+
+// The way home, in words, at the top of the screen, before anything else.
+{ const t=T(), lbl=(t&&t.ui&&t.ui.back)||"Choose another tour";
+  const home=$("home");
+  home.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" '+
+                 'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+
+                 '<path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.7V20h13V9.7"/>'+
+                 '<path d="M9.7 20v-6h4.6v6"/></svg>';
+  home.title=lbl;
+  home.setAttribute("aria-label",lbl);
+  home.onclick=leaveTour;
+  $("tourname").textContent=TOUR.name; }
+
+steps.innerHTML='<button class="nav" id="pv">‹</button><div id="dots"></div><span id="chip"></span><button class="nav" id="nx">›</button>';
+
+function paintTrack(){
+  track.innerHTML="";
+  S.sections.forEach((sec,i)=>{
+    const el=document.createElement("div");
+    const isStop = sec.kind==="stop";
+    el.className="leg"+(i<SI?" done":"")+(i===SI?" now":"")+(isStop?" stop":" drive");
+    // Every other drive is obvious from the stops either side of it. The first one
+    // isn't — nothing precedes it — so it names where the day starts. Origin is the
+    // text before the arrow, cut to its first word so "BSÍ Bus Terminal" reads "BSÍ".
+    let label = isStop ? sec.title : "";
+    if(!isStop && i===0) label = S.origin || "";
+    if(!isStop && i===0) el.classList.add("origin");
+    el.innerHTML='<div class="ic">'+(isStop?"📍":"🚌")+'</div>'+
+                 (label?'<span class="nm">'+esc(label)+'</span>':"");
+    el.title=sec.title;
+    el.setAttribute("aria-label",sec.title);
+    el.onclick=()=>{ if(window.__gpsPause) __gpsPause(); SI=i; BI=0; render(); };
+    track.appendChild(el);
+  });
+  { const now=track.querySelector(".leg.now");
+    if(now){ const want=now.offsetLeft-(track.clientWidth-now.offsetWidth)/2;
+             track.scrollLeft=Math.max(0,want); } }
+  const dots=$("dots"); dots.innerHTML="";
+  S.sections[SI].blocks.forEach((b,i)=>{
+    const d=document.createElement("div");
+    d.className="dot2"+(i<BI?" done":"")+(i===BI?" now":"");
+    d.title=b.title;
+    d.onclick=()=>{ if(window.__gpsPause) __gpsPause(); BI=i; render(); };
+    dots.appendChild(d);
+  });
+  const f=flat(), pos=f.findIndex(x=>x.si===SI&&x.bi===BI);
+  $("pv").disabled = pos<=0;
+  $("nx").disabled = false;
+}
+
+const WXC={};
+// One chip, two feeders: updateWX names the stop and fetches its weather;
+// the GPS loop adds distance and minutes when it has a fix. paintChip merges.
+const CHIP={name:null,km:null,min:null,wx:null};
+function paintChip(){
+  const el=document.getElementById("chip");
+  if(!CHIP.name){ el.style.display="none"; document.body.classList.remove("haschip"); return; }
+  const d='\u2009·\u2009';   // thin-space separators: three facts, one phone width
+  let h='<span class="cl">'+esc(CHIP.name)+'</span>';
+  if(CHIP.km!=null) h+=d+(CHIP.km<10?CHIP.km.toFixed(1):Math.round(CHIP.km))+'\u2009km'+d+CHIP.min+'\u2009min';
+  const w=CHIP.wx;
+  if(w){ h+=d+Math.round(w.t)+'°';
+         if(w.pp>=25) h+='\u2009☔'+Math.round(w.pp)+'%';
+         if(w.ws>=10) h+='\u2009💨'+Math.round(w.ws); }
+  el.innerHTML=h; el.style.display="inline-block";
+  document.body.classList.add("haschip");
+}
+window.__setEta=(name,km,min)=>{ if(name) CHIP.name=name; CHIP.km=km; CHIP.min=min; paintChip(); };
+window.__repaintChip=paintChip;
+function updateWX(){
+  const sec=S.sections[SI];
+  let ns=null;
+  if(sec.kind==="stop") ns=sec;            // here and now
+  else for(let i=SI+1;i<S.sections.length;i++) if(S.sections[i].kind==="stop"){ ns=S.sections[i]; break; }
+  if(!ns){ if(CHIP.km==null){ CHIP.name=null; } paintChip(); return; }
+  if(CHIP.km==null) CHIP.name=ns.title;    // while GPS is driving, its stop name wins
+  if(!navigator.onLine){ CHIP.wx=null; paintChip(); return; }
+  const c=ns.blocks.map(b=>CUE[b.id]).find(x=>x&&x.pin);
+  if(!c){ paintChip(); return; }
+  const key=c.pin.lat.toFixed(2)+","+c.pin.lon.toFixed(2);
+  const now=Date.now();
+  if(WXC[key] && now-WXC[key].at<9e5){ CHIP.wx=WXC[key]; paintChip(); return; }
+  paintChip();
+  fetch("https://api.open-meteo.com/v1/forecast?latitude="+c.pin.lat+"&longitude="+c.pin.lon+
+        "&current=temperature_2m,wind_speed_10m,precipitation_probability&wind_speed_unit=ms")
+    .then(r=>r.json()).then(j=>{
+      const cu=j.current||{};
+      const w={t:cu.temperature_2m,ws:cu.wind_speed_10m,pp:cu.precipitation_probability||0,at:Date.now()};
+      if(typeof w.t!=="number") return;
+      WXC[key]=w; CHIP.wx=w; paintChip();
+    }).catch(()=>{});
+}
+function render(){
+  const sec=S.sections[SI], b=sec.blocks[BI];
+  try{ localStorage.setItem("gcd-pos",JSON.stringify({id:TOUR.id,si:SI,bi:BI})); }catch(e){}
+  updateWX();
+  list.innerHTML=blockRow(b,sec.kind);
+  try{ list.animate([{opacity:.45},{opacity:1}],{duration:160,easing:"ease-out"}); }catch(e){}
+  list.querySelectorAll(".stop[data-key]").forEach(r=>r.classList.add("open"));
+  list.scrollTop=0;
+  paintTrack();
+  routeLine.setLatLngs(travelled(PROG[b.id]));
+  focusBlock(b.id);
+}
+function showEnd(){
+  try{
+    const u=T()&&T().ui;
+    if(u&&u.thanks) document.querySelector("#endscreen p").textContent=u.thanks;
+    if(u&&u.offline) document.getElementById("offpill").textContent=u.offline;
+  }catch(e){}
+  document.getElementById("endscreen").classList.add("show");
+}
+document.getElementById("endclose").onclick=()=>document.getElementById("endscreen").classList.remove("show");
+function step(d){
+  const f=flat(), pos=f.findIndex(x=>x.si===SI&&x.bi===BI)+d;
+  if(pos>=f.length){ showEnd(); return; }
+  if(pos<0) return;
+  SI=f[pos].si; BI=f[pos].bi; render();
+}
+// Swipe the script sideways to change block. Vertical drags are left alone so
+// the pane still scrolls, and a swipe is only counted if it is clearly sideways.
+(function(){
+  const pane=$("days");
+  let x0=0,y0=0,t0=0,tracking=false;
+  pane.addEventListener("touchstart",e=>{
+    if(e.touches.length!==1){tracking=false;return;}
+    x0=e.touches[0].clientX; y0=e.touches[0].clientY; t0=Date.now(); tracking=true;
+  },{passive:true});
+  pane.addEventListener("touchmove",e=>{
+    if(!tracking||e.touches.length!==1) return;
+    const dx=e.touches[0].clientX-x0, dy=e.touches[0].clientY-y0;
+    if(Math.abs(dy)>Math.abs(dx)) tracking=false;         // they are scrolling
+    else if(Math.abs(dx)>12 && e.cancelable) e.preventDefault();
+  },{passive:false});
+  pane.addEventListener("touchend",e=>{
+    if(!tracking) return;
+    tracking=false;
+    const t=e.changedTouches[0];
+    const dx=t.clientX-x0, dy=t.clientY-y0, ms=Date.now()-t0;
+    if(Math.abs(dx)<60 || Math.abs(dx)<Math.abs(dy)*1.5 || ms>800) return;
+    if(window.__gpsPause) __gpsPause();
+    step(dx<0 ? 1 : -1);
+    pane.animate([{opacity:.35,transform:`translateX(${dx<0?18:-18}px)`},{opacity:1,transform:"none"}],
+                 {duration:180,easing:"ease-out"});
+  },{passive:true});
+})();
+
+// Two-finger sideways swipe, anywhere in the app.
+// Listening on window rather than the text pane: the pointer is often over the
+// map or the track, and Safari hands the gesture to history if nobody claims it.
+(function(){
+  let acc=0, lock=false, reset=null;
+  const onWheel = e=>{
+    const ax=Math.abs(e.deltaX), ay=Math.abs(e.deltaY);
+    if(ax<=ay){ acc=0; return; }                 // vertical — leave it to scroll
+    if(e.cancelable) e.preventDefault();          // stop Safari's back/forward
+    if(lock) return;
+    acc += e.deltaX;
+    clearTimeout(reset);
+    reset = setTimeout(()=>{acc=0;}, 220);        // a gesture that stalls is dropped
+    if(Math.abs(acc) > 55){
+      if(window.__gpsPause) __gpsPause();
+      step(acc > 0 ? 1 : -1);
+      acc = 0; lock = true;
+      setTimeout(()=>{ lock=false; }, 380);
+    }
+  };
+  window.addEventListener("wheel", onWheel, {passive:false, capture:true});
+})();
+
+// ---- GPS: follow the bus ---------------------------------------------------
+// The app watches your position, finds where you are along the road, and turns
+// the pages itself. Swiping by hand pauses it for a minute, then it resumes.
+(function(){
+  const btn=document.getElementById("gpsbtn");
+  if(!btn||!("geolocation" in navigator)){ if(btn) btn.style.display="none"; return; }
+  let watch=null, mark=null, ring=null, pausedUntil=0, wl=null;
+  window.__gpsPause=()=>{ if(watch!=null){ pausedUntil=Date.now()+60000; btn.classList.add("paused"); } };
+  // The dashboard phone must not fall asleep mid-tour: hold a screen wake lock
+  // while following, and take it back whenever the app returns to the front.
+  async function grabLock(){ try{ wl=await navigator.wakeLock.request("screen"); }catch(e){} }
+  function dropLock(){ try{ if(wl) wl.release(); }catch(e){} wl=null; }
+  document.addEventListener("visibilitychange",()=>{ if(watch!=null && !document.hidden) grabLock(); });
+  // Distance + minutes for the topbar chip, fed by the same GPS fix
+  function updateETA(pr){
+    if(pr==null){ __setEta(null,null,null); return; }
+    let ns=null, sp=0;
+    for(const sec of S.sections){
+      if(sec.kind!=="stop"||!sec.blocks.length) continue;
+      const p=PROG[sec.blocks[0].id];
+      if(p>pr+0.05){ ns=sec; sp=p; break; }
+    }
+    if(!ns){ __setEta(null,null,null); return; }
+    const km=(sp-pr)/100*TOTAL;      // CUM/TOTAL are km already
+    __setEta(ns.title, km, Math.max(1,Math.round(km*(R.min/R.km))));
+  }
+  function nearestProgress(la,lo){
+    let bd=1e18,bi=0;
+    for(let i=0;i<GEO.length;i++){
+      const dy=(GEO[i][0]-la)*111320, dx=(GEO[i][1]-lo)*111320*Math.cos(la*Math.PI/180);
+      const d=dy*dy+dx*dx;
+      if(d<bd){ bd=d; bi=i; }
+    }
+    return Math.sqrt(bd)<=400 ? CUM[bi]/TOTAL*100 : null;
+  }
+  function tick(pos){
+    const la=pos.coords.latitude, lo=pos.coords.longitude, acc=pos.coords.accuracy||0;
+    if(!mark){
+      mark=L.marker([la,lo],{interactive:false,zIndexOffset:1000,
+        icon:L.divIcon({className:"",iconSize:[14,14],iconAnchor:[7,7],html:'<div class="gpsdot"></div>'})}).addTo(map);
+      ring=L.circle([la,lo],{radius:acc,color:"#5ec8f2",weight:1,opacity:.35,fillOpacity:.08,interactive:false}).addTo(map);
+    }else{ mark.setLatLng([la,lo]); ring.setLatLng([la,lo]).setRadius(acc); }
+    const pr=nearestProgress(la,lo);
+    updateETA(pr);                             // the chip keeps counting even while paging is paused
+    if(Date.now()<pausedUntil) return;
+    btn.classList.remove("paused");
+    if(pr==null) return;                       // off the route — just show the dot
+    const f=flat(); let best=-1;
+    for(let i=0;i<f.length;i++){
+      const id=S.sections[f[i].si].blocks[f[i].bi].id;
+      if(PROG[id]<=pr+0.2) best=i;
+    }
+    const cur=f.findIndex(x=>x.si===SI&&x.bi===BI);
+    if(best>cur){ SI=f[best].si; BI=f[best].bi; render(); }
+  }
+  btn.onclick=()=>{
+    if(watch!=null){
+      navigator.geolocation.clearWatch(watch); watch=null; pausedUntil=0;
+      btn.classList.remove("on","paused");
+      if(mark){mark.remove();mark=null;} if(ring){ring.remove();ring=null;}
+      __setEta(null,null,null); dropLock();
+      return;
+    }
+    watch=navigator.geolocation.watchPosition(tick,err=>{
+      navigator.geolocation.clearWatch(watch); watch=null; btn.classList.remove("on");
+      __setEta(null,null,null); dropLock();
+      banner("Location unavailable — check permissions in your browser settings.");
+      setTimeout(()=>{const w=document.getElementById("tilewarn"); if(w) w.remove();},6000);
+    },{enableHighAccuracy:true,maximumAge:4000,timeout:15000});
+    btn.classList.add("on");
+    grabLock();
+  };
+})();
+
+$("pv").onclick=()=>{ if(window.__gpsPause) __gpsPause(); step(-1); };
+$("nx").onclick=()=>{ if(window.__gpsPause) __gpsPause(); step(1); };
+document.addEventListener("keydown",e=>{
+  if(e.key==="ArrowLeft"){e.preventDefault();step(-1);}
+  if(e.key==="ArrowRight"){e.preventDefault();step(1);}
+});
+map.on("zoomend",()=>{document.getElementById("zhint").style.display=map.getZoom()>=11?"none":"block";});
+// Map starts small and grows on a tap; the chevron tucks it away again.
+(function(){
+  const m=document.getElementById("map");
+  let mini=true;
+  try{ mini=(localStorage.getItem("gcd-map")||"mini")==="mini"; }catch(e){}
+  function apply(){
+    m.classList.toggle("mini",mini);
+    setTimeout(()=>{ map.invalidateSize();
+      try{ focusBlock(S.sections[SI].blocks[BI].id); }catch(e){} },300);
+    try{ localStorage.setItem("gcd-map",mini?"mini":"big"); }catch(e){}
+  }
+  document.getElementById("mapcover").onclick=()=>{ mini=false; apply(); };
+  document.getElementById("mapmin").onclick=()=>{ mini=true; apply(); };
+  apply();
+})();
+let __rsz;window.addEventListener("resize",()=>{clearTimeout(__rsz);__rsz=setTimeout(()=>map.invalidateSize(),200);});
+setTimeout(()=>map.invalidateSize(),400);
+
+
+render();
+{ const c=CUE[S.sections[0].blocks[0].id];
+  const p=(c&&c.pin)?[c.pin.lat,c.pin.lon]:GEO[0];
+  map.setView(p,13); }
+}   // end boot()
+
+if("serviceWorker" in navigator) window.addEventListener("load",()=>{
+  navigator.serviceWorker.register("sw.js").then(reg=>{
+    // check for a new build whenever the app comes back to the foreground
+    document.addEventListener("visibilitychange",()=>{ if(!document.hidden) reg.update().catch(()=>{}); });
+    // a new service worker took over -> the next load has the new version
+    let hadCtrl = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.addEventListener("controllerchange",()=>{
+      if(!hadCtrl){ hadCtrl=true; return; }   // first install, not an update
+      let tst=document.getElementById("uptoast");
+      if(!tst){ tst=document.createElement("div"); tst.id="uptoast";
+        tst.textContent=(window.T&&T()&&T().ui&&T().ui.updated)||"✨ Updated — tap to reload"; document.body.appendChild(tst);
+        tst.addEventListener("click",()=>location.reload());
+        requestAnimationFrame(()=>tst.classList.add("show")); }
+    });
+  }).catch(()=>{});
+});
+</script>
+<script>
+/* ---- now playing, straight from our own Spotify worker ------------------ */
+(function(){
+  var el=document.getElementById('gnp');
+  if(!el) return;
+  var art=document.getElementById('gnpArt'), txt=document.getElementById('gnpTxt');
+  var SRC='https://little-limit-8eeb.richardjsuffling.workers.dev/now';
+  var PART=0;
+  function showPart(p){
+    var parts=[el.dataset.song, el.dataset.artist].filter(Boolean);
+    if(!parts.length) return;
+    PART=p%parts.length;
+    var sp=document.createElement('span'); sp.textContent=parts[PART];
+    txt.replaceChildren(sp);
+    requestAnimationFrame(function(){
+      var ov=sp.scrollWidth-txt.clientWidth;
+      if(ov>4){ txt.style.setProperty('--ov',(ov+24)+'px'); txt.classList.add('scroll'); }
+      else txt.classList.remove('scroll');
+    });
+  }
+  setInterval(function(){
+    if(el.hidden||!el.dataset.song) return;
+    txt.classList.add('fade');
+    setTimeout(function(){ showPart(PART+1); txt.classList.remove('fade'); },360);
+  },4500);
+  function tick(){
+    if(document.hidden) return;
+    fetch(SRC,{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
+      if(!d||!d.playing||!d.title){ el.classList.remove('on'); el.hidden=true; document.body.classList.remove('hasgnp'); if(window.__repaintChip) __repaintChip(); return }
+      el.dataset.song=d.title; el.dataset.artist=d.artist||'';
+      if(!el.dataset.cycling){ el.dataset.cycling='1'; showPart(0); }
+      if(d.art){ if(art.getAttribute('src')!==d.art) art.src=d.art; art.style.display=''; }
+      else art.style.display='none';
+      if(d.url) el.href=d.url;
+      el.hidden=false; el.classList.add('on'); document.body.classList.add('hasgnp'); if(window.__repaintChip) __repaintChip();
+    }).catch(function(){ el.classList.remove('on'); el.hidden=true; document.body.classList.remove('hasgnp'); });
+  }
+  tick(); setInterval(tick,30000);
+  document.addEventListener('visibilitychange',function(){ if(!document.hidden) tick() });
+})();
+</script>
+</body>
+</html>

@@ -1,40 +1,274 @@
-{"id":"69b6f61371","t":"sagahjälten vars berättelse Gunnar hör hemma i"}
-{"id":"6c202a7353","t":"glaciärvulkanen som satte stopp för Europas flygtrafik 2010"}
-{"id":"cc35426b78","t":"gården vid dess fot som skottade aska och sålde historien"}
-{"id":"df018d63ae","t":"Det står i arkiven, inte bara i poesin — noterat i **Árni Magnússons jordebok (1714)** och i reseboken från **1756**. Ett **kors inristat i taket** får folk att gissa på irländska munkar före nordborna — obevisat, så servera det som ”vissa tror”."}
-{"id":"3e488474a0","t":"Rúturs grotta, en av de största människogjorda grottorna på Island"}
-{"id":"73a26dda87","t":"gården och klippan som grottan är uthuggen ur"}
-{"id":"a2a9485e4c","t":"berget dit dråparen Björn flydde, och som fortfarande bär hans namn"}
-{"id":"dcd8c7e2e9","t":"SS:s pseudovetenskapliga enhet som sökte här 1936"}
-{"id":"4e8dc9135e","t":"vattenfallet framför dig, som störtar 60 m utför den gamla havsklippan"}
-{"id":"e9ac4e99b7","t":"älven som kliver rakt ut över kanten"}
-{"id":"4b06aeeeea","t":"landnamsmannen som gömde en guldkista bakom vattnet"}
-{"id":"8f89e496c9","t":"vandringsleden från toppen, över passet som utbrottet 2010 sprängde upp"}
-{"id":"1c2f3c71f4","t":"glaciären på ena sidan av passet"}
-{"id":"6e28dadd80","t":"iskalotten på andra sidan"}
-{"id":"aedf2c462f","t":"byn bakom parkeringen, med sitt torvhusmuseum"}
-{"id":"b641a972d5","t":"bonusvattenfallet som gömmer sig i den gröna ravinen intill"}
-{"id":"623d3671b5","t":"Skógafoss → Kirkjubæjarklaustur"}
-{"id":"a863fc518d","t":"Skyltar längs stigen visar var fronten *brukade* nå: ”här… och här… och här.” Du har just gått **flera decennier av reträtt på några minuter.**"}
-{"id":"8dd8e5788b","t":"glaciärtungan i slutet av den här stigen, som drar sig tillbaka ungefär 40 m om året"}
-{"id":"af8fe9b85e","t":"iskalotten den rinner av, Islands fjärde största"}
-{"id":"cc790c0c45","t":"vulkanen som ligger begravd rakt under den"}
-{"id":"949cf6835f","t":"vulkanen på andra sidan tungan"}
-{"id":"b472ffebe8","t":"Alla kallar det en ”DC-3”. Det är det inte. Det är en **US Navy Super DC-3 (en Douglas R4D-8 / C-117D)** — samma familj, fast den biffiga kusinen som börjat gymma. Planet har burit fel namn i femtio år."}
-{"id":"6fce5d6f9c","t":"Den **21 november 1973** var det på väg **från Höfn till Keflavík** när **is täppte igen båda förgasarna över Vatnajökulls iskalott** och båda motorerna stannade. Mytkross: planet fick **inte** ”slut på bränsle” — det isade igen och blev, med andrepilotens ord, ”ett rejält överviktigt segelflygplan”."}
-{"id":"814124457d","t":"den svarta sandurslätten som vraket ligger ute på"}
-{"id":"8cae6fab79","t":"Titta åt höger, klockan två — det branta, ensamma berget."}
-{"id":"d389159fd4","t":"**Pétursey** (”Peters ö”) är **móberg** — palagonit, berget av aska och bråte som bildas när en vulkan **får utbrott under is eller hav**; het magma mötte kallt vatten, splittrades mitt i smällen och cementerades till de här branta väggarna. Samma recept som **Drangurinn** i närheten."}
-{"id":"cb2f3ff589","t":"Under större delen av holocen omgav Atlanten det faktiskt, och sjöfarare använde det som **landmärke** — tills **Katlas** svarta sand sakta fyllde gapet och strandsatte det inne i landet. Dess gamla namn betydde ordagrant **”Höga ön”.**"}
-{"id":"a7cf5d12d5","t":"”Peters ö”, det branta 275 m höga berget till höger om dig"}
-{"id":"6a01c50ca0","t":"palagoniten av aska och bråte som det består av"}
-{"id":"5fba72cfd8","t":"vulkanen vars svarta sand fyllde gapet och strandsatte det inne i landet"}
-{"id":"9e5e1060b6","t":"sagan som nämner det som en tillflykt"}
-{"id":"7d1e957fd8","t":"den lilla kyrkan med rött tak på fälten till vänster om dig"}
-{"id":"7baac9a0d2","t":"sonen som växte upp här och blev Islands förste statsarkitekt"}
-{"id":"d9500662c5","t":"fadern, snickarmästaren som byggde den här kyrkan"}
-{"id":"159e21ec47","t":"**Dýrhólaey** (”dörrhöjdsön”) föddes under vattnet **för 100 000 år sedan** i ett undervattensutbrott — till hälften tuff (**Háey**), till hälften basalt (**Lágey**) — sedan hamrade vågorna fram en väldig naturlig **klippbåge i havet**, namnets ”dörr”, under **100 m höga klippor.**"}
-{"id":"51b23c636a","t":"Där uppe står en borgliknande fyr — **ett av de starkaste ljusen längs kusten** — det första tornet 1910, betongfyren **1927, ritad av Guðjón Samúelsson**, samme arkitekt som kyrkan några stopp tillbaka."}
-{"id":"65e95badfa","t":"Länge kallad **fastlandets sydligaste punkt** — tills **Katlas flod 1918 byggde Kötlutangi**, som höll titeln **i flera decennier** innan havet bar sanden västerut igen. Vulkanen flyttade målstolparna; Atlanten flyttade tillbaka dem. I **oktober 1993** flög piloten **Arngrímur Jóhannsson** och alltingsledamoten **Árni Johnsen** ett litet flygplan genom bågen — tre gånger, för att bevisa att den första inte var tur."}
-{"id":"9cb230cd86","t":"”dörrhöjdsön”, den höga udden med fyren och klippbågen"}
-{"id":"ed1d26deac","t":"dess tuffhalva och dess basalthalva"}
+{"id": "69b6f61371", "t": "sagahjälten vars berättelse Gunnar hör hemma i"}
+{"id": "6c202a7353", "t": "glaciärvulkanen som satte stopp för Europas flygtrafik 2010"}
+{"id": "cc35426b78", "t": "gården vid dess fot som skottade aska och sålde historien"}
+{"id": "df018d63ae", "t": "Det står i arkiven, inte bara i poesin — noterat i **Árni Magnússons jordebok (1714)** och i reseboken från **1756**. Ett **kors inristat i taket** får folk att gissa på irländska munkar före nordborna — obevisat, så servera det som ”vissa tror”."}
+{"id": "3e488474a0", "t": "Rúturs grotta, en av de största människogjorda grottorna på Island"}
+{"id": "73a26dda87", "t": "gården och klippan som grottan är uthuggen ur"}
+{"id": "a2a9485e4c", "t": "berget dit dråparen Björn flydde, och som fortfarande bär hans namn"}
+{"id": "dcd8c7e2e9", "t": "SS:s pseudovetenskapliga enhet som sökte här 1936"}
+{"id": "4e8dc9135e", "t": "vattenfallet framför dig, som störtar 60 m utför den gamla havsklippan"}
+{"id": "e9ac4e99b7", "t": "älven som kliver rakt ut över kanten"}
+{"id": "4b06aeeeea", "t": "landnamsmannen som gömde en guldkista bakom vattnet"}
+{"id": "8f89e496c9", "t": "vandringsleden från toppen, över passet som utbrottet 2010 sprängde upp"}
+{"id": "1c2f3c71f4", "t": "glaciären på ena sidan av passet"}
+{"id": "6e28dadd80", "t": "iskalotten på andra sidan"}
+{"id": "aedf2c462f", "t": "byn bakom parkeringen, med sitt torvhusmuseum"}
+{"id": "b641a972d5", "t": "bonusvattenfallet som gömmer sig i den gröna ravinen intill"}
+{"id": "623d3671b5", "t": "Skógafoss → Kirkjubæjarklaustur"}
+{"id": "a863fc518d", "t": "Skyltar längs stigen visar var fronten *brukade* nå: ”här… och här… och här.” Du har just gått **flera decennier av reträtt på några minuter.**"}
+{"id": "8dd8e5788b", "t": "glaciärtungan i slutet av den här stigen, som drar sig tillbaka ungefär 40 m om året"}
+{"id": "af8fe9b85e", "t": "iskalotten den rinner av, Islands fjärde största"}
+{"id": "cc790c0c45", "t": "vulkanen som ligger begravd rakt under den"}
+{"id": "949cf6835f", "t": "vulkanen på andra sidan tungan"}
+{"id": "b472ffebe8", "t": "Alla kallar det en ”DC-3”. Det är det inte. Det är en **US Navy Super DC-3 (en Douglas R4D-8 / C-117D)** — samma familj, fast den biffiga kusinen som börjat gymma. Planet har burit fel namn i femtio år."}
+{"id": "6fce5d6f9c", "t": "Den **21 november 1973** var det på väg **från Höfn till Keflavík** när **is täppte igen båda förgasarna över Vatnajökulls iskalott** och båda motorerna stannade. Mytkross: planet fick **inte** ”slut på bränsle” — det isade igen och blev, med andrepilotens ord, ”ett rejält överviktigt segelflygplan”."}
+{"id": "814124457d", "t": "den svarta sandurslätten som vraket ligger ute på"}
+{"id": "8cae6fab79", "t": "Titta åt höger, klockan två — det branta, ensamma berget."}
+{"id": "d389159fd4", "t": "**Pétursey** (”Peters ö”) är **móberg** — palagonit, berget av aska och bråte som bildas när en vulkan **får utbrott under is eller hav**; het magma mötte kallt vatten, splittrades mitt i smällen och cementerades till de här branta väggarna. Samma recept som **Drangurinn** i närheten."}
+{"id": "cb2f3ff589", "t": "Under större delen av holocen omgav Atlanten det faktiskt, och sjöfarare använde det som **landmärke** — tills **Katlas** svarta sand sakta fyllde gapet och strandsatte det inne i landet. Dess gamla namn betydde ordagrant **”Höga ön”.**"}
+{"id": "a7cf5d12d5", "t": "”Peters ö”, det branta 275 m höga berget till höger om dig"}
+{"id": "6a01c50ca0", "t": "palagoniten av aska och bråte som det består av"}
+{"id": "5fba72cfd8", "t": "vulkanen vars svarta sand fyllde gapet och strandsatte det inne i landet"}
+{"id": "9e5e1060b6", "t": "sagan som nämner det som en tillflykt"}
+{"id": "7d1e957fd8", "t": "den lilla kyrkan med rött tak på fälten till vänster om dig"}
+{"id": "7baac9a0d2", "t": "sonen som växte upp här och blev Islands förste statsarkitekt"}
+{"id": "d9500662c5", "t": "fadern, snickarmästaren som byggde den här kyrkan"}
+{"id": "159e21ec47", "t": "**Dýrhólaey** (”dörrhöjdsön”) föddes under vattnet **för 100 000 år sedan** i ett undervattensutbrott — till hälften tuff (**Háey**), till hälften basalt (**Lágey**) — sedan hamrade vågorna fram en väldig naturlig **klippbåge i havet**, namnets ”dörr”, under **100 m höga klippor.**"}
+{"id": "51b23c636a", "t": "Där uppe står en borgliknande fyr — **ett av de starkaste ljusen längs kusten** — det första tornet 1910, betongfyren **1927, ritad av Guðjón Samúelsson**, samme arkitekt som kyrkan några stopp tillbaka."}
+{"id": "65e95badfa", "t": "Länge kallad **fastlandets sydligaste punkt** — tills **Katlas flod 1918 byggde Kötlutangi**, som höll titeln **i flera decennier** innan havet bar sanden västerut igen. Vulkanen flyttade målstolparna; Atlanten flyttade tillbaka dem. I **oktober 1993** flög piloten **Arngrímur Jóhannsson** och alltingsledamoten **Árni Johnsen** ett litet flygplan genom bågen — tre gånger, för att bevisa att den första inte var tur."}
+{"id": "9cb230cd86", "t": "”dörrhöjdsön”, den höga udden med fyren och klippbågen"}
+{"id": "ed1d26deac", "t": "dess tuffhalva och dess basalthalva"}
+{"id": "3bbbd90c97", "t": "havsstacknålarna ni ser längre fram från den"}
+{"id": "d1f76c7edf", "t": "Kliv av vid Reynisfjara — och före allt annat: håll er högt uppe på sanden, långt från vattnet."}
+{"id": "3455cccfd9", "t": "Islands vackraste strand är också den som kräver mest respekt — vördnad först, men fötterna stadigt placerade långt från vattnet."}
+{"id": "6420d315a7", "t": "Svart sand, stentroll, en basaltkatedral — och ett hav som har tagit liv. Titta hur mycket ni vill; gör det bara härifrån."}
+{"id": "e11ecdf22f", "t": "⚠️ **Säkerheten först, alltid:** de lömska ”sneaker waves” (laumualda) här är dödliga och oberäkneliga — de sveper mycket högre upp på stranden än havet framför er antyder, vattnet är iskallt, och underströmmen drar. Människor har drunknat här, flera de senaste åren. Håll er långt bak, undvik den våta sanden, och vänd aldrig ryggen mot havet för ett foto."}
+{"id": "8f7239423f", "t": "Klippan är stuðlaberg — sexkantiga basaltpelare som bildades när tjock lava svalnade långsamt och sprack upp i nästan perfekta pelare; grottan Hálsanefshellir viker dem till en naturlig piporgel som ni kan gå in i när tidvattnet tillåter."}
+{"id": "a37d62b8d0", "t": "Utanför kusten står havsstackarna Reynisdrangar. Den gamla historien: två nattroll höll på att dra ett tremastat skepp i land när solen gick upp och hann ifatt dem — och troll blir till sten i dagsljus. De står fortfarande där ute, mitt i kuppen, några tusen år senare."}
+{"id": "13e7cd138f", "t": "På sommaren fylls Reynisfjalls klippor ovanför av häckande sjöfåglar — lunnefåglar, stormfåglar, sillgrisslor — så ta med zoomen såväl som vidvinkeln."}
+{"id": "0683335a6d", "t": "🎬 **På vita duken:** den här svarta kusten spelar stranden vid Eastwatch-by-the-Sea i *Game of Thrones*, och stranden och stackarna har synts i *Rogue One*, *Star Trek Into Darkness* och *Noah*."}
+{"id": "24b369aaa2", "t": "den svarta sandstranden vi står på"}
+{"id": "ef7a38cc2c", "t": "havsstackarna utanför kusten, två nattroll överraskade av soluppgången"}
+{"id": "7f896b5558", "t": "klipporna ovanför, fulla av häckande sjöfåglar på sommaren"}
+{"id": "71b0309315", "t": "basaltgrottan ni kan gå in i när tidvattnet tillåter"}
+{"id": "ec3ad5564b", "t": "en lömsk våg, den dödliga svallvågen som sveper långt upp på den här stranden"}
+{"id": "98529bd139", "t": "Varje invånare är tränad att **springa till den här kyrkan** i samma stund som sirenerna ljuder, och övningarna utgår från att det kan bli **väldigt kort varsel över huvud taget**. (Ni kommer att se ”cirka 15 minuter” citeras för förvarningen; ingen isländsk officiell källa anger det, så stryk siffran och behåll instruktionen.) I Vík är ”spring till kyrkan” ingen predikan — det är katastrofpolicy."}
+{"id": "010978b343", "t": "kyrkan med rött tak på den enda höjden i Vík"}
+{"id": "e04eab2ad4", "t": "jökeln som Katla sitter under"}
+{"id": "2fcee62258", "t": "Hjörleifshöfði"}
+{"id": "2fafe932b3", "t": "**Hjörleifshöfði** — en **221 m hög móberg-udde** — är uppkallad efter **Hjörleifur Hróðmarsson**, svuren **fosterbroder till Ingólfur Arnarson, Islands förste landnämare**. De två **seglade hit tillsammans omkring 874** och skildes sedan åt: Ingólfur lät gudarna välja hans hem och följde sina högsätesstolpar till Reykjavík; Hjörleifur — som **vägrade offra till någon gud** — parkerade vid första bästa udde. **Hans gravhög kröner fortfarande toppen.**"}
+{"id": "070befbfdd", "t": "När våren kom, säger *Landnámabók*: **en enda oxe** — så hans **förslavade irländare fick dra plogen**. De dödade oxen och **skyllde på en björn**. Island **har inga björnar** — nykomlingarna visste bara inte det ännu. När nordmännen skingrades för att jaga den **överföll trälarna dem en efter en**, Hjörleifur inräknad, och flydde sedan med kvinnorna och båtarna till öarna utanför kusten."}
+{"id": "2c01549492", "t": "Ingólfur hittade kropparna, spårade mördarna till de öarna och dödade dem allihop. Hans griftetal: **”Ett sorgligt slut för en god man, dräpt av trälar — så går det när man vägrar offra.”** De öarna blev **Vestmannaeyjar** — **”Västmännens öar”**, nordbornas namn på **irländska gaeler** — **uppkallade efter de förslavade män som utförde dådet.**"}
+{"id": "b7ea2d90f9", "t": "Vålnaden kom **tre århundraden senare**. **Katla**, en fruktad hushållerska på klostret **Þykkvabæjarklaustur** i närheten, ägde **magiska byxor som aldrig tröttnade**. Fåraherden **Barði** lånade dem; hon **dränkte honom i vasslekaret**. När den sjunkande vasslen hotade att avslöja kroppen flydde hon upp på **Mýrdalsjökull** och **kastade sig i klyftan som fortfarande kallas Kötlugjá — ”Katlas rämna”** — vulkanens öppning. Kort därefter **bröt en glaciärflod fram ur isen**. **Vulkanen är uppkallad efter henne** — och varje utbrott, säger man, är hennes humör."}
+{"id": "81dd87a248", "t": "Precis som Pétursey **var den här udden en gång en ö** — förtöjd vid Island av milsvida fält av Katlas svarta sand."}
+{"id": "aabc74cca1", "t": "den 221 m höga platt-toppade udden längre fram, med en gravhög på toppen"}
+{"id": "b6b1e5b869", "t": "mannen den är uppkallad efter, överfallen av sina egna trälar"}
+{"id": "3e12b02085", "t": "hans svurne fosterbroder, Islands förste landnämare"}
+{"id": "4c3e0a45c9", "t": "“Västmännens öar”, uppkallade efter de förslavade irländare som flydde dit"}
+{"id": "f1bdc570cb", "t": "hushållerskan i sägnen, och vulkanen som är uppkallad efter henne"}
+{"id": "c1764978c2", "t": "“Katlas rämna”, klyftan hon kastade sig i"}
+{"id": "2946d9e4ec", "t": "klostret där hon skötte hushållet"}
+{"id": "e49b46d367", "t": "fåraherden hon dränkte i vasslekaret"}
+{"id": "3606e01878", "t": "berget en bit tillbaka längs vägen som också en gång var en ö"}
+{"id": "3d89d1e1ba", "t": "Laufskálavarða"}
+{"id": "3e4559c366", "t": "Titta åt vänster — den mossklädda lavaåsen täckt av stenrösen."}
+{"id": "e98b22e8eb", "t": "**Laufskálavarða** är en låg **lavaås på östra kanten av Mýrdalssandur**, vid floden **Kúðafljót** — täckt av en matta av **stenrösen.** Seden: den som korsade den här dödliga svarta öknen **för första gången** staplade ett röse för en **trygg färd**, och århundraden av förstagångsresenärer byggde fältet ni ser."}
+{"id": "fb33196215", "t": "Faran var verklig — **Mýrdalssandur är Katlas översvämningsstråk**, svept av **jökulhlaupar** utan förvarning, så en liten övernaturlig försäkring var helt rimlig."}
+{"id": "0deddd95b0", "t": "Namnet kommer från **Laufskálar**, en stor gård från landnamstiden här — traditionen ger den **24 dörrar på järngångjärn** — begravd av **ett tidigt Katla-utbrott.** (Ni kommer att se årtalet ”894” på skyltarna; matten går inte ihop, så kalla det bara ett tidigt Katla-utbrott.)"}
+{"id": "74a1c24774", "t": "Bygg inte på det: besökare **ombeds numera att inte bygga nya rösen** — fältet är skyddat kulturarv, inte ett gör-det-själv-projekt."}
+{"id": "940352aa23", "t": "De gröna konerna utspridda över **Álftaver** strax öster härom är **gervigígar**, uppsprängda genom **Eldgjá**-lavan underifrån där den kapslade in våtmarken — **Álftaversgígar**, ett skyddat naturminne på **3 436,1 hektar**."}
+{"id": "e52eeff3cf", "t": "Tusen år av nervösa resenärer, som var och en lämnade en sten och en bön innan de gav sig ut i Katlas bakgård."}
+{"id": "2c6520f4be", "t": "Rösena är inte dekoration — de är kvittona från alla som korsade här rädda."}
+{"id": "dba3a90daa", "t": "den låga lavaåsen täckt av resenärernas rösen"}
+{"id": "c7c8eb6cf3", "t": "den svarta översvämningsöknen den ligger på kanten av, Katlas översvämningsstråk"}
+{"id": "0df77493c4", "t": "floden intill den"}
+{"id": "e165a695e9", "t": "Eldhraun"}
+{"id": "5e0c0192d1", "t": "Titta runt omkring er — den mossvarta slätten är Eldhraun, Laki-lavan."}
+{"id": "a47f646feb", "t": "I **juni 1783** rämnade sprickan **Lakagígar** — en **27 km lång rämna med fler än 140 öppningar** — och fick utbrott i **åtta månader** (**Skaftáreldar**, ”Skaftá-eldarna”), och lade ut **14,7 km³ lava över ~600 km².** Det gör den till **historisk tids näst största lavaflod, efter Eldgjá** och dess **~20 km³** — större ändå, men **8 700 år innan någon fanns här som kunde se det**, är **Þjórsárhraunið mikla**. Ni kör tvärs över tvåan på listan."}
+{"id": "6ca491d768", "t": "Och ändå dödade lavan knappt någon — det gjorde **gasen**. Sprickan andades ut **~122 miljoner ton svaveldioxid** plus en fluordimma som förgiftade gräset, och svälten som följde har ett eget namn: **Móðuharðindin, ”Dimhårdåren”.** Diset korsade till och med **Europa** och slog sönder skördar ända bort i Frankrike."}
+{"id": "c50e80eb1c", "t": "Det gröna luddet är **grámosi**, raggmossa — **årtionden att växa, ett kängavtryck att förstöra.** Beundra den genom fönstret."}
+{"id": "726c42f8fb", "t": "**Skaftáreldar** började den **8 juni 1783** och upphörde inte förrän den **7 februari 1784** — åtta månader på dagen, nära nog."}
+{"id": "34ed74fa4b", "t": "Den spred sig inte artigt över landskapet, den gick ner i floderna: den **11 juni** stannade **Skaftá** helt enkelt, och den **3 augusti** gick **Hverfisfljót** samma väg. Två floder raderade, av något som kom nedför deras egna flodbäddar."}
+{"id": "c56f82b95f", "t": "Landgræðslan mäter mossmattan till i genomsnitt **38 centimeter** tjock, vilket också är varför inget annat växer här — **långt över två århundraden senare** är kärlväxterna fortfarande glesa, för mattan kväver fröna innan de gror."}
+{"id": "9e30b7bef7", "t": "Aritmetiken i **Móðuharðindin**: ungefär **10 000 döda — omkring en femtedel av alla islänningar** — befolkningen ner från strax under **50 000** till strax under **40 000** vid slutet av **1786**, medan **smittkoppor** tog ytterligare **1 500** och **jordskalv i augusti 1784** jämnade omkring **400 gårdar** med marken."}
+{"id": "3c52181eb8", "t": "Diset bildade ett sammanhängande moln över hela norra halvklotet, **30 till 90 breddgrader**, och deponerade **över ett ton svavelsyra per kvadratkilometer**. Europa kallade det den torra dimman och ägnade den sommaren åt att undra var den kom ifrån."}
+{"id": "3b13b0ac5e", "t": "Rikssiffran döljer den lokala. **Vatnajökulsþjóðgarður** anger boskapsförlusten till **runt tre fjärdedelar av vartenda djur i landet** — och i de hårdast drabbade distrikten, de vi just kört igenom, **dog omkring 40 % av människorna.** (En på fem är rubriken. Här ute var det två på fem.)"}
+{"id": "a1a966f4b0", "t": "En spricka, ett riktigt uselt år, en hel kontinents väder omstuvat. Det vackraste här ute är också det dödligaste."}
+{"id": "8f050698f8", "t": "Alla andra lavafält är kulisser. Det här har ett dödstal."}
+{"id": "24ed03b5ea", "t": "det mossvarta lavafältet vi kör tvärs över"}
+{"id": "067c8728b3", "t": "den 27 km långa rämnan med fler än 140 öppningar som spydde ut den"}
+{"id": "e21d7a047c", "t": "“Skaftá-eldarna”, det åtta månader långa utbrottet 1783"}
+{"id": "e5af10ca7e", "t": "“Dimhårdåren”, svälten som följde och dödade en femtedel av islänningarna"}
+{"id": "eef0728a77", "t": "raggmossa, det gröna luddet på lavan"}
+{"id": "d9627508e6", "t": "Kirkjubæjarklaustur"}
+{"id": "fab4bc4466", "t": "Vid Kirkjubæjarklaustur."}
+{"id": "6c851b9a72", "t": "Traditionen (via *Landnámabók*) säger att **Papar** — irländska munkar — var här **före nordborna**, och att marken var så välsignad att ingen hedning kunde bosätta sig. År **1186** gjorde benediktinerna det officiellt: **Kirkjubæjar kloster**, ett nunnekloster som drevs fram till **reformationen 1550.**"}
+{"id": "5b01eb1814", "t": "Ortnamnen skvallrar fortfarande om nunnorna: **Systrafoss** (”systrarnas fall”), sjön **Systravatn**, och **Systrastapi** — klippan där, enligt den mörkare versionen, två systrar brändes för synd och rentvåddes först långt senare."}
+{"id": "3995fd1ccc", "t": "I närheten ligger **Kirkjugólf**, ”kyrkgolvet”: en fläck av **pelarbasalt** nedsliten så platt att den ser ut som ett kaklat katedralgolv. Ingen lade det — **vulkanen skötte kakelsättningen.**"}
+{"id": "8a12b06afa", "t": "Och det var här som **pastor Jón Steingrímsson** höll sin **Eldmessa — ”Eldpredikan” — den 20 juli 1783**, predikande medan Laki-lavan vällde närmare. Den stannade vid socknens kant. Han fortsatte predika."}
+{"id": "af54b0f63b", "t": "Klostret grundades av **Þorlákur helgi**, biskop av Skálholt och sedermera Islands skyddshelgon, och dess första abbedissa var **Halldóra**, om vilken källorna säger nästan ingenting alls."}
+{"id": "10724b2667", "t": "Bakom sägnen om de två systrarna finns ett dokumenterat fall: år **1343** blev en nunna i det här huset — källorna kan inte enas om det var **Katrín eller Kristín** — **bränd på bål** för kätteri och för att skriftligen ha gett sig åt djävulen."}
+{"id": "ec6af15f68", "t": "Hon är en avvikare två gånger om. Islands egentliga bålbränningsera var **1600-talet** — den **första bränningen för trolldom** skedde **1625** och den sista **1685** — och av ungefär **25 islänningar** som någonsin brändes gällde omkring **23** trolldom, och den överväldigande majoriteten var **män**."}
+{"id": "b7f3cca009", "t": "**Kirkjugólf** är inte nedvittrat platt, det är halshugget — *jökul- og brimsorfið stuðlaberg*, pelare avhyvlade av en glaciär och skurade av havet. Skyddat **náttúruvætti sedan 1987**, med en **10 meters** fredningszon och en **50 meters** buffert, så gå fram till det men ställ er inte på det."}
+{"id": "c40af81f3c", "t": "**Séra Jón Steingrímsson**, **1728–1791**, är **eldklerkur**, eldprästen, och skälet till att vi vet något av det här i detalj — han skrev ner utbrottet nästan dag för dag. Han begravde också väldigt många i den socken han hållit samman, när svälten väl kom."}
+{"id": "68d7882f46", "t": "Två fotnoter som historien oftast tappar. Anklagelserna mot nunnan **1343** var inte bara kätteri och att skriftligen ha gett sig åt djävulen — hon anklagades också för att ha **skändat Kristi lekamen.** Och det marken visar vid Eldpredikan är en lavafront som **stannade av**, hejdad av terrängen och av sin egen svalnande skorpa. Båda sakerna är sanna på samma gång, och islänningar har aldrig känt något trängande behov av att välja mellan dem."}
+{"id": "ab76bf795d", "t": "En by som svär på att en präst vann diskussionen mot ett lavaflöde — med ett naturligt katedralgolv i basalt som scendekor."}
+{"id": "6eb7d32a3e", "t": "De flesta predikningar känns bara som om de varar i evighet. Hans stoppade faktiskt en vulkan."}
+{"id": "7d42c55973", "t": "byn vi stannar i, hem för ett kloster från 1186 till 1550"}
+{"id": "28160a6fc9", "t": "“systrarnas fall”, uppkallat efter de nunnorna"}
+{"id": "2bd8ca41e3", "t": "“kyrkgolvet”, en fläck pelarbasalt nedsliten platt som kakel"}
+{"id": "bb7d00c23b", "t": "prästen som höll Eldpredikan här 1783"}
+{"id": "c7d2b93304", "t": "de irländska munkar som traditionen säger var här före nordborna"}
+{"id": "f1a83a2357", "t": "Kirkjubæjarklaustur → Fjallsárlón"}
+{"id": "9e10aeea98", "t": "Fjaðrárgljúfur"}
+{"id": "6634fa0fce", "t": "Ni kan inte se den från vägen — den gömmer sig i den låga åsen till vänster. Vi svänger av mot den."}
+{"id": "f94375ad03", "t": "**Vägläge, så att körordningen förblir ärlig:** avfarten till **väg 206** lämnar väg 1 vid **63.76274 / -18.11862**, ungefär **5 km väster om Kirkjubæjarklaustur** — så på väg österut passerar vi den *innan* byn. Vi tar bekvämlighetsstoppet i Klaustur först och **vänder tillbaka de sex kilometrarna** till kanjonen."}
+{"id": "c158a9a4cc", "t": "**Fjaðrárgljúfur** (”fjäderflodens kanjon”) är **ungefär 1,5 km lång och upp till 100 m djup** — det är siffrorna i dess eget skyddsbeslut — en slingrande klyfta med mossgröna väggar av **palagonit (móberg)**."}
+{"id": "faf4f78f74", "t": "Två åldrar, blanda inte ihop dem: **berget är ungefär 2 miljoner år gammalt** (istidspalagonit), men **skärandet började för omkring 10 000 år sedan, i slutet av den senaste istiden**, när smältvatten från en retirerande glaciär sågade rakt ner genom det mjuka berget — **och det pågår fortfarande i dag.**"}
+{"id": "7f63c7f445", "t": "Floden **Fjaðrá** sköter fortfarande grävandet, ett korn i taget. Den där slingrande formen är bara vatten som tar den lata vägen — och gör konst av den."}
+{"id": "ee437ff2fe", "t": "**2015 filmade Justin Bieber** *I'll Show You* vadande genom den; Instagram gjorde resten. Så många kängor trampade mossan att platsen nu **stänger periodvis för att återhämta sig.** Två miljoner år av berg, nästan nednött av en enda musikvideo."}
+{"id": "b5e83115a4", "t": "🎬 **På vita duken:** den här slingrande kanjonen spelar också med i drakflygningssekvensen i *Game of Thrones* (säsong 8, avsnitt 1, strax före landningen vid Skógafoss)."}
+{"id": "c68b79598a", "t": "Den är inte färdig. Skyddsbeslutet konstaterar rakt ut att skärandet **fortfarande pågår**, och **100 meter** på **10 000 år** blir ungefär **en centimeter om året** — hundra meter berg bortfört i ungefär den takt era naglar växer."}
+{"id": "91f0e2cd4a", "t": "”Stänger periodvis” har hårda datum. Den stängde i **februari 2019** för vattensjuk mark och öppnade igen **31 maj 2019**; sedan gick meddelandet ut den **5 april 2023** och grinden stängdes morgonen därpå, **kl. 09:00 den 6 april 2023**, med stöd av nödbefogenheten i **artikel 25a i naturvårdslagen nr 60/2013**, och öppnade igen **20 april 2023** efter två veckor av grus som bars in och lades ut. Det gruset är vad ni står på."}
+{"id": "7e63c862c0", "t": "Den blev slutligen skyddad den **11 maj 2024** genom **Auglýsing nr. 555/2024**, som omfattar **0,15 km²** — **femton hektar**. En plätt ni kunde promenera över på tio minuter behövde ett eget rättsligt instrument."}
+{"id": "869bcd6aa1", "t": "Och stängningarna fungerar: efter den 2019 noterade **Umhverfisstofnun** att vegetationen tagit sig **anmärkningsvärt väl** av att bli lämnad i fred — vilket är hela argumentet för stigen, i en enda mening."}
+{"id": "2f9187c6ea", "t": "Tiotusen år av tålmodigt smältvatten — mot en popstjärna och en mobilkamera."}
+{"id": "90e92e7edc", "t": "Glaciären behövde årtusenden för att skära ut den. Vi slet nästan ut den på en helg."}
+{"id": "00a6bd785b", "t": "“fjäderflodens kanjon”, upp till 100 m djup på er vänstra sida"}
+{"id": "3208ceae90", "t": "floden som fortfarande sköter grävandet"}
+{"id": "f9f227128e", "t": "palagonit, det mjuka mossgröna berget i dess väggar"}
+{"id": "17629b3074", "t": "Foss á Síðu"}
+{"id": "4c30ce257d", "t": "Titta åt vänster — det tunna vattenfallet nedför klippan bakom gården."}
+{"id": "aecde0252a", "t": "**Foss á Síðu** är ett smäckert vattenfall ungefär **10 km öster om Kirkjubæjarklaustur**, som störtar utför klippan bakom gården med samma namn — matat av den lilla sjön **Þórutjörn** uppe på heden. Gården är från landnamstiden, namngiven i **Landnámabók.**"}
+{"id": "75a883a838", "t": "Dess partytrick: i stark sydlig vind fångar byarna det fallande vattnet och **blåser det tillbaka uppåt och åt sidan**, så att fallet tycks **hälla uppåt.**"}
+{"id": "8e6dc21096", "t": "Strax österut ligger **Dverghamrar**, ”Dvärgklipporna” — en vägg av **pelarbasalt** som sägs hysa **det dolda folket**; en lokal berättelse från **1904** låter en gårdsflicka höra dvärgarna sjunga en **psalm** i klipporna."}
+{"id": "7cc78aaf11", "t": "Mörkare fotnot: folktron knyter Foss till en **förbannelse** — en spökhund, **Móri**, som sägs förfölja en familj i **nio generationer.** Island gör inga halvdana hemsökta hus."}
+{"id": "f56cc406a0", "t": "Vatten som rinner uppåt, dvärgar som sjunger psalmer och en förbannelse med garanti i nio generationer — allt vid en enda gård längs vägen."}
+{"id": "01e4c87697", "t": "Blinka, och det är ett vackert vattenfall. Stanna en minut, och det är en hel folktrobox."}
+{"id": "ad61c9dff5", "t": "det tunna vattenfallet bakom gården, som en stark sydvind blåser tillbaka uppåt"}
+{"id": "c1eaba672f", "t": "“Dvärgklipporna”, pelarbasalten strax österut, som sägs hysa det dolda folket"}
+{"id": "4a73c71d24", "t": "spökhunden som sägs förfölja en familj här i nio generationer"}
+{"id": "1e3789b76f", "t": "Orustuhóll"}
+{"id": "897e28c62e", "t": "Titta åt höger — den ensamma klippknölen som reser sig över den svarta lavan."}
+{"id": "9fdd3898de", "t": "**Orustuhóll** (”stridskullen”) är en **klippknöl** som före **1783** låg som en ö i **Hverfisfljóts flodslätt**, omgiven av vatten och sand."}
+{"id": "033dc1e5e7", "t": "När **Skaftáreldar** (Laki-eldarna) skickade **Eldhraun/Brunahraun**-lavan vällande österut **delade sig flödet runt kullen och lämnade den stående** — en grön överlevarö i ett hav av färskt svart berg."}
+{"id": "a3a8030b8f", "t": "Så det är en sällsynthet: en bit av **landskapet före 1783** som ni fortfarande kan se, strandsatt inne i lavan — och distriktet runtomkring tömdes. **Vatnajökulsþjóðgarður** räknar **tjugo gårdar helt begravda och trettio till förstörda**; **Vísindavefur** räknar **tretton gårdstun under lavan och tjugonio brukningsenheter övergivna**. Siffran beror på om man räknar hus eller mark."}
+{"id": "67ac7634c2", "t": "En geoplats i **Katla Geopark**; namnet antyder en gammal stridssägen, men det verkliga dramat är geologiskt — en klippknöl mot **historisk tids näst största lavaflod, efter Eldgjá** (större ändå, men 8 700 år innan någon fanns här som kunde se det, är **Þjórsárhraunið mikla**)."}
+{"id": "cd11995d4c", "t": "Gårdar begravda, brukningsenheter övergivna, ett helt distrikt omstuvat — de officiella räkningarna är fortfarande oense om exakta antalet — och ändå rådde den inte på en envis kulle."}
+{"id": "915d9028bd", "t": "Allt runtomkring är 1783. Den här enda klippknölen är ”före”-bilden."}
+{"id": "e26460fc38", "t": "“stridskullen”, den ensamma klippknöl 1783 års lava delade sig runt och lämnade stående"}
+{"id": "385ce5183b", "t": "floden i vars flodslätt den en gång låg som en ö"}
+{"id": "2fcab9aeeb", "t": "Eldhraun-lavan som vällde österut runt den"}
+{"id": "a54cdb55ef", "t": "Lómagnúpur & Núpsstaður"}
+{"id": "72aa02d6e1", "t": "Titta åt vänster, klockan 11 — den svarta väggen som står för sig själv."}
+{"id": "ab0f727c24", "t": "Den väggen är **Lómagnúpur**, och den dyker upp före sandern: **Núpsstaður vid väg-km 263,1, Lómagnúpur vid 265,5**, båda på **vänster sida, norr om vägen**, medan **själva Skeiðarársandur inte börjar förrän vid km 268,6.** I **kapitel 133 av Brennu-Njáls saga** svänger klippan upp som en dörr, och en man i getskinnsmantel kliver ut med en järnstav, namnger **Flosis** män en efter en, kallar sig **Járngrímur** och säger att han är på väg till **Alþingi** för att tömma juryerna, sedan domstolarna, sedan slagfältet."}
+{"id": "463b38b654", "t": "Drömmen vid **Lómagnúpur** är en dödslista, uppläst i ordning. **Járngrímur** namnger **Grímur den röde**, **Árni Kolsson**, **Eyjólfur Bölverksson**, **Ljótur, son till Hallur på Síða**, **Sigfússynir**, sedan **Lambi**, **Móðólfur** och **Glúmur**, och allra sist **Gunnar Lambason** och **Kolur Þorsteinsson.** Flosi hade skakats vaken på **Svínafell** av **Glúmur Hildisson** och berättade alltihop för **Ketill úr Mörk** — vars tolkning tog ett enda ord, *feigir*, dödsmärkta, och vars råd tog en enda mening. Berätta det för ingen."}
+{"id": "2bc3d0ac37", "t": "Inbäddat under den klippan vid **Núpsstaður** ligger ett **bænhús**, ett bönhus för en enda gård — en timmerlåda på **6,15 gånger 2,50 meter** inuti ett torvskal, **ingen predikstol, ingen dopfunt, omålat rakt igenom**, kyrkan daterad till **1657** och det stående timret till omkring **1850**. Det har varit i **Þjóðminjasafn Íslands vård sedan 1930.**"}
+{"id": "41d29acef6", "t": "Pappersarbetet kring **bönhuset vid Núpsstaður** är det bästa av alltihop. **Minjastofnun** listar det som en **friðlýst kirkja** med upphovsmannen antecknad, med beundransvärd isländsk ärlighet, som **Ókunnur** — okänd. Torvskalet är **cirka 9 m långt och 7,5 m brett**; sidoväggarna och korets bakvägg är **staplad torv och sten upp till fönsterhöjd**, och taket är **krossreist** och lagt med torv. Inuti: ett **golv av stenhällar** i långhuset med en bänk längs varje vägg, ett kor upphöjt **två trappsteg**, ett altare under ett litet fönster, och **ingen altarring.**"}
+{"id": "33cba40332", "t": "En klippa som öppnas som en dörr i landets största saga — och vid dess fot en kyrka stor som ett skjul, byggd av en man staten aldrig lyckats namnge."}
+{"id": "d11176fe75", "t": "Allt öster om det här är sand. Det här är det sista som står innan den — och det visste sagan också."}
+{"id": "3ed6c07ae5", "t": "den svarta väggen till vänster, klippan som öppnas i drömmen"}
+{"id": "02f8f4e844", "t": "gården under den, med sitt bönhus stort som ett skjul"}
+{"id": "768bb537ac", "t": "ett bönhus, ett privat gårdskapell"}
+{"id": "dea141009a", "t": "“Järn-Grímur”, mannen som kliver ut ur klippan"}
+{"id": "becca975aa", "t": "Skeiðarársandur"}
+{"id": "1a945ea964", "t": "Titta framåt — Skeiðarársandurs väldiga svarta slätt."}
+{"id": "102cfa300d", "t": "**Skeiðarársandur** sträcker sig till **cirka 760 km² i Náttúrufræðistofnuns register — en av de stora sanderslätterna över huvud taget**: svart sand och flätade floder, dumpade korn för korn av glaciärerna som väller av **Vatnajökull.**"}
+{"id": "fdfcfc255d", "t": "I århundraden var det här **luckan i ringen**: floder omöjliga att överbrygga, som kunde svämma över utan förvarning. **Ringvägen (väg 1) blev inte klar förrän 1974**, när Skeiðará-bron till slut svetsade ihop landet till en enda slinga."}
+{"id": "1fc4a353c6", "t": "Sedan, den **4 november 1996**, smälte **Gjálp/Grímsvötn**-utbrottet jökeln och släppte lös en **jökulhlaup** — en glaciärflod — med en topp nära **40 000–50 000 m³ i sekunden, som en kort stund mätte sig med Amazonfloden.** Den **slet en 24 meter lång sektion ur Skeiðarárbrú** och vred stålbalkar som ståltråd."}
+{"id": "3ae4a98ed3", "t": "De där **tillknycklade balkarna står nu som ett monument vid vägkanten** — Islands artiga sätt att säga ”vi byggde upp den igen, men bli inte bekväma”."}
+{"id": "c78ee63e9b", "t": "Biten som slöt slingan var **Skeiðarárbrú**, påbörjad **1972** och färdig i **juli 1974** med sina **904 meter** — **Islands längsta bro**."}
+{"id": "66658eb5ca", "t": "För skalans skull, **1996**: **Ölfusá vid Selfoss** för i genomsnitt **400 kubikmeter i sekunden**, så floden gick i ungefär **125 gånger** det, med isberg stora som skåpbilar. Den totala skadan landade runt **1,5 miljarder kronor** i 2007 års priser."}
+{"id": "47e86cf555", "t": "Återuppbyggnaden var snabb och stillsamt förödmjukande: spannet kom upp igen på **880 meter** i stället för **904**, och **2017** pensionerades den helt — riksrekordet backade till **Borgarfjarðarbrúin på 520 meter**, för floden som den stora byggdes för vandrade i väg. (Ett riksrekord nedtrimmat av en flod som inte orkade använda bron.)"}
+{"id": "76eccc06df", "t": "Ringvägens sista länk kom på plats här 1974 — och 1996 kom glaciären ner och bet 24 meter ur den på en enda eftermiddag."}
+{"id": "c0ff4779e2", "t": "Ingenjörer ägnade årtionden åt att överbrygga den här sanden. Vatnajökull började plocka isär den igen före lunch."}
+{"id": "d737255618", "t": "den väldiga svarta slätten framför oss, cirka 760 km² i Náttúrufræðistofnuns register"}
+{"id": "152ffbee67", "t": "en glaciärflodvåg, sorten som plockade isär bron 1996"}
+{"id": "ba76e95f40", "t": "vulkanen under isen vars utbrott 1996 släppte lös den floden"}
+{"id": "8b08fe8ae9", "t": "Skaftafell & Vatnajökull"}
+{"id": "f380650279", "t": "Titta åt vänster — glaciärtungorna som väller av Vatnajökull."}
+{"id": "354727c600", "t": "**Vatnajökull** är **Europas största jökel räknat i volym** — runt **3 000 km³ is**, upp till **~1 000 m tjock**, över **cirka 7 500 km² år 2023 enligt Vatnajökulsþjóðgarðurs egen siffra** — den senaste hårt uppmätta inventeringen, **Jökull 70**, satte den till **7 720 km² år 2019.** Hur som helst: **ungefär sju procent av landet, och krympande.** Under den sitter aktiva vulkaner som Grímsvötn och Bárðarbunga — eld under ett mycket tjockt lock."}
+{"id": "bb3efcac72", "t": "Uppstickande vid **Öræfajökull** står **Hvannadalshnúkur, 2 110 m — Islands högsta punkt.**"}
+{"id": "89312261d0", "t": "🎬 **På vita duken:** Svínafellsjökull — glaciärtungan här — är en Hollywood-stammis: Skuggornas ligas isträning i *Batman Begins* (2005) och den frusna ”Manns planet” i Christopher Nolans *Interstellar* (2014) filmades båda på just den här isen."}
+{"id": "dab66947de", "t": "Inbäddat i **Skaftafells** gröna oas ligger **Svartifoss**, ett vattenfall inramat av svarta **basaltpelare** — just den form som inspirerade Reykjavíks Hallgrímskirkja. Det är nationalpark (2008) och **Unescos världsarv (2019).**"}
+{"id": "052539e0be", "t": "Den uppmätta serien för **själva Vatnajökull** är brutal: **8 723 km² kring 1890**, **8 087 km² år 2000**, **7 745 km² år 2014**. Och för **alla Islands glaciärer tillsammans** — inte bara den här — har täcket gått från **12 % av landet för 130 år sedan till cirka 10 % år 2014**, och tunnas ut med ungefär **en meter om året.**"}
+{"id": "a267704f38", "t": "Isländsk forskning sätter slutpunkten rakt på sak — med nuvarande trender kommer landets glaciärer att vara **i stort sett borta inom två århundraden**. Tungorna längs den här vägen har redan dragit sig tillbaka **runt 4 kilometer** sedan mätningarna började på **1930-talet**."}
+{"id": "67172ee5c6", "t": "**Öræfajökull** producerade **1362** det **största explosiva utbrottet i Islands nedtecknade historia** — omkring **10 kubikkilometer** tefra, aska över ungefär **75 %** av landet, **30 till 40 centimeter** djup lokalt, ur en kaldera på **cirka 12 km²**. Den har fått utbrott en gång sedan dess, **1727**."}
+{"id": "7277e22e95", "t": "Före **1362** hette glaciären **Knappafellsjökull** och distriktet **Litla-Hérað**, Lilla häradet. Båda namnen övergavs: **öræfi** betydde en kust utan hamn och kom att betyda ödemark, och de överlevande döpte om sitt eget hem till **Ödemarken**, där det har stannat i **664 år**."}
+{"id": "bc0d655c27", "t": "**Svínafell**, vid foten av den där filmstjärnetungan, är platsen där **Flosi Þórðarson** sov illa när han drömde att berget öppnade sig — samme man som ledde branden på **Njáll**."}
+{"id": "2b2d0a4422", "t": "Utbrottet 1362 begravde inte bara Öræfi — det körde över det, med **pyroklastiska flöden som svepte ut över låglandet** medan askan föll. Och lägg märke till var toppen sitter: **Hvannadalshnúkur står på kanten av den isfyllda kalderan.** Öræfajökull är inte ett berg med en vulkan i sig. Det är en **vulkan med ett berg på sig.**"}
+{"id": "ebf7251a85", "t": "En enda blick rymmer Europas största jökel, Islands högsta topp och en Hollywood-inspelningsplats — allt under stilla avsmältning."}
+{"id": "adc7cd2df9", "t": "Den är stor som ett län, gömmer levande vulkaner, och Christopher Nolan använde den som en annan planet."}
+{"id": "dbf1cc81e8", "t": "Europas största jökel, som täcker ungefär 7 % av Island"}
+{"id": "07021a7f63", "t": "den gröna oasen och nationalparken inbäddad vid dess kant"}
+{"id": "6509571595", "t": "vattenfallet där, inramat av svarta basaltpelare"}
+{"id": "f62ffde06a", "t": "Islands högsta punkt, 2 110 m"}
+{"id": "00e5b285c1", "t": "vulkanen som den toppen sticker upp ur"}
+{"id": "f16102b941", "t": "Fjallsárlón"}
+{"id": "d78d9fd865", "t": "Vid Fjallsárlón."}
+{"id": "dbeb56c695", "t": "**Fjallsárlón** är Jökulsárlóns **mindre, tystare syskon** — en smältvattenslagun vid mynningen av **Fjallsjökull**, en utloppsglaciär som tumlar ner från **Öræfajökull**, Islands högsta vulkan."}
+{"id": "bb09f3f8c2", "t": "Eftersom den är trängre och mindre berömd står ni **mycket närmare glaciärväggen** — isfronten tornar upp sig rakt över vattnet och kalvar stycken ner i lagunen med en knall som ett gevärsskott."}
+{"id": "70e0617aad", "t": "Isbergen här är **mindre men tätare packade**, strimmiga av **svart vulkanaska** och det där omöjliga **blå** — färgen på is så komprimerad att luften pressats helt ur den."}
+{"id": "75c2ef0a04", "t": "Ingen armada av turbåtar, inga folkmassor — bara glaciären, isbergen och **Öræfajökull** som ruvar bakom. Precis som sin storasyster **fanns den här lagunen inte för ett sekel sedan**; den är en produkt av reträtten."}
+{"id": "5dad24e36b", "t": "**Ari Ólafsson**, fysiker vid **Islands universitet**, ger mekanismen: i vatten och is bleknar spektrumets **röda** ände mycket fortare än den **blå**, och i klar tät is färdas dagsljuset **tiotals meter** genom ett block innan det kommer ut igen, och tappar rött, gult och grönt på vägen. De vita är vita för att sprickor och luftbubblor sprider ljuset rakt tillbaka ut innan något hinner absorberas — samma is, olika mängd luft."}
+{"id": "0585e9f1fa", "t": "Vatnajökulsþjóðgarður daterar hela familjen med fem ord: *\"Lón tóku að myndast upp úr 1930\"* — **lagunerna började bildas efter 1930**, när isen drog sig tillbaka från sanden. Det finns tre stora — **Fjallsárlón**, **Breiðárlón** och **Jökulsárlón** — samma historia i tre olika skalor, och det här är den som fortfarande ligger **närmast sin glaciärfront.** (Den berömda har hunnit springa ifrån sin egen is. Det har inte den här.)"}
+{"id": "4f9d0db2dc", "t": "Samma glaciär, samma drama, en bråkdel av folkmassan — lagunen för dem som läser längre än guidebokens första sida."}
+{"id": "14eec95946", "t": "Alla rusar till Jökulsárlón. De smarta stannar här först och får glaciären för sig själva."}
+{"id": "cd4d00c91f", "t": "den tystare glaciärlagunen vi står vid"}
+{"id": "4b01a51c4a", "t": "utloppsglaciären som kalvar ner i den"}
+{"id": "34e57c9c45", "t": "Islands högsta vulkan, som ruvar bakom den"}
+{"id": "4151b3854a", "t": "Jökulsárlón"}
+{"id": "0f76ccb4da", "t": "Vid Jökulsárlón."}
+{"id": "cf83251229", "t": "**Jökulsárlón** (”glaciärflodslagunen”) dök upp först omkring **1934–35**, när glaciären **Breiðamerkurjökull** började retirera och lämnade en sänka som fylldes med smältvatten. Den är nu **Islands djupaste sjö — den publicerade siffran är 260 meter, och den fördjupas fortfarande i takt med att glaciären drar sig tillbaka.** Ungefär **25 km²**, och den har **fyrdubblats sedan 1970-talet.** Ni tittar på klimatförändringen, med en båttur ovanpå."}
+{"id": "4b5a2283ce", "t": "**Isbergen** som kalvar av glaciären kan vara **århundraden gamla** — glödande blå, strimmiga av svart aska från gångna utbrott, drivande i åratal innan de smälter. Flytande arkiv."}
+{"id": "5860549992", "t": "Den är **tidvattenpåverkad**: en kort kanal binder den till havet, så vattnet är **bräckt** och **sälar** glider in för att jaga sill. Håll utkik efter huvuden som guppar upp mellan isbergen."}
+{"id": "7ab4ab2341", "t": "Hollywood märkte det — **två James Bond-filmer, Batman Begins och Lara Croft** filmades alla på den här isen."}
+{"id": "6c10b696a2", "t": "Dess botten är **Islands lägsta punkt** — *lægsti staður landsins* — långt under havsytan. Inte en dal och inte en grotta: ett hål som en glaciär grävde och sedan vandrade ut ur."}
+{"id": "6a68493ba5", "t": "För tvåorna på listan: **Öskjuvatn** klarar **220 meter**, **Hvalvatn 160**, och **Þingvallavatn** — den på allas vykort — futtiga **114**."}
+{"id": "1033cffd32", "t": "**Breiðamerkurjökull** har dragit sig tillbaka **cirka 7 kilometer** här, mot **runt 4** för de andra Vatnajökull-tungorna, och skälet är sjön själv — bräckt vatten ligger nu an mot isfronten och smälter den. Glaciären äts upp av sin egen avrinning."}
+{"id": "c4e92b1a5e", "t": "Saltet är också anledningen till att **den aldrig lägger sig**: även under en riktigt hård vinter fryser lagunens yta aldrig till helt."}
+{"id": "8795a0c27b", "t": "En sjö som är djup, tidvattenspåverkad, full av sälar och filmteam — och en levande mätare på hur snabbt glaciären försvinner."}
+{"id": "a751df4552", "t": "Era gammelmorföräldrar hade kunnat stå på fast is precis här. Nu är det en 260 meter djup sjö — som fortfarande blir djupare. Det är hela historien, i en enda vy."}
+{"id": "f32494f2a1", "t": "”glaciärälvslagunen”, Islands djupaste sjö; den publicerade siffran är 260 m, och den blir fortfarande djupare i takt med att glaciären drar sig tillbaka"}
+{"id": "ff927971a3", "t": "den tillbakadragande glaciären som öppnade den på 1930-talet"}
+{"id": "b30ef809a5", "t": "Fellsfjara"}
+{"id": "a44e5ab319", "t": "Vid Fellsfjara, på andra sidan vägen från lagunen."}
+{"id": "ef07ff425e", "t": "När isbergen i Jökulsárlón till slut krympt tillräckligt **flyter de ut genom den korta älven Jökulsá till havet** — och **tidvattnet slungar dem rakt tillbaka** upp på den här svarta vulkanstranden, **Fellsfjara** (en del av **Breiðamerkursandur**)."}
+{"id": "00644449cc", "t": "Strandade på den svarta sanden glittrar den klara och blå isen som **utströdda diamanter** — därav smeknamnet. Varje bit är **urgammal glaciäris**, saltpolerad och smältande mitt framför er."}
+{"id": "962f238379", "t": "Eftersom stranden är **tidvattensstyrd** **fyller den på sig själv med några timmars mellanrum** — inga två besök är likadana, och ett isberg ni fotograferar nu kan vara borta i eftermiddag."}
+{"id": "424724586f", "t": "En allvarlig sak: **vänd aldrig ryggen mot bränningarna här.** **Jökulsás mynning har lömska strömmar och plötsliga smygvågor** — vackert, och på riktigt farligt. Beundra isen; respektera vattnet."}
+{"id": "934a6ff9fb", "t": "Varje block där ute är **gammal, hoppressad glaciäris**, inte fruset havsvatten — den låg inne i **Vatnajökull** väldigt länge innan den dök upp vid era fötter för nittio sekunder av berömmelse."}
+{"id": "6dff3d3931", "t": "Namnen här är uråldriga och beskrivande — **Breiðá**, **Breiðamerkursandur**, **Jökulsá** — och så finns **Diamond Beach**, som är engelskt, nytt och påhittat för besökare. Det blev en mycket offentlig debatt på Island i **juli 2019** om huruvida turismen i tysthet höll på att döpa om kusten."}
+{"id": "c36a7ba99c", "t": "Den här sanden är uppkallad efter en gård. Det fanns bosättning på **Breiðamerkursandur** från ungefär **1100 år sedan**, och sedan kom **lilla istiden** — **Breiðamerkurjökull** ryckte fram som längst under **1700- och 1800-talen** och som mest nådde isfronten **till inom cirka 250 meter från öppet hav**, och tog allt i sin väg under sig."}
+{"id": "06438371de", "t": "Ett juvelerarfönster som fylls på av tidvattnet två gånger om dagen — varje ädelsten en skärva av en smältande glaciär."}
+{"id": "228eef2304", "t": "Diamanter som inte kostar något, håller en timme och en gång var en glaciär. Bara på Island."}
+{"id": "187e12ca53", "t": "den svarta stranden som tidvattnet slungar tillbaka isbergen upp på"}
+{"id": "0174f77766", "t": "de svarta sandfälten som den här stranden är en del av"}
+{"id": "7385b6f58a", "t": "den korta älven som bär isbergen ut till havet"}
+{"id": "59f6110dc9", "t": "Fellsfjara → Vík — 2 timmars körning, gott folk"}
+{"id": "e9e6800429", "t": "Titta åt höger, klockan 2 — Mýrdalsjökull, och Katla under den."}
+{"id": "9bc299b396", "t": "Under den där isen sitter **Katla** — en **~10 km bred kaldera**, topp **1 512 m** — en av Islands största, argaste vulkaner. Locket ovanpå är **Mýrdalsjökull**, Islands **4:e största glaciärkupol** — **520 km² enligt mätningen 2019**, ner från cirka **607 km² runt år 2000** och **736 km² vid lilla istidens topp runt 1890** — ett **200–700 m** tjockt isolerande täcke över en smältugn. Att hon ligger under is är hela faran: hon kastar inte bara aska, hon **blixtsmälter glaciären till översvämningar.**"}
+{"id": "4592c7e2ae", "t": "Hon har levererat **minst 21 utbrott de senaste 1 100 åren**, vanligtvis **VEI 4–5** — större än den berömda grannen Eyjafjallajökulls show 2010."}
+{"id": "17e1c0b30f", "t": "Pauserna mellan hennes utbrott har varierat från **cirka 13 år till cirka 80, i snitt strax under 50** — och nu har det gått **108 år sedan 1918, den längsta tystnaden någonsin i protokollet.** (Gör den uträkningen på bussen och studera ansiktena.) Hon läcker dessutom så mycket CO₂ i vila att en studie rankade henne bland **jordens största vulkaniska CO₂-källor.**"}
+{"id": "a718293b3a", "t": "Hennes senaste fulla utbrott började strax före **klockan 15 den 12 oktober 1918** och pågick till **4 november** — tjugofyra dagar — och floden förde ungefär **200 miljoner kubikmeter** sten och is till havet, en kub med **585 meter** på varje sida. Den dumpade så mycket sediment att den **sköt ut stranden söder om Hjörleifshöfði med mer än 3 km.** En vulkan som ägnar sig åt landutfyllnad."}
+{"id": "13a1d547a2", "t": "Askan från **1918** uppgick till ungefär **0,7 kubikkilometer** utspridd över **60 000 km²**, mer än halva landet, med en askpelare som nådde **minst 14 300 meter** och det finaste dammet över **25 kilometer**."}
+{"id": "c13b9a12dd", "t": "Ingen dog **1918**, och den isländska källan är brutalt ärlig om varför — *”sennilega olli tilviljun”*, förmodligen ren slump. Floden kom ner där ingen råkade stå."}
+{"id": "d15a40afeb", "t": "Hennes systems **Eldgjá** var inte en dag utan en kampanj: den **började våren 939 och fortsatte, åtminstone i omgångar, in på hösten 940**, längs en spricka **75 kilometer** lång, och det flödet rann **cirka 70 kilometer** till havet. Vísindavefur klassar den som **VEI-6** — jämförbar med **Laki** i lavavolym, **cirka 20 km³ mot Lakis 14,7** — men **en och en halv magnitud över den på MS-skalan**, och därför kallar Vísindavefur Eldgjá **det kraftfullaste isländska utbrottet under de senaste tiotusen åren.**"}
+{"id": "33dca6ca76", "t": "**VEI-6** är exklusivt sällskap. Under hela de senaste **10 000 åren** har bara en handfull isländska utbrott nått så högt — **Saksunarvatn**-tefralagret för ungefär tiotusen år sedan, **Veiðivötn 1477**, och det här. Vísindavefur placerar Eldgjá **cirka 840 år före Lakagígar-utbrottet 1783.**"}
+{"id": "2857f6aa97", "t": "Hela bältet mellan **Mýrdalsjökull** och **Vatnajökull** är byggt av sådana här — resterna av **sprickutbrott tiotals kilometer långa**, vissa från istiden och vissa från tiden efter. **Lakagígar, Eldgjá, Veiðivötn, Vatnaöldur.** Fyra namn, fyra revor, ett och samma grannskap. Och Vísindavefur konstaterar rakt ut att **ännu ett stort sprickutbrott i det här bältet är så gott som säkert** — i **Grímsvötns**, **Katlas** eller **Bárðarbungas** system — och att det kan komma mycket snart eller om många århundraden. (Ingen vill säga vilket, vilket är det minst lugnande svaret som finns.)"}
+{"id": "a5641649b5", "t": "den ~10 km breda kalderan under isen där, sedan länge ”försenad” med ett utbrott"}
+{"id": "4df36182b7", "t": "glaciärfloden hon skapar genom att blixtsmälta isen ovanpå"}
+{"id": "e2a3fe9dc9", "t": "staden där framme som har övat inför den floden i årtionden"}
+{"id": "7e6ca6b916", "t": "Vík"}
+{"id": "70d09643ff", "t": "Det är dessutom, **tillsammans med Vestmannaeyjar**, den **varmaste platsen på Island** (**5,3°C** i årsmedel) — Veðurstofas egen formulering är *ásamt Vestmannaeyjakaupstað*. Och det är ordentligt blött, ungefär tre gånger Reykjavík. ”Varmast” gör ett heroiskt jobb i den meningen."}
+{"id": "5141920c5c", "t": "Den där stranden vi nyss pratade om — den som **1918** knuffade ut förbi **Hjörleifshöfði** — är den här stadens trädgård: allt där ute är färsk Katla-sand."}
+{"id": "8b8fbc8d72", "t": "Österut ligger **Hjörleifshöfði** — en sagoudde som en gång låg vid öppet hav — nu strandsatt **inne i landet**, gapet i tysthet igenfyllt av ett sekel av Katlas svarta sand. Kyrkan ovanför staden är den officiella ”**spring hit om Katla vaknar**”-punkten."}
+{"id": "36ea2dc197", "t": "Väderstationen här sattes upp **1925** och har observerat oavbrutet sedan dess. **Veðurstofa Íslands** anger årsmedelnederbörden till **2 333 mm** för standardperioden **1971 till 2000** — mycket regn, men inget nationellt rekord: Islands blötaste år någonstans är **Kvísker, 4 630,4 mm år 2002.**"}
+{"id": "c690e9992a", "t": "Det blötaste året i protokollet är **1926 med 2 887 mm** — stationens andra driftår, vilket måste ha känts som en nedslående start. **1950** och **1959** ligger hack i häl med **2 858** och **2 855 mm**, och det regnigaste enskilda dygnet är **150,3 mm den 9 september 1933**."}
+{"id": "6137f524b1", "t": "Temperaturrekorden är **28,5°C den 11 augusti 1939**, som vädertjänsten själv markerar som **tveksamt**, och **minus 16,9°C natten till den 1 april 1968**, som ingen någonsin har ifrågasatt."}
+{"id": "39a7bdb315", "t": "Inget av det här finns utan **Guðný Helgadóttir**, som har observerat vädret i Vík **sedan 1972** — en person, en plats, årtionden av avläsningar tagna för hand i vad som än föll från himlen den morgonen."}
+{"id": "b3a7c292f0", "t": "kyrkan uppe på kullen, den officiella ”spring hit om Katla vaknar”-punkten"}
+{"id": "664677c72a", "t": "sagoudden öster om staden, nu strandsatt inne i landet av svart sand"}
+{"id": "3e80c9582d", "t": "En kort promenad norrut gömmer sig **Gljúfrabúi** (”klyftboaren”) i en trång, mossig ravin — bara toppen kikar fram; för att träffa den **vadar ni uppför bäcken**, och **blöta fötter är icke förhandlingsbart.**"}
+{"id": "cb0092cb59", "t": "”klyftboaren”, det andra vattenfallet som gömmer sig i ravinen norr om här"}
+{"id": "fadbd2fe2f", "t": "glaciären som älven rinner ner från"}
