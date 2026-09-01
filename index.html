@@ -220,6 +220,34 @@
   .tcard .off.on{opacity:.9}
   #fontbtn{width:40px;height:42px;border-radius:10px;background:none;border:1px solid var(--line);
       color:var(--accent);font:700 15px/1 var(--serif);cursor:pointer;margin-left:6px}
+  /* 🧵 Threads — the cross-reference index at the foot of every script.
+     A guest asks "was that the parliament one?" and the guide needs the block
+     number in one tap, not a scroll through forty stops. */
+  #thrbtn{width:40px;height:42px;border-radius:10px;background:none;border:1px solid var(--line);
+      color:var(--accent);font:15px/1 var(--sans);cursor:pointer;margin-left:6px}
+  #thrbtn[hidden]{display:none}
+  #threads{position:fixed;inset:0;z-index:960;display:none;flex-direction:column;
+      background:var(--bg);overflow-y:auto;-webkit-overflow-scrolling:touch}
+  #threads.show{display:flex}
+  #thrhead{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:10px;
+      padding:14px 16px;background:var(--bg);border-bottom:1px solid var(--line)}
+  #thrhead h2{margin:0;font:700 17px/1.2 var(--serif);color:var(--accent)}
+  #thrclose{margin-left:auto;width:40px;height:40px;border-radius:10px;background:none;
+      border:1px solid var(--line);color:var(--accent);font:700 18px/1 var(--sans);cursor:pointer}
+  #thrbody{padding:14px 16px 40px;max-width:44rem;width:100%;margin:0 auto}
+  #thrbody .thrintro{margin:0 0 18px;color:var(--dim);font:italic 13.5px/1.6 var(--serif)}
+  #thrbody h3{margin:22px 0 2px;font:700 15px/1.3 var(--sans);color:var(--ink)}
+  #thrbody h3 .thrtag{font:600 10.5px/1 var(--sans);letter-spacing:.08em;color:var(--dim);margin-left:7px}
+  #thrbody .thrsub{margin:14px 0 4px;font:600 12px/1 var(--sans);letter-spacing:.06em;
+      text-transform:uppercase;color:var(--dim)}
+  #thrbody ul{list-style:none;margin:6px 0 0;padding:0}
+  #thrbody li{margin:0 0 2px}
+  #thrbody button.thri{display:block;width:100%;text-align:left;background:none;cursor:pointer;
+      border:0;border-bottom:1px solid var(--line);padding:9px 2px;color:var(--ink);
+      font:14px/1.55 var(--serif)}
+  #thrbody button.thri:active{background:rgba(255,255,255,.05)}
+  #thrbody button.thri b{color:var(--accent);font-weight:700}
+  #thrbody button.thri.dead{opacity:.5;cursor:default}
   #offpill{display:none;font:700 9.5px/1 var(--sans);letter-spacing:.1em;color:var(--accent);
       border:1px solid var(--accent);border-radius:99px;padding:4px 8px;margin-left:auto;margin-right:10px}
   body.isoffline #offpill{display:inline-block}
@@ -382,6 +410,7 @@
   <div id="topbar">
     <button id="home"></button>
     <button id="fontbtn" title="Text size" aria-label="Text size">Aa</button>
+    <button id="thrbtn" title="Threads — topics across the route" aria-label="Threads" hidden>🧵</button>
     <a id="gnp" href="#" target="_blank" rel="noopener" aria-live="polite" hidden><img id="gnpArt" alt=""><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="t" id="gnpTxt"></span></a>
     <span id="offpill" data-en="OFFLINE · ALL GOOD">OFFLINE · ALL GOOD</span>
     <span id="tourname"></span>
@@ -390,6 +419,10 @@
   <div id="steps"></div>
   <div id="days"></div>
   <div id="map"><div id="zhint">Zoom in further to show place names</div><button id="gpsbtn" title="Follow the bus" aria-label="Follow the bus">➤</button><div id="mapcover" role="button" aria-label="Expand map"></div><button id="mapmin" title="Shrink map" aria-label="Shrink map">⌄</button><span id="mapexpand">TAP TO EXPAND</span></div>
+</div>
+<div id="threads" role="dialog" aria-modal="true" aria-label="Threads">
+  <div id="thrhead"><h2>🧵 Threads</h2><button id="thrclose" aria-label="Close">✕</button></div>
+  <div id="thrbody"></div>
 </div>
 </div>
 
@@ -472,6 +505,17 @@ async function translateTour(){
       // The name and the pronunciation are the whole point of the line —
       // only the gloss that explains it gets translated.
       if(b.say)     b.say     = b.say.map(x=>[x[0], x[1], tr(x[2])]);
+    });
+  });
+  // The Threads index translates too. The stop-number label ("1.5 Kjalarnesþing")
+  // and the block id are never translated — the number has to match what the guide
+  // sees in Craft and on the Mac, in every language.
+  if(S.threadsIntro) S.threadsIntro = tr(S.threadsIntro);
+  if(S.threads) S.threads.forEach(t=>{
+    t.title = tr(t.title);
+    (t.subs||[]).forEach(sb=>{
+      sb.label = tr(sb.label);
+      sb.items = (sb.items||[]).map(it=>[it[0], it[1], tr(it[2])]);
     });
   });
 }
@@ -1057,6 +1101,46 @@ function render(){
   routeLine.setLatLngs(travelled(PROG[b.id]));
   focusBlock(b.id);
 }
+// ---- 🧵 Threads ------------------------------------------------------------
+// The cross-reference index that lives at the foot of the Craft document. It is
+// not on-mic script, so it is not in the block flow — but it IS in the document,
+// and the guide is the person who needs it. Every entry carries the block id
+// build-any.py resolved from its stop number, so a tap opens the block itself.
+(function(){
+  const box=$("threads"), body=$("thrbody"), btn=$("thrbtn");
+  const TH=S.threads||[];
+  if(!TH.length) return;                      // 9.0 has no index yet — hide, don't fake one
+  btn.hidden=false;
+  const jump=id=>{
+    const f=flat();
+    for(const p of f){ if(S.sections[p.si].blocks[p.bi].id===id){
+      if(window.__gpsPause) __gpsPause();
+      SI=p.si; BI=p.bi; close(); render(); return;
+    } }
+  };
+  function paint(){
+    let h = S.threadsIntro ? `<p class="thrintro">${esc(S.threadsIntro)}</p>` : "";
+    TH.forEach(t=>{
+      h += `<h3>${esc(t.title)}${t.tag?`<span class="thrtag">${esc(t.tag)}</span>`:""}</h3>`;
+      (t.subs||[]).forEach(sb=>{
+        if(sb.label) h += `<div class="thrsub">${esc(sb.label)}</div>`;
+        h += `<ul>` + (sb.items||[]).map(it=>
+              `<li><button class="thri${it[1]?"":" dead"}" ${it[1]?`data-go="${esc(it[1])}"`:"disabled"}>`
+              + `<b>${esc(it[0])}</b> — ${md(it[2])}</button></li>`).join("") + `</ul>`;
+      });
+    });
+    body.innerHTML=h;
+    body.querySelectorAll("button.thri[data-go]").forEach(b=>{
+      b.onclick=()=>jump(b.getAttribute("data-go"));
+    });
+  }
+  function open(){ paint(); box.classList.add("show"); body.scrollTop=0; }
+  function close(){ box.classList.remove("show"); }
+  btn.onclick=open;
+  $("thrclose").onclick=close;
+  document.addEventListener("keydown",e=>{ if(e.key==="Escape") close(); });
+})();
+
 function showEnd(){
   try{
     const u=T()&&T().ui;

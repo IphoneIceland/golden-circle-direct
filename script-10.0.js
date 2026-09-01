@@ -756,4 +756,134 @@ sections: [
  ],
 },
 ]},
-]};
+],
+threadsIntro: "Topics that weave through the route. If a guest is interested in one, these are the script blocks to dig into.",
+threads: [
+{title:"🌋 Geology", tag:"#geology", subs:[
+ {label:"", items:[
+  ["10.3 Esja","10.0.1.4","the wreckage of two vanished volcanoes"],
+  ["10.6 Hvalfjörður","10.0.1.7","the glacier-carved fjord and Glymur's 198 metres"],
+  ["10.7 Akrafjall","10.0.1.8","a wave-cut notch, a whale bone at 85 m, a magnetic flip in the rock"],
+  ["10.10 Iceland's First Rift Zone","10.0.3.1","the retired plate boundary that kept erupting"],
+  ["10.11 Hítardalur & Ljósufjöll","10.0.3.2","ninety kilometres of one system, móberg ridges"],
+  ["10.12 Eldborg","10.0.3.3","the Settlement-age fire-fortress crater"],
+  ["10.13 Gerðuberg","10.0.3.4","why cooling basalt turns into hexagons"],
+  ["10.14 Löngufjörur","10.0.3.5","post-glacial uplift; the sea floor that got promoted"],
+  ["10.16 Búðir","10.0.5.1","Búðahraun lava and olivine-green sand"],
+  ["10.19 Stapafell & Rauðfeldsgjá","10.0.5.4","a 526 m hyaloclastite pyramid"],
+  ["10.20 The Arnarstapi Cliffs","10.0.6.1","basalt columns vertical and horizontal"],
+  ["10.24 Snæfellsjökull","10.0.7.2","the stratovolcano on pause, magma chamber intact"],
+  ["10.25 Lóndrangar","10.0.7.3","volcanic plugs, not sea stacks"],
+  ["10.26 Malarrif & Vatnshellir","10.0.7.4","a 200 m lava tube and how tubes form"],
+  ["10.27 Djúpalónssandur & Dritvík","10.0.8.1","the black pebble beach at the volcano's foot"],
+  ["10.28 Saxhóll","10.0.9.1","a scoria crater and the Neshraun lava"],
+  ["10.36 Vatnaleið","10.0.13.3","móberg mountains poured under an ice sheet"],
+ ]},
+]},
+{title:"📜 Sagas & Literature", tag:"#literature", subs:[
+ {label:"", items:[
+  ["10.6 Hvalfjörður","10.0.1.7","Harðar saga's 180 outlaws on Geirshólmi"],
+  ["10.9 Borgarnes","10.0.2.1","the graveyard chapters of Egils saga"],
+  ["10.18 Bárðarlaug","10.0.5.3","Bárðar saga's half-troll takes a cold bath"],
+  ["10.19 Stapafell & Rauðfeldsgjá","10.0.5.4","the two boys the map still remembers"],
+  ["10.21 The Bárður Statue","10.0.6.2","a saga figure in 300 tonnes of stone"],
+  ["10.24 Snæfellsjökull","10.0.7.2","Jules Verne's entrance to the centre of the Earth"],
+  ["10.25 Lóndrangar","10.0.7.3","Kolbeinn's verse contest, with citation"],
+  ["10.29 Ingjaldshóll","10.0.9.2","the Columbus story: fiction historicized"],
+  ["10.33 Fróðá","10.0.11.1","Eyrbyggja saga's ghost trials"],
+ ]},
+]},
+{title:"🧌 Folklore", tag:"#folklore", subs:[
+ {label:"", items:[
+  ["10.6 Hvalfjörður","10.0.1.7","Rauðhöfði, the whale with a grudge"],
+  ["10.25 Lóndrangar","10.0.7.3","the devil loses a poetry slam"],
+  ["10.30 Björn the Rich","10.0.9.3","the barrels and the comeback line, added a century late"],
+  ["10.33 Fróðá","10.0.11.1","eighteen ghosts, tried at the door"],
+ ]},
+]},
+{title:"🐦 Birds & Wildlife", tag:"#wildlife", subs:[
+ {label:"", items:[
+  ["10.14 Löngufjörur","10.0.3.5","one in seven of Iceland's white-tailed eagle pairs"],
+  ["10.20 The Arnarstapi Cliffs","10.0.6.1","10,000 kittiwake pairs, counted twice"],
+  ["10.31 The Tern Capital","10.0.9.4","17,000 nests and an Antarctic commute"],
+ ]},
+]},
+{title:"🧭 Settlement & Migration", tag:"#migration", subs:[
+ {label:"", items:[
+  ["10.4 Esjuberg","10.0.1.5","the Irishman's church, a century early"],
+  ["10.7 Akrafjall","10.0.1.8","Þormóður and Ketill, the corn-growing Irish brothers"],
+  ["10.9 Borgarnes","10.0.2.1","Kveldúlfur's coffin picks the family address"],
+  ["10.23 Guðríður Þorbjarnardóttir","10.0.7.1","the farm girl who out-sailed Columbus"],
+  ["10.29 Ingjaldshóll","10.0.9.2","the imported Columbus claim, via Winnipeg"],
+  ["10.31 The Tern Capital","10.0.9.4","pole-to-pole commuters beside the car park"],
+ ]},
+]},
+{title:"👩 Women", tag:"#women", subs:[
+ {label:"", items:[
+  ["10.9 Borgarnes","10.0.2.1","Brák, the foster-mother the water is named for"],
+  ["10.16 Búðir","10.0.5.1","Steinunn Sveinsdóttir rebuilds the church"],
+  ["10.23 Guðríður Þorbjarnardóttir","10.0.7.1","more crossings than anyone of her century"],
+  ["10.30 Björn the Rich","10.0.9.3","Ólöf the Rich: \"gather men instead\""],
+ ]},
+]},
+{title:"⛪ Religion", tag:"#religion", subs:[
+ {label:"", items:[
+  ["10.4 Esjuberg","10.0.1.5","St Columba's church before the Conversion"],
+  ["10.11 Hítardalur & Ljósufjöll","10.0.3.2","the bishop and the deadliest fire, 1148"],
+  ["10.16 Búðir","10.0.5.1","the black church, consecrated 1851"],
+  ["10.29 Ingjaldshóll","10.0.9.2","the 1903 concrete church on the hill"],
+  ["10.33 Fróðá","10.0.11.1","a priest, a door-court, and the year 1000"],
+ ]},
+]},
+{title:"💰 Trade", tag:"#trade", subs:[
+ {label:"", items:[
+  ["10.22 The Governor's House","10.0.6.3","the Danish monopoly harbour at Arnarstapi"],
+  ["10.27 Djúpalónssandur & Dritvík","10.0.8.1","600 men and a lifting-stone job interview"],
+  ["10.30 Björn the Rich","10.0.9.3","killed in a trade war over cod, 1467"],
+  ["10.32 Ólafsvík","10.0.10.1","the harbour swap of 1687"],
+ ]},
+]},
+{title:"⚡ Technology", tag:"#technology", subs:[
+ {label:"", items:[
+  ["10.5 Hvalfjörður Tunnel","10.0.1.6","5,770 metres, 165 metres down"],
+  ["10.8 Borgarfjarðarbrú","10.0.1.9","520 metres that retired four kilometres"],
+  ["10.26 Malarrif & Vatnshellir","10.0.7.4","the 1946 lighthouse over the lava tube"],
+  ["10.36 Vatnaleið","10.0.13.3","the 2001 road over the spine"],
+ ]},
+]},
+{title:"⚖️ Law", tag:"#law", subs:[
+ {label:"", items:[
+  ["10.17 Axlar-Björn","10.0.5.2","Iceland's one serial killer, executed 1596"],
+  ["10.33 Fróðá","10.0.11.1","the ghosts we took to court"],
+ ]},
+]},
+{title:"🎖️ Warfare", tag:"#warfare", subs:[
+ {label:"", items:[
+  ["10.6 Hvalfjörður","10.0.1.7","the Allied anchorage; Geirshólmi as gunnery target"],
+  ["10.30 Björn the Rich","10.0.9.3","an early round of the cod wars"],
+ ]},
+]},
+{title:"❄️ Climate", tag:"#climate", subs:[
+ {label:"", items:[
+  ["10.7 Akrafjall","10.0.1.8","sea level is not a fixed opinion"],
+  ["10.20 The Arnarstapi Cliffs","10.0.6.1","kittiwakes down 55% in one year"],
+  ["10.24 Snæfellsjökull","10.0.7.2","the glacier scheduled to leave by about 2050"],
+ ]},
+]},
+{title:"🏛️ Architecture", tag:"#architecture", subs:[
+ {label:"", items:[
+  ["10.28 Saxhóll","10.0.9.1","the prize-winning stairway to heaven and hell"],
+ ]},
+]},
+{title:"🎨 Art", tag:"#art", subs:[
+ {label:"", items:[
+  ["10.21 The Bárður Statue","10.0.6.2","Ragnar Kjartansson's 300 tonnes, 1985"],
+ ]},
+]},
+{title:"🛡️ Statehood", tag:"#statehood", subs:[
+ {label:"", items:[
+  ["10.22 The Governor's House","10.0.6.3","the seat of the West Amt, flat-packed in 1849"],
+ ]},
+]},
+],
+};

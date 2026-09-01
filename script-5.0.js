@@ -559,4 +559,99 @@ sections: [
  mic:"The song is called Selfoss. The town is called Selfoss. I would love to tell you I planned that, but I just got lucky with the timing.",
 },
 ]},
-]};
+],
+threadsIntro: "Topics that weave through the route. If a guest is interested in one, these are the script blocks to dig into.",
+threads: [
+{title:"🌋 Geology", tag:"#geology", subs:[
+ {label:"", items:[
+  ["5.3 Elliðaárdalur & Paradísardalur","5.0.1.3","Leiti lava split the river; a 10,000-year construction site"],
+  ["5.4 Rauðhólar","5.0.1.4","rootless pseudocraters, NASA's Mars analogue"],
+  ["5.5 Kristnitökuhraun","5.0.1.5","the year-1000 lava that 'proved' the gods were angry"],
+  ["5.6 Hellisheiðarvirkjun","5.0.1.6","Hengill geothermal + CarbFix carbon-to-stone"],
+  ["5.7 Hveragerði","5.0.1.7","greenhouse town on the Hengill system, 2008 quake exhibition"],
+  ["5.8 Ölfusá","5.0.1.8","Iceland's biggest river by discharge, four systems in one channel"],
+  ["5.11 Þjórsá","5.0.1.11","Iceland's longest river, six power stations"],
+  ["5.15 Vestmannaeyjar","5.0.3.1","Eldfell's 1973 eruption, harbour saved with seawater"],
+  ["5.16 Landeyjar Plains","5.0.3.2","old Atlantic seabed and glacial wash-plain"],
+  ["5.18 Eyjafjallajökull","5.0.3.4","the 2010 ash cloud that grounded Europe"],
+  ["5.20 Sólheimajökull","5.0.4.1","retreating glacier tongue, a living climate graph"],
+  ["5.21 DC-3 Wreck","5.0.5.1","a plane down on Katla's black sandur"],
+  ["5.22 Pétursey","5.0.5.2","móberg from a subglacial eruption, a one-time island"],
+  ["5.23 Skeiðflatarkirkja","5.0.5.3","basalt-inspired church architecture, DNA of Hallgrímskirkja"],
+  ["5.24 Dýrhólaey","5.0.5.4","sea-arch headland from a 100,000-year submarine eruption"],
+  ["5.25 Reynisfjara & Reynisdrangar","5.0.6.1","black sand, columnar basalt, sea stacks"],
+  ["5.26 Katla","5.0.7.1","10 km caldera under Mýrdalsjökull, jökulhlaup floods"],
+  ["5.27 Víkurkirkja","5.0.8.1","the church on the only high ground above a Katla flood"],
+  ["5.28 Vík í Mýrdal","5.0.8.2","southernmost village, 1918 Katla flood built the coast out"],
+  ["5.29 Hjörleifshöfði","5.0.8.3","palagonite inselberg, once an offshore island"],
+  ["5.30 Skógafoss","5.0.10.1","old sea-cliff waterfall eating a gorge upstream"],
+  ["5.31 Seljalandsfoss & Gljúfrabúi","5.0.11.1","the old Ice-Age sea cliff, now inland"],
+ ]},
+]},
+{title:"🎬 Film & TV", tag:"#film", subs:[
+ {label:"", items:[
+  ["5.21 DC-3 Wreck","5.0.5.1","Justin Bieber's 'I'll Show You', Sigur Rós's Heima, Dilwale"],
+  ["5.24 Dýrhólaey","5.0.5.4","Game of Thrones (Eastwatch), Vikings, Beowulf & Grendel"],
+  ["5.25 Reynisfjara","5.0.6.1","Rogue One, Star Trek Into Darkness, Noah, Game of Thrones"],
+  ["5.26 Katla","5.0.7.1","Mýrdalsjökull as the land beyond the Wall, Game of Thrones S2"],
+  ["5.28 Vík í Mýrdal","5.0.8.2","Captain America: Civil War (Siberia), Netflix's Katla"],
+  ["5.29 Hjörleifshöfði","5.0.8.3","Rogue One's Lah'mu + the 'Yoda Cave' (Gígjagjá)"],
+  ["5.30 Skógafoss","5.0.10.1","Thor: The Dark World, Vikings, Game of Thrones, Justin Bieber"],
+  ["5.31 Seljalandsfoss","5.0.11.1","Beowulf & Grendel, Dilwale, Justin Bieber"],
+ ]},
+]},
+{title:"🪶 Literature", tag:"#literature", subs:[
+ {label:"", items:[
+  ["5.5 Kristnitökuhraun","5.0.1.5","Kristni saga; Snorri Goði's conversion argument"],
+  ["5.13 Keldur","5.0.1.13","Njáls saga country, seat of the Oddaverjar"],
+  ["5.14 Hvolsvöllur","5.0.2.1","Brennu-Njáls saga, the burning at Bergþórshvoll"],
+  ["5.17 Markarfljót & Hlíðarendi","5.0.3.3","Gunnar of Njáls saga, 'Fair is the hillside'"],
+  ["5.19 Drangurinn","5.0.3.5","Grettir the Strong legend + Jón Árnason's folktales"],
+ ]},
+]},
+{title:"⛪ Religion", tag:"#religion", subs:[
+ {label:"", items:[
+  ["5.5 Kristnitökuhraun","5.0.1.5","the year-1000 conversion to Christianity"],
+  ["5.12 Hella","5.0.1.12","the Papar, Irish monks said to predate the Norse"],
+  ["5.23 Skeiðflatarkirkja","5.0.5.3","country church that raised Hallgrímskirkja's architect"],
+ ]},
+]},
+{title:"🧭 Settlement & Migration", tag:"#migration", subs:[
+ {label:"", items:[
+  ["5.9 Ingólfur Arnarson","5.0.1.9","first settler, high-seat pillars, the Ring Road"],
+  ["5.29 Hjörleifshöfði","5.0.8.3","Hjörleifur's murder; Vestmannaeyjar named for the Gaels"],
+ ]},
+]},
+{title:"🎨 Art", tag:"#art", subs:[
+ {label:"", items:[
+  ["5.1 Jóhannes Kjarval","5.0.1.1","cod-fisherman painter, on the 2,000-króna note"],
+  ["5.17 Markarfljót & Hlíðarendi","5.0.3.3","the saga hillside 'too fair to leave'"],
+ ]},
+]},
+{title:"⚡ Technology", tag:"#technology", subs:[
+ {label:"", items:[
+  ["5.6 Hellisheiðarvirkjun","5.0.1.6","Hengill geothermal power + CarbFix"],
+ ]},
+]},
+{title:"💰 Trade", tag:"#trade", subs:[
+ {label:"", items:[
+  ["5.2 Ölgerðin","5.0.1.2","the brewery that outlived 74 years of Prohibition"],
+ ]},
+]},
+{title:"🎖️ WWII", tag:"#wwii", subs:[
+ {label:"", items:[
+  ["5.10 Selfoss","5.0.1.10","British-guarded bridge felled by two milk trucks, 1944"],
+ ]},
+]},
+{title:"❄️ Climate", tag:"#climate", subs:[
+ {label:"", items:[
+  ["5.13 Keldur","5.0.1.13","turf walls as medieval climate tech"],
+ ]},
+]},
+{title:"🏛️ Architecture", tag:"#architecture", subs:[
+ {label:"", items:[
+  ["5.23 Skeiðflatarkirkja","5.0.5.3","Guðjón Samúelsson, Iceland's State Architect"],
+ ]},
+]},
+],
+};

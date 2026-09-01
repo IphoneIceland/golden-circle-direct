@@ -876,4 +876,60 @@ sections: [
  tags:["#geology"],
 },
 ]},
-]};
+],
+threadsIntro: "Topics that weave through the route. If a guest is interested in one, these are the script blocks to dig into.",
+threads: [
+{title:"⚖️ Parliament", tag:"#law", subs:[
+ {label:"", items:[
+  ["4.18 The Sturlung Age","4.0.3.1","civil war that ended the commonwealth, Flugumýri Arson, Game of Thrones inspiration"],
+  ["4.19 Haukadalur","4.0.3.2","the Haukdælir clan, Althing power players, Ari fróði's school"],
+  ["4.27 Landnám","4.0.7.6","settlement-period rush, Vatnaöldur ash, Náttfari, Ingólfur"],
+  ["4.29 Lögberg & the Alþingi","4.0.8.2","the parliament itself, Lawspeaker, outlawry, 1944 republic"],
+  ["4.30 Kristnitaka","4.0.8.3","the year-1000 vote at Þingvellir to convert to Christianity"],
+  ["4.32 Öxarárfoss, Drekkingarhylur & Peningagjá","4.0.8.5","Stóridómur (1564), the drowning pool, and eighteen women executed by law"],
+  ["4.34 17 June 1944","4.0.8.7","the Republic proclaimed at Lögberg on 17 June 1944, in the rain"],
+  ["4.39 Kjalarnesþing","4.0.9.6","the prototype, founded by Þorsteinn Ingólfsson"],
+ ]},
+]},
+{title:"🌋 Geology", tag:"#geology", subs:[
+ {label:"", items:[
+  ["4.6 Hellisheiðarvirkjun","4.0.1.7","Hengill geothermal, CarbFix carbon-to-stone"],
+  ["4.20 Hvítá & Gullfoss","4.0.4.1","Langjökull meltwater, glacial flour, jökulhlaups"],
+  ["4.21 Tungufljót","4.0.5.1","Faxi waterfall + Brú Power Plant (2020)"],
+  ["4.28 Almannagjá","4.0.8.1","the Mid-Atlantic rift, a 7 km graben, the North American wall, Skjaldbreiður's 9,000-year-old lava"],
+  ["4.33 Þingvallavatn & Silfra","4.0.8.6","Iceland's largest natural lake, 84 km²; water 30–100 years underground; one charr become four"],
+  ["4.40 Mount Esja","4.0.9.7","3-million-year basalt-and-tuff layer cake"],
+ ]},
+]},
+{title:"🎵 Music", tag:"#music", subs:[
+ {label:"", items:[
+  ["4.13 Grímsnes & Kerið","4.0.1.14","Björk + The Sugarcubes on a raft in the crater lake, 1987"],
+  ["4.15 Skálholt","4.0.1.16","Kaleo recorded \"I Want More\" live in the cathedral; released 2022"],
+  ["4.38 Mosfellsbær","4.0.9.5","Ólafur Arnalds + Kaleo"],
+ ]},
+]},
+{title:"🪶 Literature", tag:"#literature", subs:[
+ {label:"📖 Books", items:[
+  ["4.19 Haukadalur","4.0.3.2","Íslendingabók by Ari fróði (12th c.)"],
+  ["4.37 Mosfellsdalur","4.0.9.4","*Sjálfstætt fólk* (*Independent People*) by Halldór Laxness (Nobel 1955)"],
+ ]},
+ {label:"📜 Sagas", items:[
+  ["4.18 The Sturlung Age","4.0.3.1","Sturlunga Saga (Game of Thrones-era inspiration; Burning of Flugumýri 1253)"],
+  ["4.37 Mosfellsdalur","4.0.9.4","Egil's Saga (Egill Skallagrímsson)"],
+ ]},
+ {label:"✍️ Writers", items:[
+  ["4.18 The Sturlung Age","4.0.3.1","Snorri Sturluson (d. 1241, last words \"Eigi skal höggva!\")"],
+  ["4.19 Haukadalur","4.0.3.2","Ari fróði (\"the Wise\", c. 1067–1148; wrote Íslendingabók)"],
+  ["4.31 Þingvallabær & Skáldareitur","4.0.8.4","Einar Benediktsson (1940) and Jónas Hallgrímsson (reburied 1946) — the two-occupant national pantheon"],
+  ["4.37 Mosfellsdalur","4.0.9.4","Halldór Laxness (Nobel 1955; built Gljúfrasteinn)"],
+ ]},
+]},
+{title:"🎬 Film & TV", tag:"#film", subs:[
+ {label:"", items:[
+  ["4.20 Hvítá & Gullfoss","4.0.4.1","*Vikings* + *Lost in Space*"],
+  ["4.28 Almannagjá","4.0.8.1","*Game of Thrones* Bloody Gate + *Thor: The Dark World*"],
+  ["4.36 Laxnes Horse Farm","4.0.9.3","horses from Laxnes have appeared in several films, *Game of Thrones* among them (*Mosfellingur*, 2018)"],
+ ]},
+]},
+],
+};

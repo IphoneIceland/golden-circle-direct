@@ -821,4 +821,121 @@ sections: [
  tags:["#geology"],
 },
 ]},
-]};
+],
+threadsIntro: "Topics that weave through the route. If a guest is interested in one, these are the script blocks to dig into.",
+threads: [
+{title:"🌋 Geology", tag:"#geology", subs:[
+ {label:"", items:[
+  ["7.3 Elliðaárdalur & Paradísardalur","7.0.1.3","the park that's really a crime scene"],
+  ["7.4 Rauðhólar","7.0.1.4","The Mars Impostors"],
+  ["7.5 Kristnitökuhraun","7.0.1.5","The Decision Rock"],
+  ["7.6 Hellisheiðarvirkjun","7.0.1.6","The Dragon's Breath"],
+  ["7.7 Ölfusá","7.0.1.7","The Big Drain"],
+  ["7.8 Hveragerði","7.0.1.8","Quakes, Cakes and Steam"],
+  ["7.11 Þjórsá","7.0.1.11","The Long Spine"],
+  ["7.15 Vestmannaeyjar","7.0.3.1","Puffins, Ports and Plumes"],
+  ["7.16 Landeyjar Plains","7.0.3.2","The Ocean's Basement"],
+  ["7.18 Eyjafjallajökull","7.0.3.4","The Cloud That Stopped Europe"],
+  ["7.20 Skógafoss","7.0.4.1","Where the Old Coast Falls"],
+  ["7.21 Sólheimajökull","7.0.5.1","The Living Climate Graph"],
+  ["7.22 The DC-3 Wreck","7.0.5.2","The Ghost in the Sand"],
+  ["7.23 Pétursey","7.0.5.3","Saint, Saga and Sea-stack"],
+  ["7.24 Skeiðflatarkirkja","7.0.5.4","The Architect's Roots"],
+  ["7.25 Dýrhólaey","7.0.5.5","The Door Hole"],
+  ["7.26 Reynisfjara & Reynisdrangar","7.0.5.6","Beauty With Teeth"],
+  ["7.27 Víkurkirkja","7.0.5.7","The Lifeboat on the Hill"],
+  ["7.28 Hjörleifshöfði","7.0.5.8","Blood-Brother and Witch-in-the-Ice"],
+  ["7.30 Eldhraun","7.0.5.10","The Fires of 1783"],
+  ["7.32 Fjaðrárgljúfur","7.0.7.1","The Serpent Canyon"],
+  ["7.33 Foss á Síðu","7.0.7.2","The Waterfall That Blows Backwards"],
+  ["7.34 Orustuhóll","7.0.7.3","The Island in the Fire"],
+  ["7.36 Skeiðarársandur","7.0.7.5","The Sand That Ate the Ring Road"],
+  ["7.37 Skaftafell & Vatnajökull","7.0.7.6","Europe's Ice Cap"],
+  ["7.38 Fjallsárlón","7.0.8.1","The Quiet Lagoon"],
+  ["7.39 Jökulsárlón","7.0.9.1","The Glacier Lagoon"],
+  ["7.40 Fellsfjara","7.0.10.1","The Diamond Beach"],
+  ["7.41 Katla","7.0.11.1","The Sleeping Giant Under the Ice"],
+  ["7.42 Vík í Mýrdal","7.0.12.1","The Southern Outpost"],
+  ["7.43 Seljalandsfoss & Gljúfrabúi","7.0.13.1","Inside the Waterfall"],
+ ]},
+]},
+{title:"🧝 Folklore", tag:"#folklore", subs:[
+ {label:"", items:[
+  ["7.19 Rútshellir","7.0.3.5","The Cave With a Murder Hole"],
+  ["7.26 Reynisfjara & Reynisdrangar","7.0.5.6","Beauty With Teeth"],
+  ["7.28 Hjörleifshöfði","7.0.5.8","Blood-Brother and Witch-in-the-Ice"],
+  ["7.29 Laufskálavarða","7.0.5.9","The Cairn Field of Good Luck"],
+  ["7.30 Eldhraun","7.0.5.10","The Fires of 1783"],
+  ["7.31 Kirkjubæjarklaustur","7.0.6.1","The Convent on the Fire Road"],
+  ["7.33 Foss á Síðu","7.0.7.2","The Waterfall That Blows Backwards"],
+  ["7.34 Orustuhóll","7.0.7.3","The Island in the Fire"],
+ ]},
+]},
+{title:"✝️ Religion & Belief", tag:"#religion", subs:[
+ {label:"", items:[
+  ["7.5 Kristnitökuhraun","7.0.1.5","The Decision Rock"],
+  ["7.12 Hella","7.0.1.12","The Secret Monks"],
+  ["7.19 Rútshellir","7.0.3.5","The Cave With a Murder Hole"],
+  ["7.24 Skeiðflatarkirkja","7.0.5.4","The Architect's Roots"],
+  ["7.31 Kirkjubæjarklaustur","7.0.6.1","The Convent on the Fire Road"],
+ ]},
+]},
+{title:"🪶 Literature & Sagas", tag:"#literature", subs:[
+ {label:"", items:[
+  ["7.5 Kristnitökuhraun","7.0.1.5","The Decision Rock"],
+  ["7.13 Keldur","7.0.1.13","The Tunnel of Survival"],
+  ["7.14 Hvolsvöllur","7.0.2.1","Njáll's Backyard"],
+  ["7.17 Markarfljót & Hlíðarendi","7.0.3.3","The Hero's Choice"],
+  ["7.35 Lómagnúpur & Núpsstaður","7.0.7.4","The Door in the Cliff"],
+  ["7.37 Skaftafell & Vatnajökull","7.0.7.6","Europe's Ice Cap"],
+ ]},
+]},
+{title:"🚢 Migration & Settlement", tag:"#migration", subs:[
+ {label:"", items:[
+  ["7.9 Ingólfur Arnarson","7.0.1.9","The Founder's Path"],
+  ["7.28 Hjörleifshöfði","7.0.5.8","Blood-Brother and Witch-in-the-Ice"],
+ ]},
+]},
+{title:"🌦️ Climate", tag:"#climate", subs:[
+ {label:"", items:[
+  ["7.13 Keldur","7.0.1.13","The Tunnel of Survival"],
+  ["7.39 Jökulsárlón","7.0.9.1","The Glacier Lagoon"],
+ ]},
+]},
+{title:"🎨 Art", tag:"#art", subs:[
+ {label:"", items:[
+  ["7.1 Jóhannes Sveinsson Kjarval","7.0.1.1","the cod fisherman who became legal tender"],
+  ["7.17 Markarfljót & Hlíðarendi","7.0.3.3","The Hero's Choice"],
+ ]},
+]},
+{title:"🏛️ Architecture", tag:"#architecture", subs:[
+ {label:"", items:[
+  ["7.24 Skeiðflatarkirkja","7.0.5.4","The Architect's Roots"],
+  ["7.35 Lómagnúpur & Núpsstaður","7.0.7.4","The Door in the Cliff"],
+ ]},
+]},
+{title:"⚙️ Technology", tag:"#technology", subs:[
+ {label:"", items:[
+  ["7.6 Hellisheiðarvirkjun","7.0.1.6","The Dragon's Breath"],
+ ]},
+]},
+{title:"💰 Trade", tag:"#trade", subs:[
+ {label:"", items:[
+  ["7.2 Ölgerðin Egill Skallagrímsson","7.0.1.2","the brewery that outlived prohibition"],
+ ]},
+]},
+{title:"🎖️ WWII", tag:"#wwii", subs:[
+ {label:"", items:[
+  ["7.10 Selfoss","7.0.1.10","The Great Milk Collapse"],
+  ["7.23 Pétursey","7.0.5.3","Saint, Saga and Sea-stack"],
+ ]},
+]},
+{title:"🎬 Film & TV", tag:"#film", subs:[
+ {label:"", items:[
+  ["7.26 Reynisfjara & Reynisdrangar","7.0.5.6","*Game of Thrones* Eastwatch-by-the-Sea + *Rogue One*, *Star Trek Into Darkness*, *Noah*"],
+  ["7.32 Fjaðrárgljúfur","7.0.7.1","*Game of Thrones* S8 dragon flight + Justin Bieber \"I'll Show You\""],
+  ["7.37 Skaftafell / Svínafellsjökull","7.0.7.6","*Batman Begins* + *Interstellar*"],
+ ]},
+]},
+],
+};
