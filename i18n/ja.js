@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.ja = {
-  ui: { language:"言語", whichTour:"ツアーを選ぶ", loading:"読み込み中", back:"別のツアーを選ぶ", soon:"近日公開" , stories:"のストーリー", tours:"ツアー", drive:"の運転", cont:"前回の続きから", onphone:"この端末に保存済み", updated:"✨ 更新されました – タップして再読み込み", offline:"オフライン · 問題ありません", thanks:"これでツアーは終わりです。ご一緒いただきありがとうございました。今日が良い一日だったなら、レビューをお願いします。その際、ぜひ私の名前（Ritchie Rich）を書いてください。それが本当に大事なところなんです。"},
+  ui: { endSub:"ツアーはここまでです — 今日はご一緒できて嬉しかったです。", endKm:"km", endStories:"の物語", endStops:"か所", endAsk:"今日がそれに値したなら、レビューが私にとって何よりの力になります — <b>ぜひ私の名前を書いてください。</b>", endCopy:"タップでコピー", endCopied:"コピーしました！", endReview:"レビューを書く", endQuick:"30秒ほどで終わります", endWhatsApp:"WhatsApp", endInstagram:"Instagram", endWebsite:"ウェブサイト", language:"言語", whichTour:"ツアーを選ぶ", loading:"読み込み中", back:"別のツアーを選ぶ", soon:"近日公開" , stories:"のストーリー", tours:"ツアー", drive:"の運転", cont:"前回の続きから", onphone:"この端末に保存済み", updated:"✨ 更新されました – タップして再読み込み", offline:"オフライン · 問題ありません", thanks:"これでツアーは終わりです。ご一緒いただきありがとうございました。今日が良い一日だったなら、レビューをお願いします。その際、ぜひ私の名前（Ritchie Rich）を書いてください。それが本当に大事なところなんです。"},
   welcome: {
     step:"ステップ 1 — ようこそ", title:"ご乗車ありがとうございます",
     lead:"本日のツアーを、実際に走る順番どおりに並べてあります。",

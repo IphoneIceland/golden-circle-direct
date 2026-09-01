@@ -292,6 +292,34 @@
   #endscreen img{width:104px;height:104px;border-radius:50%;box-shadow:0 6px 26px rgba(0,0,0,.6)}
   #endscreen h1{margin:2px 0 0;font-family:"Norse",var(--serif);font-weight:700;font-size:40px;color:var(--accent);letter-spacing:.03em}
   #endscreen p{margin:0;color:var(--ink);font-size:15.5px;line-height:1.6;max-width:30rem}
+  /* --- end screen v2 --- */
+  #endscreen{justify-content:flex-start;padding:58px 20px 26px;gap:0}
+  #endscreen img{width:78px;height:78px}
+  #endscreen h1{margin:12px 0 0;font-size:38px;line-height:1}
+  #endsub{margin:7px 0 0;color:var(--mute);font-size:14.5px;line-height:1.5;max-width:19rem}
+  #endstats{display:flex;margin:18px 0 0;width:min(330px,92%);padding:11px 4px;
+    border:1px solid rgba(212,169,74,.28);border-radius:14px;background:rgba(13,13,15,.5)}
+  #endstats .st{flex:1;display:flex;flex-direction:column;gap:3px}
+  #endstats .st+.st{border-left:1px solid rgba(212,169,74,.2)}
+  #endstats b{font:700 19px var(--sans);color:var(--accent)}
+  #endstats span{font:600 10px var(--sans);color:var(--dim);letter-spacing:.11em;text-transform:uppercase}
+  #endscreen p{margin:22px 0 0;font-size:15px;line-height:1.55;max-width:20rem}
+  #endscreen p b{color:var(--accent)}
+  #endname{margin:12px 0 0;display:inline-flex;align-items:center;gap:10px;cursor:pointer;
+    background:rgba(212,169,74,.13);border:1px dashed rgba(212,169,74,.55);border-radius:12px;
+    padding:11px 16px;color:var(--accent);font:700 17px var(--sans);transition:background .18s,border-color .18s}
+  #endname small{font:600 10px var(--sans);color:var(--dim);letter-spacing:.09em;text-transform:uppercase}
+  #endname.copied{background:rgba(212,169,74,.3);border-style:solid}
+  #endname.copied small{color:var(--accent)}
+  #endcta{display:flex;flex-direction:column;align-items:center;width:min(330px,92%);margin:18px 0 0}
+  #endcta .endbtn.gold{width:100%;padding:16px;border-radius:14px;font:800 16px/1.2 var(--sans);
+    box-shadow:0 8px 22px rgba(212,169,74,.28)}
+  #endcta em{font:600 11.5px var(--sans);color:var(--dim);font-style:normal;margin-top:8px}
+  #endmore{display:flex;gap:9px;margin:20px 0 0;width:min(330px,92%)}
+  #endmore a{flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;text-decoration:none;
+    background:rgba(20,20,26,.66);border:1px solid var(--line);border-radius:13px;padding:11px 4px;
+    color:var(--mute);font:600 10.5px var(--sans)}
+  #endmore a i{font-style:normal;font-size:19px;line-height:1}
   .endbtn{display:block;width:min(320px,86vw);padding:14px;border-radius:12px;text-decoration:none;
     font:700 15px/1.2 var(--sans);cursor:pointer;border:1px solid var(--line-strong,rgba(244,240,230,.18))}
   .endbtn.gold{background:var(--accent);color:#121110;border-color:var(--accent)}
@@ -399,11 +427,23 @@
   <button id="endclose" aria-label="Back to the tour">‹</button>
   <img src="images/logo-crest.webp" alt="iGuide Iceland">
   <h1>Takk fyrir!</h1>
-  <p>That's the tour — thank you for riding with me. If today earned it, leave a review — and please use my name (Ritchie Rich) in it. That's the bit that actually counts.</p>
-  <a class="endbtn gold" href="https://www.tripadvisor.com/Attraction_Review-g189970-d1556635-Reviews-Reykjavik_Excursions_by_Icelandia-Reykjavik_Capital_Region.html" target="_blank" rel="noopener">⭐ Review on Tripadvisor</a>
-  <a class="endbtn ghost" href="https://wa.me/3546441011" target="_blank" rel="noopener">💬 WhatsApp Ritchie</a>
-  <a class="endbtn ghost" href="https://instagram.com/iguide.iceland" target="_blank" rel="noopener">📸 @iguide.iceland</a>
-  <a class="endbtn ghost" href="https://www.iguideiceland.is" target="_blank" rel="noopener">🌋 iguideiceland.is</a>
+  <div id="endsub">That’s the tour done — thanks for riding with me today.</div>
+  <div id="endstats">
+    <div class="st"><b id="endkm">–</b><span id="endkml">km</span></div>
+    <div class="st"><b id="endst">–</b><span id="endstl">stories</span></div>
+    <div class="st"><b id="endsp">–</b><span id="endspl">stops</span></div>
+  </div>
+  <p>If today earned it, a review is the single biggest thing you can do for me — just <b>put my name in it.</b></p>
+  <button id="endname">Ritchie Rich <small>tap to copy</small></button>
+  <div id="endcta">
+    <a class="endbtn gold" href="https://www.tripadvisor.com/Attraction_Review-g189970-d1556635-Reviews-Reykjavik_Excursions_by_Icelandia-Reykjavik_Capital_Region.html" target="_blank" rel="noopener">⭐  Leave a review</a>
+    <em id="endquick">Takes about 30 seconds</em>
+  </div>
+  <div id="endmore">
+    <a href="https://wa.me/3546441011" target="_blank" rel="noopener"><i>💬</i>WhatsApp</a>
+    <a href="https://instagram.com/iguide.iceland" target="_blank" rel="noopener"><i>📸</i>Instagram</a>
+    <a href="https://www.iguideiceland.is" target="_blank" rel="noopener"><i>🌋</i>Website</a>
+  </div>
 </div>
 <div id="brief" hidden></div>
 <div id="wrap" hidden>
@@ -1143,12 +1183,47 @@ function render(){
 
 function showEnd(){
   try{
-    const u=T()&&T().ui;
-    if(u&&u.thanks) document.querySelector("#endscreen p").textContent=u.thanks;
-    if(u&&u.offline) document.getElementById("offpill").textContent=u.offline;
+    const u=(T()&&T().ui)||{}, $e=id=>document.getElementById(id);
+    // journey payoff, straight from tours.js + the loaded script
+    const tid=(typeof TOUR!=="undefined"&&TOUR)?TOUR.id:null;
+    const meta=(window.__TOURS__||[]).find(t=>t.id===tid)||{};
+    const secs=(window.__SCRIPT__&&window.__SCRIPT__.sections)||[];
+    const stories=secs.reduce((n,x)=>n+((x.blocks&&x.blocks.length)||0),0)||meta.blocks||0;
+    const stops=secs.filter(x=>x.kind==="stop").length;
+    if(meta.km) $e("endkm").textContent=meta.km;
+    if(stories)  $e("endst").textContent=stories;
+    if(stops)    $e("endsp").textContent=stops;
+    // translated labels, English stays as the fallback
+    const set=(id,v)=>{ if(v) $e(id).textContent=v; };
+    set("endkml",u.endKm); set("endstl",u.endStories); set("endspl",u.endStops);
+    set("endsub",u.endSub); set("endquick",u.endQuick);
+    if(u.endAsk) document.querySelector("#endscreen p").innerHTML=u.endAsk;
+    else if(u.thanks) document.querySelector("#endscreen p").textContent=u.thanks;
+    if(u.endReview) document.querySelector("#endcta .endbtn").textContent="\u2b50\u00a0 "+u.endReview;
+    const more=document.querySelectorAll("#endmore a");
+    [u.endWhatsApp,u.endInstagram,u.endWebsite].forEach((lbl,i)=>{
+      if(lbl&&more[i]) more[i].lastChild.textContent=lbl;
+    });
+    if(u.endCopy) document.querySelector("#endname small").textContent=u.endCopy;
+    if(u.offline) $e("offpill").textContent=u.offline;
   }catch(e){}
   document.getElementById("endscreen").classList.add("show");
 }
+// tap-to-copy the name that has to land in the review
+document.getElementById("endname").onclick=function(){
+  const btn=this, u=(T()&&T().ui)||{}, small=btn.querySelector("small");
+  const done=()=>{ btn.classList.add("copied"); small.textContent=u.endCopied||"Copied!";
+    clearTimeout(btn._t); btn._t=setTimeout(()=>{ btn.classList.remove("copied");
+      small.textContent=u.endCopy||"tap to copy"; },2200); };
+  try{
+    navigator.clipboard.writeText("Ritchie Rich").then(done,()=>{});
+  }catch(e){
+    const ta=document.createElement("textarea"); ta.value="Ritchie Rich";
+    ta.style.cssText="position:fixed;opacity:0"; document.body.appendChild(ta);
+    ta.select(); try{ document.execCommand("copy"); done(); }catch(_){}
+    document.body.removeChild(ta);
+  }
+};
 document.getElementById("endclose").onclick=()=>document.getElementById("endscreen").classList.remove("show");
 function step(d){
   const f=flat(), pos=f.findIndex(x=>x.si===SI&&x.bi===BI)+d;

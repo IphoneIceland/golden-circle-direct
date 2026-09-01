@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.zh = {
-  ui: { language:"语言", whichTour:"选择行程", loading:"加载中", back:"更换行程", soon:"敬请期待" , stories:"个故事", tours:"条线路", drive:"车程", cont:"从上次的位置继续", onphone:"已存本机", updated:"✨ 已更新 – 点按重新加载", offline:"离线 · 一切正常", thanks:"旅程到此结束——谢谢你与我同行。如果今天值得，请留下评价——并请在评价中提到我的名字（Ritchie Rich）。这才是真正重要的部分。"},
+  ui: { endSub:"行程到此结束——谢谢你今天与我同行。", endKm:"公里", endStories:"个故事", endStops:"个停靠点", endAsk:"如果今天值得，一条评价是你能为我做的最大的事——<b>请在里面写上我的名字。</b>", endCopy:"点击复制", endCopied:"已复制！", endReview:"写一条评价", endQuick:"大约只需 30 秒", endWhatsApp:"WhatsApp", endInstagram:"Instagram", endWebsite:"网站", language:"语言", whichTour:"选择行程", loading:"加载中", back:"更换行程", soon:"敬请期待" , stories:"个故事", tours:"条线路", drive:"车程", cont:"从上次的位置继续", onphone:"已存本机", updated:"✨ 已更新 – 点按重新加载", offline:"离线 · 一切正常", thanks:"旅程到此结束——谢谢你与我同行。如果今天值得，请留下评价——并请在评价中提到我的名字（Ritchie Rich）。这才是真正重要的部分。"},
   welcome: {
     step:"第 1 步 — 欢迎", title:"欢迎登车",
     lead:"这是今天的行程，按照我们实际行驶的顺序排列。",
