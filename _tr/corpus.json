@@ -2139,9 +2139,9 @@
   ]
  },
  {
-  "id": "efb39b2e2a",
-  "en": "⚖️ The Althing",
-  "ctx": "block title — tour 1.0 / Þingvellir / ⚖️ The Althing",
+  "id": "f19f6240ba",
+  "en": "🌍 Almannagjá",
+  "ctx": "block title — tour 1.0 / Þingvellir / 🌍 Almannagjá",
   "tours": [
    "1.0",
    "2.0",
@@ -2150,9 +2150,174 @@
   ]
  },
  {
-  "id": "12f2897b15",
-  "en": "At Þingvellir — the rift valley.",
-  "ctx": "cue, tells the guest where to look — tour 1.0 / Þingvellir / ⚖️ The Althing",
+  "id": "b8d68ab1ca",
+  "en": "We are walking down inside the crack. The wall on your left is the edge of North America.",
+  "ctx": "cue, tells the guest where to look — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "3823c879c8",
+  "en": "Most plate boundaries sit invisible under two kilometres of ocean. Here you can **walk into the one the planet is tearing open.**",
+  "ctx": "the point of the block — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "4671e68055",
+  "en": "Hand on the wall to your left: North America. It is going that way. You are going that way. Slowly, and there is no hurry — it is about as fast as your fingernails grow.",
+  "ctx": "the spoken close — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "aec4b27fb5",
+  "en": "Walking Into the Gap",
+  "ctx": "subtitle under the block title — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "d0e3c6052c",
+  "en": "Forget the postcard version where you \"touch two continents at once.\" **Þingvellir** sits on the **Mid-Atlantic Ridge**, and what you are standing in is a **seven-kilometre-wide graben** — a strip of valley floor **sinking between two fault walls** as the plates pull apart about **2 cm a year**. The plates never touch here. The valley **is** the gap.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "c4e9243c4f",
+  "en": "The cracks have names. **Almannagjá**, the big one you are walking through, is the **torn edge on the North American side**; its twin **Heiðargjá** marks the far side of the rift. The floor between them belongs to **neither continent** — it is the seam, still ripping.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "c9d5216c7b",
+  "en": "The plain is **Þingvallahraun**, a **9,000-year-old** shield lava that spread down from **Skjaldbreiður**. Since then the floor has sunk **over 40 m** and the rift has pulled open by about **70 m**.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "61294f5bf3",
+  "en": "It does not creep smoothly — it locks, strains, then lets go. The last big pulse came in **spring 1789**, dropping the valley floor about **2.5 m in roughly ten days** and flooding the paths around the assembly ground.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "f78db439c5",
+  "en": "Since **930** the assembly ground itself has dropped some **3–4 m.** The parliament you are about to stand in met noticeably higher up than the ground you are on.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "8edfd240ae",
+  "en": "🎬 **On screen:** this gorge is the pass to the **Bloody Gate** in *Game of Thrones* — the gate was added digitally above the Öxarárfoss trail — and the park doubled as an otherworldly realm in ***Thor: The Dark World*** (2013).",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "f4f28f8cf4",
+  "en": "the big crack you walk through; its west wall is the edge of the North American plate",
+  "ctx": "gloss for the name \"Almannagjá\" — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "c58dc52283",
+  "en": "the fault marking the far side of the rift",
+  "ctx": "gloss for the name \"Heiðargjá\" — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "3f05875fd6",
+  "en": "the 9,000-year-old lava plain the valley floor is made of",
+  "ctx": "gloss for the name \"Þingvallahraun\" — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "018ec4e00e",
+  "en": "the shield volcano that poured it out",
+  "ctx": "gloss for the name \"Skjaldbreiður\" — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "a8eb159f38",
+  "en": "⚖️ Lögberg & the Alþingi",
+  "ctx": "block title — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "96ece6666d",
+  "en": "At the Law Rock — the wall behind you is the reason this spot was chosen.",
+  "ctx": "cue, tells the guest where to look — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
   "tours": [
    "1.0",
    "2.0",
@@ -2163,7 +2328,7 @@
  {
   "id": "31fdc5b186",
   "en": "No royal palace. No marble columns. Just a rock, a cliff wall, and the world's first national parliament held outdoors.",
-  "ctx": "the point of the block — tour 1.0 / Þingvellir / ⚖️ The Althing",
+  "ctx": "the point of the block — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
   "tours": [
    "1.0",
    "2.0",
@@ -2174,7 +2339,7 @@
  {
   "id": "dfd4be898c",
   "en": "Britain calls itself the home of parliament. Iceland was running one **300 years before the Magna Carta** — in a hole in the ground.",
-  "ctx": "the spoken close — tour 1.0 / Þingvellir / ⚖️ The Althing",
+  "ctx": "the spoken close — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
   "tours": [
    "1.0",
    "2.0",
@@ -2185,7 +2350,7 @@
  {
   "id": "11b11ed9ff",
   "en": "Iceland's First Parliament",
-  "ctx": "subtitle under the block title — tour 1.0 / Þingvellir / ⚖️ The Althing",
+  "ctx": "subtitle under the block title — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
   "tours": [
    "1.0",
    "2.0",
@@ -2194,9 +2359,9 @@
   ]
  },
  {
-  "id": "552a5553db",
-  "en": "In **930 CE**, Iceland's chieftains gathered at **Þingvellir** and founded the **Alþingi** — the national assembly. They picked the spot because the **Lögberg** (\"Law Rock\") cliff wall **carried the spoken law** across the valley.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ The Althing",
+  "id": "f5eceb90a5",
+  "en": "In **930 CE**, Iceland's chieftains gathered here and founded the **Alþingi** — the national assembly. They picked the spot because the **Lögberg** (\"Law Rock\") cliff wall **carried the spoken law** across the valley.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
   "tours": [
    "1.0",
    "2.0",
@@ -2207,7 +2372,7 @@
  {
   "id": "536ac89092",
   "en": "For two weeks every summer the country **shut down** and came here: laws made, marriages arranged, murderers tried, beer drunk.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ The Althing",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
   "tours": [
    "1.0",
    "2.0",
@@ -2218,7 +2383,7 @@
  {
   "id": "5780f87f9e",
   "en": "The **Lögsögumaður** (Law-Speaker), elected for a **three-year term**, had to recite **a third of the entire legal code from memory each year** — three years to deliver the lot. Drop one clause and you could change a verdict.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ The Althing",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
   "tours": [
    "1.0",
    "2.0",
@@ -2229,7 +2394,18 @@
  {
   "id": "5db91951ed",
   "en": "And there was **no king** — roughly **36 goðar** (chieftain-priests) ran the whole thing by consensus. One law, one people, zero crowns.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ The Althing",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "ecfb1cca43",
+  "en": "They chose this ground carefully: reachable from north, south and west inside about **seventeen days' travel**, a natural stage of cliffs and level floor, and **common land confiscated after its owner was outlawed for murder.** Practical, dramatic and pointedly neutral.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
   "tours": [
    "1.0",
    "2.0",
@@ -2240,18 +2416,7 @@
  {
   "id": "4590ca3ed0",
   "en": "It met here every summer until **1798**, sat two more summers in Reykjavík, and was then **abolished outright by royal decree on 6 June 1800.** Re-established on **8 March 1843**, it sat again on **1 July 1845** — in Reykjavík, in a school building. So not a thousand unbroken years. A thousand years with a **43-year hole** that Denmark put there.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ The Althing",
-  "tours": [
-   "1.0",
-   "2.0",
-   "3.0",
-   "4.0"
-  ]
- },
- {
-  "id": "b2a0e837e6",
-  "en": "Which is exactly why, on **17 June 1944**, the modern **Republic of Iceland** was proclaimed here rather than in the capital — on the ground where the nation first assembled, in the rain, in front of tens of thousands. They had chosen that ground carefully in the first place: reachable from north, south and west inside about **seventeen days' travel**, a natural stage of cliffs and level floor, and **common land confiscated after its owner was outlawed for murder.** Practical, dramatic and pointedly neutral.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ The Althing",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
   "tours": [
    "1.0",
    "2.0",
@@ -2262,41 +2427,40 @@
  {
   "id": "0dbd454e43",
   "en": "the national assembly founded here in 930",
-  "ctx": "gloss for the name \"Alþingi\" — tour 1.0 / Þingvellir / ⚖️ The Althing",
+  "ctx": "gloss for the name \"Alþingi\" — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
   "tours": [
    "1.0",
    "2.0",
+   "3.0",
    "4.0"
   ]
  },
  {
   "id": "e1d35def90",
   "en": "the Law Rock, the cliff wall that carried the spoken law across the valley",
-  "ctx": "gloss for the name \"Lögberg\" — tour 1.0 / Þingvellir / ⚖️ The Althing",
+  "ctx": "gloss for the name \"Lögberg\" — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
   "tours": [
-   "1.0"
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
   ]
  },
  {
   "id": "bc22e71993",
   "en": "the Law-Speaker, who recited a third of the whole legal code from memory each year",
-  "ctx": "gloss for the name \"Lögsögumaður\" — tour 1.0 / Þingvellir / ⚖️ The Althing",
+  "ctx": "gloss for the name \"Lögsögumaður\" — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
   "tours": [
-   "1.0"
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
   ]
  },
  {
   "id": "c352990090",
   "en": "the chieftain-priests, about 36 of them, who ran it by consensus",
-  "ctx": "gloss for the name \"goði / goðar\" — tour 1.0 / Þingvellir / ⚖️ The Althing",
-  "tours": [
-   "1.0"
-  ]
- },
- {
-  "id": "d4bb252bac",
-  "en": "🌍 Þingvellir Geology",
-  "ctx": "block title — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "ctx": "gloss for the name \"goði / goðar\" — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
   "tours": [
    "1.0",
    "2.0",
@@ -2305,17 +2469,9 @@
   ]
  },
  {
-  "id": "a327a0a097",
-  "en": "Most plate boundaries sit invisible under 2 km of ocean. Here you can **walk into the gap the planet is tearing open** — and drink from it.",
-  "ctx": "the point of the block — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "1.0"
-  ]
- },
- {
-  "id": "42343d13fe",
-  "en": "Two continents pulling apart. The cleanest drinking water on the planet running through the gap. Iceland turning a tectonic disaster into hydration.",
-  "ctx": "the spoken close — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "ea09f4a6c4",
+  "en": "⚖️ Kristnitaka",
+  "ctx": "block title — tour 1.0 / Þingvellir / ⚖️ Kristnitaka",
   "tours": [
    "1.0",
    "2.0",
@@ -2324,9 +2480,9 @@
   ]
  },
  {
-  "id": "49ade8b747",
-  "en": "Drinking From a Dead Glacier",
-  "ctx": "subtitle under the block title — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "a865ee83d2",
+  "en": "Standing at Lögberg. This is the exact ground where it was decided.",
+  "ctx": "cue, tells the guest where to look — tour 1.0 / Þingvellir / ⚖️ Kristnitaka",
   "tours": [
    "1.0",
    "2.0",
@@ -2335,25 +2491,9 @@
   ]
  },
  {
-  "id": "b25b368dba",
-  "en": "Forget the postcard version where you \"touch two continents at once.\" **Þingvellir** sits on the **Mid-Atlantic Ridge**, and what you're standing in is a **seven-kilometre-wide graben** — a strip of valley floor **sinking between two fault walls** as the plates pull apart about **2 cm a year**. The plates never touch here; the valley **is** the gap between them.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "1.0"
-  ]
- },
- {
-  "id": "aefe351452",
-  "en": "The cracks have names — **Almannagjá**, the big one you walk through, is the **torn edge on the North American side**; its twin **Heiðargjá** marks the far side of the rift. The floor between them belongs to **neither continent** — it's the seam, still ripping. Filling it is **Þingvallavatn**, Iceland's largest natural lake.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "1.0"
-  ]
- },
- {
-  "id": "f98484531a",
-  "en": "Clear pools like **Silfra** are meltwater that left **Langjökull** glacier **30–100 years ago**, filtered underground through porous lava — **drinkable from your cupped hand**, with underwater visibility up to **120 m**.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "7dd876a607",
+  "en": "Most national religions are imposed by kings or won by armies. Iceland's was decided **on this rock, by a man having a lie-down.**",
+  "ctx": "the point of the block — tour 1.0 / Þingvellir / ⚖️ Kristnitaka",
   "tours": [
    "1.0",
    "2.0",
@@ -2362,9 +2502,9 @@
   ]
  },
  {
-  "id": "049c8fbcf8",
-  "en": "🎬 **On screen:** Almannagjá gorge is the pass to the **Bloody Gate** in *Game of Thrones* (the gate was digitally added above the Öxarárfoss trail), and the park doubled as an otherworldly realm in ***Thor: The Dark World*** (2013).",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "bab9caaecd",
+  "en": "Calmly, collectively, and after a really good night's sleep. That is how Iceland became Christian — standing where you are standing. Most countries were not given the option.",
+  "ctx": "the spoken close — tour 1.0 / Þingvellir / ⚖️ Kristnitaka",
   "tours": [
    "1.0",
    "2.0",
@@ -2373,9 +2513,9 @@
   ]
  },
  {
-  "id": "b9ec9b3604",
-  "en": "It doesn't creep smoothly — it locks, strains, then lets go. The last big pulse came in **spring 1789**, dropping the valley floor about **2.5 m in roughly ten days** and flooding the paths around the old assembly ground.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "0d2f45a433",
+  "en": "The Day Iceland Changed Religion, Lying Down",
+  "ctx": "subtitle under the block title — tour 1.0 / Þingvellir / ⚖️ Kristnitaka",
   "tours": [
    "1.0",
    "2.0",
@@ -2384,9 +2524,9 @@
   ]
  },
  {
-  "id": "3388c15600",
-  "en": "The plain is **Þingvallahraun**, a **9,000-year-old** shield lava that spread down here from **Skjaldbreiður**. Since then the floor has sunk **over 40 m** and the rift has pulled open by about **70 m**.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "d66cefdfe4",
+  "en": "By **999** the country was split — Christian districts against pagan strongholds — and Norway's King **Ólafur Tryggvason** was squeezing hard: he welcomed Christian traders into his ports, barred the pagans, and **held Icelandic hostages** as leverage. Convert, or lose the trade route you cannot live without.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ Kristnitaka",
   "tours": [
    "1.0",
    "2.0",
@@ -2395,9 +2535,9 @@
   ]
  },
  {
-  "id": "990d5cd905",
-  "en": "Since **930** the assembly ground itself has dropped some **3–4 m** — the medieval parliament met noticeably higher up than the plain you're standing on.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "32f9f60f59",
+  "en": "Persuasion had gone badly. One Saxon priest, **Þangbrandur**, allegedly **fought duels and killed poets** who mocked his sermons. Not a charm offensive.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ Kristnitaka",
   "tours": [
    "1.0",
    "2.0",
@@ -2406,9 +2546,9 @@
   ]
  },
  {
-  "id": "d543d61ac4",
-  "en": "**Þingvallavatn** isn't just the largest: about **84 km²**, up to **114 m deep**, and its bed sits **below sea level** because of the rifting. Nearly **90%** of its water arrives not down rivers but as **cold spring water at 3–4°C**, **Langjökull** meltwater filtered for years through porous lava — which is exactly why **Silfra** runs so absurdly clear.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "04f3bd7219",
+  "en": "By **AD 1000** (the sources wobble between 999 and 1000) the **Alþingi** met on this spot facing two religions, two law codes and one looming civil war — so both sides handed the verdict to one man: **Þorgeir Ljósvetningagoði**, the *pagan* Law-Speaker.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ Kristnitaka",
   "tours": [
    "1.0",
    "2.0",
@@ -2417,9 +2557,9 @@
   ]
  },
  {
-  "id": "2f70b82722",
-  "en": "In that lake, one Arctic charr arrived after the ice left and split into **four separate forms in about 10,000 years** — a snail-eater, a dwarf, a plankton-feeder and a fish-eater. (Evolution branching in place, with nothing to divide them but appetite.)",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "8c51245422",
+  "en": "He lay down under his cloak **a full day and a night**, then stood up on this rock and ruled: **one law, one people, one faith — Christianity** — so the young commonwealth would not split in two. Private sacrifice, horse-meat and infant exposure were quietly tolerated at first, then dropped. Food is food.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⚖️ Kristnitaka",
   "tours": [
    "1.0",
    "2.0",
@@ -2428,9 +2568,9 @@
   ]
  },
  {
-  "id": "a607aa2e1d",
-  "en": "Follow the **Öxará** past **Öxarárfoss** and you reach a still green pool called **Drekkingarhylur**, the drowning pool. After the Reformation Iceland adopted a severe moral code, **Stóridómur**, in **1564**, and Þingvellir doubled as an execution ground — men **beheaded, hanged or burned**, women convicted of **adultery, incest, perjury or infanticide** **drowned here**. Court records point to **at least eighteen women killed at this pool between about 1618 and 1749**, and a memorial plaque now names them.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "ac003947a6",
+  "en": "the pagan Law-Speaker who lay under his cloak a day and a night, then chose Christianity",
+  "ctx": "gloss for the name \"Þorgeir Ljósvetningagoði\" — tour 1.0 / Þingvellir / ⚖️ Kristnitaka",
   "tours": [
    "1.0",
    "2.0",
@@ -2439,97 +2579,647 @@
   ]
  },
  {
-  "id": "facd322b0b",
-  "en": "More numbers for the lake: it averages **34 metres** deep, sits at roughly **100.5 metres above sea level**, and the catchment feeding it runs to about **1,300 square kilometres** — of which the lake itself is only about **six per cent.** Everything else is plumbing you cannot see.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "8092055577",
+  "en": "the Saxon priest who fought duels with the poets who mocked his sermons",
+  "ctx": "gloss for the name \"Þangbrandur\" — tour 1.0 / Þingvellir / ⚖️ Kristnitaka",
   "tours": [
    "1.0",
-   "3.0"
+   "2.0",
+   "3.0",
+   "4.0"
   ]
  },
  {
-  "id": "04bd763fa5",
-  "en": "About **nine-tenths of everything entering this lake arrives from below**, seeping up through porous lava. Only about **one-tenth** comes in as visible surface water, and the main open river doing that job is the **Öxará** — the one that comes over the wall at Þingvellir. The water begins as snow on **Langjökull** and spends **thirty to a hundred years** underground before it surfaces here. (The water in front of you fell before some of you were born.)",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "d0044823bd",
+  "en": "Norway's king, who squeezed Iceland with port bans and hostages",
+  "ctx": "gloss for the name \"Ólafur Tryggvason\" — tour 1.0 / Þingvellir / ⚖️ Kristnitaka",
   "tours": [
    "1.0",
-   "3.0"
+   "2.0",
+   "3.0",
+   "4.0"
   ]
  },
  {
-  "id": "0938ca5f73",
-  "en": "The four charr have names worth knowing: **kuðungableikja**, the snail charr, **dvergbleikja**, the dwarf, **murta**, the small open-water one, and **sílableikja**, the fish-eater. **Two feed on the bottom. Two feed in open water.** Same lake, four completely different jobs — and they are **all one species**, *Salvelinus alpinus*. They can interbreed and produce fertile young. They largely decline to.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "559483305f",
+  "en": "⛪ Þingvallabær & Skáldareitur",
+  "ctx": "block title — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
   "tours": [
    "1.0",
-   "3.0"
+   "2.0",
+   "3.0",
+   "4.0"
   ]
  },
  {
-  "id": "500f778c2f",
-  "en": "**Three of the four are genetically distinct from one another.** The fourth, sílableikja, comes out genetically muddled — some individuals read as murta, others as crosses between sílableikja and kuðungableikja. Vísindavefurinn's assessment is that this may be **sympatric speciation**, one population dividing with no physical barrier between the halves, and that another **10,000 years** could produce genuinely separate species. **Evolution has not finished tidying up.**",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "a054734748",
+  "en": "The white church and the five-gabled farmhouse on your right, at the bottom of the wall.",
+  "ctx": "cue, tells the guest where to look — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
   "tours": [
    "1.0",
-   "3.0"
+   "2.0",
+   "3.0",
+   "4.0"
   ]
  },
  {
-  "id": "eb8f9646b4",
-  "en": "That island out in the lake is **Sandey**, a **tuff cone** built by **Hengill** about **1,900 years ago** — the same eruption that laid down **Nesjahraun** at the north end — with its ash blown mainly east across **Lyngdalsheiði**. An eruption happened in the middle of a lake and built itself an island out of it.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "1e41717a29",
+  "en": "A thousand-year-old church, a Prime Minister's summer house, and a national shrine containing two poets — one of whom may not be the right man.",
+  "ctx": "the point of the block — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
   "tours": [
    "1.0",
-   "3.0"
+   "2.0",
+   "3.0",
+   "4.0"
   ]
  },
  {
-  "id": "c42bdb5f9e",
-  "en": "the rift valley you're standing in, sinking between the two plates",
-  "ctx": "gloss for the name \"Þingvellir\" — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "1.0"
-  ]
- },
- {
-  "id": "f4f28f8cf4",
-  "en": "the big crack you walk through; its west wall is the edge of the North American plate",
-  "ctx": "gloss for the name \"Almannagjá\" — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "c92b9cb0b0",
+  "en": "They built this to hold the greatest Icelanders who ever lived. Two people went in. Then everyone thought about it a bit more and decided, actually, we'd rather be buried at home.",
+  "ctx": "the spoken close — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
   "tours": [
    "1.0",
-   "3.0"
+   "2.0",
+   "3.0",
+   "4.0"
   ]
  },
  {
-  "id": "c58dc52283",
-  "en": "the fault marking the far side of the rift",
-  "ctx": "gloss for the name \"Heiðargjá\" — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "1.0"
-  ]
- },
- {
-  "id": "00d4d9458a",
-  "en": "the clear pool you can drink from, visibility up to 120 m",
-  "ctx": "gloss for the name \"Silfra\" — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "f3e3aa32ff",
+  "en": "A Westminster Abbey With Two Occupants",
+  "ctx": "subtitle under the block title — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
   "tours": [
    "1.0",
-   "3.0"
+   "2.0",
+   "3.0",
+   "4.0"
   ]
  },
  {
-  "id": "57af51f6fa",
-  "en": "the glacier that water left 30 to 100 years ago",
-  "ctx": "gloss for the name \"Langjökull\" — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "id": "7ab5097bc5",
+  "en": "The church first went up around **1017**, the present building dates from **1859**, and the bell tower was added in **1907** — the date is on the weather vane. It has no resident priest; the one who serves it **comes out from Skálholt**, which we pass later today.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
   "tours": [
    "1.0",
-   "2.0"
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "3d2a9d95a0",
+  "en": "The five-gabled farmhouse beside it is **Þingvallabær**, built in **1930** for the Alþingi millennium festival by **Guðjón Samúelsson**, the state architect. He turned its face deliberately toward **Almannagjá** — the older turf farmhouse it replaced had looked out at the lake. It began with **three gables**; two more were added after a **1970 fire** destroyed the king's house next door. Since **1974** it has been the **Prime Minister's summer residence.** One gable belongs to the church.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "862ef68698",
+  "en": "Behind the church is **Skáldareitur**, the poets' plot — and it exists because of an argument over a corpse. When **Einar Benediktsson** died in **January 1940**, his ex-wife and his companion could not agree who had the right to bury him. **Jónas Jónsson frá Hriflu** saw the opening and proposed a national honour ground here, modelled on **Westminster Abbey**. Einar went into it on **27 January 1940**.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "afecb62fb4",
+  "en": "The second and last arrival was **Jónas Hallgrímsson**, Iceland's national poet, who had died in Copenhagen on **26 May 1845** of blood poisoning after breaking his leg on a staircase. His bones came home and were buried here on **16 November 1946** — over the objection of the man who dug them up, who wanted him in **Öxnadalur** where he was born. The Prime Minister, **Ólafur Thors**, overruled him. The government's position was that **Jónas's bones were state property.**",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "4dba5bb0dc",
+  "en": "And nobody is sure they are his. Two other people had been buried on top of him in **1875** and **1900**, and both had to be lifted out first. The doubt has never gone away — there are still calls to open the grave and test what is in it.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "d076417e15",
+  "en": "Two graves. That is the whole national pantheon. **Halldór Laxness**, whose house we passed this morning, is not here. **Kjarval**, who opened this tour, is not here either. Iceland built itself a Westminster Abbey and then quietly stopped using it.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "f84305e99b",
+  "en": "the five-gabled farmhouse, the Prime Minister's summer residence",
+  "ctx": "gloss for the name \"Þingvallabær\" — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "e7787dc17f",
+  "en": "the church, on this spot since 1017",
+  "ctx": "gloss for the name \"Þingvallakirkja\" — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "a5a2ce3cc7",
+  "en": "the poets' plot behind the church",
+  "ctx": "gloss for the name \"Skáldareitur\" — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "66ade1d4eb",
+  "en": "the poet whose disputed funeral created the place, buried 1940",
+  "ctx": "gloss for the name \"Einar Benediktsson\" — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "01e7a378a9",
+  "en": "the national poet, reburied here 1946",
+  "ctx": "gloss for the name \"Jónas Hallgrímsson\" — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "03f2a76e9d",
+  "en": "the state architect who built the farmhouse in 1930",
+  "ctx": "gloss for the name \"Guðjón Samúelsson\" — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "2653aab518",
+  "en": "💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "ctx": "block title — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "3a5399443c",
+  "en": "Follow the Öxará. The waterfall ahead, the still green pool below it, and the coin-filled crack by the bridge.",
+  "ctx": "cue, tells the guest where to look — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "526069a0dd",
+  "en": "The law was spoken up on the rock. It was carried out down here, in the water.",
+  "ctx": "the point of the block — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "6274b2097e",
+  "en": "People throw coins in and make a wish because a sign in the 1930s told them to. Icelanders have been quietly watching tourists do it ever since and saying nothing.",
+  "ctx": "the spoken close — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "e9cb6e5f8c",
+  "en": "The Waterfall, the Drowning Pool and the Fake Wishing Well",
+  "ctx": "subtitle under the block title — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "6d07134384",
+  "en": "The **Öxará** comes over the wall at **Öxarárfoss** and runs down through the assembly ground. It is the main open river feeding the whole valley — and it is doing a job it was very probably given, diverted to bring water to the assembly.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "3fa8b14459",
+  "en": "Below the falls the river widens into a still green pool: **Drekkingarhylur**, the drowning pool. After the Reformation Iceland adopted a severe moral code, **Stóridómur**, in **1564**, and Þingvellir doubled as an execution ground — men **beheaded, hanged or burned**; women convicted of **adultery, incest, perjury or infanticide** were **drowned here**.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "ad151f1571",
+  "en": "Court records point to **at least eighteen women killed at this pool between about 1618 and 1749.** A memorial plaque now names them. Two weeks a year this place made the law. It also carried out the sentence.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "1e3d20fa0c",
+  "en": "And then there is **Peningagjá** — the crack full of coins by the bridge, properly the southern end of **Nikulásargjá**. The coins have nothing to do with the sagas. The **bridge went up in 1907** for the visit of the Danish king **Frederick VIII**, who is said to have thrown the first one in.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "0ef2ff88c3",
+  "en": "The wish came later, and from a signpost. In the **1930s** somebody put up a board reading **\"to the wishing well\"** — and that is the entire origin of the tradition. The national park's own record is blunt about it: **no older Icelandic folk tale or story about wishing here exists.** An ancient custom, ninety years old, invented by signage.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "b5f92371e7",
+  "en": "the waterfall coming over the rift wall",
+  "ctx": "gloss for the name \"Öxarárfoss\" — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "7f1cb289d9",
+  "en": "the drowning pool below it",
+  "ctx": "gloss for the name \"Drekkingarhylur\" — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "ea7f9324a6",
+  "en": "the 1564 moral code that made the drownings law",
+  "ctx": "gloss for the name \"Stóridómur\" — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "b4e2395e44",
+  "en": "the coin crack, properly the south end of Nikulásargjá",
+  "ctx": "gloss for the name \"Peningagjá\" — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "058fd646cd",
+  "en": "🐟 Þingvallavatn & Silfra",
+  "ctx": "block title — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "5295b036e6",
+  "en": "The lake filling the rift ahead of you, and the clear pools off to the side.",
+  "ctx": "cue, tells the guest where to look — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "beabfb6471",
+  "en": "Two continents pulling apart, the cleanest drinking water on the planet running through the gap, and a fish quietly turning into four other fish while nobody watches.",
+  "ctx": "the point of the block — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "e8a9991811",
+  "en": "Iceland's answer to a tectonic disaster: turn it into a reservoir, then drink it.",
+  "ctx": "the spoken close — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "43bce6c4b5",
+  "en": "The Cleanest Water on Earth, and Four Fish That Are One Fish",
+  "ctx": "subtitle under the block title — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "6b4e643d0b",
+  "en": "**Þingvallavatn** is Iceland's largest natural lake: about **84 km²**, up to **114 m deep**, averaging **34 m**, sitting at roughly **100.5 m above sea level** — and its bed lies **below sea level** because of the rifting.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "5d933d4a85",
+  "en": "About **nine-tenths of everything entering it arrives from below**, seeping up through porous lava at **3–4°C**. Only about a tenth comes in as visible surface water, most of that the **Öxará**. The catchment runs to some **1,300 km²**, of which the lake is only about **six per cent** — the rest is plumbing you cannot see.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "b5c182ea7b",
+  "en": "The water begins as snow on **Langjökull** and spends **thirty to a hundred years** underground before it surfaces. Clear pools like **Silfra** are that meltwater arriving. The water in front of you fell before some of you were born.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "43c99a2960",
+  "en": "In that lake, one Arctic charr arrived after the ice left and split into **four separate forms in about 10,000 years.** **Kuðungableikja**, the snail charr. **Dvergbleikja**, the dwarf. **Murta**, the small open-water one. **Sílableikja**, the fish-eater. Two feed on the bottom, two feed in open water — and they are **all one species**, *Salvelinus alpinus*. They can interbreed and produce fertile young. They largely decline to.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "d47f6e0ca8",
+  "en": "**Three of the four are genetically distinct.** The fourth, sílableikja, comes out muddled — some read as murta, others as crosses. Vísindavefurinn's assessment is that this may be **sympatric speciation**, one population dividing with no physical barrier between the halves, and that another **10,000 years** could produce genuinely separate species. Evolution has not finished tidying up.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "d9e1fc9740",
+  "en": "That island out in the lake is **Sandey**, a **tuff cone** built by **Hengill** about **1,900 years ago** — the same eruption that laid down **Nesjahraun** at the north end. An eruption happened in the middle of a lake and built itself an island out of it.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
   ]
  },
  {
   "id": "653cee8871",
   "en": "Iceland's largest natural lake, filling the rift floor",
-  "ctx": "gloss for the name \"Þingvallavatn\" — tour 1.0 / Þingvellir / 🌍 Þingvellir Geology",
+  "ctx": "gloss for the name \"Þingvallavatn\" — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "00d4d9458a",
+  "en": "the clear pool you can drink from, visibility up to 120 m",
+  "ctx": "gloss for the name \"Silfra\" — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "654d24dab0",
+  "en": "the glacier the water left 30 to 100 years ago",
+  "ctx": "gloss for the name \"Langjökull\" — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "6727b1ad64",
+  "en": "the small open-water charr, one of the lake's four forms",
+  "ctx": "gloss for the name \"murta\" — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "a8bab102d7",
+  "en": "the tuff-cone island Hengill built about 1,900 years ago",
+  "ctx": "gloss for the name \"Sandey\" — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "7a2b0bab8f",
+  "en": "🇮🇸 17 June 1944",
+  "ctx": "block title — tour 1.0 / Þingvellir / 🇮🇸 17 June 1944",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "7dc29970b3",
+  "en": "Back at the Law Rock. This is where the country stopped belonging to anybody else.",
+  "ctx": "cue, tells the guest where to look — tour 1.0 / Þingvellir / 🇮🇸 17 June 1944",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "2d729bd1f7",
+  "en": "A thousand years after the first assembly, on the same ground, the country finished the job.",
+  "ctx": "the point of the block — tour 1.0 / Þingvellir / 🇮🇸 17 June 1944",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "d3acb76da3",
+  "en": "It absolutely poured. Tens of thousands stood in it for hours. If you want one image of how much this particular field means to Icelanders — that is the one.",
+  "ctx": "the spoken close — tour 1.0 / Þingvellir / 🇮🇸 17 June 1944",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "a4b24d78cf",
+  "en": "The Republic, in the Rain",
+  "ctx": "subtitle under the block title — tour 1.0 / Þingvellir / 🇮🇸 17 June 1944",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "bcda567350",
+  "en": "They could have done it in Reykjavík, in a building, dry. They chose this ground instead: **the place the nation first assembled in 930**, and the place Denmark had shut down in **1800**.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🇮🇸 17 June 1944",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "e7ecb96573",
+  "en": "The date was not an accident either — **17 June** is the birthday of **Jón Sigurðsson**, the man who led the independence campaign and who did not live to see it.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🇮🇸 17 June 1944",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "1ce29c7f5e",
+  "en": "It rained. It rained hard, the whole way through. Nobody left. The photographs of that day are mostly a valley full of soaked people refusing to go home.",
+  "ctx": "fact bullet — tour 1.0 / Þingvellir / 🇮🇸 17 June 1944",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "c29478c5fc",
+  "en": "the independence leader whose birthday, 17 June, became the national day",
+  "ctx": "gloss for the name \"Jón Sigurðsson\" — tour 1.0 / Þingvellir / 🇮🇸 17 June 1944",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "0f1ffc3ece",
+  "en": "republic; the word they were there to say",
+  "ctx": "gloss for the name \"lýðveldi\" — tour 1.0 / Þingvellir / 🇮🇸 17 June 1944",
   "tours": [
    "1.0",
    "2.0",
@@ -2894,129 +3584,6 @@
   "id": "a67bf1a6d6",
   "en": "the third glacier in the stack, furthest toward the coast",
   "ctx": "gloss for the name \"Mýrdalsjökull\" — tour 1.0 / Þingvellir → Haukadalur Valley / 🌋 Hekla",
-  "tours": [
-   "1.0"
-  ]
- },
- {
-  "id": "ea09f4a6c4",
-  "en": "⚖️ Kristnitaka",
-  "ctx": "block title — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "1.0",
-   "2.0",
-   "3.0",
-   "4.0"
-  ]
- },
- {
-  "id": "255d408209",
-  "en": "Look ahead — Þingvellir, where the decision was made.",
-  "ctx": "cue, tells the guest where to look — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "1.0",
-   "2.0",
-   "3.0",
-   "4.0"
-  ]
- },
- {
-  "id": "9fcd19e0c1",
-  "en": "Most national religions are imposed by kings or won by armies. Iceland's was decided by **a man taking a nap**.",
-  "ctx": "the point of the block — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "1.0",
-   "2.0",
-   "3.0",
-   "4.0"
-  ]
- },
- {
-  "id": "7170b66389",
-  "en": "Calmly, collectively, and after a really good night's sleep. That's how Iceland became Christian. Most countries weren't given the option.",
-  "ctx": "the spoken close — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "1.0",
-   "2.0",
-   "3.0",
-   "4.0"
-  ]
- },
- {
-  "id": "2e80d20599",
-  "en": "Iceland's Conversion to Christianity",
-  "ctx": "subtitle under the block title — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "1.0",
-   "2.0",
-   "3.0",
-   "4.0"
-  ]
- },
- {
-  "id": "39389ea85e",
-  "en": "By **999** the country was split — Christian districts vs pagan strongholds — and Norway's King **Ólafur Tryggvason** was squeezing hard: he welcomed Christian traders into his ports, barred the pagans, and **held Icelandic hostages** as leverage. Convert, or lose the trade route you can't live without.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "1.0",
-   "2.0",
-   "3.0",
-   "4.0"
-  ]
- },
- {
-  "id": "dad26650f0",
-  "en": "Persuasion had gone badly: one Saxon priest, **Þangbrandur**, allegedly **fought duels and killed poets** who mocked his sermons. Not a charm offensive.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "1.0",
-   "2.0",
-   "3.0",
-   "4.0"
-  ]
- },
- {
-  "id": "bb4dd96ae1",
-  "en": "By **AD 1000** (sources wobble between 999 and 1000) the **Alþingi** faced two religions, two law codes, one looming civil war — so both sides handed the verdict to one man: **Þorgeir Ljósvetningagoði**, the *pagan* Lawspeaker.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "1.0",
-   "2.0",
-   "3.0",
-   "4.0"
-  ]
- },
- {
-  "id": "447f1b67d1",
-  "en": "He lay under his cloak **a full day and night**, then ruled: **one law, one people, one faith — Christianity** — so the young commonwealth wouldn't split in two. Private sacrifice, horse-meat and infant exposure quietly tolerated at first, then dropped. Food is food.",
-  "ctx": "fact bullet — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "1.0",
-   "2.0",
-   "3.0",
-   "4.0"
-  ]
- },
- {
-  "id": "50abf80722",
-  "en": "the pagan Lawspeaker who lay under his cloak a day and a night, then chose Christianity",
-  "ctx": "gloss for the name \"Þorgeir Ljósvetningagoði\" — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "1.0"
-  ]
- },
- {
-  "id": "8092055577",
-  "en": "the Saxon priest who fought duels with the poets who mocked his sermons",
-  "ctx": "gloss for the name \"Þangbrandur\" — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "1.0"
-  ]
- },
- {
-  "id": "d0044823bd",
-  "en": "Norway's king, who squeezed Iceland with port bans and hostages",
-  "ctx": "gloss for the name \"Ólafur Tryggvason\" — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
   "tours": [
    "1.0"
   ]
@@ -6784,6 +7351,441 @@
   ]
  },
  {
+  "id": "4680f8a6b5",
+  "en": "Topics that weave through the route. If a guest is interested in one, these are the script blocks to dig into.",
+  "ctx": "Threads index — the one line of intro prose",
+  "tours": [
+   "1.0",
+   "10.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
+  "id": "37826a18ce",
+  "en": "⚖️ Parliament",
+  "ctx": "Threads index — topic heading, tour 1.0",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "4cdadabfa2",
+  "en": "the prototype, founded by Þorsteinn Ingólfsson",
+  "ctx": "Threads index — what block \"1.5 Kjalarnesþing\" covers, under \"⚖️ Parliament\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "57958b34d9",
+  "en": "settlement-period rush, Vatnaöldur ash, Náttfari, Ingólfur",
+  "ctx": "Threads index — what block \"1.11 Landnám\" covers, under \"⚖️ Parliament\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "53314d8f32",
+  "en": "the parliament itself, Lawspeaker, outlawry, 1944 republic",
+  "ctx": "Threads index — what block \"1.13 Lögberg & the Alþingi\" covers, under \"⚖️ Parliament\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "21ce10eba8",
+  "en": "the year-1000 vote at Þingvellir to convert to Christianity",
+  "ctx": "Threads index — what block \"1.14 Kristnitaka\" covers, under \"⚖️ Parliament\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "ab7de80ba7",
+  "en": "Stóridómur (1564), the drowning pool, and eighteen women executed by law",
+  "ctx": "Threads index — what block \"1.16 Öxarárfoss, Drekkingarhylur & Peningagjá\" covers, under \"⚖️ Parliament\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "4c4e15bf1a",
+  "en": "the Republic proclaimed at Lögberg on 17 June 1944, in the rain",
+  "ctx": "Threads index — what block \"1.18 17 June 1944\" covers, under \"⚖️ Parliament\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "dd8ba9b1c4",
+  "en": "civil war that ended the commonwealth, Flugumýri Arson, Game of Thrones inspiration",
+  "ctx": "Threads index — what block \"1.23 The Sturlung Age\" covers, under \"⚖️ Parliament\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "9bb26cb610",
+  "en": "the Haukdælir clan, Althing power players, Ari fróði's school",
+  "ctx": "Threads index — what block \"1.24 Haukadalur\" covers, under \"⚖️ Parliament\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "c6312ea417",
+  "en": "Þingnes at Elliðavatn, the Kjalarnesþing's second home, on the way back in",
+  "ctx": "Threads index — what block \"1.39 Rauðhólar\" covers, under \"⚖️ Parliament\"",
+  "tours": [
+   "1.0"
+  ]
+ },
+ {
+  "id": "28ab923306",
+  "en": "🌋 Geology",
+  "ctx": "Threads index — topic heading, tour 1.0",
+  "tours": [
+   "1.0",
+   "10.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
+  "id": "cb7bf6d201",
+  "en": "3-million-year basalt-and-tuff layer cake",
+  "ctx": "Threads index — what block \"1.4 Mount Esja\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "b4d9aa59cf",
+  "en": "the Mid-Atlantic rift, a 7 km graben, the North American wall, Skjaldbreiður's 9,000-year-old lava",
+  "ctx": "Threads index — what block \"1.12 Almannagjá\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "d29e02599a",
+  "en": "Iceland's largest natural lake, 84 km²; water 30–100 years underground; one charr become four",
+  "ctx": "Threads index — what block \"1.17 Þingvallavatn & Silfra\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "bfcf784131",
+  "en": "Langjökull meltwater, glacial flour, jökulhlaups",
+  "ctx": "Threads index — what block \"1.26 Hvítá & Gullfoss\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "ce7446c68e",
+  "en": "Faxi waterfall + Brú Power Plant (2020)",
+  "ctx": "Threads index — what block \"1.27 Tungufljót\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "3173109c1a",
+  "en": "Hengill geothermal, CarbFix carbon-to-stone",
+  "ctx": "Threads index — what block \"1.37 Hellisheiðarvirkjun\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "ae5786251e",
+  "en": "🎵 Music",
+  "ctx": "Threads index — topic heading, tour 1.0",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "1fc14879e8",
+  "en": "Ólafur Arnalds + Kaleo",
+  "ctx": "Threads index — what block \"1.6 Mosfellsbær\" covers, under \"🎵 Music\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "5943afe56a",
+  "en": "Kaleo recorded \"I Want More\" live in the cathedral; released 2022",
+  "ctx": "Threads index — what block \"1.30 Skálholt\" covers, under \"🎵 Music\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "c3334ca577",
+  "en": "Björk + The Sugarcubes on a raft in the crater lake, 1987",
+  "ctx": "Threads index — what block \"1.31 Grímsnes & Kerið\" covers, under \"🎵 Music\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "9299813e74",
+  "en": "\"Lilla Jóns\" by Guðbergur Auðunsson, born in Hveragerði",
+  "ctx": "Threads index — what block \"1.36 Hveragerði\" covers, under \"🎵 Music\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0"
+  ]
+ },
+ {
+  "id": "08cf9e8694",
+  "en": "🪶 Literature",
+  "ctx": "Threads index — topic heading, tour 1.0",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "d274b8e1ed",
+  "en": "📖 Books",
+  "ctx": "Threads index — sub-heading under \"🪶 Literature\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "9666e313e2",
+  "en": "*Sjálfstætt fólk* (*Independent People*) by Halldór Laxness (Nobel 1955)",
+  "ctx": "Threads index — what block \"1.7 Mosfellsdalur\" covers, under \"🪶 Literature\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "8abbf7de93",
+  "en": "Íslendingabók by Ari fróði (12th c.)",
+  "ctx": "Threads index — what block \"1.24 Haukadalur\" covers, under \"🪶 Literature\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "4674094e84",
+  "en": "📜 Sagas",
+  "ctx": "Threads index — sub-heading under \"🪶 Literature\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "20bf916726",
+  "en": "Egil's Saga (Egill Skallagrímsson)",
+  "ctx": "Threads index — what block \"1.7 Mosfellsdalur\" covers, under \"🪶 Literature\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "59ab3edb60",
+  "en": "Sturlunga Saga (Game of Thrones-era inspiration; Burning of Flugumýri 1253)",
+  "ctx": "Threads index — what block \"1.23 The Sturlung Age\" covers, under \"🪶 Literature\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "b5ac771690",
+  "en": "✍️ Writers",
+  "ctx": "Threads index — sub-heading under \"🪶 Literature\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "ab417554c0",
+  "en": "Halldór Laxness (Nobel 1955; built Gljúfrasteinn 1945)",
+  "ctx": "Threads index — what block \"1.7 Mosfellsdalur / 1.9 Gljúfrasteinn\" covers, under \"🪶 Literature\"",
+  "tours": [
+   "1.0"
+  ]
+ },
+ {
+  "id": "55abde2b02",
+  "en": "Einar Benediktsson (1940) and Jónas Hallgrímsson (reburied 1946) — the two-occupant national pantheon",
+  "ctx": "Threads index — what block \"1.15 Þingvallabær & Skáldareitur\" covers, under \"🪶 Literature\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "735a06ff63",
+  "en": "Snorri Sturluson (d. 1241, last words \"Eigi skal höggva!\")",
+  "ctx": "Threads index — what block \"1.23 The Sturlung Age\" covers, under \"🪶 Literature\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "fc4a8f0ee9",
+  "en": "Ari fróði (\"the Wise\", c. 1067–1148; wrote Íslendingabók)",
+  "ctx": "Threads index — what block \"1.24 Haukadalur\" covers, under \"🪶 Literature\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "ab7c8eae0d",
+  "en": "🎬 Film & TV",
+  "ctx": "Threads index — topic heading, tour 1.0",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
+  "id": "2cdfbde088",
+  "en": "horses from Laxnes have appeared in several films, *Game of Thrones* among them (*Mosfellingur*, 2018)",
+  "ctx": "Threads index — what block \"1.8 Laxnes Horse Farm\" covers, under \"🎬 Film & TV\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "9750fb3221",
+  "en": "*Game of Thrones* Bloody Gate + *Thor: The Dark World*",
+  "ctx": "Threads index — what block \"1.12 Almannagjá\" covers, under \"🎬 Film & TV\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "1c6308e941",
+  "en": "*Vikings* + *Lost in Space*",
+  "ctx": "Threads index — what block \"1.26 Hvítá & Gullfoss\" covers, under \"🎬 Film & TV\"",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
   "id": "654ddecd90",
   "en": "the east fjord where he was fostered out",
   "ctx": "gloss for the name \"Borgarfjörður eystri\" — tour 2.0 / BSÍ Bus Terminal → Þingvellir / 🧍 Jóhannes Sveinsson Kjarval",
@@ -7264,87 +8266,6 @@
   ]
  },
  {
-  "id": "2201e5021d",
-  "en": "the \"Law Rock\", the cliff wall that carried the spoken law",
-  "ctx": "gloss for the name \"Lögberg\" — tour 2.0 / Þingvellir / ⚖️ The Althing",
-  "tours": [
-   "2.0",
-   "3.0"
-  ]
- },
- {
-  "id": "a3be31486b",
-  "en": "the Law-Speaker, who recited a third of the law code from memory each year",
-  "ctx": "gloss for the name \"Lögsögumaður\" — tour 2.0 / Þingvellir / ⚖️ The Althing",
-  "tours": [
-   "2.0",
-   "3.0",
-   "4.0"
-  ]
- },
- {
-  "id": "05701a7fe3",
-  "en": "the chieftain-priests who ran it, about 36 of them",
-  "ctx": "gloss for the name \"goði / goðar\" — tour 2.0 / Þingvellir / ⚖️ The Althing",
-  "tours": [
-   "2.0"
-  ]
- },
- {
-  "id": "2d2d7cb407",
-  "en": "Most tectonic plate boundaries sit invisible under 2 km of ocean. Here, **you can stand on it, walk it, and drink from the cracks**.",
-  "ctx": "the point of the block — tour 2.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "2.0",
-   "3.0",
-   "4.0"
-  ]
- },
- {
-  "id": "668586429a",
-  "en": "Forget the postcard version where you \"touch two continents at once.\" **Þingvellir** sits on the **Mid-Atlantic Ridge**, and what you're standing in is a **seven-kilometre-wide graben** — a strip of valley floor **sinking between two fault walls** as the plates pull apart about **2 cm a year**, the speed your fingernails grow.",
-  "ctx": "fact bullet — tour 2.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "2.0",
-   "3.0",
-   "4.0"
-  ]
- },
- {
-  "id": "40516b0dd4",
-  "en": "The cracks have names — **Almannagjá**, the big one you walk through, is the **torn edge on the North American side**. The plates never touch here: the valley floor between the fault walls belongs to **neither continent** — it's the seam, still ripping. Filling it is **Þingvallavatn**, Iceland's largest natural lake.",
-  "ctx": "fact bullet — tour 2.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "2.0",
-   "3.0",
-   "4.0"
-  ]
- },
- {
-  "id": "fa816fc39c",
-  "en": "the rift valley we are standing in, between two continents",
-  "ctx": "gloss for the name \"Þingvellir\" — tour 2.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "2.0"
-  ]
- },
- {
-  "id": "70235bb8fd",
-  "en": "the big crack you walk through, the edge of the North American plate",
-  "ctx": "gloss for the name \"Almannagjá\" — tour 2.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "2.0"
-  ]
- },
- {
-  "id": "154d45213d",
-  "en": "the clear meltwater pool you can drink from, visibility up to 120 m",
-  "ctx": "gloss for the name \"Silfra\" — tour 2.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "2.0"
-  ]
- },
- {
   "id": "e16845f2b5",
   "en": "**Laugarvatnshellir** is a pair of man-made caves hacked out of soft **palagonite tuff** (solidified volcanic ash) on the Lyngdalsheiði heath, between Þingvellir and Laugarvatn.",
   "ctx": "fact bullet — tour 2.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
@@ -7435,31 +8356,6 @@
   "ctx": "gloss for the name \"tephra\" — tour 2.0 / Þingvellir → Haukadalur Valley / 🌋 Hekla",
   "tours": [
    "2.0"
-  ]
- },
- {
-  "id": "e1ce40cd94",
-  "en": "the pagan Lawspeaker who chose Christianity for everyone",
-  "ctx": "gloss for the name \"Þorgeir Ljósvetningagoði\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "2.0"
-  ]
- },
- {
-  "id": "41efce7e68",
-  "en": "the Saxon priest who fought duels with the poets who mocked him",
-  "ctx": "gloss for the name \"Þangbrandur\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "2.0"
-  ]
- },
- {
-  "id": "4b5064ca56",
-  "en": "the Norwegian king who squeezed Iceland into converting",
-  "ctx": "gloss for the name \"Ólafur Tryggvason\" — tour 2.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "2.0",
-   "4.0"
   ]
  },
  {
@@ -8200,6 +9096,16 @@
   ]
  },
  {
+  "id": "3525241c80",
+  "en": "Halldór Laxness (Nobel 1955; built Gljúfrasteinn)",
+  "ctx": "Threads index — what block \"2.7 Mosfellsdalur\" covers, under \"🪶 Literature\"",
+  "tours": [
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
   "id": "326c8d5c82",
   "en": "the city valley that feeds, waters and powers Reykjavík",
   "ctx": "gloss for the name \"Elliðaárdalur\" — tour 3.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
@@ -8439,38 +9345,6 @@
   ]
  },
  {
-  "id": "a56b1fd9e7",
-  "en": "the national assembly founded here in 930, the world's oldest parliament still in use",
-  "ctx": "gloss for the name \"Alþingi\" — tour 3.0 / Þingvellir / ⚖️ The Althing",
-  "tours": [
-   "3.0"
-  ]
- },
- {
-  "id": "502335a71a",
-  "en": "the roughly 36 chieftain-priests who ran it by consensus",
-  "ctx": "gloss for the name \"goði / goðar\" — tour 3.0 / Þingvellir / ⚖️ The Althing",
-  "tours": [
-   "3.0"
-  ]
- },
- {
-  "id": "3d506212a8",
-  "en": "the rift valley sitting on the Mid-Atlantic Ridge",
-  "ctx": "gloss for the name \"Þingvellir\" — tour 3.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "3.0"
-  ]
- },
- {
-  "id": "697355aaf7",
-  "en": "the glacier that meltwater left 30–100 years ago",
-  "ctx": "gloss for the name \"Langjökull\" — tour 3.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "3.0"
-  ]
- },
- {
   "id": "d196a0a697",
   "en": "the man-made caves families lived in until 1922",
   "ctx": "gloss for the name \"Laugarvatnshellir\" — tour 3.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
@@ -8534,31 +9408,6 @@
   "tours": [
    "3.0",
    "4.0"
-  ]
- },
- {
-  "id": "5e2cead083",
-  "en": "the pagan Lawspeaker who ruled for Christianity",
-  "ctx": "gloss for the name \"Þorgeir Ljósvetningagoði\" — tour 3.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "3.0",
-   "4.0"
-  ]
- },
- {
-  "id": "b0e4e9c001",
-  "en": "the Saxon priest who fought duels with poets who mocked his sermons",
-  "ctx": "gloss for the name \"Þangbrandur\" — tour 3.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "3.0"
-  ]
- },
- {
-  "id": "4fdb74dde3",
-  "en": "Norway's king, who squeezed Iceland with trade bans and hostages",
-  "ctx": "gloss for the name \"Ólafur Tryggvason\" — tour 3.0 / Þingvellir → Haukadalur Valley / ⚖️ Kristnitaka",
-  "tours": [
-   "3.0"
   ]
  },
  {
@@ -9119,6 +9968,22 @@
   "id": "34587d3071",
   "en": "the wetland that lava rolled over",
   "ctx": "gloss for the name \"Heiðmörk\" — tour 3.0 / Gullfoss → Reykjavík / ⛰️ Rauðhólar",
+  "tours": [
+   "3.0"
+  ]
+ },
+ {
+  "id": "aecff77c0d",
+  "en": "the Flúðir local assembly met at the Secret Lagoon until 1894",
+  "ctx": "Threads index — what block \"3.27 Gamla Laugin\" covers, under \"⚖️ Parliament\"",
+  "tours": [
+   "3.0"
+  ]
+ },
+ {
+  "id": "8538427cc9",
+  "en": "low-temperature geothermal bathing (38–40°C), Litli Geysir",
+  "ctx": "Threads index — what block \"3.27 Gamla Laugin\" covers, under \"🌋 Geology\"",
   "tours": [
    "3.0"
   ]
@@ -10076,14 +10941,6 @@
   ]
  },
  {
-  "id": "2c78fce2a0",
-  "en": "the Saxon priest who fought duels with poets who mocked him",
-  "ctx": "gloss for the name \"Þangbrandur\" — tour 4.0 / Geysir → Þingvellir / ⚖️ Kristnitaka",
-  "tours": [
-   "4.0"
-  ]
- },
- {
   "id": "7d2b15e523",
   "en": "Look back over your left shoulder — Hekla, sixty kilometres out. Clear days only.",
   "ctx": "cue, tells the guest where to look — tour 4.0 / Geysir → Þingvellir / 🌋 Hekla",
@@ -10199,54 +11056,6 @@
   "id": "48ea4ff65d",
   "en": "the \"Land-Taking,\" the ~60-year settlement of Iceland",
   "ctx": "gloss for the name \"Landnám\" — tour 4.0 / Geysir → Þingvellir / 🏘️ Landnám",
-  "tours": [
-   "4.0"
-  ]
- },
- {
-  "id": "500c417562",
-  "en": "the rift valley we are standing in, sitting on the Mid-Atlantic Ridge",
-  "ctx": "gloss for the name \"Þingvellir\" — tour 4.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "4.0"
-  ]
- },
- {
-  "id": "6aec1c2a6d",
-  "en": "the big crack you walk through; its west wall is the North American plate",
-  "ctx": "gloss for the name \"Almannagjá\" — tour 4.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "4.0"
-  ]
- },
- {
-  "id": "dace608088",
-  "en": "the clear pool of filtered glacier meltwater, visibility up to 120 m",
-  "ctx": "gloss for the name \"Silfra\" — tour 4.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "4.0"
-  ]
- },
- {
-  "id": "1a6039bf87",
-  "en": "the glacier that water left 30–100 years ago",
-  "ctx": "gloss for the name \"Langjökull\" — tour 4.0 / Þingvellir / 🌍 Þingvellir Geology",
-  "tours": [
-   "4.0"
-  ]
- },
- {
-  "id": "84c74c5648",
-  "en": "the \"Law Rock,\" the cliff wall that carried the spoken law across the valley",
-  "ctx": "gloss for the name \"Lögberg\" — tour 4.0 / Þingvellir / ⚖️ The Althing",
-  "tours": [
-   "4.0"
-  ]
- },
- {
-  "id": "2caca7a97f",
-  "en": "the roughly 36 chieftain-priests who ran it, with no king",
-  "ctx": "gloss for the name \"goði / goðar\" — tour 4.0 / Þingvellir / ⚖️ The Althing",
   "tours": [
    "4.0"
   ]
@@ -13606,6 +14415,508 @@
   ]
  },
  {
+  "id": "323fac331d",
+  "en": "Leiti lava split the river; a 10,000-year construction site",
+  "ctx": "Threads index — what block \"5.3 Elliðaárdalur & Paradísardalur\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "b297dcc1f4",
+  "en": "rootless pseudocraters, NASA's Mars analogue",
+  "ctx": "Threads index — what block \"5.4 Rauðhólar\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "689768064b",
+  "en": "the year-1000 lava that 'proved' the gods were angry",
+  "ctx": "Threads index — what block \"5.5 Kristnitökuhraun\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0"
+  ]
+ },
+ {
+  "id": "6e82ae6f3e",
+  "en": "Hengill geothermal + CarbFix carbon-to-stone",
+  "ctx": "Threads index — what block \"5.6 Hellisheiðarvirkjun\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "47bf51f4f7",
+  "en": "greenhouse town on the Hengill system, 2008 quake exhibition",
+  "ctx": "Threads index — what block \"5.7 Hveragerði\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "2b37adb8f3",
+  "en": "Iceland's biggest river by discharge, four systems in one channel",
+  "ctx": "Threads index — what block \"5.8 Ölfusá\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "be4c0c0553",
+  "en": "Iceland's longest river, six power stations",
+  "ctx": "Threads index — what block \"5.11 Þjórsá\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "65925b2744",
+  "en": "Eldfell's 1973 eruption, harbour saved with seawater",
+  "ctx": "Threads index — what block \"5.15 Vestmannaeyjar\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "47f323c2f0",
+  "en": "old Atlantic seabed and glacial wash-plain",
+  "ctx": "Threads index — what block \"5.16 Landeyjar Plains\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "a88a09e7eb",
+  "en": "the 2010 ash cloud that grounded Europe",
+  "ctx": "Threads index — what block \"5.18 Eyjafjallajökull\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "68da0f6264",
+  "en": "retreating glacier tongue, a living climate graph",
+  "ctx": "Threads index — what block \"5.20 Sólheimajökull\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "317b29a9f3",
+  "en": "a plane down on Katla's black sandur",
+  "ctx": "Threads index — what block \"5.21 DC-3 Wreck\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "760f7ebeb2",
+  "en": "móberg from a subglacial eruption, a one-time island",
+  "ctx": "Threads index — what block \"5.22 Pétursey\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "fc4140ca8c",
+  "en": "basalt-inspired church architecture, DNA of Hallgrímskirkja",
+  "ctx": "Threads index — what block \"5.23 Skeiðflatarkirkja\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "59e69e63f2",
+  "en": "sea-arch headland from a 100,000-year submarine eruption",
+  "ctx": "Threads index — what block \"5.24 Dýrhólaey\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "d4b8dcae26",
+  "en": "black sand, columnar basalt, sea stacks",
+  "ctx": "Threads index — what block \"5.25 Reynisfjara & Reynisdrangar\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "c686706cac",
+  "en": "10 km caldera under Mýrdalsjökull, jökulhlaup floods",
+  "ctx": "Threads index — what block \"5.26 Katla\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "b8c8fe414a",
+  "en": "the church on the only high ground above a Katla flood",
+  "ctx": "Threads index — what block \"5.27 Víkurkirkja\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "1ec0793902",
+  "en": "southernmost village, 1918 Katla flood built the coast out",
+  "ctx": "Threads index — what block \"5.28 Vík í Mýrdal\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "84a4d3df48",
+  "en": "palagonite inselberg, once an offshore island",
+  "ctx": "Threads index — what block \"5.29 Hjörleifshöfði\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "7e77546dcc",
+  "en": "old sea-cliff waterfall eating a gorge upstream",
+  "ctx": "Threads index — what block \"5.30 Skógafoss\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "1e87de3390",
+  "en": "the old Ice-Age sea cliff, now inland",
+  "ctx": "Threads index — what block \"5.31 Seljalandsfoss & Gljúfrabúi\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "04f1882d3a",
+  "en": "Justin Bieber's 'I'll Show You', Sigur Rós's Heima, Dilwale",
+  "ctx": "Threads index — what block \"5.21 DC-3 Wreck\" covers, under \"🎬 Film & TV\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "abb1864e3d",
+  "en": "Game of Thrones (Eastwatch), Vikings, Beowulf & Grendel",
+  "ctx": "Threads index — what block \"5.24 Dýrhólaey\" covers, under \"🎬 Film & TV\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "88568b21a3",
+  "en": "Rogue One, Star Trek Into Darkness, Noah, Game of Thrones",
+  "ctx": "Threads index — what block \"5.25 Reynisfjara\" covers, under \"🎬 Film & TV\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "9d14ec8c22",
+  "en": "Mýrdalsjökull as the land beyond the Wall, Game of Thrones S2",
+  "ctx": "Threads index — what block \"5.26 Katla\" covers, under \"🎬 Film & TV\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "a2e6b84ae1",
+  "en": "Captain America: Civil War (Siberia), Netflix's Katla",
+  "ctx": "Threads index — what block \"5.28 Vík í Mýrdal\" covers, under \"🎬 Film & TV\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "27167f69d5",
+  "en": "Rogue One's Lah'mu + the 'Yoda Cave' (Gígjagjá)",
+  "ctx": "Threads index — what block \"5.29 Hjörleifshöfði\" covers, under \"🎬 Film & TV\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "77d89f54f1",
+  "en": "Thor: The Dark World, Vikings, Game of Thrones, Justin Bieber",
+  "ctx": "Threads index — what block \"5.30 Skógafoss\" covers, under \"🎬 Film & TV\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "6398a42f08",
+  "en": "Beowulf & Grendel, Dilwale, Justin Bieber",
+  "ctx": "Threads index — what block \"5.31 Seljalandsfoss\" covers, under \"🎬 Film & TV\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "4ba182be40",
+  "en": "Kristni saga; Snorri Goði's conversion argument",
+  "ctx": "Threads index — what block \"5.5 Kristnitökuhraun\" covers, under \"🪶 Literature\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "ea2f8348dc",
+  "en": "Njáls saga country, seat of the Oddaverjar",
+  "ctx": "Threads index — what block \"5.13 Keldur\" covers, under \"🪶 Literature\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "91c6e2b7de",
+  "en": "Brennu-Njáls saga, the burning at Bergþórshvoll",
+  "ctx": "Threads index — what block \"5.14 Hvolsvöllur\" covers, under \"🪶 Literature\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "7869f41e56",
+  "en": "Gunnar of Njáls saga, 'Fair is the hillside'",
+  "ctx": "Threads index — what block \"5.17 Markarfljót & Hlíðarendi\" covers, under \"🪶 Literature\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "5b67a878a7",
+  "en": "Grettir the Strong legend + Jón Árnason's folktales",
+  "ctx": "Threads index — what block \"5.19 Drangurinn\" covers, under \"🪶 Literature\"",
+  "tours": [
+   "5.0"
+  ]
+ },
+ {
+  "id": "797790f920",
+  "en": "⛪ Religion",
+  "ctx": "Threads index — topic heading, tour 5.0",
+  "tours": [
+   "10.0",
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "5f55f4ad72",
+  "en": "the year-1000 conversion to Christianity",
+  "ctx": "Threads index — what block \"5.5 Kristnitökuhraun\" covers, under \"⛪ Religion\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "048fb6c4ba",
+  "en": "the Papar, Irish monks said to predate the Norse",
+  "ctx": "Threads index — what block \"5.12 Hella\" covers, under \"⛪ Religion\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "e49347a627",
+  "en": "country church that raised Hallgrímskirkja's architect",
+  "ctx": "Threads index — what block \"5.23 Skeiðflatarkirkja\" covers, under \"⛪ Religion\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "fe458bd127",
+  "en": "🧭 Settlement & Migration",
+  "ctx": "Threads index — topic heading, tour 5.0",
+  "tours": [
+   "10.0",
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "7c85754b1b",
+  "en": "first settler, high-seat pillars, the Ring Road",
+  "ctx": "Threads index — what block \"5.9 Ingólfur Arnarson\" covers, under \"🧭 Settlement & Migration\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "bcb40c5b16",
+  "en": "Hjörleifur's murder; Vestmannaeyjar named for the Gaels",
+  "ctx": "Threads index — what block \"5.29 Hjörleifshöfði\" covers, under \"🧭 Settlement & Migration\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "a160036601",
+  "en": "🎨 Art",
+  "ctx": "Threads index — topic heading, tour 5.0",
+  "tours": [
+   "10.0",
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
+  "id": "23f41e9c02",
+  "en": "cod-fisherman painter, on the 2,000-króna note",
+  "ctx": "Threads index — what block \"5.1 Jóhannes Kjarval\" covers, under \"🎨 Art\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "27bbb5999c",
+  "en": "the saga hillside 'too fair to leave'",
+  "ctx": "Threads index — what block \"5.17 Markarfljót & Hlíðarendi\" covers, under \"🎨 Art\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "1b09b7f8c9",
+  "en": "⚡ Technology",
+  "ctx": "Threads index — topic heading, tour 5.0",
+  "tours": [
+   "10.0",
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "11ca9e7113",
+  "en": "Hengill geothermal power + CarbFix",
+  "ctx": "Threads index — what block \"5.6 Hellisheiðarvirkjun\" covers, under \"⚡ Technology\"",
+  "tours": [
+   "5.0"
+  ]
+ },
+ {
+  "id": "4ca2924380",
+  "en": "💰 Trade",
+  "ctx": "Threads index — topic heading, tour 5.0",
+  "tours": [
+   "10.0",
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
+  "id": "fb77a1d57f",
+  "en": "the brewery that outlived 74 years of Prohibition",
+  "ctx": "Threads index — what block \"5.2 Ölgerðin\" covers, under \"💰 Trade\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "033bd4d05c",
+  "en": "🎖️ WWII",
+  "ctx": "Threads index — topic heading, tour 5.0",
+  "tours": [
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
+  "id": "b54ef20b4c",
+  "en": "British-guarded bridge felled by two milk trucks, 1944",
+  "ctx": "Threads index — what block \"5.10 Selfoss\" covers, under \"🎖️ WWII\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "bd2b8c5cb4",
+  "en": "❄️ Climate",
+  "ctx": "Threads index — topic heading, tour 5.0",
+  "tours": [
+   "10.0",
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "c0e38c3527",
+  "en": "turf walls as medieval climate tech",
+  "ctx": "Threads index — what block \"5.13 Keldur\" covers, under \"❄️ Climate\"",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "891b238710",
+  "en": "🏛️ Architecture",
+  "ctx": "Threads index — topic heading, tour 5.0",
+  "tours": [
+   "10.0",
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
+  "id": "a62953a543",
+  "en": "Guðjón Samúelsson, Iceland's State Architect",
+  "ctx": "Threads index — what block \"5.23 Skeiðflatarkirkja\" covers, under \"🏛️ Architecture\"",
+  "tours": [
+   "5.0"
+  ]
+ },
+ {
   "id": "70e7ecbb70",
   "en": "Born **15 October 1885** at **Efri-Ey** farm in **Meðalland**, south Iceland — **9th of 13 kids** (his parents clearly had stamina). Fostered east to **Geitavík** in **Borgarfjörður eystri**, where the fjord still calls him **\"Jói í Geitavík.\"** Too poor for paint, he drew with **calf blood, soot and wool dye** — then went to sea.",
   "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧍 Jóhannes Sveinsson Kjarval",
@@ -15466,6 +16777,38 @@
   "id": "e3df1d84f8",
   "en": "the canyon-dweller, the second waterfall hiding in a mossy gorge",
   "ctx": "gloss for the name \"Gljúfrabúi\" — tour 6.0 / Seljalandsfoss / 💧 Seljalandsfoss & Gljúfrabúi",
+  "tours": [
+   "6.0"
+  ]
+ },
+ {
+  "id": "dd30a4f1db",
+  "en": "year-1000 lava stacked on 5,000- and 2,000-year flows",
+  "ctx": "Threads index — what block \"6.5 Kristnitökuhraun\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "6.0"
+  ]
+ },
+ {
+  "id": "9a94100b6b",
+  "en": "Grettir the Strong legend + elf folklore",
+  "ctx": "Threads index — what block \"6.19 Drangurinn\" covers, under \"🪶 Literature\"",
+  "tours": [
+   "6.0"
+  ]
+ },
+ {
+  "id": "8cd5fa605f",
+  "en": "Hengill geothermal power, CarbFix + Climeworks",
+  "ctx": "Threads index — what block \"6.6 Hellisheiðarvirkjun\" covers, under \"⚡ Technology\"",
+  "tours": [
+   "6.0"
+  ]
+ },
+ {
+  "id": "acd349fca4",
+  "en": "Guðjón Samúelsson, Iceland's first State Architect",
+  "ctx": "Threads index — what block \"6.23 Skeiðflatarkirkja\" covers, under \"🏛️ Architecture\"",
   "tours": [
    "6.0"
   ]
@@ -19096,6 +20439,78 @@
   ]
  },
  {
+  "id": "14d6603002",
+  "en": "🧝 Folklore",
+  "ctx": "Threads index — topic heading, tour 7.0",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "4f47ee8f30",
+  "en": "✝️ Religion & Belief",
+  "ctx": "Threads index — topic heading, tour 7.0",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "553f587770",
+  "en": "🪶 Literature & Sagas",
+  "ctx": "Threads index — topic heading, tour 7.0",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "e2ea455190",
+  "en": "🚢 Migration & Settlement",
+  "ctx": "Threads index — topic heading, tour 7.0",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "79b56af67d",
+  "en": "🌦️ Climate",
+  "ctx": "Threads index — topic heading, tour 7.0",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "abab07485a",
+  "en": "⚙️ Technology",
+  "ctx": "Threads index — topic heading, tour 7.0",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "d0afcdccef",
+  "en": "*Game of Thrones* Eastwatch-by-the-Sea + *Rogue One*, *Star Trek Into Darkness*, *Noah*",
+  "ctx": "Threads index — what block \"7.26 Reynisfjara & Reynisdrangar\" covers, under \"🎬 Film & TV\"",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "996aa61382",
+  "en": "*Game of Thrones* S8 dragon flight + Justin Bieber \"I'll Show You\"",
+  "ctx": "Threads index — what block \"7.32 Fjaðrárgljúfur\" covers, under \"🎬 Film & TV\"",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "a3556471c8",
+  "en": "*Batman Begins* + *Interstellar*",
+  "ctx": "Threads index — what block \"7.37 Skaftafell / Svínafellsjökull\" covers, under \"🎬 Film & TV\"",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
   "id": "d3b6bd9464",
   "en": "BSÍ Bus Terminal → Borgarnes",
   "ctx": "section title",
@@ -20595,11 +22010,10 @@
   ]
  },
  {
-  "id": "7e2fd0034e",
-  "en": "**Road 56 — Vatnaleið**, \"the lakes route\" — is nearly the newest thing you'll touch today: built in **2001**, when it retired the old **Kerlingarskarð** pass that had hauled traffic over the peninsula's spine for generations. We replaced the pass, not the mountains.",
+  "id": "8911dac488",
+  "en": "**Road 56 — Vatnaleið**, \"the lakes route\" — is nearly the newest thing you'll touch today. The transport minister cut the ribbon on **Friday 2 November 2001**, standing down at Selvallavatn where we're headed, and the old **Kerlingarskarð** pass was retired that same day after generations of hauling traffic over the peninsula's spine. **16.4 km** of new road, topping out at **230 m** against Kerlingarskarð's **311 m** — and only **3 km** of it above 200 metres, where the old road had **ten**. We replaced the pass, not the mountains.",
   "ctx": "fact bullet — tour 9.0 / Borgarnes → Selvallafoss / ⛰️ Vatnaleið",
   "tours": [
-   "10.0",
    "9.0"
   ]
  },
@@ -20618,6 +22032,14 @@
   "ctx": "fact bullet — tour 9.0 / Borgarnes → Selvallafoss / ⛰️ Vatnaleið",
   "tours": [
    "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "84f3cdaa97",
+  "en": "Down in the bogs at the south end of **Sátudalur** two streams rise almost side by side and then immediately fall out. **Rauðusteinalækur** runs south into Baulárvallavatn and eventually reaches the sea as Straumfjarðará. **Fossá** runs north, over the waterfall we're stopping at — and then vanishes completely. I'll show you where in about ten minutes.",
+  "ctx": "fact bullet — tour 9.0 / Borgarnes → Selvallafoss / ⛰️ Vatnaleið",
+  "tours": [
    "9.0"
   ]
  },
@@ -20657,33 +22079,281 @@
   ]
  },
  {
-  "id": "125a755015",
-  "en": "💧 Selvallafoss",
-  "ctx": "block title — tour 9.0 / Selvallafoss / 💧 Selvallafoss",
+  "id": "8347ecdfa5",
+  "en": "💧 Fossá",
+  "ctx": "block title — tour 9.0 / Selvallafoss / 💧 Fossá",
   "tours": [
    "9.0"
   ]
  },
  {
-  "id": "9051766672",
-  "en": "Turning off at the pass — Selvallafoss below the road.",
-  "ctx": "cue, tells the guest where to look — tour 9.0 / Selvallafoss / 💧 Selvallafoss",
+  "id": "742ad10efc",
+  "en": "At the Vatnaleið viewpoint — the fall is below the road, the lake beyond it.",
+  "ctx": "cue, tells the guest where to look — tour 9.0 / Selvallafoss / 💧 Fossá",
   "tours": [
    "9.0"
   ]
  },
  {
-  "id": "c296f7bff6",
-  "en": "Script Pending",
-  "ctx": "subtitle under the block title — tour 9.0 / Selvallafoss / 💧 Selvallafoss",
+  "id": "e869f21a22",
+  "en": "The postcard version gives you a name, a height and a river. **All three are wrong.** What's actually here is better: the one waterfall in a country of obsessive namers that nobody could be bothered to name.",
+  "ctx": "the point of the block — tour 9.0 / Selvallafoss / 💧 Fossá",
   "tours": [
    "9.0"
   ]
  },
  {
-  "id": "636839b973",
-  "en": "Selvallafoss sits by Selvallavatn on the Vatnaleið road; the block for it is owed by the scripts chat.",
-  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 💧 Selvallafoss",
+  "id": "2b0d79da3d",
+  "en": "Land the punchline slowly: the National Land Survey maps this fall, and leaves the name field blank. Let that sit for a beat before you move to the lake.",
+  "ctx": "the spoken close — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "ff59855bbf",
+  "en": "The Waterfall Iceland Never Bothered to Name",
+  "ctx": "subtitle under the block title — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "89f9e3f562",
+  "en": "Start with the river, because the internet gets this wrong constantly. This is **Fossá** — literally *\"waterfall river.\"* It is **not** Straumfjarðará. Straumfjarðará rises in Baulárvallavatn, back the way we came, and runs the opposite direction to the sea at Straumfjörður. Different river, different catchment, different ocean-facing coast.",
+  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "ad376a5032",
+  "en": "**Landmælingar Íslands**, the National Land Survey, has this fall in its database. Mapped, plotted, classified as *foss*. The name field is **blank**. Náttúrufræðistofnun holds the same point, also blank.",
+  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "550ec32087",
+  "en": "So I went looking. **Zero** hits for \"Selvallafoss\" in Árnastofnun's national place-name archive. **Zero** in the national mapping database — the only \"Selval-\" name in the whole country is the lake. **Zero** across the entire Icelandic newspaper corpus, which runs back well over two hundred years. \"Selvallavatn\" gets 71 hits. The waterfall gets none.",
+  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "12fb235621",
+  "en": "Meanwhile the place-name survey of the farm above us lists **Steinkarl**, **Nóngjá**, **Krummaklettar**, **Stóriklettur** — *\"where the hidden people sang.\"* Seventy-nine names. They named a rock for its singing elves and left the waterfall alone.",
+  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "f921d0ea0d",
+  "en": "I think the old answer was just simpler than ours: the river was **already** called *the waterfall river*. Naming the waterfall on the waterfall river is like opening a restaurant called Restaurant.",
+  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "bf57adf0e4",
+  "en": "And no — **nobody has ever officially measured its height.** No figure in the national survey, none in the natural history institute, none in *Íslenskir fossar*, the standard reference on Icelandic waterfalls, which records two other falls in this district and skips this one. Every number you'll find online was typed by somebody with a website and a deadline. I'd rather give you nothing than give you a number I can't stand behind.",
+  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "c3d2698720",
+  "en": "One last thing while we're demolishing: **sel** does not mean sheep, and it does not mean seal. A *sel* is a **shieling** — the summer dairy station where the milking animals went up the valley. **Selvellir** means *\"the shieling flats.\"* In the **1700s** the farm Horn was split in two, and the new half was built on Horn's old shieling ground. The farm went empty in the **1920s** and never came back.",
+  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "7253c0422b",
+  "en": "\"waterfall river\"; the river the fall is actually on",
+  "ctx": "gloss for the name \"Fossá\" — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "d9aca24379",
+  "en": "\"the shieling flats\"; the deserted farm above us",
+  "ctx": "gloss for the name \"Selvellir\" — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "aefb6d0718",
+  "en": "a shieling, the summer dairy station. Not a sheep. Not a seal.",
+  "ctx": "gloss for the name \"sel\" — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "ba3199af5c",
+  "en": "the National Land Survey, which maps the fall with no name",
+  "ctx": "gloss for the name \"Landmælingar Íslands\" — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "24396841de",
+  "en": "the river this one is not",
+  "ctx": "gloss for the name \"Straumfjarðará\" — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "d49322e30e",
+  "en": "🌀 Selvallavatn",
+  "ctx": "block title — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "a423df16b8",
+  "en": "Same viewpoint — the lake in the hollow between the lava and the mountain wall.",
+  "ctx": "cue, tells the guest where to look — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "184b8bdcfc",
+  "en": "A lake fed by a river, sitting on porous lava, with **no way out** — and the only candidate explanation is a whirlpool a farm boy noticed and nobody ever followed up.",
+  "ctx": "the point of the block — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "52a993d025",
+  "en": "The \"perhaps\" is the whole block. Deliver it as an open question, not a solved one — because it is one.",
+  "ctx": "the spoken close — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "00872cfbd7",
+  "en": "The Lake With No Way Out",
+  "ctx": "subtitle under the block title — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "bbd829afff",
+  "en": "**Selvallavatn** sits at **62 metres** above sea level in a hollow between Berserkjahraun and the mountain wall. Fossá runs in on the east, small becks run in on the south. And that is the entire hydrological story, because there is **no outflow above ground.** None.",
+  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "7797b0176e",
+  "en": "The man who wrote down the place-names here was **Lárus Halldórsson**, born on the farm above us in **1920**. Going back over the survey he added a feature the earlier recorder had missed: **Rás** — a swallow-hole at the lava's edge *\"where the water is sucked in a whirlpool down into the lava.\"* Then he added one careful sentence: **perhaps that is the answer to the riddle of Selvallavatn's outflow.**",
+  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "c7a6851895",
+  "en": "*Perhaps.* He left it open. And as far as I can find, in the eighty-odd years since, **nobody has closed it.** No dye trace, no survey, no paper. A lake disappearing into a lava field, and the last word on it is a farmer's son saying \"maybe.\"",
+  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "a342dfae55",
+  "en": "It hasn't always been Selvallavatn either. The old name in the record is **Svínavatn** — *pig lake.* Less romantic, and it clearly lost the marketing meeting.",
+  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "e9e17395a8",
+  "en": "There's **brown trout and Arctic charr** in it — the trout run a solid **three to six pounds**, and on summer evenings shoals of small charr work along the lava edge. In a dry spell the water level can drop by **a metre and a half**.",
+  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "f90cae3833",
+  "en": "How big is it? Genuinely nobody agrees. The standard Icelandic reference says **0.85 km²**. The national mapping database maps the shoreline at **0.30 km²**. That is a factor of nearly three, on a lake you can see the whole of from here, and I am not going to pretend I can settle it. **Maximum depth: never surveyed at all.**",
+  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "0e3c84855f",
+  "en": "The lay-by you are standing on isn't an accident, by the way. When Vatnaleið was built, an **architect** was brought in to design this viewpoint — and in **2003** the whole road took **Vegagerðin's first-ever award** for construction and finish, with the jury singling out this spot. Congratulations. You are standing on an award-winning lay-by.",
+  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "765785fd69",
+  "en": "The lake, Berserkjahraun and the neighbouring waters are all on the **Náttúruminjaskrá**, Iceland's nature conservation register, as item **227**.",
+  "ctx": "fact bullet — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "464656f78e",
+  "en": "the lake below us",
+  "ctx": "gloss for the name \"Selvallavatn\" — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "0ba3ad4ab8",
+  "en": "\"pig lake,\" what it used to be called",
+  "ctx": "gloss for the name \"Svínavatn\" — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "5d10e153aa",
+  "en": "literally \"channel\"; the swallow-hole where the water goes down",
+  "ctx": "gloss for the name \"Rás\" — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "12cdd56879",
+  "en": "Arctic charr and brown trout",
+  "ctx": "gloss for the name \"bleikja / urriði\" — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "72f7c8db84",
+  "en": "Iceland's nature conservation register",
+  "ctx": "gloss for the name \"Náttúruminjaskrá\" — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
   "tours": [
    "9.0"
   ]
@@ -24092,9 +25762,601 @@
   ]
  },
  {
+  "id": "7e2fd0034e",
+  "en": "**Road 56 — Vatnaleið**, \"the lakes route\" — is nearly the newest thing you'll touch today: built in **2001**, when it retired the old **Kerlingarskarð** pass that had hauled traffic over the peninsula's spine for generations. We replaced the pass, not the mountains.",
+  "ctx": "fact bullet — tour 10.0 / Kirkjufell → Reykjavík / ⛰️ Vatnaleið",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
   "id": "8d71396617",
   "en": "Which is the theme now: decompression. You've had the glacier, the cliffs, the black beach and the lone striped mountain. This hour is yours — the entertainment bar was set high enough this morning.",
   "ctx": "fact bullet — tour 10.0 / Kirkjufell → Reykjavík / ⛰️ Vatnaleið",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "aaa98396d2",
+  "en": "the wreckage of two vanished volcanoes",
+  "ctx": "Threads index — what block \"10.3 Esja\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "4d1074cf07",
+  "en": "the glacier-carved fjord and Glymur's 198 metres",
+  "ctx": "Threads index — what block \"10.6 Hvalfjörður\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "9e3e52d051",
+  "en": "a wave-cut notch, a whale bone at 85 m, a magnetic flip in the rock",
+  "ctx": "Threads index — what block \"10.7 Akrafjall\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "d16f6d69d8",
+  "en": "the retired plate boundary that kept erupting",
+  "ctx": "Threads index — what block \"10.10 Iceland's First Rift Zone\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "95159813fd",
+  "en": "ninety kilometres of one system, móberg ridges",
+  "ctx": "Threads index — what block \"10.11 Hítardalur & Ljósufjöll\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "293e827a10",
+  "en": "the Settlement-age fire-fortress crater",
+  "ctx": "Threads index — what block \"10.12 Eldborg\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "cf4577fa5e",
+  "en": "why cooling basalt turns into hexagons",
+  "ctx": "Threads index — what block \"10.13 Gerðuberg\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "1a32f4f008",
+  "en": "post-glacial uplift; the sea floor that got promoted",
+  "ctx": "Threads index — what block \"10.14 Löngufjörur\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "07504a42dc",
+  "en": "Búðahraun lava and olivine-green sand",
+  "ctx": "Threads index — what block \"10.16 Búðir\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "36b1aef7f3",
+  "en": "a 526 m hyaloclastite pyramid",
+  "ctx": "Threads index — what block \"10.19 Stapafell & Rauðfeldsgjá\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "81bd6b2f5e",
+  "en": "basalt columns vertical and horizontal",
+  "ctx": "Threads index — what block \"10.20 The Arnarstapi Cliffs\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "c9f7684bdd",
+  "en": "the stratovolcano on pause, magma chamber intact",
+  "ctx": "Threads index — what block \"10.24 Snæfellsjökull\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "ee341096ff",
+  "en": "volcanic plugs, not sea stacks",
+  "ctx": "Threads index — what block \"10.25 Lóndrangar\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "817b725c55",
+  "en": "a 200 m lava tube and how tubes form",
+  "ctx": "Threads index — what block \"10.26 Malarrif & Vatnshellir\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "037dd176d4",
+  "en": "the black pebble beach at the volcano's foot",
+  "ctx": "Threads index — what block \"10.27 Djúpalónssandur & Dritvík\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "526502d853",
+  "en": "a scoria crater and the Neshraun lava",
+  "ctx": "Threads index — what block \"10.28 Saxhóll\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "57f934470b",
+  "en": "móberg mountains poured under an ice sheet",
+  "ctx": "Threads index — what block \"10.36 Vatnaleið\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "424457d9ed",
+  "en": "📜 Sagas & Literature",
+  "ctx": "Threads index — topic heading, tour 10.0",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "33b0ee8ec3",
+  "en": "Harðar saga's 180 outlaws on Geirshólmi",
+  "ctx": "Threads index — what block \"10.6 Hvalfjörður\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "ed1e068e86",
+  "en": "the graveyard chapters of Egils saga",
+  "ctx": "Threads index — what block \"10.9 Borgarnes\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "2f5d0496f9",
+  "en": "Bárðar saga's half-troll takes a cold bath",
+  "ctx": "Threads index — what block \"10.18 Bárðarlaug\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "84d9a129c6",
+  "en": "the two boys the map still remembers",
+  "ctx": "Threads index — what block \"10.19 Stapafell & Rauðfeldsgjá\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "a0b9a0b106",
+  "en": "a saga figure in 300 tonnes of stone",
+  "ctx": "Threads index — what block \"10.21 The Bárður Statue\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "da92fe0233",
+  "en": "Jules Verne's entrance to the centre of the Earth",
+  "ctx": "Threads index — what block \"10.24 Snæfellsjökull\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "40f0b77ab0",
+  "en": "Kolbeinn's verse contest, with citation",
+  "ctx": "Threads index — what block \"10.25 Lóndrangar\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "44fa133332",
+  "en": "the Columbus story: fiction historicized",
+  "ctx": "Threads index — what block \"10.29 Ingjaldshóll\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "0fba377058",
+  "en": "Eyrbyggja saga's ghost trials",
+  "ctx": "Threads index — what block \"10.33 Fróðá\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "ae5cd14bc3",
+  "en": "🧌 Folklore",
+  "ctx": "Threads index — topic heading, tour 10.0",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "d7073f80eb",
+  "en": "Rauðhöfði, the whale with a grudge",
+  "ctx": "Threads index — what block \"10.6 Hvalfjörður\" covers, under \"🧌 Folklore\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "d48f76d652",
+  "en": "the devil loses a poetry slam",
+  "ctx": "Threads index — what block \"10.25 Lóndrangar\" covers, under \"🧌 Folklore\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "9e93ff63a8",
+  "en": "the barrels and the comeback line, added a century late",
+  "ctx": "Threads index — what block \"10.30 Björn the Rich\" covers, under \"🧌 Folklore\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "8874d074ce",
+  "en": "eighteen ghosts, tried at the door",
+  "ctx": "Threads index — what block \"10.33 Fróðá\" covers, under \"🧌 Folklore\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "1cbb91c70b",
+  "en": "🐦 Birds & Wildlife",
+  "ctx": "Threads index — topic heading, tour 10.0",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "b33f66eb6f",
+  "en": "one in seven of Iceland's white-tailed eagle pairs",
+  "ctx": "Threads index — what block \"10.14 Löngufjörur\" covers, under \"🐦 Birds & Wildlife\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "20e7696d46",
+  "en": "10,000 kittiwake pairs, counted twice",
+  "ctx": "Threads index — what block \"10.20 The Arnarstapi Cliffs\" covers, under \"🐦 Birds & Wildlife\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "cb17b683a5",
+  "en": "17,000 nests and an Antarctic commute",
+  "ctx": "Threads index — what block \"10.31 The Tern Capital\" covers, under \"🐦 Birds & Wildlife\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "2cc38d7107",
+  "en": "the Irishman's church, a century early",
+  "ctx": "Threads index — what block \"10.4 Esjuberg\" covers, under \"🧭 Settlement & Migration\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "183d8dbcf3",
+  "en": "Þormóður and Ketill, the corn-growing Irish brothers",
+  "ctx": "Threads index — what block \"10.7 Akrafjall\" covers, under \"🧭 Settlement & Migration\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "62302dda94",
+  "en": "Kveldúlfur's coffin picks the family address",
+  "ctx": "Threads index — what block \"10.9 Borgarnes\" covers, under \"🧭 Settlement & Migration\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "bee6e21241",
+  "en": "the farm girl who out-sailed Columbus",
+  "ctx": "Threads index — what block \"10.23 Guðríður Þorbjarnardóttir\" covers, under \"🧭 Settlement & Migration\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "a2a468efd4",
+  "en": "the imported Columbus claim, via Winnipeg",
+  "ctx": "Threads index — what block \"10.29 Ingjaldshóll\" covers, under \"🧭 Settlement & Migration\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "bb0e60bf76",
+  "en": "pole-to-pole commuters beside the car park",
+  "ctx": "Threads index — what block \"10.31 The Tern Capital\" covers, under \"🧭 Settlement & Migration\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "90ae4cbf3f",
+  "en": "👩 Women",
+  "ctx": "Threads index — topic heading, tour 10.0",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "4f40f2cc19",
+  "en": "Brák, the foster-mother the water is named for",
+  "ctx": "Threads index — what block \"10.9 Borgarnes\" covers, under \"👩 Women\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "089ddf18c4",
+  "en": "Steinunn Sveinsdóttir rebuilds the church",
+  "ctx": "Threads index — what block \"10.16 Búðir\" covers, under \"👩 Women\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "dc94aa8296",
+  "en": "more crossings than anyone of her century",
+  "ctx": "Threads index — what block \"10.23 Guðríður Þorbjarnardóttir\" covers, under \"👩 Women\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "2e563b0fbe",
+  "en": "Ólöf the Rich: \"gather men instead\"",
+  "ctx": "Threads index — what block \"10.30 Björn the Rich\" covers, under \"👩 Women\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "48c74f022e",
+  "en": "St Columba's church before the Conversion",
+  "ctx": "Threads index — what block \"10.4 Esjuberg\" covers, under \"⛪ Religion\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "c28e1a915e",
+  "en": "the bishop and the deadliest fire, 1148",
+  "ctx": "Threads index — what block \"10.11 Hítardalur & Ljósufjöll\" covers, under \"⛪ Religion\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "6c6c6997cc",
+  "en": "the black church, consecrated 1851",
+  "ctx": "Threads index — what block \"10.16 Búðir\" covers, under \"⛪ Religion\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "bc7bba3caa",
+  "en": "the 1903 concrete church on the hill",
+  "ctx": "Threads index — what block \"10.29 Ingjaldshóll\" covers, under \"⛪ Religion\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "2ff265a193",
+  "en": "a priest, a door-court, and the year 1000",
+  "ctx": "Threads index — what block \"10.33 Fróðá\" covers, under \"⛪ Religion\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "5cd888bd01",
+  "en": "the Danish monopoly harbour at Arnarstapi",
+  "ctx": "Threads index — what block \"10.22 The Governor's House\" covers, under \"💰 Trade\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "1937423d09",
+  "en": "600 men and a lifting-stone job interview",
+  "ctx": "Threads index — what block \"10.27 Djúpalónssandur & Dritvík\" covers, under \"💰 Trade\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "5590aa26a2",
+  "en": "killed in a trade war over cod, 1467",
+  "ctx": "Threads index — what block \"10.30 Björn the Rich\" covers, under \"💰 Trade\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "9f0e0bedf8",
+  "en": "the harbour swap of 1687",
+  "ctx": "Threads index — what block \"10.32 Ólafsvík\" covers, under \"💰 Trade\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "ff6c5a5475",
+  "en": "5,770 metres, 165 metres down",
+  "ctx": "Threads index — what block \"10.5 Hvalfjörður Tunnel\" covers, under \"⚡ Technology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "c328c4487e",
+  "en": "520 metres that retired four kilometres",
+  "ctx": "Threads index — what block \"10.8 Borgarfjarðarbrú\" covers, under \"⚡ Technology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "71fefe0551",
+  "en": "the 1946 lighthouse over the lava tube",
+  "ctx": "Threads index — what block \"10.26 Malarrif & Vatnshellir\" covers, under \"⚡ Technology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "5a3f92ddb5",
+  "en": "the 2001 road over the spine",
+  "ctx": "Threads index — what block \"10.36 Vatnaleið\" covers, under \"⚡ Technology\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "10abb57a87",
+  "en": "⚖️ Law",
+  "ctx": "Threads index — topic heading, tour 10.0",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "20f6247ebb",
+  "en": "Iceland's one serial killer, executed 1596",
+  "ctx": "Threads index — what block \"10.17 Axlar-Björn\" covers, under \"⚖️ Law\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "f9d250d092",
+  "en": "the ghosts we took to court",
+  "ctx": "Threads index — what block \"10.33 Fróðá\" covers, under \"⚖️ Law\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "edf716e9e8",
+  "en": "🎖️ Warfare",
+  "ctx": "Threads index — topic heading, tour 10.0",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "42f81dd86e",
+  "en": "the Allied anchorage; Geirshólmi as gunnery target",
+  "ctx": "Threads index — what block \"10.6 Hvalfjörður\" covers, under \"🎖️ Warfare\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "0b7f82af7f",
+  "en": "an early round of the cod wars",
+  "ctx": "Threads index — what block \"10.30 Björn the Rich\" covers, under \"🎖️ Warfare\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "64ddd3dd88",
+  "en": "sea level is not a fixed opinion",
+  "ctx": "Threads index — what block \"10.7 Akrafjall\" covers, under \"❄️ Climate\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "0896d0fd8d",
+  "en": "kittiwakes down 55% in one year",
+  "ctx": "Threads index — what block \"10.20 The Arnarstapi Cliffs\" covers, under \"❄️ Climate\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "da707604f2",
+  "en": "the glacier scheduled to leave by about 2050",
+  "ctx": "Threads index — what block \"10.24 Snæfellsjökull\" covers, under \"❄️ Climate\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "946294811a",
+  "en": "the prize-winning stairway to heaven and hell",
+  "ctx": "Threads index — what block \"10.28 Saxhóll\" covers, under \"🏛️ Architecture\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "d67cd52a29",
+  "en": "Ragnar Kjartansson's 300 tonnes, 1985",
+  "ctx": "Threads index — what block \"10.21 The Bárður Statue\" covers, under \"🎨 Art\"",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "542e0f5bdb",
+  "en": "🛡️ Statehood",
+  "ctx": "Threads index — topic heading, tour 10.0",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "be130bd421",
+  "en": "the seat of the West Amt, flat-packed in 1849",
+  "ctx": "Threads index — what block \"10.22 The Governor's House\" covers, under \"🛡️ Statehood\"",
   "tours": [
    "10.0"
   ]

@@ -50,6 +50,18 @@ for(const id of ids){
         ctx:"gloss for the name \""+x[0]+"\" — "+where, t:x[2]}); });
     });
   });
+  // The 🧵 Threads index. Ships to the app since gcd156, so it translates like
+  // everything else — except the stop-number label ("1.5 Kjalarnesþing") and the
+  // block id, which must read the same in Craft, on the Mac and in every language.
+  if(S.threadsIntro) out.push({tour:id, ctx:"Threads index — the one line of intro prose", t:S.threadsIntro});
+  (S.threads||[]).forEach(t=>{
+    out.push({tour:id, ctx:"Threads index — topic heading, tour "+id, t:t.title});
+    (t.subs||[]).forEach(sb=>{
+      if(sb.label) out.push({tour:id, ctx:"Threads index — sub-heading under \""+t.title+"\"", t:sb.label});
+      (sb.items||[]).forEach(it=>out.push({tour:id,
+        ctx:"Threads index — what block \""+it[0]+"\" covers, under \""+t.title+"\"", t:it[2]}));
+    });
+  });
 }
 console.log(JSON.stringify(out));
 ''' % json.dumps(TOURS)
