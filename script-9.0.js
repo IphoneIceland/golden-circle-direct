@@ -357,9 +357,9 @@ sections: [
  mic:"Two berserkers built the first road through here. The pay was a farmer's daughter — and the severance package was a bath they never left.",
  weather:"Weather pivot (if the craters are hidden): \"No red craters today — but the lumps under the moss either side of us are the berserkers' lava, and this road is doing exactly what their path did.\"",
  bullets:[
-  "Erupted about **4,000 years ago** from a row of **scoria cones of the Ljósufjöll volcanic system** — **Rauðakúla, Grákúla and Kothraunskúla** — rough **aa lava** that crawled to the sea at **Bjarnarhöfn** and **Hraunsfjörður** and has been gathering moss ever since.",
+  "Erupted about **4,000 years ago** from a row of **scoria cones of the Ljósufjöll volcanic system** — **Rauðakúla, Gráakúla, Smáhraunakúla and Kothraunskúla** — rough **aa lava** that crawled to the sea at **Bjarnarhöfn** and **Hraunsfjörður** and has been gathering moss ever since.",
   "**Eyrbyggja Saga** supplies the labour dispute: two **Swedish berserkers** were promised a farmer's daughter if they could clear a path through the lava. **They succeeded** — whereupon their master **Víga-Styrr** had them killed, **unarmed, in the bath**, and buried in the lava.",
-  "The path — **Berserkjagata** — is **still clearly visible** a thousand years on. And when archaeologists excavated the grave beside it, **they found the bones of two men.** The saga kept receipts.",
+  "The path — **Berserkjagata** — is **still clearly visible** a thousand years on, and there is a stone cairn beside it the saga calls their grave. Careful here: the antiquarian **Sigurður Vigfússon** only **examined** it (1889 survey, published **1893**), and a local farmer **re-stacked it** in the mid-20th century. **Minjastofnun records no excavation and no bones.** The road is the evidence. The grave is the story.",
  ],
  say:[
   ["Berserkjahraun","ber-SERK-ya-hroyn","'the berserkers' lava field'"],
