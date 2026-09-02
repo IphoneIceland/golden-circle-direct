@@ -1,6 +1,6 @@
 window.__I18N__ = window.__I18N__ || {};
 window.__I18N__.ko = {
-  ui: { endSub:"투어는 여기까지입니다 — 오늘 함께해 주셔서 고맙습니다.", endKm:"km", endStories:"개 이야기", endStops:"개 정류지", endAsk:"오늘이 그럴 만했다면, 리뷰가 저에게 가장 큰 힘이 됩니다 — <b>제 이름만 꼭 넣어 주세요.</b>", endCopy:"눌러서 복사", endCopied:"복사됨!", endReview:"리뷰 남기기", endQuick:"30초면 충분합니다", endWhatsApp:"WhatsApp", endInstagram:"Instagram", endWebsite:"웹사이트", language:"언어", whichTour:"어떤 투어인가요?", loading:"불러오는 중", back:"다른 투어 선택", soon:"곧 공개" , stories:"개 이야기", tours:"개 투어", drive:"주행", cont:"이어서 계속하기", onphone:"이 기기에 저장됨", updated:"✨ 업데이트됨 – 눌러서 새로고침", offline:"오프라인 · 문제없음", thanks:"투어는 여기까지입니다. 함께해 주셔서 감사합니다. 오늘이 그럴 만한 하루였다면 리뷰를 남겨 주세요. 그리고 제 이름(Ritchie Rich)을 꼭 적어 주세요. 그게 정말 중요한 부분이거든요."},
+  ui: { endReviewS:"리뷰", endSub:"투어는 여기까지입니다 — 오늘 함께해 주셔서 고맙습니다.", endKm:"km", endStories:"개 이야기", endStops:"개 정류지", endAsk:"오늘이 그럴 만했다면, 리뷰가 저에게 가장 큰 힘이 됩니다 — <b>제 이름만 꼭 넣어 주세요.</b>", endCopy:"눌러서 복사", endCopied:"복사됨!", endReview:"리뷰 남기기", endQuick:"30초면 충분합니다", endWhatsApp:"WhatsApp", endInstagram:"Instagram", endWebsite:"웹사이트", language:"언어", whichTour:"어떤 투어인가요?", loading:"불러오는 중", back:"다른 투어 선택", soon:"곧 공개" , stories:"개 이야기", tours:"개 투어", drive:"주행", cont:"이어서 계속하기", onphone:"이 기기에 저장됨", updated:"✨ 업데이트됨 – 눌러서 새로고침", offline:"오프라인 · 문제없음", thanks:"투어는 여기까지입니다. 함께해 주셔서 감사합니다. 오늘이 그럴 만한 하루였다면 리뷰를 남겨 주세요. 그리고 제 이름(Ritchie Rich)을 꼭 적어 주세요. 그게 정말 중요한 부분이거든요."},
   welcome: {
     step:"1단계 — 환영합니다", title:"탑승을 환영합니다",
     lead:"오늘의 투어를 실제 주행 순서대로 정리했습니다.",
