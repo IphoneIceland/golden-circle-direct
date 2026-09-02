@@ -74,8 +74,8 @@ body{background:
 .col{display:flex;flex-direction:column;min-width:0;background:rgba(16,16,20,.74);
   border:1px solid var(--line);border-radius:16px;overflow:hidden;
   backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
-#blocks{flex:1 1 470px;max-width:560px}
-#custom{flex:1 1 auto}
+#blocks{flex:0 0 clamp(360px,34vw,520px)}
+#custom{flex:1 1 auto;min-width:0}
 .colhead{padding:11px 14px;font:700 16px 'Norse',Georgia,serif;letter-spacing:.03em;color:var(--accent);
   border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px}
 .colhead .n{color:var(--dim);font:400 12px var(--sans);letter-spacing:0}
@@ -156,7 +156,7 @@ button.mini:hover{border-color:var(--accent);color:var(--accent)}
   #tabs{display:flex}
   #wrap{flex-direction:column}
   .col{width:100%;max-width:none}
-  #blocks,#custom{flex:none;width:100%}
+  #blocks,#custom{flex:none;width:100%;min-width:0}
   body.show-custom #blocks{display:none}
   body:not(.show-custom) #custom{display:none}
   .colbody{max-height:none}
