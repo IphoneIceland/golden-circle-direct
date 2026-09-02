@@ -208,7 +208,7 @@ sections: [
  ],
  tags:["#geology"],
 },
-{id:"6.0.1.12", title:"🕳️ Hella", sub:"The Secret Monks", cue:"Look right at 3 o'clock — the caves of Hella.",
+{id:"6.0.1.12", title:"🕳️ Hella", sub:"The Secret Monks", cue:"Coming up ahead — the caves of Hella, cut into the bank of the Ytri-Rangá.",
  hook:"Long before the Vikings arrived with longships, someone else may already have been here — **literally hiding in the walls**.",
  point:"Some of the oldest, strangest archaeology in the country — proof that in Iceland, history isn't just on the surface. Sometimes it's dug into the hillside you're driving past.",
  mic:"Most towns have houses and barns. Hella has a **neighbourhood carved straight into the cliff** — and nobody can quite agree who moved in first.",

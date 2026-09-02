@@ -1,0 +1,55 @@
+[
+ {
+  "id": "5a5e137b8b",
+  "en": "Look ahead — Rauðhólar, the red crater hills.",
+  "ctx": "cue, tells the guest where to look — tour 1.0 / Gullfoss → Reykjavík / ⛰️ Rauðhólar",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0"
+  ]
+ },
+ {
+  "id": "1ca6fa8abc",
+  "en": "Coming up ahead — the white house by the river Kaldakvísl, just off Route 36.",
+  "ctx": "cue, tells the guest where to look — tour 4.0 / Þingvellir → Reykjavík / 🪶 Gljúfrasteinn",
+  "tours": [
+   "4.0"
+  ]
+ },
+ {
+  "id": "57bc982ff4",
+  "en": "Look left at 10 o'clock — Esja on the skyline.",
+  "ctx": "cue, tells the guest where to look — tour 4.0 / Þingvellir → Reykjavík / ⛰️ Mount Esja",
+  "tours": [
+   "4.0"
+  ]
+ },
+ {
+  "id": "833fd38c65",
+  "en": "Coming up ahead — the caves of Hella, cut into the bank of the Ytri-Rangá.",
+  "ctx": "cue, tells the guest where to look — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🕳️ Hella",
+  "tours": [
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
+  "id": "1c3a91d734",
+  "en": "Look right at 4 o'clock — Esja on the skyline.",
+  "ctx": "cue, tells the guest where to look — tour 9.0 / BSÍ Bus Terminal → Borgarnes / ⛰️ Mount Esja",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "728beab765",
+  "en": "Look left at 8 o'clock — Hellissandur, with the church at Ingjaldshóll on its hill beyond.",
+  "ctx": "cue, tells the guest where to look — tour 9.0 / Ólafsvík → Djúpalónssandur / ⛪ Hellissandur, Ingjaldshóll & the Columbus Story",
+  "tours": [
+   "9.0"
+  ]
+ }
+]

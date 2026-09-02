@@ -1607,8 +1607,7 @@
   "tours": [
    "1.0",
    "2.0",
-   "3.0",
-   "4.0"
+   "3.0"
   ]
  },
  {
@@ -6520,13 +6519,17 @@
   ]
  },
  {
-  "id": "c3436f7215",
-  "en": "Look left, across the river — Selfoss and the Ölfusárbrú.",
+  "id": "5e9bc5f190",
+  "en": "We're crossing it now — look down. Ölfusárbrú.",
   "ctx": "cue, tells the guest where to look — tour 1.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
   "tours": [
    "1.0",
    "2.0",
-   "3.0"
+   "3.0",
+   "4.0",
+   "5.0",
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -6625,14 +6628,12 @@
   ]
  },
  {
-  "id": "9e025cd1ed",
-  "en": "Iceland's first suspension bridge, 1891 — today's is the 1945 replacement",
+  "id": "a902dd21d1",
+  "en": "the bridge we're crossing right now, Iceland's first suspension bridge, 1891",
   "ctx": "gloss for the name \"Ölfusárbrú\" — tour 1.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
   "tours": [
    "1.0",
-   "2.0",
-   "3.0",
-   "4.0"
+   "2.0"
   ]
  },
  {
@@ -7634,8 +7635,8 @@
   ]
  },
  {
-  "id": "9909655476",
-  "en": "Look left at 9 o'clock — Rauðhólar.",
+  "id": "5a5e137b8b",
+  "en": "Look ahead — Rauðhólar, the red crater hills.",
   "ctx": "cue, tells the guest where to look — tour 1.0 / Gullfoss → Reykjavík / ⛰️ Rauðhólar",
   "tours": [
    "1.0",
@@ -10389,6 +10390,14 @@
   ]
  },
  {
+  "id": "fb5ed58194",
+  "en": "the 1891 bridge, Iceland's first suspension bridge",
+  "ctx": "gloss for the name \"Ölfusárbrú\" — tour 3.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
+  "tours": [
+   "3.0"
+  ]
+ },
+ {
   "id": "15ea70a2b0",
   "en": "Route 1, the Ring Road, only completed in 1974",
   "ctx": "gloss for the name \"Leið 1\" — tour 3.0 / Gullfoss → Reykjavík / 🧭 Ingólfur Arnarson",
@@ -10896,14 +10905,6 @@
   ]
  },
  {
-  "id": "f896bf95f1",
-  "en": "Behind us now, across the Ölfusá — Selfoss.",
-  "ctx": "cue, tells the guest where to look — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏗️ Selfoss",
-  "tours": [
-   "4.0"
-  ]
- },
- {
   "id": "8424f6c2ee",
   "en": "Then in **September 1944**, after 53 years, **two trucks crossed at the same time**. The eastern bearing cables couldn't take the concentrated weight, **snapped, and dropped the bridge into the river**. Both drivers survived. A replacement opened in **December 1945**, fifteen months later — and the war it was supposed to outlast had already ended that summer.",
   "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏗️ Selfoss",
@@ -10915,6 +10916,15 @@
   "id": "155c40467c",
   "en": "the town that grew up around the river crossing",
   "ctx": "gloss for the name \"Selfoss\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏗️ Selfoss",
+  "tours": [
+   "4.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "8654308fae",
+  "en": "the Ölfusá bridge, Iceland's first suspension bridge, 1891",
+  "ctx": "gloss for the name \"Ölfusárbrú\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏗️ Selfoss",
   "tours": [
    "4.0",
    "6.0"
@@ -11589,6 +11599,14 @@
   ]
  },
  {
+  "id": "1ca6fa8abc",
+  "en": "Coming up ahead — the white house by the river Kaldakvísl, just off Route 36.",
+  "ctx": "cue, tells the guest where to look — tour 4.0 / Þingvellir → Reykjavík / 🪶 Gljúfrasteinn",
+  "tours": [
+   "4.0"
+  ]
+ },
+ {
   "id": "508a5c7929",
   "en": "Look right on Route 36 — Laxnes, about 400 metres up the side road.",
   "ctx": "cue, tells the guest where to look — tour 4.0 / Þingvellir → Reykjavík / 🎬 Laxnes Horse Farm",
@@ -11709,8 +11727,8 @@
   ]
  },
  {
-  "id": "35b6139ccf",
-  "en": "Look right at 2 o'clock — Esja on the skyline.",
+  "id": "57bc982ff4",
+  "en": "Look left at 10 o'clock — Esja on the skyline.",
   "ctx": "cue, tells the guest where to look — tour 4.0 / Þingvellir → Reykjavík / ⛰️ Mount Esja",
   "tours": [
    "4.0"
@@ -12354,16 +12372,6 @@
   ]
  },
  {
-  "id": "5e9bc5f190",
-  "en": "We're crossing it now — look down. Ölfusárbrú.",
-  "ctx": "cue, tells the guest where to look — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏗️ Selfoss",
-  "tours": [
-   "5.0",
-   "6.0",
-   "7.0"
-  ]
- },
- {
   "id": "66bcc16107",
   "en": "The enemy that took out the Selfoss bridge wasn't an army. It was two milkmen and a bad tow-rope decision.",
   "ctx": "the point of the block — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏗️ Selfoss",
@@ -12533,8 +12541,8 @@
   ]
  },
  {
-  "id": "5ec58bff07",
-  "en": "Look right at 3 o'clock — the caves of Hella.",
+  "id": "833fd38c65",
+  "en": "Coming up ahead — the caves of Hella, cut into the bank of the Ytri-Rangá.",
   "ctx": "cue, tells the guest where to look — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🕳️ Hella",
   "tours": [
    "5.0",
@@ -16066,14 +16074,6 @@
   "id": "31fde934d5",
   "en": "Both drivers survived — one clung to the **truck bed until he drifted ashore** by the church. The bridge was rebuilt in **five and a half months**, mid-war, reopening **21 December 1945** — the span still carrying you today.",
   "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏗️ Selfoss",
-  "tours": [
-   "6.0"
-  ]
- },
- {
-  "id": "8654308fae",
-  "en": "the Ölfusá bridge, Iceland's first suspension bridge, 1891",
-  "ctx": "gloss for the name \"Ölfusárbrú\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏗️ Selfoss",
   "tours": [
    "6.0"
   ]
@@ -21657,8 +21657,8 @@
   ]
  },
  {
-  "id": "a367f72ec9",
-  "en": "Look ahead at 12 o'clock — Esja on the skyline.",
+  "id": "1c3a91d734",
+  "en": "Look right at 4 o'clock — Esja on the skyline.",
   "ctx": "cue, tells the guest where to look — tour 9.0 / BSÍ Bus Terminal → Borgarnes / ⛰️ Mount Esja",
   "tours": [
    "10.0",
@@ -24397,11 +24397,10 @@
   ]
  },
  {
-  "id": "ce434e51d0",
-  "en": "Ahead at 12 o'clock — Hellissandur, with the church at Ingjaldshóll on its hill beyond.",
+  "id": "728beab765",
+  "en": "Look left at 8 o'clock — Hellissandur, with the church at Ingjaldshóll on its hill beyond.",
   "ctx": "cue, tells the guest where to look — tour 9.0 / Ólafsvík → Djúpalónssandur / ⛪ Hellissandur, Ingjaldshóll & the Columbus Story",
   "tours": [
-   "10.0",
    "9.0"
   ]
  },
@@ -27007,6 +27006,14 @@
   "id": "31dd6fcf79",
   "en": "Djúpalónssandur → Ólafsvík",
   "ctx": "section title",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "ce434e51d0",
+  "en": "Ahead at 12 o'clock — Hellissandur, with the church at Ingjaldshóll on its hill beyond.",
+  "ctx": "cue, tells the guest where to look — tour 10.0 / Djúpalónssandur → Ólafsvík / ⛪ Hellissandur, Ingjaldshóll & the Columbus Story",
   "tours": [
    "10.0"
   ]

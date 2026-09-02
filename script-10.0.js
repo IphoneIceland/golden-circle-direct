@@ -61,7 +61,7 @@ sections: [
  ],
  tags:["#trade","#literature"],
 },
-{id:"10.0.1.4", title:"⛰️ Mount Esja", sub:"A Layer Cake of Climate", cue:"Look ahead at 12 o'clock — Esja on the skyline.",
+{id:"10.0.1.4", title:"⛰️ Mount Esja", sub:"A Layer Cake of Climate", cue:"Look right at 4 o'clock — Esja on the skyline.",
  hook:"That ridge isn't a mountain — it's a **volcanic range** with **11 ice ages** stacked inside it. Reykjavík's **weather forecast, written in stone** — and unlike the app, it's never wrong.",
  point:"Dark = warm, pale = frozen. One glance up and you've read **11 ice ages** before the lights change.",
  mic:"Reykjavíkians don't check the weather app — they check if they can still see Esja. If Esja's gone, your phone is the least of your problems.",
