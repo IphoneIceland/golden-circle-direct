@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>iGuide — Back Office</title>
+<style>
+@font-face{font-family:'Norse';src:url('fonts/NorseBold.woff2') format('woff2');font-weight:700;font-display:swap}
+:root{--bg:#0d0d0f;--panel:#14141a;--panel2:#1a1a20;--line:rgba(244,240,230,.14);
+      --ink:#f4f0e6;--mute:#cbc4b0;--dim:#837e6f;--accent:#d4a94a;--accent-2:#b48a2f;
+      --sans:"Inter",ui-sans-serif,system-ui,-apple-system,sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;font:14px/1.5 var(--sans);background:var(--bg);color:var(--ink);
+          -webkit-text-size-adjust:100%}
+
+/* ── header ─────────────────────────────────────────── */
+#top{display:flex;align-items:center;gap:14px;padding:9px 16px;background:var(--panel2);
+     border-bottom:1px solid var(--line)}
+#top h1{margin:0;font:700 21px 'Norse',Georgia,serif;letter-spacing:.02em;color:var(--accent)}
+#top .n{color:var(--dim);font-size:12px}
+#top .spacer{flex:1}
+
+/* ── TOUR STRIP — across the top, left to right ─────── */
+#tourbar{display:flex;align-items:stretch;gap:8px;padding:9px 12px;background:var(--panel);
+         border-bottom:1px solid var(--line);overflow-x:auto;overflow-y:hidden;
+         scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+#tourbar::-webkit-scrollbar{height:7px}
+#tourbar::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
+.tourbtn{flex:0 0 auto;text-align:left;background:var(--panel2);border:1px solid var(--line);
+  color:var(--ink);border-radius:9px;padding:7px 12px;cursor:pointer;font:inherit;line-height:1.25;
+  transition:border-color .12s,background .12s}
+.tourbtn:hover{border-color:var(--accent-2)}
+.tourbtn.on{border-color:var(--accent);background:#1f1a10;box-shadow:inset 0 0 0 1px rgba(212,169,74,.35)}
+.tourbtn .num{font:700 14px var(--sans);color:var(--accent);letter-spacing:.02em}
+.tourbtn .nm{display:block;font-size:12.5px;white-space:nowrap;max-width:230px;overflow:hidden;
+             text-overflow:ellipsis}
+.tourbtn .c{display:block;color:var(--dim);font-size:11px}
+.tourbtn .tick{color:var(--accent);font-size:11px}
+
+/* ── main split: blocks down the LEFT, basket on the right ── */
+#wrap{display:flex;height:calc(100% - 49px - 57px)}
+.col{display:flex;flex-direction:column;min-width:0}
+#blocks{flex:0 0 420px;border-right:1px solid var(--line)}
+#custom{flex:1 1 auto;min-width:0}
+.colhead{padding:9px 12px;font:700 15px 'Norse',Georgia,serif;letter-spacing:.03em;color:var(--accent);
+         border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px}
+.colhead .n{color:var(--dim);font:400 12px var(--sans);letter-spacing:0}
+.colhead .spacer{flex:1}
+.colbody{flex:1;overflow-y:auto;min-height:0;padding:8px}
+
+#q{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:8px;color:var(--ink);
+   padding:7px 10px;font:inherit;margin:0 0 8px}
+
+/* ── one block row: [tickbox] 1.1  Title ───────────── */
+.blk{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:8px 10px;margin:0 0 6px;
+     display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.blk:hover{border-color:rgba(212,169,74,.4)}
+.blk.picked{border-color:var(--accent);background:#1b1710}
+.blk .box{flex:none;width:20px;height:20px;margin-top:2px;border:1.5px solid var(--dim);border-radius:5px;
+  display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--bg);background:transparent;
+  transition:background .12s,border-color .12s}
+.blk.picked .box{background:var(--accent);border-color:var(--accent)}
+.blk .box::after{content:"✓";opacity:0;font-weight:700}
+.blk.picked .box::after{opacity:1}
+.blk .body{flex:1;min-width:0}
+.blk .ref{font:700 12.5px var(--sans);color:var(--accent);letter-spacing:.02em}
+.blk h3{margin:1px 0 0;font-size:14px;font-weight:600}
+.blk .sec{color:var(--dim);font-size:11px}
+.blk .cue{color:var(--mute);font-size:12px;font-style:italic;margin-top:2px}
+.blk .stats{color:var(--dim);font-size:11px;margin-top:2px}
+.blk .peek{color:var(--mute);font-size:12px;display:none;margin-top:6px;white-space:pre-wrap;
+           border-top:1px solid var(--line);padding-top:6px}
+.blk.open .peek{display:block}
+.blk .eye{flex:none;background:none;border:0;color:var(--dim);cursor:pointer;font-size:12px;padding:2px 4px}
+.blk .eye:hover{color:var(--accent)}
+
+/* ── custom tour basket ─────────────────────────────── */
+#picklist{padding:8px}
+.pick{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:7px 9px;margin:0 0 6px;
+      display:flex;gap:6px;align-items:center}
+.pick .ord{flex:none;color:var(--accent);font:700 12px var(--sans);min-width:32px}
+.pick .t{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px}
+.pick .src{color:var(--dim);font-size:11px}
+button.mini{background:var(--panel2);border:1px solid var(--line);color:var(--mute);
+  border-radius:7px;cursor:pointer;font:inherit;padding:2px 8px;font-size:12px;flex:none}
+button.mini:hover{border-color:var(--accent);color:var(--accent)}
+#meta{padding:10px 12px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px;
+      align-items:center;background:var(--panel2)}
+#meta input{background:var(--panel);border:1px solid var(--line);border-radius:7px;color:var(--ink);
+            padding:8px 9px;font:inherit;flex:1 1 150px;min-width:120px}
+#save,#export{border-radius:9px;padding:9px 14px;cursor:pointer;font:inherit;font-weight:700;flex:none}
+#save{background:var(--panel);border:1px solid var(--accent);color:var(--accent)}
+#save:hover:not(:disabled){background:var(--accent);color:var(--bg)}
+#export{background:var(--accent);border:1px solid var(--accent);color:var(--bg)}
+#save:disabled,#export:disabled{opacity:.35;cursor:default}
+#note{color:var(--dim);font-size:11.5px;line-height:1.5;flex:1 1 100%;margin:0}
+#saved{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:7px 12px;
+       border-top:1px solid var(--line);background:var(--panel)}
+#saved .lbl{color:var(--dim);font-size:11.5px}
+.savedchip{background:var(--panel2);border:1px solid var(--line);color:var(--mute);border-radius:20px;
+  padding:3px 5px 3px 10px;font-size:12px;display:flex;align-items:center;gap:4px}
+.savedchip b{color:var(--accent);font-weight:700}
+.savedchip button{background:none;border:0;color:var(--dim);cursor:pointer;font-size:13px;padding:0 4px}
+.savedchip button:hover{color:#e07a5f}
+.savedchip .ld{cursor:pointer}
+.empty{color:var(--dim);padding:22px;text-align:center;font-size:13px;line-height:1.6}
+#toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(14px);background:var(--accent);
+  color:var(--bg);font-weight:700;padding:9px 16px;border-radius:9px;opacity:0;pointer-events:none;
+  transition:opacity .18s,transform .18s;z-index:50;font-size:13px}
+#toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media (max-width:820px){
+  #wrap{flex-direction:column;height:auto}
+  #blocks{flex:none;border-right:0;border-bottom:1px solid var(--line)}
+  #blocks .colbody{max-height:52vh}
+  .tourbtn .nm{max-width:150px}
+  html,body{height:auto}
+}
+</style>
+</head>
+<body>
+
+<div id="top">
+  <h1>iGuide — Back Office</h1>
+  <span class="n" id="stat">loading…</span>
+  <span class="spacer"></span>
+  <span class="n" id="autosave"></span>
+</div>
+
+<!-- TOURS: across the top, left to right -->
+<div id="tourbar"></div>
+
+<div id="wrap">
+  <div class="col" id="blocks">
+    <div class="colhead">Script blocks <span class="n" id="bcount"></span>
+      <span class="spacer"></span>
+      <button class="mini" id="allon">Tick all</button>
+      <button class="mini" id="alloff">Clear</button>
+    </div>
+    <div class="colbody">
+      <input id="q" placeholder="Search titles, cues, bullet text…">
+      <div id="blocklist"></div>
+    </div>
+  </div>
+
+  <div class="col" id="custom">
+    <div class="colhead">Custom tour <span class="n" id="ccount"></span></div>
+    <div class="colbody" id="picklist"></div>
+    <div id="saved"><span class="lbl">Saved:</span><span id="savedlist"></span></div>
+    <div id="meta">
+      <input id="cid" placeholder="Tour id, e.g. 9.1">
+      <input id="cname" placeholder="Tour name, e.g. Private — Smith family">
+      <button id="save" disabled>Save</button>
+      <button id="export" disabled>Download script-&lt;id&gt;.js</button>
+      <div id="note">Save keeps the tour in this browser so you can pick it up later.
+      Download writes the file — drop it in the repo, add the tour to <code>tours.js</code>, then
+      <code>python3 add-tour.py &lt;id&gt;</code> builds the route and wires it in.
+      Blocks keep their source-section names so the router can pin the stops.</div>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+// ---- PIN gate. Change the PIN here. ----
+const BACKOFFICE_PIN="731905";
+(function(){
+  try{ if(localStorage.getItem("bo-ok")===BACKOFFICE_PIN) return; }catch(e){}
+  const a=prompt("PIN");
+  if(a===BACKOFFICE_PIN){ try{localStorage.setItem("bo-ok",a);}catch(e){} return; }
+  document.documentElement.innerHTML="<body style=\'background:#0d0d0f\'></body>";
+  throw new Error("no");
+})();
+</script>
+<script src="tours.js"></script>
+<script>
+const TOURS = window.__TOURS__.filter(t=>t.ready!==false);
+const LIB   = {};            // tour id -> {title, sections}
+let PICKS   = [];            // [{tour, si, bi}]  — order = tour order
+let CUR = null, Q = "";
+
+const $   = id=>document.getElementById(id);
+const esc = s=>(s||"").replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const key = p=>p.tour+"|"+p.si+"|"+p.bi;
+const DRAFT="bo-draft", STORE="bo-saved";
+
+function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("on");
+  clearTimeout(toast._t); toast._t=setTimeout(()=>t.classList.remove("on"),1900); }
+
+function loadScript(src){return new Promise((ok,bad)=>{const e=document.createElement("script");
+  e.src=src;e.onload=ok;e.onerror=()=>bad(new Error(src));document.head.appendChild(e);});}
+
+/* Block reference: tour 1.0 -> its blocks are 1.1, 1.2, 1.3 … */
+function refOf(tid, n){ return String(tid).split(".")[0] + "." + n; }
+
+/* Flat, ordered list of every block in a tour, numbered the way Ritchie counts. */
+function blocksOf(tid){
+  const out=[]; let n=0;
+  (LIB[tid]||{sections:[]}).sections.forEach((s,si)=>s.blocks.forEach((b,bi)=>{
+    out.push({tour:tid, si, bi, sec:s, b, ref:refOf(tid, ++n)});
+  }));
+  return out;
+}
+
+async function boot(){
+  for(const t of TOURS){
+    await loadScript("script-"+t.id+".js");
+    LIB[t.id]=JSON.parse(JSON.stringify(window.__SCRIPT__));
+  }
+  let n=0; Object.values(LIB).forEach(S=>S.sections.forEach(s=>n+=s.blocks.length));
+  $("stat").textContent=TOURS.length+" tours · "+n+" blocks";
+  restoreDraft();
+  paintTours(); paintSaved();
+  pick(CUR && (CUR==="*"||LIB[CUR]) ? CUR : TOURS[0].id);
+}
+
+/* ── tours across the top ─────────────────────────── */
+function paintTours(){
+  const el=$("tourbar"); el.innerHTML="";
+  const mk=(id,num,name,sub,cnt)=>{
+    const b=document.createElement("button");
+    b.className="tourbtn"+(CUR===id?" on":"");
+    b.innerHTML="<span class='num'>"+esc(num)+"</span>"
+      +"<span class='nm'>"+esc(name)+"</span>"
+      +"<span class='c'>"+esc(sub)+(cnt?" · "+cnt+" ticked":"")+"</span>";
+    b.onclick=()=>pick(id);
+    if(CUR===id) b.dataset.on="1";
+    el.appendChild(b);
+  };
+  mk("*","★","All tours","every block, searchable", PICKS.length);
+  TOURS.forEach(t=>{
+    const all=blocksOf(t.id);
+    const on=PICKS.filter(p=>p.tour===t.id).length;
+    mk(t.id, t.id, t.name, all.length+" blocks", on);
+  });
+}
+function pick(id){
+  CUR=id; paintTours(); paintBlocks();
+  const on=document.querySelector('#tourbar .tourbtn[data-on]');
+  if(on && on.scrollIntoView) on.scrollIntoView({block:"nearest",inline:"nearest",behavior:"smooth"});
+}
+
+/* ── blocks down the left, each with a tick box ───── */
+function rows(){
+  const ids = CUR==="*" ? TOURS.map(t=>t.id) : [CUR];
+  let out=[]; ids.forEach(tid=>{ out=out.concat(blocksOf(tid)); });
+  if(!Q) return out;
+  const q=Q.toLowerCase();
+  return out.filter(r=>((r.b.title+" "+(r.b.cue||"")+" "+(r.b.bullets||[]).join(" ")).toLowerCase()).includes(q));
+}
+function isPicked(r){ return PICKS.some(p=>key(p)===key(r)); }
+
+function paintBlocks(){
+  const list=$("blocklist"); list.innerHTML="";
+  const rs=rows();
+  $("bcount").textContent="· "+rs.length+(Q?" matching":"");
+  rs.forEach(r=>{
+    const d=document.createElement("div");
+    d.className="blk"+(isPicked(r)?" picked":"");
+    d.innerHTML="<div class='box'></div>"
+      +"<div class='body'>"
+      +"<span class='ref'>"+esc(r.ref)+"</span>"
+      +"<h3>"+esc(r.b.title)+"</h3>"
+      +"<div class='sec'>"+esc(r.sec.title)+" · "+esc(r.sec.kind)+"</div>"
+      +(r.b.cue?"<div class='cue'>"+esc(r.b.cue)+"</div>":"")
+      +"<div class='stats'>"+(r.b.bullets||[]).length+" bullets · "+(r.b.say||[]).length+" pronunciations</div>"
+      +"<div class='peek'>"+esc((r.b.bullets||[]).slice(0,4).join("\n\n"))+"</div>"
+      +"</div>"
+      +"<button class='eye' title='Show the words'>👁</button>";
+    d.onclick=()=>toggle(r);
+    d.querySelector(".eye").onclick=e=>{ e.stopPropagation(); d.classList.toggle("open"); };
+    list.appendChild(d);
+  });
+  if(!rs.length) list.innerHTML="<div class='empty'>No blocks match that search.</div>";
+}
+
+function toggle(r){
+  const i=PICKS.findIndex(p=>key(p)===key(r));
+  if(i>=0) PICKS.splice(i,1);
+  else{
+    PICKS.push({tour:r.tour,si:r.si,bi:r.bi});
+    PICKS.sort(byTourOrder);
+  }
+  afterChange();
+}
+/* keeps picks in tour order so the script reads the way the coach drives */
+function byTourOrder(a,b){
+  const ti=TOURS.findIndex(t=>t.id===a.tour)-TOURS.findIndex(t=>t.id===b.tour);
+  return ti || (a.si-b.si) || (a.bi-b.bi);
+}
+$("allon").onclick=()=>{
+  rows().forEach(r=>{ if(!isPicked(r)) PICKS.push({tour:r.tour,si:r.si,bi:r.bi}); });
+  PICKS.sort(byTourOrder); afterChange();
+};
+$("alloff").onclick=()=>{
+  const gone=new Set(rows().map(key));
+  PICKS=PICKS.filter(p=>!gone.has(key(p)));
+  afterChange();
+};
+
+/* ── the custom tour ──────────────────────────────── */
+function paintPicks(){
+  const el=$("picklist"); el.innerHTML="";
+  $("ccount").textContent="· "+PICKS.length+" block"+(PICKS.length===1?"":"s");
+  $("export").disabled=!PICKS.length;
+  $("save").disabled=!PICKS.length;
+  if(!PICKS.length){
+    el.innerHTML="<div class='empty'>Pick a tour along the top, then tick the blocks on the left.<br>"
+      +"They come across with every bullet, cue and pronunciation intact.</div>";
+    return;
+  }
+  PICKS.forEach((p,i)=>{
+    const b=LIB[p.tour].sections[p.si].blocks[p.bi];
+    const nth=blocksOf(p.tour).find(r=>key(r)===key(p));
+    const d=document.createElement("div"); d.className="pick";
+    d.innerHTML="<span class='ord'>"+(i+1)+"</span>"
+      +"<div class='t'><b>"+esc(b.title)+"</b> <span class='src'>"+esc(nth?nth.ref:p.tour)+"</span></div>"
+      +"<button class='mini' title='up'>↑</button><button class='mini' title='down'>↓</button>"
+      +"<button class='mini' title='remove'>✕</button>";
+    const [up,dn,rm]=d.querySelectorAll("button");
+    up.onclick=()=>{ if(i>0){[PICKS[i-1],PICKS[i]]=[PICKS[i],PICKS[i-1]]; afterChange();} };
+    dn.onclick=()=>{ if(i<PICKS.length-1){[PICKS[i+1],PICKS[i]]=[PICKS[i],PICKS[i+1]]; afterChange();} };
+    rm.onclick=()=>{ PICKS.splice(i,1); afterChange(); };
+    el.appendChild(d);
+  });
+}
+function afterChange(){ paintPicks(); paintBlocks(); paintTours(); saveDraft(); }
+
+/* ── saving ───────────────────────────────────────── */
+function saveDraft(){
+  try{
+    localStorage.setItem(DRAFT, JSON.stringify({
+      picks:PICKS, cur:CUR, cid:$("cid").value, cname:$("cname").value
+    }));
+    $("autosave").textContent="draft saved "+new Date().toLocaleTimeString().slice(0,5);
+  }catch(e){ $("autosave").textContent="draft not saved: "+e.message; }
+}
+function restoreDraft(){
+  try{
+    const d=JSON.parse(localStorage.getItem(DRAFT)||"null");
+    if(!d) return;
+    PICKS=(d.picks||[]).filter(p=>LIB[p.tour]&&LIB[p.tour].sections[p.si]&&LIB[p.tour].sections[p.si].blocks[p.bi]);
+    CUR=d.cur||null; $("cid").value=d.cid||""; $("cname").value=d.cname||"";
+  }catch(e){}
+}
+function allSaved(){ try{ return JSON.parse(localStorage.getItem(STORE)||"{}"); }catch(e){ return {}; } }
+function paintSaved(){
+  const box=$("savedlist"); box.innerHTML="";
+  const S=allSaved(), ids=Object.keys(S).sort();
+  if(!ids.length){ box.innerHTML="<span class='lbl'>nothing yet</span>"; return; }
+  ids.forEach(id=>{
+    const c=document.createElement("span"); c.className="savedchip";
+    c.innerHTML="<span class='ld'><b>"+esc(id)+"</b> "+esc(S[id].name)+" · "+S[id].picks.length+"</span>"
+               +"<button title='delete'>✕</button>";
+    c.querySelector(".ld").onclick=()=>{
+      PICKS=S[id].picks.slice(); $("cid").value=id; $("cname").value=S[id].name;
+      afterChange(); toast("Loaded "+id);
+    };
+    c.querySelector("button").onclick=()=>{
+      if(!confirm("Delete saved tour "+id+"?")) return;
+      const S2=allSaved(); delete S2[id];
+      localStorage.setItem(STORE, JSON.stringify(S2)); paintSaved(); toast("Deleted "+id);
+    };
+    box.appendChild(c);
+  });
+}
+$("save").onclick=()=>{
+  const id=$("cid").value.trim(), name=$("cname").value.trim();
+  if(!id||!name){ alert("Give the tour an id and a name first."); return; }
+  const S=allSaved();
+  if(S[id] && !confirm("Tour "+id+" is already saved. Overwrite it?")) return;
+  S[id]={name, picks:PICKS.slice(), ts:new Date().toISOString()};
+  try{ localStorage.setItem(STORE, JSON.stringify(S)); }
+  catch(e){ alert("Could not save: "+e.message); return; }
+  paintSaved(); toast("Saved "+id+" — "+PICKS.length+" blocks");
+};
+function labelExport(){
+  const id=$("cid").value.trim();
+  $("export").textContent = id ? "Download script-"+id+".js" : "Download script-<id>.js";
+}
+["cid","cname"].forEach(k=>$(k).oninput=()=>{ saveDraft(); labelExport(); });
+$("q").oninput=e=>{ Q=e.target.value.trim(); paintBlocks(); };
+
+/* ── export ───────────────────────────────────────── */
+$("export").onclick=()=>{
+  const id=$("cid").value.trim(), name=$("cname").value.trim();
+  if(!id||!name){ alert("Give the tour an id and a name first."); return; }
+  // Consecutive picks from the same source section stay one section, so the
+  // route builder still sees real stop names it can geocode.
+  const sections=[]; let cur=null;
+  PICKS.forEach(p=>{
+    const src=LIB[p.tour].sections[p.si];
+    const k=p.tour+"|"+p.si;
+    if(!cur||cur.key!==k){ cur={key:k,title:src.title,kind:src.kind,blocks:[]}; sections.push(cur); }
+    cur.blocks.push(JSON.parse(JSON.stringify(src.blocks[p.bi])));
+  });
+  sections.forEach((s,si)=>{ delete s.key; s.blocks.forEach((b,bi)=>b.id=(si+1)+"."+(bi+1)); });
+  const js="// Custom tour, assembled in the back office "+new Date().toISOString().slice(0,10)+"\n"
+    +"window.__SCRIPT__ = "+JSON.stringify({title:name,sections},null,1)+";\n";
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([js],{type:"text/javascript"}));
+  a.download="script-"+id+".js"; a.click();
+  toast("Downloaded script-"+id+".js");
+};
+
+boot().then(()=>{ afterChange(); labelExport(); }).catch(e=>{ $("stat").textContent="failed: "+e.message; });
+</script>
+</body>
+</html>
