@@ -19,7 +19,7 @@ sections: [
  ],
  tags:["#art","#literature","#trade"],
 },
-{id:"9.0.1.2", title:"Jóhannes Sveinsson Kjarval", cue:"Look left at 9 o'clock — Klambratún Park.",
+{id:"9.0.1.2", title:"🧍 Jóhannes Sveinsson Kjarval", cue:"Look left at 9 o'clock — Klambratún Park.",
  hook:"How do you fund art school in 1900s Iceland? Your shipmates **pass a hat round a freezing cod trawler**. Not a GoFundMe — an actual hat.",
  point:"Most artists travel the world for inspiration. Kjarval found a whole country in the **dirt under his boots** — then handed it back, one canvas at a time.",
  mic:"In Iceland, the landscape looks back — and sometimes it files a complaint with the bishop.",
