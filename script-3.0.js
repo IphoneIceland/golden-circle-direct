@@ -183,7 +183,7 @@ sections: [
  ],
  tags:["#film","#literature","#history"],
 },
-{id:"3.0.1.10", title:"🪶 Gljúfrasteinn", sub:"The Poet's House", cue:"Look left — the white house by the river Kaldakvísl, right on Route 36.",
+{id:"3.0.1.10", title:"🪶 Gljúfrasteinn", sub:"The Poet's House", cue:"Look left — the white house by the river Kaldakvísl, just off Route 36.",
  hook:"On **17 June 1945** — the young republic's first birthday — a woman sat down and typed the building contract for that white house. **Ten years later there was a Nobel Prize in it.**",
  point:"Iceland's only Nobel came home to a quiet valley — to a house that doubles as the country's smallest gallery of rejected art.",
  mic:"A Nobel on the shelf, a rejected altarpiece on the wall — Gljúfrasteinn is where Iceland keeps the things the gatekeepers got wrong.",
