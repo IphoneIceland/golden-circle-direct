@@ -6519,17 +6519,13 @@
   ]
  },
  {
-  "id": "5e9bc5f190",
-  "en": "We're crossing it now — look down. Ölfusárbrú.",
+  "id": "c3436f7215",
+  "en": "Look left, across the river — Selfoss and the Ölfusárbrú.",
   "ctx": "cue, tells the guest where to look — tour 1.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
   "tours": [
    "1.0",
    "2.0",
-   "3.0",
-   "4.0",
-   "5.0",
-   "6.0",
-   "7.0"
+   "3.0"
   ]
  },
  {
@@ -6628,12 +6624,14 @@
   ]
  },
  {
-  "id": "a902dd21d1",
-  "en": "the bridge we're crossing right now, Iceland's first suspension bridge, 1891",
+  "id": "9e025cd1ed",
+  "en": "Iceland's first suspension bridge, 1891 — today's is the 1945 replacement",
   "ctx": "gloss for the name \"Ölfusárbrú\" — tour 1.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
   "tours": [
    "1.0",
-   "2.0"
+   "2.0",
+   "3.0",
+   "4.0"
   ]
  },
  {
@@ -10390,14 +10388,6 @@
   ]
  },
  {
-  "id": "fb5ed58194",
-  "en": "the 1891 bridge, Iceland's first suspension bridge",
-  "ctx": "gloss for the name \"Ölfusárbrú\" — tour 3.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
-  "tours": [
-   "3.0"
-  ]
- },
- {
   "id": "15ea70a2b0",
   "en": "Route 1, the Ring Road, only completed in 1974",
   "ctx": "gloss for the name \"Leið 1\" — tour 3.0 / Gullfoss → Reykjavík / 🧭 Ingólfur Arnarson",
@@ -10905,6 +10895,14 @@
   ]
  },
  {
+  "id": "f896bf95f1",
+  "en": "Behind us now, across the Ölfusá — Selfoss.",
+  "ctx": "cue, tells the guest where to look — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏗️ Selfoss",
+  "tours": [
+   "4.0"
+  ]
+ },
+ {
   "id": "8424f6c2ee",
   "en": "Then in **September 1944**, after 53 years, **two trucks crossed at the same time**. The eastern bearing cables couldn't take the concentrated weight, **snapped, and dropped the bridge into the river**. Both drivers survived. A replacement opened in **December 1945**, fifteen months later — and the war it was supposed to outlast had already ended that summer.",
   "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏗️ Selfoss",
@@ -10916,15 +10914,6 @@
   "id": "155c40467c",
   "en": "the town that grew up around the river crossing",
   "ctx": "gloss for the name \"Selfoss\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏗️ Selfoss",
-  "tours": [
-   "4.0",
-   "6.0"
-  ]
- },
- {
-  "id": "8654308fae",
-  "en": "the Ölfusá bridge, Iceland's first suspension bridge, 1891",
-  "ctx": "gloss for the name \"Ölfusárbrú\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏗️ Selfoss",
   "tours": [
    "4.0",
    "6.0"
@@ -12361,6 +12350,16 @@
   "ctx": "gloss for the name \"Höfn\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
   "tours": [
    "5.0"
+  ]
+ },
+ {
+  "id": "5e9bc5f190",
+  "en": "We're crossing it now — look down. Ölfusárbrú.",
+  "ctx": "cue, tells the guest where to look — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏗️ Selfoss",
+  "tours": [
+   "5.0",
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -16066,6 +16065,14 @@
   "id": "31fde934d5",
   "en": "Both drivers survived — one clung to the **truck bed until he drifted ashore** by the church. The bridge was rebuilt in **five and a half months**, mid-war, reopening **21 December 1945** — the span still carrying you today.",
   "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏗️ Selfoss",
+  "tours": [
+   "6.0"
+  ]
+ },
+ {
+  "id": "8654308fae",
+  "en": "the Ölfusá bridge, Iceland's first suspension bridge, 1891",
+  "ctx": "gloss for the name \"Ölfusárbrú\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏗️ Selfoss",
   "tours": [
    "6.0"
   ]

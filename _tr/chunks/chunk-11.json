@@ -1,0 +1,31 @@
+[
+ {
+  "id": "c3436f7215",
+  "en": "Look left, across the river — Selfoss and the Ölfusárbrú.",
+  "ctx": "cue, tells the guest where to look — tour 1.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0"
+  ]
+ },
+ {
+  "id": "9e025cd1ed",
+  "en": "Iceland's first suspension bridge, 1891 — today's is the 1945 replacement",
+  "ctx": "gloss for the name \"Ölfusárbrú\" — tour 1.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "f896bf95f1",
+  "en": "Behind us now, across the Ölfusá — Selfoss.",
+  "ctx": "cue, tells the guest where to look — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏗️ Selfoss",
+  "tours": [
+   "4.0"
+  ]
+ }
+]
