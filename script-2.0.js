@@ -4,6 +4,7 @@ title: "Golden Circle Snowmobiling",
 sections: [
 {title:"BSÍ Bus Terminal → Þingvellir", kind:"drive", blocks:[
 {id:"2.0.1.1", title:"🧵 Three Names to Keep in Your Pocket", cue:"Leaving BSÍ — no window required.",
+ hook:"Before we point at a single thing, pocket three names: **a painter no bishop would bless, a brewer who named his beer after a Viking, and a farm boy who won the Nobel Prize.** Their stories are about to keep crashing into each other.",
  point:"One valley — **Mosfellsdalur, my literature valley** — ties a Viking's buried silver, a rejected painting and a Nobel medal into one twenty-minute stretch of road.",
  mic:"Keep the three names in your pocket. By the time we leave the valley, you'll know why the painting, the beer and the book all end up in the same house.",
  bullets:[
@@ -21,6 +22,7 @@ sections: [
  tags:["#art","#literature","#trade"],
 },
 {id:"2.0.1.2", title:"🧍 Jóhannes Sveinsson Kjarval", cue:"Look left at 9 o'clock — Klambratún Park.",
+ hook:"How do you fund art school in 1900s Iceland? Your shipmates **pass a hat round a freezing cod trawler**. Not a GoFundMe — an actual hat.",
  point:"Most artists travel the world for inspiration. Kjarval found a whole country in the **dirt under his boots** — then handed it back, one canvas at a time.",
  mic:"In Iceland, the landscape looks back — and sometimes it files a complaint with the bishop.",
  bullets:[
@@ -41,6 +43,7 @@ sections: [
  tags:["#art"],
 },
 {id:"2.0.1.3", title:"🏢 Ölgerðin Egill Skallagrímsson", cue:"Look right at 3 o'clock — Egils Brewery.",
+ hook:"How do you run Iceland's most famous brewery when beer is **illegal for 74 years**? Name it after a Viking — and brew beer that technically isn't beer.",
  point:"Tómas didn't outrun Prohibition. He **outlived it** — 74 years on near-beer and a royal warrant.",
  mic:"Name your company after a Viking and you don't follow the rules. You wait them out.",
  bullets:[
@@ -60,6 +63,7 @@ sections: [
  tags:["#trade"],
 },
 {id:"2.0.1.4", title:"🏞️ Elliðaárdalur", sub:"The Valley That Runs the City", cue:"Look right at 2 o'clock — Elliðaárdalur.",
+ hook:"Most capitals get a grey, sad little river. Reykjavík's hands you **dinner, drinking water, electricity — and the country's first parliament.** Show-off.",
  point:"Looks like a dog-walking park. It's where the capital gets **fed, watered, powered — and first learned to argue in public.**",
  mic:"Reykjavík didn't get a postcard river. It got a **Swiss Army knife.**",
  bullets:[
@@ -81,6 +85,7 @@ sections: [
  tags:["#law","#migration","#technology"],
 },
 {id:"2.0.1.5", title:"⛰️ Mount Esja", sub:"A Layer Cake of Climate", cue:"Look left and ahead — the long striped wall of Esja.",
+ hook:"That ridge isn't a mountain — it's a **volcanic range** with **11 ice ages** stacked inside it. Reykjavík's **weather forecast, written in stone** — and unlike the app, it's never wrong.",
  point:"Dark = warm, pale = frozen. One glance up and you've read **11 ice ages** before the lights change.",
  mic:"Reykjavíkers don't check the weather app — they check if they can still see Esja. If Esja's gone, your phone is the least of your problems.",
  bullets:[
@@ -99,6 +104,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"2.0.1.6", title:"⚖️ Kjalarnesþing", sub:"The Parliament Before the Parliament", cue:"Look left at 9 o'clock — across Kollafjörður to Kjalarnes, under the foot of Esja, four kilometres off. We turn east before it.",
+ hook:"Iceland's world-famous parliament at Þingvellir? Not even the first. The original ran over there on Kjalarnes — set up by the founder's son. Nepotism: also a Viking value.",
  point:"Þingvellir wasn't Kjalarnes moved house — it was something new and national. Kjalarnes just proved Icelanders could hold a parliament without a king.",
  mic:"Kjalarnes did the homework. Þingvellir took the credit, the fame, and the tourists.",
  bullets:[
@@ -120,6 +126,7 @@ sections: [
  tags:["#law","#migration"],
 },
 {id:"2.0.1.7", title:"🎵 Mosfellsbær", sub:"A Town That Punches Above Its Weight", cue:"All around — Mosfellsbær.",
+ hook:"A commuter town of **~13,700** — smaller than a single Reykjavík suburb — that exported **two global music acts** at opposite ends of the volume knob.",
  point:"A town this size shouldn't manage one global act. Mosfellsbær made two — whisper-quiet piano and stadium blues, from the same patch of moss.",
  mic:"Two acts, one small town, zero chill.",
  bullets:[
@@ -138,6 +145,7 @@ sections: [
  tags:["#music"],
 },
 {id:"2.0.1.8", title:"🪶 Mosfellsdalur", sub:"A Valley of Buried Silver and a Nobel Prize", cue:"All around — Mosfellsdalur.",
+ hook:"Two famous residents, a thousand years apart: one **buried a fortune here and killed the witnesses**; the other won the **Nobel Prize**.",
  point:"A buried fortune no-one's ever found, and a Nobel written five minutes up the road from it.",
  mic:"One man hid his fortune. The other left his on the shelves.",
  bullets:[
@@ -156,6 +164,7 @@ sections: [
  tags:["#literature","#law"],
 },
 {id:"2.0.1.9", title:"🎬 Laxnes Horse Farm", sub:"The Cast With Four Legs", cue:"Look left on Route 36 — Laxnes, about 400 metres up the side road.",
+ hook:"That farm on the left started with **six horses and one stranger asking for a ride.** Its horses have since turned up in *Game of Thrones* — and the boy who grew up on this land carried the farm's name all the way to Stockholm.",
  point:"One small farm exported a breed to Hollywood **and** a surname to Stockholm.",
  mic:"Some of these horses grazing by the road have better screen credits than most working actors. Don't ask for autographs — they only sign with a hoof.",
  bullets:[
@@ -173,6 +182,7 @@ sections: [
  tags:["#film","#literature","#history"],
 },
 {id:"2.0.1.10", title:"🪶 Gljúfrasteinn", sub:"The Poet's House", cue:"Look left — the white house by the river Kaldakvísl, right on Route 36.",
+ hook:"On **17 June 1945** — the young republic's first birthday — a woman sat down and typed the building contract for that white house. **Ten years later there was a Nobel Prize in it.**",
  point:"Iceland's only Nobel came home to a quiet valley — to a house that doubles as the country's smallest gallery of rejected art.",
  mic:"A Nobel on the shelf, a rejected altarpiece on the wall — Gljúfrasteinn is where Iceland keeps the things the gatekeepers got wrong.",
  bullets:[
@@ -248,6 +258,7 @@ sections: [
  tags:["#warfare","#migration"],
 },
 {id:"2.0.1.12", title:"🏘️ Landnám", sub:"Sixty Years to Build a Country", cue:"Crossing the Settlement Era.",
+ hook:"By tradition, in **874 CE** Iceland was all but empty. By **930**, it was full. Settled, mapped and **booted up with a national parliament** — in a single human lifetime.",
  point:"Most countries are built over centuries by armies. Iceland was built in **two generations**, by farmers with notebooks.",
  mic:"Founding-fathers? We've got 400. We named them all. They're still in the book.",
  bullets:[
@@ -267,6 +278,7 @@ sections: [
 ]},
 {title:"Þingvellir", kind:"stop", blocks:[
 {id:"2.0.2.1", title:"🌍 Almannagjá", sub:"Walking Into the Gap", cue:"We are walking down inside the crack. The wall on your left is the edge of North America.",
+ hook:"You are in the **gap between two continents** — and no, they do not meet here. They are tearing **apart**, at the speed your fingernails grow, and this valley is the hole they have left behind.",
  point:"Most plate boundaries sit invisible under two kilometres of ocean. Here you can **walk into the one the planet is tearing open.**",
  mic:"Hand on the wall to your left: North America. It is going that way. You are going that way. Slowly, and there is no hurry — it is about as fast as your fingernails grow.",
  bullets:[
@@ -286,6 +298,7 @@ sections: [
  tags:["#geology","#film"],
 },
 {id:"2.0.2.2", title:"⚖️ Lögberg & the Alþingi", sub:"Iceland's First Parliament", cue:"At the Law Rock — the wall behind you is the reason this spot was chosen.",
+ hook:"The **world's oldest parliament still in use**. Set up in **930 CE** in a literal **crack in the earth** — because the acoustics were better than anyone's farmhouse.",
  point:"No royal palace. No marble columns. Just a rock, a cliff wall, and the world's first national parliament held outdoors.",
  mic:"Britain calls itself the home of parliament. Iceland was running one **300 years before the Magna Carta** — in a hole in the ground.",
  bullets:[
@@ -305,6 +318,7 @@ sections: [
  tags:["#law"],
 },
 {id:"2.0.2.3", title:"⚖️ Kristnitaka", sub:"The Day Iceland Changed Religion, Lying Down", cue:"Standing at Lögberg. This is the exact ground where it was decided.",
+ hook:"Around **the year 1000**, Iceland changed its national religion **without a single sword being drawn** — right here. No army. No martyrs. Just one pagan chieftain, one cloak, and a really long nap.",
  point:"Most national religions are imposed by kings or won by armies. Iceland's was decided **on this rock, by a man having a lie-down.**",
  mic:"Calmly, collectively, and after a really good night's sleep. That is how Iceland became Christian — standing where you are standing. Most countries were not given the option.",
  bullets:[
@@ -321,6 +335,7 @@ sections: [
  tags:["#religion","#law"],
 },
 {id:"2.0.2.4", title:"⛪ Þingvallabær & Skáldareitur", sub:"A Westminster Abbey With Two Occupants", cue:"The white church and the five-gabled farmhouse on your right, at the bottom of the wall.",
+ hook:"There has been a church on this spot since **1017**. Beside it is a **national burial ground built to hold Iceland's greatest artists** — and in eighty-five years it has managed to bury exactly **two people**.",
  point:"A thousand-year-old church, a Prime Minister's summer house, and a national shrine containing two poets — one of whom may not be the right man.",
  mic:"They built this to hold the greatest Icelanders who ever lived. Two people went in. Then everyone thought about it a bit more and decided, actually, we'd rather be buried at home.",
  bullets:[
@@ -342,6 +357,7 @@ sections: [
  tags:["#religion","#art","#architecture","#statehood"],
 },
 {id:"2.0.2.5", title:"💧 Öxarárfoss, Drekkingarhylur & Peningagjá", sub:"The Waterfall, the Drowning Pool and the Fake Wishing Well", cue:"Follow the Öxará. The waterfall ahead, the still green pool below it, and the coin-filled crack by the bridge.",
+ hook:"A waterfall that was **moved here on purpose**, a pool where **at least eighteen women were drowned**, and a wishing well invented by **a sign put up in the 1930s.**",
  point:"The law was spoken up on the rock. It was carried out down here, in the water.",
  mic:"People throw coins in and make a wish because a sign in the 1930s told them to. Icelanders have been quietly watching tourists do it ever since and saying nothing.",
  bullets:[
@@ -360,6 +376,7 @@ sections: [
  tags:["#law","#folklore","#geology"],
 },
 {id:"2.0.2.6", title:"🐟 Þingvallavatn & Silfra", sub:"The Cleanest Water on Earth, and Four Fish That Are One Fish", cue:"The lake filling the rift ahead of you, and the clear pools off to the side.",
+ hook:"Meltwater that left a glacier **thirty to a hundred years ago**, filtered through lava the whole way — **drinkable from your cupped hand**, with **120 m** of underwater visibility. And one fish in it that has quietly become four.",
  point:"Two continents pulling apart, the cleanest drinking water on the planet running through the gap, and a fish quietly turning into four other fish while nobody watches.",
  mic:"Iceland's answer to a tectonic disaster: turn it into a reservoir, then drink it.",
  bullets:[
@@ -380,6 +397,7 @@ sections: [
  tags:["#geology","#wildlife"],
 },
 {id:"2.0.2.7", title:"🇮🇸 17 June 1944", sub:"The Republic, in the Rain", cue:"Back at the Law Rock. This is where the country stopped belonging to anybody else.",
+ hook:"On **17 June 1944** Iceland declared itself a republic — not in the capital, but **here**, in the rain, in front of tens of thousands of people standing in this valley.",
  point:"A thousand years after the first assembly, on the same ground, the country finished the job.",
  mic:"It absolutely poured. Tens of thousands stood in it for hours. If you want one image of how much this particular field means to Icelanders — that is the one.",
  bullets:[
@@ -396,6 +414,7 @@ sections: [
 ]},
 {title:"Þingvellir → Haukadalur Valley", kind:"drive", blocks:[
 {id:"2.0.3.1", title:"🕳️ The Cave People", sub:"Iceland's Last Cave Family", cue:"Driving past Laugarvatnshellir.",
+ hook:"The last family to call an Icelandic **cave** home moved out in **1922** — no electricity, no plumbing, but **their own front door** and a cow tied up next door.",
  point:"Twentieth-century Europe had jazz, cars and radio. It also had **a family raising kids in a cave**, because that's what was available.",
  mic:"Legend says a shepherd here was repeatedly **dragged out of the cave by invisible hands** — right before a blizzard that would have killed him inside. In Iceland, even the hidden folk do their own weather warnings.",
  bullets:[
@@ -417,6 +436,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"2.0.3.2", title:"🌋 Hekla", sub:"The Gateway to Hell", cue:"Look right at 1 o'clock — Hekla, sixty kilometres out on the horizon. Clear days only.",
+ hook:"In medieval Europe, this was officially **the front door of Hell** — and the prison of **Judas Iscariot**. Iceland didn't argue. We just charged tourists.",
  point:"Most volcanoes get a Wikipedia entry. Hekla got a **theological one** — used to scare medieval Europe straight for 800 years.",
  mic:"Welcome to the gateway to Hell. It gives you barely **an hour and a half's notice** to send the postcards.",
  bullets:[
@@ -436,6 +456,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"2.0.3.3", title:"🛁 Laugarvatn & Apavatn", sub:"Warm Water, Holy Water", cue:"Look right at 3 o'clock — Laugarvatn lake.",
+ hook:"What happens when you put the leaders of an entire country into the **same hot tub** to argue policy? Iceland's been finding out for **1,000 years**.",
  point:"Most nations were converted at sword-point. Iceland's converts **checked the water temperature first.**",
  mic:"Other countries got baptised in freezing rivers. Iceland looked at the weather and said — no, we have a warm one.",
  bullets:[
@@ -453,6 +474,7 @@ sections: [
  tags:["#religion"],
 },
 {id:"2.0.3.4", title:"💙 Brúará", sub:"The River That Lost Its Bridge", cue:"Crossing Brúará.",
+ hook:"A river whose name literally means **\"Bridge-River\"** — except the bridge was a **natural stone arch**, and in **1602** the church **smashed it on purpose** to keep the starving out.",
  point:"A river named after a bridge — that lost the bridge because the church was tired of the poor arriving.",
  mic:"The cheapest border policy in Icelandic history: knock down the only bridge and let the river do the rest.",
  bullets:[
@@ -471,6 +493,7 @@ sections: [
  tags:["#law"],
 },
 {id:"2.0.3.5", title:"⚖️ The Sturlung Age", sub:"The Civil War That Ended the Republic", cue:"*The 13th-century chapter most tours skip.*",
+ hook:"Iceland ran itself as a republic for **300 years**. Then **one family** decided that wasn't working — and burned the whole thing down. Literally.",
  point:"Iceland didn't lose its independence to an army. It **lost it to itself**.",
  mic:"The world's oldest parliament was killed by the same families it was built to control.",
  bullets:[
@@ -496,6 +519,7 @@ sections: [
  tags:["#law","#literature","#statehood"],
 },
 {id:"2.0.3.6", title:"⚖️ Haukadalur", sub:"Valley of the Hawks", cue:"At the geothermal field of Haukadalur.",
+ hook:"This valley taught Iceland its **letters, its laws, and its first geyser**. All three rolled out of one farm.",
  point:"One valley, one family: the first bishop's line, the schoolroom that preserved Iceland's memory — and the earl who signed the republic away.",
  mic:"You can't throw a stone in Haukadalur without hitting something that became famous worldwide.",
  bullets:[
@@ -517,6 +541,7 @@ sections: [
 ]},
 {title:"Geysir", kind:"stop", blocks:[
 {id:"2.0.4.1", title:"⛲ Geysir", sub:"The Name That Went Global", cue:"At the geothermal field — Strokkur and Geysir.",
+ hook:"Iceland gave the world the word **\"geyser\"** — from one hot spring, in one field, on one farm.",
  point:"Every other geyser on the planet is named after **this one**. Yellowstone, New Zealand, Chile — all geological cousins of one Icelandic hot spring.",
  mic:"Iceland exported the word \"geyser\" before it exported the cod.",
  bullets:[
@@ -542,6 +567,7 @@ sections: [
 ]},
 {title:"Gullfoss", kind:"stop", blocks:[
 {id:"2.0.5.1", title:"💧 Hvítá & Gullfoss", sub:"Meltwater and the Falls One Woman Saved", cue:"At Gullfoss.",
+ hook:"In **1907** an investor tried to dam this waterfall — and a farmer's daughter, **Sigríður**, fought it all the way to Reykjavík. She **lost in court** — and the falls are still here anyway.",
  point:"The world's most famous Icelandic conservation story — lost in the courtroom, saved in the end, by a woman who never had a vote.",
  mic:"An investor showed up with engineers. A farmer's daughter showed up and lost every legal round — and the falls are still here.",
  bullets:[
@@ -566,6 +592,7 @@ sections: [
  tags:["#geology","#women","#film"],
 },
 {id:"2.0.5.2", title:"🏔️ Langjökull", sub:"Snowmobiling on a Melting Giant", cue:"Heading up onto Langjökull — Iceland's second-largest ice cap.",
+ hook:"That waterfall you just photographed at Gullfoss? It's **this glacier crying.** Now we're going to ride snowmobiles across the thing doing the crying — a **580-metre-thick bank of ice, currently in overdraft.**",
  point:"You are riding a snowmobile across a **1,400-metre-high freshwater reservoir that sits on two volcanoes and is quietly melting on a deadline.** Nowhere else does \"just a bit of snow\" carry that much backstory.",
  mic:"We put you on a snowmobile on top of the very glacier that feeds every waterfall, geyser pool and fissure you've admired all day. Ride gently — you're on the source code.",
  bullets:[
@@ -588,6 +615,7 @@ sections: [
 ]},
 {title:"Gullfoss → Reykjavík", kind:"drive", blocks:[
 {id:"2.0.6.1", title:"🎧 Music Leg", sub:"Iceland Through the Years", cue:"Leaving Gullfoss. Playlist on, mic live between the stops.",
+ hook:"Forty-three tracks in three acts, and the whole story of how a country with fewer people than most cities ended up on everybody's playlist. We get through the first two today.",
  point:"The exact moment a country stops importing pop and starts exporting it — and you can hear it happen.",
  mic:"Everything from here is Icelandic. Listen out around track twenty-one: that is this small, cold, sheep-heavy island going from copying everybody to being copied.",
  bullets:[
@@ -622,6 +650,7 @@ sections: [
  ],
 },
 {id:"2.0.6.2", title:"⚡ Tungufljót", sub:"The Quiet Tributary & Brú Power Plant", cue:"Crossing the Tungufljót river.",
+ hook:"A river you've never heard of, **powering a country you have** — quietly.",
  point:"Iceland's most-photographed waterfall is Gullfoss. Its most useful one is **this tributary you're crossing**, doing the actual work of keeping the lights on.",
  mic:"Gullfoss gets the photos. Tungufljót gets the electricity bill paid.",
  bullets:[
@@ -638,6 +667,7 @@ sections: [
  tags:["#technology"],
 },
 {id:"2.0.6.3", title:"🍅 Reykholt & Friðheimar", sub:"Tomatoes in the Arctic", cue:"Passing Friðheimar, Reykholt.",
+ hook:"We grow **tomatoes, cucumbers, peppers and strawberries** at the latitude of **Fairbanks, Alaska** — heated by hot water that **costs us almost nothing**.",
  point:"Just south of the Arctic, you shouldn't be able to grow a tomato — so Iceland grows a big share of its own tomatoes and cucumbers on volcano heat and skips the shipping.",
  mic:"At our latitude, you shouldn't be able to grow a tomato. So we built a farm on a volcano and flew in Dutch bees to run it.",
  bullets:[
@@ -657,6 +687,7 @@ sections: [
  tags:["#geology","#technology"],
 },
 {id:"2.0.6.4", title:"🐎 Icelandic Horses", sub:"Living Viking Heritage", cue:"Look at the horses in the field.",
+ hook:"The horse in that field is a **direct descendant of a Viking horse** — a bloodline effectively **closed for ~1,000 years**. Just don't call it a pony. That's the one hill Iceland will genuinely die on.",
  point:"A horse breed Vikings would still recognise — kept intact for a millennium by isolation, hard winters, and a one-way export door.",
  mic:"You can take an Icelandic horse out of Iceland. You just can't bring it back. The country runs a one-way door for its own livestock.",
  bullets:[
@@ -672,6 +703,7 @@ sections: [
  tags:["#law"],
 },
 {id:"2.0.6.5", title:"⛪ Skálholt", sub:"Bishops, Heads, and Rock Bands", cue:"At Skálholt.",
+ hook:"For **700 years**, this farm was Iceland's **capital, university and cathedral** rolled into one. Then a **1784 earthquake** ate the lot — and the country never gave it back.",
  point:"Iceland's centre of power didn't fall to an invasion. It fell to a fault line — and politics finished the job.",
  mic:"A 700-year capital, ended by a single earthquake and a Danish administrative form.",
  bullets:[
@@ -694,6 +726,7 @@ sections: [
  tags:["#geology","#religion"],
 },
 {id:"2.0.6.6", title:"🎵 Grímsnes & Kerið", sub:"Red Walls, Blue Lake, Björk on a Raft", cue:"At Kerið crater.",
+ hook:"A **red volcanic crater** with a **bright blue lake** at the bottom — that **Björk once performed on**, from a **floating raft**.",
  point:"A crater that doubles as the world's most exclusive natural amphitheatre — built by a volcano, booked by an opera singer and a young Björk.",
  mic:"Most countries put concerts in arenas. Iceland puts them in volcanoes.",
  bullets:[
@@ -713,6 +746,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"2.0.6.7", title:"⚡ Sog River", sub:"The River That Ran Everything", cue:"Crossing the Sog.",
+ hook:"A river that's only **20 km long** — and powered **half of Iceland** for **50 years**.",
  point:"Three small hydro plants on one short river — and they kept the country running for half a century.",
  mic:"Big rivers get the postcards. The Sog quietly ran the lights.",
  bullets:[
@@ -732,6 +766,7 @@ sections: [
  tags:["#geology","#law","#technology"],
 },
 {id:"2.0.6.8", title:"🌊 Ölfusá", sub:"The Final Drain", cue:"Look right at 1–2 o'clock — Ölfusá.",
+ hook:"The river ahead carries more water than any other in Iceland — and **most of it isn't even called Ölfusá**. It's **four rivers in disguise**, sharing a name only for the last 25 km.",
  point:"Every drop of water that fell on the Golden Circle — glaciers, geysers, lakes — eventually squeezes through this one channel.",
  mic:"Four rivers. One channel. Centuries of cattle-and-cod toll. All Golden Circle water leads here.",
  bullets:[
@@ -751,6 +786,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"2.0.6.9", title:"🏗️ Selfoss", sub:"The Great Milk Collapse", cue:"We're crossing it now — look down. Ölfusárbrú.",
+ hook:"What's more dangerous than a world war? Apparently, **two milkmen in a very big hurry**.",
  point:"The enemy that took out the Selfoss bridge wasn't an army. It was two overloaded trucks and a bridge built for lighter days.",
  mic:"The war couldn't blow this bridge up. A couple of dairy trucks did it on a Tuesday afternoon.",
  bullets:[
@@ -766,6 +802,7 @@ sections: [
  tags:["#wwii"],
 },
 {id:"2.0.6.10", title:"🧭 Ingólfur Arnarson", sub:"The Founder's Path", cue:"Look ahead at 12 o'clock — the Ring Road (Leið 1).",
+ hook:"Would you move your whole family to an empty island based on **where two pieces of furniture washed up**?",
  point:"The modern Ring Road is the last chapter of that story — stitching together the coast Ingólfur started.",
  mic:"The saga begins with a man chasing two pillars. It ends with a whole nation driving the road that traces his coastline.",
  bullets:[
@@ -781,6 +818,7 @@ sections: [
  tags:["#migration"],
 },
 {id:"2.0.6.11", title:"🌋 Hveragerði", sub:"Quakes, Cakes and Steam", cue:"Look right at 3 o'clock — Hveragerði.",
+ hook:"A town of **about 3,350 people** where the ground occasionally rearranges itself — and the locals responded by **building an exhibition around the crack in their floor**.",
  point:"Pizza baked by a volcano. Beer brewed with geothermal heat. A shopping mall built on an earthquake crack. Yes, all in the same town.",
  mic:"Most towns hide their disasters. Hveragerði put theirs in the lobby and charged admission.",
  bullets:[
@@ -801,6 +839,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"2.0.6.12", title:"🎧 Music Leg", sub:"Rícharður's Mix, The Road Home", cue:"Leaving Hveragerði — my own playlist from here to BSÍ.",
+ hook:"Sixteen tracks, sequenced for exactly this road: quiet while you are tired, warm as the light changes, loud by the time the city shows up.",
  point:"Sixteen tracks that go quiet, then loud, in exactly the shape of a good day ending.",
  mic:"Right — that is me done talking. My own playlist from here into town: sixteen tracks, all Icelandic, all picked for this exact stretch of road.",
  bullets:[
@@ -826,6 +865,7 @@ sections: [
  ],
 },
 {id:"2.0.6.13", title:"🏢 Hellisheiðarvirkjun", sub:"The Dragon's Breath", cue:"Look right at 2 o'clock — Hellisheiði geothermal plant.",
+ hook:"In most countries, a volcano is a disaster plan. In Iceland, it's the **light switch**.",
  point:"While the world debates carbon capture, Iceland dissolves the problem in water, files it under \"rocks,\" and moves on.",
  mic:"Your shower in Reykjavík tonight was heated by the same volcano that's currently filing CO₂ as gravel under your feet.",
  bullets:[
@@ -841,6 +881,7 @@ sections: [
  tags:["#technology","#geology"],
 },
 {id:"2.0.6.14", title:"⛰️ Kristnitökuhraun", sub:"The Decision Rock", cue:"Look left at 9 o'clock — Kristnitökuhraun, the Christianity Lava.",
+ hook:"Can a volcano vote? Around **the year 1000**, one sort of did. One chieftain out-thought it with a single question.",
  point:"A whole country's religion settled by a single, calm geology question.",
  mic:"The pagans claimed a volcano was voting. Snorri pointed out the ballot box was older than the religion.",
  bullets:[
@@ -858,6 +899,7 @@ sections: [
  tags:["#geology","#literature","#religion"],
 },
 {id:"2.0.6.15", title:"⛰️ Rauðhólar", sub:"The Mars Impostors", cue:"Look left at 9 o'clock — Rauðhólar.",
+ hook:"A line of perfect little volcanoes — and **not one of them is real**. NASA can't get enough.",
  point:"Two armies and one city carved up Iceland's Mars lab and paved it into a runway.",
  mic:"Eighty cones. One Mars classroom. Half of it now under your runway.",
  bullets:[

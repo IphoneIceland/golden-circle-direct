@@ -4,6 +4,7 @@ title: "South Coast Combo",
 sections: [
 {title:"BSÍ Bus Terminal → Hvolsvöllur", kind:"drive", blocks:[
 {id:"6.0.1.1", title:"🧍 Jóhannes Sveinsson Kjarval", cue:"Look left at 9 o'clock — Klambratún Park.",
+ hook:"How do you fund art school in 1900s Iceland? Your shipmates **pass a hat round a freezing cod trawler**. Not a GoFundMe — an actual hat.",
  point:"Most artists travel the world for inspiration. Kjarval found a whole country in the **dirt under his boots** — then handed it back, one canvas at a time.",
  mic:"In Iceland, the landscape looks back — and sometimes it files a complaint with the bishop.",
  bullets:[
@@ -24,6 +25,7 @@ sections: [
  tags:["#art"],
 },
 {id:"6.0.1.2", title:"🏢 Ölgerðin Egill Skallagrímsson", cue:"Look right at 3 o'clock — Egils Brewery.",
+ hook:"How do you run Iceland's most famous brewery when beer is **illegal for 74 years**? Name it after a Viking — and brew beer that technically isn't beer.",
  point:"Tómas didn't outrun Prohibition. He **outlived it** — on near-beer and a royal warrant.",
  mic:"Name your company after a Viking and you don't follow the rules. You wait them out.",
  bullets:[
@@ -43,6 +45,7 @@ sections: [
  tags:["#trade"],
 },
 {id:"6.0.1.3", title:"🏞️ Elliðaárdalur & Paradísardalur", cue:"Look right at 2 o'clock — Elliðaárdalur.",
+ hook:"To joggers it's a postcard. To a geologist, it's a **crime scene** — 10,000 years of Iceland trying, and failing, to stay quiet.",
  point:"It looks like a Sunday-stroll park. It's a 5,000-year-old construction site nobody ever closed.",
  mic:"A volcano split the river. The Vikings claimed it. The British fortified it. The river is still working overtime to undo all of it.",
  bullets:[
@@ -60,6 +63,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"6.0.1.4", title:"⛰️ Rauðhólar", sub:"The Mars Impostors", cue:"Look right at 3 o'clock — Rauðhólar.",
+ hook:"A line of perfect little volcanoes — and **not one of them is real**. NASA can't get enough.",
  point:"Two armies and one city carved up Iceland's Mars lab and paved it into a runway.",
  mic:"Eighty cones. One Mars classroom. Half of it now under your runway.",
  bullets:[
@@ -80,6 +84,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"6.0.1.5", title:"⛰️ Kristnitökuhraun", sub:"The Decision Rock", cue:"Look right at 3 o'clock — Kristnitökuhraun, the Christianity Lava.",
+ hook:"Can a volcano vote? Around **the year 1000**, one sort of did. One chieftain out-thought it with a single question.",
  point:"A whole country's religion settled by a single, calm geology question.",
  mic:"The pagans claimed a volcano was voting. Snorri pointed out the ballot box was older than the religion.",
  bullets:[
@@ -96,6 +101,7 @@ sections: [
  tags:["#geology","#literature","#religion"],
 },
 {id:"6.0.1.6", title:"🏢 Hellisheiðarvirkjun", sub:"The Dragon's Breath", cue:"Look left at 10 o'clock — the Hellisheiði geothermal plant.",
+ hook:"In most countries, a volcano is a disaster plan. In Iceland, it's the **light switch**.",
  point:"While the world debates carbon capture, Iceland dissolves the problem in water, files it under \"rocks,\" and moves on.",
  mic:"Your shower in Reykjavík tonight was heated by the same volcano that's currently filing CO₂ as gravel under your feet.",
  bullets:[
@@ -111,6 +117,7 @@ sections: [
  tags:["#technology","#geology"],
 },
 {id:"6.0.1.7", title:"🌋 Hveragerði", sub:"Quakes, Cakes and Steam", cue:"Look left at 9–10 o'clock — Hveragerði.",
+ hook:"A town of **about 3,350 people** (3,344 at the start of 2026) where the ground occasionally rearranges itself — and the locals responded by **building an exhibition around the crack in their floor**.",
  point:"Pizza baked by a volcano. Salad grown on steam. A museum built on an earthquake crack. Yes, all in the same town.",
  mic:"Most towns hide their disasters. Hveragerði put theirs in the lobby and charged admission.",
  bullets:[
@@ -130,6 +137,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"6.0.1.8", title:"🌊 Ölfusá", sub:"The Big Drain", cue:"Look right at 1–2 o'clock — Ölfusá.",
+ hook:"One of the **shortest** rivers in Iceland — but it moves **more water than any other**. The final bottleneck for half the highlands.",
  point:"Every drop of water that falls on the Golden Circle — glaciers, geysers, lakes — eventually squeezes through this one channel.",
  mic:"The Golden Circle gets the postcards. This river is where the whole day quietly ends.",
  bullets:[
@@ -150,6 +158,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"6.0.1.9", title:"🧭 Ingólfur Arnarson", sub:"The Founder's Path", cue:"Look ahead at 12 o'clock — the Ring Road (Leið 1).",
+ hook:"Would you move your whole family to an empty island based on **where two pieces of furniture washed up**?",
  point:"The modern Ring Road is the last chapter of that story — stitching together the coast Ingólfur started.",
  mic:"The saga begins with a man chasing two pillars. It ends with a whole nation driving the road that traces his coastline.",
  bullets:[
@@ -166,6 +175,7 @@ sections: [
  tags:["#migration"],
 },
 {id:"6.0.1.10", title:"🏗️ Selfoss", sub:"The Great Milk Collapse", cue:"We're crossing it now — look down. Ölfusárbrú.",
+ hook:"What's more dangerous than a world war? Apparently, **two milkmen in a very big hurry**.",
  point:"The enemy that took out the Selfoss bridge wasn't an army. It was two milkmen and a bad tow-rope decision.",
  mic:"The war couldn't blow this bridge up. A couple of dairy trucks did it on a Tuesday afternoon.",
  bullets:[
@@ -182,6 +192,7 @@ sections: [
  tags:["#wwii"],
 },
 {id:"6.0.1.11", title:"🌊 Þjórsá", sub:"The Long Spine", cue:"Look right at 1–2 o'clock — Þjórsá and its floodplain.",
+ hook:"Up ahead we cross Iceland's **longest river** — a glacial spine that founding fathers held assemblies beside and modern engineers turned into the country's biggest battery.",
  point:"Every time you cross it, you're passing over the main drain — and the main power supply — for a big chunk of Iceland's backbone.",
  mic:"Selfoss had its milk-truck drama. Þjórsá is the **patient heavyweight** — slow, serious, moving a whole highland's worth of water to the sea.",
  bullets:[
@@ -197,7 +208,8 @@ sections: [
  ],
  tags:["#geology"],
 },
-{id:"6.0.1.12", title:"🕳️ Hella", sub:"The Secret Monks", cue:"Look left at 9 o'clock — the caves of Hella.",
+{id:"6.0.1.12", title:"🕳️ Hella", sub:"The Secret Monks", cue:"Look right at 3 o'clock — the caves of Hella.",
+ hook:"Long before the Vikings arrived with longships, someone else may already have been here — **literally hiding in the walls**.",
  point:"Some of the oldest, strangest archaeology in the country — proof that in Iceland, history isn't just on the surface. Sometimes it's dug into the hillside you're driving past.",
  mic:"Most towns have houses and barns. Hella has a **neighbourhood carved straight into the cliff** — and nobody can quite agree who moved in first.",
  bullets:[
@@ -214,6 +226,7 @@ sections: [
  tags:["#religion"],
 },
 {id:"6.0.1.13", title:"🏡 Keldur", sub:"The Tunnel of Survival", cue:"Look left at 10 o'clock — Keldur turf farm.",
+ hook:"What did a \"McMansion\" look like for a powerful Icelandic chieftain **800 years ago**? It came with **its own escape tunnel**.",
  point:"Not a quaint old farm. **Medieval security architecture** built straight into the hillside.",
  mic:"Keldur is basically a Viking-age panic room and getaway car disguised as a cosy turf farm.",
  bullets:[
@@ -233,6 +246,7 @@ sections: [
 ]},
 {title:"Hvolsvöllur", kind:"stop", blocks:[
 {id:"6.0.2.1", title:"🏘️ Hvolsvöllur", sub:"Njáll's Backyard", cue:"Look ahead at 12 o'clock — Hvolsvöllur.",
+ hook:"A normal-looking town that comes with its own **blood-soaked bestseller** — the longest, greatest saga of them all.",
  point:"Most towns have a petrol station and a supermarket. This one has a community tapestry of **betrayals, burnings and bad legal advice**.",
  mic:"Welcome to Njáll's neighbourhood — where the local reading list doubles as a murder map.",
  bullets:[
@@ -253,6 +267,7 @@ sections: [
 ]},
 {title:"Hvolsvöllur → Skógafoss", kind:"drive", blocks:[
 {id:"6.0.3.1", title:"🐦 Vestmannaeyjar", sub:"Puffins, Ports and Plumes", cue:"Look right at 2 o'clock — the Westman Islands out to sea.",
+ hook:"In **1973** this archipelago was almost wiped off the map — and the only reason it survived is that **a storm hit the night before**.",
  point:"One of the few places on Earth where a town fought a volcano **with seawater and pumps** — and won.",
  mic:"The volcano tried to close the harbour. The locals replied: \"we'll take the upgrade, thanks.\"",
  bullets:[
@@ -268,6 +283,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"6.0.3.2", title:"🌊 Landeyjar Plains", sub:"The Ocean's Basement", cue:"Look ahead at 12 o'clock — Landeyjar sandur.",
+ hook:"We've barely left town and we've already **driven off the map** — this flat land used to be the **bottom of the Atlantic Ocean**.",
  point:"Living here means accepting your backyard is the **natural drain for big angry glaciers** — every farm, fence and bridge gets built with **jökulhlaups** in the back of people's minds.",
  mic:"\"There's nothing here,\" they say. Under you: old seabed. Ahead: glacial wash-plain. Left: ghost coastline. Out there: a saga murder scene. That's a lot of nothing.",
  bullets:[
@@ -283,6 +299,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"6.0.3.3", title:"🛡️ Markarfljót & Hlíðarendi", sub:"The Hero's Choice", cue:"Look left at 10 o'clock — Hlíðarendi above Markarfljót.",
+ hook:"Those green slopes aren't just a nice view. In the sagas, they were **worth dying for.**",
  point:"To your guests it's a farm in the distance. To Icelanders it's a **moral crossroads** still standing in the landscape almost a thousand years later.",
  mic:"Out there: grass and sheep. In the sagas: a man who chose his view over his life — and a wife who remembered exactly how she'd been wronged.",
  bullets:[
@@ -301,6 +318,7 @@ sections: [
  tags:["#art","#literature"],
 },
 {id:"6.0.3.4", title:"🌋 Eyjafjallajökull", sub:"The Cloud That Stopped Europe", cue:"Look left at 10–11 o'clock — Eyjafjallajökull and Þorvaldseyri farm.",
+ hook:"In **2010**, this innocent-looking glacier volcano shut down **air travel for millions of people** who couldn't even say its name.",
  point:"Up there: peaceful glacier above a postcard farm. In memory: the mountain that turned Europe's airports into campgrounds.",
  mic:"A farmer here was digging ash out of his drinking water while airline CEOs were melting down 2,000 km away.",
  bullets:[
@@ -318,6 +336,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"6.0.3.5", title:"🪨 Drangurinn", sub:"The Stone That Stayed", cue:"Look left at 10 o'clock — Drangurinn, under the cliffs of Eyjafjöll.",
+ hook:"A rock that **forgot to leave** when the rest of the mountain eroded away — and became a barn, a film set, and an elf hotel.",
  point:"A single stone that lets you flip between two ways of seeing Iceland — geology and saga — at the same time.",
  mic:"Geologists see a volcanic leftover. Storytellers see a giant's throw. The farmers just saw a free barn with elf staff.",
  bullets:[
@@ -337,6 +356,7 @@ sections: [
 ]},
 {title:"Skógafoss", kind:"stop", blocks:[
 {id:"6.0.4.1", title:"🏞️ Skógafoss", sub:"Where the Old Coast Falls", cue:"At Skógafoss.",
+ hook:"The waterfall that **looks like a fantasy backdrop** and sounds like someone left a giant tap running **since the Ice Age.**",
  point:"One spot: ancient shorelines, modern sandur, old farms, a volcano trail, and a missing fortune.",
  mic:"If this was anywhere else, it would be the main event. Here it's just **one more stop on a Tuesday.**",
  bullets:[
@@ -359,6 +379,7 @@ sections: [
 ]},
 {title:"Skógafoss → Reynisfjara", kind:"drive", blocks:[
 {id:"6.0.5.1", title:"✈️ The DC-3 Wreck", sub:"The Ghost in the Sand", cue:"Look right at 2 o'clock — far out on Sólheimasandur.",
+ hook:"Somewhere out there in the black void is a silver ghost that **Justin Bieber made world-famous** — and that half the internet gets the name of wrong.",
  point:"It's a **modern layer on the geology**: Katla built the sandur, the US Navy accidentally parked a plane on it, and social media did the rest.",
  mic:"From the bus you mostly see empty blackness. The real story: a crew that iced up over a glacier, glided to the coast, and **lived** — on a plane everyone insists on calling by the wrong name.",
  bullets:[
@@ -375,6 +396,7 @@ sections: [
  tags:["#geology","#film"],
 },
 {id:"6.0.5.2", title:"⛰️ Pétursey", sub:"Saint, Saga and Sea-stack", cue:"Look right at 1–2 o'clock — the steep, isolated mountain.",
+ hook:"A **275-metre lump of frozen explosion** — submarine volcano, offshore island, saint's shrine, Sturlung-era fort, **WWII lookout post**. **Most mountains never have a CV that long.**",
  point:"Geology, saga, saint and soldier — all stacked on one piece of frozen ash.",
  mic:"Most mountains have a Wikipedia stub. **Pétursey has a CV.**",
  bullets:[
@@ -396,6 +418,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"6.0.5.3", title:"⛪ Skeiðflatarkirkja", sub:"The Architect's Roots", cue:"Look left — small red-roofed church in the fields.",
+ hook:"This tiny country church is the **DNA** of some of Iceland's most famous modern buildings.",
  point:"The story of Reykjavík's iconic architecture doesn't start in the city. It starts on **farms like this**, under the shadow of volcanoes.",
  mic:"If you squint, you can almost see Hallgrímskirkja **hiding inside** this little red-roofed church — it just needed a son with a big imagination and a State Architect's salary.",
  bullets:[
@@ -412,6 +435,7 @@ sections: [
  tags:["#geology","#architecture","#religion"],
 },
 {id:"6.0.5.4", title:"🚪 Dýrhólaey", sub:"The Door Hole", cue:"Look right at 2 o'clock — the high headland with the lighthouse.",
+ hook:"Ahead on the right is the **front door of the South Coast** — and for a thousand years the **southernmost point of the mainland**, until a volcano moved the finish line. With a hole big enough to **fly a plane through.** Someone did. Three times.",
  point:"A teaching stop par excellence: glacial plains, old islands and active coastal erosion all visible in **one slow spin of your head.**",
  mic:"Dýrhólaey is the hinge where the **volcanoes, the sandur and the ocean** all shake hands — and argue about who built this coastline.",
  bullets:[
@@ -433,6 +457,7 @@ sections: [
 ]},
 {title:"Reynisfjara", kind:"stop", blocks:[
 {id:"6.0.6.1", title:"🌊 Reynisfjara & Reynisdrangar", sub:"Beauty With Teeth", cue:"At the black sand beach.",
+ hook:"Black sand. Basalt pipe-organ. Sea stacks. **Iceland's most beautiful beach — and its most dangerous. Never turn your back on these waves.**",
  point:"One stop: black sand, columnar basalt, wave erosion, and a couple of trolls who lost track of the time.",
  mic:"The trolls froze in the sunrise. The ocean still hasn't lost an argument.",
  bullets:[
@@ -453,6 +478,7 @@ sections: [
 ]},
 {title:"Reynisfjara → Vík", kind:"drive", blocks:[
 {id:"6.0.7.1", title:"🌋 Katla", sub:"The Sleeping Giant Under the Ice", cue:"Look left at 9–10 o'clock — Mýrdalsjökull, the ice cap covering Katla.",
+ hook:"The biggest threat on the South Coast doesn't look like a threat — it's a **white ice cap, peaceful and silent.**",
  point:"The most dangerous volcano on the south coast doesn't look like a volcano. It looks like a glacier.",
  mic:"Iceland's most polite warning: **the loudest thing she does is wait.**",
  bullets:[
@@ -474,6 +500,7 @@ sections: [
 ]},
 {title:"Vík í Mýrdal", kind:"stop", blocks:[
 {id:"6.0.8.1", title:"⛪ Víkurkirkja", sub:"The Lifeboat on the Hill", cue:"Look left at 10 o'clock — the red-roofed church above the town.",
+ hook:"In most towns, the church is for Sunday service. In Vík, it's the **literal lifeboat.**",
  point:"The town's most beautiful building is also its most practical piece of **safety equipment.**",
  mic:"It's the only place in Vík where the view of the ocean feels peaceful — because you know you're standing on the only safe soil in the valley.",
  bullets:[
@@ -488,6 +515,7 @@ sections: [
  tags:["#geology"],
 },
 {id:"6.0.8.2", title:"🏘️ Vík í Mýrdal", sub:"The Southern Outpost", cue:"Look ahead at 12 o'clock — Vík over the hill.",
+ hook:"Over this hill is Vík: one small village, **a lot of black sand**, and a volcano that once shoved the coastline forward like it was rearranging furniture.",
  point:"Vík is where coffee breaks, Coast Guard alerts and **thousand-year-old saga grudges** all share the same view of a volcano.",
  mic:"Sleepy seaside town. If Katla starts shouting, swap the beach for the church and hope it's a drill.",
  bullets:[
@@ -505,6 +533,7 @@ sections: [
  tags:["#geology","#film"],
 },
 {id:"6.0.8.3", title:"🛡️ Hjörleifshöfði", sub:"Blood-Brother and Witch-in-the-Ice", cue:"Look straight ahead at 12 o'clock — twelve kilometres east: the massive flat-topped mountain on the horizon.",
+ hook:"That massive rock out east is a **1,100-year-old crime scene** — and the address of Iceland's most famous ghost.",
  point:"Iceland's history didn't start with peace. It started with a **slave revolt, a blood feud** — and a vengeful housekeeper who lives in the ice.",
  mic:"Most countries' founding stories are statues and speeches. Iceland's is a body, a fake bear, and a witch in a skyr-vat.",
  bullets:[
@@ -530,12 +559,14 @@ sections: [
 ]},
 {title:"Vík → Sólheimajökull", kind:"drive", blocks:[
 {id:"6.0.9.1", title:"🎧 Music Leg", sub:"ACT 1: Iceland Through the Years", cue:"Pulling out of Vík. Mic down, volume up.",
+ hook:"No commentary on this stretch — **Iceland Through the Years** takes the wheel: forty-three tracks in three acts, from borrowed dance-band tunes to Iceland exporting pop to the whole world.",
  point:"They've had a full day of my voice. Now they get the country's own.",
  mic:"Right — I've talked at you since breakfast. From here, Iceland does the talking. Window seat, volume up, and if a track grabs you, come and ask me at the front.",
 },
 ]},
 {title:"Sólheimajökull", kind:"stop", blocks:[
 {id:"6.0.10.1", title:"🧊 Sólheimajökull", sub:"The Living Climate Graph", cue:"At Sólheimajökull car park.",
+ hook:"This is where the glacier stops being \"a nice view from the bus\" and turns into a **giant, melting history book.**",
  point:"Textbook diagrams of glaciers, erosion and climate change — laid out in front of you. **Point, don't draw.**",
  mic:"You don't have to give a climate lecture here. You point at where the ice used to be — and the **missing glacier** does the talking.",
  bullets:[
@@ -555,6 +586,7 @@ sections: [
 ]},
 {title:"Seljalandsfoss", kind:"stop", blocks:[
 {id:"6.0.11.1", title:"💧 Seljalandsfoss & Gljúfrabúi", sub:"Inside the Waterfall", cue:"At Seljalandsfoss car park.",
+ hook:"A waterfall you can **walk behind.** And a second one **hiding in a slot canyon** next door.",
  point:"Same cliff. Same Ice-Age coastline. **One tiny change in the rock** = two completely different waterfall personalities.",
  mic:"Stand in front of the old sea cliff. Walk behind the waterfall. If you have dry socks after Gljúfrabúi, you've done something wrong.",
  bullets:[
@@ -576,6 +608,7 @@ sections: [
 ]},
 {title:"Seljalandsfoss → Reykjavík", kind:"drive", blocks:[
 {id:"6.0.12.1", title:"🎧 Music Leg", sub:"ACT 2: Selfoss, and the Road Home", cue:"Coming into Selfoss — cue “Selfoss” by SVVN, then Rícharður's Mix through to BSÍ.",
+ hook:"One song left with a job to do, and then **Rícharður's Mix** carries us home — eighteen tracks sequenced for exactly this road.",
  point:"Last stretch of the day. Nobody wants a lecture at this hour; everybody wants the window.",
  mic:"The song is called Selfoss. The town is called Selfoss. I would love to tell you I planned that, but I just got lucky with the timing.",
 },

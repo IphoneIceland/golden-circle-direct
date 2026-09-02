@@ -100,7 +100,12 @@ for ln in raw.split("\n"):
     if m: blk["cue"]=clean(m.group(1)); continue
     if SAYH.match(ln): in_say=True; continue
 
-    m = MARK.match(ln)
+    # The 🎣 hook is written as "<callout>🎣 …</callout>", so the marker is not
+    # at the start of the raw line and MARK never fired on it. Every hook in every
+    # tour was silently dropped from 1970-something until 02.09.26 — it failed the
+    # bullets fallback too (the callout precedes the bullets, so "bullets" was not
+    # yet in blk) and was discarded outright. Strip the callout wrapper first.
+    m = MARK.match(re.sub(r'</?callout>', '', ln))
     if m:
         in_say=False
         sym, rest = m.group(1), clean(m.group(2))
