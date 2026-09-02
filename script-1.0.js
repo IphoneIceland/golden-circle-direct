@@ -760,7 +760,7 @@ sections: [
  ],
  tags:["#geology"],
 },
-{id:"1.0.6.9", title:"🏗️ Selfoss", sub:"The Great Milk Collapse", cue:"We're crossing it now — look down. Ölfusárbrú.",
+{id:"1.0.6.9", title:"🏗️ Selfoss", sub:"The Great Milk Collapse", cue:"Look left, across the river — Selfoss and the Ölfusárbrú.",
  hook:"What's more dangerous than a world war? Apparently, **two milkmen in a very big hurry**.",
  point:"The enemy that took out the Selfoss bridge wasn't an army. It was two overloaded trucks and a bridge built for lighter days.",
  mic:"The war couldn't blow this bridge up. A couple of dairy trucks did it on a Tuesday afternoon.",
@@ -771,7 +771,7 @@ sections: [
  ],
  say:[
   ["Selfoss","SEL-foss","the town that grew up around the crossing; no bridge, no Selfoss"],
-  ["Ölfusárbrú","UL-vus-owr-broo","the bridge we're crossing right now, Iceland's first suspension bridge, 1891"],
+  ["Ölfusárbrú","UL-vus-owr-broo","Iceland's first suspension bridge, 1891 — today's is the 1945 replacement"],
   ["Tryggvi Gunnarsson","TRIG-vi GUN-nar-son","the MP and banker who pushed the bridge through the Alþingi"],
  ],
  tags:["#wwii"],
