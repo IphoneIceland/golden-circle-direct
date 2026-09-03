@@ -532,7 +532,7 @@ sections: [
  ],
  tags:["#geology","#film"],
 },
-{id:"6.0.8.3", title:"🛡️ Hjörleifshöfði", sub:"Blood-Brother and Witch-in-the-Ice", cue:"Look straight ahead at 12 o'clock — twelve kilometres east: the massive flat-topped mountain on the horizon.",
+{id:"6.0.8.3", title:"🛡️ Hjörleifshöfði", sub:"Blood-Brother and Witch-in-the-Ice", cue:"Due east, twelve kilometres out — the massive flat-topped mountain on the horizon.",
  hook:"That massive rock out east is a **1,100-year-old crime scene** — and the address of Iceland's most famous ghost.",
  point:"Iceland's history didn't start with peace. It started with a **slave revolt, a blood feud** — and a vengeful housekeeper who lives in the ice.",
  mic:"Most countries' founding stories are statues and speeches. Iceland's is a body, a fake bear, and a witch in a skyr-vat.",
