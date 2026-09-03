@@ -197,7 +197,7 @@ sections: [
  ],
  tags:["#migration"],
 },
-{id:"4.0.1.11", title:"🏗️ Selfoss", sub:"The Great Milk Collapse", cue:"We're crossing it now — look down. Ölfusárbrú.",
+{id:"4.0.1.11", title:"🏗️ Selfoss", sub:"The Great Milk Collapse", cue:"Behind us now, across the Ölfusá — Selfoss.",
  hook:"What's more dangerous than a world war? Apparently, **two milkmen in a very big hurry**.",
  point:"The enemy that took out the Selfoss bridge wasn't an army. It was two overloaded trucks and a bridge built for lighter days.",
  mic:"The war couldn't blow this bridge up. A couple of dairy trucks did it on a Tuesday afternoon.",
