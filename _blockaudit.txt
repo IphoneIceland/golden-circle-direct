@@ -1,0 +1,989 @@
+
+================================================================================================
+1.0
+================================================================================================
+
+── BSÍ Bus Terminal → Þingvellir   [drive]
+   1.0.1.1   🧵 Three Names to Keep in Your Po     1.6%                         
+             "Leaving BSÍ — no window required."
+   1.0.1.2   🧍 Jóhannes Sveinsson Kjarval         3.2%                         →Kjarvalsstaðir 6.4km @7
+             "Look left at 9 o'clock — Klambratún Park."
+   1.0.1.3   🏢 Ölgerðin Egill Skallagrímsson      4.9%                         →Ölgerðin Egill Ska 4.6km @5
+             "Look right at 3 o'clock — Egils Brewery."
+   1.0.1.4   🏞️ Elliðaárdalur                     4.9%                         →Elliðaárdalur 5.7km @5
+             "Look right at 2 o'clock — Elliðaárdalur."
+   1.0.1.5   ⛰️ Mount Esja                        6.8%                         →Þverfellshorn, Esj 6.5km @11
+             "Look left and ahead — the long striped wall of Esja."
+   1.0.1.6   ⚖️ Kjalarnesþing                     9.7%                         →Leiðvöllur (Kjalar 9.7km @7
+             "Look left at 9 o'clock — across Kollafjörður to Kjalarnes, under the foot of Esja,"
+   1.0.1.7   🎵 Mosfellsbær                       11.3%                         →Mosfellsbær 11.9km @7
+             "All around — Mosfellsbær."
+   1.0.1.8   🪶 Mosfellsdalur                     12.9%                         →Mosfellsdalur 11.4km @6
+             "All around — Mosfellsdalur."
+   1.0.1.9   🎬 Laxnes Horse Farm                 13.1%                         →Laxnes Horse Farm 10.4km @7
+             "Look left on Route 36 — Laxnes, about 400 metres up the side road."
+   1.0.1.10  🪶 Gljúfrasteinn                     16.1%                         →Gljúfrasteinn 16.9km @7
+             "Look left — the white house by the river Kaldakvísl, just off Route 36."
+   1.0.1.11  🚢 The Norse Expansion (793–1066     17.7%                         
+             "Approaching Þingvellir."
+   1.0.1.12  🏘️ Landnám                          19.4%                         
+             "Crossing the Settlement Era."
+
+── Þingvellir   [stop]
+   1.0.2.1   🌍 Almannagjá                        19.4%  thingvellir            →Skjaldbreiður 24.4km @12
+             "We are walking down inside the crack. The wall on your left is the edge of North A"
+   1.0.2.2   ⚖️ Lögberg & the Alþingi            19.4%  —                      →Lögberg (Law Rock) 0.6km @3
+             "At the Law Rock — the wall behind you is the reason this spot was chosen."
+   1.0.2.3   ⚖️ Kristnitaka                      19.4%  —                      
+             "Standing at Lögberg. This is the exact ground where it was decided."
+   1.0.2.4   ⛪ Þingvallabær & Skáldareitur       19.4%  —                      
+             "The white church and the five-gabled farmhouse on your right, at the bottom of the"
+   1.0.2.5   💧 Öxarárfoss, Drekkingarhylur &     19.4%  —                      
+             "Follow the Öxará. The waterfall ahead, the still green pool below it, and the coin"
+   1.0.2.6   🐟 Þingvallavatn & Silfra            19.4%  —                      
+             "The lake filling the rift ahead of you, and the clear pools off to the side."
+   1.0.2.7   🇮🇸 17 June 1944                     19.4%  —                      
+             "Back at the Law Rock. This is where the country stopped belonging to anybody else."
+
+── Þingvellir → Haukadalur Valley   [drive]
+   1.0.3.1   🕳️ The Cave People                  23.4%                         →Laugarvatnshellir 7.4km @7
+             "Driving past Laugarvatnshellir."
+   1.0.3.2   🌋 Hekla                             27.5%                         →Hekla 65.1km @1
+             "Look right at 1 o'clock — Hekla, sixty kilometres out on the horizon. Clear days o"
+   1.0.3.3   🛁 Laugarvatn & Apavatn              31.6%                         →Laugarvatn 1.8km @3
+             "Look right at 3 o'clock — Laugarvatn lake."
+   1.0.3.4   💙 Brúará                            35.7%                         →Brúará 10.1km @3
+             "Crossing Brúará."
+   1.0.3.5   ⚖️ The Sturlung Age                 39.8%                         
+             "*The 13th-century chapter most tours skip.*"
+   1.0.3.6   ⚖️ Haukadalur                       43.9%                         →Haukadalur 1.5km @12
+             "At the geothermal field of Haukadalur."
+
+── Geysir   [stop]
+   1.0.4.1   ⛲ Geysir                            43.9%  geysir                 
+             "At the geothermal field — Strokkur and Geysir."
+
+── Gullfoss   [stop]
+   1.0.5.1   💧 Hvítá & Gullfoss                  47.9%  gullfoss               
+             "At Gullfoss."
+
+── Gullfoss → Reykjavík   [drive]
+   1.0.6.1   🎧 Music Leg                         51.3%                         
+             "Leaving Gullfoss. Playlist on, mic live between the stops."
+   1.0.6.2   ⚡ Tungufljót                        54.8%                         →Tungufljót (Route  0.4km @5
+             "Crossing the Tungufljót river."
+   1.0.6.3   🍅 Reykholt & Friðheimar             58.3%                         →Friðheimar 1.2km @12
+             "Passing Friðheimar, Reykholt."
+   1.0.6.4   🐎 Icelandic Horses                  61.8%                         
+             "Look at the horses in the field."
+   1.0.6.5   ⛪ Skálholt                          65.2%                         →Skálholtskirkja 8.7km @6
+             "At Skálholt."
+   1.0.6.6   🎵 Grímsnes & Kerið                  68.7%                         →Kerið 3.5km @12
+             "At Kerið crater."
+   1.0.6.7   ⚡ Sog River                         72.2%                         →Sog 1.4km @3
+             "Crossing the Sog."
+   1.0.6.8   🌊 Ölfusá                            75.7%                         →Ölfusá 1.0km @2
+             "Look right at 1–2 o'clock — Ölfusá."
+   1.0.6.9   🏗️ Selfoss                          76.3%                         →Ölfusárbrú, Selfos 0.1km @9
+             "Look left, across the river — Selfoss and the Ölfusárbrú."
+   1.0.6.10  🧭 Ingólfur Arnarson                 82.6%                         
+             "Look ahead at 12 o'clock — the Ring Road (Leið 1)."
+   1.0.6.11  🌋 Hveragerði                        82.6%                         →Hveragerði 1.8km @4
+             "Look right at 3 o'clock — Hveragerði."
+   1.0.6.12  🎧 Music Leg                         89.6%                         
+             "Leaving Hveragerði — my own playlist from here to BSÍ."
+   1.0.6.13  🏢 Hellisheiðarvirkjun               89.6%                         →Hellisheiðarvirkju 5.2km @5
+             "Look right at 2 o'clock — Hellisheiði geothermal plant."
+   1.0.6.14  ⛰️ Kristnitökuhraun                 89.7%                         →Kristnitökuhraun 4.5km @8
+             "Look left at 9 o'clock — Kristnitökuhraun, the Christianity Lava."
+   1.0.6.15  ⛰️ Rauðhólar                       100.0%                         →Rauðhólar 9.9km @12
+             "Look ahead — Rauðhólar, the red crater hills."
+
+================================================================================================
+2.0
+================================================================================================
+
+── BSÍ Bus Terminal → Þingvellir   [drive]
+   2.0.1.1   🧵 Three Names to Keep in Your Po     1.6%                         
+             "Leaving BSÍ — no window required."
+   2.0.1.2   🧍 Jóhannes Sveinsson Kjarval         3.2%                         →Kjarvalsstaðir 6.4km @7
+             "Look left at 9 o'clock — Klambratún Park."
+   2.0.1.3   🏢 Ölgerðin Egill Skallagrímsson      4.9%                         →Ölgerðin Egill Ska 4.6km @5
+             "Look right at 3 o'clock — Egils Brewery."
+   2.0.1.4   🏞️ Elliðaárdalur                     4.9%                         →Elliðaárdalur 5.7km @5
+             "Look right at 2 o'clock — Elliðaárdalur."
+   2.0.1.5   ⛰️ Mount Esja                        6.8%                         →Þverfellshorn, Esj 6.5km @11
+             "Look left and ahead — the long striped wall of Esja."
+   2.0.1.6   ⚖️ Kjalarnesþing                     9.7%                         →Leiðvöllur (Kjalar 9.7km @7
+             "Look left at 9 o'clock — across Kollafjörður to Kjalarnes, under the foot of Esja,"
+   2.0.1.7   🎵 Mosfellsbær                       11.3%                         →Mosfellsbær 11.9km @7
+             "All around — Mosfellsbær."
+   2.0.1.8   🪶 Mosfellsdalur                     12.9%                         →Mosfellsdalur 11.4km @6
+             "All around — Mosfellsdalur."
+   2.0.1.9   🎬 Laxnes Horse Farm                 13.1%                         →Laxnes Horse Farm 10.4km @7
+             "Look left on Route 36 — Laxnes, about 400 metres up the side road."
+   2.0.1.10  🪶 Gljúfrasteinn                     16.1%                         →Gljúfrasteinn 16.9km @7
+             "Look left — the white house by the river Kaldakvísl, just off Route 36."
+   2.0.1.11  🚢 The Norse Expansion (793–1066     17.7%                         
+             "Approaching Þingvellir."
+   2.0.1.12  🏘️ Landnám                          19.4%                         
+             "Crossing the Settlement Era."
+
+── Þingvellir   [stop]
+   2.0.2.1   🌍 Almannagjá                        19.4%  thingvellir            →Skjaldbreiður 24.4km @12
+             "We are walking down inside the crack. The wall on your left is the edge of North A"
+   2.0.2.2   ⚖️ Lögberg & the Alþingi            19.4%  —                      →Lögberg (Law Rock) 0.6km @3
+             "At the Law Rock — the wall behind you is the reason this spot was chosen."
+   2.0.2.3   ⚖️ Kristnitaka                      19.4%  —                      
+             "Standing at Lögberg. This is the exact ground where it was decided."
+   2.0.2.4   ⛪ Þingvallabær & Skáldareitur       19.4%  —                      
+             "The white church and the five-gabled farmhouse on your right, at the bottom of the"
+   2.0.2.5   💧 Öxarárfoss, Drekkingarhylur &     19.4%  —                      
+             "Follow the Öxará. The waterfall ahead, the still green pool below it, and the coin"
+   2.0.2.6   🐟 Þingvallavatn & Silfra            19.4%  —                      
+             "The lake filling the rift ahead of you, and the clear pools off to the side."
+   2.0.2.7   🇮🇸 17 June 1944                     19.4%  —                      
+             "Back at the Law Rock. This is where the country stopped belonging to anybody else."
+
+── Þingvellir → Haukadalur Valley   [drive]
+   2.0.3.1   🕳️ The Cave People                  23.4%                         →Laugarvatnshellir 7.4km @7
+             "Driving past Laugarvatnshellir."
+   2.0.3.2   🌋 Hekla                             27.5%                         →Hekla 65.1km @1
+             "Look right at 1 o'clock — Hekla, sixty kilometres out on the horizon. Clear days o"
+   2.0.3.3   🛁 Laugarvatn & Apavatn              31.6%                         →Laugarvatn 1.8km @3
+             "Look right at 3 o'clock — Laugarvatn lake."
+   2.0.3.4   💙 Brúará                            35.7%                         →Brúará 10.1km @3
+             "Crossing Brúará."
+   2.0.3.5   ⚖️ The Sturlung Age                 39.8%                         
+             "*The 13th-century chapter most tours skip.*"
+   2.0.3.6   ⚖️ Haukadalur                       43.9%                         →Haukadalur 1.5km @12
+             "At the geothermal field of Haukadalur."
+
+── Geysir   [stop]
+   2.0.4.1   ⛲ Geysir                            43.9%  geysir                 
+             "At the geothermal field — Strokkur and Geysir."
+
+── Gullfoss   [stop]
+   2.0.5.1   💧 Hvítá & Gullfoss                  47.9%  gullfoss               
+             "At Gullfoss."
+   2.0.5.2   🏔️ Langjökull                       47.9%  —                      
+             "Heading up onto Langjökull — Iceland's second-largest ice cap."
+
+── Gullfoss → Reykjavík   [drive]
+   2.0.6.1   🎧 Music Leg                         51.3%                         
+             "Leaving Gullfoss. Playlist on, mic live between the stops."
+   2.0.6.2   ⚡ Tungufljót                        54.8%                         →Tungufljót (Route  0.4km @5
+             "Crossing the Tungufljót river."
+   2.0.6.3   🍅 Reykholt & Friðheimar             58.3%                         →Friðheimar 1.2km @12
+             "Passing Friðheimar, Reykholt."
+   2.0.6.4   🐎 Icelandic Horses                  61.8%                         
+             "Look at the horses in the field."
+   2.0.6.5   ⛪ Skálholt                          65.2%                         →Skálholtskirkja 8.7km @6
+             "At Skálholt."
+   2.0.6.6   🎵 Grímsnes & Kerið                  68.7%                         →Kerið 3.5km @12
+             "At Kerið crater."
+   2.0.6.7   ⚡ Sog River                         72.2%                         →Sog 1.4km @3
+             "Crossing the Sog."
+   2.0.6.8   🌊 Ölfusá                            75.7%                         →Ölfusá 1.0km @2
+             "Look right at 1–2 o'clock — Ölfusá."
+   2.0.6.9   🏗️ Selfoss                          76.3%                         →Ölfusárbrú, Selfos 0.1km @9
+             "Look left, across the river — Selfoss and the Ölfusárbrú."
+   2.0.6.10  🧭 Ingólfur Arnarson                 82.6%                         
+             "Look ahead at 12 o'clock — the Ring Road (Leið 1)."
+   2.0.6.11  🌋 Hveragerði                        82.6%                         →Hveragerði 1.8km @4
+             "Look right at 3 o'clock — Hveragerði."
+   2.0.6.12  🎧 Music Leg                         89.6%                         
+             "Leaving Hveragerði — my own playlist from here to BSÍ."
+   2.0.6.13  🏢 Hellisheiðarvirkjun               89.6%                         →Hellisheiðarvirkju 5.2km @5
+             "Look right at 2 o'clock — Hellisheiði geothermal plant."
+   2.0.6.14  ⛰️ Kristnitökuhraun                 89.7%                         →Kristnitökuhraun 4.5km @8
+             "Look left at 9 o'clock — Kristnitökuhraun, the Christianity Lava."
+   2.0.6.15  ⛰️ Rauðhólar                       100.0%                         →Rauðhólar 9.9km @12
+             "Look ahead — Rauðhólar, the red crater hills."
+
+================================================================================================
+3.0
+================================================================================================
+
+── BSÍ Bus Terminal → Þingvellir   [drive]
+   3.0.1.1   🧵 Three Names to Keep in Your Po     1.6%                         
+             "Leaving BSÍ — no window required."
+   3.0.1.2   🧍 Jóhannes Sveinsson Kjarval         3.2%                         →Kjarvalsstaðir 6.4km @7
+             "Look left at 9 o'clock — Klambratún Park."
+   3.0.1.3   🏢 Ölgerðin Egill Skallagrímsson      4.9%                         →Ölgerðin Egill Ska 4.6km @5
+             "Look right at 3 o'clock — Egils Brewery."
+   3.0.1.4   🏞️ Elliðaárdalur                     4.9%                         →Elliðaárdalur 5.7km @5
+             "Look right at 2 o'clock — Elliðaárdalur."
+   3.0.1.5   ⛰️ Mount Esja                        6.8%                         →Þverfellshorn, Esj 6.5km @11
+             "Look left and ahead — the long striped wall of Esja."
+   3.0.1.6   ⚖️ Kjalarnesþing                     9.7%                         →Leiðvöllur (Kjalar 9.7km @7
+             "Look left at 9 o'clock — across Kollafjörður to Kjalarnes, under the foot of Esja,"
+   3.0.1.7   🎵 Mosfellsbær                       11.3%                         →Mosfellsbær 11.9km @7
+             "All around — Mosfellsbær."
+   3.0.1.8   🪶 Mosfellsdalur                     12.9%                         →Mosfellsdalur 11.4km @6
+             "All around — Mosfellsdalur."
+   3.0.1.9   🎬 Laxnes Horse Farm                 13.1%                         →Laxnes Horse Farm 10.4km @7
+             "Look left on Route 36 — Laxnes, about 400 metres up the side road."
+   3.0.1.10  🪶 Gljúfrasteinn                     16.1%                         →Gljúfrasteinn 16.9km @7
+             "Look left — the white house by the river Kaldakvísl, just off Route 36."
+   3.0.1.11  🚢 The Norse Expansion (793–1066     17.7%                         
+             "Approaching Þingvellir."
+   3.0.1.12  🏘️ Landnám                          19.4%                         
+             "Crossing the Settlement Era."
+
+── Þingvellir   [stop]
+   3.0.2.1   🌍 Almannagjá                        19.4%  thingvellir            →Skjaldbreiður 24.4km @12
+             "We are walking down inside the crack. The wall on your left is the edge of North A"
+   3.0.2.2   ⚖️ Lögberg & the Alþingi            19.4%  —                      →Lögberg (Law Rock) 0.6km @3
+             "At the Law Rock — the wall behind you is the reason this spot was chosen."
+   3.0.2.3   ⚖️ Kristnitaka                      19.4%  —                      
+             "Standing at Lögberg. This is the exact ground where it was decided."
+   3.0.2.4   ⛪ Þingvallabær & Skáldareitur       19.4%  —                      
+             "The white church and the five-gabled farmhouse on your right, at the bottom of the"
+   3.0.2.5   💧 Öxarárfoss, Drekkingarhylur &     19.4%  —                      
+             "Follow the Öxará. The waterfall ahead, the still green pool below it, and the coin"
+   3.0.2.6   🐟 Þingvallavatn & Silfra            19.4%  —                      
+             "The lake filling the rift ahead of you, and the clear pools off to the side."
+   3.0.2.7   🇮🇸 17 June 1944                     19.4%  —                      
+             "Back at the Law Rock. This is where the country stopped belonging to anybody else."
+
+── Þingvellir → Haukadalur Valley   [drive]
+   3.0.3.1   🕳️ The Cave People                  23.4%                         →Laugarvatnshellir 7.4km @7
+             "Driving past Laugarvatnshellir."
+   3.0.3.2   🌋 Hekla                             27.5%                         →Hekla 65.1km @1
+             "Look right at 1 o'clock — Hekla, sixty kilometres out on the horizon. Clear days o"
+   3.0.3.3   🛁 Laugarvatn & Apavatn              31.6%                         →Laugarvatn 1.8km @3
+             "Look right at 3 o'clock — Laugarvatn lake."
+   3.0.3.4   💙 Brúará                            35.7%                         →Brúará 10.1km @3
+             "Crossing Brúará."
+   3.0.3.5   ⚖️ The Sturlung Age                 39.8%                         
+             "*The 13th-century chapter most tours skip.*"
+   3.0.3.6   ⚖️ Haukadalur                       43.9%                         →Haukadalur 1.5km @12
+             "At the geothermal field of Haukadalur."
+
+── Geysir   [stop]
+   3.0.4.1   ⛲ Geysir                            43.9%  geysir                 
+             "At the geothermal field — Strokkur and Geysir."
+
+── Gullfoss   [stop]
+   3.0.5.1   💧 Hvítá & Gullfoss                  47.9%  gullfoss               
+             "At Gullfoss."
+
+── Gullfoss → Reykjavík   [drive]
+   3.0.6.1   🎧 Music Leg                         51.1%                         
+             "Leaving Gullfoss. Playlist on, mic live between the stops."
+   3.0.6.2   ♨️ Gamla Laugin                     54.4%                         
+             "At Flúðir — the Secret Lagoon."
+   3.0.6.3   ⚡ Tungufljót                        57.6%                         →Tungufljót (Route  7.0km @6
+             "Crossing the Tungufljót river."
+   3.0.6.4   🍅 Reykholt & Friðheimar             60.9%                         →Friðheimar 4.9km @7
+             "Passing Friðheimar, Reykholt."
+   3.0.6.5   🐎 Icelandic Horses                  64.2%                         
+             "Look at the horses in the field."
+   3.0.6.6   ⛪ Skálholt                          67.4%                         →Skálholtskirkja 13.3km @6
+             "At Skálholt."
+   3.0.6.7   🎵 Grímsnes & Kerið                  70.7%                         →Kerið 1.3km @6
+             "At Kerið crater."
+   3.0.6.8   ⚡ Sog River                         73.9%                         →Sog 4.5km @6
+             "Crossing the Sog."
+   3.0.6.9   🌊 Ölfusá                            76.2%                         →Ölfusá 0.5km @3
+             "Look right at 1–2 o'clock — Ölfusá."
+   3.0.6.10  🏗️ Selfoss                          77.3%                         →Ölfusárbrú, Selfos 1.9km @8
+             "Look left, across the river — Selfoss and the Ölfusárbrú."
+   3.0.6.11  🧭 Ingólfur Arnarson                 83.7%                         
+             "Look ahead at 12 o'clock — the Ring Road (Leið 1)."
+   3.0.6.12  🌋 Hveragerði                        87.1%                         →Hveragerði 11.0km @5
+             "Look right at 3 o'clock — Hveragerði."
+   3.0.6.13  🎧 Music Leg                         90.2%                         
+             "Leaving Hveragerði — my own playlist from here to BSÍ."
+   3.0.6.14  🏢 Hellisheiðarvirkjun               94.9%                         →Hellisheiðarvirkju 17.7km @5
+             "Look right at 2 o'clock — Hellisheiði geothermal plant."
+   3.0.6.15  ⛰️ Kristnitökuhraun                 95.5%                         →Kristnitökuhraun 16.1km @7
+             "Look left at 9 o'clock — Kristnitökuhraun, the Christianity Lava."
+   3.0.6.16  ⛰️ Rauðhólar                       100.0%                         →Rauðhólar 9.9km @12
+             "Look ahead — Rauðhólar, the red crater hills."
+
+================================================================================================
+4.0
+================================================================================================
+
+── BSÍ Bus Terminal → Reykholt / Friðheimar   [drive]
+   4.0.1.1   🧵 Three Names to Keep in Your Po     2.4%                         
+             "Leaving BSÍ — no window required."
+   4.0.1.2   🧍 Jóhannes Sveinsson Kjarval         2.5%                         →Kjarvalsstaðir 4.6km @7
+             "Look left at 9 o'clock — Klambratún Park."
+   4.0.1.3   🏢 Ölgerðin Egill Skallagrímsson      3.0%                         →Ölgerðin Egill Ska 0.2km @4
+             "Look right at 3 o'clock — Egils Brewery."
+   4.0.1.4   🏞️ Elliðaárdalur                     3.9%                         →Elliðaárdalur 1.0km @3
+             "Look right at 2 o'clock — Elliðaárdalur."
+   4.0.1.5   ⛰️ Rauðhólar                        11.8%                         →Rauðhólar 16.1km @5
+             "Look right at 3 o'clock — Rauðhólar."
+   4.0.1.6   ⛰️ Kristnitökuhraun                 11.9%                         →Kristnitökuhraun 3.1km @3
+             "Look right at 3 o'clock — Kristnitökuhraun, the Christianity Lava."
+   4.0.1.7   🏢 Hellisheiðarvirkjun               16.5%                         →Hellisheiðarvirkju 7.9km @6
+             "Look left at 10 o'clock — the Hellisheiði geothermal plant, up on the shoulder of "
+   4.0.1.8   🌊 Ölfusá Intro                      18.9%                         
+             "Look right at 1–2 o'clock — Ölfusá, ahead in the lowlands."
+   4.0.1.9   🌋 Hveragerði                        21.2%                         →Hveragerði 5.9km @7
+             "Look left at 9–10 o'clock — Hveragerði."
+   4.0.1.10  🧭 Ingólfur Arnarson                 23.6%                         
+             "Look ahead at 12 o'clock — the Ring Road (Leið 1)."
+   4.0.1.11  🏗️ Selfoss                          25.9%                         →Ölfusárbrú, Selfos 7.8km @5
+             "Behind us now, across the Ölfusá — Selfoss."
+   4.0.1.12  🌊 Ölfusá                            26.0%                         →Ölfusá 7.8km @4
+             "Look right at 1–2 o'clock — Ölfusá."
+   4.0.1.13  ⚡ Sog River                         30.7%                         →Sog 10.4km @6
+             "Crossing the Sog."
+   4.0.1.14  🎵 Grímsnes & Kerið                  33.0%                         →Kerið 10.6km @7
+             "At Kerið crater."
+   4.0.1.15  💙 Brúará                            35.4%                         →Brúará 2.9km @12
+             "Crossing Brúará."
+   4.0.1.16  ⛪ Skálholt                          37.7%                         →Skálholtskirkja 3.5km @4
+             "At Skálholt."
+   4.0.1.17  🐎 Icelandic Horses                  40.1%                         
+             "Look at the horses in the field."
+
+── Friðheimar   [stop]
+   4.0.2.1   🍅 Reykholt & Friðheimar             40.1%  fridheimar             
+             "Passing Friðheimar, Reykholt."
+
+── Friðheimar → Gullfoss   [drive]
+   4.0.3.1   ⚖️ The Sturlung Age                 45.7%                         
+             "*The 13th-century chapter most tours skip.*"
+   4.0.3.2   ⚖️ Haukadalur                       51.4%                         →Haukadalur 7.5km @2
+             "At the geothermal field of Haukadalur."
+
+── Gullfoss   [stop]
+   4.0.4.1   💧 Hvítá & Gullfoss                  51.4%  gullfoss               
+             "At Gullfoss."
+
+── Gullfoss → Geysir   [drive]
+   4.0.5.1   ⚡ Tungufljót                        55.5%                         
+             "Crossing the Tungufljót river."
+
+── Geysir   [stop]
+   4.0.6.1   ⛲ Geysir                            55.5%  geysir                 
+             "At the geothermal field — Strokkur and Geysir."
+
+── Geysir → Þingvellir   [drive]
+   4.0.7.1   🎧 Music Leg                         59.6%                         
+             "Leaving Geysir for Þingvellir. Playlist on, mic live between the stops."
+   4.0.7.2   🛁 Laugarvatn & Apavatn              63.8%                         →Laugarvatn 5.5km @11
+             "Look left at 9 o'clock — Laugarvatn."
+   4.0.7.3   🌋 Hekla                             63.9%                         →Hekla 52.1km @7
+             "Look back over your left shoulder — Hekla, sixty kilometres out. Clear days only."
+   4.0.7.4   🕳️ The Cave People                  72.0%                         →Laugarvatnshellir 3.7km @4
+             "Driving past Laugarvatnshellir."
+   4.0.7.5   🚢 The Norse Expansion (793–1066     76.2%                         
+             "Approaching Þingvellir."
+   4.0.7.6   🏘️ Landnám                          80.3%                         
+             "Crossing the Settlement Era."
+
+── Þingvellir   [stop]
+   4.0.8.1   🌍 Almannagjá                        80.3%  thingvellir            →Skjaldbreiður 24.4km @6
+             "We are walking down inside the crack. The wall on your left is the edge of North A"
+   4.0.8.2   ⚖️ Lögberg & the Alþingi            80.3%  —                      →Lögberg (Law Rock) 0.6km @9
+             "At the Law Rock — the wall behind you is the reason this spot was chosen."
+   4.0.8.3   ⚖️ Kristnitaka                      80.3%  —                      
+             "Standing at Lögberg. This is the exact ground where it was decided."
+   4.0.8.4   ⛪ Þingvallabær & Skáldareitur       80.3%  —                      
+             "The white church and the five-gabled farmhouse on your right, at the bottom of the"
+   4.0.8.5   💧 Öxarárfoss, Drekkingarhylur &     80.3%  —                      
+             "Follow the Öxará. The waterfall ahead, the still green pool below it, and the coin"
+   4.0.8.6   🐟 Þingvallavatn & Silfra            80.3%  —                      
+             "The lake filling the rift ahead of you, and the clear pools off to the side."
+   4.0.8.7   🇮🇸 17 June 1944                     80.3%  —                      
+             "Back at the Law Rock. This is where the country stopped belonging to anybody else."
+
+── Þingvellir → Reykjavík   [drive]
+   4.0.9.1   🎧 Music Leg                         83.1%                         
+             "Leaving Þingvellir — my own playlist from here to BSÍ."
+   4.0.9.2   🪶 Gljúfrasteinn                     88.5%                         →Gljúfrasteinn 6.3km @1
+             "Coming up ahead — the white house by the river Kaldakvísl, just off Route 36."
+   4.0.9.3   🎬 Laxnes Horse Farm                 91.4%                         →Laxnes Horse Farm 0.4km @3
+             "Look right on Route 36 — Laxnes, about 400 metres up the side road."
+   4.0.9.4   🪶 Mosfellsdalur                     91.6%                         →Mosfellsdalur 1.0km @12
+             "All around — Mosfellsdalur."
+   4.0.9.5   🎵 Mosfellsbær                       94.4%                         →Mosfellsbær 1.0km @7
+             "All around — Mosfellsbær."
+   4.0.9.6   ⚖️ Kjalarnesþing                    97.2%                         →Leiðvöllur (Kjalar 9.9km @4
+             "Out to the right across the bay — Kjalarnes, under the foot of Esja, four kilometr"
+   4.0.9.7   ⛰️ Mount Esja                      100.0%                         →Þverfellshorn, Esj 15.1km @10
+             "Look left at 10 o'clock — Esja on the skyline."
+
+================================================================================================
+5.0
+================================================================================================
+
+── BSÍ Bus Terminal → Hvolsvöllur   [drive]
+   5.0.1.1   🧍 Jóhannes Sveinsson Kjarval         0.3%                         →Kjarvalsstaðir 0.2km @9
+             "Look left at 9 o'clock — Klambratún Park."
+   5.0.1.2   🏢 Ölgerðin Egill Skallagrímsson      1.7%                         →Ölgerðin Egill Ska 0.2km @4
+             "Look right at 3 o'clock — Egils Brewery."
+   5.0.1.3   🏞️ Elliðaárdalur & Paradísardalu     2.2%                         →Elliðaárdalur 1.0km @3
+             "Look right at 2 o'clock — Elliðaárdalur."
+   5.0.1.4   ⛰️ Rauðhólar                         2.8%                         →Rauðhólar 0.6km @3
+             "Look right at 3 o'clock — Rauðhólar."
+   5.0.1.5   ⛰️ Kristnitökuhraun                  6.7%                         →Kristnitökuhraun 3.1km @3
+             "Look right at 3 o'clock — Kristnitökuhraun, the Christianity Lava."
+   5.0.1.6   🏢 Hellisheiðarvirkjun                7.1%                         →Hellisheiðarvirkju 1.5km @9
+             "Look left at 10 o'clock — the Hellisheiði geothermal plant."
+   5.0.1.7   🌋 Hveragerði                        10.6%                         →Hveragerði 0.4km @9
+             "Look left at 9–10 o'clock — Hveragerði."
+   5.0.1.8   🌊 Ölfusá                            13.4%                         →Ölfusá 0.5km @3
+             "Look right at 1–2 o'clock — Ölfusá."
+   5.0.1.9   🧭 Ingólfur Arnarson                 13.5%                         
+             "Look ahead at 12 o'clock — the Ring Road (Leið 1)."
+   5.0.1.10  🏗️ Selfoss                          13.5%                         
+             "We're crossing it now — look down. Ölfusárbrú."
+   5.0.1.11  🌊 Þjórsá                            17.9%                         →Þjórsá 2.8km @2
+             "Look right at 1–2 o'clock — Þjórsá and its floodplain."
+   5.0.1.12  🕳️ Hella                            20.4%                         →Ægissíðuhellar 6.4km @11
+             "Coming up ahead — the caves of Hella, cut into the bank of the Ytri-Rangá."
+   5.0.1.13  🏡 Keldur                            25.4%                         →Keldur 10.8km @9
+             "Look left at 10 o'clock — Keldur turf farm."
+
+── Hvolsvöllur   [stop]
+   5.0.2.1   🏘️ Hvolsvöllur                      25.4%  —                      
+             "Look ahead at 12 o'clock — Hvolsvöllur."
+
+── Hvolsvöllur → Sólheimajökull   [drive]
+   5.0.3.1   🐦 Vestmannaeyjar                    29.1%                         →Vestmannaeyjar 26.6km @3
+             "Look right at 2 o'clock — the Westman Islands out to sea."
+   5.0.3.2   🌊 Landeyjar Plains                  29.1%                         
+             "Look ahead at 12 o'clock — Landeyjar sandur."
+   5.0.3.3   🛡️ Markarfljót & Hlíðarendi         29.2%                         →Hlíðarendi 10.5km @9
+             "Look left at 10 o'clock — Hlíðarendi above Markarfljót."
+   5.0.3.4   🌋 Eyjafjallajökull                  35.1%                         →Eyjafjallajökull 10.8km @9
+             "Look left at 10–11 o'clock — Eyjafjallajökull and Þorvaldseyri farm."
+   5.0.3.5   🪨 Drangurinn                        36.5%                         →Drangurinn 0.3km @9
+             "Look left at 10 o'clock — Drangurinn, under the cliffs of Eyjafjöll."
+
+── Sólheimajökull   [stop]
+   5.0.4.1   🧊 Sólheimajökull                    42.2%  solheimajokull         
+             "At Sólheimajökull glacier."
+
+── Sólheimajökull → Reynisfjara   [drive]
+   5.0.5.1   ✈️ The DC-3 Wreck                   46.0%                         →DC-3 wreck 3.1km @3
+             "Look right at 2 o'clock — far out on the sand plains."
+   5.0.5.2   ⛰️ Pétursey                         46.6%                         →Pétursey 1.2km @1
+             "Look right at 1–2 o'clock — the steep, isolated mountain."
+   5.0.5.3   ⛪ Skeiðflatarkirkja                 48.4%                         →Skeiðflatarkirkja 0.3km @9
+             "Look left — small red-roofed church in the fields."
+   5.0.5.4   🚪 Dýrhólaey                         51.6%                         →Dýrhólaey 4.0km @2
+             "Look right at 2 o'clock — the high headland with the lighthouse."
+
+── Reynisfjara   [stop]
+   5.0.6.1   🌊 Reynisfjara & Reynisdrangar       51.6%  reynisfjara            
+             "At the black sand beach."
+
+── Reynisfjara → Vík   [drive]
+   5.0.7.1   🌋 Katla                             52.9%                         →Mýrdalsjökull (Kat 23.3km @9
+             "Look left at 9–10 o'clock — Mýrdalsjökull, the ice cap covering Katla."
+
+── Vík í Mýrdal   [stop]
+   5.0.8.1   ⛪ Víkurkirkja                       54.2%  vik                    
+             "Look left at 10 o'clock — the red-roofed church above the town."
+   5.0.8.2   🏘️ Vík í Mýrdal                     54.2%  —                      
+             "Look ahead at 12 o'clock — Vík over the hill."
+   5.0.8.3   🛡️ Hjörleifshöfði                   54.2%  —                      →Hjörleifshöfði 12.6km @10
+             "Due east, twelve kilometres out — the massive flat-topped mountain on the horizon."
+
+── Vík → Skógafoss (return leg)   [drive]
+   5.0.9.1   🎧 Music Leg                         58.3%                         
+             "Pulling out of Vík. Mic down, volume up."
+
+── Skógafoss   [stop]
+   5.0.10.1  🏞️ Skógafoss                        62.5%  skogafoss              
+             "At Skógafoss."
+
+── Seljalandsfoss   [stop]
+   5.0.11.1  💧 Seljalandsfoss & Gljúfrabúi       69.5%  seljalandsfoss         
+             "At Seljalandsfoss car park."
+
+── Seljalandsfoss → Reykjavík   [drive]
+   5.0.12.1  🎧 Music Leg                        100.0%                         
+             "Coming into Selfoss — cue “Selfoss” by SVVN, then Rícharður's Mix through to BSÍ."
+
+================================================================================================
+6.0
+================================================================================================
+
+── BSÍ Bus Terminal → Hvolsvöllur   [drive]
+   6.0.1.1   🧍 Jóhannes Sveinsson Kjarval         0.3%                         →Kjarvalsstaðir 0.2km @9
+             "Look left at 9 o'clock — Klambratún Park."
+   6.0.1.2   🏢 Ölgerðin Egill Skallagrímsson      1.7%                         →Ölgerðin Egill Ska 0.2km @4
+             "Look right at 3 o'clock — Egils Brewery."
+   6.0.1.3   🏞️ Elliðaárdalur & Paradísardalu     2.2%                         →Elliðaárdalur 1.0km @3
+             "Look right at 2 o'clock — Elliðaárdalur."
+   6.0.1.4   ⛰️ Rauðhólar                         2.8%                         →Rauðhólar 0.6km @3
+             "Look right at 3 o'clock — Rauðhólar."
+   6.0.1.5   ⛰️ Kristnitökuhraun                  6.7%                         →Kristnitökuhraun 3.1km @3
+             "Look right at 3 o'clock — Kristnitökuhraun, the Christianity Lava."
+   6.0.1.6   🏢 Hellisheiðarvirkjun                7.1%                         →Hellisheiðarvirkju 1.5km @9
+             "Look left at 10 o'clock — the Hellisheiði geothermal plant."
+   6.0.1.7   🌋 Hveragerði                        10.6%                         →Hveragerði 0.4km @9
+             "Look left at 9–10 o'clock — Hveragerði."
+   6.0.1.8   🌊 Ölfusá                            13.4%                         →Ölfusá 0.5km @3
+             "Look right at 1–2 o'clock — Ölfusá."
+   6.0.1.9   🧭 Ingólfur Arnarson                 13.5%                         
+             "Look ahead at 12 o'clock — the Ring Road (Leið 1)."
+   6.0.1.10  🏗️ Selfoss                          13.5%                         
+             "We're crossing it now — look down. Ölfusárbrú."
+   6.0.1.11  🌊 Þjórsá                            17.9%                         →Þjórsá 2.8km @2
+             "Look right at 1–2 o'clock — Þjórsá and its floodplain."
+   6.0.1.12  🕳️ Hella                            20.4%                         →Ægissíðuhellar 6.4km @11
+             "Coming up ahead — the caves of Hella, cut into the bank of the Ytri-Rangá."
+   6.0.1.13  🏡 Keldur                            25.4%                         →Keldur 10.8km @9
+             "Look left at 10 o'clock — Keldur turf farm."
+
+── Hvolsvöllur   [stop]
+   6.0.2.1   🏘️ Hvolsvöllur                      25.4%  —                      
+             "Look ahead at 12 o'clock — Hvolsvöllur."
+
+── Hvolsvöllur → Skógafoss   [drive]
+   6.0.3.1   🐦 Vestmannaeyjar                    29.1%                         →Vestmannaeyjar 26.6km @3
+             "Look right at 2 o'clock — the Westman Islands out to sea."
+   6.0.3.2   🌊 Landeyjar Plains                  29.1%                         
+             "Look ahead at 12 o'clock — Landeyjar sandur."
+   6.0.3.3   🛡️ Markarfljót & Hlíðarendi         29.2%                         →Hlíðarendi 10.5km @9
+             "Look left at 10 o'clock — Hlíðarendi above Markarfljót."
+   6.0.3.4   🌋 Eyjafjallajökull                  35.1%                         →Eyjafjallajökull 10.8km @9
+             "Look left at 10–11 o'clock — Eyjafjallajökull and Þorvaldseyri farm."
+   6.0.3.5   🪨 Drangurinn                        36.5%                         →Drangurinn 0.3km @9
+             "Look left at 10 o'clock — Drangurinn, under the cliffs of Eyjafjöll."
+
+── Skógafoss   [stop]
+   6.0.4.1   🏞️ Skógafoss                        37.1%  skogafoss              
+             "At Skógafoss."
+
+── Skógafoss → Reynisfjara   [drive]
+   6.0.5.1   ✈️ The DC-3 Wreck                   40.0%                         →DC-3 wreck 3.1km @3
+             "Look right at 2 o'clock — far out on Sólheimasandur."
+   6.0.5.2   ⛰️ Pétursey                         40.5%                         →Pétursey 1.2km @1
+             "Look right at 1–2 o'clock — the steep, isolated mountain."
+   6.0.5.3   ⛪ Skeiðflatarkirkja                 42.3%                         →Skeiðflatarkirkja 0.3km @9
+             "Look left — small red-roofed church in the fields."
+   6.0.5.4   🚪 Dýrhólaey                         45.5%                         →Dýrhólaey 4.0km @2
+             "Look right at 2 o'clock — the high headland with the lighthouse."
+
+── Reynisfjara   [stop]
+   6.0.6.1   🌊 Reynisfjara & Reynisdrangar       45.5%  reynisfjara            
+             "At the black sand beach."
+
+── Reynisfjara → Vík   [drive]
+   6.0.7.1   🌋 Katla                             46.9%                         →Mýrdalsjökull (Kat 23.3km @9
+             "Look left at 9–10 o'clock — Mýrdalsjökull, the ice cap covering Katla."
+
+── Vík í Mýrdal   [stop]
+   6.0.8.1   ⛪ Víkurkirkja                       48.1%  vik                    
+             "Look left at 10 o'clock — the red-roofed church above the town."
+   6.0.8.2   🏘️ Vík í Mýrdal                     48.1%  —                      
+             "Look ahead at 12 o'clock — Vík over the hill."
+   6.0.8.3   🛡️ Hjörleifshöfði                   48.1%  —                      →Hjörleifshöfði 12.6km @10
+             "Due east, twelve kilometres out — the massive flat-topped mountain on the horizon."
+
+── Vík → Sólheimajökull   [drive]
+   6.0.9.1   🎧 Music Leg                         52.3%                         
+             "Pulling out of Vík. Mic down, volume up."
+
+── Sólheimajökull   [stop]
+   6.0.10.1  🧊 Sólheimajökull                    56.5%  solheimajokull         
+             "At Sólheimajökull car park."
+
+── Seljalandsfoss   [stop]
+   6.0.11.1  💧 Seljalandsfoss & Gljúfrabúi       69.5%  seljalandsfoss         
+             "At Seljalandsfoss car park."
+
+── Seljalandsfoss → Reykjavík   [drive]
+   6.0.12.1  🎧 Music Leg                        100.0%                         
+             "Coming into Selfoss — cue “Selfoss” by SVVN, then Rícharður's Mix through to BSÍ."
+
+================================================================================================
+7.0
+================================================================================================
+
+── BSÍ Bus Terminal → Hvolsvöllur   [drive]
+   7.0.1.1   Jóhannes Sveinsson Kjarval           0.2%                         →Kjarvalsstaðir 0.2km @9
+             "Look left at 9 o'clock — Klambratún Park."
+   7.0.1.2   Ölgerðin Egill Skallagrímsson        0.9%                         →Ölgerðin Egill Ska 0.2km @4
+             "Look right at 3 o'clock — Egils Brewery."
+   7.0.1.3   Elliðaárdalur & Paradísardalur       1.2%                         →Elliðaárdalur 1.0km @3
+             "Look right at 2 o'clock — Elliðaárdalur."
+   7.0.1.4   Rauðhólar                            1.5%                         →Rauðhólar 0.6km @3
+             "Look right at 3 o'clock — Rauðhólar."
+   7.0.1.5   Kristnitökuhraun                     3.6%                         →Kristnitökuhraun 3.1km @3
+             "Look right at 3 o'clock — Kristnitökuhraun, the Christianity Lava."
+   7.0.1.6   Hellisheiðarvirkjun                  3.9%                         →Hellisheiðarvirkju 1.5km @9
+             "Look left at 10 o'clock — the Hellisheiði geothermal plant."
+   7.0.1.7   Ölfusá                               7.3%                         →Ölfusá 0.5km @3
+             "Look right at 1–2 o'clock — Ölfusá."
+   7.0.1.8   Hveragerði                           7.5%                         →Hveragerði 11.7km @7
+             "Look left at 9–10 o'clock — Hveragerði."
+   7.0.1.9   Ingólfur Arnarson                    7.5%                         
+             "Look ahead at 12 o'clock — the Ring Road (Leið 1)."
+   7.0.1.10  Selfoss                              7.5%                         
+             "We're crossing it now — look down. Ölfusárbrú."
+   7.0.1.11  Þjórsá                               9.7%                         →Þjórsá 2.8km @2
+             "Look right at 1–2 o'clock — Þjórsá and its floodplain."
+   7.0.1.12  Hella                               11.1%                         →Ægissíðuhellar 6.4km @11
+             "Coming up ahead — the caves of Hella, cut into the bank of the Ytri-Rangá."
+   7.0.1.13  Keldur                              13.8%                         →Keldur 10.8km @8
+             "Look left up the valley — about eleven kilometres in that direction, out of sight "
+
+── Hvolsvöllur   [stop]
+   7.0.2.1   Hvolsvöllur                         13.8%  —                      
+             "Look ahead at 12 o'clock — Hvolsvöllur."
+
+── Hvolsvöllur → Skógafoss   [drive]
+   7.0.3.1   Vestmannaeyjar                      15.8%                         →Vestmannaeyjar 26.6km @3
+             "Look right, out to sea at 3 o'clock — the Westman Islands."
+   7.0.3.2   Landeyjar Plains                    15.8%                         
+             "Look right at 2–3 o'clock — the Landeyjar, twelve kilometres of old seabed running"
+   7.0.3.3   Markarfljót & Hlíðarendi            15.8%                         →Hlíðarendi 10.5km @9
+             "Look left at 10 o'clock — Hlíðarendi above Markarfljót."
+   7.0.3.4   Eyjafjallajökull                    19.1%                         →Eyjafjallajökull 10.8km @9
+             "Look left at 10–11 o'clock — Eyjafjallajökull and Þorvaldseyri farm."
+   7.0.3.5   Rútshellir                          19.7%                         →Rútshellir 0.1km @9
+             "Look left at 10 o'clock — Rútshellir, the cave cut into the cliff by Drangshlíð."
+
+── Skógafoss   [stop]
+   7.0.4.1   Skógafoss                           20.2%  skogafoss              
+             "At Skógafoss."
+
+── Skógafoss → Kirkjubæjarklaustur   [drive]
+   7.0.5.1   Sólheimajökull                      20.9%                         
+             "At Sólheimajökull glacier."
+   7.0.5.2   The DC-3 Wreck                      21.7%                         →DC-3 wreck 3.1km @3
+             "Look right at 2 o'clock — far out on the sand plains."
+   7.0.5.3   Pétursey                            22.0%                         →Pétursey 1.2km @1
+             "Look right at 2 o'clock — the steep, isolated mountain."
+   7.0.5.4   Skeiðflatarkirkja                   23.0%                         →Skeiðflatarkirkja 0.3km @9
+             "Look left — small red-roofed church in the fields."
+   7.0.5.5   Dýrhólaey                           23.0%                         →Dýrhólaey 4.4km @2
+             "Look right at 2 o'clock — the high headland with the lighthouse."
+   7.0.5.6   🌊 Reynisfjara & Reynisdrangar       24.6%                         
+             "Step off at Reynisfjara — and before anything else: stay high on the sand, well ba"
+   7.0.5.7   Víkurkirkja                         24.6%                         
+             "Look left at 10 o'clock — the red-roofed church above the town."
+   7.0.5.8   Hjörleifshöfði                      26.1%                         →Hjörleifshöfði 2.6km @1
+             "Look ahead at 1 o'clock — the massive flat-topped mountain on the horizon."
+   7.0.5.9   Laufskálavarða                      29.7%                         
+             "Look left — the mossy lava ridge covered in stone cairns."
+   7.0.5.10  Eldhraun                            34.0%                         
+             "Look all around — the moss-black plain is Eldhraun, the Laki lava."
+
+── Kirkjubæjarklaustur   [stop]
+   7.0.6.1   Kirkjubæjarklaustur                 34.0%  kirkjubaejarklaustur   
+             "At Kirkjubæjarklaustur."
+
+── Kirkjubæjarklaustur → Fjallsárlón   [drive]
+   7.0.7.1   Fjaðrárgljúfur                      35.5%                         
+             "You can't see it from the road — it's hidden in that low ridge on the left. We tur"
+   7.0.7.2   Foss á Síðu                         35.6%                         →Foss á Síðu 0.5km @7
+             "Look left — the thin waterfall down the cliff behind the farm."
+   7.0.7.3   Orustuhóll                          36.0%                         →Orustuhóll 0.3km @3
+             "Look right — the lone crag standing above the black lava."
+   7.0.7.4   Lómagnúpur & Núpsstaður             38.4%                         →Lómagnúpur 4.1km @10
+             "Look left at 11 o'clock — the black wall standing on its own."
+   7.0.7.5   Skeiðarársandur                     40.6%                         
+             "Look ahead — the vast black plain of Skeiðarársandur."
+   7.0.7.6   Skaftafell & Vatnajökull            42.7%                         →Skaftafell 1.6km @9
+             "Look left — the glacier tongues spilling off Vatnajökull."
+
+── Fjallsárlón   [stop]
+   7.0.8.1   Fjallsárlón                         48.6%  fjallsarlon            
+             "At Fjallsárlón."
+
+── Jökulsárlón   [stop]
+   7.0.9.1   Jökulsárlón                         49.7%  jokulsarlon            
+             "At Jökulsárlón."
+
+── Fellsfjara   [stop]
+   7.0.10.1  Fellsfjara                          50.3%  fellsfjara             
+             "At Fellsfjara, across the road from the lagoon."
+
+── Fellsfjara → Vík 2 hour drive folks   [drive]
+   7.0.11.1  Katla                               75.4%                         →Mýrdalsjökull (Kat 27.8km @2
+             "Look right at 2 o'clock — Mýrdalsjökull, and Katla under it."
+
+── Vík   [stop]
+   7.0.12.1  Vík í Mýrdal                        75.4%  —                      
+             "Look ahead at 12 o'clock — Vík over the hill."
+
+── Seljalandsfoss   [stop]
+   7.0.13.1  Seljalandsfoss & Gljúfrabúi        100.0%  seljalandsfoss         
+             "At Seljalandsfoss car park."
+
+================================================================================================
+9.0
+================================================================================================
+
+── BSÍ Bus Terminal → Borgarnes   [drive]
+   9.0.1.1   🧵 Three Names to Keep in Your Po     1.8%                         
+             "Pulling out of BSÍ — no window required."
+   9.0.1.2   🧍 Jóhannes Sveinsson Kjarval         3.7%                         →Klambratún 12.3km @9
+             "Look left at 9 o'clock — Klambratún Park."
+   9.0.1.3   🏢 Ölgerðin Egill Skallagrímsson      7.2%                         →Ölgerðin Egill Ska 17.7km @5
+             "Look right at 3 o'clock — Egils Brewery."
+   9.0.1.4   ⛰️ Mount Esja                        7.3%                         →Esja 8.3km @4
+             "Look right at 4 o'clock — Esja on the skyline."
+   9.0.1.5   ⚖️ Kjalarnes                         9.2%                         →Kjalarnes 9.7km @4
+             "At Kjalarnes, foot of Esja."
+   9.0.1.6   🕳️ Hvalfjörður Tunnel               11.0%                         
+             "Entering the tunnel — nothing to see for a few minutes, so here's what you're insi"
+   9.0.1.7   🐋 Hvalfjörður                       12.8%                         
+             "Emerging from the north portal — the fjord you just drove under runs away to your "
+   9.0.1.8   ⛰️ Akrafjall                        12.9%                         →Akrafjall 9.1km @7
+             "Look left at 9–10 o'clock — Akrafjall, the free-standing mountain past the tunnel."
+   9.0.1.9   🌉 Borgarfjarðarbrú                  16.5%                         
+             "Crossing Borgarfjarðarbrú — Hafnarfjall at 3 o'clock, Borgarnes dead ahead."
+
+── Borgarnes   [stop]
+   9.0.2.1   🪦 Borgarnes                         16.5%  borgarnes              
+             "At the N1, Borgarnes."
+
+── Borgarnes → Selvallafoss   [drive]
+   9.0.3.1   🌋 Iceland's First Rift Zone         20.1%                         
+             "Look ahead at 12 o'clock — the Snæfellsnes mountains, running west to the glacier."
+   9.0.3.2   🔥 Hítardalur & Ljósufjöll           23.6%                         
+             "Look right at 2–3 o'clock — the hyaloclastite ridges of the Ljósufjöll system."
+   9.0.3.3   🌋 Eldborg                           27.1%                         →Eldborg 6.3km @8
+             "Look left at 9–10 o'clock — a low, perfectly regular ring rising out of the scrub."
+   9.0.3.4   🪨 Gerðuberg                         27.2%                         →Gerðuberg 1.9km @4
+             "Look right at 3 o'clock — a straight-ruled wall of basalt columns above the flower"
+   9.0.3.5   ⛰️ Vatnaleið                        34.2%                         →Baulárvallavatn 3.6km @7
+             "All around — the Vatnaleið pass, Road 56."
+
+── Selvallafoss   [stop]
+   9.0.4.1   💧 Fossá                             34.2%  selvallafoss           
+             "At the Vatnaleið viewpoint — the fall is below the road, the lake beyond it."
+   9.0.4.2   🌀 Selvallavatn                      34.2%  —                      
+             "Same viewpoint — the lake in the hollow between the lava and the mountain wall."
+
+── Selvallafoss → Kirkjufell   [drive]
+   9.0.5.1   🪨 Berserkjahraun                    40.8%                         
+             "Crossing the rust-red lava on Road 54 — Berserkjahraun on both sides."
+   9.0.5.2   🦈 Bjarnarhöfn                                                     
+             "Look right — the farm cluster and the little white church under Bjarnarhafnarfjall"
+             ⚠ NO CUE ENTRY
+   9.0.5.3   ⛰️ Helgafell                                                      
+             "Look right, far ahead across the lava — Helgafell sits about fifteen kilometres th"
+             ⚠ NO CUE ENTRY
+   9.0.5.4   🌊 Kolgrafarfjörður                                                
+             "We're crossing it now — the causeway and bridge across Kolgrafarfjörður."
+             ⚠ NO CUE ENTRY
+
+── Kirkjufell   [stop]
+   9.0.6.1   ⛰️ Kirkjufell                       40.8%  kirkjufell             
+             "Ahead on the spit — the lone striped peak, with Kirkjufellsfoss by the car park."
+
+── Kirkjufell → Ólafsvík   [drive]
+   9.0.7.1   👻 Fróðá                             45.9%                         →Fróðá 4.8km @5
+             "Passing Fróðá, just east of Ólafsvík."
+   9.0.7.2   🐚 Búlandshöfði                                                    
+             "We're driving under it now — the headland the road is cut into, sea on your left."
+             ⚠ NO CUE ENTRY
+   9.0.7.3   🧙 Mávahlíð                                                        
+             "Look right, inland — the farm under the fell."
+             ⚠ NO CUE ENTRY
+
+── Ólafsvík   [stop]
+   9.0.8.1   ⚓ Ólafsvík                          45.9%  olafsvik               
+             "Coming into Ólafsvík."
+
+── Ólafsvík → Djúpalónssandur   [drive]
+   9.0.9.1   🪓 Björn the Rich                    47.8%                         
+             "Passing Rif on the right — the flat little harbour village on the point."
+   9.0.9.2   🐦 The Tern Capital                  49.7%                         
+             "Still passing Rif — look at the roadside posts for the terns."
+   9.0.9.3   ⛪ Hellissandur, Ingjaldshóll & t    51.5%                         →Ingjaldshóll 11.4km @8
+             "Look left at 8 o'clock — Hellissandur, with the church at Ingjaldshóll on its hill"
+   9.0.9.4   🪜 Saxhóll                           53.4%                         →Saxhóll 11.0km @4
+             "Approaching Saxhóll — the dark cone with the black stair bolted to its side."
+
+── Djúpalónssandur   [stop]
+   9.0.10.1  💪 Djúpalónssandur & Dritvík         53.4%  djupalonssandur        
+             "Turning down to Djúpalónssandur — the beach at the volcano's foot."
+             ⚠ PIN 406m OFF-ROAD
+
+── Djúpalónssandur → Arnarstapi   [drive]
+   9.0.11.1  🕳️ Malarrif & Vatnshellir           54.8%                         →Malarrif 1.5km @1
+             "Look right at 3 o'clock — the white tower at Malarrif."
+   9.0.11.2  🪨 Lóndrangar                        55.1%                         →Lóndrangar 0.7km @3
+             "Look right at 3 o'clock — two dark pinnacles against the sea: Lóndrangar."
+   9.0.11.3  🌋 Snæfellsjökull                    55.5%                         →Snæfellsjökull 7.5km @10
+             "Look left at 9 o'clock — Snæfellsjökull, if it's showing."
+   9.0.11.4  🧭 Guðríður Þorbjarnardóttir         56.3%                         →Hellnar 2.2km @3
+             "Look right at 3 o'clock — Hellnar down by the shore, then Laugarbrekka."
+   9.0.11.5  🛁 Bárðarlaug                        57.0%                         
+             "Passing Laugarbrekka — the crater pond hides until you're standing on its rim, so "
+
+── Arnarstapi   [stop]
+   9.0.12.1  🐦 The Arnarstapi Cliffs             57.0%  arnarstapi             
+             "At Arnarstapi — the start of the cliff path."
+   9.0.12.2  🗿 The Bárður Statue                 57.0%  —                      
+             "At the Bárður statue."
+   9.0.12.3  🏠 The Governor's House That Left    57.0%  —                      
+             "At the harbour."
+
+── Arnarstapi → Ytri-Tunga   [drive]
+   9.0.13.1  ⛰️ Stapafell & Rauðfeldsgjá         59.6%                         →Stapafell 9.6km @5
+             "Leaving Arnarstapi — Stapafell over your left shoulder; then at 9 o'clock, a thin "
+   9.0.13.2  🔪 Axlar-Björn                       62.2%                         
+             "*Between Búðir and Arnarstapi — this one's a story, not a view.*"
+   9.0.13.3  ⛪ Búðir                             62.3%                         →Búðakirkja 5.0km @5
+             "Look right at 3 o'clock — a small black church standing alone on the lava."
+
+── Ytri-Tunga   [stop]
+   9.0.14.1  🦭 Ytri-Tunga                        64.8%  ytri-tunga             
+             "Turning down the farm track to Ytri-Tunga."
+
+── Ytri-Tunga → Reykjavík   [drive]
+   9.0.15.1  🎧 Music Leg                         76.5%                         
+             "Leaving Ytri-Tunga, last stop of the day. Playlist on, mic live between the stops."
+   9.0.15.2  🦅 Löngufjörur                       88.3%                         
+             "Look right at 3 o'clock — flat pale sand running to the horizon; the cliffs inland"
+   9.0.15.3  🎧 Music Leg                        100.0%                         
+             "Through Borgarnes — my own playlist from here to BSÍ."
+
+================================================================================================
+10.0
+================================================================================================
+
+── BSÍ Bus Terminal → Borgarnes   [drive]
+   10.0.1.1  🧵 Three Names to Keep in Your Po     1.8%                         
+             "Pulling out of BSÍ — no window required."
+   10.0.1.2  🧍 Jóhannes Sveinsson Kjarval         3.7%                         
+             "Look left at 9 o'clock — Klambratún Park."
+   10.0.1.3  🏢 Ölgerðin Egill Skallagrímsson      7.2%                         →Ölgerðin Egill Ska 17.7km @5
+             "Look right at 3 o'clock — Egils Brewery."
+   10.0.1.4  ⛰️ Mount Esja                        7.3%                         →Esja 8.3km @4
+             "Look right at 4 o'clock — Esja on the skyline."
+   10.0.1.5  ⚖️ Kjalarnes                         9.2%                         →Kjalarnes 9.7km @4
+             "At Kjalarnes, foot of Esja."
+   10.0.1.6  🕳️ Hvalfjörður Tunnel               11.0%                         
+             "Entering the tunnel — nothing to see for a few minutes, so here's what you're insi"
+   10.0.1.7  🐋 Hvalfjörður                       12.8%                         
+             "Emerging from the north portal — the fjord you just drove under runs away to your "
+   10.0.1.8  ⛰️ Akrafjall                        12.9%                         →Akrafjall 9.1km @7
+             "Look left at 9–10 o'clock — Akrafjall, the free-standing mountain past the tunnel."
+   10.0.1.9  🌉 Borgarfjarðarbrú                  16.5%                         
+             "Crossing Borgarfjarðarbrú — Hafnarfjall at 3 o'clock, Borgarnes dead ahead."
+
+── Borgarnes   [stop]
+   10.0.2.1  🪦 Borgarnes                         16.5%  borgarnes              
+             "At the N1, Borgarnes."
+
+── Borgarnes → Ytri-Tunga   [drive]
+   10.0.3.1  🌋 Iceland's First Rift Zone         20.3%                         
+             "Look ahead at 12 o'clock — the Snæfellsnes mountains, running west to the glacier."
+   10.0.3.2  🔥 Hítardalur & Ljósufjöll           24.2%                         
+             "Look right at 2–3 o'clock — the hyaloclastite ridges of the Ljósufjöll system."
+   10.0.3.3  🌋 Eldborg                           28.0%                         →Eldborg 7.5km @9
+             "Look left at 9–10 o'clock — a low, perfectly regular ring rising out of the scrub."
+   10.0.3.4  🪨 Gerðuberg                         28.2%                         →Gerðuberg 6.3km @5
+             "Look right at 3 o'clock — a straight-ruled wall of basalt columns above the flower"
+   10.0.3.5  🦅 Löngufjörur                       35.7%                         
+             "Look left at 9 o'clock — flat pale sand running to the horizon; the cliffs inland "
+
+── Ytri-Tunga   [stop]
+   10.0.4.1  🦭 Ytri-Tunga                        35.7%  ytri-tunga             
+             "Turning down the farm track to Ytri-Tunga."
+
+── Ytri-Tunga → Arnarstapi   [drive]
+   10.0.5.1  ⛪ Búðir                             37.6%                         →Búðakirkja 7.3km @11
+             "Look left at 9 o'clock — a small black church standing alone on the lava."
+   10.0.5.2  🔪 Axlar-Björn                       39.6%                         
+             "*Between Búðir and Arnarstapi — this one's a story, not a view.*"
+   10.0.5.3  🛁 Bárðarlaug                        41.6%                         
+             "Passing Laugarbrekka — the crater pond hides until you're standing on its rim, so "
+   10.0.5.4  ⛰️ Stapafell & Rauðfeldsgjá         43.5%                         →Stapafell 1.6km @1
+             "Look ahead at 12 o'clock — the dark pyramid of Stapafell; then right at 3 o'clock,"
+
+── Arnarstapi   [stop]
+   10.0.6.1  🐦 The Arnarstapi Cliffs             43.5%  arnarstapi             
+             "At Arnarstapi — the start of the cliff path."
+   10.0.6.2  🗿 The Bárður Statue                 43.5%  —                      
+             "At the Bárður statue."
+   10.0.6.3  🏠 The Governor's House That Left    43.5%  —                      
+             "At the harbour."
+
+── Arnarstapi → Djúpalónssandur   [drive]
+   10.0.7.1  🧭 Guðríður Þorbjarnardóttir         44.4%                         →Hellnar 2.6km @7
+             "Look left at 9 o'clock — Laugarbrekka, then Hellnar down by the shore."
+   10.0.7.2  🌋 Snæfellsjökull                    45.3%                         →Snæfellsjökull 7.8km @3
+             "Look right at 3 o'clock — Snæfellsjökull, if it's showing."
+   10.0.7.3  🪨 Lóndrangar                        45.4%                         →Lóndrangar 0.7km @9
+             "Look left at 9 o'clock — two dark pinnacles against the sea: Lóndrangar."
+   10.0.7.4  🕳️ Malarrif & Vatnshellir           47.0%                         →Malarrif 5.2km @8
+             "Look left at 9 o'clock — the white tower at Malarrif."
+
+── Djúpalónssandur   [stop]
+   10.0.8.1  💪 Djúpalónssandur & Dritvík         47.0%  djupalonssandur        
+             "Passing the Djúpalónssandur turn-off at 9 o'clock."
+             ⚠ PIN 406m OFF-ROAD
+
+── Djúpalónssandur → Ólafsvík   [drive]
+   10.0.9.1  🪜 Saxhóll                           48.9%                         →Saxhóll 4.3km @2
+             "Approaching Saxhóll — the dark cone with the black stair bolted to its side."
+   10.0.9.2  ⛪ Hellissandur, Ingjaldshóll & t    52.5%                         →Ingjaldshóll 1.6km @1
+             "Ahead at 12 o'clock — Hellissandur, with the church at Ingjaldshóll on its hill be"
+   10.0.9.3  🪓 Björn the Rich                    52.7%                         
+             "At Rif — Björnssteinn, the stone by the shore."
+   10.0.9.4  🐦 The Tern Capital                  54.6%                         
+             "All around — the wetland between Rif and Hellissandur."
+
+── Ólafsvík   [stop]
+   10.0.10.1 ⚓ Ólafsvík                          54.6%  olafsvik               
+             "Leaving Rif — Ólafsvík ahead in nine kilometres."
+
+── Ólafsvík → Kirkjufell   [drive]
+   10.0.11.1 👻 Fróðá                             60.0%                         →Fróðá 14.9km @4
+             "Passing Fróðá, just east of Ólafsvík."
+   10.0.11.2 🐚 Búlandshöfði                                                    
+             "We're driving under it now — the headland the road is cut into, sea on your left."
+             ⚠ NO CUE ENTRY
+   10.0.11.3 🧙 Mávahlíð                                                        
+             "Look right, inland — the farm under the fell."
+             ⚠ NO CUE ENTRY
+
+── Kirkjufell   [stop]
+   10.0.12.1 ⛰️ Kirkjufell                       60.0%  kirkjufell             
+             "Ahead on the spit — the lone striped peak, with Kirkjufellsfoss by the car park."
+
+── Kirkjufell → Reykjavík   [drive]
+   10.0.13.1 🎧 Music Leg                         70.0%                         
+             "Leaving Kirkjufell, last stop of the day. Playlist on, mic live between the stops."
+   10.0.13.2 🪨 Berserkjahraun                    80.0%                         
+             "Crossing the rust-red lava on Road 54 — Berserkjahraun on both sides."
+   10.0.13.3 🌊 Kolgrafarfjörður                  90.0%                         
+             "We're crossing it now — the causeway and bridge across Kolgrafarfjörður."
+   10.0.13.4 🦈 Bjarnarhöfn                      100.0%                         
+             "Look right — the farm cluster and the little white church under Bjarnarhafnarfjall"
+   10.0.13.5 ⛰️ Helgafell                                                      
+             "Look right, far ahead across the lava — Helgafell sits about fifteen kilometres th"
+             ⚠ NO CUE ENTRY
+   10.0.13.6 ⛰️ Vatnaleið                                                      
+             "All around — the Vatnaleið pass, Road 56."
+             ⚠ NO CUE ENTRY
+   10.0.13.7 🎧 Music Leg                                                       
+             "Through Borgarnes — my own playlist from here to BSÍ."
+             ⚠ NO CUE ENTRY
+
+
+================================================================================================
+PROBLEMS: 12
+================================================================================================
+  9.0 9.0.5.2 🦈 Bjarnarhöfn — NO CUE ENTRY
+  9.0 9.0.5.3 ⛰️ Helgafell — NO CUE ENTRY
+  9.0 9.0.5.4 🌊 Kolgrafarfjörður — NO CUE ENTRY
+  9.0 9.0.7.2 🐚 Búlandshöfði — NO CUE ENTRY
+  9.0 9.0.7.3 🧙 Mávahlíð — NO CUE ENTRY
+  9.0 9.0.10.1 💪 Djúpalónssandur & Dritví — PIN 406m OFF-ROAD
+  10.0 10.0.8.1 💪 Djúpalónssandur & Dritví — PIN 406m OFF-ROAD
+  10.0 10.0.11.2 🐚 Búlandshöfði — NO CUE ENTRY
+  10.0 10.0.11.3 🧙 Mávahlíð — NO CUE ENTRY
+  10.0 10.0.13.5 ⛰️ Helgafell — NO CUE ENTRY
+  10.0 10.0.13.6 ⛰️ Vatnaleið — NO CUE ENTRY
+  10.0 10.0.13.7 🎧 Music Leg — NO CUE ENTRY

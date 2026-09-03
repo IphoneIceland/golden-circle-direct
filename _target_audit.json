@@ -1,0 +1,2008 @@
+[
+ {
+  "name": "Akrafjall",
+  "stored": [
+   64.34377,
+   -21.91629
+  ],
+  "used": [
+   "9.0/9.0.1.8",
+   "10.0/10.0.1.8"
+  ],
+  "cands": [
+   {
+    "d": 182.6,
+    "cat": "natural",
+    "typ": "peak",
+    "lat": 65.51377,
+    "lon": -19.19599,
+    "nm": "Akrafjall, Skagafjörður, Norðurland vestra, Ísland"
+   },
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "peak",
+    "lat": 64.34377,
+    "lon": -21.91629,
+    "nm": "Akrafjall, Hvalfjarðarsveit, Vesturland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Baulárvallavatn",
+  "stored": [
+   64.91036,
+   -22.88714
+  ],
+  "used": [
+   "9.0/9.0.3.5"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "leisure",
+    "typ": "fishing",
+    "lat": 64.91036,
+    "lon": -22.88714,
+    "nm": "Baulárvallavatn, Vatnaleið, Sveitarfélagið Stykkishólmur, "
+   }
+  ]
+ },
+ {
+  "name": "Brúará",
+  "stored": [
+   64.13455,
+   -20.56478
+  ],
+  "used": [
+   "1.0/1.0.3.4",
+   "2.0/2.0.3.4",
+   "3.0/3.0.3.4",
+   "4.0/4.0.1.15"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "waterway",
+    "typ": "river",
+    "lat": 64.13455,
+    "lon": -20.56478,
+    "nm": "Brúará, Bláskógabyggð, Suðurland, Ísland"
+   },
+   {
+    "d": 136.72,
+    "cat": "waterway",
+    "typ": "river",
+    "lat": 63.94802,
+    "lon": -17.78799,
+    "nm": "Brúará, Skaftárhreppur, Suðurland, Ísland"
+   },
+   {
+    "d": 188.38,
+    "cat": "waterway",
+    "typ": "river",
+    "lat": 65.7925,
+    "lon": -21.38858,
+    "nm": "Brúará, Kaldrananeshreppur, Vestfirðir, Ísland"
+   },
+   {
+    "d": 187.37,
+    "cat": "place",
+    "typ": "farm",
+    "lat": 65.78494,
+    "lon": -21.36837,
+    "nm": "Brúará, Kaldrananeshreppur, Vestfirðir, Ísland"
+   },
+   {
+    "d": 23.02,
+    "cat": "waterway",
+    "typ": "stream",
+    "lat": 64.34138,
+    "lon": -20.54522,
+    "nm": "Brúará, Bláskógabyggð, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Búðakirkja",
+  "stored": [
+   64.82166,
+   -23.38402
+  ],
+  "used": [
+   "9.0/9.0.13.3",
+   "10.0/10.0.5.1"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "amenity",
+    "typ": "place_of_worship",
+    "lat": 64.82166,
+    "lon": -23.38402,
+    "nm": "Búðakirkja, Klettsgata, Snæfellsbær, Vesturland, 356, Ísla"
+   }
+  ]
+ },
+ {
+  "name": "DC-3 wreck",
+  "stored": [
+   63.4595,
+   -19.3646
+  ],
+  "used": [
+   "5.0/5.0.5.1",
+   "6.0/6.0.5.1",
+   "7.0/7.0.5.2"
+  ],
+  "cands": []
+ },
+ {
+  "name": "Drangurinn",
+  "stored": [
+   63.52601,
+   -19.55151
+  ],
+  "used": [
+   "5.0/5.0.3.5",
+   "6.0/6.0.3.5"
+  ],
+  "cands": [
+   {
+    "d": 0.23,
+    "cat": "natural",
+    "typ": "rock",
+    "lat": 63.52446,
+    "lon": -19.55462,
+    "nm": "Drangurinn, Drangshlíðarvegur, Drangshlíð, Rangárþing eyst"
+   }
+  ]
+ },
+ {
+  "name": "Dýrhólaey",
+  "stored": [
+   63.39883,
+   -19.12663
+  ],
+  "used": [
+   "5.0/5.0.5.4",
+   "6.0/6.0.5.4",
+   "7.0/7.0.5.5"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "arch",
+    "lat": 63.39883,
+    "lon": -19.12663,
+    "nm": "Dyrhólaey, Mýrdalshreppur, Suðurland, Ísland"
+   },
+   {
+    "d": 0.46,
+    "cat": "natural",
+    "typ": "peak",
+    "lat": 63.40296,
+    "lon": -19.12716,
+    "nm": "Dyrhólaey, Mýrdalshreppur, Suðurland, Ísland"
+   },
+   {
+    "d": 0.75,
+    "cat": "leisure",
+    "typ": "nature_reserve",
+    "lat": 63.40411,
+    "lon": -19.11722,
+    "nm": "Dyrhólaey, Mýrdalshreppur, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Eldborg",
+  "stored": [
+   64.79636,
+   -22.32148
+  ],
+  "used": [
+   "9.0/9.0.3.3",
+   "10.0/10.0.3.3"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "volcano",
+    "lat": 64.79636,
+    "lon": -22.32148,
+    "nm": "Eldborg, Borgarbyggð, Vesturland, Ísland"
+   },
+   {
+    "d": 105.51,
+    "cat": "natural",
+    "typ": "volcano",
+    "lat": 63.85785,
+    "lon": -21.99855,
+    "nm": "Eldborg, Grindavíkurbær, Suðurnes, Ísland"
+   },
+   {
+    "d": 94.6,
+    "cat": "leisure",
+    "typ": "nature_reserve",
+    "lat": 63.99836,
+    "lon": -21.63888,
+    "nm": "Eldborg, Kópavogsbær, Höfuðborgarsvæðið, Ísland"
+   },
+   {
+    "d": 105.72,
+    "cat": "leisure",
+    "typ": "nature_reserve",
+    "lat": 63.85624,
+    "lon": -21.9935,
+    "nm": "Eldborg, Hafnarfjarðarkaupstaður, Grindavíkurbær, Suðurnes"
+   },
+   {
+    "d": 1.26,
+    "cat": "highway",
+    "typ": "path",
+    "lat": 64.78778,
+    "lon": -22.30426,
+    "nm": "Eldborg, Borgarbyggð, Vesturland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Elliðaárdalur",
+  "stored": [
+   64.11064,
+   -21.80075
+  ],
+  "used": [
+   "1.0/1.0.1.4",
+   "2.0/2.0.1.4",
+   "3.0/3.0.1.4",
+   "4.0/4.0.1.4",
+   "5.0/5.0.1.3",
+   "6.0/6.0.1.3",
+   "7.0/7.0.1.3"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "grassland",
+    "lat": 64.11064,
+    "lon": -21.80075,
+    "nm": "Elliðaárdalur, Reykjavíkurborg, Höfuðborgarsvæðið, 110, Ís"
+   },
+   {
+    "d": 2.35,
+    "cat": "highway",
+    "typ": "platform",
+    "lat": 64.11889,
+    "lon": -21.84542,
+    "nm": "Elliðaárdalur, Reykjanesbraut, Árbær, Reykjavíkurborg, Höf"
+   },
+   {
+    "d": 2.27,
+    "cat": "highway",
+    "typ": "platform",
+    "lat": 64.11737,
+    "lon": -21.84499,
+    "nm": "Elliðaárdalur, Reykjanesbraut, Fossvogur, Háaleiti og Búst"
+   },
+   {
+    "d": 2.27,
+    "cat": "highway",
+    "typ": "bus_stop",
+    "lat": 64.11729,
+    "lon": -21.84493,
+    "nm": "Elliðaárdalur, Reykjanesbraut, Fossvogur, Háaleiti og Búst"
+   },
+   {
+    "d": 0.99,
+    "cat": "tourism",
+    "typ": "information",
+    "lat": 64.10249,
+    "lon": -21.80883,
+    "nm": "Elliðaárdalur, Árleið, Breiðholt, Reykjavíkurborg, Höfuðbo"
+   }
+  ]
+ },
+ {
+  "name": "Esja",
+  "stored": [
+   64.23301,
+   -21.71115
+  ],
+  "used": [
+   "9.0/9.0.1.4",
+   "10.0/10.0.1.4"
+  ],
+  "cands": [
+   {
+    "d": 2.94,
+    "cat": "natural",
+    "typ": "peak",
+    "lat": 64.24501,
+    "lon": -21.65686,
+    "nm": "Esja, Kjósarhreppur, Höfuðborgarsvæðið, 162, Ísland"
+   },
+   {
+    "d": 252.26,
+    "cat": "natural",
+    "typ": "peak",
+    "lat": 64.27289,
+    "lon": -16.48808,
+    "nm": "Esja, Sveitarfélagið Hornafjörður, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Eyjafjallajökull",
+  "stored": [
+   63.62779,
+   -19.55728
+  ],
+  "used": [
+   "5.0/5.0.3.4",
+   "6.0/6.0.3.4",
+   "7.0/7.0.3.4"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "glacier",
+    "lat": 63.62779,
+    "lon": -19.55728,
+    "nm": "Eyjafjallajökull, Rangárþing eystra, Suðurland, Ísland"
+   },
+   {
+    "d": 3.18,
+    "cat": "natural",
+    "typ": "volcano",
+    "lat": 63.62999,
+    "lon": -19.62139,
+    "nm": "Eyjafjallajökull, Rangárþing eystra, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Foss á Síðu",
+  "stored": [
+   63.85608,
+   -17.86945
+  ],
+  "used": [
+   "7.0/7.0.7.2"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "waterway",
+    "typ": "waterfall",
+    "lat": 63.85608,
+    "lon": -17.86945,
+    "nm": "Foss á Síðu, Skaftárhreppur, Suðurland, Ísland"
+   },
+   {
+    "d": 0.24,
+    "cat": "tourism",
+    "typ": "viewpoint",
+    "lat": 63.85407,
+    "lon": -17.87106,
+    "nm": "Foss á Síðu, Fagrifoss, Skaftárhreppur, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Friðheimar",
+  "stored": [
+   64.17833,
+   -20.44761
+  ],
+  "used": [
+   "1.0/1.0.6.3",
+   "2.0/2.0.6.3",
+   "3.0/3.0.6.4"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "highway",
+    "typ": "residential",
+    "lat": 64.17833,
+    "lon": -20.44761,
+    "nm": "Friðheimar, Reykholt, Bláskógabyggð, Suðurland, Ísland"
+   },
+   {
+    "d": 0.18,
+    "cat": "building",
+    "typ": "greenhouse",
+    "lat": 64.1773,
+    "lon": -20.44484,
+    "nm": "Friðheimar, Reykholt, Bláskógabyggð, Suðurland, Ísland"
+   },
+   {
+    "d": 0.12,
+    "cat": "building",
+    "typ": "detached",
+    "lat": 64.17803,
+    "lon": -20.44532,
+    "nm": "Friðheimar, Reykholt, Bláskógabyggð, Suðurland, 806, Íslan"
+   },
+   {
+    "d": 0.18,
+    "cat": "amenity",
+    "typ": "restaurant",
+    "lat": 64.17741,
+    "lon": -20.44455,
+    "nm": "Friðheimar, Bláskógabyggð, Suðurland, 806, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Fróðá",
+  "stored": [
+   64.8826,
+   -23.61089
+  ],
+  "used": [
+   "9.0/9.0.7.1",
+   "10.0/10.0.11.1"
+  ],
+  "cands": [
+   {
+    "d": 3.57,
+    "cat": "waterway",
+    "typ": "river",
+    "lat": 64.85947,
+    "lon": -23.55843,
+    "nm": "Fróðá, Snæfellsbær, Vesturland, Ísland"
+   },
+   {
+    "d": 1.86,
+    "cat": "waterway",
+    "typ": "river",
+    "lat": 64.86586,
+    "lon": -23.60882,
+    "nm": "Fróðá, Snæfellsbær, Vesturland, 355, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Gerðuberg",
+  "stored": [
+   64.86063,
+   -22.36326
+  ],
+  "used": [
+   "9.0/9.0.3.4",
+   "10.0/10.0.3.4"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "cliff",
+    "lat": 64.86063,
+    "lon": -22.36326,
+    "nm": "Gerðuberg, Eyja- og Miklaholtshreppur, Vesturland, Ísland"
+   },
+   {
+    "d": 88.09,
+    "cat": "highway",
+    "typ": "residential",
+    "lat": 64.10431,
+    "lon": -21.81592,
+    "nm": "Gerðuberg, Efra-Breiðholt, Breiðholt, Reykjavíkurborg, Höf"
+   },
+   {
+    "d": 0.89,
+    "cat": "highway",
+    "typ": "service",
+    "lat": 64.8535,
+    "lon": -22.37181,
+    "nm": "Gerðuberg, Eyja- og Miklaholtshreppur, Vesturland, Ísland"
+   },
+   {
+    "d": 272.8,
+    "cat": "building",
+    "typ": "detached",
+    "lat": 66.53918,
+    "lon": -18.01188,
+    "nm": "Gerðuberg, 11, Vallargata, Grímsey, Akureyrarbær, Norðurla"
+   },
+   {
+    "d": 0.89,
+    "cat": "building",
+    "typ": "yes",
+    "lat": 64.85346,
+    "lon": -22.37163,
+    "nm": "Gerðuberg, Eyja- og Miklaholtshreppur, Vesturland, 342, Ís"
+   }
+  ]
+ },
+ {
+  "name": "Gljúfrasteinn",
+  "stored": [
+   64.18091,
+   -21.58185
+  ],
+  "used": [
+   "1.0/1.0.1.10",
+   "2.0/2.0.1.10",
+   "3.0/3.0.1.10",
+   "4.0/4.0.9.2"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "tourism",
+    "typ": "museum",
+    "lat": 64.18091,
+    "lon": -21.58185,
+    "nm": "Gljúfrasteinn, Mosfellsdalur, Mosfellsbær, Höfuðborgarsvæð"
+   },
+   {
+    "d": 0.04,
+    "cat": "highway",
+    "typ": "service",
+    "lat": 64.18118,
+    "lon": -21.5824,
+    "nm": "Gljúfrasteinn, Mosfellsdalur, Mosfellsbær, Höfuðborgarsvæð"
+   },
+   {
+    "d": 0.01,
+    "cat": "building",
+    "typ": "yes",
+    "lat": 64.18095,
+    "lon": -21.58177,
+    "nm": "Gljúfrasteinn, Mosfellsdalur, Mosfellsbær, Höfuðborgarsvæð"
+   },
+   {
+    "d": 0.43,
+    "cat": "highway",
+    "typ": "bus_stop",
+    "lat": 64.18026,
+    "lon": -21.59062,
+    "nm": "Laxnes, Hraðastaðavegur, Mosfellsdalur, Mosfellsbær, Höfuð"
+   }
+  ]
+ },
+ {
+  "name": "Haukadalur",
+  "stored": [
+   64.32413,
+   -20.28578
+  ],
+  "used": [
+   "1.0/1.0.3.6",
+   "2.0/2.0.3.6",
+   "3.0/3.0.3.6",
+   "4.0/4.0.3.2"
+  ],
+  "cands": [
+   {
+    "d": 232.28,
+    "cat": "natural",
+    "typ": "valley",
+    "lat": 65.86472,
+    "lon": -23.63761,
+    "nm": "Haukadalur, Ísafjarðarbær, Vestfirðir, Ísland"
+   },
+   {
+    "d": 98.52,
+    "cat": "natural",
+    "typ": "valley",
+    "lat": 65.06019,
+    "lon": -21.43963,
+    "nm": "Haukadalur, Dalabyggð, Vesturland, Ísland"
+   },
+   {
+    "d": 0.0,
+    "cat": "place",
+    "typ": "locality",
+    "lat": 64.32413,
+    "lon": -20.28578,
+    "nm": "Haukadalur, Bláskógabyggð, Suðurland, Ísland"
+   },
+   {
+    "d": 0.57,
+    "cat": "highway",
+    "typ": "unclassified",
+    "lat": 64.32924,
+    "lon": -20.28481,
+    "nm": "Haukadalur, Bláskógabyggð, Suðurland, Ísland"
+   },
+   {
+    "d": 2.0,
+    "cat": "highway",
+    "typ": "residential",
+    "lat": 64.30662,
+    "lon": -20.29543,
+    "nm": "Haukadalur, Bláskógabyggð, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Hekla",
+  "stored": [
+   63.9927,
+   -19.66582
+  ],
+  "used": [
+   "1.0/1.0.3.2",
+   "2.0/2.0.3.2",
+   "3.0/3.0.3.2",
+   "4.0/4.0.7.3"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "volcano",
+    "lat": 63.9927,
+    "lon": -19.66582,
+    "nm": "Hekla, Rangárþing ytra, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Hellisheiðarvirkjun",
+  "stored": [
+   64.03654,
+   -21.39763
+  ],
+  "used": [
+   "1.0/1.0.6.13",
+   "2.0/2.0.6.13",
+   "3.0/3.0.6.14",
+   "4.0/4.0.1.7",
+   "5.0/5.0.1.6",
+   "6.0/6.0.1.6",
+   "7.0/7.0.1.6"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "landuse",
+    "typ": "industrial",
+    "lat": 64.03654,
+    "lon": -21.39763,
+    "nm": "Hellisheiðarvirkjun, Sveitarfélagið Ölfus, Suðurland, Ísla"
+   },
+   {
+    "d": 0.17,
+    "cat": "building",
+    "typ": "yes",
+    "lat": 64.03716,
+    "lon": -21.40081,
+    "nm": "Hellisheiðarvirkjun, Kolviðarhóll, Hellisheiðarvirkjun, Sv"
+   }
+  ]
+ },
+ {
+  "name": "Hellnar",
+  "stored": [
+   64.75091,
+   -23.64692
+  ],
+  "used": [
+   "9.0/9.0.11.4",
+   "10.0/10.0.7.1"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "place",
+    "typ": "hamlet",
+    "lat": 64.75091,
+    "lon": -23.64692,
+    "nm": "Hellnar, Snæfellsbær, Vesturland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Hjörleifshöfði",
+  "stored": [
+   63.42396,
+   -18.75257
+  ],
+  "used": [
+   "5.0/5.0.8.3",
+   "6.0/6.0.8.3",
+   "7.0/7.0.5.8"
+  ],
+  "cands": [
+   {
+    "d": 1.08,
+    "cat": "highway",
+    "typ": "track",
+    "lat": 63.41513,
+    "lon": -18.74344,
+    "nm": "Hjörleifshöfði, Mýrdalshreppur, Suðurland, Ísland"
+   },
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "rock",
+    "lat": 63.42396,
+    "lon": -18.75257,
+    "nm": "Hjörleifshöfði, Mýrdalshreppur, Suðurland, Ísland"
+   },
+   {
+    "d": 0.85,
+    "cat": "place",
+    "typ": "house",
+    "lat": 63.41728,
+    "lon": -18.76085,
+    "nm": "Hjörleifshöfði, Mýrdalshreppur, Suðurland, 871, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Hlíðarendi",
+  "stored": [
+   63.72623,
+   -19.94853
+  ],
+  "used": [
+   "5.0/5.0.3.3",
+   "6.0/6.0.3.3",
+   "7.0/7.0.3.3"
+  ],
+  "cands": [
+   {
+    "d": 106.56,
+    "cat": "leisure",
+    "typ": "stadium",
+    "lat": 64.13302,
+    "lon": -21.92306,
+    "nm": "Hlíðarendi, Bústaðavegur, Hlíðarendi, Hlíðar, Reykjavíkurb"
+   },
+   {
+    "d": 106.81,
+    "cat": "boundary",
+    "typ": "administrative",
+    "lat": 64.13387,
+    "lon": -21.92783,
+    "nm": "Hlíðarendi, Miðborg, Reykjavíkurborg, Höfuðborgarsvæðið, Í"
+   },
+   {
+    "d": 106.91,
+    "cat": "landuse",
+    "typ": "construction",
+    "lat": 64.13505,
+    "lon": -21.92896,
+    "nm": "Hlíðarendi, Miðborg, Reykjavíkurborg, Höfuðborgarsvæðið, Í"
+   },
+   {
+    "d": 106.71,
+    "cat": "highway",
+    "typ": "residential",
+    "lat": 64.13289,
+    "lon": -21.92657,
+    "nm": "Hlíðarendi, Hlíðar, Reykjavíkurborg, Höfuðborgarsvæðið, 10"
+   },
+   {
+    "d": 301.99,
+    "cat": "highway",
+    "typ": "track",
+    "lat": 64.85926,
+    "lon": -14.25514,
+    "nm": "Hlíðarendi, Fjarðabyggð, Austurland, 761, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Hveragerði",
+  "stored": [
+   63.99759,
+   -21.18683
+  ],
+  "used": [
+   "1.0/1.0.6.11",
+   "2.0/2.0.6.11",
+   "3.0/3.0.6.12",
+   "4.0/4.0.1.9",
+   "5.0/5.0.1.7",
+   "6.0/6.0.1.7",
+   "7.0/7.0.1.8"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "boundary",
+    "typ": "administrative",
+    "lat": 63.99759,
+    "lon": -21.18683,
+    "nm": "Hveragerðisbær, Suðurland, 810, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Ingjaldshóll",
+  "stored": [
+   64.91148,
+   -23.85766
+  ],
+  "used": [
+   "9.0/9.0.9.3",
+   "10.0/10.0.9.2"
+  ],
+  "cands": [
+   {
+    "d": 123.41,
+    "cat": "building",
+    "typ": "detached",
+    "lat": 64.14758,
+    "lon": -21.9853,
+    "nm": "Ingjaldshóll, 7, Skerjabraut, Seltjarnarnesbær, Höfuðborga"
+   }
+  ]
+ },
+ {
+  "name": "Keldur",
+  "stored": [
+   63.82226,
+   -20.07434
+  ],
+  "used": [
+   "5.0/5.0.1.13",
+   "6.0/6.0.1.13",
+   "7.0/7.0.1.13"
+  ],
+  "cands": [
+   {
+    "d": 34.27,
+    "cat": "highway",
+    "typ": "track",
+    "lat": 63.95649,
+    "lon": -19.44404,
+    "nm": "Keldur, Rangárþing ytra, Suðurland, Ísland"
+   },
+   {
+    "d": 0.17,
+    "cat": "highway",
+    "typ": "unclassified",
+    "lat": 63.82237,
+    "lon": -20.0778,
+    "nm": "Keldur, Rangárþing ytra, Suðurland, Ísland"
+   },
+   {
+    "d": 250.58,
+    "cat": "highway",
+    "typ": "service",
+    "lat": 66.05389,
+    "lon": -19.3343,
+    "nm": "Keldur, Skagafjörður, Norðurland vestra, Ísland"
+   },
+   {
+    "d": 0.09,
+    "cat": "highway",
+    "typ": "service",
+    "lat": 63.82256,
+    "lon": -20.07275,
+    "nm": "Keldur, Rangárþing ytra, Suðurland, Ísland"
+   },
+   {
+    "d": 90.05,
+    "cat": "amenity",
+    "typ": "university",
+    "lat": 64.13136,
+    "lon": -21.78062,
+    "nm": "Keldur, 3, Keldnavegur, Grafarvogur, Reykjavíkurborg, Höfu"
+   }
+  ]
+ },
+ {
+  "name": "Kerið",
+  "stored": [
+   64.04096,
+   -20.88461
+  ],
+  "used": [
+   "1.0/1.0.6.6",
+   "2.0/2.0.6.6",
+   "3.0/3.0.6.7",
+   "4.0/4.0.1.14"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "water",
+    "typ": "lake",
+    "lat": 64.04096,
+    "lon": -20.88461,
+    "nm": "Kerið, Grímsnes- og Grafningshreppur, Suðurland, Ísland"
+   },
+   {
+    "d": 0.13,
+    "cat": "natural",
+    "typ": "volcano",
+    "lat": 64.03981,
+    "lon": -20.88481,
+    "nm": "Kerið, Grímsnes- og Grafningshreppur, Suðurland, 805, Ísla"
+   },
+   {
+    "d": 0.12,
+    "cat": "natural",
+    "typ": "cliff",
+    "lat": 64.03991,
+    "lon": -20.88495,
+    "nm": "Kerið, Grímsnes- og Grafningshreppur, Suðurland, 805, Ísla"
+   }
+  ]
+ },
+ {
+  "name": "Kjalarnes",
+  "stored": [
+   64.235,
+   -21.885
+  ],
+  "used": [
+   "9.0/9.0.1.5",
+   "10.0/10.0.1.5"
+  ],
+  "cands": [
+   {
+    "d": 2.71,
+    "cat": "boundary",
+    "typ": "administrative",
+    "lat": 64.24218,
+    "lon": -21.8315,
+    "nm": "Kjalarnes, Reykjavíkurborg, Höfuðborgarsvæðið, Ísland"
+   },
+   {
+    "d": 2.62,
+    "cat": "boundary",
+    "typ": "administrative",
+    "lat": 64.24017,
+    "lon": -21.83216,
+    "nm": "Grundir, Kjalarnes, Reykjavíkurborg, Höfuðborgarsvæðið, 11"
+   }
+  ]
+ },
+ {
+  "name": "Kjarvalsstaðir",
+  "stored": [
+   64.13787,
+   -21.91395
+  ],
+  "used": [
+   "1.0/1.0.1.2",
+   "2.0/2.0.1.2",
+   "3.0/3.0.1.2",
+   "4.0/4.0.1.2",
+   "5.0/5.0.1.1",
+   "6.0/6.0.1.1",
+   "7.0/7.0.1.1"
+  ],
+  "cands": [
+   {
+    "d": 219.93,
+    "cat": "landuse",
+    "typ": "farmyard",
+    "lat": 65.74494,
+    "lon": -19.19022,
+    "nm": "Kjarvalsstaðir, Skagafjörður, Norðurland vestra, 551, Ísla"
+   },
+   {
+    "d": 220.03,
+    "cat": "highway",
+    "typ": "unclassified",
+    "lat": 65.74556,
+    "lon": -19.18859,
+    "nm": "Kjarvalsstaðir, Skagafjörður, Norðurland vestra, 551, Ísla"
+   },
+   {
+    "d": 0.0,
+    "cat": "tourism",
+    "typ": "museum",
+    "lat": 64.13787,
+    "lon": -21.91395,
+    "nm": "Kjarvalsstaðir, Flókagata, Holt, Hlíðar, Reykjavíkurborg, "
+   },
+   {
+    "d": 0.02,
+    "cat": "amenity",
+    "typ": "cafe",
+    "lat": 64.13788,
+    "lon": -21.91345,
+    "nm": "Kjarvalsstaðir, 24, Flókagata, Holt, Hlíðar, Reykjavíkurbo"
+   },
+   {
+    "d": 0.11,
+    "cat": "highway",
+    "typ": "bus_stop",
+    "lat": 64.13824,
+    "lon": -21.91194,
+    "nm": "Kjarvalsstaðir, Flókagata, Holt, Hlíðar, Reykjavíkurborg, "
+   }
+  ]
+ },
+ {
+  "name": "Klambratún",
+  "stored": [
+   64.13702,
+   -21.91334
+  ],
+  "used": [
+   "9.0/9.0.1.2"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "boundary",
+    "typ": "administrative",
+    "lat": 64.13702,
+    "lon": -21.91334,
+    "nm": "Klambratún, Hlíðar, Reykjavíkurborg, Höfuðborgarsvæðið, Ís"
+   },
+   {
+    "d": 0.0,
+    "cat": "leisure",
+    "typ": "park",
+    "lat": 64.13704,
+    "lon": -21.91338,
+    "nm": "Klambratún, Hlíðar, Reykjavíkurborg, Höfuðborgarsvæðið, Ís"
+   },
+   {
+    "d": 0.15,
+    "cat": "highway",
+    "typ": "platform",
+    "lat": 64.13591,
+    "lon": -21.91516,
+    "nm": "Klambratún, Miklabraut, Hlíðar, Reykjavíkurborg, Höfuðborg"
+   },
+   {
+    "d": 0.16,
+    "cat": "highway",
+    "typ": "bus_stop",
+    "lat": 64.13595,
+    "lon": -21.91547,
+    "nm": "Klambratún, Miklabraut, Hlíðar, Reykjavíkurborg, Höfuðborg"
+   }
+  ]
+ },
+ {
+  "name": "Kristnitökuhraun",
+  "stored": [
+   64.01539,
+   -21.49338
+  ],
+  "used": [
+   "1.0/1.0.6.14",
+   "2.0/2.0.6.14",
+   "3.0/3.0.6.15",
+   "4.0/4.0.1.6",
+   "5.0/5.0.1.5",
+   "6.0/6.0.1.5",
+   "7.0/7.0.1.5"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "bare_rock",
+    "lat": 64.01539,
+    "lon": -21.49338,
+    "nm": "Kristnitökuhraun, Sveitarfélagið Ölfus, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Laugarvatn",
+  "stored": [
+   64.21005,
+   -20.70058
+  ],
+  "used": [
+   "1.0/1.0.3.3",
+   "2.0/2.0.3.3",
+   "3.0/3.0.3.3",
+   "4.0/4.0.7.2"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "water",
+    "typ": "lake",
+    "lat": 64.21005,
+    "lon": -20.70058,
+    "nm": "Laugarvatn, Bláskógabyggð, Suðurland, Ísland"
+   },
+   {
+    "d": 1.78,
+    "cat": "place",
+    "typ": "village",
+    "lat": 64.21717,
+    "lon": -20.73342,
+    "nm": "Laugarvatn, Bláskógabyggð, Suðurland, 840, Ísland"
+   },
+   {
+    "d": 155.46,
+    "cat": "natural",
+    "typ": "water",
+    "lat": 64.75851,
+    "lon": -23.6864,
+    "nm": "Laugarvatn, Snæfellsbær, Vesturland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Laugarvatnshellir",
+  "stored": [
+   64.21755,
+   -20.88393
+  ],
+  "used": [
+   "1.0/1.0.3.1",
+   "2.0/2.0.3.1",
+   "3.0/3.0.3.1",
+   "4.0/4.0.7.4"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "cave_entrance",
+    "lat": 64.21755,
+    "lon": -20.88393,
+    "nm": "Laugarvatnshellir, Laugarvatnshellar, Bláskógabyggð, Suður"
+   }
+  ]
+ },
+ {
+  "name": "Laxnes Horse Farm",
+  "stored": [
+   64.18393,
+   -21.59158
+  ],
+  "used": [
+   "1.0/1.0.1.9",
+   "2.0/2.0.1.9",
+   "3.0/3.0.1.9",
+   "4.0/4.0.9.3"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "place",
+    "typ": "farm",
+    "lat": 64.18393,
+    "lon": -21.59158,
+    "nm": "Laxnes Horse Farm, Mosfellsdalur, Mosfellsbær, Höfuðborgar"
+   }
+  ]
+ },
+ {
+  "name": "Leiðvöllur (Kjalarnesþing)",
+  "stored": [
+   64.20697,
+   -21.73297
+  ],
+  "used": [
+   "1.0/1.0.1.6",
+   "2.0/2.0.1.6",
+   "3.0/3.0.1.6",
+   "4.0/4.0.9.6"
+  ],
+  "cands": []
+ },
+ {
+  "name": "Lómagnúpur",
+  "stored": [
+   63.99278,
+   -17.52482
+  ],
+  "used": [
+   "7.0/7.0.7.4"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "peak",
+    "lat": 63.99278,
+    "lon": -17.52482,
+    "nm": "Lómagnúpur, Skaftárhreppur, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Lóndrangar",
+  "stored": [
+   64.73241,
+   -23.7839
+  ],
+  "used": [
+   "9.0/9.0.11.2",
+   "10.0/10.0.7.3"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "tourism",
+    "typ": "attraction",
+    "lat": 64.73241,
+    "lon": -23.7839,
+    "nm": "Lóndrangar, Útnesvegur, Arnarstapi, Hellissandur, Snæfells"
+   }
+  ]
+ },
+ {
+  "name": "Lögberg (Law Rock)",
+  "stored": [
+   64.25954,
+   -21.12254
+  ],
+  "used": [
+   "1.0/1.0.2.2",
+   "2.0/2.0.2.2",
+   "3.0/3.0.2.2",
+   "4.0/4.0.8.2"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "historic",
+    "typ": "monument",
+    "lat": 64.25954,
+    "lon": -21.12254,
+    "nm": "Lögberg, Valhallarvegur, Bláskógabyggð, Suðurland, Ísland"
+   },
+   {
+    "d": 42.2,
+    "cat": "building",
+    "typ": "university",
+    "lat": 64.13945,
+    "lon": -21.94974,
+    "nm": "Lögberg, 8, Sæmundargata, Háskóli, Miðborg, Reykjavíkurbor"
+   },
+   {
+    "d": 350.25,
+    "cat": "building",
+    "typ": "apartments",
+    "lat": 65.06652,
+    "lon": -14.00309,
+    "nm": "Lögberg, 12, Steinholtsvegur, Eskifjörður, Fjarðabyggð, Au"
+   }
+  ]
+ },
+ {
+  "name": "Malarrif",
+  "stored": [
+   64.72915,
+   -23.80167
+  ],
+  "used": [
+   "9.0/9.0.11.1",
+   "10.0/10.0.7.4"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "place",
+    "typ": "locality",
+    "lat": 64.72915,
+    "lon": -23.80167,
+    "nm": "Malarrif, Snæfellsbær, Vesturland, Ísland"
+   },
+   {
+    "d": 0.07,
+    "cat": "highway",
+    "typ": "service",
+    "lat": 64.72974,
+    "lon": -23.80233,
+    "nm": "Malarrif, Snæfellsbær, Vesturland, Ísland"
+   },
+   {
+    "d": 0.03,
+    "cat": "building",
+    "typ": "yes",
+    "lat": 64.72897,
+    "lon": -23.80127,
+    "nm": "Malarrif, Snæfellsbær, Vesturland, 356, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Mosfellsbær",
+  "stored": [
+   64.16749,
+   -21.69713
+  ],
+  "used": [
+   "1.0/1.0.1.7",
+   "2.0/2.0.1.7",
+   "3.0/3.0.1.7",
+   "4.0/4.0.9.5"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "boundary",
+    "typ": "administrative",
+    "lat": 64.16749,
+    "lon": -21.69713,
+    "nm": "Mosfellsbær, Höfuðborgarsvæðið, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Mosfellsdalur",
+  "stored": [
+   64.18028,
+   -21.61886
+  ],
+  "used": [
+   "1.0/1.0.1.8",
+   "2.0/2.0.1.8",
+   "3.0/3.0.1.8",
+   "4.0/4.0.9.4"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "place",
+    "typ": "suburb",
+    "lat": 64.18028,
+    "lon": -21.61886,
+    "nm": "Mosfellsdalur, Mosfellsbær, Höfuðborgarsvæðið, 271, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Mýrdalsjökull (Katla)",
+  "stored": [
+   63.66178,
+   -19.12246
+  ],
+  "used": [
+   "5.0/5.0.7.1",
+   "6.0/6.0.7.1",
+   "7.0/7.0.11.1"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "glacier",
+    "lat": 63.66178,
+    "lon": -19.12246,
+    "nm": "Mýrdalsjökull, Skaftárhreppur, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Orustuhóll",
+  "stored": [
+   63.85955,
+   -17.81183
+  ],
+  "used": [
+   "7.0/7.0.7.3"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "peak",
+    "lat": 63.85955,
+    "lon": -17.81183,
+    "nm": "Orustuhóll, Skaftárhreppur, Suðurland, Ísland"
+   },
+   {
+    "d": 169.15,
+    "cat": "natural",
+    "typ": "peak",
+    "lat": 64.3052,
+    "lon": -21.13992,
+    "nm": "Orustuhóll, Bláskógabyggð, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Pétursey",
+  "stored": [
+   63.46783,
+   -19.27115
+  ],
+  "used": [
+   "5.0/5.0.5.2",
+   "6.0/6.0.5.2",
+   "7.0/7.0.5.3"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "peak",
+    "lat": 63.46783,
+    "lon": -19.27115,
+    "nm": "Pétursey, Mýrdalshreppur, Suðurland, Ísland"
+   },
+   {
+    "d": 0.72,
+    "cat": "landuse",
+    "typ": "farmyard",
+    "lat": 63.46154,
+    "lon": -19.26766,
+    "nm": "Pétursey, Mýrdalshreppur, Suðurland, 871, Ísland"
+   },
+   {
+    "d": 0.03,
+    "cat": "place",
+    "typ": "locality",
+    "lat": 63.46762,
+    "lon": -19.27157,
+    "nm": "Pétursey, Mýrdalshreppur, Suðurland, Ísland"
+   },
+   {
+    "d": 0.66,
+    "cat": "highway",
+    "typ": "residential",
+    "lat": 63.46438,
+    "lon": -19.26029,
+    "nm": "Pétursey, Mýrdalshreppur, Suðurland, Ísland"
+   },
+   {
+    "d": 0.82,
+    "cat": "highway",
+    "typ": "residential",
+    "lat": 63.46064,
+    "lon": -19.26777,
+    "nm": "Pétursey, Mýrdalshreppur, Suðurland, 871, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Rauðhólar",
+  "stored": [
+   64.09421,
+   -21.75522
+  ],
+  "used": [
+   "1.0/1.0.6.15",
+   "2.0/2.0.6.15",
+   "3.0/3.0.6.16",
+   "4.0/4.0.1.5",
+   "5.0/5.0.1.4",
+   "6.0/6.0.1.4",
+   "7.0/7.0.1.4"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "leisure",
+    "typ": "nature_reserve",
+    "lat": 64.09421,
+    "lon": -21.75522,
+    "nm": "Rauðhólar, Reykjavíkurborg, Höfuðborgarsvæðið, Ísland"
+   },
+   {
+    "d": 320.44,
+    "cat": "natural",
+    "typ": "peak",
+    "lat": 65.94901,
+    "lon": -16.52736,
+    "nm": "Rauðhólar, Norðurþing, Norðurland eystra, Ísland"
+   },
+   {
+    "d": 371.26,
+    "cat": "highway",
+    "typ": "service",
+    "lat": 65.69859,
+    "lon": -14.84675,
+    "nm": "Rauðhólar, Vopnafjarðarhreppur, Austurland, 691, Ísland"
+   },
+   {
+    "d": 281.7,
+    "cat": "highway",
+    "typ": "service",
+    "lat": 65.76958,
+    "lon": -17.26673,
+    "nm": "Rauðhólar, Þingeyjarsveit, Norðurland eystra, Ísland"
+   },
+   {
+    "d": 177.97,
+    "cat": "natural",
+    "typ": "peak",
+    "lat": 65.04003,
+    "lon": -18.74789,
+    "nm": "Rauðhólar, Skagafjörður, Norðurland vestra, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Rútshellir",
+  "stored": [
+   63.52275,
+   -19.57274
+  ],
+  "used": [
+   "7.0/7.0.3.5"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "tourism",
+    "typ": "attraction",
+    "lat": 63.52275,
+    "lon": -19.57274,
+    "nm": "Rútshellir, Suðurlandsvegur, Rangárþing eystra, Suðurland,"
+   },
+   {
+    "d": 0.08,
+    "cat": "information",
+    "typ": "board",
+    "lat": 63.52237,
+    "lon": -19.57418,
+    "nm": "Rútshellir, Suðurlandsvegur, Rangárþing eystra, Suðurland,"
+   }
+  ]
+ },
+ {
+  "name": "Saxhóll",
+  "stored": [
+   64.85173,
+   -23.92653
+  ],
+  "used": [
+   "9.0/9.0.9.4",
+   "10.0/10.0.9.1"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "volcano",
+    "lat": 64.85173,
+    "lon": -23.92653,
+    "nm": "Saxhóll, Snæfellsbær, Vesturland, Ísland"
+   },
+   {
+    "d": 0.33,
+    "cat": "highway",
+    "typ": "unclassified",
+    "lat": 64.84946,
+    "lon": -23.92209,
+    "nm": "Saxhóll, Snæfellsbær, Vesturland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Skaftafell",
+  "stored": [
+   64.01645,
+   -16.96646
+  ],
+  "used": [
+   "7.0/7.0.7.6"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "place",
+    "typ": "locality",
+    "lat": 64.01645,
+    "lon": -16.96646,
+    "nm": "Skaftafell, Sveitarfélagið Hornafjörður, Suðurland, Ísland"
+   },
+   {
+    "d": 4.3,
+    "cat": "highway",
+    "typ": "service",
+    "lat": 63.9923,
+    "lon": -16.89767,
+    "nm": "Skaftafell, Sveitarfélagið Hornafjörður, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Skeiðflatarkirkja",
+  "stored": [
+   63.43398,
+   -19.18125
+  ],
+  "used": [
+   "5.0/5.0.5.3",
+   "6.0/6.0.5.3",
+   "7.0/7.0.5.4"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "highway",
+    "typ": "service",
+    "lat": 63.43398,
+    "lon": -19.18125,
+    "nm": "Skeiðflatarkirkja, Mýrdalshreppur, Suðurland, 871, Ísland"
+   },
+   {
+    "d": 0.03,
+    "cat": "amenity",
+    "typ": "place_of_worship",
+    "lat": 63.43371,
+    "lon": -19.18107,
+    "nm": "Skeiðflatarkirkja, Mýrdalshreppur, Suðurland, 871, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Skjaldbreiður",
+  "stored": [
+   64.40924,
+   -20.75182
+  ],
+  "used": [
+   "1.0/1.0.2.1",
+   "2.0/2.0.2.1",
+   "3.0/3.0.2.1",
+   "4.0/4.0.8.1"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "volcano",
+    "lat": 64.40924,
+    "lon": -20.75182,
+    "nm": "Skjaldbreiður, Bláskógabyggð, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Skálholtskirkja",
+  "stored": [
+   64.12531,
+   -20.52414
+  ],
+  "used": [
+   "1.0/1.0.6.5",
+   "2.0/2.0.6.5",
+   "3.0/3.0.6.6",
+   "4.0/4.0.1.16"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "amenity",
+    "typ": "place_of_worship",
+    "lat": 64.12531,
+    "lon": -20.52414,
+    "nm": "Skálholtskirkja, Skálholt, Bláskógabyggð, Suðurland, 806, "
+   }
+  ]
+ },
+ {
+  "name": "Snæfellsjökull",
+  "stored": [
+   64.80834,
+   -23.77793
+  ],
+  "used": [
+   "9.0/9.0.11.3",
+   "10.0/10.0.7.2"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "glacier",
+    "lat": 64.80834,
+    "lon": -23.77794,
+    "nm": "Snæfellsjökull, Snæfellsbær, Vesturland, Ísland"
+   },
+   {
+    "d": 0.68,
+    "cat": "natural",
+    "typ": "volcano",
+    "lat": 64.80699,
+    "lon": -23.7919,
+    "nm": "Snæfellsjökull, Snæfellsbær, Vesturland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Sog",
+  "stored": [
+   64.02071,
+   -20.97823
+  ],
+  "used": [
+   "1.0/1.0.6.7",
+   "2.0/2.0.6.7",
+   "3.0/3.0.6.8",
+   "4.0/4.0.1.13"
+  ],
+  "cands": [
+   {
+    "d": 4.69,
+    "cat": "waterway",
+    "typ": "river",
+    "lat": 64.06252,
+    "lon": -20.99144,
+    "nm": "Sog, Grímsnes- og Grafningshreppur, Suðurland, Ísland"
+   },
+   {
+    "d": 90.54,
+    "cat": "boundary",
+    "typ": "administrative",
+    "lat": 64.39835,
+    "lon": -19.32011,
+    "nm": "Skeiða- og Gnúpverjahreppur, Suðurland, 804, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Stapafell",
+  "stored": [
+   64.77325,
+   -23.65783
+  ],
+  "used": [
+   "9.0/9.0.13.1",
+   "10.0/10.0.5.4"
+  ],
+  "cands": [
+   {
+    "d": 110.7,
+    "cat": "natural",
+    "typ": "peak",
+    "lat": 63.9076,
+    "lon": -22.52214,
+    "nm": "Stapafell, Grindavíkurbær, Suðurnes, Ísland"
+   },
+   {
+    "d": 0.0,
+    "cat": "natural",
+    "typ": "peak",
+    "lat": 64.77325,
+    "lon": -23.65783,
+    "nm": "Stapafell, Snæfellsbær, Vesturland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Tungufljót (Route 35 crossing)",
+  "stored": [
+   64.24374,
+   -20.32055
+  ],
+  "used": [
+   "1.0/1.0.6.2",
+   "2.0/2.0.6.2",
+   "3.0/3.0.6.3"
+  ],
+  "cands": [
+   {
+    "d": 4.58,
+    "cat": "waterway",
+    "typ": "river",
+    "lat": 64.28267,
+    "lon": -20.28941,
+    "nm": "Tungufljót, Bláskógabyggð, Suðurland, Ísland"
+   },
+   {
+    "d": 102.16,
+    "cat": "waterway",
+    "typ": "river",
+    "lat": 63.72532,
+    "lon": -18.59109,
+    "nm": "Tungufljót, Skaftárhreppur, Suðurland, Ísland"
+   },
+   {
+    "d": 0.0,
+    "cat": "waterway",
+    "typ": "river",
+    "lat": 64.24374,
+    "lon": -20.32055,
+    "nm": "Tungufljót, Bláskógabyggð, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Vestmannaeyjar",
+  "stored": [
+   63.42666,
+   -20.26988
+  ],
+  "used": [
+   "5.0/5.0.3.1",
+   "6.0/6.0.3.1",
+   "7.0/7.0.3.1"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "place",
+    "typ": "archipelago",
+    "lat": 63.42666,
+    "lon": -20.26988,
+    "nm": "Vestmannaeyjar, Vestmannaeyjabær, Suðurland, 900, Ísland"
+   },
+   {
+    "d": 1.56,
+    "cat": "boundary",
+    "typ": "administrative",
+    "lat": 63.4401,
+    "lon": -20.27859,
+    "nm": "Vestmannaeyjabær, Suðurland, 900, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Ægissíðuhellar",
+  "stored": [
+   63.83632,
+   -20.41494
+  ],
+  "used": [
+   "5.0/5.0.1.12",
+   "6.0/6.0.1.12",
+   "7.0/7.0.1.12"
+  ],
+  "cands": []
+ },
+ {
+  "name": "Ölfusá",
+  "stored": [
+   63.93847,
+   -21.00663
+  ],
+  "used": [
+   "4.0/4.0.1.12"
+  ],
+  "cands": [
+   {
+    "d": 4.56,
+    "cat": "waterway",
+    "typ": "river",
+    "lat": 63.93596,
+    "lon": -21.09988,
+    "nm": "Ölfusá, Sveitarfélagið Árborg, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Ölfusá",
+  "stored": [
+   63.94004,
+   -21.01452
+  ],
+  "used": [
+   "1.0/1.0.6.8",
+   "2.0/2.0.6.8",
+   "3.0/3.0.6.9",
+   "5.0/5.0.1.8",
+   "6.0/6.0.1.8",
+   "7.0/7.0.1.7"
+  ],
+  "cands": [
+   {
+    "d": 4.19,
+    "cat": "waterway",
+    "typ": "river",
+    "lat": 63.93596,
+    "lon": -21.09988,
+    "nm": "Ölfusá, Sveitarfélagið Árborg, Suðurland, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Ölfusárbrú, Selfoss",
+  "stored": [
+   63.9376,
+   -21.001
+  ],
+  "used": [
+   "1.0/1.0.6.9",
+   "2.0/2.0.6.9",
+   "3.0/3.0.6.10",
+   "4.0/4.0.1.11"
+  ],
+  "cands": [
+   {
+    "d": 0.23,
+    "cat": "man_made",
+    "typ": "bridge",
+    "lat": 63.93878,
+    "lon": -21.00477,
+    "nm": "Ölfusárbrú, Suðurlandsvegur, Selfoss, Sveitarfélagið Árbor"
+   },
+   {
+    "d": 0.23,
+    "cat": "highway",
+    "typ": "trunk",
+    "lat": 63.93882,
+    "lon": -21.0048,
+    "nm": "Suðurlandsvegur, Selfoss, Sveitarfélagið Árborg, Suðurland"
+   }
+  ]
+ },
+ {
+  "name": "Ölgerðin Egill Skallagrímsson",
+  "stored": [
+   64.12291,
+   -21.80198
+  ],
+  "used": [
+   "9.0/9.0.1.3",
+   "10.0/10.0.1.3"
+  ],
+  "cands": [
+   {
+    "d": 0.0,
+    "cat": "office",
+    "typ": "company",
+    "lat": 64.12291,
+    "lon": -21.80198,
+    "nm": "Ölgerðin Egill Skallagrímsson, 7, Grjótháls, Hálsar, Árbær"
+   }
+  ]
+ },
+ {
+  "name": "Ölgerðin Egill Skallagrímsson",
+  "stored": [
+   64.12302,
+   -21.80199
+  ],
+  "used": [
+   "1.0/1.0.1.3",
+   "2.0/2.0.1.3",
+   "3.0/3.0.1.3",
+   "4.0/4.0.1.3",
+   "5.0/5.0.1.2",
+   "6.0/6.0.1.2",
+   "7.0/7.0.1.2"
+  ],
+  "cands": [
+   {
+    "d": 0.01,
+    "cat": "office",
+    "typ": "company",
+    "lat": 64.12291,
+    "lon": -21.80198,
+    "nm": "Ölgerðin Egill Skallagrímsson, 7, Grjótháls, Hálsar, Árbær"
+   }
+  ]
+ },
+ {
+  "name": "Þjórsá",
+  "stored": [
+   63.91095,
+   -20.69562
+  ],
+  "used": [
+   "5.0/5.0.1.11",
+   "6.0/6.0.1.11",
+   "7.0/7.0.1.11"
+  ],
+  "cands": [
+   {
+    "d": 63.55,
+    "cat": "waterway",
+    "typ": "river",
+    "lat": 64.19408,
+    "lon": -19.56098,
+    "nm": "Þjórsá, Ísland"
+   }
+  ]
+ },
+ {
+  "name": "Þverfellshorn, Esja",
+  "stored": [
+   64.23301,
+   -21.71115
+  ],
+  "used": [
+   "1.0/1.0.1.5",
+   "2.0/2.0.1.5",
+   "3.0/3.0.1.5",
+   "4.0/4.0.9.7"
+  ],
+  "cands": []
+ }
+]
