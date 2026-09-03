@@ -959,42 +959,46 @@ function focusBlock(id){
   }
 }
 
-const STOPPHOTOS=[
-  {la:64.766,lo:-23.628,src:"images/stops/arnarstapi.webp",cr:"Ilya Grigorik / CC BY-SA 3.0"},
-  {la:64.538,lo:-21.921,src:"images/stops/borgarnes.webp",cr:"Eysteinn Guðni Guðnason / CC BY-SA 4.0"},
-  {la:64.753,lo:-23.895,src:"images/stops/djupalonssandur.webp",cr:"Bultro / CC BY-SA 3.0"},
-  {la:64.043,lo:-16.182,src:"images/stops/fellsfjara.webp",cr:"Andreas Tille / CC BY-SA 4.0"},
-  {la:64.011,lo:-16.387,src:"images/stops/fjallsarlon.webp",cr:"Jakub Hałun / CC BY 4.0"},
-  {la:64.178,lo:-20.448,src:"images/stops/fridheimar.webp",cr:"Pierre-Selim Huard / CC BY 4.0"},
-  {la:64.312,lo:-20.299,src:"images/stops/geysir.webp",cr:"Andreas Tille / CC BY-SA 3.0"},
-  {la:64.325,lo:-20.131,src:"images/stops/gullfoss.webp",cr:"Diego Delso / CC BY-SA 4.0"},
-  {la:63.751,lo:-20.2235,src:"images/stops/hvolsvollur.webp",cr:"Diego Delso / CC BY-SA 4.0"},
-  {la:64.038,lo:-16.276,src:"images/stops/jokulsarlon.webp",cr:"Jakub Hałun / CC BY 4.0"},
-  {la:63.793,lo:-18.042,src:"images/stops/kirkjubaejarklaustur.webp",cr:"Eysteinn Guðni Guðnason / CC BY-SA 4.0"},
-  {la:64.928,lo:-23.311,src:"images/stops/kirkjufell.webp",cr:"Steven Diaz stevendiazphoto / CC0"},
-  {la:64.896,lo:-23.709,src:"images/stops/olafsvik.webp",cr:"Marek Ślusarczyk (Tupungato) Photo portfolio / CC BY 3.0"},
-  {la:63.4054,lo:-19.0486,src:"images/stops/reynisfjara.webp",cr:"Bernd Thaller from Graz, Austria / CC BY 2.0"},
-  {la:63.616,lo:-19.992,src:"images/stops/seljalandsfoss.webp",cr:"Jakub Hałun / CC BY 4.0"},
-  {la:64.942,lo:-22.904,src:"images/stops/selvallafoss.webp",cr:"Codas / CC BY-SA 4.0"},
-  {la:63.531,lo:-19.519,src:"images/stops/skogafoss.webp",cr:"Jakub Hałun / CC BY 4.0"},
-  {la:63.566,lo:-19.269,src:"images/stops/solheimajokull.webp",cr:"Netha Hussain / CC BY-SA 4.0"},
-  {la:64.264,lo:-21.13,src:"images/stops/thingvellir.webp",cr:"Diego Delso / CC BY-SA 4.0"},
-  {la:63.419,lo:-19.005,src:"images/stops/vik.webp",cr:"AstroAnthony / CC BY 4.0"},
-  {la:64.804,lo:-23.081,src:"images/stops/ytri-tunga.webp",cr:"Jakub Hałun / CC BY-SA 4.0"}
-];
-function stopPhoto(pin){
-  if(!pin) return null;
-  for(const p of STOPPHOTOS){
-    const dy=(p.la-pin.lat)*111.32, dx=(p.lo-pin.lon)*111.32*Math.cos(pin.lat*Math.PI/180);
-    if(dy*dy+dx*dx < 0.36) return p;   // within ~600 m of the stop
-  }
-  return null;
+const STOPPHOTOS={
+  // photo  ->  the ONE block title it actually shows. Titles are matched with
+  // emoji and punctuation stripped, because 7.0 carries them without emoji.
+  "almannagja":            {src:"images/stops/thingvellir.webp",         cr:"Diego Delso / CC BY-SA 4.0"},
+  "geysir":                {src:"images/stops/geysir.webp",              cr:"Andreas Tille / CC BY-SA 3.0"},
+  "hvita gullfoss":        {src:"images/stops/gullfoss.webp",            cr:"Diego Delso / CC BY-SA 4.0"},
+  "reykholt fridheimar":   {src:"images/stops/fridheimar.webp",          cr:"Pierre-Selim Huard / CC BY 4.0"},
+  "solheimajokull":        {src:"images/stops/solheimajokull.webp",      cr:"Netha Hussain / CC BY-SA 4.0"},
+  "reynisfjara reynisdrangar":{src:"images/stops/reynisfjara.webp",      cr:"Bernd Thaller from Graz, Austria / CC BY 2.0"},
+  "vikurkirkja":           {src:"images/stops/vik.webp",                 cr:"AstroAnthony / CC BY 4.0"},
+  "skogafoss":             {src:"images/stops/skogafoss.webp",           cr:"Jakub Ha\u0142un / CC BY 4.0"},
+  "seljalandsfoss gljufrabui":{src:"images/stops/seljalandsfoss.webp",   cr:"Jakub Ha\u0142un / CC BY 4.0"},
+  "kirkjubaejarklaustur":  {src:"images/stops/kirkjubaejarklaustur.webp",cr:"Eysteinn Gu\u00f0ni Gu\u00f0nason / CC BY-SA 4.0"},
+  "fjallsarlon":           {src:"images/stops/fjallsarlon.webp",         cr:"Jakub Ha\u0142un / CC BY 4.0"},
+  "jokulsarlon":           {src:"images/stops/jokulsarlon.webp",         cr:"Jakub Ha\u0142un / CC BY 4.0"},
+  "fellsfjara":            {src:"images/stops/fellsfjara.webp",          cr:"Andreas Tille / CC BY-SA 4.0"},
+  "borgarnes":             {src:"images/stops/borgarnes.webp",           cr:"Eysteinn Gu\u00f0ni Gu\u00f0nason / CC BY-SA 4.0"},
+  "kirkjufell":            {src:"images/stops/kirkjufell.webp",          cr:"Steven Diaz stevendiazphoto / CC0"},
+  "olafsvik":              {src:"images/stops/olafsvik.webp",            cr:"Marek \u015alusarczyk (Tupungato) Photo portfolio / CC BY 3.0"},
+  "djupalonssandur dritvik":{src:"images/stops/djupalonssandur.webp",    cr:"Bultro / CC BY-SA 3.0"},
+  "the arnarstapi cliffs": {src:"images/stops/arnarstapi.webp",          cr:"Ilya Grigorik / CC BY-SA 3.0"},
+  "ytri-tunga":            {src:"images/stops/ytri-tunga.webp",          cr:"Jakub Ha\u0142un / CC BY-SA 4.0"},
+  "fossa":                 {src:"images/stops/selvallafoss.webp",        cr:"Codas / CC BY-SA 4.0"}
+};
+/* Strip emoji, accents and punctuation so "\ud83d\udca7 Sel\u00f0jalandsfoss & Glj\u00fafrab\u00fai"
+   and "Seljalandsfoss & Gljufrabui" land on the same key. */
+function photoKey(t){
+  return (t||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+    .replace(/[\u00fe]/g,"th").replace(/[\u00f0]/g,"d").replace(/[\u00e6]/g,"ae")
+    .toLowerCase().replace(/[^a-z0-9 -]/g," ").replace(/\s+/g," ").trim();
+}
+function stopPhoto(block){
+  if(!block) return null;
+  return STOPPHOTOS[photoKey(block.title)] || null;
 }
 function blockRow(b, kind){
   const say=(b.say||[]).map(s=>`<div><i>[${esc(s[1])}]</i> — <b>${esc(s[0])}</b>${s[2]?` <span class="gloss">(${esc(s[2])})</span>`:""}</div>`).join("");
   const heads=(b.heads||[]).map(h=>`<div class="sublab">${esc(h[0])}</div><ul>${h[1].map(x=>`<li>${md(x)}</li>`).join("")}</ul>`).join("");
   const pre=(b.pre||[]).map(p=>`<div class="sublab">${esc(p[0])}</div><div class="pre">${esc(p[1])}</div>`).join("");
-  const ph = kind==="stop" ? stopPhoto((CUE[b.id]||{}).pin) : null;
+  const ph = kind==="stop" ? stopPhoto(b) : null;
   return `<div class="stop" data-key="${b.id}">
       <div class="sc"><div class="sn">${b.emoji?b.emoji+" ":""}${esc(b.title)}</div>
       ${b.sub?`<div class="sub">${esc(b.sub)}</div>`:""}
