@@ -1,0 +1,167 @@
+[
+ {
+  "id": "9c4cbb6377",
+  "ctx": "cue, tells the guest where to look — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
+  "en": "Due east, twelve kilometres out — the massive flat-topped mountain on the horizon."
+ },
+ {
+  "id": "cd8e57f716",
+  "ctx": "Threads index — what block \"7.42 Sveinn Pálsson\" covers, under \"🌋 Geology\"",
+  "en": "the country doctor who worked out how glaciers move"
+ },
+ {
+  "id": "22b6828a79",
+  "ctx": "Threads index — what block \"7.43 Höfðabrekka\" covers, under \"🌋 Geology\"",
+  "en": "the farm that moved uphill"
+ },
+ {
+  "id": "a61e0a0a93",
+  "ctx": "Threads index — what block \"9.15 Fossá\" covers, under \"🌋 Geology\"",
+  "en": "a waterfall on porous lava, and nobody wrote its name down"
+ },
+ {
+  "id": "14c69e2241",
+  "ctx": "Threads index — what block \"9.16 Selvallavatn\" covers, under \"🌋 Geology\"",
+  "en": "a lake fed by a river with no outlet on the surface"
+ },
+ {
+  "id": "ffaee43934",
+  "ctx": "Threads index — what block \"9.17 Berserkjahraun\" covers, under \"🌋 Geology\"",
+  "en": "a 4,000-year-old lava field from four Ljósufjöll cones"
+ },
+ {
+  "id": "c3430c6a16",
+  "ctx": "Threads index — what block \"9.20 Kolgrafarfjörður\" covers, under \"🌋 Geology\"",
+  "en": "the 2004 causeway and what it did to a fjord"
+ },
+ {
+  "id": "007551e3ce",
+  "ctx": "Threads index — what block \"9.21 Kirkjufell\" covers, under \"🌋 Geology\"",
+  "en": "the ice subtracted a landscape and left the best bit standing"
+ },
+ {
+  "id": "d14212fe78",
+  "ctx": "Threads index — what block \"9.23 Búlandshöfði\" covers, under \"🌋 Geology\"",
+  "en": "marine shells sealed under lava dated to about 1.1 million years"
+ },
+ {
+  "id": "3c0f19fa8f",
+  "ctx": "Threads index — what block \"9.2 Ölgerðin Egill Skallagrímsson\" covers, under \"📜 Sagas & Literature\"",
+  "en": "the brewery named for Egils saga's poet-brawler"
+ },
+ {
+  "id": "78a285f5db",
+  "ctx": "Threads index — what block \"9.17 Berserkjahraun\" covers, under \"📜 Sagas & Literature\"",
+  "en": "the two berserkers and the road they were paid in a bath for"
+ },
+ {
+  "id": "ff13827d1d",
+  "ctx": "Threads index — what block \"9.19 Helgafell\" covers, under \"📜 Sagas & Literature\"",
+  "en": "Eyrbyggja saga chapter 11: the mountain opens and the dead are welcomed in"
+ },
+ {
+  "id": "4b47e969a5",
+  "ctx": "Threads index — what block \"9.23 Búlandshöfði\" covers, under \"📜 Sagas & Literature\"",
+  "en": "Eyrbyggja saga's Þrælaskriður, the Slave Screes"
+ },
+ {
+  "id": "199f26fb0e",
+  "ctx": "Threads index — what block \"9.24 Mávahlíð\" covers, under \"📜 Sagas & Literature\"",
+  "en": "Eyrbyggja saga's Geirríður, accused of night-riding"
+ },
+ {
+  "id": "b4ec2451f4",
+  "ctx": "Threads index — what block \"9.19 Helgafell\" covers, under \"🧌 Folklore\"",
+  "en": "the three wishes, first written down in 1955"
+ },
+ {
+  "id": "c064c1dcd2",
+  "ctx": "Threads index — what block \"9.24 Mávahlíð\" covers, under \"🧌 Folklore\"",
+  "en": "the kveldriða charge, answered in court instead of at a stake"
+ },
+ {
+  "id": "314d5d6227",
+  "ctx": "Threads index — what block \"9.16 Selvallavatn\" covers, under \"🐦 Birds & Wildlife\"",
+  "en": "brown trout at three to six pounds, and charr along the lava edge"
+ },
+ {
+  "id": "64f092c672",
+  "ctx": "Threads index — what block \"9.20 Kolgrafarfjörður\" covers, under \"🐦 Birds & Wildlife\"",
+  "en": "fifty thousand tonnes of herring, twice in six weeks"
+ },
+ {
+  "id": "011e3f7262",
+  "ctx": "Threads index — what block \"9.42 Ytri-Tunga\" covers, under \"🐦 Birds & Wildlife\"",
+  "en": "the seals that keep office hours"
+ },
+ {
+  "id": "463fac33df",
+  "ctx": "Threads index — what block \"9.18 Bjarnarhöfn\" covers, under \"🧭 Settlement & Migration\"",
+  "en": "the settler named for the direction he would not go"
+ },
+ {
+  "id": "0fdc0acf69",
+  "ctx": "Threads index — what block \"9.18 Bjarnarhöfn\" covers, under \"⛪ Religion\"",
+  "en": "the church of 1856–58, the last of its kind standing"
+ },
+ {
+  "id": "e2c8a41df3",
+  "ctx": "Threads index — what block \"9.19 Helgafell\" covers, under \"⛪ Religion\"",
+  "en": "Þórólfur's holy mountain: nobody was to look at it unwashed"
+ },
+ {
+  "id": "cbd3dd494d",
+  "ctx": "Threads index — what block \"9.2 Ölgerðin Egill Skallagrímsson\" covers, under \"💰 Trade\"",
+  "en": "the brewery named for a saga poet"
+ },
+ {
+  "id": "38f7cc593e",
+  "ctx": "Threads index — what block \"9.4 Kjalarnes\" covers, under \"⚖️ Law\"",
+  "en": "the assembly that met before the Alþingi existed"
+ },
+ {
+  "id": "4cd1bd68ec",
+  "ctx": "Threads index — what block \"9.24 Mávahlíð\" covers, under \"⚖️ Law\"",
+  "en": "a witchcraft charge that got a court date, not a fire"
+ },
+ {
+  "id": "96ac5e0693",
+  "ctx": "Threads index — what block \"9.21 Kirkjufell\" covers, under \"🎬 Film & TV\"",
+  "en": "the arrowhead mountain from *Game of Thrones*"
+ },
+ {
+  "id": "4ec85c5ece",
+  "ctx": "Threads index — topic heading, tour 9.0",
+  "en": "🍽️ Food & Drink"
+ },
+ {
+  "id": "7e4e47a034",
+  "ctx": "Threads index — what block \"9.18 Bjarnarhöfn\" covers, under \"🍽️ Food & Drink\"",
+  "en": "hákarl, and why the shark has to rot before it is safe"
+ },
+ {
+  "id": "6871a00516",
+  "ctx": "Threads index — topic heading, tour 9.0",
+  "en": "🕰️ History"
+ },
+ {
+  "id": "8ea8a11282",
+  "ctx": "Threads index — what block \"9.15 Fossá\" covers, under \"🕰️ History\"",
+  "en": "the one waterfall in a country of named water that never got a name"
+ },
+ {
+  "id": "9a08e74adf",
+  "ctx": "Threads index — what block \"9.16 Selvallavatn\" covers, under \"🕰️ History\"",
+  "en": "the whirlpool a farm boy noticed and nobody followed up"
+ },
+ {
+  "id": "6fec782434",
+  "ctx": "Threads index — topic heading, tour 9.0",
+  "en": "🔤 Language & Names"
+ },
+ {
+  "id": "59267e4bfb",
+  "ctx": "Threads index — what block \"9.15 Fossá\" covers, under \"🔤 Language & Names\"",
+  "en": "'river falls', which is Icelandic for 'we did not bother'"
+ }
+]

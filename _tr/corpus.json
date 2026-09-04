@@ -6522,17 +6522,13 @@
   ]
  },
  {
-  "id": "5e9bc5f190",
-  "en": "We're crossing it now — look down. Ölfusárbrú.",
+  "id": "c3436f7215",
+  "en": "Look left, across the river — Selfoss and the Ölfusárbrú.",
   "ctx": "cue, tells the guest where to look — tour 1.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
   "tours": [
    "1.0",
    "2.0",
-   "3.0",
-   "4.0",
-   "5.0",
-   "6.0",
-   "7.0"
+   "3.0"
   ]
  },
  {
@@ -6631,8 +6627,8 @@
   ]
  },
  {
-  "id": "a902dd21d1",
-  "en": "the bridge we're crossing right now, Iceland's first suspension bridge, 1891",
+  "id": "9e025cd1ed",
+  "en": "Iceland's first suspension bridge, 1891 — today's is the 1945 replacement",
   "ctx": "gloss for the name \"Ölfusárbrú\" — tour 1.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
   "tours": [
    "1.0",
@@ -7856,7 +7852,8 @@
    "4.0",
    "5.0",
    "6.0",
-   "7.0"
+   "7.0",
+   "9.0"
   ]
  },
  {
@@ -7978,7 +7975,8 @@
    "4.0",
    "5.0",
    "6.0",
-   "7.0"
+   "7.0",
+   "9.0"
   ]
  },
  {
@@ -8238,12 +8236,14 @@
   "ctx": "Threads index — topic heading, tour 1.0",
   "tours": [
    "1.0",
+   "10.0",
    "2.0",
    "3.0",
    "4.0",
    "5.0",
    "6.0",
-   "7.0"
+   "7.0",
+   "9.0"
   ]
  },
  {
@@ -10919,6 +10919,14 @@
   ]
  },
  {
+  "id": "f896bf95f1",
+  "en": "Behind us now, across the Ölfusá — Selfoss.",
+  "ctx": "cue, tells the guest where to look — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏗️ Selfoss",
+  "tours": [
+   "4.0"
+  ]
+ },
+ {
   "id": "8424f6c2ee",
   "en": "Then in **September 1944**, after 53 years, **two trucks crossed at the same time**. The eastern bearing cables couldn't take the concentrated weight, **snapped, and dropped the bridge into the river**. Both drivers survived. A replacement opened in **December 1945**, fifteen months later — and the war it was supposed to outlast had already ended that summer.",
   "ctx": "fact bullet — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🏗️ Selfoss",
@@ -12383,6 +12391,16 @@
   "ctx": "gloss for the name \"Höfn\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
   "tours": [
    "5.0"
+  ]
+ },
+ {
+  "id": "5e9bc5f190",
+  "en": "We're crossing it now — look down. Ölfusárbrú.",
+  "ctx": "cue, tells the guest where to look — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏗️ Selfoss",
+  "tours": [
+   "5.0",
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -14585,12 +14603,12 @@
   ]
  },
  {
-  "id": "a8e0bba5d7",
-  "en": "Look ahead at 1 o'clock — the massive flat-topped mountain on the horizon.",
+  "id": "9c4cbb6377",
+  "en": "Due east, twelve kilometres out — the massive flat-topped mountain on the horizon.",
   "ctx": "cue, tells the guest where to look — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
   "tours": [
    "5.0",
-   "7.0"
+   "6.0"
   ]
  },
  {
@@ -15506,7 +15524,8 @@
   "tours": [
    "10.0",
    "5.0",
-   "6.0"
+   "6.0",
+   "9.0"
   ]
  },
  {
@@ -15543,7 +15562,8 @@
   "tours": [
    "10.0",
    "5.0",
-   "6.0"
+   "6.0",
+   "9.0"
   ]
  },
  {
@@ -15572,7 +15592,8 @@
    "10.0",
    "5.0",
    "6.0",
-   "7.0"
+   "7.0",
+   "9.0"
   ]
  },
  {
@@ -15600,7 +15621,8 @@
   "tours": [
    "10.0",
    "5.0",
-   "6.0"
+   "6.0",
+   "9.0"
   ]
  },
  {
@@ -15619,7 +15641,8 @@
    "10.0",
    "5.0",
    "6.0",
-   "7.0"
+   "7.0",
+   "9.0"
   ]
  },
  {
@@ -15657,7 +15680,8 @@
   "tours": [
    "10.0",
    "5.0",
-   "6.0"
+   "6.0",
+   "9.0"
   ]
  },
  {
@@ -15677,7 +15701,8 @@
    "10.0",
    "5.0",
    "6.0",
-   "7.0"
+   "7.0",
+   "9.0"
   ]
  },
  {
@@ -17436,14 +17461,6 @@
   ]
  },
  {
-  "id": "9b54fbe72c",
-  "en": "Look straight ahead at 12 o'clock — twelve kilometres east: the massive flat-topped mountain on the horizon.",
-  "ctx": "cue, tells the guest where to look — tour 6.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
-  "tours": [
-   "6.0"
-  ]
- },
- {
   "id": "da099aae1a",
   "en": "Iceland's history didn't start with peace. It started with a **slave revolt, a blood feud** — and a vengeful housekeeper who lives in the ice.",
   "ctx": "the point of the block — tour 6.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
@@ -17738,7 +17755,9 @@
   "en": "the cod fisherman who became legal tender",
   "ctx": "subtitle under the block title — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Jóhannes Sveinsson Kjarval",
   "tours": [
-   "7.0"
+   "10.0",
+   "7.0",
+   "9.0"
   ]
  },
  {
@@ -19534,6 +19553,14 @@
   ]
  },
  {
+  "id": "a8e0bba5d7",
+  "en": "Look ahead at 1 o'clock — the massive flat-topped mountain on the horizon.",
+  "ctx": "cue, tells the guest where to look — tour 7.0 / Skógafoss → Kirkjubæjarklaustur / Hjörleifshöfði",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
   "id": "c234f9b40a",
   "en": "Most countries' founding stories are statues and speeches. Iceland's is a body, a fake bear — and a woman who became a volcano.",
   "ctx": "the spoken close — tour 7.0 / Skógafoss → Kirkjubæjarklaustur / Hjörleifshöfði",
@@ -21262,6 +21289,118 @@
   ]
  },
  {
+  "id": "b3e6e5d8dd",
+  "en": "🏚️ Höfðabrekka",
+  "ctx": "block title — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "cd24116de5",
+  "en": "Look right at 1 o'clock — the ridge above the sand, with the farm up on top.",
+  "ctx": "cue, tells the guest where to look — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "aa476e13a2",
+  "en": "The volcano took the church and the farm in November 1660, so they rebuilt it further up the hill and stayed.",
+  "ctx": "the point of the block — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "2705cb5944",
+  "en": "In most countries a flood like that ends the settlement. Here it just changes the postcode.",
+  "ctx": "the spoken close — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "30faae3999",
+  "en": "Weather pivot (if the slope is hidden): \"The farm is up in that murk somewhere — which is exactly the point. It was deliberately put up out of the water's way.\"",
+  "ctx": "bad-weather alternative — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "9721c2a87f",
+  "en": "The Farm That Moved Uphill",
+  "ctx": "subtitle under the block title — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "7de99b60e3",
+  "en": "A farm that got picked up and moved because **the volcano kept aiming at it** — and the flood that did it is recorded almost hour by hour.",
+  "ctx": "opening hook line — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "9a11316f02",
+  "en": "**Höfðabrekka** stood on the low ground below this slope. On **3 November 1660** Katla's flood reached it — *\"kom fram að Höfðabrekku jöklagangur með ofurmáta miklum vatnsþunga\"* — and on the **8th–9th of November** the biggest wave *\"sópaði burtu kirkju og bæjarhúsum að mestu\"*: **it took the church and most of the farm buildings.**",
+  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "5041ab7bb3",
+  "en": "They rebuilt it **up on the ridge itself** — where it still is, and where you are looking. The farm kept its name and changed its address.",
+  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "eb41397ba0",
+  "en": "That is the pattern along this whole coast, and it is worth naming: people here do not abandon a place, they **move it upslope and carry on.**",
+  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "2174fdbca0",
+  "en": "Everything between here and the sea is the reason — **Mýrdalssandur**, a black plain that exists because Katla has repeatedly emptied a glacier across it.",
+  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "022533b30b",
+  "en": "the farm rebuilt uphill after the 1660 flood",
+  "ctx": "gloss for the name \"Höfðabrekka\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "3661669acf",
+  "en": "the black flood-plain Katla built",
+  "ctx": "gloss for the name \"Mýrdalssandur\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "79bc7d983f",
+  "en": "the glacial flood that took it",
+  "ctx": "gloss for the name \"jökulhlaup\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
   "id": "3ac2667b21",
   "en": "Katla",
   "ctx": "block title — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / Katla",
@@ -21398,32 +21537,32 @@
   ]
  },
  {
-  "id": "e898e994f7",
-  "en": "Look left — the glacier tongues coming off the ice cap.",
+  "id": "7c90a6afcf",
+  "en": "Look ahead — Vík. He lived down there, at Suður-Vík, from 1809.",
   "ctx": "cue, tells the guest where to look — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🧊 Sveinn Pálsson",
   "tours": [
    "7.0"
   ]
  },
  {
-  "id": "1abe9e2b65",
-  "en": "The right answer, from the right man, about a hundred years before anyone would print it.",
+  "id": "9e91e09564",
+  "en": "The right answer about moving ice, written down in 1794 by a district doctor, and printed **105 years after he died.**",
   "ctx": "the point of the block — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🧊 Sveinn Pálsson",
   "tours": [
    "7.0"
   ]
  },
  {
-  "id": "f1b7a88534",
-  "en": "He worked out how glaciers move while doing his rounds on a horse — and the world got round to agreeing with him after he was dead.",
+  "id": "b35607a8d1",
+  "en": "He worked out how glaciers move while riding between farms in this weather — and the world got round to reading it in 1945.",
   "ctx": "the spoken close — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🧊 Sveinn Pálsson",
   "tours": [
    "7.0"
   ]
  },
  {
-  "id": "b5f2f0f708",
-  "en": "Weather pivot (if the ice is hidden): \"The tongues are in there under the cloud. He was out in exactly this, on a horse, taking notes.\"",
+  "id": "557cbd9411",
+  "en": "Weather pivot (if the ice is hidden): \"It is all in there under the cloud. He was out in exactly this, on a horse, with a notebook.\"",
   "ctx": "bad-weather alternative — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🧊 Sveinn Pálsson",
   "tours": [
    "7.0"
@@ -21438,401 +21577,81 @@
   ]
  },
  {
-  "id": "48042c00be",
-  "en": "In **1793** a country doctor stood in front of one of these tongues and worked out something nobody in Europe had: **glaciers flow.** They are not frozen still. **They move like extremely slow treacle** — and he was right about a hundred years early.",
+  "id": "6f8be45b0c",
+  "en": "In **1794** a country doctor stood in front of a glacier tongue and worked out something nobody in Europe had: **glaciers flow.** They are not frozen still. **They move like something thick and half-melted** — and he was about a century early.",
   "ctx": "opening hook line — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🧊 Sveinn Pálsson",
   "tours": [
    "7.0"
   ]
  },
  {
-  "id": "008bb6e01e",
-  "en": "**Sveinn Pálsson**, **1762–1840**, was Iceland's first university-trained doctor and covered a district you would now call impossible — on horseback, alone, in this weather.",
+  "id": "d5ce2e8941",
+  "en": "**Sveinn Pálsson**, **1762–1840.** He took a **natural-sciences degree in Copenhagen in the spring of 1791** — the first person in Denmark to sit that exam — and went home meaning to come back and finish the medical half. He never did finish it. He doctored anyway, for the rest of his life.",
   "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🧊 Sveinn Pálsson",
   "tours": [
    "7.0"
   ]
  },
  {
-  "id": "f76b1784ed",
-  "en": "He climbed and described these glaciers on his own time. His conclusion was that the ice **behaves like a viscous fluid**, deforming under its own weight and creeping downhill. That is the modern answer.",
+  "id": "ca77438da9",
+  "en": "In **1799** a new medical district was created covering **Árnessýsla, Rangárvallasýsla, Vestur-Skaftafellssýsla and the Westman Islands.** He took it up in **1800**, moved to **Suður-Vík in Mýrdalur in 1809** — the village we are driving into — and stayed there until he died in **1840.**",
   "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🧊 Sveinn Pálsson",
   "tours": [
    "7.0"
   ]
  },
  {
-  "id": "f72e308c5a",
-  "en": "Europe was not ready for it. **His glacier work was not properly published until the twentieth century**, long after he died — so the credit for glacier flow went elsewhere and he spent his life as the local doctor.",
+  "id": "4c7d6adf6e",
+  "en": "The glaciers were his own time, not the job. At **Kvíárjökull in 1794** he looked at the curved cracks running across the ice and wrote that it had moved *\"hálfbráðinn eða sem þykkt seigfljótandi efni\"* — **half-melted, like a thick viscous substance.** That is the modern answer: ice deforms under its own weight and creeps downhill.",
   "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🧊 Sveinn Pálsson",
   "tours": [
    "7.0"
   ]
  },
  {
-  "id": "3aeff763ee",
-  "en": "He also had the day job. A district physician here in the eighteenth century meant riding to a farm across a glacial river in the dark, with whatever was in the bag.",
+  "id": "0422d4f9ce",
+  "en": "Europe never got to read it. His ***Ferðabók*** and the glacier treatise ***Jöklaritið*** **stayed in manuscript and were not printed until 1945**, translated by **Jón Eyþórsson, Pálmi Hannesson and Steindór Steindórsson**; the English edition came in **2004.** By 1945 the credit for glacier flow had long gone elsewhere.",
   "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🧊 Sveinn Pálsson",
   "tours": [
    "7.0"
   ]
  },
  {
-  "id": "d867d0768c",
-  "en": "the district doctor who worked out glacier flow, 1762–1840",
+  "id": "b6323941e8",
+  "en": "And be accurate about the one guides get wrong: **he was not Iceland's first doctor.** That was his father-in-law, **Bjarni Pálsson**, the first *landlæknir*. Sveinn stood in as acting *landlæknir* himself, briefly, in **1803–04.**",
+  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🧊 Sveinn Pálsson",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "4fee236c0d",
+  "en": "the district doctor at Vík, 1762–1840",
   "ctx": "gloss for the name \"Sveinn Pálsson\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🧊 Sveinn Pálsson",
   "tours": [
    "7.0"
   ]
  },
  {
-  "id": "e355cecf14",
-  "en": "⛪ Kirkjubæjarklaustur",
-  "ctx": "block title — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
+  "id": "2573fecd26",
+  "en": "the glacier tongue he described in 1794",
+  "ctx": "gloss for the name \"Kvíárjökull\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🧊 Sveinn Pálsson",
   "tours": [
    "7.0"
   ]
  },
  {
-  "id": "c777b14b4b",
-  "en": "We passed it this morning — the village under the cliff, on your right heading east.",
-  "ctx": "cue, tells the guest where to look — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
+  "id": "f08ed6d631",
+  "en": "his glacier treatise, printed 1945",
+  "ctx": "gloss for the name \"Jöklaritið\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🧊 Sveinn Pálsson",
   "tours": [
    "7.0"
   ]
  },
  {
-  "id": "ee9ca94ceb",
-  "en": "A convent, a burning rock, a floor made by a volcano, and a priest who out-argued a lava flow.",
-  "ctx": "the point of the block — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "c29071455f",
-  "en": "The lava stopped at the parish boundary. The geologists have an explanation. The parish has a better one.",
-  "ctx": "the spoken close — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "fccc9744b6",
-  "en": "Weather pivot (if the cliff is in cloud): \"The falls come down that cliff whatever the weather — the sisters' falls. The nunnery was at the foot of them.\"",
-  "ctx": "bad-weather alternative — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "60d4f7bbcf",
-  "en": "The Nunnery on the Fire Road",
-  "ctx": "subtitle under the block title — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "86eb0ba8b8",
-  "en": "A convent stood here for **364 years** — and the two things everyone remembers about it are a rock where two sisters were supposedly burned, and a floor the volcano laid.",
-  "ctx": "opening hook line — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "a65073f8e9",
-  "en": "The Benedictine house was founded in **1186** and ran until the **Reformation in 1550.** Tradition, via *Landnámabók*, says the **Papar** — Irish monks — were here before the Norse, and that the ground was so blessed no heathen could settle on it.",
-  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "357b2446e1",
-  "en": "The place-names still gossip about the nuns: **Systrafoss**, the sisters' falls; the lake **Systravatn**; and **Systrastapi**, the rock where the darker version has two sisters burned for sin and cleared only afterwards.",
-  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "66cdb37b83",
-  "en": "**Kirkjugólf** — the 'church floor' — is a patch of **columnar basalt** worn flat until it looks tiled. Nobody laid it. **The volcano did the tiling**, and the glacier and the sea planed it level.",
-  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "9bc203a878",
-  "en": "And this is where **Rev. Jón Steingrímsson** preached the **Eldmessa, the Fire Sermon, on 20 July 1783**, with the Laki lava coming down the valley. It stopped at the edge of the parish. He kept preaching.",
-  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "022b1ba496",
-  "en": "Be straight about that last one: what the ground shows is a lava front that **stalled**, held by the terrain and its own cooling crust. Both things are true at once, and Icelanders have never felt any need to choose between them.",
-  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "3255eb2dec",
-  "en": "the village, and the convent of 1186–1550",
-  "ctx": "gloss for the name \"Kirkjubæjarklaustur\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "1a63e2a755",
-  "en": "'the sisters' falls'",
-  "ctx": "gloss for the name \"Systrafoss\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "1495f05a49",
-  "en": "the 'church floor' of columnar basalt",
-  "ctx": "gloss for the name \"Kirkjugólf\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "4da789b932",
-  "en": "the Fire Sermon of 20 July 1783",
-  "ctx": "gloss for the name \"Eldmessa\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / ⛪ Kirkjubæjarklaustur",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "27d6235049",
-  "en": "🌋 Eldgjá",
-  "ctx": "block title — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🌋 Eldgjá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "44d6dfe0de",
-  "en": "Look left, far inland — the fissure is up there, out of sight beyond the sandur.",
-  "ctx": "cue, tells the guest where to look — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🌋 Eldgjá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "20bde9d9f4",
-  "en": "The biggest lava flood anyone has ever written down, from a fissure the length of a motorway, sixty years after people arrived.",
-  "ctx": "the point of the block — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🌋 Eldgjá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "a498de3f1b",
-  "en": "Laki gets the fame because it had a diarist. Eldgjá was bigger, and the people who saw it were still working out how to farm here.",
-  "ctx": "the spoken close — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🌋 Eldgjá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "5b49bcfa7f",
-  "en": "Weather pivot (always — it is never visible): \"You will not see it from this road in any weather. It is inland, beyond everything you can see, and it is the largest thing on this list.\"",
-  "ctx": "bad-weather alternative — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🌋 Eldgjá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "ff47738eef",
-  "en": "The Biggest Lava Flood in Recorded History",
-  "ctx": "subtitle under the block title — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🌋 Eldgjá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "6f3e15f27e",
-  "en": "Everyone knows Laki. **Eldgjá was bigger** — and it is the most powerful eruption Iceland has produced in ten thousand years.",
-  "ctx": "opening hook line — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🌋 Eldgjá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "0fc401b920",
-  "en": "It began in the **spring of 939** and ran on, at least in episodes, **into the autumn of 940**, along a fissure **75 kilometres** long. The flow travelled **about 70 kilometres** to the sea.",
-  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🌋 Eldgjá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "fac745cf1c",
-  "en": "Volume: **about 20 km³** of lava, against Laki's **14.7.** Vísindavefur rates it **VEI-6** and puts it **a full magnitude and a half above Laki** on the magnitude scale — which is why it calls Eldgjá **the most powerful Icelandic eruption of the last ten thousand years.**",
-  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🌋 Eldgjá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "4b332ab715",
-  "en": "**VEI-6 is rare company.** Across ten thousand years only a handful of Icelandic eruptions reach it — the **Saksunarvatn** event, **Veiðivötn in 1477**, and this one. Eldgjá came **about 840 years before Lakagígar.**",
-  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🌋 Eldgjá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "7ed7d99500",
-  "en": "And here is the part that lands: it happened **in living memory of the settlement.** People were here. They watched it.",
-  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🌋 Eldgjá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "2e55a79121",
-  "en": "The whole belt between **Mýrdalsjökull** and **Vatnajökull** is made of these — **Lakagígar, Eldgjá, Veiðivötn, Vatnaöldur.** Four names, four gashes, one neighbourhood. Vísindavefur states plainly that **another great fissure eruption in this belt is all but certain** — Grímsvötn, Katla or Bárðarbunga — and that it could come very soon or in many centuries.",
-  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🌋 Eldgjá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "82db876644",
-  "en": "'Fire Chasm', the 75 km fissure of 939–940",
-  "ctx": "gloss for the name \"Eldgjá\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🌋 Eldgjá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "a9b63cd878",
-  "en": "the 1783 craters, the smaller of the two",
-  "ctx": "gloss for the name \"Lakagígar\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🌋 Eldgjá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "1690359f2b",
-  "en": "the 1477 fissure in the same belt",
-  "ctx": "gloss for the name \"Veiðivötn\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🌋 Eldgjá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "b3e6e5d8dd",
-  "en": "🏚️ Höfðabrekka",
-  "ctx": "block title — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "0726194782",
-  "en": "Look left — the slopes above the sand, just east of Vík.",
-  "ctx": "cue, tells the guest where to look — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "7d86fdb575",
-  "en": "The volcano took the farm in 1660, so they built it again further up and stayed.",
-  "ctx": "the point of the block — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "2705cb5944",
-  "en": "In most countries a flood like that ends the settlement. Here it just changes the postcode.",
-  "ctx": "the spoken close — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "7f42784938",
-  "en": "Weather pivot (if the slopes are hidden): \"The farm is up in that murk somewhere — which is the point, it is deliberately up out of the way of the water.\"",
-  "ctx": "bad-weather alternative — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "9721c2a87f",
-  "en": "The Farm That Moved Uphill",
-  "ctx": "subtitle under the block title — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "5b827ed30b",
-  "en": "A farm that has been picked up and moved because **the volcano kept aiming at it.**",
-  "ctx": "opening hook line — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "0103772b48",
-  "en": "**Höfðabrekka** sat out on the lower ground until **Katla's flood of November 1660** took it. The farm was rebuilt — **higher up the hill**, where it still is.",
-  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "8b0b72d819",
-  "en": "That is the pattern on this whole coast, and it is worth naming: people here do not abandon a place, they **relocate it upslope and carry on.** The farm keeps its name and changes its address.",
-  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "9bf7297397",
-  "en": "Look at the ground between here and the sea and you are looking at the reason — **Mýrdalssandur**, a black plain that exists because Katla has repeatedly emptied a glacier across it.",
-  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "254e63fd8f",
-  "en": "**Nobody died in Katla's 1918 flood**, and the Icelandic record is blunt about why: *\"sennilega olli tilviljun\"* — **probably just coincidence.** The flood came down where nobody happened to be standing.",
-  "ctx": "fact bullet — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "a087c4fb07",
-  "en": "the farm moved uphill after the 1660 flood",
-  "ctx": "gloss for the name \"Höfðabrekka\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "3661669acf",
-  "en": "the black flood-plain Katla built",
-  "ctx": "gloss for the name \"Mýrdalssandur\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🏚️ Höfðabrekka",
+  "id": "030f985875",
+  "en": "the farm in Vík he lived on from 1809",
+  "ctx": "gloss for the name \"Suður-Vík\" — tour 7.0 / Fellsfjara → Vík 2 hour drive folks / 🧊 Sveinn Pálsson",
   "tours": [
    "7.0"
   ]
@@ -21961,6 +21780,22 @@
   "id": "fadbd2fe2f",
   "en": "the glacier the river runs off",
   "ctx": "gloss for the name \"Eyjafjallajökull\" — tour 7.0 / Seljalandsfoss / Seljalandsfoss & Gljúfrabúi",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "cd8e57f716",
+  "en": "the country doctor who worked out how glaciers move",
+  "ctx": "Threads index — what block \"7.43 Sveinn Pálsson\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "22b6828a79",
+  "en": "the farm that moved uphill",
+  "ctx": "Threads index — what block \"7.41 Höfðabrekka\" covers, under \"🌋 Geology\"",
   "tours": [
    "7.0"
   ]
@@ -28082,6 +27917,925 @@
   ]
  },
  {
+  "id": "aaa98396d2",
+  "en": "the wreckage of two vanished volcanoes",
+  "ctx": "Threads index — what block \"9.3 Esja\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "4d1074cf07",
+  "en": "the glacier-carved fjord and Glymur's 198 metres",
+  "ctx": "Threads index — what block \"9.6 Hvalfjörður\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "9e3e52d051",
+  "en": "a wave-cut notch, a whale bone at 85 m, a magnetic flip in the rock",
+  "ctx": "Threads index — what block \"9.7 Akrafjall\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "d16f6d69d8",
+  "en": "the retired plate boundary that kept erupting",
+  "ctx": "Threads index — what block \"9.10 Iceland's First Rift Zone\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "95159813fd",
+  "en": "ninety kilometres of one system, móberg ridges",
+  "ctx": "Threads index — what block \"9.11 Hítardalur & Ljósufjöll\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "293e827a10",
+  "en": "the Settlement-age fire-fortress crater",
+  "ctx": "Threads index — what block \"9.12 Eldborg\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "cf4577fa5e",
+  "en": "why cooling basalt turns into hexagons",
+  "ctx": "Threads index — what block \"9.13 Gerðuberg\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "57f934470b",
+  "en": "móberg mountains poured under an ice sheet",
+  "ctx": "Threads index — what block \"9.14 Vatnaleið\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "a61e0a0a93",
+  "en": "a waterfall on porous lava, and nobody wrote its name down",
+  "ctx": "Threads index — what block \"9.15 Fossá\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "14c69e2241",
+  "en": "a lake fed by a river with no outlet on the surface",
+  "ctx": "Threads index — what block \"9.16 Selvallavatn\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "ffaee43934",
+  "en": "a 4,000-year-old lava field from four Ljósufjöll cones",
+  "ctx": "Threads index — what block \"9.17 Berserkjahraun\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "c3430c6a16",
+  "en": "the 2004 causeway and what it did to a fjord",
+  "ctx": "Threads index — what block \"9.20 Kolgrafarfjörður\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "007551e3ce",
+  "en": "the ice subtracted a landscape and left the best bit standing",
+  "ctx": "Threads index — what block \"9.21 Kirkjufell\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "d14212fe78",
+  "en": "marine shells sealed under lava dated to about 1.1 million years",
+  "ctx": "Threads index — what block \"9.23 Búlandshöfði\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "526502d853",
+  "en": "a scoria crater and the Neshraun lava",
+  "ctx": "Threads index — what block \"9.29 Saxhóll\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "037dd176d4",
+  "en": "the black pebble beach at the volcano's foot",
+  "ctx": "Threads index — what block \"9.30 Djúpalónssandur & Dritvík\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "817b725c55",
+  "en": "a 200 m lava tube and how tubes form",
+  "ctx": "Threads index — what block \"9.31 Malarrif & Vatnshellir\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "ee341096ff",
+  "en": "volcanic plugs, not sea stacks",
+  "ctx": "Threads index — what block \"9.32 Lóndrangar\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "c9f7684bdd",
+  "en": "the stratovolcano on pause, magma chamber intact",
+  "ctx": "Threads index — what block \"9.33 Snæfellsjökull\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "81bd6b2f5e",
+  "en": "basalt columns vertical and horizontal",
+  "ctx": "Threads index — what block \"9.36 The Arnarstapi Cliffs\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "36b1aef7f3",
+  "en": "a 526 m hyaloclastite pyramid",
+  "ctx": "Threads index — what block \"9.39 Stapafell & Rauðfeldsgjá\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "07504a42dc",
+  "en": "Búðahraun lava and olivine-green sand",
+  "ctx": "Threads index — what block \"9.41 Búðir\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "1a32f4f008",
+  "en": "post-glacial uplift; the sea floor that got promoted",
+  "ctx": "Threads index — what block \"9.43 Löngufjörur\" covers, under \"🌋 Geology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "424457d9ed",
+  "en": "📜 Sagas & Literature",
+  "ctx": "Threads index — topic heading, tour 9.0",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "3c0f19fa8f",
+  "en": "the brewery named for Egils saga's poet-brawler",
+  "ctx": "Threads index — what block \"9.2 Ölgerðin Egill Skallagrímsson\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "33b0ee8ec3",
+  "en": "Harðar saga's 180 outlaws on Geirshólmi",
+  "ctx": "Threads index — what block \"9.6 Hvalfjörður\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "ed1e068e86",
+  "en": "the graveyard chapters of Egils saga",
+  "ctx": "Threads index — what block \"9.9 Borgarnes\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "78a285f5db",
+  "en": "the two berserkers and the road they were paid in a bath for",
+  "ctx": "Threads index — what block \"9.17 Berserkjahraun\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "ff13827d1d",
+  "en": "Eyrbyggja saga chapter 11: the mountain opens and the dead are welcomed in",
+  "ctx": "Threads index — what block \"9.19 Helgafell\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "0fba377058",
+  "en": "Eyrbyggja saga's ghost trials",
+  "ctx": "Threads index — what block \"9.22 Fróðá\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "4b47e969a5",
+  "en": "Eyrbyggja saga's Þrælaskriður, the Slave Screes",
+  "ctx": "Threads index — what block \"9.23 Búlandshöfði\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "199f26fb0e",
+  "en": "Eyrbyggja saga's Geirríður, accused of night-riding",
+  "ctx": "Threads index — what block \"9.24 Mávahlíð\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "44fa133332",
+  "en": "the Columbus story: fiction historicized",
+  "ctx": "Threads index — what block \"9.28 Ingjaldshóll\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "40f0b77ab0",
+  "en": "Kolbeinn's verse contest, with citation",
+  "ctx": "Threads index — what block \"9.32 Lóndrangar\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "da92fe0233",
+  "en": "Jules Verne's entrance to the centre of the Earth",
+  "ctx": "Threads index — what block \"9.33 Snæfellsjökull\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "2f5d0496f9",
+  "en": "Bárðar saga's half-troll takes a cold bath",
+  "ctx": "Threads index — what block \"9.35 Bárðarlaug\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "a0b9a0b106",
+  "en": "a saga figure in 300 tonnes of stone",
+  "ctx": "Threads index — what block \"9.37 The Bárður Statue\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "84d9a129c6",
+  "en": "the two boys the map still remembers",
+  "ctx": "Threads index — what block \"9.39 Stapafell & Rauðfeldsgjá\" covers, under \"📜 Sagas & Literature\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "ae5cd14bc3",
+  "en": "🧌 Folklore",
+  "ctx": "Threads index — topic heading, tour 9.0",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "d7073f80eb",
+  "en": "Rauðhöfði, the whale with a grudge",
+  "ctx": "Threads index — what block \"9.6 Hvalfjörður\" covers, under \"🧌 Folklore\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "b4ec2451f4",
+  "en": "the three wishes, first written down in 1955",
+  "ctx": "Threads index — what block \"9.19 Helgafell\" covers, under \"🧌 Folklore\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "8874d074ce",
+  "en": "eighteen ghosts, tried at the door",
+  "ctx": "Threads index — what block \"9.22 Fróðá\" covers, under \"🧌 Folklore\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "c064c1dcd2",
+  "en": "the kveldriða charge, answered in court instead of at a stake",
+  "ctx": "Threads index — what block \"9.24 Mávahlíð\" covers, under \"🧌 Folklore\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "9e93ff63a8",
+  "en": "the barrels and the comeback line, added a century late",
+  "ctx": "Threads index — what block \"9.26 Björn the Rich\" covers, under \"🧌 Folklore\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "d48f76d652",
+  "en": "the devil loses a poetry slam",
+  "ctx": "Threads index — what block \"9.32 Lóndrangar\" covers, under \"🧌 Folklore\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "1cbb91c70b",
+  "en": "🐦 Birds & Wildlife",
+  "ctx": "Threads index — topic heading, tour 9.0",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "314d5d6227",
+  "en": "brown trout at three to six pounds, and charr along the lava edge",
+  "ctx": "Threads index — what block \"9.16 Selvallavatn\" covers, under \"🐦 Birds & Wildlife\"",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "64f092c672",
+  "en": "fifty thousand tonnes of herring, twice in six weeks",
+  "ctx": "Threads index — what block \"9.20 Kolgrafarfjörður\" covers, under \"🐦 Birds & Wildlife\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "cb17b683a5",
+  "en": "17,000 nests and an Antarctic commute",
+  "ctx": "Threads index — what block \"9.27 The Tern Capital\" covers, under \"🐦 Birds & Wildlife\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "20e7696d46",
+  "en": "10,000 kittiwake pairs, counted twice",
+  "ctx": "Threads index — what block \"9.36 The Arnarstapi Cliffs\" covers, under \"🐦 Birds & Wildlife\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "011e3f7262",
+  "en": "the seals that keep office hours",
+  "ctx": "Threads index — what block \"9.42 Ytri-Tunga\" covers, under \"🐦 Birds & Wildlife\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "b33f66eb6f",
+  "en": "one in seven of Iceland's white-tailed eagle pairs",
+  "ctx": "Threads index — what block \"9.43 Löngufjörur\" covers, under \"🐦 Birds & Wildlife\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "2cc38d7107",
+  "en": "the Irishman's church, a century early",
+  "ctx": "Threads index — what block \"9.4 Esjuberg\" covers, under \"🧭 Settlement & Migration\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "183d8dbcf3",
+  "en": "Þormóður and Ketill, the corn-growing Irish brothers",
+  "ctx": "Threads index — what block \"9.7 Akrafjall\" covers, under \"🧭 Settlement & Migration\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "62302dda94",
+  "en": "Kveldúlfur's coffin picks the family address",
+  "ctx": "Threads index — what block \"9.9 Borgarnes\" covers, under \"🧭 Settlement & Migration\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "463fac33df",
+  "en": "the settler named for the direction he would not go",
+  "ctx": "Threads index — what block \"9.18 Bjarnarhöfn\" covers, under \"🧭 Settlement & Migration\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "bb0e60bf76",
+  "en": "pole-to-pole commuters beside the car park",
+  "ctx": "Threads index — what block \"9.27 The Tern Capital\" covers, under \"🧭 Settlement & Migration\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "a2a468efd4",
+  "en": "the imported Columbus claim, via Winnipeg",
+  "ctx": "Threads index — what block \"9.28 Ingjaldshóll\" covers, under \"🧭 Settlement & Migration\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "bee6e21241",
+  "en": "the farm girl who out-sailed Columbus",
+  "ctx": "Threads index — what block \"9.34 Guðríður Þorbjarnardóttir\" covers, under \"🧭 Settlement & Migration\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "90ae4cbf3f",
+  "en": "👩 Women",
+  "ctx": "Threads index — topic heading, tour 9.0",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "4f40f2cc19",
+  "en": "Brák, the foster-mother the water is named for",
+  "ctx": "Threads index — what block \"9.9 Borgarnes\" covers, under \"👩 Women\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "2e563b0fbe",
+  "en": "Ólöf the Rich: \"gather men instead\"",
+  "ctx": "Threads index — what block \"9.26 Björn the Rich\" covers, under \"👩 Women\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "dc94aa8296",
+  "en": "more crossings than anyone of her century",
+  "ctx": "Threads index — what block \"9.34 Guðríður Þorbjarnardóttir\" covers, under \"👩 Women\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "089ddf18c4",
+  "en": "Steinunn Sveinsdóttir rebuilds the church",
+  "ctx": "Threads index — what block \"9.41 Búðir\" covers, under \"👩 Women\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "48c74f022e",
+  "en": "St Columba's church before the Conversion",
+  "ctx": "Threads index — what block \"9.4 Esjuberg\" covers, under \"⛪ Religion\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "c28e1a915e",
+  "en": "the bishop and the deadliest fire, 1148",
+  "ctx": "Threads index — what block \"9.11 Hítardalur & Ljósufjöll\" covers, under \"⛪ Religion\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "0fdc0acf69",
+  "en": "the church of 1856–58, the last of its kind standing",
+  "ctx": "Threads index — what block \"9.18 Bjarnarhöfn\" covers, under \"⛪ Religion\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "e2c8a41df3",
+  "en": "Þórólfur's holy mountain: nobody was to look at it unwashed",
+  "ctx": "Threads index — what block \"9.19 Helgafell\" covers, under \"⛪ Religion\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "2ff265a193",
+  "en": "a priest, a door-court, and the year 1000",
+  "ctx": "Threads index — what block \"9.22 Fróðá\" covers, under \"⛪ Religion\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "bc7bba3caa",
+  "en": "the 1903 concrete church on the hill",
+  "ctx": "Threads index — what block \"9.28 Ingjaldshóll\" covers, under \"⛪ Religion\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "6c6c6997cc",
+  "en": "the black church, consecrated 1851",
+  "ctx": "Threads index — what block \"9.41 Búðir\" covers, under \"⛪ Religion\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "cbd3dd494d",
+  "en": "the brewery named for a saga poet",
+  "ctx": "Threads index — what block \"9.2 Ölgerðin Egill Skallagrímsson\" covers, under \"💰 Trade\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "9f0e0bedf8",
+  "en": "the harbour swap of 1687",
+  "ctx": "Threads index — what block \"9.25 Ólafsvík\" covers, under \"💰 Trade\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "5590aa26a2",
+  "en": "killed in a trade war over cod, 1467",
+  "ctx": "Threads index — what block \"9.26 Björn the Rich\" covers, under \"💰 Trade\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "1937423d09",
+  "en": "600 men and a lifting-stone job interview",
+  "ctx": "Threads index — what block \"9.30 Djúpalónssandur & Dritvík\" covers, under \"💰 Trade\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "5cd888bd01",
+  "en": "the Danish monopoly harbour at Arnarstapi",
+  "ctx": "Threads index — what block \"9.38 The Governor's House\" covers, under \"💰 Trade\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "ff6c5a5475",
+  "en": "5,770 metres, 165 metres down",
+  "ctx": "Threads index — what block \"9.5 Hvalfjörður Tunnel\" covers, under \"⚡ Technology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "c328c4487e",
+  "en": "520 metres that retired four kilometres",
+  "ctx": "Threads index — what block \"9.8 Borgarfjarðarbrú\" covers, under \"⚡ Technology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "5a3f92ddb5",
+  "en": "the 2001 road over the spine",
+  "ctx": "Threads index — what block \"9.14 Vatnaleið\" covers, under \"⚡ Technology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "71fefe0551",
+  "en": "the 1946 lighthouse over the lava tube",
+  "ctx": "Threads index — what block \"9.31 Malarrif & Vatnshellir\" covers, under \"⚡ Technology\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "10abb57a87",
+  "en": "⚖️ Law",
+  "ctx": "Threads index — topic heading, tour 9.0",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "38f7cc593e",
+  "en": "the assembly that met before the Alþingi existed",
+  "ctx": "Threads index — what block \"9.4 Kjalarnes\" covers, under \"⚖️ Law\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "f9d250d092",
+  "en": "the ghosts we took to court",
+  "ctx": "Threads index — what block \"9.22 Fróðá\" covers, under \"⚖️ Law\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "4cd1bd68ec",
+  "en": "a witchcraft charge that got a court date, not a fire",
+  "ctx": "Threads index — what block \"9.24 Mávahlíð\" covers, under \"⚖️ Law\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "20f6247ebb",
+  "en": "Iceland's one serial killer, executed 1596",
+  "ctx": "Threads index — what block \"9.40 Axlar-Björn\" covers, under \"⚖️ Law\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "edf716e9e8",
+  "en": "🎖️ Warfare",
+  "ctx": "Threads index — topic heading, tour 9.0",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "42f81dd86e",
+  "en": "the Allied anchorage; Geirshólmi as gunnery target",
+  "ctx": "Threads index — what block \"9.6 Hvalfjörður\" covers, under \"🎖️ Warfare\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "0b7f82af7f",
+  "en": "an early round of the cod wars",
+  "ctx": "Threads index — what block \"9.26 Björn the Rich\" covers, under \"🎖️ Warfare\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "64ddd3dd88",
+  "en": "sea level is not a fixed opinion",
+  "ctx": "Threads index — what block \"9.7 Akrafjall\" covers, under \"❄️ Climate\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "da707604f2",
+  "en": "the glacier scheduled to leave by about 2050",
+  "ctx": "Threads index — what block \"9.33 Snæfellsjökull\" covers, under \"❄️ Climate\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "0896d0fd8d",
+  "en": "kittiwakes down 55% in one year",
+  "ctx": "Threads index — what block \"9.36 The Arnarstapi Cliffs\" covers, under \"❄️ Climate\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "946294811a",
+  "en": "the prize-winning stairway to heaven and hell",
+  "ctx": "Threads index — what block \"9.29 Saxhóll\" covers, under \"🏛️ Architecture\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "d67cd52a29",
+  "en": "Ragnar Kjartansson's 300 tonnes, 1985",
+  "ctx": "Threads index — what block \"9.37 The Bárður Statue\" covers, under \"🎨 Art\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "542e0f5bdb",
+  "en": "🛡️ Statehood",
+  "ctx": "Threads index — topic heading, tour 9.0",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "be130bd421",
+  "en": "the seat of the West Amt, flat-packed in 1849",
+  "ctx": "Threads index — what block \"9.38 The Governor's House\" covers, under \"🛡️ Statehood\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "96ac5e0693",
+  "en": "the arrowhead mountain from *Game of Thrones*",
+  "ctx": "Threads index — what block \"9.21 Kirkjufell\" covers, under \"🎬 Film & TV\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "4ec85c5ece",
+  "en": "🍽️ Food & Drink",
+  "ctx": "Threads index — topic heading, tour 9.0",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "7e4e47a034",
+  "en": "hákarl, and why the shark has to rot before it is safe",
+  "ctx": "Threads index — what block \"9.18 Bjarnarhöfn\" covers, under \"🍽️ Food & Drink\"",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "6871a00516",
+  "en": "🕰️ History",
+  "ctx": "Threads index — topic heading, tour 9.0",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "8ea8a11282",
+  "en": "the one waterfall in a country of named water that never got a name",
+  "ctx": "Threads index — what block \"9.15 Fossá\" covers, under \"🕰️ History\"",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "9a08e74adf",
+  "en": "the whirlpool a farm boy noticed and nobody followed up",
+  "ctx": "Threads index — what block \"9.16 Selvallavatn\" covers, under \"🕰️ History\"",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "6fec782434",
+  "en": "🔤 Language & Names",
+  "ctx": "Threads index — topic heading, tour 9.0",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "59267e4bfb",
+  "en": "'river falls', which is Icelandic for 'we did not bother'",
+  "ctx": "Threads index — what block \"9.15 Fossá\" covers, under \"🔤 Language & Names\"",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
   "id": "6f954aac17",
   "en": "Borgarnes → Ytri-Tunga",
   "ctx": "section title",
@@ -28349,590 +29103,6 @@
   "id": "8d71396617",
   "en": "Which is the theme now: decompression. You've had the glacier, the cliffs, the black beach and the lone striped mountain. This hour is yours — the entertainment bar was set high enough this morning.",
   "ctx": "fact bullet — tour 10.0 / Kirkjufell → Reykjavík / ⛰️ Vatnaleið",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "aaa98396d2",
-  "en": "the wreckage of two vanished volcanoes",
-  "ctx": "Threads index — what block \"10.3 Esja\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "4d1074cf07",
-  "en": "the glacier-carved fjord and Glymur's 198 metres",
-  "ctx": "Threads index — what block \"10.6 Hvalfjörður\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "9e3e52d051",
-  "en": "a wave-cut notch, a whale bone at 85 m, a magnetic flip in the rock",
-  "ctx": "Threads index — what block \"10.7 Akrafjall\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "d16f6d69d8",
-  "en": "the retired plate boundary that kept erupting",
-  "ctx": "Threads index — what block \"10.10 Iceland's First Rift Zone\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "95159813fd",
-  "en": "ninety kilometres of one system, móberg ridges",
-  "ctx": "Threads index — what block \"10.11 Hítardalur & Ljósufjöll\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "293e827a10",
-  "en": "the Settlement-age fire-fortress crater",
-  "ctx": "Threads index — what block \"10.12 Eldborg\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "cf4577fa5e",
-  "en": "why cooling basalt turns into hexagons",
-  "ctx": "Threads index — what block \"10.13 Gerðuberg\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "1a32f4f008",
-  "en": "post-glacial uplift; the sea floor that got promoted",
-  "ctx": "Threads index — what block \"10.14 Löngufjörur\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "07504a42dc",
-  "en": "Búðahraun lava and olivine-green sand",
-  "ctx": "Threads index — what block \"10.16 Búðir\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "36b1aef7f3",
-  "en": "a 526 m hyaloclastite pyramid",
-  "ctx": "Threads index — what block \"10.19 Stapafell & Rauðfeldsgjá\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "81bd6b2f5e",
-  "en": "basalt columns vertical and horizontal",
-  "ctx": "Threads index — what block \"10.20 The Arnarstapi Cliffs\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "c9f7684bdd",
-  "en": "the stratovolcano on pause, magma chamber intact",
-  "ctx": "Threads index — what block \"10.24 Snæfellsjökull\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "ee341096ff",
-  "en": "volcanic plugs, not sea stacks",
-  "ctx": "Threads index — what block \"10.25 Lóndrangar\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "817b725c55",
-  "en": "a 200 m lava tube and how tubes form",
-  "ctx": "Threads index — what block \"10.26 Malarrif & Vatnshellir\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "037dd176d4",
-  "en": "the black pebble beach at the volcano's foot",
-  "ctx": "Threads index — what block \"10.27 Djúpalónssandur & Dritvík\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "526502d853",
-  "en": "a scoria crater and the Neshraun lava",
-  "ctx": "Threads index — what block \"10.28 Saxhóll\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "57f934470b",
-  "en": "móberg mountains poured under an ice sheet",
-  "ctx": "Threads index — what block \"10.36 Vatnaleið\" covers, under \"🌋 Geology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "424457d9ed",
-  "en": "📜 Sagas & Literature",
-  "ctx": "Threads index — topic heading, tour 10.0",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "33b0ee8ec3",
-  "en": "Harðar saga's 180 outlaws on Geirshólmi",
-  "ctx": "Threads index — what block \"10.6 Hvalfjörður\" covers, under \"📜 Sagas & Literature\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "ed1e068e86",
-  "en": "the graveyard chapters of Egils saga",
-  "ctx": "Threads index — what block \"10.9 Borgarnes\" covers, under \"📜 Sagas & Literature\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "2f5d0496f9",
-  "en": "Bárðar saga's half-troll takes a cold bath",
-  "ctx": "Threads index — what block \"10.18 Bárðarlaug\" covers, under \"📜 Sagas & Literature\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "84d9a129c6",
-  "en": "the two boys the map still remembers",
-  "ctx": "Threads index — what block \"10.19 Stapafell & Rauðfeldsgjá\" covers, under \"📜 Sagas & Literature\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "a0b9a0b106",
-  "en": "a saga figure in 300 tonnes of stone",
-  "ctx": "Threads index — what block \"10.21 The Bárður Statue\" covers, under \"📜 Sagas & Literature\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "da92fe0233",
-  "en": "Jules Verne's entrance to the centre of the Earth",
-  "ctx": "Threads index — what block \"10.24 Snæfellsjökull\" covers, under \"📜 Sagas & Literature\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "40f0b77ab0",
-  "en": "Kolbeinn's verse contest, with citation",
-  "ctx": "Threads index — what block \"10.25 Lóndrangar\" covers, under \"📜 Sagas & Literature\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "44fa133332",
-  "en": "the Columbus story: fiction historicized",
-  "ctx": "Threads index — what block \"10.29 Ingjaldshóll\" covers, under \"📜 Sagas & Literature\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "0fba377058",
-  "en": "Eyrbyggja saga's ghost trials",
-  "ctx": "Threads index — what block \"10.33 Fróðá\" covers, under \"📜 Sagas & Literature\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "ae5cd14bc3",
-  "en": "🧌 Folklore",
-  "ctx": "Threads index — topic heading, tour 10.0",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "d7073f80eb",
-  "en": "Rauðhöfði, the whale with a grudge",
-  "ctx": "Threads index — what block \"10.6 Hvalfjörður\" covers, under \"🧌 Folklore\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "d48f76d652",
-  "en": "the devil loses a poetry slam",
-  "ctx": "Threads index — what block \"10.25 Lóndrangar\" covers, under \"🧌 Folklore\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "9e93ff63a8",
-  "en": "the barrels and the comeback line, added a century late",
-  "ctx": "Threads index — what block \"10.30 Björn the Rich\" covers, under \"🧌 Folklore\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "8874d074ce",
-  "en": "eighteen ghosts, tried at the door",
-  "ctx": "Threads index — what block \"10.33 Fróðá\" covers, under \"🧌 Folklore\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "1cbb91c70b",
-  "en": "🐦 Birds & Wildlife",
-  "ctx": "Threads index — topic heading, tour 10.0",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "b33f66eb6f",
-  "en": "one in seven of Iceland's white-tailed eagle pairs",
-  "ctx": "Threads index — what block \"10.14 Löngufjörur\" covers, under \"🐦 Birds & Wildlife\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "20e7696d46",
-  "en": "10,000 kittiwake pairs, counted twice",
-  "ctx": "Threads index — what block \"10.20 The Arnarstapi Cliffs\" covers, under \"🐦 Birds & Wildlife\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "cb17b683a5",
-  "en": "17,000 nests and an Antarctic commute",
-  "ctx": "Threads index — what block \"10.31 The Tern Capital\" covers, under \"🐦 Birds & Wildlife\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "2cc38d7107",
-  "en": "the Irishman's church, a century early",
-  "ctx": "Threads index — what block \"10.4 Esjuberg\" covers, under \"🧭 Settlement & Migration\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "183d8dbcf3",
-  "en": "Þormóður and Ketill, the corn-growing Irish brothers",
-  "ctx": "Threads index — what block \"10.7 Akrafjall\" covers, under \"🧭 Settlement & Migration\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "62302dda94",
-  "en": "Kveldúlfur's coffin picks the family address",
-  "ctx": "Threads index — what block \"10.9 Borgarnes\" covers, under \"🧭 Settlement & Migration\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "bee6e21241",
-  "en": "the farm girl who out-sailed Columbus",
-  "ctx": "Threads index — what block \"10.23 Guðríður Þorbjarnardóttir\" covers, under \"🧭 Settlement & Migration\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "a2a468efd4",
-  "en": "the imported Columbus claim, via Winnipeg",
-  "ctx": "Threads index — what block \"10.29 Ingjaldshóll\" covers, under \"🧭 Settlement & Migration\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "bb0e60bf76",
-  "en": "pole-to-pole commuters beside the car park",
-  "ctx": "Threads index — what block \"10.31 The Tern Capital\" covers, under \"🧭 Settlement & Migration\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "90ae4cbf3f",
-  "en": "👩 Women",
-  "ctx": "Threads index — topic heading, tour 10.0",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "4f40f2cc19",
-  "en": "Brák, the foster-mother the water is named for",
-  "ctx": "Threads index — what block \"10.9 Borgarnes\" covers, under \"👩 Women\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "089ddf18c4",
-  "en": "Steinunn Sveinsdóttir rebuilds the church",
-  "ctx": "Threads index — what block \"10.16 Búðir\" covers, under \"👩 Women\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "dc94aa8296",
-  "en": "more crossings than anyone of her century",
-  "ctx": "Threads index — what block \"10.23 Guðríður Þorbjarnardóttir\" covers, under \"👩 Women\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "2e563b0fbe",
-  "en": "Ólöf the Rich: \"gather men instead\"",
-  "ctx": "Threads index — what block \"10.30 Björn the Rich\" covers, under \"👩 Women\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "48c74f022e",
-  "en": "St Columba's church before the Conversion",
-  "ctx": "Threads index — what block \"10.4 Esjuberg\" covers, under \"⛪ Religion\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "c28e1a915e",
-  "en": "the bishop and the deadliest fire, 1148",
-  "ctx": "Threads index — what block \"10.11 Hítardalur & Ljósufjöll\" covers, under \"⛪ Religion\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "6c6c6997cc",
-  "en": "the black church, consecrated 1851",
-  "ctx": "Threads index — what block \"10.16 Búðir\" covers, under \"⛪ Religion\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "bc7bba3caa",
-  "en": "the 1903 concrete church on the hill",
-  "ctx": "Threads index — what block \"10.29 Ingjaldshóll\" covers, under \"⛪ Religion\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "2ff265a193",
-  "en": "a priest, a door-court, and the year 1000",
-  "ctx": "Threads index — what block \"10.33 Fróðá\" covers, under \"⛪ Religion\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "5cd888bd01",
-  "en": "the Danish monopoly harbour at Arnarstapi",
-  "ctx": "Threads index — what block \"10.22 The Governor's House\" covers, under \"💰 Trade\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "1937423d09",
-  "en": "600 men and a lifting-stone job interview",
-  "ctx": "Threads index — what block \"10.27 Djúpalónssandur & Dritvík\" covers, under \"💰 Trade\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "5590aa26a2",
-  "en": "killed in a trade war over cod, 1467",
-  "ctx": "Threads index — what block \"10.30 Björn the Rich\" covers, under \"💰 Trade\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "9f0e0bedf8",
-  "en": "the harbour swap of 1687",
-  "ctx": "Threads index — what block \"10.32 Ólafsvík\" covers, under \"💰 Trade\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "ff6c5a5475",
-  "en": "5,770 metres, 165 metres down",
-  "ctx": "Threads index — what block \"10.5 Hvalfjörður Tunnel\" covers, under \"⚡ Technology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "c328c4487e",
-  "en": "520 metres that retired four kilometres",
-  "ctx": "Threads index — what block \"10.8 Borgarfjarðarbrú\" covers, under \"⚡ Technology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "71fefe0551",
-  "en": "the 1946 lighthouse over the lava tube",
-  "ctx": "Threads index — what block \"10.26 Malarrif & Vatnshellir\" covers, under \"⚡ Technology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "5a3f92ddb5",
-  "en": "the 2001 road over the spine",
-  "ctx": "Threads index — what block \"10.36 Vatnaleið\" covers, under \"⚡ Technology\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "10abb57a87",
-  "en": "⚖️ Law",
-  "ctx": "Threads index — topic heading, tour 10.0",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "20f6247ebb",
-  "en": "Iceland's one serial killer, executed 1596",
-  "ctx": "Threads index — what block \"10.17 Axlar-Björn\" covers, under \"⚖️ Law\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "f9d250d092",
-  "en": "the ghosts we took to court",
-  "ctx": "Threads index — what block \"10.33 Fróðá\" covers, under \"⚖️ Law\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "edf716e9e8",
-  "en": "🎖️ Warfare",
-  "ctx": "Threads index — topic heading, tour 10.0",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "42f81dd86e",
-  "en": "the Allied anchorage; Geirshólmi as gunnery target",
-  "ctx": "Threads index — what block \"10.6 Hvalfjörður\" covers, under \"🎖️ Warfare\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "0b7f82af7f",
-  "en": "an early round of the cod wars",
-  "ctx": "Threads index — what block \"10.30 Björn the Rich\" covers, under \"🎖️ Warfare\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "64ddd3dd88",
-  "en": "sea level is not a fixed opinion",
-  "ctx": "Threads index — what block \"10.7 Akrafjall\" covers, under \"❄️ Climate\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "0896d0fd8d",
-  "en": "kittiwakes down 55% in one year",
-  "ctx": "Threads index — what block \"10.20 The Arnarstapi Cliffs\" covers, under \"❄️ Climate\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "da707604f2",
-  "en": "the glacier scheduled to leave by about 2050",
-  "ctx": "Threads index — what block \"10.24 Snæfellsjökull\" covers, under \"❄️ Climate\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "946294811a",
-  "en": "the prize-winning stairway to heaven and hell",
-  "ctx": "Threads index — what block \"10.28 Saxhóll\" covers, under \"🏛️ Architecture\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "d67cd52a29",
-  "en": "Ragnar Kjartansson's 300 tonnes, 1985",
-  "ctx": "Threads index — what block \"10.21 The Bárður Statue\" covers, under \"🎨 Art\"",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "542e0f5bdb",
-  "en": "🛡️ Statehood",
-  "ctx": "Threads index — topic heading, tour 10.0",
-  "tours": [
-   "10.0"
-  ]
- },
- {
-  "id": "be130bd421",
-  "en": "the seat of the West Amt, flat-packed in 1849",
-  "ctx": "Threads index — what block \"10.22 The Governor's House\" covers, under \"🛡️ Statehood\"",
   "tours": [
    "10.0"
   ]

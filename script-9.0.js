@@ -347,7 +347,7 @@ sections: [
   ["bleikja / urriði","BLAYK-ya] / [UR-ri-thi","Arctic charr and brown trout"],
   ["Náttúruminjaskrá","NOW-too-ru-MIN-ya-skrow","Iceland's nature conservation register"],
  ],
- tags:["#geology","#nature","#history"],
+ tags:["#geology","#wildlife","#history"],
 },
 ]},
 {title:"Selvallafoss → Kirkjufell", kind:"drive", blocks:[
@@ -368,7 +368,7 @@ sections: [
   ["Víga-Styrr","VEE-ga-stir","the master who ordered the bath"],
   ["Ljósufjöll","LYOH-su-fyutl","the volcanic system the craters belong to"],
  ],
- tags:["#geology","#saga"],
+ tags:["#geology","#literature"],
 },
 {id:"9.0.5.2", title:"🦈 Bjarnarhöfn", sub:"The Man Who Refused to Settle", cue:"Look right — the farm cluster and the little white church under Bjarnarhafnarfjall.",
  hook:"The man who took that land was called **Björn the Easterner** — and he got the name because he **refused to settle in the west.**",
@@ -432,7 +432,7 @@ sections: [
   ["Vegagerðin","VEG-a-ger-thin","the Icelandic Road Administration, who commissioned the 2015 study"],
   ["Breiðafjörður","BRAY-tha-FYUR-thur","the great bay the herring came back into"],
  ],
- tags:["#nature","#geology"],
+ tags:["#wildlife","#geology"],
 },
 ]},
 {title:"Kirkjufell", kind:"stop", blocks:[
@@ -946,6 +946,179 @@ sections: [
   "**18 · Takk fyrir mig** — *Ingó Veðurguð*. The last word of the day, and it was written for a party that never happened. This was **Þjóðhátíðarlagið 2020** — the official song of Vestmannaeyjar’s Þjóðhátíð, the biggest weekend in the Icelandic calendar. Ingó wrote it (his brother took a hand in part of it), and then the 2020 festival was called off under gathering restrictions. A thank-you sung to a crowd that never got to turn up. It gets its crowd on this bus instead.  [Homecoming]",
  ],
 },
+]},
+],
+threadsIntro: "Topics that weave through the route. If a guest is interested in one, these are the script blocks to dig into.",
+threads: [
+{title:"🌋 Geology", tag:"#geology", subs:[
+ {label:"", items:[
+  ["9.3 Esja","9.0.1.4","the wreckage of two vanished volcanoes"],
+  ["9.6 Hvalfjörður","9.0.1.7","the glacier-carved fjord and Glymur's 198 metres"],
+  ["9.7 Akrafjall","9.0.1.8","a wave-cut notch, a whale bone at 85 m, a magnetic flip in the rock"],
+  ["9.10 Iceland's First Rift Zone","9.0.3.1","the retired plate boundary that kept erupting"],
+  ["9.11 Hítardalur & Ljósufjöll","9.0.3.2","ninety kilometres of one system, móberg ridges"],
+  ["9.12 Eldborg","9.0.3.3","the Settlement-age fire-fortress crater"],
+  ["9.13 Gerðuberg","9.0.3.4","why cooling basalt turns into hexagons"],
+  ["9.14 Vatnaleið","9.0.3.5","móberg mountains poured under an ice sheet"],
+  ["9.15 Fossá","9.0.4.1","a waterfall on porous lava, and nobody wrote its name down"],
+  ["9.16 Selvallavatn","9.0.4.2","a lake fed by a river with no outlet on the surface"],
+  ["9.17 Berserkjahraun","9.0.5.1","a 4,000-year-old lava field from four Ljósufjöll cones"],
+  ["9.20 Kolgrafarfjörður","9.0.5.4","the 2004 causeway and what it did to a fjord"],
+  ["9.21 Kirkjufell","9.0.6.1","the ice subtracted a landscape and left the best bit standing"],
+  ["9.23 Búlandshöfði","9.0.7.2","marine shells sealed under lava dated to about 1.1 million years"],
+  ["9.29 Saxhóll","9.0.9.4","a scoria crater and the Neshraun lava"],
+  ["9.30 Djúpalónssandur & Dritvík","9.0.10.1","the black pebble beach at the volcano's foot"],
+  ["9.31 Malarrif & Vatnshellir","9.0.11.1","a 200 m lava tube and how tubes form"],
+  ["9.32 Lóndrangar","9.0.11.2","volcanic plugs, not sea stacks"],
+  ["9.33 Snæfellsjökull","9.0.11.3","the stratovolcano on pause, magma chamber intact"],
+  ["9.36 The Arnarstapi Cliffs","9.0.12.1","basalt columns vertical and horizontal"],
+  ["9.39 Stapafell & Rauðfeldsgjá","9.0.13.1","a 526 m hyaloclastite pyramid"],
+  ["9.41 Búðir","9.0.13.3","Búðahraun lava and olivine-green sand"],
+  ["9.43 Löngufjörur","9.0.15.2","post-glacial uplift; the sea floor that got promoted"],
+ ]},
+]},
+{title:"📜 Sagas & Literature", tag:"#literature", subs:[
+ {label:"", items:[
+  ["9.2 Ölgerðin Egill Skallagrímsson","9.0.1.3","the brewery named for Egils saga's poet-brawler"],
+  ["9.6 Hvalfjörður","9.0.1.7","Harðar saga's 180 outlaws on Geirshólmi"],
+  ["9.9 Borgarnes","9.0.2.1","the graveyard chapters of Egils saga"],
+  ["9.17 Berserkjahraun","9.0.5.1","the two berserkers and the road they were paid in a bath for"],
+  ["9.19 Helgafell","9.0.5.3","Eyrbyggja saga chapter 11: the mountain opens and the dead are welcomed in"],
+  ["9.22 Fróðá","9.0.7.1","Eyrbyggja saga's ghost trials"],
+  ["9.23 Búlandshöfði","9.0.7.2","Eyrbyggja saga's Þrælaskriður, the Slave Screes"],
+  ["9.24 Mávahlíð","9.0.7.3","Eyrbyggja saga's Geirríður, accused of night-riding"],
+  ["9.28 Ingjaldshóll","9.0.9.3","the Columbus story: fiction historicized"],
+  ["9.32 Lóndrangar","9.0.11.2","Kolbeinn's verse contest, with citation"],
+  ["9.33 Snæfellsjökull","9.0.11.3","Jules Verne's entrance to the centre of the Earth"],
+  ["9.35 Bárðarlaug","9.0.11.5","Bárðar saga's half-troll takes a cold bath"],
+  ["9.37 The Bárður Statue","9.0.12.2","a saga figure in 300 tonnes of stone"],
+  ["9.39 Stapafell & Rauðfeldsgjá","9.0.13.1","the two boys the map still remembers"],
+ ]},
+]},
+{title:"🧌 Folklore", tag:"#folklore", subs:[
+ {label:"", items:[
+  ["9.6 Hvalfjörður","9.0.1.7","Rauðhöfði, the whale with a grudge"],
+  ["9.19 Helgafell","9.0.5.3","the three wishes, first written down in 1955"],
+  ["9.22 Fróðá","9.0.7.1","eighteen ghosts, tried at the door"],
+  ["9.24 Mávahlíð","9.0.7.3","the kveldriða charge, answered in court instead of at a stake"],
+  ["9.26 Björn the Rich","9.0.9.1","the barrels and the comeback line, added a century late"],
+  ["9.32 Lóndrangar","9.0.11.2","the devil loses a poetry slam"],
+ ]},
+]},
+{title:"🐦 Birds & Wildlife", tag:"#wildlife", subs:[
+ {label:"", items:[
+  ["9.16 Selvallavatn","9.0.4.2","brown trout at three to six pounds, and charr along the lava edge"],
+  ["9.20 Kolgrafarfjörður","9.0.5.4","fifty thousand tonnes of herring, twice in six weeks"],
+  ["9.27 The Tern Capital","9.0.9.2","17,000 nests and an Antarctic commute"],
+  ["9.36 The Arnarstapi Cliffs","9.0.12.1","10,000 kittiwake pairs, counted twice"],
+  ["9.42 Ytri-Tunga","9.0.14.1","the seals that keep office hours"],
+  ["9.43 Löngufjörur","9.0.15.2","one in seven of Iceland's white-tailed eagle pairs"],
+ ]},
+]},
+{title:"🧭 Settlement & Migration", tag:"#migration", subs:[
+ {label:"", items:[
+  ["9.4 Esjuberg","9.0.1.5","the Irishman's church, a century early"],
+  ["9.7 Akrafjall","9.0.1.8","Þormóður and Ketill, the corn-growing Irish brothers"],
+  ["9.9 Borgarnes","9.0.2.1","Kveldúlfur's coffin picks the family address"],
+  ["9.18 Bjarnarhöfn","9.0.5.2","the settler named for the direction he would not go"],
+  ["9.27 The Tern Capital","9.0.9.2","pole-to-pole commuters beside the car park"],
+  ["9.28 Ingjaldshóll","9.0.9.3","the imported Columbus claim, via Winnipeg"],
+  ["9.34 Guðríður Þorbjarnardóttir","9.0.11.4","the farm girl who out-sailed Columbus"],
+ ]},
+]},
+{title:"👩 Women", tag:"#women", subs:[
+ {label:"", items:[
+  ["9.9 Borgarnes","9.0.2.1","Brák, the foster-mother the water is named for"],
+  ["9.26 Björn the Rich","9.0.9.1","Ólöf the Rich: \"gather men instead\""],
+  ["9.34 Guðríður Þorbjarnardóttir","9.0.11.4","more crossings than anyone of her century"],
+  ["9.41 Búðir","9.0.13.3","Steinunn Sveinsdóttir rebuilds the church"],
+ ]},
+]},
+{title:"⛪ Religion", tag:"#religion", subs:[
+ {label:"", items:[
+  ["9.4 Esjuberg","9.0.1.5","St Columba's church before the Conversion"],
+  ["9.11 Hítardalur & Ljósufjöll","9.0.3.2","the bishop and the deadliest fire, 1148"],
+  ["9.18 Bjarnarhöfn","9.0.5.2","the church of 1856–58, the last of its kind standing"],
+  ["9.19 Helgafell","9.0.5.3","Þórólfur's holy mountain: nobody was to look at it unwashed"],
+  ["9.22 Fróðá","9.0.7.1","a priest, a door-court, and the year 1000"],
+  ["9.28 Ingjaldshóll","9.0.9.3","the 1903 concrete church on the hill"],
+  ["9.41 Búðir","9.0.13.3","the black church, consecrated 1851"],
+ ]},
+]},
+{title:"💰 Trade", tag:"#trade", subs:[
+ {label:"", items:[
+  ["9.2 Ölgerðin Egill Skallagrímsson","9.0.1.3","the brewery named for a saga poet"],
+  ["9.25 Ólafsvík","9.0.8.1","the harbour swap of 1687"],
+  ["9.26 Björn the Rich","9.0.9.1","killed in a trade war over cod, 1467"],
+  ["9.30 Djúpalónssandur & Dritvík","9.0.10.1","600 men and a lifting-stone job interview"],
+  ["9.38 The Governor's House","9.0.12.3","the Danish monopoly harbour at Arnarstapi"],
+ ]},
+]},
+{title:"⚡ Technology", tag:"#technology", subs:[
+ {label:"", items:[
+  ["9.5 Hvalfjörður Tunnel","9.0.1.6","5,770 metres, 165 metres down"],
+  ["9.8 Borgarfjarðarbrú","9.0.1.9","520 metres that retired four kilometres"],
+  ["9.14 Vatnaleið","9.0.3.5","the 2001 road over the spine"],
+  ["9.31 Malarrif & Vatnshellir","9.0.11.1","the 1946 lighthouse over the lava tube"],
+ ]},
+]},
+{title:"⚖️ Law", tag:"#law", subs:[
+ {label:"", items:[
+  ["9.4 Kjalarnes","9.0.1.5","the assembly that met before the Alþingi existed"],
+  ["9.22 Fróðá","9.0.7.1","the ghosts we took to court"],
+  ["9.24 Mávahlíð","9.0.7.3","a witchcraft charge that got a court date, not a fire"],
+  ["9.40 Axlar-Björn","9.0.13.2","Iceland's one serial killer, executed 1596"],
+ ]},
+]},
+{title:"🎖️ Warfare", tag:"#warfare", subs:[
+ {label:"", items:[
+  ["9.6 Hvalfjörður","9.0.1.7","the Allied anchorage; Geirshólmi as gunnery target"],
+  ["9.26 Björn the Rich","9.0.9.1","an early round of the cod wars"],
+ ]},
+]},
+{title:"❄️ Climate", tag:"#climate", subs:[
+ {label:"", items:[
+  ["9.7 Akrafjall","9.0.1.8","sea level is not a fixed opinion"],
+  ["9.33 Snæfellsjökull","9.0.11.3","the glacier scheduled to leave by about 2050"],
+  ["9.36 The Arnarstapi Cliffs","9.0.12.1","kittiwakes down 55% in one year"],
+ ]},
+]},
+{title:"🏛️ Architecture", tag:"#architecture", subs:[
+ {label:"", items:[
+  ["9.29 Saxhóll","9.0.9.4","the prize-winning stairway to heaven and hell"],
+ ]},
+]},
+{title:"🎨 Art", tag:"#art", subs:[
+ {label:"", items:[
+  ["9.1 Jóhannes Sveinsson Kjarval","9.0.1.2","the cod fisherman who became legal tender"],
+  ["9.37 The Bárður Statue","9.0.12.2","Ragnar Kjartansson's 300 tonnes, 1985"],
+ ]},
+]},
+{title:"🛡️ Statehood", tag:"#statehood", subs:[
+ {label:"", items:[
+  ["9.38 The Governor's House","9.0.12.3","the seat of the West Amt, flat-packed in 1849"],
+ ]},
+]},
+{title:"🎬 Film & TV", tag:"#film", subs:[
+ {label:"", items:[
+  ["9.21 Kirkjufell","9.0.6.1","the arrowhead mountain from *Game of Thrones*"],
+ ]},
+]},
+{title:"🍽️ Food & Drink", tag:"#food", subs:[
+ {label:"", items:[
+  ["9.18 Bjarnarhöfn","9.0.5.2","hákarl, and why the shark has to rot before it is safe"],
+ ]},
+]},
+{title:"🕰️ History", tag:"#history", subs:[
+ {label:"", items:[
+  ["9.15 Fossá","9.0.4.1","the one waterfall in a country of named water that never got a name"],
+  ["9.16 Selvallavatn","9.0.4.2","the whirlpool a farm boy noticed and nobody followed up"],
+ ]},
+]},
+{title:"🔤 Language & Names", tag:"#language", subs:[
+ {label:"", items:[
+  ["9.15 Fossá","9.0.4.1","'river falls', which is Icelandic for 'we did not bother'"],
+ ]},
 ]},
 ],
 };

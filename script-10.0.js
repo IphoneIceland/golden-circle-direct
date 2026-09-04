@@ -784,7 +784,7 @@ sections: [
   ["Víga-Styrr","VEE-ga-stir","the master who ordered the bath"],
   ["Ljósufjöll","LYOH-su-fyutl","the volcanic system the craters belong to"],
  ],
- tags:["#geology","#saga"],
+ tags:["#geology","#literature"],
 },
 {id:"10.0.13.3", title:"🌊 Kolgrafarfjörður", sub:"Fifty Thousand Tonnes of Herring", cue:"We're crossing it now — the causeway and bridge across Kolgrafarfjörður.",
  hook:"On the water we are crossing right now, **about fifty thousand tonnes of herring suffocated** across two winters. **There is no comparable event recorded anywhere on Earth.**",
@@ -804,7 +804,7 @@ sections: [
   ["Vegagerðin","VEG-a-ger-thin","the Icelandic Road Administration, who commissioned the 2015 study"],
   ["Breiðafjörður","BRAY-tha-FYUR-thur","the great bay the herring came back into"],
  ],
- tags:["#nature","#geology"],
+ tags:["#wildlife","#geology"],
 },
 {id:"10.0.13.4", title:"🦈 Bjarnarhöfn", sub:"The Man Who Refused to Settle", cue:"Look right — the farm cluster and the little white church under Bjarnarhafnarfjall.",
  hook:"The man who took that land was called **Björn the Easterner** — and he got the name because he **refused to settle in the west.**",
@@ -917,13 +917,22 @@ threads: [
   ["10.26 Malarrif & Vatnshellir","10.0.7.4","a 200 m lava tube and how tubes form"],
   ["10.27 Djúpalónssandur & Dritvík","10.0.8.1","the black pebble beach at the volcano's foot"],
   ["10.28 Saxhóll","10.0.9.1","a scoria crater and the Neshraun lava"],
-  ["10.36 Vatnaleið","10.0.12.1","móberg mountains poured under an ice sheet"],
+  ["10.36 Kirkjufell","10.0.12.1","the ice subtracted a landscape and left the best bit standing"],
+  ["10.34 Búlandshöfði","10.0.11.2","marine shells sealed under lava dated to about 1.1 million years"],
+  ["10.37 Berserkjahraun","10.0.13.2","a 4,000-year-old lava field from four Ljósufjöll cones"],
+  ["10.38 Kolgrafarfjörður","10.0.13.3","the 2004 causeway and what it did to a fjord"],
+  ["10.41 Vatnaleið","10.0.13.6","móberg mountains poured under an ice sheet"],
  ]},
 ]},
 {title:"📜 Sagas & Literature", tag:"#literature", subs:[
  {label:"", items:[
   ["10.6 Hvalfjörður","10.0.1.7","Harðar saga's 180 outlaws on Geirshólmi"],
+  ["10.2 Ölgerðin Egill Skallagrímsson","10.0.1.3","the brewery named for Egils saga's poet-brawler"],
   ["10.9 Borgarnes","10.0.2.1","the graveyard chapters of Egils saga"],
+  ["10.34 Búlandshöfði","10.0.11.2","Eyrbyggja saga's Þrælaskriður, the Slave Screes"],
+  ["10.35 Mávahlíð","10.0.11.3","Eyrbyggja saga's Geirríður, accused of night-riding"],
+  ["10.37 Berserkjahraun","10.0.13.2","the two berserkers and the road they were paid in a bath for"],
+  ["10.40 Helgafell","10.0.13.5","Eyrbyggja saga chapter 11: the mountain opens and the dead are welcomed in"],
   ["10.18 Bárðarlaug","10.0.5.3","Bárðar saga's half-troll takes a cold bath"],
   ["10.19 Stapafell & Rauðfeldsgjá","10.0.5.4","the two boys the map still remembers"],
   ["10.21 The Bárður Statue","10.0.6.2","a saga figure in 300 tonnes of stone"],
@@ -939,6 +948,8 @@ threads: [
   ["10.25 Lóndrangar","10.0.7.3","the devil loses a poetry slam"],
   ["10.30 Björn the Rich","10.0.9.3","the barrels and the comeback line, added a century late"],
   ["10.33 Fróðá","10.0.11.1","eighteen ghosts, tried at the door"],
+  ["10.35 Mávahlíð","10.0.11.3","the kveldriða charge, answered in court instead of at a stake"],
+  ["10.40 Helgafell","10.0.13.5","the three wishes, first written down in 1955"],
  ]},
 ]},
 {title:"🐦 Birds & Wildlife", tag:"#wildlife", subs:[
@@ -946,6 +957,8 @@ threads: [
   ["10.14 Löngufjörur","10.0.3.5","one in seven of Iceland's white-tailed eagle pairs"],
   ["10.20 The Arnarstapi Cliffs","10.0.6.1","10,000 kittiwake pairs, counted twice"],
   ["10.31 The Tern Capital","10.0.9.4","17,000 nests and an Antarctic commute"],
+  ["10.15 Ytri-Tunga","10.0.4.1","the seals that keep office hours"],
+  ["10.38 Kolgrafarfjörður","10.0.13.3","fifty thousand tonnes of herring, twice in six weeks"],
  ]},
 ]},
 {title:"🧭 Settlement & Migration", tag:"#migration", subs:[
@@ -956,6 +969,7 @@ threads: [
   ["10.23 Guðríður Þorbjarnardóttir","10.0.7.1","the farm girl who out-sailed Columbus"],
   ["10.29 Ingjaldshóll","10.0.9.2","the imported Columbus claim, via Winnipeg"],
   ["10.31 The Tern Capital","10.0.9.4","pole-to-pole commuters beside the car park"],
+  ["10.39 Bjarnarhöfn","10.0.13.4","the settler named for the direction he would not go"],
  ]},
 ]},
 {title:"👩 Women", tag:"#women", subs:[
@@ -973,6 +987,8 @@ threads: [
   ["10.16 Búðir","10.0.5.1","the black church, consecrated 1851"],
   ["10.29 Ingjaldshóll","10.0.9.2","the 1903 concrete church on the hill"],
   ["10.33 Fróðá","10.0.11.1","a priest, a door-court, and the year 1000"],
+  ["10.39 Bjarnarhöfn","10.0.13.4","the church of 1856–58, the last of its kind standing"],
+  ["10.40 Helgafell","10.0.13.5","Þórólfur's holy mountain: nobody was to look at it unwashed"],
  ]},
 ]},
 {title:"💰 Trade", tag:"#trade", subs:[
@@ -981,6 +997,7 @@ threads: [
   ["10.27 Djúpalónssandur & Dritvík","10.0.8.1","600 men and a lifting-stone job interview"],
   ["10.30 Björn the Rich","10.0.9.3","killed in a trade war over cod, 1467"],
   ["10.32 Ólafsvík","10.0.10.1","the harbour swap of 1687"],
+  ["10.2 Ölgerðin Egill Skallagrímsson","10.0.1.3","the brewery named for a saga poet"],
  ]},
 ]},
 {title:"⚡ Technology", tag:"#technology", subs:[
@@ -988,12 +1005,14 @@ threads: [
   ["10.5 Hvalfjörður Tunnel","10.0.1.6","5,770 metres, 165 metres down"],
   ["10.8 Borgarfjarðarbrú","10.0.1.9","520 metres that retired four kilometres"],
   ["10.26 Malarrif & Vatnshellir","10.0.7.4","the 1946 lighthouse over the lava tube"],
-  ["10.36 Vatnaleið","10.0.12.1","the 2001 road over the spine"],
+  ["10.41 Vatnaleið","10.0.13.6","the 2001 road over the spine"],
  ]},
 ]},
 {title:"⚖️ Law", tag:"#law", subs:[
  {label:"", items:[
   ["10.17 Axlar-Björn","10.0.5.2","Iceland's one serial killer, executed 1596"],
+  ["10.4 Kjalarnes","10.0.1.5","the assembly that met before the Alþingi existed"],
+  ["10.35 Mávahlíð","10.0.11.3","a witchcraft charge that got a court date, not a fire"],
   ["10.33 Fróðá","10.0.11.1","the ghosts we took to court"],
  ]},
 ]},
@@ -1018,11 +1037,22 @@ threads: [
 {title:"🎨 Art", tag:"#art", subs:[
  {label:"", items:[
   ["10.21 The Bárður Statue","10.0.6.2","Ragnar Kjartansson's 300 tonnes, 1985"],
+  ["10.1 Jóhannes Sveinsson Kjarval","10.0.1.2","the cod fisherman who became legal tender"],
  ]},
 ]},
 {title:"🛡️ Statehood", tag:"#statehood", subs:[
  {label:"", items:[
   ["10.22 The Governor's House","10.0.6.3","the seat of the West Amt, flat-packed in 1849"],
+ ]},
+]},
+{title:"🎬 Film & TV", tag:"#film", subs:[
+ {label:"", items:[
+  ["10.36 Kirkjufell","10.0.12.1","the arrowhead mountain from *Game of Thrones*"],
+ ]},
+]},
+{title:"🍽️ Food & Drink", tag:"#food", subs:[
+ {label:"", items:[
+  ["10.39 Bjarnarhöfn","10.0.13.4","hákarl, and why the shark has to rot before it is safe"],
  ]},
 ]},
 ],
