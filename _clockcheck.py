@@ -51,7 +51,7 @@ def claim(cue):
     c = cue.lower()
     m = re.search(r'(\d{1,2})(?:\s*[–-]\s*\d{1,2})?\s*o.clock', c)
     clock = int(m.group(1)) if m else None
-    if 'look back' in c or 'behind' in c or 'shoulder' in c: side='back'
+    if 'look back' in c or 'behind' in c or re.search(r'over (your|the) \w+ shoulder', c): side='back'
     elif 'ahead' in c or '12 o' in c: side='ahead'
     elif 'left' in c: side='left'
     elif 'right' in c: side='right'

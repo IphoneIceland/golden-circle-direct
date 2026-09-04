@@ -29,7 +29,7 @@ def brg(a,b,c,d):
     return (math.degrees(math.atan2(y,x))+360)%360
 def claim(cue):
     c=(cue or "").lower()
-    if 'look back' in c or 'behind' in c or 'shoulder' in c: return 'back'
+    if 'look back' in c or 'behind' in c or re.search(r'over (your|the) \w+ shoulder', c): return 'back'
     if 'ahead' in c or '12 o' in c: return 'ahead'
     if 'left' in c: return 'left'
     if 'right' in c: return 'right'
