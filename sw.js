@@ -4,7 +4,7 @@
      TILES  stale-while-revalidate, capped. Map imagery you have already looked at.
    Load the page once on hotel wifi, pan the loop, and the whole day survives
    the dead patch past Laugarvatn. */
-const VERSION = "gcd181-v1";
+const VERSION = "gcd182-v1";
 const SHELL   = VERSION + "-shell";
 const TILES   = VERSION + "-tiles";
 const TILE_CAP = 900;
@@ -19,6 +19,7 @@ const SHELL_FILES = [
   "./route-1.0.js", "./script-1.0.js", "./cues-1.0.js", "./route-2.0.js", "./script-2.0.js", "./cues-2.0.js", "./route-3.0.js", "./script-3.0.js", "./cues-3.0.js",
   "./route-4.0.js", "./script-4.0.js", "./cues-4.0.js", "./route-5.0.js", "./script-5.0.js", "./cues-5.0.js", "./route-6.0.js", "./script-6.0.js", "./cues-6.0.js",
   "./route-7.0.js", "./script-7.0.js", "./cues-7.0.js", "./route-9.0.js", "./script-9.0.js", "./cues-9.0.js", "./route-10.0.js", "./script-10.0.js", "./cues-10.0.js",
+  "./route-14.0.js", "./script-14.0.js", "./cues-14.0.js",
 
 
   "./images/stops/arnarstapi.webp", "./images/stops/borgarnes.webp", "./images/stops/djupalonssandur.webp", "./images/stops/fellsfjara.webp", "./images/stops/fjallsarlon.webp", "./images/stops/fridheimar.webp", "./images/stops/geysir.webp", "./images/stops/gullfoss.webp", "./images/stops/hvolsvollur.webp", "./images/stops/jokulsarlon.webp", "./images/stops/kirkjubaejarklaustur.webp", "./images/stops/kirkjufell.webp", "./images/stops/olafsvik.webp", "./images/stops/reynisfjara.webp", "./images/stops/seljalandsfoss.webp", "./images/stops/selvallafoss.webp", "./images/stops/skogafoss.webp", "./images/stops/solheimajokull.webp", "./images/stops/thingvellir.webp", "./images/stops/vik.webp", "./images/stops/ytri-tunga.webp",

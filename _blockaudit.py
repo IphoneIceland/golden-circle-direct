@@ -7,9 +7,17 @@ Three questions per block, answered from data rather than memory:
   SIGHTLINE is there one, does it point where the cue says, is it a credible
             distance to see?
 """
-import json, re, io, math, unicodedata, sys
+import os, json, re, io, math, unicodedata, sys
 
-TOURS = ["1.0","2.0","3.0","4.0","5.0","6.0","7.0","9.0","10.0"]
+# The audited set is derived from tours.js ready:true — never hand-kept.
+# (Hand-kept lists rot: 14.0 was built and shipped unaudited because it was
+#  missing from three of these scripts. 4 Sep 2026.)
+def _ready_tours():
+    import re as _re
+    t = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "tours.js"),
+             encoding="utf-8").read()
+    return _re.findall(r'\{id:"([^"]+)"[^}]*?ready:\s*true', t)
+TOURS = _ready_tours()
 
 def cues(t):
     x=t[t.index('['):t.rindex(']')+1]

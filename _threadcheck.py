@@ -5,10 +5,22 @@ renumber can silently repoint an entry at the wrong stop."""
 import re, io, os, sys, unicodedata
 
 SRC = os.path.expanduser("~/Documents/RitchWiki/Tour Scripts")
-DOCS = ["1.0 Golden Circle Direct", "2.0 Golden Circle Snowmobiling",
-        "3.0 Golden Circle Lagoons", "4.0 Golden Circle Friðheimar",
-        "5.0 South Coast", "6.0 South Coast Combo", "7.0 Glacial Lagoon",
-        "9.0 Snæfellsnes North", "10.0 Snæfellsnes South"]
+# Document names are found on disk from the tours.js ready:true ids, so a new
+# tour can never be silently skipped (14.0 was, on 4 Sep 2026).
+def _docs():
+    ids = re.findall(r'\{id:"([^"]+)"[^}]*?ready:\s*true',
+                     io.open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                          "tours.js"), encoding="utf-8").read())
+    out = []
+    for i in ids:
+        hit = [f[:-3] for f in os.listdir(SRC)
+               if f.endswith(".md") and f.startswith(i + " ")]
+        if len(hit) != 1:
+            raise SystemExit("%s: expected one export, found %s" % (i, hit))
+        out.append(hit[0])
+    return out
+
+DOCS = _docs()
 
 def norm(s):
     s = re.sub(r'[\*_`]', '', s)

@@ -32,6 +32,10 @@ PLACES = {
   "VATN":"Vatnshellir, Iceland", "OLAF":"Ólafsvík, Iceland",
   "KIRF":"Kirkjufellsfoss, Grundarfjörður, Iceland", "SELV":"Selvallafoss, Iceland",
   "STYK":"Stykkishólmur, Iceland", "BERS":"Berserkjahraun, Iceland",
+  # 14.0 Reykjanes South Loop
+  "LAEK":"Lækjargata, Reykjavík, Iceland", "SELT":"Seltún, Iceland",
+  "FAGR":"Fagradalsfjall, Iceland", "GRIN":"Grindavík, Iceland",
+  "GUNN":"Gunnuhver, Iceland", "RVIT":"Reykjanesviti, Iceland",
 }
 NICE = {"BSI":"BSÍ Bus Terminal","HVOL":"Hvolsvöllur","SOLH":"Sólheimajökull",
         "REYN":"Reynisfjara","VIK":"Vík í Mýrdal","SKOG":"Skógafoss","SELJ":"Seljalandsfoss",
@@ -41,7 +45,9 @@ NICE = {"BSI":"BSÍ Bus Terminal","HVOL":"Hvolsvöllur","SOLH":"Sólheimajökull
         "FELL":"Fellsfjara",
         "BORG":"Borgarnes","YTRI":"Ytri-Tunga","BUDI":"Búðir","ARNA":"Arnarstapi",
         "HELN":"Hellnar","DJUP":"Djúpalónssandur","VATN":"Vatnshellir","OLAF":"Ólafsvík",
-        "KIRF":"Kirkjufell","STYK":"Stykkishólmur","BERS":"Berserkjahraun","SELV":"Selvallafoss"}
+        "KIRF":"Kirkjufell","STYK":"Stykkishólmur","BERS":"Berserkjahraun","SELV":"Selvallafoss",
+        "LAEK":"Lækjargata","SELT":"Seltún","FAGR":"Fagradalsfjall","GRIN":"Grindavík",
+        "GUNN":"Gunnuhver","RVIT":"Reykjanesviti"}
 
 # Order matters: this is a substring match, first hit wins. Reykjavík sits above
 # Vík so a heading that ends "→ Reykjavík" can never be read as the Vík stop,
@@ -58,6 +64,8 @@ MATCH = [("Reykjavík","BSI"),("BSÍ","BSI"),
          ("Hellnar","HELN"),("Djúpalónssandur","DJUP"),("Vatnshellir","VATN"),
          ("Ólafsvík","OLAF"),("Selvallafoss","SELV"),("Kirkjufell","KIRF"),("Grundarfjörður","KIRF"),
          ("Stykkishólmur","STYK"),("Berserkjahraun","BERS"),
+         ("Reykjanesviti","RVIT"),("Lækjargata","LAEK"),("Seltún","SELT"),
+         ("Fagradalsfjall","FAGR"),("Grindavík","GRIN"),("Gunnuhver","GUNN"),
          ("Vík","VIK")]
 
 # Anything in here is pinned by hand and never geocoded.
@@ -76,6 +84,9 @@ FIXED = {
   "FRID": (64.17833, -20.44761),   # = cue 1.23 pin, Friðheimar
   "SELF": (63.936809, -21.003532), # Selfoss town, Árborg (OSM). NEVER geocode "Selfoss" —
                                    # Nominatim also answers with the waterfall up by Dettifoss.
+  "FAGR": (63.866604, -22.315616), # Fagradalsfjall P1 car park on Suðurstrandarvegur (OSM node,
+                                   # name "Parking P1", operator Parka). Geocoding "Fagradalsfjall"
+                                   # returns the 63.8894 summit — 2 km off-road from where a coach stops.
 }
 
 # Iceland's bounding box. A geocoder that hands back a Fjallsárlón in Norway
@@ -102,13 +113,18 @@ def keyfor(t):
         if w in t: return k
     return None
 
+# Not every tour starts at BSÍ. 14.0 is picked up on Lækjargata.
+START = {"14.0":"LAEK"}
+HOME  = START.get(tag, "BSI")
+
 # stop order, straight out of the document's section headings
-seq=["BSI"]
+seq=[HOME]
 for sec in S["sections"]:
     dest = sec["title"].split("→")[-1] if "→" in sec["title"] else sec["title"]
     k=keyfor(dest)
+    if k=="BSI" and HOME!="BSI": k=HOME
     if k and k!=seq[-1]: seq.append(k)
-if seq[-1]!="BSI": seq.append("BSI")
+if seq[-1]!=HOME: seq.append(HOME)
 VIA = {"1.0":[("GULL","SELF")], "2.0":[("GULL","SELF")], "3.0":[("GULL","SELF")]}
 for after, ins in VIA.get(tag, []):
     if after in seq and ins not in seq:

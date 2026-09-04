@@ -6,7 +6,7 @@ were added, so an arrow that read "on your left" in August can read 4 o'clock
 now. This compares the computed clock bearing (target vs direction of travel)
 against what the block's cue line actually says, and flags every disagreement.
 """
-import json, re, io, math, sys
+import os, json, re, io, math, sys
 
 def cues(t):
     s = t[t.index('['):t.rindex(']')+1]
@@ -69,7 +69,17 @@ def side_of(d):
     return 'left'
 
 bad = 0; checked = 0
-for tid in ["1.0","2.0","3.0","4.0","5.0","6.0","7.0","9.0","10.0"]:
+
+# The audited set is derived from tours.js ready:true — never hand-kept.
+# (Hand-kept lists rot: 14.0 was built and shipped unaudited because it was
+#  missing from three of these scripts. 4 Sep 2026.)
+def _ready_tours():
+    import re as _re
+    t = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "tours.js"),
+             encoding="utf-8").read()
+    return _re.findall(r'\{id:"([^"]+)"[^}]*?ready:\s*true', t)
+
+for tid in _ready_tours():
     C = cues(io.open(f"cues-{tid}.js",encoding="utf-8").read())
     R = route(io.open(f"route-{tid}.js",encoding="utf-8").read())
     B = blocks(io.open(f"script-{tid}.js",encoding="utf-8").read())

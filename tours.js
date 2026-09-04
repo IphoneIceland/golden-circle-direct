@@ -23,5 +23,7 @@ window.__TOURS__ = [
    sub:"BSÍ → Skógafoss → Kirkjubæjarklaustur → Jökulsárlón → Vík → Reykjavík", km:765, min:782, blocks:43},
   {id:"9.0", group:"Snæfellsnes", ready:true, name:"Snæfellsnes North", sub:"BSÍ → Selvallafoss → Kirkjufell → Djúpalónssandur → Arnarstapi → Ytri-Tunga → BSÍ", km:450, min:451, blocks:41},
   {id:"10.0", group:"Snæfellsnes", ready:true , name:"Snæfellsnes South",
-   sub:"BSÍ → Ytri-Tunga → Arnarstapi → Djúpalónssandur → Kirkjufell → BSÍ", km:450, min:451, blocks:39}
+   sub:"BSÍ → Ytri-Tunga → Arnarstapi → Djúpalónssandur → Kirkjufell → BSÍ", km:450, min:451, blocks:39},
+  {id:"14.0", group:"Reykjanes", ready:true , name:"Reykjanes South Loop",
+   sub:"Lækjargata → Seltún → Fagradalsfjall → Grindavík → Gunnuhver → Reykjanesviti → Reykjavík", km:156, min:162, blocks:26}
 ];
