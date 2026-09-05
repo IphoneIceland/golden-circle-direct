@@ -3,23 +3,7 @@ window.__SCRIPT__ = {
 title: "Reykjanes South Loop",
 sections: [
 {title:"Lækjargata → Seltún", kind:"drive", blocks:[
-{id:"14.0.1.1", title:"🌍 Reykjanes UNESCO Global Geopark", cue:"Look ahead — the whole peninsula opening up in front of us.",
- hook:"We're driving onto the only stretch of mid-ocean ridge on Earth that pokes above the sea. Most geologists only ever see one on a diagram. You're about to spend a day standing on it.",
- point:"A **constructive plate boundary** and a **mantle hotspot** overlap nowhere else on Earth. Iceland exists because both happen in the same spot.",
- mic:"Today's route is basically a guided tour of a crack in the planet. Mind the step.",
- weather:"Weather pivot (if it's socked in): \"You will not see much of the peninsula this morning, and that is fine — everything I am about to show you is at your feet rather than on the horizon.\"",
- bullets:[
-  "The whole peninsula is a **UNESCO Global Geopark** (**2015**) — one of only a handful of places where a **mid-ocean ridge climbs above sea level.** Normally the North American/Eurasian plate boundary sits **2 km down** on the seafloor. Here you can walk on it, and later today you will.",
-  "The park protects ~**825 km²** of lava, geothermal fields and rift. **Four to six linked volcanic systems** run through it — Reykjanes, Svartsengi, Fagradalsfjall, Krýsuvík, Brennisteinsfjöll, Hengill — out of ~30 Iceland-wide. We will be inside four of them before lunch.",
-  "Iceland is a **double engine**: a spreading **plate boundary** sitting on a stationary **mantle hotspot.** The oldest rock anywhere in Iceland is only **fifteen or sixteen million years** old — and out here on Reykjanes it's a tiny fraction of that. The hotspot beneath has been burning for at least **60 million.**",
- ],
- say:[
-  ["Reykjanes","RAYK-ya-ness","the peninsula itself, reykja = smoky and nes = headland, a UNESCO Global Geopark since 2015"],
-  ["Fagradalsfjall","FAG-ra-dals-FYATL","one of the volcanic systems running through the geopark, and our late-morning stop"],
- ],
- tags:["#geology"],
-},
-{id:"14.0.1.2", title:"🏛️ Reykjavík", sub:"The Brook, The Hill And The Forty-Five Years Of Silence", cue:"Look back — the green hill with the statue on it, just behind where we picked you up.",
+{id:"14.0.1.1", title:"🏛️ Reykjavík", sub:"The Brook, The Hill And The Forty-Five Years Of Silence", cue:"Look back — the green hill with the statue on it, just behind where we picked you up.",
  hook:"The street you just got on the bus in is called **Lækjargata — Brook Street.** There is no brook. It is still there, running under the tarmac, and in January it is the reason the ducks in the city pond have anywhere to swim.",
  point:"A buried brook that still keeps the birds warm, a parliament that stopped for forty-five years, and a church that took forty-one to build in a country that had none of the money.",
  mic:"Reykjavík will tell you it has the world's oldest parliament. What it actually has is the world's oldest parliament with a very long lunch break.",
@@ -39,6 +23,22 @@ sections: [
   ["Hallgrímskirkja","HATL-greems-KIRK-ya","consecrated 26 October 1986, forty-one years after work began"],
  ],
  tags:["#history","#folklore","#migration","#technology"],
+},
+{id:"14.0.1.2", title:"🌍 Reykjanes UNESCO Global Geopark", cue:"Look ahead — the whole peninsula opening up in front of us.",
+ hook:"We're driving onto the only stretch of mid-ocean ridge on Earth that pokes above the sea. Most geologists only ever see one on a diagram. You're about to spend a day standing on it.",
+ point:"A **constructive plate boundary** and a **mantle hotspot** overlap nowhere else on Earth. Iceland exists because both happen in the same spot.",
+ mic:"Today's route is basically a guided tour of a crack in the planet. Mind the step.",
+ weather:"Weather pivot (if it's socked in): \"You will not see much of the peninsula this morning, and that is fine — everything I am about to show you is at your feet rather than on the horizon.\"",
+ bullets:[
+  "The whole peninsula is a **UNESCO Global Geopark** (**2015**) — one of only a handful of places where a **mid-ocean ridge climbs above sea level.** Normally the North American/Eurasian plate boundary sits **2 km down** on the seafloor. Here you can walk on it, and later today you will.",
+  "The park protects ~**825 km²** of lava, geothermal fields and rift. **Four to six linked volcanic systems** run through it — Reykjanes, Svartsengi, Fagradalsfjall, Krýsuvík, Brennisteinsfjöll, Hengill — out of ~30 Iceland-wide. We will be inside four of them before lunch.",
+  "Iceland is a **double engine**: a spreading **plate boundary** sitting on a stationary **mantle hotspot.** The oldest rock anywhere in Iceland is only **fifteen or sixteen million years** old — and out here on Reykjanes it's a tiny fraction of that. The hotspot beneath has been burning for at least **60 million.**",
+ ],
+ say:[
+  ["Reykjanes","RAYK-ya-ness","the peninsula itself, reykja = smoky and nes = headland, a UNESCO Global Geopark since 2015"],
+  ["Fagradalsfjall","FAG-ra-dals-FYATL","one of the volcanic systems running through the geopark, and our late-morning stop"],
+ ],
+ tags:["#geology"],
 },
 {id:"14.0.1.3", title:"🧝 Hafnarfjörður", sub:"Iceland's Elf Capital", cue:"Look right — Hafnarfjörður running down to its harbour.",
  hook:"When the University of Iceland actually asked — first in 1974, again in 2007 — around half of Icelanders wouldn't rule out elves. This is the town where the official ones live.",
@@ -591,7 +591,7 @@ threadsIntro: "Topics that weave through the route. If a guest is interested in 
 threads: [
 {title:"🌋 Geology", tag:"#geology", subs:[
  {label:"", items:[
-  ["14.1 Reykjanes UNESCO Global Geopark","14.0.1.1","a mid-ocean ridge climbing above sea level"],
+  ["14.2 Reykjanes UNESCO Global Geopark","14.0.1.2","a mid-ocean ridge climbing above sea level"],
   ["14.3 Hafnarfjörður","14.0.1.3","a town threaded into 8,000-year-old Búrfellshraun"],
   ["14.4 Straumsvík","14.0.1.4","the 1151 flow still called Nýjahraun, 'the new lava'"],
   ["14.5 Vatnsskarð","14.0.1.5","a móberg ridge drawn along the rift, north-east to south-west"],
@@ -621,7 +621,7 @@ threads: [
 ]},
 {title:"📡 Technology", tag:"#technology", subs:[
  {label:"", items:[
-  ["14.2 Reykjavík","14.0.1.2","the brook culverted in 1911, and the warm overflow that keeps Tjörnin open"],
+  ["14.1 Reykjavík","14.0.1.1","the brook culverted in 1911, and the warm overflow that keeps Tjörnin open"],
   ["14.4 Straumsvík","14.0.1.4","a smelter from 1969, and the power company built to feed it"],
   ["14.5 Vatnsskarð","14.0.1.5","quarrying the pass, and the aquifer that surfaces at Straumsvík"],
   ["14.8 Seltún","14.0.2.1","Iceland's first geothermal drilling, 1755–56"],
@@ -638,7 +638,7 @@ threads: [
 ]},
 {title:"🧌 Folklore", tag:"#folklore", subs:[
  {label:"", items:[
-  ["14.2 Reykjavík","14.0.1.2","the öndvegissúlur thrown overboard to choose a landing place"],
+  ["14.1 Reykjavík","14.0.1.1","the öndvegissúlur thrown overboard to choose a landing place"],
   ["14.3 Hafnarfjörður","14.0.1.3","the elf map, and the surveys of 1974 and 2007"],
   ["14.12 Festarfjall","14.0.3.4","the troll-woman's chain, from Rauðskinna I 45"],
   ["14.15 Þorbjörn","14.0.5.2","Þjófagjá, fifteen thieves, and the sleeves turned inside out"],
@@ -648,7 +648,7 @@ threads: [
 ]},
 {title:"🏛️ History", tag:"#history", subs:[
  {label:"", items:[
-  ["14.2 Reykjavík","14.0.1.2","Alþingi closed by royal decree 6 June 1800, reopened 1 July 1845"],
+  ["14.1 Reykjavík","14.0.1.1","Alþingi closed by royal decree 6 June 1800, reopened 1 July 1845"],
   ["14.4 Straumsvík","14.0.1.4","Kristján Eldjárn's 1950 dig and the St Barbara figurine"],
   ["14.5 Vatnsskarð","14.0.1.5","the 1936 road proposal the newspapers tore apart"],
   ["14.8 Seltún","14.0.2.1","sulphur mining 1754–63 and 1858–80, 72.5 tonnes exported"],
@@ -682,7 +682,7 @@ threads: [
 ]},
 {title:"🧳 Migration", tag:"#migration", subs:[
  {label:"", items:[
-  ["14.2 Reykjavík","14.0.1.2","where the tradition says the first landing was, and what the ash layer actually shows"],
+  ["14.1 Reykjavík","14.0.1.1","where the tradition says the first landing was, and what the ash layer actually shows"],
   ["14.23 Hafnir","14.0.10.1","a ninth-century hall at Vogur, possibly older than 871"],
   ["14.24 Keflavík","14.0.10.2","Reykjanesbær, formed 11 June 1994 from three towns"],
   ["14.28 Reykjavík","14.0.10.6","the Norse–Gaelic settlement dated to AD 871 ±2"],

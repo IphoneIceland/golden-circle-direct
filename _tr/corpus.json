@@ -29120,94 +29120,6 @@
   ]
  },
  {
-  "id": "c25620d1b5",
-  "en": "🌍 Reykjanes UNESCO Global Geopark",
-  "ctx": "block title — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
-  "tours": [
-   "14.0"
-  ]
- },
- {
-  "id": "596c5152c8",
-  "en": "Look ahead — the whole peninsula opening up in front of us.",
-  "ctx": "cue, tells the guest where to look — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
-  "tours": [
-   "14.0"
-  ]
- },
- {
-  "id": "67524b7e94",
-  "en": "A **constructive plate boundary** and a **mantle hotspot** overlap nowhere else on Earth. Iceland exists because both happen in the same spot.",
-  "ctx": "the point of the block — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
-  "tours": [
-   "14.0"
-  ]
- },
- {
-  "id": "80754332b8",
-  "en": "Today's route is basically a guided tour of a crack in the planet. Mind the step.",
-  "ctx": "the spoken close — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
-  "tours": [
-   "14.0"
-  ]
- },
- {
-  "id": "78b3aaa63f",
-  "en": "Weather pivot (if it's socked in): \"You will not see much of the peninsula this morning, and that is fine — everything I am about to show you is at your feet rather than on the horizon.\"",
-  "ctx": "bad-weather alternative — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
-  "tours": [
-   "14.0"
-  ]
- },
- {
-  "id": "98b32a9884",
-  "en": "We're driving onto the only stretch of mid-ocean ridge on Earth that pokes above the sea. Most geologists only ever see one on a diagram. You're about to spend a day standing on it.",
-  "ctx": "opening hook line — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
-  "tours": [
-   "14.0"
-  ]
- },
- {
-  "id": "4b3277a29e",
-  "en": "The whole peninsula is a **UNESCO Global Geopark** (**2015**) — one of only a handful of places where a **mid-ocean ridge climbs above sea level.** Normally the North American/Eurasian plate boundary sits **2 km down** on the seafloor. Here you can walk on it, and later today you will.",
-  "ctx": "fact bullet — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
-  "tours": [
-   "14.0"
-  ]
- },
- {
-  "id": "2deab476a2",
-  "en": "The park protects ~**825 km²** of lava, geothermal fields and rift. **Four to six linked volcanic systems** run through it — Reykjanes, Svartsengi, Fagradalsfjall, Krýsuvík, Brennisteinsfjöll, Hengill — out of ~30 Iceland-wide. We will be inside four of them before lunch.",
-  "ctx": "fact bullet — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
-  "tours": [
-   "14.0"
-  ]
- },
- {
-  "id": "7a83068d29",
-  "en": "Iceland is a **double engine**: a spreading **plate boundary** sitting on a stationary **mantle hotspot.** The oldest rock anywhere in Iceland is only **fifteen or sixteen million years** old — and out here on Reykjanes it's a tiny fraction of that. The hotspot beneath has been burning for at least **60 million.**",
-  "ctx": "fact bullet — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
-  "tours": [
-   "14.0"
-  ]
- },
- {
-  "id": "9a93de9072",
-  "en": "the peninsula itself, reykja = smoky and nes = headland, a UNESCO Global Geopark since 2015",
-  "ctx": "gloss for the name \"Reykjanes\" — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
-  "tours": [
-   "14.0"
-  ]
- },
- {
-  "id": "a7c394377f",
-  "en": "one of the volcanic systems running through the geopark, and our late-morning stop",
-  "ctx": "gloss for the name \"Fagradalsfjall\" — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
-  "tours": [
-   "14.0"
-  ]
- },
- {
   "id": "d7536467da",
   "en": "🏛️ Reykjavík",
   "ctx": "block title — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
@@ -29339,6 +29251,94 @@
   "id": "553651ec7c",
   "en": "consecrated 26 October 1986, forty-one years after work began",
   "ctx": "gloss for the name \"Hallgrímskirkja\" — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "c25620d1b5",
+  "en": "🌍 Reykjanes UNESCO Global Geopark",
+  "ctx": "block title — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "596c5152c8",
+  "en": "Look ahead — the whole peninsula opening up in front of us.",
+  "ctx": "cue, tells the guest where to look — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "67524b7e94",
+  "en": "A **constructive plate boundary** and a **mantle hotspot** overlap nowhere else on Earth. Iceland exists because both happen in the same spot.",
+  "ctx": "the point of the block — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "80754332b8",
+  "en": "Today's route is basically a guided tour of a crack in the planet. Mind the step.",
+  "ctx": "the spoken close — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "78b3aaa63f",
+  "en": "Weather pivot (if it's socked in): \"You will not see much of the peninsula this morning, and that is fine — everything I am about to show you is at your feet rather than on the horizon.\"",
+  "ctx": "bad-weather alternative — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "98b32a9884",
+  "en": "We're driving onto the only stretch of mid-ocean ridge on Earth that pokes above the sea. Most geologists only ever see one on a diagram. You're about to spend a day standing on it.",
+  "ctx": "opening hook line — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "4b3277a29e",
+  "en": "The whole peninsula is a **UNESCO Global Geopark** (**2015**) — one of only a handful of places where a **mid-ocean ridge climbs above sea level.** Normally the North American/Eurasian plate boundary sits **2 km down** on the seafloor. Here you can walk on it, and later today you will.",
+  "ctx": "fact bullet — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "2deab476a2",
+  "en": "The park protects ~**825 km²** of lava, geothermal fields and rift. **Four to six linked volcanic systems** run through it — Reykjanes, Svartsengi, Fagradalsfjall, Krýsuvík, Brennisteinsfjöll, Hengill — out of ~30 Iceland-wide. We will be inside four of them before lunch.",
+  "ctx": "fact bullet — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "7a83068d29",
+  "en": "Iceland is a **double engine**: a spreading **plate boundary** sitting on a stationary **mantle hotspot.** The oldest rock anywhere in Iceland is only **fifteen or sixteen million years** old — and out here on Reykjanes it's a tiny fraction of that. The hotspot beneath has been burning for at least **60 million.**",
+  "ctx": "fact bullet — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "9a93de9072",
+  "en": "the peninsula itself, reykja = smoky and nes = headland, a UNESCO Global Geopark since 2015",
+  "ctx": "gloss for the name \"Reykjanes\" — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "a7c394377f",
+  "en": "one of the volcanic systems running through the geopark, and our late-morning stop",
+  "ctx": "gloss for the name \"Fagradalsfjall\" — tour 14.0 / Lækjargata → Seltún / 🌍 Reykjanes UNESCO Global Geopark",
   "tours": [
    "14.0"
   ]
@@ -32802,7 +32802,7 @@
  {
   "id": "cf0f409e5b",
   "en": "a mid-ocean ridge climbing above sea level",
-  "ctx": "Threads index — what block \"14.1 Reykjanes UNESCO Global Geopark\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.2 Reykjanes UNESCO Global Geopark\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32994,7 +32994,7 @@
  {
   "id": "707c7f6e14",
   "en": "the brook culverted in 1911, and the warm overflow that keeps Tjörnin open",
-  "ctx": "Threads index — what block \"14.2 Reykjavík\" covers, under \"📡 Technology\"",
+  "ctx": "Threads index — what block \"14.1 Reykjavík\" covers, under \"📡 Technology\"",
   "tours": [
    "14.0"
   ]
@@ -33098,7 +33098,7 @@
  {
   "id": "ad13756d23",
   "en": "the öndvegissúlur thrown overboard to choose a landing place",
-  "ctx": "Threads index — what block \"14.2 Reykjavík\" covers, under \"🧌 Folklore\"",
+  "ctx": "Threads index — what block \"14.1 Reykjavík\" covers, under \"🧌 Folklore\"",
   "tours": [
    "14.0"
   ]
@@ -33154,7 +33154,7 @@
  {
   "id": "17cea6d255",
   "en": "Alþingi closed by royal decree 6 June 1800, reopened 1 July 1845",
-  "ctx": "Threads index — what block \"14.2 Reykjavík\" covers, under \"🏛️ History\"",
+  "ctx": "Threads index — what block \"14.1 Reykjavík\" covers, under \"🏛️ History\"",
   "tours": [
    "14.0"
   ]
@@ -33346,7 +33346,7 @@
  {
   "id": "331a92a872",
   "en": "where the tradition says the first landing was, and what the ash layer actually shows",
-  "ctx": "Threads index — what block \"14.2 Reykjavík\" covers, under \"🧳 Migration\"",
+  "ctx": "Threads index — what block \"14.1 Reykjavík\" covers, under \"🧳 Migration\"",
   "tours": [
    "14.0"
   ]
