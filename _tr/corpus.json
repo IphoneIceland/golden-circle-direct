@@ -11807,6 +11807,15 @@
   ]
  },
  {
+  "id": "6b4dbe46f0",
+  "en": "Weather pivot: \"If the park is grey and half empty, that is exactly the Iceland Kjarval painted. He was never interested in the sunny version.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧍 Jóhannes Sveinsson Kjarval",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "7c134d2f71",
   "en": "Born **15 October 1885** at **Efri-Ey** farm in **Meðalland**, right here in south Iceland — **9th of 13 kids** (his parents clearly had stamina). Fostered out east to **Borgarfjörður eystri**; too poor for paint, he drew with **calf blood, soot and wool dye** — then went to sea.",
   "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧍 Jóhannes Sveinsson Kjarval",
@@ -12119,6 +12128,15 @@
   ]
  },
  {
+  "id": "b0a84bf052",
+  "en": "Weather pivot: \"If you cannot see the brewery you can usually smell the malt. That counts.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "3c005eca8b",
   "en": "**1913**: **Tómas Tómasson** starts Ölgerðin in a Reykjavík basement — at first just **malt extract** — and names it after **Egill Skallagrímsson**, the Viking warrior-poet who could spin stunning verse and drink a whole hall under the table.",
   "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
@@ -12226,6 +12244,15 @@
   ]
  },
  {
+  "id": "88feec0508",
+  "en": "Weather pivot: \"The valley looks its best wet. That river is the reason anything in this city is green.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "95a653f4be",
   "en": "To joggers it's a postcard. To a geologist, it's a **crime scene**. 10,000 years of Iceland trying — and failing — to stay quiet.",
   "ctx": "opening hook line — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
@@ -12287,6 +12314,15 @@
   "ctx": "gloss for the name \"Skötufoss\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
   "tours": [
    "5.0"
+  ]
+ },
+ {
+  "id": "60414fe43e",
+  "en": "Weather pivot: \"The red goes deeper in the rain, so a grey day actually makes the craters easier to pick out, not harder.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Rauðhólar",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
@@ -12503,6 +12539,15 @@
   ]
  },
  {
+  "id": "df2a44c999",
+  "en": "Weather pivot: \"Lava in fog is the honest version. This is roughly what the year 1000 looked like from a distance.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Kristnitökuhraun",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "648bae4347",
   "en": "At peak tension a messenger reported **the ground tearing open on Hellisheiði**. Pagans cried \"the gods are angry!\"",
   "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Kristnitökuhraun",
@@ -12543,6 +12588,15 @@
    "5.0",
    "6.0",
    "7.0"
+  ]
+ },
+ {
+  "id": "66d6ed9726",
+  "en": "Weather pivot: \"If you cannot see the plant you will see the steam, and on a day like this the steam is the whole show.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
@@ -12591,6 +12645,15 @@
   "ctx": "gloss for the name \"Hellisheiði\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
   "tours": [
    "5.0"
+  ]
+ },
+ {
+  "id": "4d4eef6102",
+  "en": "Weather pivot: \"Cannot see the town? Look for the steam instead. The town is wherever the ground is smoking.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌋 Hveragerði",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
@@ -12667,6 +12730,15 @@
    "5.0",
    "6.0",
    "7.0"
+  ]
+ },
+ {
+  "id": "443981d493",
+  "en": "Weather pivot: \"Rain makes it bigger. Everything I am about to tell you about this river is more true today than it was yesterday.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
@@ -12767,6 +12839,15 @@
   ]
  },
  {
+  "id": "5496857dcb",
+  "en": "Weather pivot: \"If the mountain has gone, take my word for it — big, flat-topped, and behind us now.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "94a5c55c7b",
   "en": "Per the saga, first settler **Ingólfur Arnarson** threw his carved **high-seat pillars** overboard and vowed to settle wherever they washed up.",
   "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
@@ -12816,6 +12897,15 @@
    "5.0",
    "6.0",
    "7.0"
+  ]
+ },
+ {
+  "id": "a3b6da31af",
+  "en": "Weather pivot: \"You do not need to see anything for this one. Just listen to what is under the wheels.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏗️ Selfoss",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
@@ -12892,6 +12982,15 @@
   "tours": [
    "5.0",
    "7.0"
+  ]
+ },
+ {
+  "id": "6d43f3b157",
+  "en": "Weather pivot: \"Weather barely touches this river. It comes off an ice cap, so it runs much the same in sun or sleet.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
@@ -13067,6 +13166,15 @@
   "tours": [
    "5.0",
    "7.0"
+  ]
+ },
+ {
+  "id": "5ebfd3c261",
+  "en": "Weather pivot: \"You will not see the caves from here in any weather. They are cut into the bank, which is rather the point of them.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🕳️ Hella",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
@@ -13311,6 +13419,15 @@
   ]
  },
  {
+  "id": "788a296381",
+  "en": "Weather pivot: \"You will not see Keldur today, and you rarely can. It is ten kilometres up a side road — which is exactly why it survived.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏡 Keldur",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "609998797b",
   "en": "The Tunnel of Survival",
   "ctx": "subtitle under the block title — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏡 Keldur",
@@ -13430,6 +13547,15 @@
    "5.0",
    "6.0",
    "7.0"
+  ]
+ },
+ {
+  "id": "6271013651",
+  "en": "Weather pivot: \"If the village is in murk, that is Njáll's country behaving normally. The saga has far more bad weather in it than good.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur / 🏘️ Hvolsvöllur",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
@@ -13580,6 +13706,15 @@
   ]
  },
  {
+  "id": "6b70ca968b",
+  "en": "Weather pivot: \"No islands today? They are twenty-seven kilometres out. On a clear day they look close enough to swim to, and that is the illusion.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🐦 Vestmannaeyjar",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "8210ac1118",
   "en": "Puffins, Ports and Plumes",
   "ctx": "subtitle under the block title — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🐦 Vestmannaeyjar",
@@ -13684,6 +13819,15 @@
   ]
  },
  {
+  "id": "2d4563dee8",
+  "en": "Weather pivot: \"Flat, wet and grey is this plain's default setting. It is a floodplain. It looks like this most of the year.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "f1930deaf8",
   "en": "The Ocean's Basement",
   "ctx": "subtitle under the block title — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
@@ -13770,6 +13914,15 @@
   "ctx": "the spoken close — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🛡️ Markarfljót & Hlíðarendi",
   "tours": [
    "5.0"
+  ]
+ },
+ {
+  "id": "04584ae68d",
+  "en": "Weather pivot: \"If the hillside has gone, remember that Gunnar turned back for the view. He would not have on a day like this.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🛡️ Markarfljót & Hlíðarendi",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
@@ -13887,6 +14040,15 @@
   ]
  },
  {
+  "id": "5266e06545",
+  "en": "Weather pivot: \"Cannot see it? Neither could the pilots in 2010, and that was rather the problem.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌋 Eyjafjallajökull",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "ce61b5b70e",
   "en": "The Cloud That Stopped Europe",
   "ctx": "subtitle under the block title — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌋 Eyjafjallajökull",
@@ -13999,6 +14161,15 @@
   ]
  },
  {
+  "id": "171aaef4eb",
+  "en": "Weather pivot: \"The rock sits right by the road, so this is one you get whatever the sky is doing.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🪨 Drangurinn",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "4470ef9c40",
   "en": "The Stone That Stayed",
   "ctx": "subtitle under the block title — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🪨 Drangurinn",
@@ -14101,6 +14272,15 @@
    "5.0",
    "6.0",
    "7.0"
+  ]
+ },
+ {
+  "id": "7313de8cd0",
+  "en": "Weather pivot: \"Cloud sits low on the ice. If the top has gone you are still seeing the snout, and the snout is the part that has been moving.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Sólheimajökull / 🧊 Sólheimajökull",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
@@ -14229,6 +14409,15 @@
   ]
  },
  {
+  "id": "e1565ef631",
+  "en": "Weather pivot: \"You would not see the wreck from the road on the clearest day of the year. That is what the photograph is for.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Sólheimajökull → Reynisfjara / ✈️ The DC-3 Wreck",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "e69ffe9171",
   "en": "The Ghost in the Sand",
   "ctx": "subtitle under the block title — tour 5.0 / Sólheimajökull → Reynisfjara / ✈️ The DC-3 Wreck",
@@ -14329,6 +14518,15 @@
    "5.0",
    "6.0",
    "7.0"
+  ]
+ },
+ {
+  "id": "e5204942d4",
+  "en": "Weather pivot: \"If the mountain is in cloud you are seeing what it was for. It was a sea mark, and sailors mostly needed it in bad visibility.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
@@ -14472,6 +14670,15 @@
   ]
  },
  {
+  "id": "c85e646bc5",
+  "en": "Weather pivot: \"Small red roof, big grey sky. It is the roof you are looking for, not the church.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Sólheimajökull → Reynisfjara / ⛪ Skeiðflatarkirkja",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "2bef4b8381",
   "en": "The Architect's Roots",
   "ctx": "subtitle under the block title — tour 5.0 / Sólheimajökull → Reynisfjara / ⛪ Skeiðflatarkirkja",
@@ -14592,6 +14799,15 @@
    "5.0",
    "6.0",
    "7.0"
+  ]
+ },
+ {
+  "id": "03a8747c34",
+  "en": "Weather pivot: \"If the headland has gone you may still catch the light blinking, which is the entire reason it is up there.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Sólheimajökull → Reynisfjara / 🚪 Dýrhólaey",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
@@ -14729,6 +14945,15 @@
   "id": "a92800c77d",
   "en": "The trolls froze in the sunrise. The ocean still hasn't lost an argument.",
   "ctx": "the spoken close — tour 5.0 / Reynisfjara / 🌊 Reynisfjara & Reynisdrangar",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "470749231f",
+  "en": "Weather pivot: \"Bad weather makes this beach more dangerous, not more atmospheric. Stay well back from the water today.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Reynisfjara / 🌊 Reynisfjara & Reynisdrangar",
   "tours": [
    "5.0",
    "6.0"
@@ -14875,6 +15100,15 @@
   ]
  },
  {
+  "id": "d0b8cf3eb1",
+  "en": "Weather pivot: \"Cannot see the ice cap? Neither can the people living under it. That is the whole problem with Katla.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Reynisfjara → Vík / 🌋 Katla",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "aff394f7db",
   "en": "The Sleeping Giant Under the Ice",
   "ctx": "subtitle under the block title — tour 5.0 / Reynisfjara → Vík / 🌋 Katla",
@@ -15014,6 +15248,15 @@
   ]
  },
  {
+  "id": "e2ce86b4c2",
+  "en": "Weather pivot: \"Even in cloud it is the highest thing in the village, which is precisely why it is the evacuation point.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Vík í Mýrdal / ⛪ Víkurkirkja",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "015ffbff65",
   "en": "The Lifeboat on the Hill",
   "ctx": "subtitle under the block title — tour 5.0 / Vík í Mýrdal / ⛪ Víkurkirkja",
@@ -15109,6 +15352,15 @@
    "5.0",
    "6.0",
    "7.0"
+  ]
+ },
+ {
+  "id": "d1b7c8ff66",
+  "en": "Weather pivot: \"The village is over the hill either way. You will know when we are there.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Vík í Mýrdal / 🏘️ Vík í Mýrdal",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
@@ -15228,6 +15480,15 @@
   "ctx": "the spoken close — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
   "tours": [
    "5.0"
+  ]
+ },
+ {
+  "id": "a083cc9249",
+  "en": "Weather pivot: \"Twelve kilometres out on a wet day means you are not seeing it. It looks like a ship, and today it is a ship in fog.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
@@ -15484,6 +15745,15 @@
   ]
  },
  {
+  "id": "e94c83e912",
+  "en": "Weather pivot: \"Rain makes it bigger. There is no bad-weather version of this waterfall.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "c0d1d105e9",
   "en": "Where the Old Coast Falls",
   "ctx": "subtitle under the block title — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
@@ -15645,6 +15915,15 @@
    "5.0",
    "6.0",
    "7.0"
+  ]
+ },
+ {
+  "id": "7500eb7d5b",
+  "en": "Weather pivot: \"You are getting wet either way. This is the one waterfall where the forecast is irrelevant, because you walk behind it.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Seljalandsfoss / 💧 Seljalandsfoss & Gljúfrabúi",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
