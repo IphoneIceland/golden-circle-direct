@@ -962,6 +962,7 @@ function focusBlock(id){
 const STOPPHOTOS={
   // photo  ->  the ONE block title it actually shows. Titles are matched with
   // emoji and punctuation stripped, because 7.0 carries them without emoji.
+  // Shown ONLY when the block sits in a drive section — see blockRow().
   "almannagja":            {src:"images/stops/thingvellir.webp",         cr:"Diego Delso / CC BY-SA 4.0"},
   "geysir":                {src:"images/stops/geysir.webp",              cr:"Andreas Tille / CC BY-SA 3.0"},
   "hvita gullfoss":        {src:"images/stops/gullfoss.webp",            cr:"Diego Delso / CC BY-SA 4.0"},
@@ -981,7 +982,23 @@ const STOPPHOTOS={
   "djupalonssandur dritvik":{src:"images/stops/djupalonssandur.webp",    cr:"Bultro / CC BY-SA 3.0"},
   "the arnarstapi cliffs": {src:"images/stops/arnarstapi.webp",          cr:"Ilya Grigorik / CC BY-SA 3.0"},
   "ytri-tunga":            {src:"images/stops/ytri-tunga.webp",          cr:"Jakub Ha\u0142un / CC BY-SA 4.0"},
-  "fossa":                 {src:"images/stops/selvallafoss.webp",        cr:"Codas / CC BY-SA 4.0"}
+  "fossa":                 {src:"images/stops/selvallafoss.webp",        cr:"Codas / CC BY-SA 4.0"},
+
+  // --- drive-by photos -------------------------------------------------------
+  // These fire only in drive sections. Each one is something the guest gets a
+  // few seconds of, through glass, at 90 km/h - or in Keldur's case cannot see
+  // at all, being 10.8 km up a side road. Every image is CC or public domain,
+  // sourced via each subject's own Wikidata entry so the picture is definitely
+  // OF the thing, and credited in full on the card.
+  "the dc-3 wreck":        {src:"images/drive/dc3.webp",                 cr:"sikeri from Silver Spring, MD / CC BY 2.0"},
+  "dyrholaey":             {src:"images/drive/dyrholaey.webp",           cr:"Jakub Ha\u0142un / CC BY 4.0"},
+  "katla":                 {src:"images/drive/myrdalsjokull.webp",       cr:"Caspar Gutsche / CC BY-SA 4.0"},
+  "raudholar":             {src:"images/drive/raudholar.webp",           cr:"Roman Z / CC BY-SA 3.0"},
+  "markarfljot hlidarendi":{src:"images/drive/hlidarendi.webp",          cr:"Bromr / CC BY-SA 3.0"},
+  "vestmannaeyjar":        {src:"images/drive/vestmannaeyjar.webp",      cr:"Diego Delso / CC BY-SA 4.0"},
+  "keldur":                {src:"images/drive/keldur.webp",              cr:"Oblomov2 / CC0"},
+  "eyjafjallajokull":      {src:"images/drive/eyjafjallajokull.webp",    cr:"TommyBee / Public domain"},
+  "hellisheidarvirkjun":   {src:"images/drive/hellisheidarvirkjun.webp", cr:"ThinkGeoEnergy / CC BY 2.0"}
 };
 /* Strip emoji, accents and punctuation so "\ud83d\udca7 Sel\u00f0jalandsfoss & Glj\u00fafrab\u00fai"
    and "Seljalandsfoss & Gljufrabui" land on the same key. */
@@ -990,7 +1007,7 @@ function photoKey(t){
     .replace(/[\u00fe]/g,"th").replace(/[\u00f0]/g,"d").replace(/[\u00e6]/g,"ae")
     .toLowerCase().replace(/[^a-z0-9 -]/g," ").replace(/\s+/g," ").trim();
 }
-function stopPhoto(block){
+function blockPhoto(block){
   if(!block) return null;
   return STOPPHOTOS[photoKey(block.title)] || null;
 }
@@ -998,7 +1015,13 @@ function blockRow(b, kind){
   const say=(b.say||[]).map(s=>`<div><i>[${esc(s[1])}]</i> — <b>${esc(s[0])}</b>${s[2]?` <span class="gloss">(${esc(s[2])})</span>`:""}</div>`).join("");
   const heads=(b.heads||[]).map(h=>`<div class="sublab">${esc(h[0])}</div><ul>${h[1].map(x=>`<li>${md(x)}</li>`).join("")}</ul>`).join("");
   const pre=(b.pre||[]).map(p=>`<div class="sublab">${esc(p[0])}</div><div class="pre">${esc(p[1])}</div>`).join("");
-  const ph = kind==="stop" ? stopPhoto(b) : null;
+  // Photos belong on what you DON'T get off the bus for. At a stop the guest is
+  // about to see the real thing in higher resolution than any screen; a photo
+  // there is noise. On a drive-by — a wreck 3 km out on black sand, an ice cap
+  // in cloud, a turf farm up a side road — a photo is the only look they get.
+  // Same subject, opposite answer per tour: 5.0/6.0 STOP at Solheimajokull and
+  // Reynisfjara, 7.0 drives past both. This one condition gets both right.
+  const ph = kind==="stop" ? null : blockPhoto(b);
   return `<div class="stop" data-key="${b.id}">
       <div class="sc"><div class="sn">${b.emoji?b.emoji+" ":""}${esc(b.title)}</div>
       ${b.sub?`<div class="sub">${esc(b.sub)}</div>`:""}

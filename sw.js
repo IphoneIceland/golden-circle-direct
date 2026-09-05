@@ -4,7 +4,7 @@
      TILES  stale-while-revalidate, capped. Map imagery you have already looked at.
    Load the page once on hotel wifi, pan the loop, and the whole day survives
    the dead patch past Laugarvatn. */
-const VERSION = "gcd186-v1";
+const VERSION = "gcd187-v1";
 const SHELL   = VERSION + "-shell";
 const TILES   = VERSION + "-tiles";
 const TILE_CAP = 900;
@@ -23,6 +23,11 @@ const SHELL_FILES = [
 
 
   "./images/stops/arnarstapi.webp", "./images/stops/borgarnes.webp", "./images/stops/djupalonssandur.webp", "./images/stops/fellsfjara.webp", "./images/stops/fjallsarlon.webp", "./images/stops/fridheimar.webp", "./images/stops/geysir.webp", "./images/stops/gullfoss.webp", "./images/stops/hvolsvollur.webp", "./images/stops/jokulsarlon.webp", "./images/stops/kirkjubaejarklaustur.webp", "./images/stops/kirkjufell.webp", "./images/stops/olafsvik.webp", "./images/stops/reynisfjara.webp", "./images/stops/seljalandsfoss.webp", "./images/stops/selvallafoss.webp", "./images/stops/skogafoss.webp", "./images/stops/solheimajokull.webp", "./images/stops/thingvellir.webp", "./images/stops/vik.webp", "./images/stops/ytri-tunga.webp",
+  "./images/drive/dc3.webp", "./images/drive/dyrholaey.webp",
+  "./images/drive/myrdalsjokull.webp", "./images/drive/raudholar.webp",
+  "./images/drive/hlidarendi.webp", "./images/drive/vestmannaeyjar.webp",
+  "./images/drive/keldur.webp", "./images/drive/eyjafjallajokull.webp",
+  "./images/drive/hellisheidarvirkjun.webp",
   "./vendor/leaflet.js", "./vendor/leaflet.css",
   "./vendor/images/marker-icon.png", "./vendor/images/marker-shadow.png",
   "./vendor/images/layers.png", "./vendor/images/layers-2x.png",
