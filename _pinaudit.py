@@ -45,6 +45,14 @@ cu   = open(os.path.join(HERE, "cues-%s.js" % TAG), encoding="utf-8").read()
 CUES = json.loads(cu[cu.index("["):cu.rindex("]") + 1])
 sc   = open(os.path.join(HERE, "script-%s.js" % TAG), encoding="utf-8").read()
 
+KINDBYID = {}
+for m in re.finditer(r'\{title:"[^"]+", kind:"(\w+)", blocks:\[', sc):
+    seg = sc[m.end():]
+    n = seg.find('{title:"')
+    seg = seg[:n] if n > 0 else seg
+    for b in re.findall(r'\{id:"(%s\.\d+\.\d+)"' % re.escape(TAG), seg):
+        KINDBYID[b] = m.group(1)
+
 BLOCK = {}
 for m in re.finditer(r'\{id:"(%s\.\d+\.\d+)"' % re.escape(TAG), sc):
     seg = sc[m.start():m.start() + 900]
@@ -95,8 +103,12 @@ for c in CUES:
         td = km((c["pin"]["lat"], c["pin"]["lon"]), tp)
         tk = "%.1f" % td
         _, ai = near_win(tp, prog)
-        ab = "ok" if pi <= ai + 3 else "PAST"
-        if pi > ai + 3:
+        # The before-abeam law is about a MOVING bus: a pin placed past its
+        # subject draws the arrow out of the back window. At a stop the coach is
+        # parked and the guest can turn round, so the rule does not apply.
+        stationary = KINDBYID.get(bid) == "stop"
+        ab = "n/a" if stationary else ("ok" if pi <= ai + 3 else "PAST")
+        if pi > ai + 3 and not stationary:
             notes.append("pin %.1f km PAST closest approach — arrow points backwards"
                          % (cum[pi] - cum[ai]))
         if td > 30:

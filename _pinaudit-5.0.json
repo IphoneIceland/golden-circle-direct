@@ -103,13 +103,15 @@
    "id": "5.0.1.9",
    "title": "🧭 Ingólfur Arnarson",
    "cue": "Look ahead at 12 o'clock — the Ring Road (Leið 1).",
-   "prog": 13.47,
+   "prog": 12.14,
    "pin_off_road_m": 0,
-   "pin_actual_prog": 13.47,
-   "target": null,
-   "target_km": null,
-   "abeam": "-",
-   "notes": []
+   "pin_actual_prog": 12.14,
+   "target": "Ingólfsfjall",
+   "target_km": 4.0,
+   "abeam": "ok",
+   "notes": [
+    "PROGRESS GOES BACKWARDS"
+   ]
   },
   {
    "id": "5.0.1.10",
@@ -118,9 +120,9 @@
    "prog": 13.53,
    "pin_off_road_m": 0,
    "pin_actual_prog": 13.53,
-   "target": null,
-   "target_km": null,
-   "abeam": "-",
+   "target": "Selfoss",
+   "target_km": 0.7,
+   "abeam": "ok",
    "notes": []
   },
   {
@@ -166,9 +168,9 @@
    "prog": 25.43,
    "pin_off_road_m": 26,
    "pin_actual_prog": 25.42,
-   "target": null,
-   "target_km": null,
-   "abeam": "-",
+   "target": "Hvolsvöllur",
+   "target_km": 0.1,
+   "abeam": "n/a",
    "notes": []
   },
   {
@@ -190,9 +192,9 @@
    "prog": 29.15,
    "pin_off_road_m": 0,
    "pin_actual_prog": 29.15,
-   "target": null,
-   "target_km": null,
-   "abeam": "-",
+   "target": "Landeyjahöfn",
+   "target_km": 13.3,
+   "abeam": "ok",
    "notes": []
   },
   {
@@ -238,9 +240,9 @@
    "prog": 42.16,
    "pin_off_road_m": 0,
    "pin_actual_prog": 42.16,
-   "target": null,
-   "target_km": null,
-   "abeam": "-",
+   "target": "Sólheimajökull",
+   "target_km": 1.3,
+   "abeam": "n/a",
    "notes": []
   },
   {
@@ -298,9 +300,9 @@
    "prog": 51.56,
    "pin_off_road_m": 0,
    "pin_actual_prog": 51.56,
-   "target": null,
-   "target_km": null,
-   "abeam": "-",
+   "target": "Reynisdrangar",
+   "target_km": 0.6,
+   "abeam": "n/a",
    "notes": []
   },
   {
@@ -324,9 +326,9 @@
    "prog": 54.19,
    "pin_off_road_m": 10,
    "pin_actual_prog": 54.17,
-   "target": null,
-   "target_km": null,
-   "abeam": "-",
+   "target": "Víkurkirkja",
+   "target_km": 0.2,
+   "abeam": "n/a",
    "notes": []
   },
   {
@@ -336,9 +338,9 @@
    "prog": 54.19,
    "pin_off_road_m": 10,
    "pin_actual_prog": 54.17,
-   "target": null,
-   "target_km": null,
-   "abeam": "-",
+   "target": "Reynisfjall",
+   "target_km": 2.7,
+   "abeam": "n/a",
    "notes": []
   },
   {
@@ -350,10 +352,8 @@
    "pin_actual_prog": 54.17,
    "target": "Hjörleifshöfði",
    "target_km": 12.6,
-   "abeam": "PAST",
-   "notes": [
-    "pin 0.2 km PAST closest approach — arrow points backwards"
-   ]
+   "abeam": "n/a",
+   "notes": []
   },
   {
    "id": "5.0.9.1",
@@ -374,9 +374,9 @@
    "prog": 62.48,
    "pin_off_road_m": 0,
    "pin_actual_prog": 62.48,
-   "target": null,
-   "target_km": null,
-   "abeam": "-",
+   "target": "Skógafoss",
+   "target_km": 0.4,
+   "abeam": "n/a",
    "notes": []
   },
   {
@@ -386,9 +386,9 @@
    "prog": 69.53,
    "pin_off_road_m": 0,
    "pin_actual_prog": 69.53,
-   "target": null,
-   "target_km": null,
-   "abeam": "-",
+   "target": "Seljalandsfoss",
+   "target_km": 0.2,
+   "abeam": "n/a",
    "notes": []
   },
   {
