@@ -58,6 +58,19 @@
   ]
  },
  {
+  "id": "41e17554ba",
+  "en": "Weather pivot: \"No window needed for this one, which on a morning like this is just as well.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🧵 Three Names to Keep in Your Pocket",
+  "tours": [
+   "1.0",
+   "10.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "3cf5f9b0b6",
   "en": "Before we point at a single thing, pocket three names: **a painter no bishop would bless, a brewer who named his beer after a Viking, and a farm boy who won the Nobel Prize.** Their stories are about to keep crashing into each other.",
   "ctx": "opening hook line — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🧵 Three Names to Keep in Your Pocket",
@@ -226,6 +239,22 @@
    "4.0",
    "5.0",
    "6.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "6b4dbe46f0",
+  "en": "Weather pivot: \"If the park is grey and half empty, that is exactly the Iceland Kjarval painted. He was never interested in the sunny version.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🧍 Jóhannes Sveinsson Kjarval",
+  "tours": [
+   "1.0",
+   "10.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "5.0",
+   "6.0",
+   "7.0",
    "9.0"
   ]
  },
@@ -456,6 +485,22 @@
   ]
  },
  {
+  "id": "b0a84bf052",
+  "en": "Weather pivot: \"If you cannot see the brewery you can usually smell the malt. That counts.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🏢 Ölgerðin Egill Skallagrímsson",
+  "tours": [
+   "1.0",
+   "10.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "5.0",
+   "6.0",
+   "7.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "09af5be139",
   "en": "How do you run Iceland's most famous brewery when beer is **illegal for 74 years**? Name it after a Viking — and brew beer that technically isn't beer.",
   "ctx": "opening hook line — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🏢 Ölgerðin Egill Skallagrímsson",
@@ -643,6 +688,20 @@
   ]
  },
  {
+  "id": "88feec0508",
+  "en": "Weather pivot: \"The valley looks its best wet. That river is the reason anything in this city is green.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
   "id": "d9f250462b",
   "en": "The Valley That Runs the City",
   "ctx": "subtitle under the block title — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
@@ -817,6 +876,19 @@
   ]
  },
  {
+  "id": "9d06149d9e",
+  "en": "Weather pivot: \"If Esja has gone, you are getting the honest version. Locals judge the whole day by how much of it they can see.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / ⛰️ Mount Esja",
+  "tours": [
+   "1.0",
+   "10.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "9abbd3dc3e",
   "en": "A Layer Cake of Climate",
   "ctx": "subtitle under the block title — tour 1.0 / BSÍ Bus Terminal → Þingvellir / ⛰️ Mount Esja",
@@ -987,6 +1059,17 @@
    "3.0",
    "4.0",
    "9.0"
+  ]
+ },
+ {
+  "id": "2e9e4495fe",
+  "en": "Weather pivot: \"Nothing to see even on a clear day — it is a field. The story is the thing, not the view.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / ⚖️ Kjalarnesþing",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
   ]
  },
  {
@@ -1184,6 +1267,17 @@
   ]
  },
  {
+  "id": "2f33468735",
+  "en": "Weather pivot: \"Low cloud suits this valley. Half the music that came out of it sounds like this weather.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎵 Mosfellsbær",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
   "id": "e955376e2e",
   "en": "A Town That Punches Above Its Weight",
   "ctx": "subtitle under the block title — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎵 Mosfellsbær",
@@ -1327,6 +1421,17 @@
   "id": "4b7ac3bdef",
   "en": "One man hid his fortune. The other left his on the shelves.",
   "ctx": "the spoken close — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Mosfellsdalur",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "cad1964881",
+  "en": "Weather pivot: \"If the valley has closed in, so much the better. Laxness wrote most of it looking at exactly this.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Mosfellsdalur",
   "tours": [
    "1.0",
    "2.0",
@@ -1483,6 +1588,17 @@
   ]
  },
  {
+  "id": "ead1331868",
+  "en": "Weather pivot: \"The horses do not mind, and they will be out in it. They were bred for days like this.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎬 Laxnes Horse Farm",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
   "id": "8e8bd491b4",
   "en": "The Cast With Four Legs",
   "ctx": "subtitle under the block title — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎬 Laxnes Horse Farm",
@@ -1625,6 +1741,17 @@
   "id": "81ac6b542a",
   "en": "A Nobel on the shelf, a rejected altarpiece on the wall — Gljúfrasteinn is where Iceland keeps the things the gatekeepers got wrong.",
   "ctx": "the spoken close — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Gljúfrasteinn",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "e366b55574",
+  "en": "Weather pivot: \"A white house in grey rain is very Icelandic literature. He would have approved.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Gljúfrasteinn",
   "tours": [
    "1.0",
    "2.0",
@@ -2164,6 +2291,17 @@
   ]
  },
  {
+  "id": "144bc31092",
+  "en": "Weather pivot: \"No view required. This is the chapter you listen to rather than look at.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🏘️ Landnám",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
   "id": "fc310d2a3d",
   "en": "Sixty Years to Build a Country",
   "ctx": "subtitle under the block title — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🏘️ Landnám",
@@ -2310,6 +2448,17 @@
   "id": "4671e68055",
   "en": "Hand on the wall to your left: North America. It is going that way. You are going that way. Slowly, and there is no hurry — it is about as fast as your fingernails grow.",
   "ctx": "the spoken close — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "84c225e197",
+  "en": "Weather pivot: \"Rain in the rift is normal. The wall does not care, and neither did the men who argued under it.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir / 🌍 Almannagjá",
   "tours": [
    "1.0",
    "2.0",
@@ -2494,6 +2643,17 @@
   ]
  },
  {
+  "id": "b29cf6f005",
+  "en": "Weather pivot: \"They met here for two weeks every summer in whatever the sky was doing. So can we.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
   "id": "11b11ed9ff",
   "en": "Iceland's First Parliament",
   "ctx": "subtitle under the block title — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
@@ -2670,6 +2830,17 @@
   ]
  },
  {
+  "id": "c125b79808",
+  "en": "Weather pivot: \"Þorgeir lay under a fur cloak for a day and a night. In this, you can see why.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir / ⚖️ Kristnitaka",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
   "id": "0d2f45a433",
   "en": "The Day Iceland Changed Religion, Lying Down",
   "ctx": "subtitle under the block title — tour 1.0 / Þingvellir / ⚖️ Kristnitaka",
@@ -2805,6 +2976,17 @@
   "id": "c92b9cb0b0",
   "en": "They built this to hold the greatest Icelanders who ever lived. Two people went in. Then everyone thought about it a bit more and decided, actually, we'd rather be buried at home.",
   "ctx": "the spoken close — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "f890ff4dbc",
+  "en": "Weather pivot: \"The white church against a grey sky is the photograph everybody takes anyway.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
   "tours": [
    "1.0",
    "2.0",
@@ -3011,6 +3193,17 @@
   ]
  },
  {
+  "id": "c796f18608",
+  "en": "Weather pivot: \"Rain makes the falls louder and the pool darker. Neither improves the story of this place.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
   "id": "e9cb6e5f8c",
   "en": "The Waterfall, the Drowning Pool and the Fake Wishing Well",
   "ctx": "subtitle under the block title — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
@@ -3168,6 +3361,17 @@
   "id": "e8a9991811",
   "en": "Iceland's answer to a tectonic disaster: turn it into a reservoir, then drink it.",
   "ctx": "the spoken close — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "e415037ea5",
+  "en": "Weather pivot: \"If the far shore has gone, that is the rift you cannot see across — which is rather the point.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
   "tours": [
    "1.0",
    "2.0",
@@ -3363,6 +3567,17 @@
   ]
  },
  {
+  "id": "5f7ce37e36",
+  "en": "Weather pivot: \"It poured on the day itself. Thousands stood in it anyway.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir / 🇮🇸 17 June 1944",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
   "id": "a4b24d78cf",
   "en": "The Republic, in the Rain",
   "ctx": "subtitle under the block title — tour 1.0 / Þingvellir / 🇮🇸 17 June 1944",
@@ -3486,6 +3701,17 @@
   "id": "2689fb3162",
   "en": "Legend says a shepherd here was repeatedly **dragged out of the cave by invisible hands** — right before a blizzard that would have killed him inside. In Iceland, even the hidden folk do their own weather warnings.",
   "ctx": "the spoken close — tour 1.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "4be1c31d08",
+  "en": "Weather pivot: \"Low cloud is the right weather for this. They lived in a cave because of days like this.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
   "tours": [
    "1.0",
    "2.0",
@@ -3656,6 +3882,17 @@
   "id": "a048149c5c",
   "en": "Welcome to the gateway to Hell. It gives you barely **an hour and a half's notice** to send the postcards.",
   "ctx": "the spoken close — tour 1.0 / Þingvellir → Haukadalur Valley / 🌋 Hekla",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "bd49c792da",
+  "en": "Weather pivot: \"Hekla is out sixty kilometres and hides most days. Medieval Europe thought that was deliberate.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir → Haukadalur Valley / 🌋 Hekla",
   "tours": [
    "1.0",
    "2.0",
@@ -3867,6 +4104,17 @@
   ]
  },
  {
+  "id": "a821933f43",
+  "en": "Weather pivot: \"Steam shows better in the cold. If the lake has gone grey, look for where it is smoking.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir → Haukadalur Valley / 🛁 Laugarvatn & Apavatn",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
   "id": "db2f80cb73",
   "en": "Warm Water, Holy Water",
   "ctx": "subtitle under the block title — tour 1.0 / Þingvellir → Haukadalur Valley / 🛁 Laugarvatn & Apavatn",
@@ -3999,6 +4247,17 @@
   "id": "d84edc8a91",
   "en": "The cheapest border policy in Icelandic history: knock down the only bridge and let the river do the rest.",
   "ctx": "the spoken close — tour 1.0 / Þingvellir → Haukadalur Valley / 💙 Brúará",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "ace31df7b2",
+  "en": "Weather pivot: \"Rivers do not need good weather. This one is loudest when the sky is worst.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir → Haukadalur Valley / 💙 Brúará",
   "tours": [
    "1.0",
    "2.0",
@@ -4146,6 +4405,17 @@
   "id": "b257cb45bd",
   "en": "The world's oldest parliament was killed by the same families it was built to control.",
   "ctx": "the spoken close — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ The Sturlung Age",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "c6323203d8",
+  "en": "Weather pivot: \"No view for this one — it is thirteenth-century politics, and it is grim enough without the rain.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ The Sturlung Age",
   "tours": [
    "1.0",
    "2.0",
@@ -4369,6 +4639,17 @@
   ]
  },
  {
+  "id": "b7498804b5",
+  "en": "Weather pivot: \"Steam and low cloud look identical from here. Both mean the ground is warm.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ Haukadalur",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
   "id": "d39fc75685",
   "en": "Valley of the Hawks",
   "ctx": "subtitle under the block title — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ Haukadalur",
@@ -4529,6 +4810,17 @@
   "id": "224ff08729",
   "en": "Iceland exported the word \"geyser\" before it exported the cod.",
   "ctx": "the spoken close — tour 1.0 / Geysir / ⛲ Geysir",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "0c51a1d99b",
+  "en": "Weather pivot: \"Wind decides which way you get soaked. Stand upwind of Strokkur and watch everyone else learn that.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Geysir / ⛲ Geysir",
   "tours": [
    "1.0",
    "2.0",
@@ -4754,6 +5046,17 @@
   "id": "6fad6ff743",
   "en": "An investor showed up with engineers. A farmer's daughter showed up and lost every legal round — and the falls are still here.",
   "ctx": "the spoken close — tour 1.0 / Gullfoss / 💧 Hvítá & Gullfoss",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "b838e44731",
+  "en": "Weather pivot: \"Rain makes it bigger, spray makes it wetter, and the rainbow needs sun. Two out of three today.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss / 💧 Hvítá & Gullfoss",
   "tours": [
    "1.0",
    "2.0",
@@ -5387,6 +5690,17 @@
   ]
  },
  {
+  "id": "b77681275b",
+  "en": "Weather pivot: \"A working river in working weather. It does not stop for either of us.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
   "id": "1c63caffcf",
   "en": "The Quiet Tributary & Brú Power Plant",
   "ctx": "subtitle under the block title — tour 1.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
@@ -5510,6 +5824,17 @@
   "id": "0c60453009",
   "en": "At our latitude, you shouldn't be able to grow a tomato. So we built a farm on a volcano and flew in Dutch bees to run it.",
   "ctx": "the spoken close — tour 1.0 / Gullfoss → Reykjavík / 🍅 Reykholt & Friðheimar",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "1e30feb0ab",
+  "en": "Weather pivot: \"The greenhouses do not care what the sky is doing. That is the entire business model.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🍅 Reykholt & Friðheimar",
   "tours": [
    "1.0",
    "2.0",
@@ -5681,6 +6006,17 @@
   ]
  },
  {
+  "id": "044fc3b0cb",
+  "en": "Weather pivot: \"They will be standing in it, tails to the wind, entirely unbothered. Take the lesson.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🐎 Icelandic Horses",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
   "id": "dd5f78d9a9",
   "en": "Living Viking Heritage",
   "ctx": "subtitle under the block title — tour 1.0 / Gullfoss → Reykjavík / 🐎 Icelandic Horses",
@@ -5802,6 +6138,17 @@
   "id": "eecf3d6412",
   "en": "A 700-year capital, ended by a single earthquake and a Danish administrative form.",
   "ctx": "the spoken close — tour 1.0 / Gullfoss → Reykjavík / ⛪ Skálholt",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "afeabdfef1",
+  "en": "Weather pivot: \"Grey and windswept is how this place looked for most of its eight hundred years.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / ⛪ Skálholt",
   "tours": [
    "1.0",
    "2.0",
@@ -6012,6 +6359,17 @@
   ]
  },
  {
+  "id": "4ac951918e",
+  "en": "Weather pivot: \"The crater water goes a deeper green under cloud, so this is not the day to feel short-changed.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🎵 Grímsnes & Kerið",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
   "id": "77cc074f3e",
   "en": "Red Walls, Blue Lake, Björk on a Raft",
   "ctx": "subtitle under the block title — tour 1.0 / Gullfoss → Reykjavík / 🎵 Grímsnes & Kerið",
@@ -6161,6 +6519,17 @@
   "id": "99593e48bc",
   "en": "Big rivers get the postcards. The Sog quietly ran the lights.",
   "ctx": "the spoken close — tour 1.0 / Gullfoss → Reykjavík / ⚡ Sog River",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
+  "id": "6cfe5dcb85",
+  "en": "Weather pivot: \"Spring-fed, so it looks the same today as it did in the sunshine last week.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / ⚡ Sog River",
   "tours": [
    "1.0",
    "2.0",
@@ -6391,6 +6760,20 @@
   ]
  },
  {
+  "id": "443981d493",
+  "en": "Weather pivot: \"Rain makes it bigger. Everything I am about to tell you about this river is more true today than it was yesterday.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🌊 Ölfusá",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
   "id": "19a8abe3b8",
   "en": "The Final Drain",
   "ctx": "subtitle under the block title — tour 1.0 / Gullfoss → Reykjavík / 🌊 Ölfusá",
@@ -6557,6 +6940,20 @@
   ]
  },
  {
+  "id": "a3b6da31af",
+  "en": "Weather pivot: \"You do not need to see anything for this one. Just listen to what is under the wheels.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
   "id": "f8c32e3661",
   "en": "The Great Milk Collapse",
   "ctx": "subtitle under the block title — tour 1.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
@@ -6660,15 +7057,12 @@
   ]
  },
  {
-  "id": "47dc614cb7",
-  "en": "Look ahead at 12 o'clock — the Ring Road (Leið 1).",
+  "id": "eca7f4deb2",
+  "en": "Look right at 3 o'clock — Ingólfsfjall, the flat-topped mountain named after him.",
   "ctx": "cue, tells the guest where to look — tour 1.0 / Gullfoss → Reykjavík / 🧭 Ingólfur Arnarson",
   "tours": [
    "1.0",
-   "2.0",
-   "3.0",
-   "4.0",
-   "7.0"
+   "2.0"
   ]
  },
  {
@@ -6689,6 +7083,20 @@
   "id": "e383010a1e",
   "en": "The saga begins with a man chasing two pillars. It ends with a whole nation driving the road that traces his coastline.",
   "ctx": "the spoken close — tour 1.0 / Gullfoss → Reykjavík / 🧭 Ingólfur Arnarson",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
+  "id": "5496857dcb",
+  "en": "Weather pivot: \"If the mountain has gone, take my word for it — big, flat-topped, and behind us now.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🧭 Ingólfur Arnarson",
   "tours": [
    "1.0",
    "2.0",
@@ -6830,6 +7238,20 @@
   "id": "e4acd1f280",
   "en": "Most towns hide their disasters. Hveragerði put theirs in the lobby and charged admission.",
   "ctx": "the spoken close — tour 1.0 / Gullfoss → Reykjavík / 🌋 Hveragerði",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
+  "id": "4d4eef6102",
+  "en": "Weather pivot: \"Cannot see the town? Look for the steam instead. The town is wherever the ground is smoking.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🌋 Hveragerði",
   "tours": [
    "1.0",
    "2.0",
@@ -7315,6 +7737,20 @@
   ]
  },
  {
+  "id": "66d6ed9726",
+  "en": "Weather pivot: \"If you cannot see the plant you will see the steam, and on a day like this the steam is the whole show.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🏢 Hellisheiðarvirkjun",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
   "id": "be1dcfbb68",
   "en": "The Dragon's Breath",
   "ctx": "subtitle under the block title — tour 1.0 / Gullfoss → Reykjavík / 🏢 Hellisheiðarvirkjun",
@@ -7512,6 +7948,20 @@
   ]
  },
  {
+  "id": "df2a44c999",
+  "en": "Weather pivot: \"Lava in fog is the honest version. This is roughly what the year 1000 looked like from a distance.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / ⛰️ Kristnitökuhraun",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
   "id": "f10f89bd43",
   "en": "The Decision Rock",
   "ctx": "subtitle under the block title — tour 1.0 / Gullfoss → Reykjavík / ⛰️ Kristnitökuhraun",
@@ -7670,6 +8120,20 @@
   "id": "7133d2375b",
   "en": "Eighty cones. One Mars classroom. Half of it now under your runway.",
   "ctx": "the spoken close — tour 1.0 / Gullfoss → Reykjavík / ⛰️ Rauðhólar",
+  "tours": [
+   "1.0",
+   "2.0",
+   "3.0",
+   "4.0",
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
+  "id": "60414fe43e",
+  "en": "Weather pivot: \"The red goes deeper in the rain, so a grey day actually makes the craters easier to pick out, not harder.\"",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / ⛰️ Rauðhólar",
   "tours": [
    "1.0",
    "2.0",
@@ -9151,6 +9615,14 @@
   ]
  },
  {
+  "id": "6781eec89e",
+  "en": "Weather pivot: \"If the ice cap has gone into the cloud, that is normal. It makes its own weather up there.\"",
+  "ctx": "bad-weather alternative — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "tours": [
+   "2.0"
+  ]
+ },
+ {
   "id": "f32e9637ad",
   "en": "Snowmobiling on a Melting Giant",
   "ctx": "subtitle under the block title — tour 2.0 / Gullfoss / 🏔️ Langjökull",
@@ -10119,6 +10591,14 @@
   ]
  },
  {
+  "id": "1fb9f93846",
+  "en": "Weather pivot: \"You are getting in the water anyway. The forecast stops mattering at the changing rooms.\"",
+  "ctx": "bad-weather alternative — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
+  "tours": [
+   "3.0"
+  ]
+ },
+ {
   "id": "285547c795",
   "en": "The \"Secret\" Lagoon That Taught Iceland to Swim",
   "ctx": "subtitle under the block title — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
@@ -10409,6 +10889,17 @@
   "ctx": "gloss for the name \"Ölfusárbrú\" — tour 3.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
   "tours": [
    "3.0"
+  ]
+ },
+ {
+  "id": "340eff298c",
+  "en": "Look back and left — Ingólfsfjall, the flat-topped mountain named after him.",
+  "ctx": "cue, tells the guest where to look — tour 3.0 / Gullfoss → Reykjavík / 🧭 Ingólfur Arnarson",
+  "tours": [
+   "3.0",
+   "5.0",
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -10770,6 +11261,14 @@
   ]
  },
  {
+  "id": "8ea7bff5a5",
+  "en": "Weather pivot: \"Rain makes it bigger. Everything I am about to tell you about this river is more true today.\"",
+  "ctx": "bad-weather alternative — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "tours": [
+   "4.0"
+  ]
+ },
+ {
   "id": "3ee4447f90",
   "en": "The Big Drain Ahead",
   "ctx": "subtitle under the block title — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
@@ -10896,6 +11395,14 @@
   "id": "492f04fc25",
   "en": "the shopping centre it sits inside, torn through by that quake",
   "ctx": "gloss for the name \"Sunnumörk\" — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌋 Hveragerði",
+  "tours": [
+   "4.0"
+  ]
+ },
+ {
+  "id": "485620d9dd",
+  "en": "Look left at 10 o'clock — Ingólfsfjall, the flat-topped mountain named after him.",
+  "ctx": "cue, tells the guest where to look — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🧭 Ingólfur Arnarson",
   "tours": [
    "4.0"
   ]
@@ -11807,15 +12314,6 @@
   ]
  },
  {
-  "id": "6b4dbe46f0",
-  "en": "Weather pivot: \"If the park is grey and half empty, that is exactly the Iceland Kjarval painted. He was never interested in the sunny version.\"",
-  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧍 Jóhannes Sveinsson Kjarval",
-  "tours": [
-   "5.0",
-   "6.0"
-  ]
- },
- {
   "id": "7c134d2f71",
   "en": "Born **15 October 1885** at **Efri-Ey** farm in **Meðalland**, right here in south Iceland — **9th of 13 kids** (his parents clearly had stamina). Fostered out east to **Borgarfjörður eystri**; too poor for paint, he drew with **calf blood, soot and wool dye** — then went to sea.",
   "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧍 Jóhannes Sveinsson Kjarval",
@@ -12128,15 +12626,6 @@
   ]
  },
  {
-  "id": "b0a84bf052",
-  "en": "Weather pivot: \"If you cannot see the brewery you can usually smell the malt. That counts.\"",
-  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
-  "tours": [
-   "5.0",
-   "6.0"
-  ]
- },
- {
   "id": "3c005eca8b",
   "en": "**1913**: **Tómas Tómasson** starts Ölgerðin in a Reykjavík basement — at first just **malt extract** — and names it after **Egill Skallagrímsson**, the Viking warrior-poet who could spin stunning verse and drink a whole hall under the table.",
   "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Ölgerðin Egill Skallagrímsson",
@@ -12244,15 +12733,6 @@
   ]
  },
  {
-  "id": "88feec0508",
-  "en": "Weather pivot: \"The valley looks its best wet. That river is the reason anything in this city is green.\"",
-  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
-  "tours": [
-   "5.0",
-   "6.0"
-  ]
- },
- {
   "id": "95a653f4be",
   "en": "To joggers it's a postcard. To a geologist, it's a **crime scene**. 10,000 years of Iceland trying — and failing — to stay quiet.",
   "ctx": "opening hook line — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
@@ -12314,15 +12794,6 @@
   "ctx": "gloss for the name \"Skötufoss\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏞️ Elliðaárdalur & Paradísardalur",
   "tours": [
    "5.0"
-  ]
- },
- {
-  "id": "60414fe43e",
-  "en": "Weather pivot: \"The red goes deeper in the rain, so a grey day actually makes the craters easier to pick out, not harder.\"",
-  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Rauðhólar",
-  "tours": [
-   "5.0",
-   "6.0"
   ]
  },
  {
@@ -12539,15 +13010,6 @@
   ]
  },
  {
-  "id": "df2a44c999",
-  "en": "Weather pivot: \"Lava in fog is the honest version. This is roughly what the year 1000 looked like from a distance.\"",
-  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Kristnitökuhraun",
-  "tours": [
-   "5.0",
-   "6.0"
-  ]
- },
- {
   "id": "648bae4347",
   "en": "At peak tension a messenger reported **the ground tearing open on Hellisheiði**. Pagans cried \"the gods are angry!\"",
   "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / ⛰️ Kristnitökuhraun",
@@ -12588,15 +13050,6 @@
    "5.0",
    "6.0",
    "7.0"
-  ]
- },
- {
-  "id": "66d6ed9726",
-  "en": "Weather pivot: \"If you cannot see the plant you will see the steam, and on a day like this the steam is the whole show.\"",
-  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
-  "tours": [
-   "5.0",
-   "6.0"
   ]
  },
  {
@@ -12645,15 +13098,6 @@
   "ctx": "gloss for the name \"Hellisheiði\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏢 Hellisheiðarvirkjun",
   "tours": [
    "5.0"
-  ]
- },
- {
-  "id": "4d4eef6102",
-  "en": "Weather pivot: \"Cannot see the town? Look for the steam instead. The town is wherever the ground is smoking.\"",
-  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌋 Hveragerði",
-  "tours": [
-   "5.0",
-   "6.0"
   ]
  },
  {
@@ -12730,15 +13174,6 @@
    "5.0",
    "6.0",
    "7.0"
-  ]
- },
- {
-  "id": "443981d493",
-  "en": "Weather pivot: \"Rain makes it bigger. Everything I am about to tell you about this river is more true today than it was yesterday.\"",
-  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
-  "tours": [
-   "5.0",
-   "6.0"
   ]
  },
  {
@@ -12830,24 +13265,6 @@
   ]
  },
  {
-  "id": "340eff298c",
-  "en": "Look back and left — Ingólfsfjall, the flat-topped mountain named after him.",
-  "ctx": "cue, tells the guest where to look — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
-  "tours": [
-   "5.0",
-   "6.0"
-  ]
- },
- {
-  "id": "5496857dcb",
-  "en": "Weather pivot: \"If the mountain has gone, take my word for it — big, flat-topped, and behind us now.\"",
-  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
-  "tours": [
-   "5.0",
-   "6.0"
-  ]
- },
- {
   "id": "94a5c55c7b",
   "en": "Per the saga, first settler **Ingólfur Arnarson** threw his carved **high-seat pillars** overboard and vowed to settle wherever they washed up.",
   "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
@@ -12897,15 +13314,6 @@
    "5.0",
    "6.0",
    "7.0"
-  ]
- },
- {
-  "id": "a3b6da31af",
-  "en": "Weather pivot: \"You do not need to see anything for this one. Just listen to what is under the wheels.\"",
-  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏗️ Selfoss",
-  "tours": [
-   "5.0",
-   "6.0"
   ]
  },
  {
@@ -12990,7 +13398,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -13174,7 +13583,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🕳️ Hella",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -13424,7 +13834,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏡 Keldur",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -13555,7 +13966,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur / 🏘️ Hvolsvöllur",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -13711,7 +14123,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🐦 Vestmannaeyjar",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -13824,7 +14237,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -13922,7 +14336,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🛡️ Markarfljót & Hlíðarendi",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -14045,7 +14460,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌋 Eyjafjallajökull",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -14280,7 +14696,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Sólheimajökull / 🧊 Sólheimajökull",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -14414,7 +14831,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Sólheimajökull → Reynisfjara / ✈️ The DC-3 Wreck",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -14526,7 +14944,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -14675,7 +15094,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Sólheimajökull → Reynisfjara / ⛪ Skeiðflatarkirkja",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -14807,7 +15227,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Sólheimajökull → Reynisfjara / 🚪 Dýrhólaey",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -14956,7 +15377,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Reynisfjara / 🌊 Reynisfjara & Reynisdrangar",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -15105,7 +15527,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Reynisfjara → Vík / 🌋 Katla",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -15253,7 +15676,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Vík í Mýrdal / ⛪ Víkurkirkja",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -15360,7 +15784,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Vík í Mýrdal / 🏘️ Vík í Mýrdal",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -15488,7 +15913,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -15750,7 +16176,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -15923,7 +16350,8 @@
   "ctx": "bad-weather alternative — tour 5.0 / Seljalandsfoss / 💧 Seljalandsfoss & Gljúfrabúi",
   "tours": [
    "5.0",
-   "6.0"
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -19610,6 +20038,14 @@
   ]
  },
  {
+  "id": "1e993a3ecc",
+  "en": "Weather pivot: \"The cave is cut into the cliff, so it is there whatever the sky is doing.\"",
+  "ctx": "bad-weather alternative — tour 7.0 / Hvolsvöllur → Skógafoss / Rútshellir",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
   "id": "7aed4e84ee",
   "en": "The Cave With a Murder Hole",
   "ctx": "subtitle under the block title — tour 7.0 / Hvolsvöllur → Skógafoss / Rútshellir",
@@ -20458,6 +20894,14 @@
   ]
  },
  {
+  "id": "870a9ce41f",
+  "en": "Weather pivot: \"The cairns show better against low cloud than they do in sunshine, oddly.\"",
+  "ctx": "bad-weather alternative — tour 7.0 / Skógafoss → Kirkjubæjarklaustur / Laufskálavarða",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
   "id": "1162b599b0",
   "en": "The Cairn Field of Good Luck",
   "ctx": "subtitle under the block title — tour 7.0 / Skógafoss → Kirkjubæjarklaustur / Laufskálavarða",
@@ -20565,6 +21009,14 @@
   "id": "8f050698f8",
   "en": "Every other lava field is scenery. This one has a body count.",
   "ctx": "the spoken close — tour 7.0 / Skógafoss → Kirkjubæjarklaustur / Eldhraun",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "39a2dd11da",
+  "en": "Weather pivot: \"Moss in the wet goes an unreasonable green. This is the lava field at its best, not its worst.\"",
+  "ctx": "bad-weather alternative — tour 7.0 / Skógafoss → Kirkjubæjarklaustur / Eldhraun",
   "tours": [
    "7.0"
   ]
@@ -20725,6 +21177,14 @@
   "id": "6eb7d32a3e",
   "en": "Most sermons just feel like they last forever. His actually stopped a volcano.",
   "ctx": "the spoken close — tour 7.0 / Kirkjubæjarklaustur / Kirkjubæjarklaustur",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "40aea3707d",
+  "en": "Weather pivot: \"The sisters were here through eight hundred winters of exactly this.\"",
+  "ctx": "bad-weather alternative — tour 7.0 / Kirkjubæjarklaustur / Kirkjubæjarklaustur",
   "tours": [
    "7.0"
   ]
@@ -20906,6 +21366,14 @@
   ]
  },
  {
+  "id": "e3f5c0638d",
+  "en": "Weather pivot: \"You cannot see it from the road on any day. It is hidden in that ridge, which is why it stayed a secret so long.\"",
+  "ctx": "bad-weather alternative — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Fjaðrárgljúfur",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
   "id": "c56573c5b2",
   "en": "The Serpent Canyon",
   "ctx": "subtitle under the block title — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Fjaðrárgljúfur",
@@ -21058,6 +21526,14 @@
   ]
  },
  {
+  "id": "76f606e5db",
+  "en": "Weather pivot: \"Wind blows this one sideways, and in a real gale it goes back up the cliff. Worth watching for.\"",
+  "ctx": "bad-weather alternative — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Foss á Síðu",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
   "id": "e01c9765b6",
   "en": "The Waterfall That Blows Backwards",
   "ctx": "subtitle under the block title — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Foss á Síðu",
@@ -21162,6 +21638,14 @@
   ]
  },
  {
+  "id": "1207f22131",
+  "en": "Weather pivot: \"A lone crag in flat light is hard to pick out. Look for the shape, not the colour.\"",
+  "ctx": "bad-weather alternative — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Orustuhóll",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
   "id": "07f57f5966",
   "en": "The Island in the Fire",
   "ctx": "subtitle under the block title — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Orustuhóll",
@@ -21261,6 +21745,14 @@
   "id": "d11176fe75",
   "en": "Everything east of here is sand. This is the last thing standing before it — and the saga knew that too.",
   "ctx": "the spoken close — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Lómagnúpur & Núpsstaður",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "a53f1d6c19",
+  "en": "Weather pivot: \"If the top has gone, you are still seeing seven hundred metres of it. That is usually enough.\"",
+  "ctx": "bad-weather alternative — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Lómagnúpur & Núpsstaður",
   "tours": [
    "7.0"
   ]
@@ -21373,6 +21865,14 @@
   "id": "c0ff4779e2",
   "en": "Engineers spent decades bridging this sand. Vatnajökull started taking it apart again before lunch.",
   "ctx": "the spoken close — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Skeiðarársandur",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "b0f1d3816e",
+  "en": "Weather pivot: \"Grey sky over black sand is the default here, and it is genuinely the emptiest view in Iceland.\"",
+  "ctx": "bad-weather alternative — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Skeiðarársandur",
   "tours": [
    "7.0"
   ]
@@ -21501,6 +22001,14 @@
   "id": "adc7cd2df9",
   "en": "It's the size of a county, hides live volcanoes, and Christopher Nolan used it as another planet.",
   "ctx": "the spoken close — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Skaftafell & Vatnajökull",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "434c755230",
+  "en": "Weather pivot: \"The tongues sit low, so you often get them when the peaks have gone.\"",
+  "ctx": "bad-weather alternative — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Skaftafell & Vatnajökull",
   "tours": [
    "7.0"
   ]
@@ -21674,6 +22182,14 @@
   ]
  },
  {
+  "id": "21ce9cce84",
+  "en": "Weather pivot: \"The ice looks bluer under cloud. Bright sun actually washes it out.\"",
+  "ctx": "bad-weather alternative — tour 7.0 / Fjallsárlón / Fjallsárlón",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
   "id": "81af25b899",
   "en": "The Quiet Lagoon",
   "ctx": "subtitle under the block title — tour 7.0 / Fjallsárlón / Fjallsárlón",
@@ -21789,6 +22305,14 @@
   "id": "a751df4552",
   "en": "Your great-grandparents could have stood on solid ice right here. Now it's a 260-metre lake — and still deepening. That's the whole story, in one view.",
   "ctx": "the spoken close — tour 7.0 / Jökulsárlón / Jökulsárlón",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "7ead77079e",
+  "en": "Weather pivot: \"Cloud makes the blue stronger. The photographs everyone envies were mostly taken in weather like this.\"",
+  "ctx": "bad-weather alternative — tour 7.0 / Jökulsárlón / Jökulsárlón",
   "tours": [
    "7.0"
   ]
@@ -21917,6 +22441,14 @@
   "id": "228eef2304",
   "en": "Diamonds that cost nothing, last an hour, and used to be a glacier. Only in Iceland.",
   "ctx": "the spoken close — tour 7.0 / Fellsfjara / Fellsfjara",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "c203fd0642",
+  "en": "Weather pivot: \"Rain on black sand and clear ice is the whole point. Wet feet, better pictures.\"",
+  "ctx": "bad-weather alternative — tour 7.0 / Fellsfjara / Fellsfjara",
   "tours": [
    "7.0"
   ]
@@ -22744,6 +23276,15 @@
   ]
  },
  {
+  "id": "52b83ca5a9",
+  "en": "Weather pivot: \"Esja above it decides the visibility. If the mountain has gone, so has the headland.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / BSÍ Bus Terminal → Borgarnes / ⚖️ Kjalarnes",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "6b59e6beab",
   "en": "Iceland's world-famous parliament at Þingvellir? Not even the first. The original ran right here — set up by the founder's son. Nepotism: also a Viking value.",
   "ctx": "opening hook line — tour 9.0 / BSÍ Bus Terminal → Borgarnes / ⚖️ Kjalarnes",
@@ -22870,6 +23411,15 @@
   ]
  },
  {
+  "id": "9442425dfa",
+  "en": "Weather pivot: \"Nothing to see in here whatever the weather, which is why I am talking.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / BSÍ Bus Terminal → Borgarnes / 🕳️ Hvalfjörður Tunnel",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "a718e00e9d",
   "en": "Forty Metres of Ocean Overhead",
   "ctx": "subtitle under the block title — tour 9.0 / BSÍ Bus Terminal → Borgarnes / 🕳️ Hvalfjörður Tunnel",
@@ -22981,6 +23531,15 @@
   "id": "af113d6fdd",
   "en": "That little island held a hundred and eighty outlaws, according to the saga. When an archaeologist dug for their graves in 1881, he found nothing at all. The fjord kept the names and ate the evidence.",
   "ctx": "the spoken close — tour 9.0 / BSÍ Bus Terminal → Borgarnes / 🐋 Hvalfjörður",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "7950995b40",
+  "en": "Weather pivot: \"If the fjord has gone in the murk, you have still driven under it, which is the more impressive fact.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / BSÍ Bus Terminal → Borgarnes / 🐋 Hvalfjörður",
   "tours": [
    "10.0",
    "9.0"
@@ -23140,6 +23699,15 @@
   ]
  },
  {
+  "id": "13f56a197d",
+  "en": "Weather pivot: \"A free-standing mountain is the first thing the cloud takes. It will be back.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / BSÍ Bus Terminal → Borgarnes / ⛰️ Akrafjall",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "250a6884ed",
   "en": "A Whale Bone at 85 Metres, and Two Irish Brothers",
   "ctx": "subtitle under the block title — tour 9.0 / BSÍ Bus Terminal → Borgarnes / ⛰️ Akrafjall",
@@ -23293,6 +23861,15 @@
   ]
  },
  {
+  "id": "43d731f0ef",
+  "en": "Weather pivot: \"The bridge works in any weather. That was rather the argument for building it.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / BSÍ Bus Terminal → Borgarnes / 🌉 Borgarfjarðarbrú",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "b182e0d2c2",
   "en": "520 Metres That Retired Four Kilometres",
   "ctx": "subtitle under the block title — tour 9.0 / BSÍ Bus Terminal → Borgarnes / 🌉 Borgarfjarðarbrú",
@@ -23431,6 +24008,15 @@
   "id": "fa16092ef4",
   "en": "This town is called Borgarnes now. In Egils saga it's Digranes, and it's a graveyard — Skallagrímur was rowed out at high tide and buried with his horse, his weapons and his smith's tools. People have dug into that mound. Nothing has ever been found in it.",
   "ctx": "the spoken close — tour 9.0 / Borgarnes / 🪦 Borgarnes",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "21711bbb41",
+  "en": "Weather pivot: \"Grey and windy is Borgarnes most days. The saga written here is not a cheerful one either.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Borgarnes / 🪦 Borgarnes",
   "tours": [
    "10.0",
    "9.0"
@@ -23643,6 +24229,15 @@
   ]
  },
  {
+  "id": "633e7a0961",
+  "en": "Weather pivot: \"If the peninsula has gone into cloud, you are looking at the rift anyway — you just cannot see the edges of it.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Borgarnes → Selvallafoss / 🌋 Iceland's First Rift Zone",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "d2b95264da",
   "en": "The Volcanoes That Didn't Get the Memo",
   "ctx": "subtitle under the block title — tour 9.0 / Borgarnes → Selvallafoss / 🌋 Iceland's First Rift Zone",
@@ -23787,6 +24382,15 @@
   ]
  },
  {
+  "id": "0fb2d21fdd",
+  "en": "Weather pivot: \"Ridges in flat light lose their shape. Look for the skyline rather than the detail.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Borgarnes → Selvallafoss / 🔥 Hítardalur & Ljósufjöll",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "367fb56361",
   "en": "Ninety Kilometres of One Bad Idea",
   "ctx": "subtitle under the block title — tour 9.0 / Borgarnes → Selvallafoss / 🔥 Hítardalur & Ljósufjöll",
@@ -23922,6 +24526,15 @@
   ]
  },
  {
+  "id": "1cb5922ad9",
+  "en": "Weather pivot: \"A low ring in low cloud is hard work. If it has gone, it is a crater the shape of a wedding ring.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Borgarnes → Selvallafoss / 🌋 Eldborg",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "dc7387855c",
   "en": "The Fire-Fortress",
   "ctx": "subtitle under the block title — tour 9.0 / Borgarnes → Selvallafoss / 🌋 Eldborg",
@@ -24042,6 +24655,15 @@
   "id": "ce04c841fe",
   "en": "It's the same maths as a beehive. The bees do it in wax in a summer; the basalt did it in stone over years — and neither of them ever took a geometry class.",
   "ctx": "the spoken close — tour 9.0 / Borgarnes → Selvallafoss / 🪨 Gerðuberg",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "a1cda75867",
+  "en": "Weather pivot: \"Columns show best in flat light, which is what we have. This one is improved by bad weather.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Borgarnes → Selvallafoss / 🪨 Gerðuberg",
   "tours": [
    "10.0",
    "9.0"
@@ -24186,6 +24808,7 @@
   "en": "Weather pivot (if the mountains are invisible): \"If the spine has vanished into cloud, fitting — móberg was made in the dark under an ice sheet. Being invisible is the most authentic thing it does.\"",
   "ctx": "bad-weather alternative — tour 9.0 / Borgarnes → Selvallafoss / ⛰️ Vatnaleið",
   "tours": [
+   "10.0",
    "9.0"
   ]
  },
@@ -24304,6 +24927,14 @@
   "id": "2b0d79da3d",
   "en": "Land the punchline slowly: the National Land Survey maps this fall, and leaves the name field blank. Let that sit for a beat before you move to the lake.",
   "ctx": "the spoken close — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "5e712f2b6c",
+  "en": "Weather pivot: \"The fall is below the road, so the cloud has to come down a long way to take it.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Selvallafoss / 💧 Fossá",
   "tours": [
    "9.0"
   ]
@@ -24448,6 +25079,14 @@
   "id": "52a993d025",
   "en": "The \"perhaps\" is the whole block. Deliver it as an open question, not a solved one — because it is one.",
   "ctx": "the spoken close — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "f79c85126c",
+  "en": "Weather pivot: \"The lake sits in a hollow and holds mist. If it looks like it is steaming, it is not.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
   "tours": [
    "9.0"
   ]
@@ -24621,6 +25260,7 @@
   "en": "Weather pivot (if the craters are hidden): \"No red craters today — but the lumps under the moss either side of us are the berserkers' lava, and this road is doing exactly what their path did.\"",
   "ctx": "bad-weather alternative — tour 9.0 / Selvallafoss → Kirkjufell / 🪨 Berserkjahraun",
   "tours": [
+   "10.0",
    "9.0"
   ]
  },
@@ -25230,6 +25870,7 @@
   "en": "Weather pivot (if cloud hides it): \"The mountain is in there — 463 metres of it, modelling for radar today. Kirkjufellsfoss works at ground level all year; start there.\"",
   "ctx": "bad-weather alternative — tour 9.0 / Kirkjufell / ⛰️ Kirkjufell",
   "tours": [
+   "10.0",
    "9.0"
   ]
  },
@@ -25376,6 +26017,15 @@
   "id": "7787a0ee79",
   "en": "Other nations exorcise their ghosts. We serve them papers. It's the most Icelandic thing in the entire saga corpus — and the ghosts respected the verdict.",
   "ctx": "the spoken close — tour 9.0 / Kirkjufell → Ólafsvík / 👻 Fróðá",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "c03f91ccdd",
+  "en": "Weather pivot: \"A haunted farm in driving rain is arguably the correct way to meet this story.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Kirkjufell → Ólafsvík / 👻 Fróðá",
   "tours": [
    "10.0",
    "9.0"
@@ -25822,6 +26472,15 @@
   ]
  },
  {
+  "id": "f2bde283de",
+  "en": "Weather pivot: \"A working fishing town does not close for weather. Neither does the harbour.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Ólafsvík / ⚓ Ólafsvík",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "e2344e5a49",
   "en": "The Harbour Swap of 1687",
   "ctx": "subtitle under the block title — tour 9.0 / Ólafsvík / ⚓ Ólafsvík",
@@ -25931,6 +26590,15 @@
   "id": "a595bfbf11",
   "en": "History gave us a sentence. Folklore gave us the barrels and the best comeback line in Icelandic history. Take both home — just keep the labels on.",
   "ctx": "the spoken close — tour 9.0 / Ólafsvík → Djúpalónssandur / 🪓 Björn the Rich",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "bfdd0ed3af",
+  "en": "Weather pivot: \"Rif is flat and low, so it goes early in the murk. It is the point sticking out to the right.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Ólafsvík → Djúpalónssandur / 🪓 Björn the Rich",
   "tours": [
    "10.0",
    "9.0"
@@ -26080,6 +26748,15 @@
   ]
  },
  {
+  "id": "c9f0379734",
+  "en": "Weather pivot: \"In wind the terns hang almost motionless. They are the easiest thing to see out there today.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Ólafsvík → Djúpalónssandur / 🐦 The Tern Capital",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "0bb61a5563",
   "en": "17,000 Nests and an Antarctic Commute",
   "ctx": "subtitle under the block title — tour 9.0 / Ólafsvík → Djúpalónssandur / 🐦 The Tern Capital",
@@ -26180,6 +26857,15 @@
   "id": "7612231a40",
   "en": "There is a painting of Columbus in the parish hall here. The story behind it was written as a short story by a Danish novelist and printed in an Icelandic-American newspaper in Winnipeg in 1889. That is the whole documentary trail.",
   "ctx": "the spoken close — tour 9.0 / Ólafsvík → Djúpalónssandur / ⛪ Hellissandur, Ingjaldshóll & the Columbus Story",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "8050134b7b",
+  "en": "Weather pivot: \"The church sits high on its mound, so it usually survives the cloud when the village has gone.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Ólafsvík → Djúpalónssandur / ⛪ Hellissandur, Ingjaldshóll & the Columbus Story",
   "tours": [
    "10.0",
    "9.0"
@@ -26288,6 +26974,15 @@
   "id": "96fc04e95f",
   "en": "Three hundred and ninety-six steps, and the stair itself won the biggest landscape architecture prize in Europe in 2018. The architects call it the stairway to heaven and hell.",
   "ctx": "the spoken close — tour 9.0 / Ólafsvík → Djúpalónssandur / 🪜 Saxhóll",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "af087c755a",
+  "en": "Weather pivot: \"The black stair is the giveaway. Look for the line of steps, not the cone.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Ólafsvík → Djúpalónssandur / 🪜 Saxhóll",
   "tours": [
    "10.0",
    "9.0"
@@ -26422,6 +27117,15 @@
   "id": "38295b272c",
   "en": "The rusting iron is not litter. It is a war grave in effect — and it is legally protected. Leave it where it lies.",
   "ctx": "the spoken close — tour 9.0 / Djúpalónssandur / 💪 Djúpalónssandur & Dritvík",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "5d5d96d049",
+  "en": "Weather pivot: \"Wet black pebbles are the best they ever look. Mind your footing on the way down.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Djúpalónssandur / 💪 Djúpalónssandur & Dritvík",
   "tours": [
    "10.0",
    "9.0"
@@ -26579,6 +27283,15 @@
   ]
  },
  {
+  "id": "e19b421acb",
+  "en": "Weather pivot: \"The lighthouse is white and it is meant to be seen in this. That is its job.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Djúpalónssandur → Arnarstapi / 🕳️ Malarrif & Vatnshellir",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "434afb926c",
   "en": "Lighthouse Above, Underworld Below",
   "ctx": "subtitle under the block title — tour 9.0 / Djúpalónssandur → Arnarstapi / 🕳️ Malarrif & Vatnshellir",
@@ -26698,6 +27411,15 @@
   "id": "028a3bd3f3",
   "en": "Lóndrangar are not rocks the sea piled up. They are the insides of a volcano — the plugs of the vent. Everything soft around them has been taken away by the Atlantic.",
   "ctx": "the spoken close — tour 9.0 / Djúpalónssandur → Arnarstapi / 🪨 Lóndrangar",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "76f7900100",
+  "en": "Weather pivot: \"Two dark pinnacles against grey sea and grey sky is a harder picture, but it is a better one.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Djúpalónssandur → Arnarstapi / 🪨 Lóndrangar",
   "tours": [
    "10.0",
    "9.0"
@@ -26838,6 +27560,15 @@
   ]
  },
  {
+  "id": "5718658a8e",
+  "en": "Weather pivot: \"The glacier shows about a third of the days in the year. If it is out, say so loudly.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Djúpalónssandur → Arnarstapi / 🌋 Snæfellsjökull",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "5b76847d36",
   "en": "The Mountain With Three Careers",
   "ctx": "subtitle under the block title — tour 9.0 / Djúpalónssandur → Arnarstapi / 🌋 Snæfellsjökull",
@@ -26957,6 +27688,15 @@
   "id": "43cd7d8c49",
   "en": "Guðríður was born within sight of this road. Her son Snorri was born on the far side of the Atlantic, about five centuries before Columbus's crew ever saw it.",
   "ctx": "the spoken close — tour 9.0 / Djúpalónssandur → Arnarstapi / 🧭 Guðríður Þorbjarnardóttir",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "e5fcf5a469",
+  "en": "Weather pivot: \"She crossed the Atlantic eight times in open boats. Today's weather is not the headline.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Djúpalónssandur → Arnarstapi / 🧭 Guðríður Þorbjarnardóttir",
   "tours": [
    "10.0",
    "9.0"
@@ -27101,6 +27841,15 @@
   "id": "10f2678689",
   "en": "The management plan is the driest document ever to ruin a legend: no geothermal heat since the settlement. So whatever Bárður did in that pool, he did it cold — half-troll on the outside, all Viking underneath.",
   "ctx": "the spoken close — tour 9.0 / Djúpalónssandur → Arnarstapi / 🛁 Bárðarlaug",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "bcd35b303d",
+  "en": "Weather pivot: \"The pond hides until you are on the rim, so the cloud makes no difference to this one.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Djúpalónssandur → Arnarstapi / 🛁 Bárðarlaug",
   "tours": [
    "10.0",
    "9.0"
@@ -27260,6 +28009,15 @@
   ]
  },
  {
+  "id": "f0480ff762",
+  "en": "Weather pivot: \"Rough sea makes the blowhole work properly. Bad weather is the good version here.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Arnarstapi / 🐦 The Arnarstapi Cliffs",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "5b09047dd1",
   "en": "Columns Lying Down on the Job",
   "ctx": "subtitle under the block title — tour 9.0 / Arnarstapi / 🐦 The Arnarstapi Cliffs",
@@ -27386,6 +28144,15 @@
   ]
  },
  {
+  "id": "9cf71cf2ac",
+  "en": "Weather pivot: \"Stone troll, stone sky. He looks better in this than in sunshine.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Arnarstapi / 🗿 The Bárður Statue",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "fa9a53ff1e",
   "en": "The Detail Almost Every Guide Misses",
   "ctx": "subtitle under the block title — tour 9.0 / Arnarstapi / 🗿 The Bárður Statue",
@@ -27497,6 +28264,15 @@
   "id": "62189b2d98",
   "en": "This was a monopoly-trade harbour and the seat of the district governor. His house was built here in the 1770s and 80s — and then dismantled and shipped away in 1849.",
   "ctx": "the spoken close — tour 9.0 / Arnarstapi / 🏠 The Governor's House That Left",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "bc0c4b4cf4",
+  "en": "Weather pivot: \"The harbour is the story and it is right in front of you, weather or not.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Arnarstapi / 🏠 The Governor's House That Left",
   "tours": [
    "10.0",
    "9.0"
@@ -27630,6 +28406,15 @@
   "id": "a32e93a2b6",
   "en": "The saga is very precise about the two boys: eleven and twelve years old. Bárður carried one under each arm up the mountain — and the gorge and the crag ahead of you both still carry their names.",
   "ctx": "the spoken close — tour 9.0 / Arnarstapi → Ytri-Tunga / ⛰️ Stapafell & Rauðfeldsgjá",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "ff7f76be23",
+  "en": "Weather pivot: \"The cleft is a dark line in the mountain wall — easier to find in flat light than in shadow.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Arnarstapi → Ytri-Tunga / ⛰️ Stapafell & Rauðfeldsgjá",
   "tours": [
    "10.0",
    "9.0"
@@ -27771,6 +28556,15 @@
   ]
  },
  {
+  "id": "5a64f668e5",
+  "en": "Weather pivot: \"No view for this one. It is a story, and it is a horrible one, so mind the children.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Arnarstapi → Ytri-Tunga / 🔪 Axlar-Björn",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "3dca4a29c5",
   "en": "The Farmer You Didn't Stop To Visit",
   "ctx": "subtitle under the block title — tour 9.0 / Arnarstapi → Ytri-Tunga / 🔪 Axlar-Björn",
@@ -27890,6 +28684,15 @@
   "id": "de24deeece",
   "en": "Búðakirkja wasn't rebuilt by a bishop or a budget. It was rebuilt by one widow with paperwork and patience — consecrated in 1851, which makes this year its **175th anniversary**. She'd probably just nod.",
   "ctx": "the spoken close — tour 9.0 / Arnarstapi → Ytri-Tunga / ⛪ Búðir",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "3fbfbb2e36",
+  "en": "Weather pivot: \"A black church on black lava under a grey sky. There is no bad-weather version of this.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Arnarstapi → Ytri-Tunga / ⛪ Búðir",
   "tours": [
    "10.0",
    "9.0"
@@ -28044,6 +28847,7 @@
   "en": "Weather pivot (if the seals are elsewhere): \"Empty rocks today — the colony commutes. Those skerries are their desks, and by June they're all back at work.\"",
   "ctx": "bad-weather alternative — tour 9.0 / Ytri-Tunga / 🦭 Ytri-Tunga",
   "tours": [
+   "10.0",
    "9.0"
   ]
  },
@@ -28387,6 +29191,15 @@
   "id": "79d5bd0fa1",
   "en": "Ten pairs of white-tailed eagles nest along this coast — about one in seven of the entire Icelandic population. If something big drifts over the flats with fingers on the ends of its wings, that's them.",
   "ctx": "the spoken close — tour 9.0 / Ytri-Tunga → Reykjavík / 🦅 Löngufjörur",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "c33694f101",
+  "en": "Weather pivot: \"Pale sand stays pale. It is one of the few things out here the cloud cannot take.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Ytri-Tunga → Reykjavík / 🦅 Löngufjörur",
   "tours": [
    "10.0",
    "9.0"

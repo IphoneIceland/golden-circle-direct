@@ -20,10 +20,10 @@ window.__TOURS__ = [
   {id:"6.0", group:"South Coast", ready:true,  name:"South Coast Combo",
    sub:"BSÍ → Hvolsvöllur → Skógafoss → Reynisfjara → Vík", km:417, min:437, blocks:37},
   {id:"7.0", group:"South Coast", ready:true , name:"Glacial Lagoon",
-   sub:"BSÍ → Skógafoss → Kirkjubæjarklaustur → Jökulsárlón → Vík → Reykjavík", km:765, min:782, blocks:43},
-  {id:"9.0", group:"Snæfellsnes", ready:true, name:"Snæfellsnes North", sub:"BSÍ → Selvallafoss → Kirkjufell → Djúpalónssandur → Arnarstapi → Ytri-Tunga → BSÍ", km:450, min:451, blocks:41},
+   sub:"BSÍ → Skógafoss → Kirkjubæjarklaustur → Jökulsárlón → Vík → Reykjavík", km:765, min:782, blocks:45},
+  {id:"9.0", group:"Snæfellsnes", ready:true, name:"Snæfellsnes North", sub:"BSÍ → Selvallafoss → Kirkjufell → Djúpalónssandur → Arnarstapi → Ytri-Tunga → BSÍ", km:450, min:451, blocks:46},
   {id:"10.0", group:"Snæfellsnes", ready:true , name:"Snæfellsnes South",
-   sub:"BSÍ → Ytri-Tunga → Arnarstapi → Djúpalónssandur → Kirkjufell → BSÍ", km:450, min:451, blocks:39},
+   sub:"BSÍ → Ytri-Tunga → Arnarstapi → Djúpalónssandur → Kirkjufell → BSÍ", km:450, min:451, blocks:44},
   {id:"14.0", group:"Reykjanes", ready:true , name:"Reykjanes South Loop",
    sub:"Lækjargata → Seltún → Fagradalsfjall → Grindavík → Gunnuhver → Reykjanesviti → Reykjavík", km:155, min:161, blocks:28}
 ];

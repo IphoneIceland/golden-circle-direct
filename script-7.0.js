@@ -7,6 +7,7 @@ sections: [
  hook:"How do you fund art school in 1900s Iceland? Your shipmates **pass a hat round a freezing cod trawler**. Not a GoFundMe — an actual hat.",
  point:"Most artists travel the world for inspiration. Kjarval found a whole country in the **dirt under his boots** — then handed it back, one canvas at a time.",
  mic:"In Iceland, the landscape looks back — and sometimes files a complaint with the bishop.",
+ weather:"Weather pivot: \"If the park is grey and half empty, that is exactly the Iceland Kjarval painted. He was never interested in the sunny version.\"",
  bullets:[
   "Born **15 October 1885** at **Efri-Ey** in **Meðalland**, south Iceland — **9th of 13 kids** (his parents clearly had stamina). Fostered east to **Geitavík** in **Borgarfjörður eystri**, where the fjord still calls him **“Jói í Geitavík.”** Too poor for paint, he drew with **calf blood, soot and wool dye** — then went to sea.",
   "Crew saw his sketches, **passed the hat**, the fishermen's union topped it up. **1911**: **London's Royal Academy slammed the door.** The rejection was the redirect — **1912** to **Copenhagen** and the **Royal Danish Academy** (graduated **1917**).",
@@ -33,6 +34,7 @@ sections: [
  hook:"How do you run Iceland's most famous brewery when beer is **illegal for 74 years**? Name it after a Viking — and brew beer that technically isn't beer.",
  point:"Tómas didn't outrun Prohibition. He **outlived it** — 74 years on near-beer and a royal warrant.",
  mic:"Name your company after a Viking and you don't follow the rules. You wait them out.",
+ weather:"Weather pivot: \"If you cannot see the brewery you can usually smell the malt. That counts.\"",
  bullets:[
   "Founded **17 April 1913** by **Tómas Tómasson** in two basement bedrooms of a rented Reykjavík house — at first just **1%-alcohol malt extract** — and named for **Egill Skallagrímsson**, the warrior-poet who once rhymed his way off an executioner's block (the *Höfuðlausn*, “Head-Ransom”) and could drink a whole hall under the table. Aspirational branding.",
   "Two years later Iceland bans **all alcohol** (1915) — so Tómas sails to **Copenhagen and Germany (1915–17) to learn brewing anyway**, training up for a product his own country just outlawed. Wine creeps back in **1922**, spirits in **1935**, but **beer stays illegal until 1989** — because it read as **Danish**, and sipping a Danish lager while fighting Denmark for independence felt like treason.",
@@ -53,6 +55,7 @@ sections: [
  hook:"To joggers it's a postcard. To a geologist, it's a **crime scene** — 10,000 years of Iceland trying, and failing, to stay quiet.",
  point:"It looks like a Sunday-stroll park. It's a 5,000-year-old construction site nobody ever closed.",
  mic:"A volcano split the river. The Vikings claimed it. The British fortified it. The river is still working overtime to undo all of it.",
+ weather:"Weather pivot: \"The valley looks its best wet. That river is the reason anything in this city is green.\"",
  bullets:[
   "The whole valley was redesigned **~5,000 years ago** when **Leiti** erupted: lava poured down, hit the river and **split it in two**. Before, one river; after, two. Every waterfall here is the river's **5,000-year project** to saw back through solid basalt to the sea.",
   "The Elliðaá is one of the only **capital-city rivers on Earth with a wild Atlantic salmon run** — around **1,500–2,500** shove upstream past the joggers each summer. Reykjavík was so smitten it **bought the whole river in 1906.** (Your city buys parks. We bought a river.)",
@@ -71,6 +74,7 @@ sections: [
  hook:"A line of perfect little volcanoes — and **not one of them is real**. NASA can't get enough.",
  point:"Two armies and one city carved up Iceland's Mars lab and paved it into a runway.",
  mic:"Eighty cones. One Mars classroom. Half of it now under your runway.",
+ weather:"Weather pivot: \"The red goes deeper in the rain, so a grey day actually makes the craters easier to pick out, not harder.\"",
  bullets:[
   "These are **pseudocraters** (Icelandic *gervigígar*) — properly **rootless cones**: no magma pipe, no roots. Fake volcanoes.",
   "**~5,000 years ago** lava from the **Leiti** shield volcano rolled over the **Heiðmörk** wetland; trapped water flashed to steam and, in a **phreatomagmatic** blast, **punched back out** through the molten lava — frozen mid-explosion in red scoria (iron oxide — rust).",
@@ -88,6 +92,7 @@ sections: [
  hook:"Can a volcano vote? Around **the year 1000**, one sort of did. One chieftain out-thought it with a single question.",
  point:"A whole country's religion settled by a single, calm geology question.",
  mic:"The pagans claimed a volcano was voting. Snorri pointed out the ballot box was older than the religion.",
+ weather:"Weather pivot: \"Lava in fog is the honest version. This is roughly what the year 1000 looked like from a distance.\"",
  bullets:[
   "Around **1000 CE** Iceland's leaders met at **Þingvellir** to choose: old Norse gods or Christianity? Two religions meant two sets of laws — and near civil war.",
   "At peak tension a messenger reported **lava flowing on Hellisheiði**. Pagans cried “the gods are angry!”",
@@ -106,6 +111,7 @@ sections: [
  hook:"In most countries, a volcano is a disaster plan. In Iceland, it's the **light switch**.",
  point:"While the world debates carbon capture, Iceland dissolves the problem in water, files it under “rocks,” and moves on.",
  mic:"Your shower in Reykjavík tonight was heated by the same volcano that's currently filing CO₂ as gravel under your feet.",
+ weather:"Weather pivot: \"If you cannot see the plant you will see the steam, and on a day like this the steam is the whole show.\"",
  bullets:[
   "We're on the **Hengill volcanic system**, a rare **plate-boundary triple junction on dry land**. Water goes down, returns at nearly **300°C**, and spins turbines — the white plumes are **steam**, not smoke. Built up in stages **2006–2011** to **303 MW**, it's **Iceland's largest geothermal power station**.",
   "After the electricity, the leftover hot water runs **27 km** in insulated pipes to heat **more than half the capital region** — nothing wasted, and Reykjavík never has to reach for a jumper.",
@@ -122,6 +128,7 @@ sections: [
  hook:"One of the **shortest** rivers in Iceland — but it moves **more water than any other**. Four rivers in disguise, sharing a name only for the last **25 km**.",
  point:"Every drop that fell on the Golden Circle — glaciers, geysers, lakes — eventually squeezes through this one 25 km channel.",
  mic:"The Golden Circle gets the postcards. This river is where the whole day quietly ends.",
+ weather:"Weather pivot: \"Rain makes it bigger. Everything I am about to tell you about this river is more true today than it was yesterday.\"",
  bullets:[
   "Only **~25 km long**, yet **Iceland's largest river by discharge** — about **400 m³ every second** off a **~5,760 km² basin**. Not the longest; just the one you absolutely could not cross.",
   "It's **four systems in one**. The glacial **Hvítá** runs south from **Langjökull** past **Gullfoss**, gathering **Tungufljót** and **Brúará**; the spring-fed **Sog** drains **Þingvallavatn**, Iceland's biggest natural lake. They meet just above **Selfoss** and from there run as one — the **Ölfusá**.",
@@ -146,6 +153,7 @@ sections: [
  hook:"A town of **about 3,350 people** (3,344 at the start of 2026) where the ground occasionally rearranges itself — so the locals **built an exhibition around the crack in their floor**.",
  point:"Pizza baked by a volcano, salad grown on steam, a museum built on an earthquake crack — all in the same town.",
  mic:"Most towns hide their disasters. Hveragerði put theirs in the lobby and charged admission.",
+ weather:"Weather pivot: \"Cannot see the town? Look for the steam instead. The town is wherever the ground is smoking.\"",
  bullets:[
   "Hveragerði sits on a **three-way tectonic junction** on the edge of the **Hengill volcanic system** — geothermal *and* seismic, a rough combination for a postcode. Fumaroles and boiling mud pots vent **between the houses.**",
   "Veðurstofa Íslands logged it to the minute — **fimmtudaginn 29. maí kl. 15:45**, **2008** — epicentre at **Ingólfsfjall in Ölfus, about 5 km north-west of Selfoss**, with a very large number of aftershocks behind it. It was a **doublet**: **Mw 5.8 beneath Ingólfsfjall** set off **Mw 5.9 on the Kross fault about 5 km to the west** **within 3 seconds**, for a **composite Mw 6.1**. (Moment adds, magnitude doesn't — 5.8 plus 5.9 comes out at Mw 6.06. The **6.3** you will still see quoted was the figure announced in Iceland that same day, a teleseismic estimate.) It shook the town at up to **~0.88 g** (near 1 g: the earth shoving as hard as gravity), split buildings and re-plumbed the hot springs. (Two quakes, one bang; nobody in town stopped to count.)",
@@ -163,10 +171,11 @@ sections: [
  ],
  tags:["#geology"],
 },
-{id:"7.0.1.9", title:"Ingólfur Arnarson", sub:"The Founder's Path", cue:"Look ahead at 12 o'clock — the Ring Road (Leið 1).",
+{id:"7.0.1.9", title:"Ingólfur Arnarson", sub:"The Founder's Path", cue:"Look back and left — Ingólfsfjall, the flat-topped mountain named after him.",
  hook:"Would you move your whole family to an empty island based on **where two pieces of furniture washed up**?",
  point:"The modern Ring Road is the last chapter of that story — stitching together the coast Ingólfur started.",
  mic:"The saga begins with a man chasing two pillars. It ends with a whole nation driving the road that traces his coastline.",
+ weather:"Weather pivot: \"If the mountain has gone, take my word for it — big, flat-topped, and behind us now.\"",
  bullets:[
   "We're on **Leið 1**, the Ring Road — only completed in **1974** for the 1,100-year settlement anniversary; before that, reaching Höfn meant hundreds of extra km on rough tracks.",
   "Per the saga, **Ingólfur Arnarson** threw his carved **high-seat pillars** overboard and vowed to settle wherever they washed up. His slaves **Vífill and Karli** found them in a bay steaming with hot springs, which he named **Reykjavík**, “Bay of Smokes.” (The saga's “three-year search” wobbles even across the old sources — treat it as story, not stopwatch.)",
@@ -185,6 +194,7 @@ sections: [
  hook:"What's more dangerous than a world war? Apparently, **two milkmen in a very big hurry**.",
  point:"The enemy that took out the Selfoss bridge wasn't an army. It was two milkmen and a bad tow-rope decision.",
  mic:"The war couldn't blow this bridge up. A couple of dairy trucks did it on a Tuesday afternoon.",
+ weather:"Weather pivot: \"You do not need to see anything for this one. Just listen to what is under the wheels.\"",
  bullets:[
   "The town **only exists because of the bridge.** The **1891 Ölfusárbrú** — pushed through the Alþingi by MP and banker **Tryggvi Gunnarsson** — was Iceland's **first suspension bridge**; before it the Ölfusá was uncrossable, so trade clustered at the bridgehead and **Selfoss grew up around it.** The old construction hut, **Tryggvaskáli**, is still the town's oldest building.",
   "In **WWII**, British troops guarded it day and night — whoever held the only crossing of Iceland's biggest river held the south.",
@@ -203,6 +213,7 @@ sections: [
  hook:"Up ahead we cross **Iceland's longest river** — a **230 km** glacial spine that founding fathers held assemblies beside and engineers turned into the country's **biggest battery**.",
  point:"Every crossing passes over the main drain — and the biggest battery — for a big chunk of Iceland's backbone.",
  mic:"Selfoss had its milk-truck drama. Þjórsá is the **patient heavyweight** — moving a whole highland's worth of water, and half the national grid, to the sea.",
+ weather:"Weather pivot: \"Weather barely touches this river. It comes off an ice cap, so it runs much the same in sun or sleet.\"",
  bullets:[
   "**Þjórsá** (“Bull River”) rises off the **Hofsjökull** ice cap and runs **230 km** to the sea — **Iceland's longest** — draining a **7,530 km²** catchment at roughly **383 m³/s**. Not a river you paddle absent-mindedly.",
   "Midstream sits the island of **Árnes**, which in the settlement era hosted its own **Þing** — a local assembly. Give an Icelander a defensible rock in a fast river and the first instinct is to hold a meeting on it.",
@@ -220,6 +231,7 @@ sections: [
  hook:"Long before the Vikings arrived with longships, someone else may already have been here — **literally hiding in the walls**.",
  point:"Some of the oldest, strangest archaeology in the country — proof that in Iceland, history isn't just on the surface. Sometimes it's dug into the hillside you're driving past.",
  mic:"Most towns keep their history in a museum. Hella keeps a chunk of it in the basement — and isn't sure who moved in first.",
+ weather:"Weather pivot: \"You will not see the caves from here in any weather. They are cut into the bank, which is rather the point of them.\"",
  bullets:[
   "Carved into the soft sandstone beside the **Ytri-Rangá** river is a cluster of **man-made caves**, some with simple **crosses** and **stone benches** cut into the wall.",
   "A popular theory ties them to the **Papar** — the Irish monks that **Íslendingabók** and **Landnámabók** both say were in Iceland *before* the Norse and legged it the moment longships appeared. Tempting, but honest: the dating is **disputed** and **no archaeology has confirmed a pre-Norse origin** — treat it as suggestive, not settled.",
@@ -238,6 +250,7 @@ sections: [
  hook:"What did a “McMansion” look like for a powerful Icelandic chieftain **800 years ago**? It came with **its own escape tunnel**.",
  point:"Not a quaint old farm. **Medieval security architecture** built straight into the hillside.",
  mic:"Keldur is basically a Viking-age panic room and getaway car disguised as a cosy turf farm.",
+ weather:"Weather pivot: \"You will not see Keldur today, and you rarely can. It is ten kilometres up a side road — which is exactly why it survived.\"",
  bullets:[
   "**Keldur** is the **oldest farmhouse still standing in Iceland** — a superb **passageway-style** hall the National Museum traces to the **late 12th century**, framed while the sagas were still being lived rather than written.",
   "It was a seat of the **Oddaverjar**, the clan the sagas call the **“Kings of the South,”** and it stands square in **Njáls saga** country — its first inhabitant, Ingjaldur Höskuldsson, is named in the saga itself.",
@@ -258,6 +271,7 @@ sections: [
  hook:"A normal-looking service town that comes with its own **blood-soaked medieval bestseller** — and the actual field where the ending happened.",
  point:"Most towns have a petrol station and a supermarket. This one has a community tapestry of **betrayals, burnings and bad legal advice** — and a museum wired to the next eruption.",
  mic:"Welcome to Njáll's neighbourhood — where the local reading list doubles as a murder map.",
+ weather:"Weather pivot: \"If the village is in murk, that is Njáll's country behaving normally. The saga has far more bad weather in it than good.\"",
  bullets:[
   "**Hvolsvöllur** is the last full-service fuel stop before Vík, planted in the heart of **Brennu-Njáls saga** country — Iceland's **longest, bloodiest, most carefully built** family saga. The farms and low hills around you are its real stage.",
   "**Written c. 1270–1290** but set around **the year 1000**, its set-piece — the **brenna**, the burning of **Njáll**, his wife **Bergþóra** and their sons around **1011** — is placed by scholars at **Bergþórshvoll**, the flat land just east of here. *Game of Thrones*, except half the cast also had to be home for the haymaking.",
@@ -280,6 +294,7 @@ sections: [
  hook:"In **1973** this archipelago was almost wiped off the map — and the only reason it survived is that **a storm hit the night before**.",
  point:"One of the few places on Earth where a town fought a volcano **with seawater and pumps** — and came out with a better harbour.",
  mic:"The volcano tried to close the harbour. The locals replied: “we'll take the upgrade, thanks.”",
+ weather:"Weather pivot: \"No islands today? They are twenty-seven kilometres out. On a clear day they look close enough to swim to, and that is the illusion.\"",
  bullets:[
   "Just after midnight on **23 January 1973** a **1.6 km fissure** tore open barely 200 m from town on **Heimaey**, and a brand-new volcano — **Eldfell**, “Fire Mountain” — began throwing lava through the eastern streets.",
   "The lucky break was weather: a storm the day before had kept the **whole fishing fleet in harbour**, so of about **5,300 residents, roughly 5,000 were evacuated in around eight hours** — Iceland has **no army**, so the fishermen ran the evacuation themselves.",
@@ -296,6 +311,7 @@ sections: [
  hook:"We've barely left town and we've already **driven off the map** — this flat land used to be the **bottom of the Atlantic Ocean**.",
  point:"Living here means accepting your backyard is the **natural drain for big angry glaciers** — every farm, fence and bridge gets built with **jökulhlaups** in the back of people's minds.",
  mic:"“There's nothing here,” they say. Under you: old seabed. Right: glacial wash-plain. Beyond it: ghost coastline. Out there: a saga murder scene. That's a lot of nothing.",
+ weather:"Weather pivot: \"Flat, wet and grey is this plain's default setting. It is a floodplain. It looks like this most of the year.\"",
  bullets:[
   "It looks like “just flat fields,” but you're crossing a giant **flood-deposit fan**, built grain by grain by glacial rivers — chiefly the **Markarfljót** — charging out of the highlands.",
   "The name gives it away: **Landeyjar means “land islands”** — grassy patches that stood up out of the marsh and sand. Waves once rolled over where this road runs, the sea reaching right up to that **cliff line on your left**. Then the land rose, the rivers kept dumping sand, and the coastline **marched south, kilometre by kilometre.**",
@@ -311,6 +327,7 @@ sections: [
  hook:"Those green slopes aren't just a nice view. In the sagas, they were **worth dying for.**",
  point:"To your guests it's a farm in the distance. To Icelanders it's a **moral crossroads** still standing in the landscape almost a thousand years later.",
  mic:"Out there: grass and sheep. In the sagas: a man who chose his view over his life — and a wife who remembered exactly how she'd been wronged.",
+ weather:"Weather pivot: \"If the hillside has gone, remember that Gunnar turned back for the view. He would not have on a day like this.\"",
  bullets:[
   "In front of you the **Markarfljót** runs **~100 km** to the sea off **two ice caps sitting on live volcanoes** — **Eyjafjallajökull** and **Mýrdalsjökull** — which is why it occasionally stops being a river and becomes a **jökulhlaup**. In **2010** engineers **deliberately breached the Ring Road embankment** to let the eruption's meltwater through and **save the bridge.** Sacrifice the road to keep the crossing.",
   "Tucked into the far slopes is **Hlíðarendi**, home of **Gunnar** of **Njáll's saga** — the finest fighter in Iceland, who could leap his own height in armour, backwards.",
@@ -330,6 +347,7 @@ sections: [
  hook:"In **2010**, this innocent-looking glacier volcano shut down **air travel for millions** who couldn't even say its name.",
  point:"Up there: peaceful glacier above a postcard farm. In memory: the mountain that turned Europe's airports into campgrounds.",
  mic:"A farmer here was digging ash out of his drinking water while airline CEOs were melting down 2,000 km away.",
+ weather:"Weather pivot: \"Cannot see it? Neither could the pilots in 2010, and that was rather the problem.\"",
  bullets:[
   "**Eyjafjallajökull** — an **~800,000-year-old** stratovolcano, summit **1,651 m**, under an ice cap shrunk to about **66 km²** — sits there looking like a tidy white lid over green fields.",
   "By volcanic standards **2010 was small: a VEI 4, only ~0.27 km³ of ash.** But it fired a **plume 8–9 km high** into the **jet stream** — a small volcano in exactly the wrong spot — and the glassy particles turn jet engines into **expensive sandblasters.**",
@@ -347,6 +365,7 @@ sections: [
  hook:"One of the oldest man-made homes in Iceland — and its first tenant was murdered through a hole drilled under his own bed.",
  point:"A cave that's been a house, a byre, a fish-store, a murder scene and a Nazi wild-goose chase — all in one hole in the rock.",
  mic:"Most farms have a shed. Drangshlíð has a thousand-year-old cave with a purpose-built assassination hole in the ceiling.",
+ weather:"Weather pivot: \"The cave is cut into the cliff, so it is there whatever the sky is doing.\"",
  bullets:[
   "**Rútshellir** is one of the **largest man-made caves in Iceland** — an arched hall roughly **20 m long and 2.5 m high**, hacked from the soft cliff of **Drangshlíðarfjall**, about **3 km west of Skógafoss.** Long claimed as Iceland's **oldest surviving man-made dwelling.**",
   "The legend: a brute named **Rútur** — troll, looter or bad chieftain, take your pick — lived here, and his **slaves carved a hole under his sleeping ledge and speared him from below** as he slept. Even dead he terrified them: one killer, **Björn**, bolted to the mountain **Bjarnarfell**, which still carries his name.",
@@ -367,6 +386,7 @@ sections: [
  hook:"The waterfall that **looks like a fantasy backdrop** and sounds like someone left a giant tap running **since the Ice Age**.",
  point:"One spot: ancient shorelines, modern sandur, old farms, a volcano trail, and a missing chest where somebody grabbed the wrong part.",
  mic:"If this was anywhere else, it would be the main event. Here it's just **one more stop on a Tuesday**.",
+ weather:"Weather pivot: \"Rain makes it bigger. There is no bad-weather version of this waterfall.\"",
  bullets:[
   "The **Skógá river** skips the rapids and walks straight off the old sea-cliff — a clean **60 m drop, 25 m wide** — free-falling into a deep pool before racing across the sandur to the Atlantic. At the base you have to **shout to be heard**, which is why most videos from here are people silently pointing.",
   "This cliff is the **coastline of thousands of years ago**: textbook waterfall geology — hard cap-rock over soft, undercut and collapsing, so the fall eats **upstream** and leaves a gorge behind it. Since then the land lifted, rivers dumped black sand, and the real shore marched several km south — **Skógafoss never moved.**",
@@ -391,6 +411,7 @@ sections: [
  hook:"This is where the glacier stops being “a nice view from the bus” and turns into a **giant, melting history book.**",
  point:"Textbook diagrams of glaciers, erosion and climate change — laid out in front of you. **Point, don't draw.**",
  mic:"You don't have to give a climate lecture here. You point at where the ice used to be — and the **missing glacier** does the talking.",
+ weather:"Weather pivot: \"Cloud sits low on the ice. If the top has gone you are still seeing the snout, and the snout is the part that has been moving.\"",
  bullets:[
   "A gravel path pulls you toward **Sólheimajökull**, an outlet tongue of **Mýrdalsjökull** — **Iceland's 4th-largest ice cap** — wedged between the volcanoes **Katla** and **Eyjafjallajökull**, with Katla buried right underneath.",
   "Up close the ice isn't white — it's streaked with **black ash bands** from both volcanoes' past tantrums, like a sooty paintbrush dragged across a layered record of the neighbourhood.",
@@ -409,6 +430,7 @@ sections: [
  hook:"Somewhere out there in the black void is a silver ghost that **Justin Bieber made world-famous** — and that half the internet gets the name of wrong.",
  point:"A **modern layer on the geology**: Katla built the sandur, the US Navy accidentally parked a plane on it, and social media did the rest.",
  mic:"From the bus you mostly see empty blackness. The real story: a crew that iced up over a glacier, glided to the coast engine-out, and **all seven lived** — on a plane everyone insists on calling by the wrong name.",
+ weather:"Weather pivot: \"You would not see the wreck from the road on the clearest day of the year. That is what the photograph is for.\"",
  bullets:[
   "Everyone calls it a “DC-3.” It isn't. It's a **US Navy Super DC-3 (a Douglas R4D-8 / C-117D)** — same family, buff cousin who went to the gym. It's worn the wrong name for fifty years.",
   "On **21 November 1973** it was flying **Höfn to Keflavík** when **ice choked both carburettors over the Vatnajökull ice cap** and both engines quit. Myth-bust: it did **not** “run out of fuel” — it iced up and became, in the co-pilot's words, “a massively overweight glider.”",
@@ -424,6 +446,7 @@ sections: [
  hook:"A **275-metre lump of frozen explosion** — submarine volcano, one-time offshore island, saint's shrine, Sturlung-era fort, **WWII lookout post**, elf estate. **Most mountains never have a CV that long.**",
  point:"Geology, saga, saint and soldier — all stacked on one piece of frozen ash.",
  mic:"Most mountains have a Wikipedia stub. **Pétursey has a CV.**",
+ weather:"Weather pivot: \"If the mountain is in cloud you are seeing what it was for. It was a sea mark, and sailors mostly needed it in bad visibility.\"",
  bullets:[
   "**Pétursey** (“Peter's Island”) is **móberg** — the ash-and-rubble palagonite rock formed when a volcano **erupts under ice or sea**; hot magma met cold water, shattered mid-blast, and cemented into these steep walls. Same recipe as nearby **Drangurinn**.",
   "For much of the Holocene the Atlantic really did surround it and sailors used it as a **landmark** — until **Katla**'s black sand slowly filled the gap and stranded it inland. Its old name literally meant **“Tall Island.”**",
@@ -445,6 +468,7 @@ sections: [
  hook:"This tiny country church is the **DNA** of some of Iceland's most famous modern buildings.",
  point:"The story of Reykjavík's iconic architecture doesn't start in the city. It starts on **farms like this**, under the shadow of volcanoes.",
  mic:"If you squint, you can almost see Hallgrímskirkja **hiding inside** this little red-roofed church — it just needed a son with a big imagination and a State Architect's salary.",
+ weather:"Weather pivot: \"Small red roof, big grey sky. It is the roof you are looking for, not the church.\"",
  bullets:[
   "This modest church was designed and built by the master carpenter **Samúel Jónsson** (born 1864) — one of those simple, sturdy rural churches built to shrug off wind, rain and ash.",
   "His son **Guðjón Samúelsson** (born **1887**) grew up here and became **Iceland's first State Architect** — the man behind **Hallgrímskirkja**, the basalt-column church on the Reykjavík hill, plus the **National Theatre** and the **University's main building.**",
@@ -463,6 +487,7 @@ sections: [
  hook:"Ahead on the right is the **front door of the South Coast** — a headland with a hole so big a pilot once flew a plane **clean through it. Three times, because once is an accident.**",
  point:"A teaching stop par excellence: glacial plains, old islands and active coastal erosion, all visible in **one slow spin of your head.**",
  mic:"Dýrhólaey is the hinge where the **volcanoes, the sandur and the ocean** all shake hands — and argue about who built this coastline.",
+ weather:"Weather pivot: \"If the headland has gone you may still catch the light blinking, which is the entire reason it is up there.\"",
  bullets:[
   "**Dýrhólaey** (“door-hill island”) was born underwater **100,000 years ago** in a submarine eruption — half tuff (**Háey**), half basalt (**Lágey**) — then waves hammered a huge natural **sea arch**, the “door” of the name, under **100 m cliffs.**",
   "On top sits a castle-like lighthouse — **one of the most powerful lights on the coast** — first tower 1910, the concrete one **1927 by Guðjón Samúelsson**, same architect as the church a few stops back.",
@@ -481,6 +506,7 @@ sections: [
  hook:"Black sand. A basalt pipe-organ. Sea stacks standing offshore. Iceland's most beautiful beach — and its most dangerous. Never turn your back on these waves.",
  point:"The most beautiful beach in Iceland is also the one that asks for the most respect — awe first, but feet planted well back from the water.",
  mic:"Black sand, stone trolls, a basalt cathedral — and a sea that has taken lives. Look all you like; just do it from up here.",
+ weather:"Weather pivot: \"Bad weather makes this beach more dangerous, not more atmospheric. Stay well back from the water today.\"",
  bullets:[
   "⚠️ **Safety first, always:** the \"sneaker waves\" (laumualda) here are lethal and unpredictable — they surge far higher up the beach than the sea in front of you suggests, the water is freezing, and the undertow drags. People have drowned here, several in recent years. Stay well back, keep off the wet sand, and never turn your back on the ocean for a photo.",
   "The cliff is stuðlaberg — hexagonal basalt columns formed as thick lava cooled slowly and cracked into near-perfect pillars; the Hálsanefshellir cave folds them into a natural pipe-organ you can walk into when the tide allows.",
@@ -501,6 +527,7 @@ sections: [
  hook:"In most towns, the church is for Sunday service. In Vík, it's the **literal lifeboat.**",
  point:"The town's most beautiful building is also its most practical piece of **safety equipment.**",
  mic:"It's the only place in Vík where the view of the ocean feels peaceful — because you know you're standing on the only safe soil in the valley.",
+ weather:"Weather pivot: \"Even in cloud it is the highest thing in the village, which is precisely why it is the evacuation point.\"",
  bullets:[
   "**Víkurkirkja**, **consecrated in 1934**, sits high on the hill for one reason: **Katla.**",
   "If the volcano erupts under **Mýrdalsjökull**, the resulting **jökulhlaup** could erase the whole village — and this church stands on the **only ground high enough** to stay above the water.",
@@ -516,6 +543,7 @@ sections: [
  hook:"That massive rock ahead is a **1,100-year-old crime scene** — and the address of Iceland's most famous ghost.",
  point:"Iceland's history didn't start with peace. It started with a **slave revolt, a blood feud** — and a vengeful housekeeper who lives in the ice.",
  mic:"Most countries' founding stories are statues and speeches. Iceland's is a body, a fake bear — and a woman who became a volcano.",
+ weather:"Weather pivot: \"Twelve kilometres out on a wet day means you are not seeing it. It looks like a ship, and today it is a ship in fog.\"",
  bullets:[
   "**Hjörleifshöfði** — a **221 m móberg headland** — is named for **Hjörleifur Hróðmarsson**, sworn **blood-brother of Ingólfur Arnarson, Iceland's first settler**. The two **sailed here together around 874**, then split: Ingólfur let the gods choose his home, following his high-seat pillars to Reykjavík; Hjörleifur — who **refused to sacrifice to any god** — parked at the first headland. **His burial mound still crowns the summit.**",
   "Come spring, says *Landnámabók*: **one ox** — so his **enslaved Irishmen dragged the plough**. They killed the ox and **blamed a bear**. Iceland **has no bears** — the newcomers just didn't know that yet. When the Norsemen scattered to hunt it, the thralls **ambushed them one by one**, Hjörleifur included, then fled with the women and boats to the islands offshore.",
@@ -541,6 +569,7 @@ sections: [
  hook:"Thousands of little stone stacks, and each one is a traveller buying insurance against a glacier.",
  point:"A thousand years of nervous travellers, each leaving a rock and a prayer before driving into Katla's backyard.",
  mic:"The cairns aren't decoration — they're the receipts of everyone who crossed here scared.",
+ weather:"Weather pivot: \"The cairns show better against low cloud than they do in sunshine, oddly.\"",
  bullets:[
   "**Laufskálavarða** is a low **lava ridge on the east edge of Mýrdalssandur**, by the river **Kúðafljót** — carpeted in **stone cairns.** The custom: anyone crossing this deadly black desert **for the first time** piled a cairn for a **safe journey**, and centuries of first-timers built the field you see.",
   "The danger was real — **Mýrdalssandur is Katla's flood path**, swept by **jökulhlaups** without warning, so a little supernatural insurance made sense.",
@@ -559,6 +588,7 @@ sections: [
  hook:"That soft green moss you can't stop photographing? It's the lid on the **deadliest eruption in Iceland's history** — the one that nearly ended the country.",
  point:"One fissure, one very bad year, a whole continent's weather rearranged. The prettiest thing out here is also the deadliest.",
  mic:"Every other lava field is scenery. This one has a body count.",
+ weather:"Weather pivot: \"Moss in the wet goes an unreasonable green. This is the lava field at its best, not its worst.\"",
  bullets:[
   "In **June 1783** the **Lakagígar** fissure tore open — a **27 km rift of more than 140 vents** — and erupted for **eight months** (the **Skaftáreldar**, “Skaftá Fires”), laying down **14.7 km³ of lava across ~600 km².** That makes it **the second-largest lava flood in historical time, behind Eldgjá** and its **~20 km³** — larger still, but **8,700 years before anyone was here to see it**, is **Þjórsárhraunið mikla**. You're driving across the runner-up.",
   "And yet the lava barely killed anyone — the **gas** did. The fissure breathed out **~122 million tonnes of sulphur dioxide** plus a fluorine fog that poisoned the grass, and the famine that followed has a name of its own: the **Móðuharðindin, “Mist Hardships.”** The haze even crossed **Europe**, wrecking harvests as far as France.",
@@ -585,6 +615,7 @@ sections: [
  hook:"A village so holy that, by legend, **sinners literally couldn't live here** — and then in 1783 a priest stared down a wall of lava and won.",
  point:"A town that swears a priest out-argued a lava flow — with a natural basalt cathedral floor to set the scene.",
  mic:"Most sermons just feel like they last forever. His actually stopped a volcano.",
+ weather:"Weather pivot: \"The sisters were here through eight hundred winters of exactly this.\"",
  bullets:[
   "Tradition (via *Landnámabók*) says the **Papar** — Irish monks — were here **before the Norse**, and the ground was so blessed no heathen could settle. In **1186** the Benedictines made it official: **Kirkjubæjar convent**, a nunnery that ran until the **Reformation in 1550.**",
   "The place-names still gossip about the nuns: **Systrafoss** (“the sisters' falls”), lake **Systravatn**, and **Systrastapi** — the rock where, the darker tale goes, two sisters were burned for sin and only later cleared.",
@@ -612,6 +643,7 @@ sections: [
  hook:"A canyon so photogenic that **Justin Bieber waded down a river here** — and accidentally loved it half to death.",
  point:"Ten thousand years of patient meltwater — versus one pop star and a phone camera.",
  mic:"The glacier took millennia to carve it. We nearly wore it out in a weekend.",
+ weather:"Weather pivot: \"You cannot see it from the road on any day. It is hidden in that ridge, which is why it stayed a secret so long.\"",
  bullets:[
   "**Road position, so the running order stays honest:** the turn-off for **road 206** leaves Route 1 at **63.76274 / -18.11862**, about **5 km west of Kirkjubæjarklaustur** — so driving east we pass it *before* the village. We take the comfort stop at Klaustur first and **double back the six kilometres** for the canyon.",
   "**Fjaðrárgljúfur** (“feather-river canyon”) is **about 1.5 km long and up to 100 m deep** — those are the figures in its own protection order — a snaking gorge with mossy green **palagonite (móberg)** walls.",
@@ -635,6 +667,7 @@ sections: [
  hook:"A postcard waterfall next to a cliff full of singing dwarves — and on a windy day the water forgets which way is down.",
  point:"Water that runs uphill, dwarves that sing hymns, and a curse with a nine-generation warranty — all at one roadside farm.",
  mic:"Blink and it's a pretty waterfall. Stay a minute and it's a folklore box-set.",
+ weather:"Weather pivot: \"Wind blows this one sideways, and in a real gale it goes back up the cliff. Worth watching for.\"",
  bullets:[
   "**Foss á Síðu** is a slender waterfall about **10 km east of Kirkjubæjarklaustur**, dropping off the cliff behind the farm of the same name — fed by the little lake **Þórutjörn** on the heath above. The farm is settlement-era, named in **Landnámabók.**",
   "Its party trick: in a strong south wind the gusts catch the falling water and **blow it back up and sideways**, so the fall seems to **pour upward.**",
@@ -652,6 +685,7 @@ sections: [
  hook:"A hill named “Battle Hill” that took on the second-biggest lava flood in Iceland's historical time — and, somehow, won.",
  point:"Estates buried, holdings abandoned, a whole district rearranged — the official counts still disagree on the exact number — and it still couldn't take one stubborn hill.",
  mic:"Everything around it is 1783. This one crag is the “before” photo.",
+ weather:"Weather pivot: \"A lone crag in flat light is hard to pick out. Look for the shape, not the colour.\"",
  bullets:[
   "**Orustuhóll** (“battle hill”) is a **rock knoll** that, before **1783**, sat as an island in the **floodplain of the Hverfisfljót river**, ringed by water and sand.",
   "When the **Skaftáreldar** (the Laki fires) sent the **Eldhraun / Brunahraun** lava pouring east, the flow **split around the hill and left it standing** — a green survivor-islet in a sea of fresh black rock.",
@@ -669,6 +703,7 @@ sections: [
  hook:"In **Njáls saga** this cliff **swings open like a door** and a man walks out of it reading a death list. At its foot stands a church the size of a shed whose designer the state records as **Ókunnur** — unknown.",
  point:"A cliff that opens like a door in the country's greatest saga — and at its foot a church the size of a shed, built by a man the state has never been able to name.",
  mic:"Everything east of here is sand. This is the last thing standing before it — and the saga knew that too.",
+ weather:"Weather pivot: \"If the top has gone, you are still seeing seven hundred metres of it. That is usually enough.\"",
  bullets:[
   "That wall is **Lómagnúpur**, and it comes up before the sandur does: **Núpsstaður at route km 263.1, Lómagnúpur at 265.5**, both on the **left, north of the road**, while **Skeiðarársandur proper does not begin until km 268.6.** In **chapter 133 of Brennu-Njáls saga** the cliff swings open like a door and a man in a goatskin cloak walks out with an iron staff, names **Flosi's** men one by one, calls himself **Járngrímur**, and says he is bound for the **Alþingi** to clear the juries, then the courts, then the battlefield.",
   "The dream at **Lómagnúpur** is a death list, read out in order. **Járngrímur** names **Grímur the Red**, **Árni Kolsson**, **Eyjólfur Bölverksson**, **Ljótur son of Hallur of Síða**, the **Sigfússynir**, then **Lambi**, **Móðólfur** and **Glúmur**, and last of all **Gunnar Lambason** and **Kolur Þorsteinsson.** Flosi had been shaken awake at **Svínafell** by **Glúmur Hildisson** and told the whole thing to **Ketill úr Mörk** — whose reading took one word, *feigir*, doomed, and whose advice took one sentence. Tell nobody.",
@@ -687,6 +722,7 @@ sections: [
  hook:"This flat black nothing is why Iceland's Ring Road took until **1974** to close — and in 1996 a flood off the glacier took the bridge apart in an afternoon.",
  point:"The last link of the Ring Road went in here in 1974 — and in 1996 the glacier came down and bit 24 metres out of it in one afternoon.",
  mic:"Engineers spent decades bridging this sand. Vatnajökull started taking it apart again before lunch.",
+ weather:"Weather pivot: \"Grey sky over black sand is the default here, and it is genuinely the emptiest view in Iceland.\"",
  bullets:[
   "**Skeiðarársandur** runs to **about 760 km² on Náttúrufræðistofnun's register — one of the great sandur plains anywhere**: black sand and braided rivers, dumped grain by grain by the glaciers pouring off **Vatnajökull.**",
   "For centuries this was **the gap in the ring**: unbridgeable rivers that could flood without warning. The **Ring Road (Route 1) wasn't finished until 1974**, when the Skeiðará bridge finally welded the country into one loop.",
@@ -707,6 +743,7 @@ sections: [
  hook:"To your left is an ice cap so big it makes **its own weather**, hides **live volcanoes**, and covers **roughly 7% of the entire country.**",
  point:"One glance holds Europe's biggest ice cap, Iceland's tallest peak and a Hollywood back-lot — all quietly melting.",
  mic:"It's the size of a county, hides live volcanoes, and Christopher Nolan used it as another planet.",
+ weather:"Weather pivot: \"The tongues sit low, so you often get them when the peaks have gone.\"",
  bullets:[
   "**Vatnajökull** is **Europe's largest ice cap by volume** — around **3,000 km³ of ice**, up to **~1,000 m thick**, over **about 7,500 km² by 2023 on Vatnajökulsþjóðgarður's own figure** — the last hard measured inventory, **Jökull 70**, put it at **7,720 km² in 2019.** Either way, **roughly seven percent of the country, and shrinking.** Beneath it sit active volcanoes like Grímsvötn and Bárðarbunga — fire under a very thick lid.",
   "Poking up at **Öræfajökull** is **Hvannadalshnúkur, 2,110 m — Iceland's highest point.**",
@@ -734,6 +771,7 @@ sections: [
  hook:"The glacier lagoon everyone speeds past to reach the famous one — which is exactly why it's the better stop.",
  point:"Same glacier, same drama, a fraction of the crowd — the lagoon for people who read past the first page of the guidebook.",
  mic:"Everyone races to Jökulsárlón. The clever ones stop here first and get the glacier to themselves.",
+ weather:"Weather pivot: \"The ice looks bluer under cloud. Bright sun actually washes it out.\"",
  bullets:[
   "**Fjallsárlón** is Jökulsárlón's **smaller, quieter sibling** — a meltwater lagoon at the snout of **Fjallsjökull**, an outlet glacier tumbling off **Öræfajökull**, Iceland's highest volcano.",
   "Because it's tighter and less famous, you stand **much closer to the glacier wall** — the ice front looms right across the water and calves chunks into the lagoon with a crack like a rifle shot.",
@@ -755,6 +793,7 @@ sections: [
  hook:"This lagoon is **Iceland's deepest lake** — and it **didn't exist** when your great-grandparents were born.",
  point:"A lake that's deep, tidal, full of seals and film crews — and a living gauge of how fast the glacier is leaving.",
  mic:"Your great-grandparents could have stood on solid ice right here. Now it's a 260-metre lake — and still deepening. That's the whole story, in one view.",
+ weather:"Weather pivot: \"Cloud makes the blue stronger. The photographs everyone envies were mostly taken in weather like this.\"",
  bullets:[
   "**Jökulsárlón** (“glacial-river lagoon”) only appeared around **1934–35**, when the glacier **Breiðamerkurjökull** began retreating and left a hollow that filled with meltwater. It's now **the deepest lake in Iceland — the published figure is 260 metres, and it is still deepening as the glacier retreats.** About **25 km²**, and it has **quadrupled since the 1970s.** You are looking at climate change with a boat tour on it.",
   "The **icebergs** calving off the glacier can be **centuries old** — glowing blue, streaked with black ash from past eruptions, drifting for years before they melt. Floating archives.",
@@ -777,6 +816,7 @@ sections: [
  hook:"Black sand scattered with **giant diamonds** — except the diamonds are icebergs, and an hour ago they were **thousand-year-old glacier.**",
  point:"A jeweller's window restocked twice a day by the tide — every gem a shard of a melting glacier.",
  mic:"Diamonds that cost nothing, last an hour, and used to be a glacier. Only in Iceland.",
+ weather:"Weather pivot: \"Rain on black sand and clear ice is the whole point. Wet feet, better pictures.\"",
  bullets:[
   "When bergs in Jökulsárlón finally shrink small enough, they **float out the short Jökulsá river to the sea** — and the **tide flings them straight back** onto this black volcanic beach, **Fellsfjara** (part of **Breiðamerkursandur**).",
   "Stranded on the black sand, the clear and blue ice glitters like **scattered diamonds** — hence the nickname. Every piece is **ancient glacier**, salt-polished and melting in front of you.",
@@ -817,6 +857,7 @@ sections: [
  hook:"We've said her name half a dozen times today — under Sólheimajökull, off Dýrhólaey, at the church on the hill, in the cairn field, on Hjörleifshöfði. **Here's the volcano itself.** And the biggest threat on the South Coast doesn't look like a threat — it's a **white ice cap, peaceful and silent.**",
  point:"The most dangerous volcano on the south coast doesn't look like a volcano. It looks like a glacier.",
  mic:"Iceland's most polite warning: **the loudest thing she does is wait.**",
+ weather:"Weather pivot: \"Cannot see the ice cap? Neither can the people living under it. That is the whole problem with Katla.\"",
  bullets:[
   "Under that ice sits **Katla** — a **~10 km-wide caldera**, summit **1,512 m** — one of Iceland's biggest, angriest volcanoes. The cap above is **Mýrdalsjökull**, Iceland's **4th-largest ice cap** — **520 km² as measured in 2019**, down from about **607 km² around the year 2000** and **736 km² at its Little Ice Age peak around 1890** — a **200–700 m** insulating blanket over a furnace. Being subglacial is the whole danger: she doesn't just throw ash, she **flash-melts the glacier into floods.**",
   "She's produced **at least 21 eruptions in the last 1,100 years**, typically **VEI 4–5** — bigger than famous neighbour Eyjafjallajökull's 2010 show.",
@@ -863,6 +904,7 @@ sections: [
  hook:"Over this hill is Vík: one small village, **a lot of black sand**, and a volcano that once shoved the coastline forward like it was rearranging furniture.",
  point:"Vík is where coffee breaks, Coast Guard alerts and **thousand-year-old saga grudges** all share the same view of a volcano.",
  mic:"Sleepy seaside town. If Katla starts shouting, swap the beach for the church and hope it's a drill.",
+ weather:"Weather pivot: \"The village is over the hill either way. You will know when we are there.\"",
  bullets:[
   "Iceland's **southernmost mainland village** — about **300 people** in the village, **~750** in the wider district — strung along the beach with **Víkurkirkja** parked safely up on the hill. With **no natural harbour**, this was historically a place you rowed boats out through the surf from an open shore.",
   "It's also, **jointly with Vestmannaeyjar**, the **warmest place in Iceland** (**5.3°C** yearly mean) — Veðurstofa's own wording is *ásamt Vestmannaeyjakaupstað*. And it is properly wet, about triple Reykjavík. “Warmest” is doing heroic work in that sentence.",
@@ -886,6 +928,7 @@ sections: [
  hook:"A waterfall you can **walk behind**. And a second one **hiding in a slot canyon** next door.",
  point:"Same cliff. Same Ice-Age coastline. **One tiny change in the rock** = two completely different waterfall personalities.",
  mic:"Stand in front of the old sea cliff. Walk behind the waterfall. If you have dry socks after Gljúfrabúi, you've done something wrong.",
+ weather:"Weather pivot: \"You are getting wet either way. This is the one waterfall where the forecast is irrelevant, because you walk behind it.\"",
  bullets:[
   "**Seljalandsfoss** drops a clean **60 m** off Iceland's old sea-cliff, fed by the **Seljalandsá** river running off the **Eyjafjallajökull** glacier above.",
   "A natural recess lets you walk **all the way behind the curtain** in summer — wet, slippery rock, so good boots, a waterproof and **one hand free**; in ice the path closes, so respect the barrier.",
