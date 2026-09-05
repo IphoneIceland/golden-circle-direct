@@ -252,7 +252,10 @@ const BACKOFFICE_PIN="731905";
 })();
 </script>
 
-<script src="tours.js"></script>
+<!-- ABSOLUTE, not relative. The back office is served at /editor/ but its data
+     lives at /app/. Relative paths resolved to /editor/tours.js and every
+     /editor/script-*.js, all 404, so the picker loaded zero tours. -->
+<script src="/app/tours.js"></script>
 <script>
 const TOURS = window.__TOURS__.filter(t=>t.ready!==false);
 const LIB   = {};            // tour id -> {title, sections}
@@ -284,7 +287,7 @@ function blocksOf(tid){
 
 async function boot(){
   for(const t of TOURS){
-    await loadScript("script-"+t.id+".js");
+    await loadScript("/app/script-"+t.id+".js");
     LIB[t.id]=JSON.parse(JSON.stringify(window.__SCRIPT__));
   }
   let n=0; Object.values(LIB).forEach(S=>S.sections.forEach(s=>n+=s.blocks.length));
