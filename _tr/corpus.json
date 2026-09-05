@@ -29208,6 +29208,142 @@
   ]
  },
  {
+  "id": "d7536467da",
+  "en": "🏛️ Reykjavík",
+  "ctx": "block title — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "89fbe287a2",
+  "en": "Look back — the green hill with the statue on it, just behind where we picked you up.",
+  "ctx": "cue, tells the guest where to look — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "18bc42f84e",
+  "en": "A buried brook that still keeps the birds warm, a parliament that stopped for forty-five years, and a church that took forty-one to build in a country that had none of the money.",
+  "ctx": "the point of the block — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "3e9b0e5b26",
+  "en": "Reykjavík will tell you it has the world's oldest parliament. What it actually has is the world's oldest parliament with a very long lunch break.",
+  "ctx": "the spoken close — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "333e9d9c95",
+  "en": "Weather pivot: \"If the tower has gone, do not worry — you will see it again tonight, and on a morning like this the locals cannot see it either.\"",
+  "ctx": "bad-weather alternative — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "980f18a9db",
+  "en": "The Brook, The Hill And The Forty-Five Years Of Silence",
+  "ctx": "subtitle under the block title — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "6faae31a7c",
+  "en": "The street you just got on the bus in is called **Lækjargata — Brook Street.** There is no brook. It is still there, running under the tarmac, and in January it is the reason the ducks in the city pond have anywhere to swim.",
+  "ctx": "opening hook line — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "e757cd9005",
+  "en": "That hill is **Arnarhóll**, and the man on it is **Ingólfur Arnarson**, who the tradition says was Iceland's first settler. The tradition — and say it as a tradition, because that is what it is — has him throwing his **öndvegissúlur**, the carved pillars from either side of a chieftain's high seat, over the side of the ship and settling wherever they washed ashore. They came in below this hill. **What archaeology can actually pin down is different and better:** there were people here **before the ash layer dated to AD 871, give or take two years.** The statue is by **Einar Jónsson**, and it was not a gift from the state — the **Reykjavík craftsmen's guild** paid the **40,000 krónur** and unveiled it on **24 February 1924.** Arnarhóll was a working farm until the **1820s.**",
+  "ctx": "fact bullet — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "ab63b2df8b",
+  "en": "Now the brook. **Lækurinn** ran from the pond down to the sea, the old town grew up on the west side of it, and the street was named **Lækjargata in 1848.** In **1911** they put the brook in a culvert and paved over it. **It is still flowing under us.** And here is the good part: the pond — **Tjörnin** — freezes in winter, except for one patch. Guides will tell you that is a natural hot spring. **It is not.** It is **warm overflow from the city's hot-water system**, coming out at the old brook outlet by Iðnó. One warm corner, and every duck in Reykjavík standing in it.",
+  "ctx": "fact bullet — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "1eebf84215",
+  "en": "Off to the right on **Austurvöllur** is the **Alþingishúsið**, the parliament, built **1880 to 1881** by the Danish architect **Ferdinand Meldahl**, out of stone quarried up the hill in **Þingholtin.** And this is where you correct the guidebook. **Alþingi was founded at Þingvellir, traditionally in 930** — the oldest parliamentary institution in the world by date of foundation. **But it is not the oldest continuously running one, and Alþingi does not claim to be.** It was **shut down by royal decree on 6 June 1800** and did not sit again until **1 July 1845.** **Forty-five years of silence.** That gap is the whole reason the Isle of Man gets to argue about this.",
+  "ctx": "fact bullet — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "1e58d5283e",
+  "en": "Last one on the skyline: **Hallgrímskirkja**, the concrete tower you can see from most of the city. **About 74 and a half metres** — the parish's own leaflet says 73, and I am not going to pretend that is settled. It was designed by **Guðjón Samúelsson**, and the shape is meant to be **columnar basalt, mountains and glaciers** rather than anything churchy. Building started in **1945** and it was consecrated on **26 October 1986** — **forty-one years.** Guðjón died in **1950** and never saw it. The statue of **Leifur Eiríksson** out front is older than the church behind it: **a gift from the United States** for the **1930 millennium of the Alþingi**, formally handed over on **17 July 1931.**",
+  "ctx": "fact bullet — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "9e14b0346d",
+  "en": "'brook street', named 1848, with the brook culverted underneath in 1911",
+  "ctx": "gloss for the name \"Lækjargata\" — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "ad0d0e35aa",
+  "en": "'eagle hill', the mound with the Ingólfur statue",
+  "ctx": "gloss for the name \"Arnarhóll\" — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "e7d5292ec1",
+  "en": "'high-seat pillars', thrown overboard to choose a landing place",
+  "ctx": "gloss for the name \"öndvegissúlur\" — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "bfa40450a7",
+  "en": "the parliament, founded at Þingvellir around 930, closed 1800, reopened 1845",
+  "ctx": "gloss for the name \"Alþingi\" — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "0302ca64f0",
+  "en": "'the pond', where one corner stays open all winter",
+  "ctx": "gloss for the name \"Tjörnin\" — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "553651ec7c",
+  "en": "consecrated 26 October 1986, forty-one years after work began",
+  "ctx": "gloss for the name \"Hallgrímskirkja\" — tour 14.0 / Lækjargata → Seltún / 🏛️ Reykjavík",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
   "id": "bb7e1d03d9",
   "en": "🧝 Hafnarfjörður",
   "ctx": "block title — tour 14.0 / Lækjargata → Seltún / 🧝 Hafnarfjörður",
@@ -32674,7 +32810,7 @@
  {
   "id": "ffa0793a92",
   "en": "a town threaded into 8,000-year-old Búrfellshraun",
-  "ctx": "Threads index — what block \"14.2 Hafnarfjörður\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.3 Hafnarfjörður\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32682,7 +32818,7 @@
  {
   "id": "30021b7bef",
   "en": "the 1151 flow still called Nýjahraun, 'the new lava'",
-  "ctx": "Threads index — what block \"14.3 Straumsvík\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.4 Straumsvík\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32690,7 +32826,7 @@
  {
   "id": "ed37841f35",
   "en": "a móberg ridge drawn along the rift, north-east to south-west",
-  "ctx": "Threads index — what block \"14.4 Vatnsskarð\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.5 Vatnsskarð\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32698,7 +32834,7 @@
  {
   "id": "f3b2094902",
   "en": "a lake with no outlet that lost four metres to an earthquake",
-  "ctx": "Threads index — what block \"14.5 Kleifarvatn\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.6 Kleifarvatn\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32706,7 +32842,7 @@
  {
   "id": "dc74709435",
   "en": "the 1151–1188 fires, and eight centuries of silence since",
-  "ctx": "Threads index — what block \"14.6 Krýsuvíkureldar\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.7 Krýsuvíkureldar\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32714,7 +32850,7 @@
  {
   "id": "f34ebfa6f9",
   "en": "acid, clay and hollow sulphur mounds",
-  "ctx": "Threads index — what block \"14.7 Seltún\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.8 Seltún\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32722,7 +32858,7 @@
  {
   "id": "e27c2c5718",
   "en": "an explosion crater 45 m deep, with gabbro in its tephra",
-  "ctx": "Threads index — what block \"14.8 Grænavatn\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.9 Grænavatn\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32730,7 +32866,7 @@
  {
   "id": "f3f60dc6eb",
   "en": "twelve eruptions since 2021 and what is under Svartsengi now",
-  "ctx": "Threads index — what block \"14.10 The Reykjanes Fires\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.11 The Reykjanes Fires\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32738,7 +32874,7 @@
  {
   "id": "e92ec72a96",
   "en": "a tuya cut in half by the sea, with its feeder dyke exposed",
-  "ctx": "Threads index — what block \"14.11 Festarfjall\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.12 Festarfjall\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32746,7 +32882,7 @@
  {
   "id": "1babd37876",
   "en": "150 million cubic metres of picrite, straight from depth",
-  "ctx": "Threads index — what block \"14.12 Fagradalsfjall\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.13 Fagradalsfjall\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32754,7 +32890,7 @@
  {
   "id": "077a417105",
   "en": "240°C brine from a lava-field well series",
-  "ctx": "Threads index — what block \"14.13 Svartsengi\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.14 Svartsengi\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32762,7 +32898,7 @@
  {
   "id": "387054a961",
   "en": "a móberg hill built over two ice ages, with a collapsed summit",
-  "ctx": "Threads index — what block \"14.14 Þorbjörn\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.15 Þorbjörn\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32770,7 +32906,7 @@
  {
   "id": "de044990ef",
   "en": "dikes, ground rupture and lava barriers",
-  "ctx": "Threads index — what block \"14.15 Grindavík\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.16 Grindavík\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32778,7 +32914,7 @@
  {
   "id": "3f502af5e6",
   "en": "black volcanic sand that collapses underfoot, like Iwo Jima's",
-  "ctx": "Threads index — what block \"14.17 Sandvík\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.18 Sandvík\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32786,7 +32922,7 @@
  {
   "id": "6a930a1d7a",
   "en": "what reservoir drawdown did to the surface",
-  "ctx": "Threads index — what block \"14.18 Reykjanesvirkjun\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.19 Reykjanesvirkjun\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32794,7 +32930,7 @@
  {
   "id": "d4fbb6397b",
   "en": "bedrock dissolved into Iceland's largest mud pool",
-  "ctx": "Threads index — what block \"14.19 Gunnuhver\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.20 Gunnuhver\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32802,7 +32938,7 @@
  {
   "id": "427c6c1b87",
   "en": "a lighthouse condemned by the ridge it stands on",
-  "ctx": "Threads index — what block \"14.20 Reykjanesviti\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.21 Reykjanesviti\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32810,7 +32946,7 @@
  {
   "id": "074a2308e2",
   "en": "a one-eruption cone eroded down to its own plug",
-  "ctx": "Threads index — what block \"14.25 Keilir\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.26 Keilir\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32818,7 +32954,7 @@
  {
   "id": "5d4aff6b27",
   "en": "pahoehoe, aa, weathering and the tubes underneath",
-  "ctx": "Threads index — what block \"14.26 Route 41\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.27 Route 41\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32826,7 +32962,7 @@
  {
   "id": "a6d568fe40",
   "en": "the steam Ingólfur mistook for smoke",
-  "ctx": "Threads index — what block \"14.27 Reykjavík\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"14.28 Reykjavík\" covers, under \"🌋 Geology\"",
   "tours": [
    "14.0"
   ]
@@ -32842,7 +32978,7 @@
  {
   "id": "90ba6c29c4",
   "en": "14,810 gannet pairs, and Iceland's first bird reserve, 1940",
-  "ctx": "Threads index — what block \"14.21 Eldey\" covers, under \"🦅 Wildlife\"",
+  "ctx": "Threads index — what block \"14.22 Eldey\" covers, under \"🦅 Wildlife\"",
   "tours": [
    "14.0"
   ]
@@ -32856,9 +32992,17 @@
   ]
  },
  {
+  "id": "707c7f6e14",
+  "en": "the brook culverted in 1911, and the warm overflow that keeps Tjörnin open",
+  "ctx": "Threads index — what block \"14.2 Reykjavík\" covers, under \"📡 Technology\"",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
   "id": "ed4a0375a4",
   "en": "a smelter from 1969, and the power company built to feed it",
-  "ctx": "Threads index — what block \"14.3 Straumsvík\" covers, under \"📡 Technology\"",
+  "ctx": "Threads index — what block \"14.4 Straumsvík\" covers, under \"📡 Technology\"",
   "tours": [
    "14.0"
   ]
@@ -32866,7 +33010,7 @@
  {
   "id": "0f5b662a4a",
   "en": "quarrying the pass, and the aquifer that surfaces at Straumsvík",
-  "ctx": "Threads index — what block \"14.4 Vatnsskarð\" covers, under \"📡 Technology\"",
+  "ctx": "Threads index — what block \"14.5 Vatnsskarð\" covers, under \"📡 Technology\"",
   "tours": [
    "14.0"
   ]
@@ -32874,7 +33018,7 @@
  {
   "id": "5abca9f30d",
   "en": "Iceland's first geothermal drilling, 1755–56",
-  "ctx": "Threads index — what block \"14.7 Seltún\" covers, under \"📡 Technology\"",
+  "ctx": "Threads index — what block \"14.8 Seltún\" covers, under \"📡 Technology\"",
   "tours": [
    "14.0"
   ]
@@ -32882,7 +33026,7 @@
  {
   "id": "d44d209efa",
   "en": "an exact replica built as a teaching project in old timber technique",
-  "ctx": "Threads index — what block \"14.9 Krýsuvíkurkirkja\" covers, under \"📡 Technology\"",
+  "ctx": "Threads index — what block \"14.10 Krýsuvíkurkirkja\" covers, under \"📡 Technology\"",
   "tours": [
    "14.0"
   ]
@@ -32890,7 +33034,7 @@
  {
   "id": "c8067555ad",
   "en": "heat and power from one well field, seventh unit 2025",
-  "ctx": "Threads index — what block \"14.13 Svartsengi\" covers, under \"📡 Technology\"",
+  "ctx": "Threads index — what block \"14.14 Svartsengi\" covers, under \"📡 Technology\"",
   "tours": [
    "14.0"
   ]
@@ -32898,7 +33042,7 @@
  {
   "id": "89d742ae94",
   "en": "the uplift of 21 January 2020, and the GPS mast put up because of it",
-  "ctx": "Threads index — what block \"14.14 Þorbjörn\" covers, under \"📡 Technology\"",
+  "ctx": "Threads index — what block \"14.15 Þorbjörn\" covers, under \"📡 Technology\"",
   "tours": [
    "14.0"
   ]
@@ -32906,7 +33050,7 @@
  {
   "id": "4a97a9bd95",
   "en": "130 MW from 28 wells and 55 km of drilling",
-  "ctx": "Threads index — what block \"14.18 Reykjanesvirkjun\" covers, under \"📡 Technology\"",
+  "ctx": "Threads index — what block \"14.19 Reykjanesvirkjun\" covers, under \"📡 Technology\"",
   "tours": [
    "14.0"
   ]
@@ -32914,7 +33058,7 @@
  {
   "id": "489ec1d350",
   "en": "Krabbe, Kjørboe, and a light 69–73 m above the sea",
-  "ctx": "Threads index — what block \"14.20 Reykjanesviti\" covers, under \"📡 Technology\"",
+  "ctx": "Threads index — what block \"14.21 Reykjanesviti\" covers, under \"📡 Technology\"",
   "tours": [
    "14.0"
   ]
@@ -32922,7 +33066,7 @@
  {
   "id": "b64018adbe",
   "en": "8,159,461 passengers in 2025, and 27% of them changing planes",
-  "ctx": "Threads index — what block \"14.23 Keflavík\" covers, under \"📡 Technology\"",
+  "ctx": "Threads index — what block \"14.24 Keflavík\" covers, under \"📡 Technology\"",
   "tours": [
    "14.0"
   ]
@@ -32930,7 +33074,7 @@
  {
   "id": "c77bbe7f38",
   "en": "Iceland's first concrete road, 1965, doubled 11 December 2025",
-  "ctx": "Threads index — what block \"14.24 Vogastapi\" covers, under \"📡 Technology\"",
+  "ctx": "Threads index — what block \"14.25 Vogastapi\" covers, under \"📡 Technology\"",
   "tours": [
    "14.0"
   ]
@@ -32938,7 +33082,7 @@
  {
   "id": "ae0cba3c0a",
   "en": "Apollo and Artemis training on Icelandic basalt",
-  "ctx": "Threads index — what block \"14.26 Route 41\" covers, under \"📡 Technology\"",
+  "ctx": "Threads index — what block \"14.27 Route 41\" covers, under \"📡 Technology\"",
   "tours": [
    "14.0"
   ]
@@ -32946,7 +33090,15 @@
  {
   "id": "6e4a958a3c",
   "en": "geothermal district heating, oil-free by the 1970s",
-  "ctx": "Threads index — what block \"14.27 Reykjavík\" covers, under \"📡 Technology\"",
+  "ctx": "Threads index — what block \"14.28 Reykjavík\" covers, under \"📡 Technology\"",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
+  "id": "ad13756d23",
+  "en": "the öndvegissúlur thrown overboard to choose a landing place",
+  "ctx": "Threads index — what block \"14.2 Reykjavík\" covers, under \"🧌 Folklore\"",
   "tours": [
    "14.0"
   ]
@@ -32954,7 +33106,7 @@
  {
   "id": "3057740fbe",
   "en": "the elf map, and the surveys of 1974 and 2007",
-  "ctx": "Threads index — what block \"14.2 Hafnarfjörður\" covers, under \"🧌 Folklore\"",
+  "ctx": "Threads index — what block \"14.3 Hafnarfjörður\" covers, under \"🧌 Folklore\"",
   "tours": [
    "14.0"
   ]
@@ -32962,7 +33114,7 @@
  {
   "id": "2ee8bc826f",
   "en": "the troll-woman's chain, from Rauðskinna I 45",
-  "ctx": "Threads index — what block \"14.11 Festarfjall\" covers, under \"🧌 Folklore\"",
+  "ctx": "Threads index — what block \"14.12 Festarfjall\" covers, under \"🧌 Folklore\"",
   "tours": [
    "14.0"
   ]
@@ -32970,7 +33122,7 @@
  {
   "id": "df8bd80663",
   "en": "Þjófagjá, fifteen thieves, and the sleeves turned inside out",
-  "ctx": "Threads index — what block \"14.14 Þorbjörn\" covers, under \"🧌 Folklore\"",
+  "ctx": "Threads index — what block \"14.15 Þorbjörn\" covers, under \"🧌 Folklore\"",
   "tours": [
    "14.0"
   ]
@@ -32978,7 +33130,7 @@
  {
   "id": "52e49c0e8c",
   "en": "Gunna, a stolen cooking pot, and eight bottles of brennivín",
-  "ctx": "Threads index — what block \"14.19 Gunnuhver\" covers, under \"🧌 Folklore\"",
+  "ctx": "Threads index — what block \"14.20 Gunnuhver\" covers, under \"🧌 Folklore\"",
   "tours": [
    "14.0"
   ]
@@ -32986,7 +33138,7 @@
  {
   "id": "d25fe28bf8",
   "en": "Stapadraugurinn, the hitchhiker, and Árni Björnsson's prediction",
-  "ctx": "Threads index — what block \"14.24 Vogastapi\" covers, under \"🧌 Folklore\"",
+  "ctx": "Threads index — what block \"14.25 Vogastapi\" covers, under \"🧌 Folklore\"",
   "tours": [
    "14.0"
   ]
@@ -33000,9 +33152,17 @@
   ]
  },
  {
+  "id": "17cea6d255",
+  "en": "Alþingi closed by royal decree 6 June 1800, reopened 1 July 1845",
+  "ctx": "Threads index — what block \"14.2 Reykjavík\" covers, under \"🏛️ History\"",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
   "id": "40439b6da1",
   "en": "Kristján Eldjárn's 1950 dig and the St Barbara figurine",
-  "ctx": "Threads index — what block \"14.3 Straumsvík\" covers, under \"🏛️ History\"",
+  "ctx": "Threads index — what block \"14.4 Straumsvík\" covers, under \"🏛️ History\"",
   "tours": [
    "14.0"
   ]
@@ -33010,7 +33170,7 @@
  {
   "id": "c9194dcc60",
   "en": "the 1936 road proposal the newspapers tore apart",
-  "ctx": "Threads index — what block \"14.4 Vatnsskarð\" covers, under \"🏛️ History\"",
+  "ctx": "Threads index — what block \"14.5 Vatnsskarð\" covers, under \"🏛️ History\"",
   "tours": [
    "14.0"
   ]
@@ -33018,7 +33178,7 @@
  {
   "id": "279158f43a",
   "en": "sulphur mining 1754–63 and 1858–80, 72.5 tonnes exported",
-  "ctx": "Threads index — what block \"14.7 Seltún\" covers, under \"🏛️ History\"",
+  "ctx": "Threads index — what block \"14.8 Seltún\" covers, under \"🏛️ History\"",
   "tours": [
    "14.0"
   ]
@@ -33026,7 +33186,7 @@
  {
   "id": "ff09b99316",
   "en": "built 1857, burned 2 January 2010, consecrated again 5 June 2022",
-  "ctx": "Threads index — what block \"14.9 Krýsuvíkurkirkja\" covers, under \"🏛️ History\"",
+  "ctx": "Threads index — what block \"14.10 Krýsuvíkurkirkja\" covers, under \"🏛️ History\"",
   "tours": [
    "14.0"
   ]
@@ -33034,7 +33194,7 @@
  {
   "id": "b1cc16d357",
   "en": "Ísólfsskáli from 1703, and the earthquakes of January 1905",
-  "ctx": "Threads index — what block \"14.11 Festarfjall\" covers, under \"🏛️ History\"",
+  "ctx": "Threads index — what block \"14.12 Festarfjall\" covers, under \"🏛️ History\"",
   "tours": [
    "14.0"
   ]
@@ -33042,7 +33202,7 @@
  {
   "id": "300951f3c5",
   "en": "Camp Vail, the USAAF radar station of 18 April 1942",
-  "ctx": "Threads index — what block \"14.14 Þorbjörn\" covers, under \"🏛️ History\"",
+  "ctx": "Threads index — what block \"14.15 Þorbjörn\" covers, under \"🏛️ History\"",
   "tours": [
    "14.0"
   ]
@@ -33050,7 +33210,7 @@
  {
   "id": "fb655f7a8c",
   "en": "the 1627 Tyrkjaránið, and the town's return in 2026",
-  "ctx": "Threads index — what block \"14.15 Grindavík\" covers, under \"🏛️ History\"",
+  "ctx": "Threads index — what block \"14.16 Grindavík\" covers, under \"🏛️ History\"",
   "tours": [
    "14.0"
   ]
@@ -33058,7 +33218,7 @@
  {
   "id": "0c244f3117",
   "en": "three villages, and the one that emptied out",
-  "ctx": "Threads index — what block \"14.16 Staðarhverfi\" covers, under \"🏛️ History\"",
+  "ctx": "Threads index — what block \"14.17 Staðarhverfi\" covers, under \"🏛️ History\"",
   "tours": [
    "14.0"
   ]
@@ -33066,7 +33226,7 @@
  {
   "id": "b046ad2bd9",
   "en": "1878, 1887, 1908: built, broken, rebuilt",
-  "ctx": "Threads index — what block \"14.20 Reykjanesviti\" covers, under \"🏛️ History\"",
+  "ctx": "Threads index — what block \"14.21 Reykjanesviti\" covers, under \"🏛️ History\"",
   "tours": [
    "14.0"
   ]
@@ -33074,7 +33234,7 @@
  {
   "id": "0725bb452e",
   "en": "the last two great auks, in the first days of June 1844",
-  "ctx": "Threads index — what block \"14.21 Eldey\" covers, under \"🏛️ History\"",
+  "ctx": "Threads index — what block \"14.22 Eldey\" covers, under \"🏛️ History\"",
   "tours": [
    "14.0"
   ]
@@ -33082,7 +33242,7 @@
  {
   "id": "a5fbe0b169",
   "en": "the Jamestown's timber, and the houses built from it",
-  "ctx": "Threads index — what block \"14.22 Hafnir\" covers, under \"🏛️ History\"",
+  "ctx": "Threads index — what block \"14.23 Hafnir\" covers, under \"🏛️ History\"",
   "tours": [
    "14.0"
   ]
@@ -33090,7 +33250,7 @@
  {
   "id": "9d552e90a0",
   "en": "Meeks Field 1943, the 1951 agreement, the 2006 departure",
-  "ctx": "Threads index — what block \"14.23 Keflavík\" covers, under \"🏛️ History\"",
+  "ctx": "Threads index — what block \"14.24 Keflavík\" covers, under \"🏛️ History\"",
   "tours": [
    "14.0"
   ]
@@ -33098,7 +33258,7 @@
  {
   "id": "96738a8646",
   "en": "four deaths on the headland between 1859 and 1870",
-  "ctx": "Threads index — what block \"14.24 Vogastapi\" covers, under \"🏛️ History\"",
+  "ctx": "Threads index — what block \"14.25 Vogastapi\" covers, under \"🏛️ History\"",
   "tours": [
    "14.0"
   ]
@@ -33114,7 +33274,7 @@
  {
   "id": "74d06ce1b6",
   "en": "Skálholt's fishing station, and the ten men lost in 1734",
-  "ctx": "Threads index — what block \"14.11 Festarfjall\" covers, under \"⚓ Seafaring\"",
+  "ctx": "Threads index — what block \"14.12 Festarfjall\" covers, under \"⚓ Seafaring\"",
   "tours": [
    "14.0"
   ]
@@ -33122,7 +33282,7 @@
  {
   "id": "3e1a5f1cde",
   "en": "a thousand years of cod, and the corsairs of 1627",
-  "ctx": "Threads index — what block \"14.15 Grindavík\" covers, under \"⚓ Seafaring\"",
+  "ctx": "Threads index — what block \"14.16 Grindavík\" covers, under \"⚓ Seafaring\"",
   "tours": [
    "14.0"
   ]
@@ -33130,7 +33290,7 @@
  {
   "id": "e5170e51ae",
   "en": "the mooring bolts, and the bell of the Anlaby",
-  "ctx": "Threads index — what block \"14.16 Staðarhverfi\" covers, under \"⚓ Seafaring\"",
+  "ctx": "Threads index — what block \"14.17 Staðarhverfi\" covers, under \"⚓ Seafaring\"",
   "tours": [
    "14.0"
   ]
@@ -33138,7 +33298,7 @@
  {
   "id": "bb49ca7e64",
   "en": "a 77-metre rock 15 km offshore, climbed with ropes",
-  "ctx": "Threads index — what block \"14.21 Eldey\" covers, under \"⚓ Seafaring\"",
+  "ctx": "Threads index — what block \"14.22 Eldey\" covers, under \"⚓ Seafaring\"",
   "tours": [
    "14.0"
   ]
@@ -33146,7 +33306,7 @@
  {
   "id": "52af9248f4",
   "en": "a three-masted ship that crossed the Atlantic with nobody aboard",
-  "ctx": "Threads index — what block \"14.22 Hafnir\" covers, under \"⚓ Seafaring\"",
+  "ctx": "Threads index — what block \"14.23 Hafnir\" covers, under \"⚓ Seafaring\"",
   "tours": [
    "14.0"
   ]
@@ -33154,7 +33314,7 @@
  {
   "id": "554d97b173",
   "en": "a mið — lining up on Keilir to run into Hamarssund",
-  "ctx": "Threads index — what block \"14.25 Keilir\" covers, under \"⚓ Seafaring\"",
+  "ctx": "Threads index — what block \"14.26 Keilir\" covers, under \"⚓ Seafaring\"",
   "tours": [
    "14.0"
   ]
@@ -33162,7 +33322,7 @@
  {
   "id": "78c46e9eaa",
   "en": "dried cod out through the Harbour Fjord",
-  "ctx": "Threads index — what block \"14.2 Hafnarfjörður\" covers, under \"💰 Trade\"",
+  "ctx": "Threads index — what block \"14.3 Hafnarfjörður\" covers, under \"💰 Trade\"",
   "tours": [
    "14.0"
   ]
@@ -33170,7 +33330,7 @@
  {
   "id": "570b699d11",
   "en": "the Danish trading post at Arfadalsvík, 1665–1745",
-  "ctx": "Threads index — what block \"14.16 Staðarhverfi\" covers, under \"💰 Trade\"",
+  "ctx": "Threads index — what block \"14.17 Staðarhverfi\" covers, under \"💰 Trade\"",
   "tours": [
    "14.0"
   ]
@@ -33184,9 +33344,17 @@
   ]
  },
  {
+  "id": "331a92a872",
+  "en": "where the tradition says the first landing was, and what the ash layer actually shows",
+  "ctx": "Threads index — what block \"14.2 Reykjavík\" covers, under \"🧳 Migration\"",
+  "tours": [
+   "14.0"
+  ]
+ },
+ {
   "id": "a39fc46a95",
   "en": "a ninth-century hall at Vogur, possibly older than 871",
-  "ctx": "Threads index — what block \"14.22 Hafnir\" covers, under \"🧳 Migration\"",
+  "ctx": "Threads index — what block \"14.23 Hafnir\" covers, under \"🧳 Migration\"",
   "tours": [
    "14.0"
   ]
@@ -33194,7 +33362,7 @@
  {
   "id": "e771e4b45f",
   "en": "Reykjanesbær, formed 11 June 1994 from three towns",
-  "ctx": "Threads index — what block \"14.23 Keflavík\" covers, under \"🧳 Migration\"",
+  "ctx": "Threads index — what block \"14.24 Keflavík\" covers, under \"🧳 Migration\"",
   "tours": [
    "14.0"
   ]
@@ -33202,7 +33370,7 @@
  {
   "id": "a38f2c76ee",
   "en": "the Norse–Gaelic settlement dated to AD 871 ±2",
-  "ctx": "Threads index — what block \"14.27 Reykjavík\" covers, under \"🧳 Migration\"",
+  "ctx": "Threads index — what block \"14.28 Reykjavík\" covers, under \"🧳 Migration\"",
   "tours": [
    "14.0"
   ]
@@ -33218,7 +33386,7 @@
  {
   "id": "94da27d4d6",
   "en": "Flags of Our Fathers, summer 2005, and why Hawaii did not work",
-  "ctx": "Threads index — what block \"14.17 Sandvík\" covers, under \"🎬 Film\"",
+  "ctx": "Threads index — what block \"14.18 Sandvík\" covers, under \"🎬 Film\"",
   "tours": [
    "14.0"
   ]

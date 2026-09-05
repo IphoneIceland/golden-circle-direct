@@ -25,5 +25,5 @@ window.__TOURS__ = [
   {id:"10.0", group:"Snæfellsnes", ready:true , name:"Snæfellsnes South",
    sub:"BSÍ → Ytri-Tunga → Arnarstapi → Djúpalónssandur → Kirkjufell → BSÍ", km:450, min:451, blocks:39},
   {id:"14.0", group:"Reykjanes", ready:true , name:"Reykjanes South Loop",
-   sub:"Lækjargata → Seltún → Fagradalsfjall → Grindavík → Gunnuhver → Reykjanesviti → Reykjavík", km:156, min:161, blocks:27}
+   sub:"Lækjargata → Seltún → Fagradalsfjall → Grindavík → Gunnuhver → Reykjanesviti → Reykjavík", km:155, min:161, blocks:28}
 ];
