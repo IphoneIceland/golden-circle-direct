@@ -15,20 +15,26 @@ import json, os, re, subprocess, time, urllib.parse
 from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-CAND = os.path.join(HERE, "_photo_candidates3")
+CAND = os.path.join(HERE, "_pc5")
 os.makedirs(CAND, exist_ok=True)
 
 WANT = [
- ("eyjafjallajokull",   ["Eyjafjallajökull"]),
- ("hellisheidarvirkjun",["Hellisheiði Power Station", "Hellisheiðarvirkjun"]),
- ("petursey",           ["Pétursey"]),
- ("keldur",             ["Keldur", "Keldur á Rangárvöllum"]),
- ("drangurinn",         ["Drangshlíð", "Drangurinn"]),
- ("aegissiduhellar",    ["Ægissíðuhellar", "Hellar við Ægissíðu"]),
- ("hjorleifshofdi",     ["Hjörleifshöfði"]),
- ("markarfljot",        ["Markarfljót"]),
- ("olfusa",             ["Ölfusá"]),
+ ("kjarvalsstadir",  ["Kjarvalsstaðir"]),
+ ("olgerdin",        ["Ölgerðin Egill Skallagrímsson"]),
+ ("ellidaardalur",   ["Elliðaárdalur", "Elliðaár"]),
+ ("kristnitokuhraun",["Kristnitökuhraun", "Svínahraun"]),
+ ("hveragerdi",      ["Hveragerði"]),
+ ("olfusa",          ["Ölfusá"]),
+ ("ingolfur",        ["Ingólfur Arnarson"]),
+ ("selfoss_town",    ["Selfoss"]),
+ ("thjorsa",         ["Þjórsá"]),
+ ("hella",           ["Ægissíðuhellar", "Hella, Iceland"]),
+ ("landeyjahofn",    ["Landeyjahöfn"]),
+ ("drangurinn",      ["Drangshlíð", "Drangurinn í Drangshlíð"]),
+ ("petursey",        ["Pétursey"]),
+ ("skeidflatarkirkja",["Skeiðflatarkirkja"]),
 ]
+
 UA = "User-Agent: iguide-iceland/1.0 (bus guide app; iguideiceland.is)"
 OK = ("cc0", "cc by", "cc by-sa", "public domain", "pd-", "attribution")
 

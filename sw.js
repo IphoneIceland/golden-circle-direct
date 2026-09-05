@@ -4,7 +4,7 @@
      TILES  stale-while-revalidate, capped. Map imagery you have already looked at.
    Load the page once on hotel wifi, pan the loop, and the whole day survives
    the dead patch past Laugarvatn. */
-const VERSION = "gcd188-v1";
+const VERSION = "gcd189-v1";
 const SHELL   = VERSION + "-shell";
 const TILES   = VERSION + "-tiles";
 const TILE_CAP = 900;
@@ -28,6 +28,9 @@ const SHELL_FILES = [
   "./images/drive/hlidarendi.webp", "./images/drive/vestmannaeyjar.webp",
   "./images/drive/keldur.webp", "./images/drive/eyjafjallajokull.webp",
   "./images/drive/hellisheidarvirkjun.webp",
+  "./images/drive/kjarvalsstadir.webp", "./images/drive/ellidaardalur.webp",
+  "./images/drive/thjorsa.webp", "./images/drive/hella.webp",
+  "./images/drive/landeyjahofn.webp",
   "./vendor/leaflet.js", "./vendor/leaflet.css",
   "./vendor/images/marker-icon.png", "./vendor/images/marker-shadow.png",
   "./vendor/images/layers.png", "./vendor/images/layers-2x.png",

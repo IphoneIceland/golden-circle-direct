@@ -998,14 +998,23 @@ const STOPPHOTOS={
   "vestmannaeyjar":        {src:"images/drive/vestmannaeyjar.webp",      cr:"Diego Delso / CC BY-SA 4.0"},
   "keldur":                {src:"images/drive/keldur.webp",              cr:"Oblomov2 / CC0"},
   "eyjafjallajokull":      {src:"images/drive/eyjafjallajokull.webp",    cr:"TommyBee / Public domain"},
-  "hellisheidarvirkjun":   {src:"images/drive/hellisheidarvirkjun.webp", cr:"ThinkGeoEnergy / CC BY 2.0"}
+  "hellisheidarvirkjun":   {src:"images/drive/hellisheidarvirkjun.webp", cr:"ThinkGeoEnergy / CC BY 2.0"},
+  "johannes sveinsson kjarval":{src:"images/drive/kjarvalsstadir.webp",  cr:"TommyBee / Public domain"},
+  "ellidaardalur paradisardalur":{src:"images/drive/ellidaardalur.webp",cr:"Steinninn / CC BY 4.0"},
+  "thjorsa":               {src:"images/drive/thjorsa.webp",             cr:"TommyBee / Public domain"},
+  "hella":                 {src:"images/drive/hella.webp",               cr:"Steinninn / CC BY 4.0"},
+  "landeyjar plains":      {src:"images/drive/landeyjahofn.webp",        cr:"Szilas / Public domain"}
 };
 /* Strip emoji, accents and punctuation so "\ud83d\udca7 Sel\u00f0jalandsfoss & Glj\u00fafrab\u00fai"
    and "Seljalandsfoss & Gljufrabui" land on the same key. */
 function photoKey(t){
-  return (t||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+  // toLowerCase FIRST. The replacements below only match the LOWERCASE thorn,
+  // eth and ash, so an uppercase Th\u00fe/\u00f0/\u00e6 fell through and was then
+  // wiped by the a-z filter: "\u00dej\u00f3rs\u00e1" keyed as "jorsa", not "thjorsa", and its
+  // photo silently never matched. Every title starting with \u00de was affected.
+  return (t||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase()
     .replace(/[\u00fe]/g,"th").replace(/[\u00f0]/g,"d").replace(/[\u00e6]/g,"ae")
-    .toLowerCase().replace(/[^a-z0-9 -]/g," ").replace(/\s+/g," ").trim();
+    .replace(/[^a-z0-9 -]/g," ").replace(/\s+/g," ").trim();
 }
 function blockPhoto(block){
   if(!block) return null;
