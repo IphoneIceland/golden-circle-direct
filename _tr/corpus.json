@@ -6668,8 +6668,6 @@
    "2.0",
    "3.0",
    "4.0",
-   "5.0",
-   "6.0",
    "7.0"
   ]
  },
@@ -12364,6 +12362,15 @@
   ]
  },
  {
+  "id": "340eff298c",
+  "en": "Look back and left — Ingólfsfjall, the flat-topped mountain named after him.",
+  "ctx": "cue, tells the guest where to look — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "94a5c55c7b",
   "en": "Per the saga, first settler **Ingólfur Arnarson** threw his carved **high-seat pillars** overboard and vowed to settle wherever they washed up.",
   "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
@@ -12542,6 +12549,42 @@
   ]
  },
  {
+  "id": "ae94436a31",
+  "en": "And a kilometre or so below the bridge sits **Urriðafoss** — **Iceland's most voluminous waterfall.** Not the tallest, not the most powerful. The most *water*. It is only about **six metres high** and it carries roughly **358 cubic metres a second** — about **1.7 times Dettifoss** up north. Dettifoss is the most **powerful**, which is height times flow, and the two get swapped so often that the University of Iceland has had to correct it in print.",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "c95d456bb9",
+  "en": "Every winter the river builds an ice jam here called the **Urriðafosshrönn.** Landsvirkjun's own survey measured up to **40 million cubic metres** of ice and slush, a sheet up to **20 metres thick**, burying the waterfall completely — and in some years it backs up past the bridge we are crossing. Iceland's most voluminous waterfall spends part of most winters entirely out of sight, under its own ice.",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "26551a0799",
+  "en": "People have wanted to dam it since **1927**, when the poet **Einar Benediktsson's** company Titan won a licence it never found the money to use. The modern version is **Urriðafossvirkjun**, **140 MW**. On **17 February 2026** Alþingi left it in **biðflokkur** — the hold category — while everyone waits to see what the two dams upstream do to the **Þjórsá salmon**, one of Iceland's largest wild stocks at around **ten thousand fish.** Landsvirkjun's own assessment says the falls would run at **10 to 15 cubic metres a second** in winter instead of 350, and it proposes **no mitigation.**",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "3939590604",
+  "en": "One last thing, about the name. **Landnámabók** says Þjórsá is 'bull river' because a settler sailed into the mouth with a bull's head on his prow. Iceland's place-name scholars are not convinced. **Þórhallur Vilmundarson** argued it was originally **Þjótsá** — 'the roaring river' — and the roar it was named for is this one, at Urriðafoss. There is a farm on the bank still called **Þjótandi**, 'the one that roars.'",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
   "id": "a2f8092b66",
   "en": "Iceland's longest river, 230 km from ice cap to sea",
   "ctx": "gloss for the name \"Þjórsá\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
@@ -12563,6 +12606,33 @@
   "ctx": "gloss for the name \"Árnes\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
   "tours": [
    "5.0"
+  ]
+ },
+ {
+  "id": "fef7a466bd",
+  "en": "'trout falls', Iceland's most voluminous waterfall, just below the bridge",
+  "ctx": "gloss for the name \"Urriðafoss\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "73952b653f",
+  "en": "the winter ice jam that buries it",
+  "ctx": "gloss for the name \"Urriðafosshrönn\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "a59a408eaf",
+  "en": "'the one that roars', the farm on the bank that may have named the river",
+  "ctx": "gloss for the name \"Þjótandi\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "tours": [
+   "5.0",
+   "6.0"
   ]
  },
  {
@@ -13056,8 +13126,8 @@
   ]
  },
  {
-  "id": "f915a0914c",
-  "en": "Look ahead at 12 o'clock — Landeyjar sandur.",
+  "id": "92b11871bd",
+  "en": "Look right at 2 o'clock — Landeyjar sandur, the plain running away to the sea.",
   "ctx": "cue, tells the guest where to look — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
   "tours": [
    "5.0",
@@ -16817,8 +16887,8 @@
   ]
  },
  {
-  "id": "75ad50b0ac",
-  "en": "Behind the car park sits **Skógar Museum** and the legend of **Þrasi's treasure** — a settler's gold chest hidden behind the falls. Looters once hooked the chest's iron ring, only for it to **snap off**; that ring hung on the **church door until 1890** and now sits in the museum. The gold, naturally, is still behind the water.",
+  "id": "428d881758",
+  "en": "Behind the car park sits **Skógar Museum** — and one gorge along, a **bonus waterfall called Kvernufoss** that almost every coach drives straight past. Then the legend of **Þrasi's treasure** — a settler's gold chest hidden behind the falls. Looters once hooked the chest's iron ring, only for it to **snap off**; that ring hung on the **church door until 1890** and now sits in the museum. The gold, naturally, is still behind the water.",
   "ctx": "fact bullet — tour 6.0 / Skógafoss / 🏞️ Skógafoss",
   "tours": [
    "6.0"
@@ -16830,6 +16900,15 @@
   "ctx": "gloss for the name \"Skógafoss\" — tour 6.0 / Skógafoss / 🏞️ Skógafoss",
   "tours": [
    "6.0"
+  ]
+ },
+ {
+  "id": "b641a972d5",
+  "en": "the bonus waterfall hiding in the green gorge next door",
+  "ctx": "gloss for the name \"Kvernufoss\" — tour 6.0 / Skógafoss / 🏞️ Skógafoss",
+  "tours": [
+   "6.0",
+   "7.0"
   ]
  },
  {
@@ -19039,14 +19118,6 @@
   "id": "aedf2c462f",
   "en": "the village behind the car park, with its turf-house museum",
   "ctx": "gloss for the name \"Skógar\" — tour 7.0 / Skógafoss / Skógafoss",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "b641a972d5",
-  "en": "the bonus waterfall hiding in the green gorge next door",
-  "ctx": "gloss for the name \"Kvernufoss\" — tour 7.0 / Skógafoss / Skógafoss",
   "tours": [
    "7.0"
   ]

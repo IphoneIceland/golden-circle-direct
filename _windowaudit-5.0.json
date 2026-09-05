@@ -83,10 +83,10 @@
    "match": "",
    "leg": "outbound",
    "kind": "wikidata-node",
-   "km": 1.3454031444257253,
+   "km": 1.3489276632522331,
    "prog": 0.0,
-   "lat": 64.1493654,
-   "lon": -21.9414165
+   "lat": 64.149392,
+   "lon": -21.9414698
   },
   {
    "name": "Listasafn Reykjavíkur",
@@ -105,10 +105,10 @@
    "match": "",
    "leg": "outbound",
    "kind": "wikidata-node",
-   "km": 1.3559832747631186,
+   "km": 1.338346327229948,
    "prog": 0.0,
-   "lat": 64.1494664,
-   "lon": -21.9413926
+   "lat": 64.1493077,
+   "lon": -21.9413481
   },
   {
    "name": "Listasafn Íslands",
@@ -215,10 +215,10 @@
    "match": "",
    "leg": "outbound",
    "kind": "wikidata-node",
-   "km": 1.16919161599483,
+   "km": 1.166613953653816,
    "prog": 0.0,
-   "lat": 64.1478363,
-   "lon": -21.9404774
+   "lat": 64.1478155,
+   "lon": -21.94045
   },
   {
    "name": "Guesthouse Andrea",
@@ -596,8 +596,8 @@
   },
   {
    "name": "Alþingi",
-   "in_script": false,
-   "match": "",
+   "in_script": true,
+   "match": "exact",
    "leg": "outbound",
    "kind": "wikidata-node",
    "km": 1.0494486147746815,
@@ -637,6 +637,17 @@
    "prog": 0.0,
    "lat": 64.1463692,
    "lon": -21.9394353
+  },
+  {
+   "name": "Reykjavík Konsúlat Hótel, Curio Collection By Hilton",
+   "in_script": false,
+   "match": "",
+   "leg": "outbound",
+   "kind": "building",
+   "km": 1.157867945043306,
+   "prog": 0.0,
+   "lat": 64.1479989,
+   "lon": -21.9373358
   },
   {
    "name": "Ánanaust",
@@ -2157,17 +2168,6 @@
    "lon": -21.995044
   },
   {
-   "name": "22 Hill Hotel",
-   "in_script": false,
-   "match": "",
-   "leg": "outbound",
-   "kind": "wikidata-node",
-   "km": 0.8192603987408072,
-   "prog": 0.419634382219398,
-   "lat": 64.141379,
-   "lon": -21.9042818
-  },
-  {
    "name": "Öskjuhlíð",
    "in_script": false,
    "match": "",
@@ -2245,15 +2245,26 @@
    "lon": -21.9074422
   },
   {
-   "name": "Listaháskóli Íslands",
+   "name": "Listaháskóli Íslands - Kvikmyndadeild",
    "in_script": false,
    "match": "",
    "leg": "outbound",
    "kind": "wikidata-node",
-   "km": 0.32557417142080325,
+   "km": 1.2488050823986199,
    "prog": 0.419634382219398,
-   "lat": 64.1367474,
-   "lon": -21.9020594
+   "lat": 64.1449099,
+   "lon": -21.9106573
+  },
+  {
+   "name": "Listaháskóli Íslands - Tónlistardeild",
+   "in_script": false,
+   "match": "",
+   "leg": "outbound",
+   "kind": "wikidata-node",
+   "km": 0.7669874441326782,
+   "prog": 0.419634382219398,
+   "lat": 64.1406647,
+   "lon": -21.900303
   },
   {
    "name": "Flókagata",
@@ -2474,6 +2485,17 @@
    "prog": 0.419634382219398,
    "lat": 64.1304155,
    "lon": -21.9050766
+  },
+  {
+   "name": "Listaháskóli Íslands",
+   "in_script": false,
+   "match": "",
+   "leg": "outbound",
+   "kind": "wikidata-way",
+   "km": 0.328006942545121,
+   "prog": 0.419634382219398,
+   "lat": 64.1368894,
+   "lon": -21.9029447
   },
   {
    "name": "Þorsteinn Erlingsson",
@@ -3367,6 +3389,17 @@
    "lon": -21.1244699
   },
   {
+   "name": "Árbæjarhverfi",
+   "in_script": false,
+   "match": "",
+   "leg": "outbound",
+   "kind": "hamlet",
+   "km": 0.6774711812359675,
+   "prog": 13.25135100663101,
+   "lat": 63.9458324,
+   "lon": -21.0269761
+  },
+  {
    "name": "Selfoss",
    "in_script": true,
    "match": "exact",
@@ -3489,8 +3522,8 @@
   },
   {
    "name": "Urriðafoss",
-   "in_script": false,
-   "match": "",
+   "in_script": true,
+   "match": "exact",
    "leg": "outbound",
    "kind": "waterfall",
    "km": 0.5622157045143124,
@@ -3785,17 +3818,6 @@
    "lon": -19.1023349
   },
   {
-   "name": "Deutsches Seemannsdenkmal",
-   "in_script": false,
-   "match": "",
-   "leg": "outbound",
-   "kind": "memorial",
-   "km": 1.4834834019138672,
-   "prog": 51.39211619679788,
-   "lat": 63.4138386,
-   "lon": -19.018573
-  },
-  {
    "name": "Vík",
    "in_script": true,
    "match": "too-short",
@@ -3805,6 +3827,17 @@
    "prog": 53.75614322000772,
    "lat": 63.4188166,
    "lon": -19.0054737
+  },
+  {
+   "name": "Hótel Vík í Mýrdal",
+   "in_script": false,
+   "match": "",
+   "leg": "outbound",
+   "kind": "wikidata-node",
+   "km": 1.4102786512443601,
+   "prog": 53.75614322000772,
+   "lat": 63.4194819,
+   "lon": -19.0012001
   },
   {
    "name": "Guesthouse Carina",
@@ -3856,10 +3889,10 @@
    "match": "",
    "leg": "return",
    "kind": "peak",
-   "km": 1.2915609706470517,
+   "km": 1.2914909233008718,
    "prog": 54.97463708100524,
-   "lat": 63.4406857,
-   "lon": -19.0078722
+   "lat": 63.4406869,
+   "lon": -19.0078735
   },
   {
    "name": "Heiðarvatn",
@@ -3970,6 +4003,17 @@
    "prog": 65.60681730899947,
    "lat": 63.5639531,
    "lon": -19.7400451
+  },
+  {
+   "name": "Kliftorfa",
+   "in_script": false,
+   "match": "",
+   "leg": "return",
+   "kind": "monument",
+   "km": 1.643053613172613,
+   "prog": 66.35447585374493,
+   "lat": 63.5712148,
+   "lon": -19.7862723
   },
   {
    "name": "Írárfoss",
@@ -5149,7 +5193,7 @@
    "lon": -21.9165994
   },
   {
-   "name": "Te & Kaffi - Micro Roast",
+   "name": "Namaste",
    "in_script": false,
    "match": "",
    "leg": "return",

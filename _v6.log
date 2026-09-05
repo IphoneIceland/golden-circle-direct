@@ -1,0 +1,4 @@
+route 415.9 km | 5826 geometry points | corridor of 244 vertices every 1.5 km, 4000 m each side
+sections: BSÍ Bus Terminal → Hvolsvöllur(drive) | Hvolsvöllur(stop) | Hvolsvöllur → Skógafoss(drive) | Skógafoss(stop) | Skógafoss → Reynisfjara(drive) | Reynisfjara(stop) | Reynisfjara → Vík(drive) | Vík í Mýrdal(stop) | Vík → Sólheimajökull(drive) | Sólheimajökull(stop) | Seljalandsfoss(stop) | Seljalandsfoss → Reykjavík(drive)
+  wikidata-node   131 elements  (4s, overpass-api.de)
+  wikidata-way   retry 1 (<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE html PUBLIC)
