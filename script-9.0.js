@@ -1000,7 +1000,7 @@ threads: [
   ["9.17 Berserkjahraun","9.0.5.1","a 4,000-year-old lava field from four Ljósufjöll cones"],
   ["9.20 Kolgrafarfjörður","9.0.5.4","the 2004 causeway and what it did to a fjord"],
   ["9.21 Kirkjufell","9.0.6.1","the ice subtracted a landscape and left the best bit standing"],
-  ["9.23 Búlandshöfði","9.0.7.2","marine shells sealed under lava dated to about 1.1 million years"],
+  ["9.22 Búlandshöfði","9.0.7.1","marine shells sealed under lava dated to about 1.1 million years"],
   ["9.29 Saxhóll","9.0.9.4","a scoria crater and the Neshraun lava"],
   ["9.30 Djúpalónssandur & Dritvík","9.0.10.1","the black pebble beach at the volcano's foot"],
   ["9.31 Malarrif & Vatnshellir","9.0.11.1","a 200 m lava tube and how tubes form"],
@@ -1019,9 +1019,9 @@ threads: [
   ["9.9 Borgarnes","9.0.2.1","the graveyard chapters of Egils saga"],
   ["9.17 Berserkjahraun","9.0.5.1","the two berserkers and the road they were paid in a bath for"],
   ["9.19 Helgafell","9.0.5.3","Eyrbyggja saga chapter 11: the mountain opens and the dead are welcomed in"],
-  ["9.22 Fróðá","9.0.7.1","Eyrbyggja saga's ghost trials"],
-  ["9.23 Búlandshöfði","9.0.7.2","Eyrbyggja saga's Þrælaskriður, the Slave Screes"],
-  ["9.24 Mávahlíð","9.0.7.3","Eyrbyggja saga's Geirríður, accused of night-riding"],
+  ["9.24 Fróðá","9.0.7.3","Eyrbyggja saga's ghost trials"],
+  ["9.22 Búlandshöfði","9.0.7.1","Eyrbyggja saga's Þrælaskriður, the Slave Screes"],
+  ["9.23 Mávahlíð","9.0.7.2","Eyrbyggja saga's Geirríður, accused of night-riding"],
   ["9.28 Ingjaldshóll","9.0.9.3","the Columbus story: fiction historicized"],
   ["9.32 Lóndrangar","9.0.11.2","Kolbeinn's verse contest, with citation"],
   ["9.33 Snæfellsjökull","9.0.11.3","Jules Verne's entrance to the centre of the Earth"],
@@ -1034,8 +1034,8 @@ threads: [
  {label:"", items:[
   ["9.6 Hvalfjörður","9.0.1.7","Rauðhöfði, the whale with a grudge"],
   ["9.19 Helgafell","9.0.5.3","the three wishes, first written down in 1955"],
-  ["9.22 Fróðá","9.0.7.1","eighteen ghosts, tried at the door"],
-  ["9.24 Mávahlíð","9.0.7.3","the kveldriða charge, answered in court instead of at a stake"],
+  ["9.24 Fróðá","9.0.7.3","eighteen ghosts, tried at the door"],
+  ["9.23 Mávahlíð","9.0.7.2","the kveldriða charge, answered in court instead of at a stake"],
   ["9.26 Björn the Rich","9.0.9.1","the barrels and the comeback line, added a century late"],
   ["9.32 Lóndrangar","9.0.11.2","the devil loses a poetry slam"],
  ]},
@@ -1052,7 +1052,7 @@ threads: [
 ]},
 {title:"🧭 Settlement & Migration", tag:"#migration", subs:[
  {label:"", items:[
-  ["9.4 Esjuberg","9.0.1.5","the Irishman's church, a century early"],
+  ["9.4 Kjalarnes","9.0.1.5","the Irishman's church at Esjuberg, a century early"],
   ["9.7 Akrafjall","9.0.1.8","Þormóður and Ketill, the corn-growing Irish brothers"],
   ["9.9 Borgarnes","9.0.2.1","Kveldúlfur's coffin picks the family address"],
   ["9.18 Bjarnarhöfn","9.0.5.2","the settler named for the direction he would not go"],
@@ -1071,11 +1071,11 @@ threads: [
 ]},
 {title:"⛪ Religion", tag:"#religion", subs:[
  {label:"", items:[
-  ["9.4 Esjuberg","9.0.1.5","St Columba's church before the Conversion"],
+  ["9.4 Kjalarnes","9.0.1.5","St Columba's church at Esjuberg, before the Conversion"],
   ["9.11 Hítardalur & Ljósufjöll","9.0.3.2","the bishop and the deadliest fire, 1148"],
   ["9.18 Bjarnarhöfn","9.0.5.2","the church of 1856–58, the last of its kind standing"],
   ["9.19 Helgafell","9.0.5.3","Þórólfur's holy mountain: nobody was to look at it unwashed"],
-  ["9.22 Fróðá","9.0.7.1","a priest, a door-court, and the year 1000"],
+  ["9.24 Fróðá","9.0.7.3","a priest, a door-court, and the year 1000"],
   ["9.28 Ingjaldshóll","9.0.9.3","the 1903 concrete church on the hill"],
   ["9.41 Búðir","9.0.13.3","the black church, consecrated 1851"],
  ]},
@@ -1100,8 +1100,8 @@ threads: [
 {title:"⚖️ Law", tag:"#law", subs:[
  {label:"", items:[
   ["9.4 Kjalarnes","9.0.1.5","the assembly that met before the Alþingi existed"],
-  ["9.22 Fróðá","9.0.7.1","the ghosts we took to court"],
-  ["9.24 Mávahlíð","9.0.7.3","a witchcraft charge that got a court date, not a fire"],
+  ["9.24 Fróðá","9.0.7.3","the ghosts we took to court"],
+  ["9.23 Mávahlíð","9.0.7.2","a witchcraft charge that got a court date, not a fire"],
   ["9.40 Axlar-Björn","9.0.13.2","Iceland's one serial killer, executed 1596"],
  ]},
 ]},

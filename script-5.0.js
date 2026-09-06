@@ -711,7 +711,7 @@ threads: [
 {title:"🎨 Art", tag:"#art", subs:[
  {label:"", items:[
   ["5.1 Jóhannes Sveinsson Kjarval","5.0.1.1","Jóhannes Sveinsson Kjarval"],
-  ["5.21 Markarfljót & Hlíðarendi","5.0.3.3","the saga hillside 'too fair to leave'"],
+  ["5.20 Markarfljót & Hlíðarendi","5.0.3.2","the saga hillside 'too fair to leave'"],
  ]},
 ]},
 {title:"🌋 Geology", tag:"#geology", subs:[
@@ -723,11 +723,11 @@ threads: [
   ["5.8 Kristnitökuhraun","5.0.1.8","the year-1000 conversion to Christianity"],
   ["5.9 Hellisheiðarvirkjun","5.0.1.9","Hengill geothermal power + CarbFix"],
   ["5.10 Hveragerði","5.0.1.10","greenhouse town on the Hengill system, 2008 quake exhibition"],
-  ["5.11 Ölfusá","5.0.1.11","Iceland's biggest river by discharge, four systems in one channel"],
+  ["5.12 Ölfusá","5.0.1.12","Iceland's biggest river by discharge, four systems in one channel"],
   ["5.14 Þjórsá","5.0.1.14","Iceland's longest river, six power stations"],
   ["5.16 Ægissíðufoss","5.0.1.16","The Best Salmon River In Iceland Is Not A Salmon River"],
   ["5.19 Vestmannaeyjar","5.0.3.1","Eldfell's 1973 eruption, harbour saved with seawater"],
-  ["5.20 Landeyjar Plains","5.0.3.2","old Atlantic seabed and glacial wash-plain"],
+  ["5.21 Landeyjar Plains","5.0.3.3","old Atlantic seabed and glacial wash-plain"],
   ["5.22 Eyjafjallajökull","5.0.3.4","the 2010 ash cloud that grounded Europe"],
   ["5.24 Sólheimajökull","5.0.4.1","retreating glacier tongue, a living climate graph"],
   ["5.25 The DC-3 Wreck","5.0.5.1","The Ghost in the Sand"],
@@ -773,7 +773,7 @@ threads: [
   ["5.8 Kristnitökuhraun","5.0.1.8","the year-1000 conversion to Christianity"],
   ["5.17 Keldur","5.0.1.17","turf walls as medieval climate tech"],
   ["5.18 Hvolsvöllur","5.0.2.1","Brennu-Njáls saga, the burning at Bergþórshvoll"],
-  ["5.21 Markarfljót & Hlíðarendi","5.0.3.3","the saga hillside 'too fair to leave'"],
+  ["5.20 Markarfljót & Hlíðarendi","5.0.3.2","the saga hillside 'too fair to leave'"],
   ["5.23 Drangurinn","5.0.3.5","Grettir the Strong legend + Jón Árnason's folktales"],
  ]},
 ]},
@@ -786,7 +786,7 @@ threads: [
 ]},
 {title:"🧭 Settlement & Migration", tag:"#migration", subs:[
  {label:"", items:[
-  ["5.12 Ingólfur Arnarson","5.0.1.12","first settler, high-seat pillars, the Ring Road"],
+  ["5.11 Ingólfur Arnarson","5.0.1.11","first settler, high-seat pillars, the Ring Road"],
   ["5.33 Hjörleifshöfði","5.0.8.3","Hjörleifur's murder; Vestmannaeyjar named for the Gaels"],
  ]},
 ]},

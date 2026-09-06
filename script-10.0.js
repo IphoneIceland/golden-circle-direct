@@ -943,9 +943,9 @@ threads: [
   ["10.7 Akrafjall","10.0.1.8","a wave-cut notch, a whale bone at 85 m, a magnetic flip in the rock"],
   ["10.10 Iceland's First Rift Zone","10.0.3.1","the retired plate boundary that kept erupting"],
   ["10.11 Hítardalur & Ljósufjöll","10.0.3.2","ninety kilometres of one system, móberg ridges"],
-  ["10.12 Eldborg","10.0.3.3","the Settlement-age fire-fortress crater"],
-  ["10.13 Gerðuberg","10.0.3.4","why cooling basalt turns into hexagons"],
-  ["10.14 Löngufjörur","10.0.3.5","post-glacial uplift; the sea floor that got promoted"],
+  ["10.13 Eldborg","10.0.3.4","the Settlement-age fire-fortress crater"],
+  ["10.14 Gerðuberg","10.0.3.5","why cooling basalt turns into hexagons"],
+  ["10.12 Löngufjörur","10.0.3.3","post-glacial uplift; the sea floor that got promoted"],
   ["10.16 Búðir","10.0.5.1","Búðahraun lava and olivine-green sand"],
   ["10.19 Stapafell & Rauðfeldsgjá","10.0.5.4","a 526 m hyaloclastite pyramid"],
   ["10.20 The Arnarstapi Cliffs","10.0.6.1","basalt columns vertical and horizontal"],
@@ -991,7 +991,7 @@ threads: [
 ]},
 {title:"🐦 Birds & Wildlife", tag:"#wildlife", subs:[
  {label:"", items:[
-  ["10.14 Löngufjörur","10.0.3.5","one in seven of Iceland's white-tailed eagle pairs"],
+  ["10.12 Löngufjörur","10.0.3.3","one in seven of Iceland's white-tailed eagle pairs"],
   ["10.20 The Arnarstapi Cliffs","10.0.6.1","10,000 kittiwake pairs, counted twice"],
   ["10.31 The Tern Capital","10.0.9.4","17,000 nests and an Antarctic commute"],
   ["10.15 Ytri-Tunga","10.0.4.1","the seals that keep office hours"],
@@ -1000,7 +1000,7 @@ threads: [
 ]},
 {title:"🧭 Settlement & Migration", tag:"#migration", subs:[
  {label:"", items:[
-  ["10.4 Esjuberg","10.0.1.5","the Irishman's church, a century early"],
+  ["10.4 Kjalarnes","10.0.1.5","the Irishman's church at Esjuberg, a century early"],
   ["10.7 Akrafjall","10.0.1.8","Þormóður and Ketill, the corn-growing Irish brothers"],
   ["10.9 Borgarnes","10.0.2.1","Kveldúlfur's coffin picks the family address"],
   ["10.23 Guðríður Þorbjarnardóttir","10.0.7.1","the farm girl who out-sailed Columbus"],
@@ -1019,7 +1019,7 @@ threads: [
 ]},
 {title:"⛪ Religion", tag:"#religion", subs:[
  {label:"", items:[
-  ["10.4 Esjuberg","10.0.1.5","St Columba's church before the Conversion"],
+  ["10.4 Kjalarnes","10.0.1.5","St Columba's church at Esjuberg, before the Conversion"],
   ["10.11 Hítardalur & Ljósufjöll","10.0.3.2","the bishop and the deadliest fire, 1148"],
   ["10.16 Búðir","10.0.5.1","the black church, consecrated 1851"],
   ["10.29 Ingjaldshóll","10.0.9.2","the 1903 concrete church on the hill"],

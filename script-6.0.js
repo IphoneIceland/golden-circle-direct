@@ -733,7 +733,7 @@ threads: [
 {title:"🎨 Art", tag:"#art", subs:[
  {label:"", items:[
   ["6.1 Jóhannes Sveinsson Kjarval","6.0.1.1","Jóhannes Sveinsson Kjarval"],
-  ["6.21 Markarfljót & Hlíðarendi","6.0.3.3","the saga hillside 'too fair to leave'"],
+  ["6.20 Markarfljót & Hlíðarendi","6.0.3.2","the saga hillside 'too fair to leave'"],
  ]},
 ]},
 {title:"🌋 Geology", tag:"#geology", subs:[
@@ -745,11 +745,11 @@ threads: [
   ["6.8 Kristnitökuhraun","6.0.1.8","the year-1000 conversion to Christianity"],
   ["6.9 Hellisheiðarvirkjun","6.0.1.9","Hengill geothermal power, CarbFix + Climeworks"],
   ["6.10 Hveragerði","6.0.1.10","greenhouse town on the Hengill system, 2008 quake exhibition"],
-  ["6.11 Ölfusá","6.0.1.11","Iceland's biggest river by discharge, four systems in one channel"],
+  ["6.12 Ölfusá","6.0.1.12","Iceland's biggest river by discharge, four systems in one channel"],
   ["6.14 Þjórsá","6.0.1.14","Iceland's longest river, six power stations"],
   ["6.16 Ægissíðufoss","6.0.1.16","The Best Salmon River In Iceland Is Not A Salmon River"],
   ["6.19 Vestmannaeyjar","6.0.3.1","Eldfell's 1973 eruption, harbour saved with seawater"],
-  ["6.20 Landeyjar Plains","6.0.3.2","old Atlantic seabed and glacial wash-plain"],
+  ["6.21 Landeyjar Plains","6.0.3.3","old Atlantic seabed and glacial wash-plain"],
   ["6.22 Eyjafjallajökull","6.0.3.4","the 2010 ash cloud that grounded Europe"],
   ["6.24 Skógafoss","6.0.4.1","Thor: The Dark World, Vikings, Game of Thrones, Justin Bieber"],
   ["6.25 The DC-3 Wreck","6.0.5.1","The Ghost in the Sand"],
@@ -795,7 +795,7 @@ threads: [
   ["6.8 Kristnitökuhraun","6.0.1.8","the year-1000 conversion to Christianity"],
   ["6.17 Keldur","6.0.1.17","turf walls as medieval climate tech"],
   ["6.18 Hvolsvöllur","6.0.2.1","Brennu-Njáls saga, the burning at Bergþórshvoll"],
-  ["6.21 Markarfljót & Hlíðarendi","6.0.3.3","the saga hillside 'too fair to leave'"],
+  ["6.20 Markarfljót & Hlíðarendi","6.0.3.2","the saga hillside 'too fair to leave'"],
   ["6.23 Drangurinn","6.0.3.5","Grettir the Strong legend + elf folklore"],
  ]},
 ]},
@@ -808,7 +808,7 @@ threads: [
 ]},
 {title:"🧭 Settlement & Migration", tag:"#migration", subs:[
  {label:"", items:[
-  ["6.12 Ingólfur Arnarson","6.0.1.12","first settler, high-seat pillars, the Ring Road"],
+  ["6.11 Ingólfur Arnarson","6.0.1.11","first settler, high-seat pillars, the Ring Road"],
   ["6.33 Hjörleifshöfði","6.0.8.3","Hjörleifur's murder; Vestmannaeyjar named for the Gaels"],
  ]},
 ]},

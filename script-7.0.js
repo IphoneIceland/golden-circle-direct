@@ -954,8 +954,8 @@ threads: [
   ["7.4 Rauðhólar","7.0.1.4","The Mars Impostors"],
   ["7.5 Kristnitökuhraun","7.0.1.5","The Decision Rock"],
   ["7.6 Hellisheiðarvirkjun","7.0.1.6","The Dragon's Breath"],
-  ["7.7 Ölfusá","7.0.1.7","The Big Drain"],
-  ["7.8 Hveragerði","7.0.1.8","Quakes, Cakes and Steam"],
+  ["7.9 Ölfusá","7.0.1.9","The Big Drain"],
+  ["7.7 Hveragerði","7.0.1.7","Quakes, Cakes and Steam"],
   ["7.11 Þjórsá","7.0.1.11","The Long Spine"],
   ["7.15 Vestmannaeyjar","7.0.3.1","Puffins, Ports and Plumes"],
   ["7.16 Landeyjar Plains","7.0.3.2","The Ocean's Basement"],
@@ -1018,7 +1018,7 @@ threads: [
 ]},
 {title:"🚢 Migration & Settlement", tag:"#migration", subs:[
  {label:"", items:[
-  ["7.9 Ingólfur Arnarson","7.0.1.9","The Founder's Path"],
+  ["7.8 Ingólfur Arnarson","7.0.1.8","The Founder's Path"],
   ["7.28 Hjörleifshöfði","7.0.5.8","Blood-Brother and Witch-in-the-Ice"],
   ["7.41 Höfðabrekka","7.0.11.1","the farm that moved uphill"],
  ]},
@@ -1062,7 +1062,7 @@ threads: [
  {label:"", items:[
   ["7.26 Reynisfjara & Reynisdrangar","7.0.5.6","*Game of Thrones* Eastwatch-by-the-Sea + *Rogue One*, *Star Trek Into Darkness*, *Noah*"],
   ["7.32 Fjaðrárgljúfur","7.0.7.1","*Game of Thrones* S8 dragon flight + Justin Bieber \"I'll Show You\""],
-  ["7.37 Skaftafell / Svínafellsjökull","7.0.7.6","*Batman Begins* + *Interstellar*"],
+  ["7.37 Skaftafell & Vatnajökull","7.0.7.6","*Batman Begins* + *Interstellar*"],
  ]},
 ]},
 ],

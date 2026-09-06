@@ -1,0 +1,902 @@
+[
+ {
+  "id": "41e17554ba",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🧵 Three Names to Keep in Your Pocket",
+  "en": "Weather pivot: \"No window needed for this one, which on a morning like this is just as well.\""
+ },
+ {
+  "id": "6b4dbe46f0",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🧍 Jóhannes Sveinsson Kjarval",
+  "en": "Weather pivot: \"If the park is grey and half empty, that is exactly the Iceland Kjarval painted. He was never interested in the sunny version.\""
+ },
+ {
+  "id": "b0a84bf052",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🏢 Ölgerðin Egill Skallagrímsson",
+  "en": "Weather pivot: \"If you cannot see the brewery you can usually smell the malt. That counts.\""
+ },
+ {
+  "id": "88feec0508",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🏞️ Elliðaárdalur",
+  "en": "Weather pivot: \"The valley looks its best wet. That river is the reason anything in this city is green.\""
+ },
+ {
+  "id": "9d06149d9e",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / ⛰️ Mount Esja",
+  "en": "Weather pivot: \"If Esja has gone, you are getting the honest version. Locals judge the whole day by how much of it they can see.\""
+ },
+ {
+  "id": "2e9e4495fe",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / ⚖️ Kjalarnesþing",
+  "en": "Weather pivot: \"Nothing to see even on a clear day — it is a field. The story is the thing, not the view.\""
+ },
+ {
+  "id": "2f33468735",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎵 Mosfellsbær",
+  "en": "Weather pivot: \"Low cloud suits this valley. Half the music that came out of it sounds like this weather.\""
+ },
+ {
+  "id": "cad1964881",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Mosfellsdalur",
+  "en": "Weather pivot: \"If the valley has closed in, so much the better. Laxness wrote most of it looking at exactly this.\""
+ },
+ {
+  "id": "ead1331868",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🎬 Laxnes Horse Farm",
+  "en": "Weather pivot: \"The horses do not mind, and they will be out in it. They were bred for days like this.\""
+ },
+ {
+  "id": "e366b55574",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Gljúfrasteinn",
+  "en": "Weather pivot: \"A white house in grey rain is very Icelandic literature. He would have approved.\""
+ },
+ {
+  "id": "144bc31092",
+  "ctx": "bad-weather alternative — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🏘️ Landnám",
+  "en": "Weather pivot: \"No view required. This is the chapter you listen to rather than look at.\""
+ },
+ {
+  "id": "84c225e197",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir / 🌍 Almannagjá",
+  "en": "Weather pivot: \"Rain in the rift is normal. The wall does not care, and neither did the men who argued under it.\""
+ },
+ {
+  "id": "b29cf6f005",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir / ⚖️ Lögberg & the Alþingi",
+  "en": "Weather pivot: \"They met here for two weeks every summer in whatever the sky was doing. So can we.\""
+ },
+ {
+  "id": "c125b79808",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir / ⚖️ Kristnitaka",
+  "en": "Weather pivot: \"Þorgeir lay under a fur cloak for a day and a night. In this, you can see why.\""
+ },
+ {
+  "id": "f890ff4dbc",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir / ⛪ Þingvallabær & Skáldareitur",
+  "en": "Weather pivot: \"The white church against a grey sky is the photograph everybody takes anyway.\""
+ },
+ {
+  "id": "c796f18608",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir / 💧 Öxarárfoss, Drekkingarhylur & Peningagjá",
+  "en": "Weather pivot: \"Rain makes the falls louder and the pool darker. Neither improves the story of this place.\""
+ },
+ {
+  "id": "e415037ea5",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir / 🐟 Þingvallavatn & Silfra",
+  "en": "Weather pivot: \"If the far shore has gone, that is the rift you cannot see across — which is rather the point.\""
+ },
+ {
+  "id": "5f7ce37e36",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir / 🇮🇸 17 June 1944",
+  "en": "Weather pivot: \"It poured on the day itself. Thousands stood in it anyway.\""
+ },
+ {
+  "id": "4be1c31d08",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir → Haukadalur Valley / 🕳️ The Cave People",
+  "en": "Weather pivot: \"Low cloud is the right weather for this. They lived in a cave because of days like this.\""
+ },
+ {
+  "id": "bd49c792da",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir → Haukadalur Valley / 🌋 Hekla",
+  "en": "Weather pivot: \"Hekla is out sixty kilometres and hides most days. Medieval Europe thought that was deliberate.\""
+ },
+ {
+  "id": "a821933f43",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir → Haukadalur Valley / 🛁 Laugarvatn & Apavatn",
+  "en": "Weather pivot: \"Steam shows better in the cold. If the lake has gone grey, look for where it is smoking.\""
+ },
+ {
+  "id": "ace31df7b2",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir → Haukadalur Valley / 💙 Brúará",
+  "en": "Weather pivot: \"Rivers do not need good weather. This one is loudest when the sky is worst.\""
+ },
+ {
+  "id": "c6323203d8",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ The Sturlung Age",
+  "en": "Weather pivot: \"No view for this one — it is thirteenth-century politics, and it is grim enough without the rain.\""
+ },
+ {
+  "id": "b7498804b5",
+  "ctx": "bad-weather alternative — tour 1.0 / Þingvellir → Haukadalur Valley / ⚖️ Haukadalur",
+  "en": "Weather pivot: \"Steam and low cloud look identical from here. Both mean the ground is warm.\""
+ },
+ {
+  "id": "0c51a1d99b",
+  "ctx": "bad-weather alternative — tour 1.0 / Geysir / ⛲ Geysir",
+  "en": "Weather pivot: \"Wind decides which way you get soaked. Stand upwind of Strokkur and watch everyone else learn that.\""
+ },
+ {
+  "id": "b838e44731",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss / 💧 Hvítá & Gullfoss",
+  "en": "Weather pivot: \"Rain makes it bigger, spray makes it wetter, and the rainbow needs sun. Two out of three today.\""
+ },
+ {
+  "id": "b77681275b",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
+  "en": "Weather pivot: \"A working river in working weather. It does not stop for either of us.\""
+ },
+ {
+  "id": "1e30feb0ab",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🍅 Reykholt & Friðheimar",
+  "en": "Weather pivot: \"The greenhouses do not care what the sky is doing. That is the entire business model.\""
+ },
+ {
+  "id": "044fc3b0cb",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🐎 Icelandic Horses",
+  "en": "Weather pivot: \"They will be standing in it, tails to the wind, entirely unbothered. Take the lesson.\""
+ },
+ {
+  "id": "afeabdfef1",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / ⛪ Skálholt",
+  "en": "Weather pivot: \"Grey and windswept is how this place looked for most of its eight hundred years.\""
+ },
+ {
+  "id": "4ac951918e",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🎵 Grímsnes & Kerið",
+  "en": "Weather pivot: \"The crater water goes a deeper green under cloud, so this is not the day to feel short-changed.\""
+ },
+ {
+  "id": "6cfe5dcb85",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / ⚡ Sog River",
+  "en": "Weather pivot: \"Spring-fed, so it looks the same today as it did in the sunshine last week.\""
+ },
+ {
+  "id": "443981d493",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🌊 Ölfusá",
+  "en": "Weather pivot: \"Rain makes it bigger. Everything I am about to tell you about this river is more true today than it was yesterday.\""
+ },
+ {
+  "id": "a3b6da31af",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🏗️ Selfoss",
+  "en": "Weather pivot: \"You do not need to see anything for this one. Just listen to what is under the wheels.\""
+ },
+ {
+  "id": "eca7f4deb2",
+  "ctx": "cue, tells the guest where to look — tour 1.0 / Gullfoss → Reykjavík / 🧭 Ingólfur Arnarson",
+  "en": "Look right at 3 o'clock — Ingólfsfjall, the flat-topped mountain named after him."
+ },
+ {
+  "id": "5496857dcb",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🧭 Ingólfur Arnarson",
+  "en": "Weather pivot: \"If the mountain has gone, take my word for it — big, flat-topped, and behind us now.\""
+ },
+ {
+  "id": "4d4eef6102",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🌋 Hveragerði",
+  "en": "Weather pivot: \"Cannot see the town? Look for the steam instead. The town is wherever the ground is smoking.\""
+ },
+ {
+  "id": "66d6ed9726",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / 🏢 Hellisheiðarvirkjun",
+  "en": "Weather pivot: \"If you cannot see the plant you will see the steam, and on a day like this the steam is the whole show.\""
+ },
+ {
+  "id": "df2a44c999",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / ⛰️ Kristnitökuhraun",
+  "en": "Weather pivot: \"Lava in fog is the honest version. This is roughly what the year 1000 looked like from a distance.\""
+ },
+ {
+  "id": "60414fe43e",
+  "ctx": "bad-weather alternative — tour 1.0 / Gullfoss → Reykjavík / ⛰️ Rauðhólar",
+  "en": "Weather pivot: \"The red goes deeper in the rain, so a grey day actually makes the craters easier to pick out, not harder.\""
+ },
+ {
+  "id": "6781eec89e",
+  "ctx": "bad-weather alternative — tour 2.0 / Gullfoss / 🏔️ Langjökull",
+  "en": "Weather pivot: \"If the ice cap has gone into the cloud, that is normal. It makes its own weather up there.\""
+ },
+ {
+  "id": "1fb9f93846",
+  "ctx": "bad-weather alternative — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
+  "en": "Weather pivot: \"You are getting in the water anyway. The forecast stops mattering at the changing rooms.\""
+ },
+ {
+  "id": "340eff298c",
+  "ctx": "cue, tells the guest where to look — tour 3.0 / Gullfoss → Reykjavík / 🧭 Ingólfur Arnarson",
+  "en": "Look back and left — Ingólfsfjall, the flat-topped mountain named after him."
+ },
+ {
+  "id": "8ea7bff5a5",
+  "ctx": "bad-weather alternative — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🌊 Ölfusá Intro",
+  "en": "Weather pivot: \"Rain makes it bigger. Everything I am about to tell you about this river is more true today.\""
+ },
+ {
+  "id": "485620d9dd",
+  "ctx": "cue, tells the guest where to look — tour 4.0 / BSÍ Bus Terminal → Reykholt / Friðheimar / 🧭 Ingólfur Arnarson",
+  "en": "Look left at 10 o'clock — Ingólfsfjall, the flat-topped mountain named after him."
+ },
+ {
+  "id": "7d98659c73",
+  "ctx": "block title — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🫧 Öskjuhlíð & Perlan",
+  "en": "🫧 Öskjuhlíð & Perlan"
+ },
+ {
+  "id": "522a452a56",
+  "ctx": "cue, tells the guest where to look — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🫧 Öskjuhlíð & Perlan",
+  "en": "Look right at 3 o'clock — the wooded hill with the glass dome on top."
+ },
+ {
+  "id": "f5845a1c2d",
+  "ctx": "the point of the block — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🫧 Öskjuhlíð & Perlan",
+  "en": "A hill they quarried away, occupied, then filled with the city's hot water and put a restaurant on."
+ },
+ {
+  "id": "43a657e3f5",
+  "ctx": "the spoken close — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🫧 Öskjuhlíð & Perlan",
+  "en": "Every building you will see today is heated by water like that. Iceland does not burn anything to keep warm — it just pumps up what is already hot."
+ },
+ {
+  "id": "22a1ca11ce",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🫧 Öskjuhlíð & Perlan",
+  "en": "Weather pivot: \"If the dome has gone in the murk, you are not missing much of a view today either — which is rather the point of the tanks underneath it.\""
+ },
+ {
+  "id": "5958505ce1",
+  "ctx": "subtitle under the block title — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🫧 Öskjuhlíð & Perlan",
+  "en": "The Lid On The City's Hot Water"
+ },
+ {
+  "id": "20caaf28c9",
+  "ctx": "opening hook line — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🫧 Öskjuhlíð & Perlan",
+  "en": "That dome is a **lid.** Under it sit **six steel tanks**, each **ten metres tall and twenty-three across**, each holding about **four million litres** of water at **eighty degrees** — so Reykjavík can run a bath at seven in the morning."
+ },
+ {
+  "id": "6b7f7709ce",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🫧 Öskjuhlíð & Perlan",
+  "en": "**Öskjuhlíð** is **61 metres** high and made of **Reykjavíkurgrágrýti** — grey basalt erupted from Mosfellsheiði late in the Ice Age, then scraped smooth by glaciers. About **ten thousand years ago it was an island.** The old shoreline round here sits **42 metres** above today's sea."
+ },
+ {
+  "id": "b195e2d819",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🫧 Öskjuhlíð & Perlan",
+  "en": "From **1913** they blasted the north face out and ran it down to the harbour on a **purpose-built railway** — one of the very few stretches of railway Iceland has ever had. **The stone became the harbour. The hole became the bowling alley.**"
+ },
+ {
+  "id": "9473c2f2e4",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🫧 Öskjuhlíð & Perlan",
+  "en": "The **Allies took this hill in 1940** and built all over it once the airfield went into Vatnsmýri in **1941.** It is now **the best-preserved military ground in Reykjavík** — pillboxes, command bunkers, trenches, blast walls, and the floors of hundreds of Nissen huts still in the trees."
+ },
+ {
+  "id": "d6d0b03094",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🫧 Öskjuhlíð & Perlan",
+  "en": "The first hot-water tank went up in **1940**, more followed, two more in **1966**, and the lot was **demolished in 1986 to 87** and rebuilt. **Perlan** went on top — architect **Ingimundur Sveinsson**, opened **21 June 1991.** The steel frame does two jobs: it ties the tanks together and it is the dome."
+ },
+ {
+  "id": "ef16fea277",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🫧 Öskjuhlíð & Perlan",
+  "en": "The wood is deliberate. Planting started **after about 1950** on a council scheme, and the tallest conifers now clear **15 metres** — birch, mountain pine, Sitka spruce, Alaska poplar. In a country with almost no forest, somebody had to decide to put one here."
+ },
+ {
+  "id": "1d78854e55",
+  "ctx": "gloss for the name \"Öskjuhlíð\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🫧 Öskjuhlíð & Perlan",
+  "en": "the 61 m basalt hill the tanks stand on"
+ },
+ {
+  "id": "4175e70368",
+  "ctx": "gloss for the name \"Perlan\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🫧 Öskjuhlíð & Perlan",
+  "en": "'the pearl', the dome over six hot-water tanks, opened 1991"
+ },
+ {
+  "id": "c7ed0d541a",
+  "ctx": "gloss for the name \"Reykjavíkurgrágrýti\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🫧 Öskjuhlíð & Perlan",
+  "en": "the grey Ice Age basalt the hill is made of"
+ },
+ {
+  "id": "dbb2753358",
+  "ctx": "block title — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧺 Þvottalaugarnar",
+  "en": "🧺 Þvottalaugarnar"
+ },
+ {
+  "id": "b198f5ff2a",
+  "ctx": "cue, tells the guest where to look — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧺 Þvottalaugarnar",
+  "en": "Look left — the green valley of Laugardalur opening up."
+ },
+ {
+  "id": "cc5f035066",
+  "ctx": "the point of the block — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧺 Þvottalaugarnar",
+  "en": "The hot water that ended the washerwomen's walk is the same hot water heating every building you will see today."
+ },
+ {
+  "id": "90446ba12b",
+  "ctx": "the spoken close — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧺 Þvottalaugarnar",
+  "en": "So when a guidebook tells you Laugavegur is Reykjavík's Oxford Street — it is, but it started as the route to the launderette."
+ },
+ {
+  "id": "074c4372d1",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧺 Þvottalaugarnar",
+  "en": "Weather pivot: \"On a day like this you can see the steam from the valley better than anything else, which is how they found the place to begin with.\""
+ },
+ {
+  "id": "c9420f8506",
+  "ctx": "subtitle under the block title — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧺 Þvottalaugarnar",
+  "en": "Why The Main Shopping Street Is Called Laundry Road"
+ },
+ {
+  "id": "6cbb5fc091",
+  "ctx": "opening hook line — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧺 Þvottalaugarnar",
+  "en": "Reykjavík's main shopping street is called **Laugavegur.** Everyone translates it as something romantic. It means **the road out to the washing pools** — and they are in that valley, and this is the road."
+ },
+ {
+  "id": "ff9df38b13",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧺 Þvottalaugarnar",
+  "en": "Out there are the **Þvottalaugarnar**, hot springs the town did its laundry in. First written down in **1672** by the physician **Þorkell Arngrímsson Vídalín**, who reckoned the water healed people. **By about 1830 nearly every household in Reykjavík was using them.**"
+ },
+ {
+  "id": "b6ff9c89ec",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧺 Þvottalaugarnar",
+  "en": "Women carried the washing out, boiled it, beat it, and carried it home wet. The town council finally voted in **1885** to build them a proper road, and it was laid in **1886.** That road is **Laugavegur.** By **1900** it was the most populous street in town with over **700 residents** — a laundry track that turned into the high street."
+ },
+ {
+  "id": "e05dbfc096",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧺 Þvottalaugarnar",
+  "en": "The name runs the other way from what people assume. The **pool** is the oldest name. **Laugardalur**, **Laugarnes**, **Laugalækur**, **Laugavegur** — all of them are named after the *laug*, not the other way about."
+ },
+ {
+  "id": "82b6565c45",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧺 Þvottalaugarnar",
+  "en": "In **1928** they drilled the first borehole beside the pools and got **87 degree** water. In **1930** they ran a **three kilometre pipe** from there to **Austurbæjarskóli** — **Iceland's first municipal district heating.** By **1937** it warmed 58 houses."
+ },
+ {
+  "id": "c8182660c8",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧺 Þvottalaugarnar",
+  "en": "**The same year the pipe was switched on, 1930, the laundry stopped.** The springs did not run out. They got promoted. There is a sculpture in the valley, **Þvottakonan** by **Ásmundur Sveinsson**, 1958, for the women who made the walk."
+ },
+ {
+  "id": "2f1ea25828",
+  "ctx": "gloss for the name \"Þvottalaugarnar\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧺 Þvottalaugarnar",
+  "en": "'the washing pools', in use to 1930"
+ },
+ {
+  "id": "5a961b7d4f",
+  "ctx": "gloss for the name \"Laugavegur\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧺 Þvottalaugarnar",
+  "en": "'the road to the pools', laid 1886"
+ },
+ {
+  "id": "b1ba9c518c",
+  "ctx": "gloss for the name \"Laugardalur\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧺 Þvottalaugarnar",
+  "en": "'the valley of the pools', off to the left"
+ },
+ {
+  "id": "477d1b17ee",
+  "ctx": "block title — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🗻 Vífilsfell",
+  "en": "🗻 Vífilsfell"
+ },
+ {
+  "id": "2d2cbae16a",
+  "ctx": "cue, tells the guest where to look — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🗻 Vífilsfell",
+  "en": "Look ahead at 1 o'clock — the stepped mountain with the flat shelf."
+ },
+ {
+  "id": "34c0d3e956",
+  "ctx": "the point of the block — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🗻 Vífilsfell",
+  "en": "Two eruptions, two ice ages, one mountain — and it is named after a freed slave rather than the man who freed him."
+ },
+ {
+  "id": "eeedf239dc",
+  "ctx": "the spoken close — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🗻 Vífilsfell",
+  "en": "Ingólfur got a statue and a hill in the middle of Reykjavík. Vífill got 655 metres of it."
+ },
+ {
+  "id": "e3f2bc56ab",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🗻 Vífilsfell",
+  "en": "Weather pivot: \"If the top is in cloud you are still seeing the shelf, and the shelf is the older mountain — so you are getting the first eruption and missing the second.\""
+ },
+ {
+  "id": "f50a62bd59",
+  "ctx": "subtitle under the block title — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🗻 Vífilsfell",
+  "en": "The Mountain Named After A Slave"
+ },
+ {
+  "id": "d0360895cd",
+  "ctx": "opening hook line — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🗻 Vífilsfell",
+  "en": "There is a mountain out that window **named after a slave** — and the naming is recorded in Iceland's founding text itself."
+ },
+ {
+  "id": "4a90023983",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🗻 Vífilsfell",
+  "en": "**Landnámabók** puts it in seven words: ***\"við hann er kennt Vífilsfell\"*** — the mountain is named for him. **Vífill** was one of **Ingólfur Arnarson's** two slaves, sent along the coast to hunt for his high-seat pillars. **Ingólfur gave Vífill his freedom.** The other one, **Karli**, said they had crossed good country only to settle an outlying headland, and walked off. **Only Vífill was freed** — and only Vífill got a mountain."
+ },
+ {
+  "id": "d122ce8f99",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🗻 Vífilsfell",
+  "en": "It is **655 metres**, the highest ground in Kópavogur. And that shelf halfway up is the interesting part."
+ },
+ {
+  "id": "f3f847598d",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🗻 Vífilsfell",
+  "en": "**It is two mountains stacked.** The shelf is a **stapi** — a tuya — móberg built under ice and then capped with lava once the eruption melted through and the meltwater could no longer reach the vent. **The summit above it is a second, younger móberg mountain sitting on top of the first**, from a separate eruption in **probably a different ice age.**"
+ },
+ {
+  "id": "f18707655a",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🗻 Vífilsfell",
+  "en": "That younger top sits on a **north-west to south-east fissure**, which is odd. Almost every crack in South Iceland runs **north-east to south-west.** This one is at right angles to the grain of the country."
+ },
+ {
+  "id": "f5571b829e",
+  "ctx": "gloss for the name \"Vífilsfell\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🗻 Vífilsfell",
+  "en": "655 m, named for Ingólfur's freed slave Vífill"
+ },
+ {
+  "id": "ae96a10603",
+  "ctx": "gloss for the name \"stapi\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🗻 Vífilsfell",
+  "en": "a tuya, a flat-topped mountain built under ice then capped with lava"
+ },
+ {
+  "id": "edba44fe19",
+  "ctx": "gloss for the name \"móberg\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🗻 Vífilsfell",
+  "en": "the brown rock made when lava erupts under a glacier"
+ },
+ {
+  "id": "6d43f3b157",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "en": "Weather pivot: \"Weather barely touches this river. It comes off an ice cap, so it runs much the same in sun or sleet.\""
+ },
+ {
+  "id": "ae94436a31",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "en": "And a kilometre or so below the bridge sits **Urriðafoss** — **Iceland's most voluminous waterfall.** Not the tallest, not the most powerful. The most *water*. It is only about **six metres high** and it carries roughly **358 cubic metres a second** — about **1.7 times Dettifoss** up north. Dettifoss is the most **powerful**, which is height times flow, and the two get swapped so often that the University of Iceland has had to correct it in print."
+ },
+ {
+  "id": "c95d456bb9",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "en": "Every winter the river builds an ice jam here called the **Urriðafosshrönn.** Landsvirkjun's own survey measured up to **40 million cubic metres** of ice and slush, a sheet up to **20 metres thick**, burying the waterfall completely — and in some years it backs up past the bridge we are crossing. Iceland's most voluminous waterfall spends part of most winters entirely out of sight, under its own ice."
+ },
+ {
+  "id": "26551a0799",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "en": "People have wanted to dam it since **1927**, when the poet **Einar Benediktsson's** company Titan won a licence it never found the money to use. The modern version is **Urriðafossvirkjun**, **140 MW**. On **17 February 2026** Alþingi left it in **biðflokkur** — the hold category — while everyone waits to see what the two dams upstream do to the **Þjórsá salmon**, one of Iceland's largest wild stocks at around **ten thousand fish.** Landsvirkjun's own assessment says the falls would run at **10 to 15 cubic metres a second** in winter instead of 350, and it proposes **no mitigation.**"
+ },
+ {
+  "id": "3939590604",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "en": "One last thing, about the name. **Landnámabók** says Þjórsá is 'bull river' because a settler sailed into the mouth with a bull's head on his prow. Iceland's place-name scholars are not convinced. **Þórhallur Vilmundarson** argued it was originally **Þjótsá** — 'the roaring river' — and the roar it was named for is this one, at Urriðafoss. There is a farm on the bank still called **Þjótandi**, 'the one that roars.'"
+ },
+ {
+  "id": "fef7a466bd",
+  "ctx": "gloss for the name \"Urriðafoss\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "en": "'trout falls', Iceland's most voluminous waterfall, just below the bridge"
+ },
+ {
+  "id": "73952b653f",
+  "ctx": "gloss for the name \"Urriðafosshrönn\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "en": "the winter ice jam that buries it"
+ },
+ {
+  "id": "a59a408eaf",
+  "ctx": "gloss for the name \"Þjótandi\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Þjórsá",
+  "en": "'the one that roars', the farm on the bank that may have named the river"
+ },
+ {
+  "id": "5ebfd3c261",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🕳️ Hella",
+  "en": "Weather pivot: \"You will not see the caves from here in any weather. They are cut into the bank, which is rather the point of them.\""
+ },
+ {
+  "id": "459d58a4ac",
+  "ctx": "block title — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🐟 Ægissíðufoss",
+  "en": "🐟 Ægissíðufoss"
+ },
+ {
+  "id": "45c70351fb",
+  "ctx": "cue, tells the guest where to look — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🐟 Ægissíðufoss",
+  "en": "Look ahead at 12 o'clock — the Ytri-Rangá going over its lower falls."
+ },
+ {
+  "id": "b77fe71370",
+  "ctx": "the point of the block — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🐟 Ægissíðufoss",
+  "en": "A cold, clear, gravel-poor river that had no salmon, engineered into the best salmon fishery in the country."
+ },
+ {
+  "id": "afd675732d",
+  "ctx": "the spoken close — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🐟 Ægissíðufoss",
+  "en": "It shares its name with the caves we just passed at Ægissíða — same farm, completely different story. One is a river cutting rock. The other is people cutting sandstone."
+ },
+ {
+  "id": "2a46b402b9",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🐟 Ægissíðufoss",
+  "en": "Weather pivot: \"You will hear it before you see it in this. The Rangá never runs low, which is the whole point of a spring river.\""
+ },
+ {
+  "id": "2352dd79d6",
+  "ctx": "subtitle under the block title — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🐟 Ægissíðufoss",
+  "en": "The Best Salmon River In Iceland Is Not A Salmon River"
+ },
+ {
+  "id": "e223e5725f",
+  "ctx": "opening hook line — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🐟 Ægissíðufoss",
+  "en": "In **2022** this river was **the top-producing salmon fishery in the whole of Iceland** — **5,112 fish.** And before the 1970s it had **essentially no salmon in it at all.**"
+ },
+ {
+  "id": "798bd347d5",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🐟 Ægissíðufoss",
+  "en": "The **Ytri-Rangá** is a **60 km spring-fed river** rising in Rangárbotnar north of Hekla, running at about **50 cubic metres a second** and barely changing — the springs come out at **4 to 6 degrees** all year, so it does not flood in summer and it does not freeze."
+ },
+ {
+  "id": "b2c2de4c84",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🐟 Ægissíðufoss",
+  "en": "**And that is exactly why it had no salmon.** The bed is too fine, the water too cold, and salmon fry could never get a grip. **These were trout rivers.** Then people started releasing smolts by the hundred thousand."
+ },
+ {
+  "id": "0fbe1e7cbd",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🐟 Ægissíðufoss",
+  "en": "In **1982** they cut a **fish ladder** into this waterfall, and another into Árbæjarfoss upstream in **1985.** Both carry **fish counters**, and the one here is the river's census point. In **2024** it logged **6,400 salmon** going up, from which the river reckoned about **twelve thousand** came in off the sea."
+ },
+ {
+  "id": "f8cd1ac3de",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🐟 Ægissíðufoss",
+  "en": "The state fisheries institute is careful enough about it that **when it publishes Iceland's wild salmon figure, it subtracts these rivers first.**"
+ },
+ {
+  "id": "adf4eab708",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🐟 Ægissíðufoss",
+  "en": "The falls also mark a line in the ground. The old **interglacial shield lavas** that make up all the flat farmland north of here **stop right at Ægissíðufoss.** Everything past it is younger."
+ },
+ {
+  "id": "29b15c5609",
+  "ctx": "gloss for the name \"Ægissíðufoss\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🐟 Ægissíðufoss",
+  "en": "the lower falls on the Ytri-Rangá, fish ladder cut in 1982"
+ },
+ {
+  "id": "543eff6379",
+  "ctx": "gloss for the name \"Ytri-Rangá\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🐟 Ægissíðufoss",
+  "en": "'the outer Rangá', a 60 km spring-fed river"
+ },
+ {
+  "id": "7587372789",
+  "ctx": "gloss for the name \"lindá\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🐟 Ægissíðufoss",
+  "en": "a spring river, fed from the ground rather than off a glacier"
+ },
+ {
+  "id": "788a296381",
+  "ctx": "bad-weather alternative — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🏡 Keldur",
+  "en": "Weather pivot: \"You will not see Keldur today, and you rarely can. It is ten kilometres up a side road — which is exactly why it survived.\""
+ },
+ {
+  "id": "6271013651",
+  "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur / 🏘️ Hvolsvöllur",
+  "en": "Weather pivot: \"If the village is in murk, that is Njáll's country behaving normally. The saga has far more bad weather in it than good.\""
+ },
+ {
+  "id": "6b70ca968b",
+  "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🐦 Vestmannaeyjar",
+  "en": "Weather pivot: \"No islands today? They are twenty-seven kilometres out. On a clear day they look close enough to swim to, and that is the illusion.\""
+ },
+ {
+  "id": "04584ae68d",
+  "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🛡️ Markarfljót & Hlíðarendi",
+  "en": "Weather pivot: \"If the hillside has gone, remember that Gunnar turned back for the view. He would not have on a day like this.\""
+ },
+ {
+  "id": "92b11871bd",
+  "ctx": "cue, tells the guest where to look — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
+  "en": "Look right at 2 o'clock — Landeyjar sandur, the plain running away to the sea."
+ },
+ {
+  "id": "2d4563dee8",
+  "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
+  "en": "Weather pivot: \"Flat, wet and grey is this plain's default setting. It is a floodplain. It looks like this most of the year.\""
+ },
+ {
+  "id": "5266e06545",
+  "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌋 Eyjafjallajökull",
+  "en": "Weather pivot: \"Cannot see it? Neither could the pilots in 2010, and that was rather the problem.\""
+ },
+ {
+  "id": "171aaef4eb",
+  "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🪨 Drangurinn",
+  "en": "Weather pivot: \"The rock sits right by the road, so this is one you get whatever the sky is doing.\""
+ },
+ {
+  "id": "7313de8cd0",
+  "ctx": "bad-weather alternative — tour 5.0 / Sólheimajökull / 🧊 Sólheimajökull",
+  "en": "Weather pivot: \"Cloud sits low on the ice. If the top has gone you are still seeing the snout, and the snout is the part that has been moving.\""
+ },
+ {
+  "id": "e1565ef631",
+  "ctx": "bad-weather alternative — tour 5.0 / Sólheimajökull → Reynisfjara / ✈️ The DC-3 Wreck",
+  "en": "Weather pivot: \"You would not see the wreck from the road on the clearest day of the year. That is what the photograph is for.\""
+ },
+ {
+  "id": "e5204942d4",
+  "ctx": "bad-weather alternative — tour 5.0 / Sólheimajökull → Reynisfjara / ⛰️ Pétursey",
+  "en": "Weather pivot: \"If the mountain is in cloud you are seeing what it was for. It was a sea mark, and sailors mostly needed it in bad visibility.\""
+ },
+ {
+  "id": "c85e646bc5",
+  "ctx": "bad-weather alternative — tour 5.0 / Sólheimajökull → Reynisfjara / ⛪ Skeiðflatarkirkja",
+  "en": "Weather pivot: \"Small red roof, big grey sky. It is the roof you are looking for, not the church.\""
+ },
+ {
+  "id": "03a8747c34",
+  "ctx": "bad-weather alternative — tour 5.0 / Sólheimajökull → Reynisfjara / 🚪 Dýrhólaey",
+  "en": "Weather pivot: \"If the headland has gone you may still catch the light blinking, which is the entire reason it is up there.\""
+ },
+ {
+  "id": "470749231f",
+  "ctx": "bad-weather alternative — tour 5.0 / Reynisfjara / 🌊 Reynisfjara & Reynisdrangar",
+  "en": "Weather pivot: \"Bad weather makes this beach more dangerous, not more atmospheric. Stay well back from the water today.\""
+ },
+ {
+  "id": "d0b8cf3eb1",
+  "ctx": "bad-weather alternative — tour 5.0 / Reynisfjara → Vík / 🌋 Katla",
+  "en": "Weather pivot: \"Cannot see the ice cap? Neither can the people living under it. That is the whole problem with Katla.\""
+ },
+ {
+  "id": "e2ce86b4c2",
+  "ctx": "bad-weather alternative — tour 5.0 / Vík í Mýrdal / ⛪ Víkurkirkja",
+  "en": "Weather pivot: \"Even in cloud it is the highest thing in the village, which is precisely why it is the evacuation point.\""
+ },
+ {
+  "id": "d1b7c8ff66",
+  "ctx": "bad-weather alternative — tour 5.0 / Vík í Mýrdal / 🏘️ Vík í Mýrdal",
+  "en": "Weather pivot: \"The village is over the hill either way. You will know when we are there.\""
+ },
+ {
+  "id": "a083cc9249",
+  "ctx": "bad-weather alternative — tour 5.0 / Vík í Mýrdal / 🛡️ Hjörleifshöfði",
+  "en": "Weather pivot: \"Twelve kilometres out on a wet day means you are not seeing it. It looks like a ship, and today it is a ship in fog.\""
+ },
+ {
+  "id": "e94c83e912",
+  "ctx": "bad-weather alternative — tour 5.0 / Skógafoss / 🏞️ Skógafoss",
+  "en": "Weather pivot: \"Rain makes it bigger. There is no bad-weather version of this waterfall.\""
+ },
+ {
+  "id": "7500eb7d5b",
+  "ctx": "bad-weather alternative — tour 5.0 / Seljalandsfoss / 💧 Seljalandsfoss & Gljúfrabúi",
+  "en": "Weather pivot: \"You are getting wet either way. This is the one waterfall where the forecast is irrelevant, because you walk behind it.\""
+ },
+ {
+  "id": "1057528d60",
+  "ctx": "Threads index — topic heading, tour 5.0",
+  "en": "🧵 History"
+ },
+ {
+  "id": "6c761b21bf",
+  "ctx": "Threads index — topic heading, tour 5.0",
+  "en": "🧵 Folklore"
+ },
+ {
+  "id": "cd675629a6",
+  "ctx": "Threads index — topic heading, tour 5.0",
+  "en": "🧵 Wildlife"
+ },
+ {
+  "id": "428d881758",
+  "ctx": "fact bullet — tour 6.0 / Skógafoss / 🏞️ Skógafoss",
+  "en": "Behind the car park sits **Skógar Museum** — and one gorge along, a **bonus waterfall called Kvernufoss** that almost every coach drives straight past. Then the legend of **Þrasi's treasure** — a settler's gold chest hidden behind the falls. Looters once hooked the chest's iron ring, only for it to **snap off**; that ring hung on the **church door until 1890** and now sits in the museum. The gold, naturally, is still behind the water."
+ },
+ {
+  "id": "1e993a3ecc",
+  "ctx": "bad-weather alternative — tour 7.0 / Hvolsvöllur → Skógafoss / Rútshellir",
+  "en": "Weather pivot: \"The cave is cut into the cliff, so it is there whatever the sky is doing.\""
+ },
+ {
+  "id": "870a9ce41f",
+  "ctx": "bad-weather alternative — tour 7.0 / Skógafoss → Kirkjubæjarklaustur / Laufskálavarða",
+  "en": "Weather pivot: \"The cairns show better against low cloud than they do in sunshine, oddly.\""
+ },
+ {
+  "id": "39a2dd11da",
+  "ctx": "bad-weather alternative — tour 7.0 / Skógafoss → Kirkjubæjarklaustur / Eldhraun",
+  "en": "Weather pivot: \"Moss in the wet goes an unreasonable green. This is the lava field at its best, not its worst.\""
+ },
+ {
+  "id": "40aea3707d",
+  "ctx": "bad-weather alternative — tour 7.0 / Kirkjubæjarklaustur / Kirkjubæjarklaustur",
+  "en": "Weather pivot: \"The sisters were here through eight hundred winters of exactly this.\""
+ },
+ {
+  "id": "e3f5c0638d",
+  "ctx": "bad-weather alternative — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Fjaðrárgljúfur",
+  "en": "Weather pivot: \"You cannot see it from the road on any day. It is hidden in that ridge, which is why it stayed a secret so long.\""
+ },
+ {
+  "id": "76f606e5db",
+  "ctx": "bad-weather alternative — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Foss á Síðu",
+  "en": "Weather pivot: \"Wind blows this one sideways, and in a real gale it goes back up the cliff. Worth watching for.\""
+ },
+ {
+  "id": "1207f22131",
+  "ctx": "bad-weather alternative — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Orustuhóll",
+  "en": "Weather pivot: \"A lone crag in flat light is hard to pick out. Look for the shape, not the colour.\""
+ },
+ {
+  "id": "a53f1d6c19",
+  "ctx": "bad-weather alternative — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Lómagnúpur & Núpsstaður",
+  "en": "Weather pivot: \"If the top has gone, you are still seeing seven hundred metres of it. That is usually enough.\""
+ },
+ {
+  "id": "b0f1d3816e",
+  "ctx": "bad-weather alternative — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Skeiðarársandur",
+  "en": "Weather pivot: \"Grey sky over black sand is the default here, and it is genuinely the emptiest view in Iceland.\""
+ },
+ {
+  "id": "434c755230",
+  "ctx": "bad-weather alternative — tour 7.0 / Kirkjubæjarklaustur → Fjallsárlón / Skaftafell & Vatnajökull",
+  "en": "Weather pivot: \"The tongues sit low, so you often get them when the peaks have gone.\""
+ },
+ {
+  "id": "21ce9cce84",
+  "ctx": "bad-weather alternative — tour 7.0 / Fjallsárlón / Fjallsárlón",
+  "en": "Weather pivot: \"The ice looks bluer under cloud. Bright sun actually washes it out.\""
+ },
+ {
+  "id": "7ead77079e",
+  "ctx": "bad-weather alternative — tour 7.0 / Jökulsárlón / Jökulsárlón",
+  "en": "Weather pivot: \"Cloud makes the blue stronger. The photographs everyone envies were mostly taken in weather like this.\""
+ },
+ {
+  "id": "c203fd0642",
+  "ctx": "bad-weather alternative — tour 7.0 / Fellsfjara / Fellsfjara",
+  "en": "Weather pivot: \"Rain on black sand and clear ice is the whole point. Wet feet, better pictures.\""
+ },
+ {
+  "id": "52b83ca5a9",
+  "ctx": "bad-weather alternative — tour 9.0 / BSÍ Bus Terminal → Borgarnes / ⚖️ Kjalarnes",
+  "en": "Weather pivot: \"Esja above it decides the visibility. If the mountain has gone, so has the headland.\""
+ },
+ {
+  "id": "9442425dfa",
+  "ctx": "bad-weather alternative — tour 9.0 / BSÍ Bus Terminal → Borgarnes / 🕳️ Hvalfjörður Tunnel",
+  "en": "Weather pivot: \"Nothing to see in here whatever the weather, which is why I am talking.\""
+ },
+ {
+  "id": "7950995b40",
+  "ctx": "bad-weather alternative — tour 9.0 / BSÍ Bus Terminal → Borgarnes / 🐋 Hvalfjörður",
+  "en": "Weather pivot: \"If the fjord has gone in the murk, you have still driven under it, which is the more impressive fact.\""
+ },
+ {
+  "id": "13f56a197d",
+  "ctx": "bad-weather alternative — tour 9.0 / BSÍ Bus Terminal → Borgarnes / ⛰️ Akrafjall",
+  "en": "Weather pivot: \"A free-standing mountain is the first thing the cloud takes. It will be back.\""
+ },
+ {
+  "id": "43d731f0ef",
+  "ctx": "bad-weather alternative — tour 9.0 / BSÍ Bus Terminal → Borgarnes / 🌉 Borgarfjarðarbrú",
+  "en": "Weather pivot: \"The bridge works in any weather. That was rather the argument for building it.\""
+ },
+ {
+  "id": "21711bbb41",
+  "ctx": "bad-weather alternative — tour 9.0 / Borgarnes / 🪦 Borgarnes",
+  "en": "Weather pivot: \"Grey and windy is Borgarnes most days. The saga written here is not a cheerful one either.\""
+ },
+ {
+  "id": "633e7a0961",
+  "ctx": "bad-weather alternative — tour 9.0 / Borgarnes → Selvallafoss / 🌋 Iceland's First Rift Zone",
+  "en": "Weather pivot: \"If the peninsula has gone into cloud, you are looking at the rift anyway — you just cannot see the edges of it.\""
+ },
+ {
+  "id": "0fb2d21fdd",
+  "ctx": "bad-weather alternative — tour 9.0 / Borgarnes → Selvallafoss / 🔥 Hítardalur & Ljósufjöll",
+  "en": "Weather pivot: \"Ridges in flat light lose their shape. Look for the skyline rather than the detail.\""
+ },
+ {
+  "id": "1cb5922ad9",
+  "ctx": "bad-weather alternative — tour 9.0 / Borgarnes → Selvallafoss / 🌋 Eldborg",
+  "en": "Weather pivot: \"A low ring in low cloud is hard work. If it has gone, it is a crater the shape of a wedding ring.\""
+ },
+ {
+  "id": "a1cda75867",
+  "ctx": "bad-weather alternative — tour 9.0 / Borgarnes → Selvallafoss / 🪨 Gerðuberg",
+  "en": "Weather pivot: \"Columns show best in flat light, which is what we have. This one is improved by bad weather.\""
+ },
+ {
+  "id": "5e712f2b6c",
+  "ctx": "bad-weather alternative — tour 9.0 / Selvallafoss / 💧 Fossá",
+  "en": "Weather pivot: \"The fall is below the road, so the cloud has to come down a long way to take it.\""
+ },
+ {
+  "id": "f79c85126c",
+  "ctx": "bad-weather alternative — tour 9.0 / Selvallafoss / 🌀 Selvallavatn",
+  "en": "Weather pivot: \"The lake sits in a hollow and holds mist. If it looks like it is steaming, it is not.\""
+ },
+ {
+  "id": "c03f91ccdd",
+  "ctx": "bad-weather alternative — tour 9.0 / Kirkjufell → Ólafsvík / 👻 Fróðá",
+  "en": "Weather pivot: \"A haunted farm in driving rain is arguably the correct way to meet this story.\""
+ },
+ {
+  "id": "f2bde283de",
+  "ctx": "bad-weather alternative — tour 9.0 / Ólafsvík / ⚓ Ólafsvík",
+  "en": "Weather pivot: \"A working fishing town does not close for weather. Neither does the harbour.\""
+ },
+ {
+  "id": "bfdd0ed3af",
+  "ctx": "bad-weather alternative — tour 9.0 / Ólafsvík → Djúpalónssandur / 🪓 Björn the Rich",
+  "en": "Weather pivot: \"Rif is flat and low, so it goes early in the murk. It is the point sticking out to the right.\""
+ },
+ {
+  "id": "c9f0379734",
+  "ctx": "bad-weather alternative — tour 9.0 / Ólafsvík → Djúpalónssandur / 🐦 The Tern Capital",
+  "en": "Weather pivot: \"In wind the terns hang almost motionless. They are the easiest thing to see out there today.\""
+ },
+ {
+  "id": "8050134b7b",
+  "ctx": "bad-weather alternative — tour 9.0 / Ólafsvík → Djúpalónssandur / ⛪ Hellissandur, Ingjaldshóll & the Columbus Story",
+  "en": "Weather pivot: \"The church sits high on its mound, so it usually survives the cloud when the village has gone.\""
+ },
+ {
+  "id": "af087c755a",
+  "ctx": "bad-weather alternative — tour 9.0 / Ólafsvík → Djúpalónssandur / 🪜 Saxhóll",
+  "en": "Weather pivot: \"The black stair is the giveaway. Look for the line of steps, not the cone.\""
+ },
+ {
+  "id": "5d5d96d049",
+  "ctx": "bad-weather alternative — tour 9.0 / Djúpalónssandur / 💪 Djúpalónssandur & Dritvík",
+  "en": "Weather pivot: \"Wet black pebbles are the best they ever look. Mind your footing on the way down.\""
+ },
+ {
+  "id": "e19b421acb",
+  "ctx": "bad-weather alternative — tour 9.0 / Djúpalónssandur → Arnarstapi / 🕳️ Malarrif & Vatnshellir",
+  "en": "Weather pivot: \"The lighthouse is white and it is meant to be seen in this. That is its job.\""
+ },
+ {
+  "id": "76f7900100",
+  "ctx": "bad-weather alternative — tour 9.0 / Djúpalónssandur → Arnarstapi / 🪨 Lóndrangar",
+  "en": "Weather pivot: \"Two dark pinnacles against grey sea and grey sky is a harder picture, but it is a better one.\""
+ },
+ {
+  "id": "5718658a8e",
+  "ctx": "bad-weather alternative — tour 9.0 / Djúpalónssandur → Arnarstapi / 🌋 Snæfellsjökull",
+  "en": "Weather pivot: \"The glacier shows about a third of the days in the year. If it is out, say so loudly.\""
+ },
+ {
+  "id": "e5fcf5a469",
+  "ctx": "bad-weather alternative — tour 9.0 / Djúpalónssandur → Arnarstapi / 🧭 Guðríður Þorbjarnardóttir",
+  "en": "Weather pivot: \"She crossed the Atlantic eight times in open boats. Today's weather is not the headline.\""
+ },
+ {
+  "id": "bcd35b303d",
+  "ctx": "bad-weather alternative — tour 9.0 / Djúpalónssandur → Arnarstapi / 🛁 Bárðarlaug",
+  "en": "Weather pivot: \"The pond hides until you are on the rim, so the cloud makes no difference to this one.\""
+ },
+ {
+  "id": "f0480ff762",
+  "ctx": "bad-weather alternative — tour 9.0 / Arnarstapi / 🐦 The Arnarstapi Cliffs",
+  "en": "Weather pivot: \"Rough sea makes the blowhole work properly. Bad weather is the good version here.\""
+ },
+ {
+  "id": "9cf71cf2ac",
+  "ctx": "bad-weather alternative — tour 9.0 / Arnarstapi / 🗿 The Bárður Statue",
+  "en": "Weather pivot: \"Stone troll, stone sky. He looks better in this than in sunshine.\""
+ },
+ {
+  "id": "bc0c4b4cf4",
+  "ctx": "bad-weather alternative — tour 9.0 / Arnarstapi / 🏠 The Governor's House That Left",
+  "en": "Weather pivot: \"The harbour is the story and it is right in front of you, weather or not.\""
+ },
+ {
+  "id": "ff7f76be23",
+  "ctx": "bad-weather alternative — tour 9.0 / Arnarstapi → Ytri-Tunga / ⛰️ Stapafell & Rauðfeldsgjá",
+  "en": "Weather pivot: \"The cleft is a dark line in the mountain wall — easier to find in flat light than in shadow.\""
+ },
+ {
+  "id": "5a64f668e5",
+  "ctx": "bad-weather alternative — tour 9.0 / Arnarstapi → Ytri-Tunga / 🔪 Axlar-Björn",
+  "en": "Weather pivot: \"No view for this one. It is a story, and it is a horrible one, so mind the children.\""
+ },
+ {
+  "id": "3fbfbb2e36",
+  "ctx": "bad-weather alternative — tour 9.0 / Arnarstapi → Ytri-Tunga / ⛪ Búðir",
+  "en": "Weather pivot: \"A black church on black lava under a grey sky. There is no bad-weather version of this.\""
+ }
+]

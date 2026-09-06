@@ -10986,7 +10986,7 @@
  {
   "id": "aecff77c0d",
   "en": "the Flúðir local assembly met at the Secret Lagoon until 1894",
-  "ctx": "Threads index — what block \"3.27 Gamla Laugin\" covers, under \"⚖️ Parliament\"",
+  "ctx": "Threads index — what block \"3.28 Gamla Laugin\" covers, under \"⚖️ Parliament\"",
   "tours": [
    "3.0"
   ]
@@ -10994,7 +10994,7 @@
  {
   "id": "8538427cc9",
   "en": "low-temperature geothermal bathing (38–40°C), Litli Geysir",
-  "ctx": "Threads index — what block \"3.27 Gamla Laugin\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"3.28 Gamla Laugin\" covers, under \"🌋 Geology\"",
   "tours": [
    "3.0"
   ]
@@ -16541,7 +16541,7 @@
  {
   "id": "27bbb5999c",
   "en": "the saga hillside 'too fair to leave'",
-  "ctx": "Threads index — what block \"5.21 Markarfljót & Hlíðarendi\" covers, under \"🎨 Art\"",
+  "ctx": "Threads index — what block \"5.20 Markarfljót & Hlíðarendi\" covers, under \"🎨 Art\"",
   "tours": [
    "5.0",
    "6.0"
@@ -16594,7 +16594,7 @@
  {
   "id": "2b37adb8f3",
   "en": "Iceland's biggest river by discharge, four systems in one channel",
-  "ctx": "Threads index — what block \"5.11 Ölfusá\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"5.12 Ölfusá\" covers, under \"🌋 Geology\"",
   "tours": [
    "5.0",
    "6.0"
@@ -16621,7 +16621,7 @@
  {
   "id": "47f323c2f0",
   "en": "old Atlantic seabed and glacial wash-plain",
-  "ctx": "Threads index — what block \"5.20 Landeyjar Plains\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"5.21 Landeyjar Plains\" covers, under \"🌋 Geology\"",
   "tours": [
    "5.0",
    "6.0"
@@ -16846,7 +16846,7 @@
  {
   "id": "7c85754b1b",
   "en": "first settler, high-seat pillars, the Ring Road",
-  "ctx": "Threads index — what block \"5.12 Ingólfur Arnarson\" covers, under \"🧭 Settlement & Migration\"",
+  "ctx": "Threads index — what block \"5.11 Ingólfur Arnarson\" covers, under \"🧭 Settlement & Migration\"",
   "tours": [
    "5.0",
    "6.0"
@@ -23138,7 +23138,7 @@
  {
   "id": "a3556471c8",
   "en": "*Batman Begins* + *Interstellar*",
-  "ctx": "Threads index — what block \"7.37 Skaftafell / Svínafellsjökull\" covers, under \"🎬 Film & TV\"",
+  "ctx": "Threads index — what block \"7.37 Skaftafell & Vatnajökull\" covers, under \"🎬 Film & TV\"",
   "tours": [
    "7.0"
   ]
@@ -29576,7 +29576,7 @@
  {
   "id": "d14212fe78",
   "en": "marine shells sealed under lava dated to about 1.1 million years",
-  "ctx": "Threads index — what block \"9.23 Búlandshöfði\" covers, under \"🌋 Geology\"",
+  "ctx": "Threads index — what block \"9.22 Búlandshöfði\" covers, under \"🌋 Geology\"",
   "tours": [
    "10.0",
    "9.0"
@@ -29720,7 +29720,7 @@
  {
   "id": "0fba377058",
   "en": "Eyrbyggja saga's ghost trials",
-  "ctx": "Threads index — what block \"9.22 Fróðá\" covers, under \"📜 Sagas & Literature\"",
+  "ctx": "Threads index — what block \"9.24 Fróðá\" covers, under \"📜 Sagas & Literature\"",
   "tours": [
    "10.0",
    "9.0"
@@ -29729,7 +29729,7 @@
  {
   "id": "4b47e969a5",
   "en": "Eyrbyggja saga's Þrælaskriður, the Slave Screes",
-  "ctx": "Threads index — what block \"9.23 Búlandshöfði\" covers, under \"📜 Sagas & Literature\"",
+  "ctx": "Threads index — what block \"9.22 Búlandshöfði\" covers, under \"📜 Sagas & Literature\"",
   "tours": [
    "10.0",
    "9.0"
@@ -29738,7 +29738,7 @@
  {
   "id": "199f26fb0e",
   "en": "Eyrbyggja saga's Geirríður, accused of night-riding",
-  "ctx": "Threads index — what block \"9.24 Mávahlíð\" covers, under \"📜 Sagas & Literature\"",
+  "ctx": "Threads index — what block \"9.23 Mávahlíð\" covers, under \"📜 Sagas & Literature\"",
   "tours": [
    "10.0",
    "9.0"
@@ -29829,7 +29829,7 @@
  {
   "id": "8874d074ce",
   "en": "eighteen ghosts, tried at the door",
-  "ctx": "Threads index — what block \"9.22 Fróðá\" covers, under \"🧌 Folklore\"",
+  "ctx": "Threads index — what block \"9.24 Fróðá\" covers, under \"🧌 Folklore\"",
   "tours": [
    "10.0",
    "9.0"
@@ -29838,7 +29838,7 @@
  {
   "id": "c064c1dcd2",
   "en": "the kveldriða charge, answered in court instead of at a stake",
-  "ctx": "Threads index — what block \"9.24 Mávahlíð\" covers, under \"🧌 Folklore\"",
+  "ctx": "Threads index — what block \"9.23 Mávahlíð\" covers, under \"🧌 Folklore\"",
   "tours": [
    "10.0",
    "9.0"
@@ -29925,9 +29925,9 @@
   ]
  },
  {
-  "id": "2cc38d7107",
-  "en": "the Irishman's church, a century early",
-  "ctx": "Threads index — what block \"9.4 Esjuberg\" covers, under \"🧭 Settlement & Migration\"",
+  "id": "d602bf5536",
+  "en": "the Irishman's church at Esjuberg, a century early",
+  "ctx": "Threads index — what block \"9.4 Kjalarnes\" covers, under \"🧭 Settlement & Migration\"",
   "tours": [
    "10.0",
    "9.0"
@@ -30033,9 +30033,9 @@
   ]
  },
  {
-  "id": "48c74f022e",
-  "en": "St Columba's church before the Conversion",
-  "ctx": "Threads index — what block \"9.4 Esjuberg\" covers, under \"⛪ Religion\"",
+  "id": "db13c4faa3",
+  "en": "St Columba's church at Esjuberg, before the Conversion",
+  "ctx": "Threads index — what block \"9.4 Kjalarnes\" covers, under \"⛪ Religion\"",
   "tours": [
    "10.0",
    "9.0"
@@ -30071,7 +30071,7 @@
  {
   "id": "2ff265a193",
   "en": "a priest, a door-court, and the year 1000",
-  "ctx": "Threads index — what block \"9.22 Fróðá\" covers, under \"⛪ Religion\"",
+  "ctx": "Threads index — what block \"9.24 Fróðá\" covers, under \"⛪ Religion\"",
   "tours": [
    "10.0",
    "9.0"
@@ -30197,7 +30197,7 @@
  {
   "id": "f9d250d092",
   "en": "the ghosts we took to court",
-  "ctx": "Threads index — what block \"9.22 Fróðá\" covers, under \"⚖️ Law\"",
+  "ctx": "Threads index — what block \"9.24 Fróðá\" covers, under \"⚖️ Law\"",
   "tours": [
    "10.0",
    "9.0"
@@ -30206,7 +30206,7 @@
  {
   "id": "4cd1bd68ec",
   "en": "a witchcraft charge that got a court date, not a fire",
-  "ctx": "Threads index — what block \"9.24 Mávahlíð\" covers, under \"⚖️ Law\"",
+  "ctx": "Threads index — what block \"9.23 Mávahlíð\" covers, under \"⚖️ Law\"",
   "tours": [
    "10.0",
    "9.0"
