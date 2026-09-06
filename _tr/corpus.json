@@ -1717,8 +1717,8 @@
   ]
  },
  {
-  "id": "73c0732af0",
-  "en": "Look left — the white house by the river Kaldakvísl, just off Route 36.",
+  "id": "0ebf8ffd98",
+  "en": "Look right — the white house by the river Kaldakvísl, just off Route 36.",
   "ctx": "cue, tells the guest where to look — tour 1.0 / BSÍ Bus Terminal → Þingvellir / 🪶 Gljúfrasteinn",
   "tours": [
    "1.0",
@@ -10559,6 +10559,39 @@
   ]
  },
  {
+  "id": "0a0e47b1da",
+  "en": "\"Tongue-River\", the tributary we're crossing",
+  "ctx": "gloss for the name \"Tungufljót\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
+  "tours": [
+   "3.0"
+  ]
+ },
+ {
+  "id": "adcc7f34e5",
+  "en": "Vatnsleysufoss, its wide ~7 m falls with a salmon ladder built in",
+  "ctx": "gloss for the name \"Faxi\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
+  "tours": [
+   "3.0"
+  ]
+ },
+ {
+  "id": "320bc4040c",
+  "en": "the small Landsvirkjun hydro station on the upper river",
+  "ctx": "gloss for the name \"Brúárvirkjun\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
+  "tours": [
+   "3.0"
+  ]
+ },
+ {
+  "id": "ce287cf7fe",
+  "en": "the glacial river it drains into",
+  "ctx": "gloss for the name \"Hvítá\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
+  "tours": [
+   "3.0",
+   "4.0"
+  ]
+ },
+ {
   "id": "b1b2c9dd1e",
   "en": "♨️ Gamla Laugin",
   "ctx": "block title — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
@@ -10684,39 +10717,6 @@
   "ctx": "gloss for the name \"Litli Geysir\" — tour 3.0 / Gullfoss → Reykjavík / ♨️ Gamla Laugin",
   "tours": [
    "3.0"
-  ]
- },
- {
-  "id": "0a0e47b1da",
-  "en": "\"Tongue-River\", the tributary we're crossing",
-  "ctx": "gloss for the name \"Tungufljót\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
-  "tours": [
-   "3.0"
-  ]
- },
- {
-  "id": "adcc7f34e5",
-  "en": "Vatnsleysufoss, its wide ~7 m falls with a salmon ladder built in",
-  "ctx": "gloss for the name \"Faxi\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
-  "tours": [
-   "3.0"
-  ]
- },
- {
-  "id": "320bc4040c",
-  "en": "the small Landsvirkjun hydro station on the upper river",
-  "ctx": "gloss for the name \"Brúárvirkjun\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
-  "tours": [
-   "3.0"
-  ]
- },
- {
-  "id": "ce287cf7fe",
-  "en": "the glacial river it drains into",
-  "ctx": "gloss for the name \"Hvítá\" — tour 3.0 / Gullfoss → Reykjavík / ⚡ Tungufljót",
-  "tours": [
-   "3.0",
-   "4.0"
   ]
  },
  {
@@ -12256,11 +12256,13 @@
   ]
  },
  {
-  "id": "57bc982ff4",
-  "en": "Look left at 10 o'clock — Esja on the skyline.",
+  "id": "1c3a91d734",
+  "en": "Look right at 4 o'clock — Esja on the skyline.",
   "ctx": "cue, tells the guest where to look — tour 4.0 / Þingvellir → Reykjavík / ⛰️ Mount Esja",
   "tours": [
-   "4.0"
+   "10.0",
+   "4.0",
+   "9.0"
   ]
  },
  {
@@ -13159,6 +13161,38 @@
   ]
  },
  {
+  "id": "94a5c55c7b",
+  "en": "Per the saga, first settler **Ingólfur Arnarson** threw his carved **high-seat pillars** overboard and vowed to settle wherever they washed up.",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
+  "tours": [
+   "5.0"
+  ]
+ },
+ {
+  "id": "581b4b97fc",
+  "en": "It took his slaves **three years** to find them — in a bay full of steam from hot springs, which he named **Reykjavík**, \"Smoky Bay.\"",
+  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
+  "tours": [
+   "5.0"
+  ]
+ },
+ {
+  "id": "6efe74bad4",
+  "en": "the first settler, who followed his high-seat pillars to Reykjavík",
+  "ctx": "gloss for the name \"Ingólfur Arnarson\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
+  "tours": [
+   "5.0"
+  ]
+ },
+ {
+  "id": "2776b93cbb",
+  "en": "the south-east port that took hundreds of extra km to reach before the Ring Road",
+  "ctx": "gloss for the name \"Höfn\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
+  "tours": [
+   "5.0"
+  ]
+ },
+ {
   "id": "b680039680",
   "en": "Every drop that falls on the Golden Circle — glaciers, geysers, lakes — eventually squeezes through this one 25 km channel.",
   "ctx": "the point of the block — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
@@ -13260,38 +13294,6 @@
   "id": "00c8153ef6",
   "en": "the old ferry crossing, where ferrymen were paid in cattle or cod",
   "ctx": "gloss for the name \"Laugardælir\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
-  "tours": [
-   "5.0"
-  ]
- },
- {
-  "id": "94a5c55c7b",
-  "en": "Per the saga, first settler **Ingólfur Arnarson** threw his carved **high-seat pillars** overboard and vowed to settle wherever they washed up.",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
-  "tours": [
-   "5.0"
-  ]
- },
- {
-  "id": "581b4b97fc",
-  "en": "It took his slaves **three years** to find them — in a bay full of steam from hot springs, which he named **Reykjavík**, \"Smoky Bay.\"",
-  "ctx": "fact bullet — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
-  "tours": [
-   "5.0"
-  ]
- },
- {
-  "id": "6efe74bad4",
-  "en": "the first settler, who followed his high-seat pillars to Reykjavík",
-  "ctx": "gloss for the name \"Ingólfur Arnarson\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
-  "tours": [
-   "5.0"
-  ]
- },
- {
-  "id": "2776b93cbb",
-  "en": "the south-east port that took hundreds of extra km to reach before the Ring Road",
-  "ctx": "gloss for the name \"Höfn\" — tour 5.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
   "tours": [
    "5.0"
   ]
@@ -14196,104 +14198,6 @@
   ]
  },
  {
-  "id": "c3216dfb4c",
-  "en": "🌊 Landeyjar Plains",
-  "ctx": "block title — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "tours": [
-   "5.0",
-   "6.0"
-  ]
- },
- {
-  "id": "92b11871bd",
-  "en": "Look right at 2 o'clock — Landeyjar sandur, the plain running away to the sea.",
-  "ctx": "cue, tells the guest where to look — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "tours": [
-   "5.0",
-   "6.0"
-  ]
- },
- {
-  "id": "821d641e5a",
-  "en": "Living here means accepting your backyard is the **natural drain for big angry glaciers** — every farm, fence and bridge gets built with **jökulhlaups** in the back of people's minds.",
-  "ctx": "the point of the block — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "tours": [
-   "5.0",
-   "6.0",
-   "7.0"
-  ]
- },
- {
-  "id": "b622e19de6",
-  "en": "\"There's nothing here,\" they say. Under you: old seabed. Ahead: glacial wash-plain. Left: ghost coastline. That's a lot of nothing.",
-  "ctx": "the spoken close — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "tours": [
-   "5.0"
-  ]
- },
- {
-  "id": "2d4563dee8",
-  "en": "Weather pivot: \"Flat, wet and grey is this plain's default setting. It is a floodplain. It looks like this most of the year.\"",
-  "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "tours": [
-   "5.0",
-   "6.0",
-   "7.0"
-  ]
- },
- {
-  "id": "f1930deaf8",
-  "en": "The Ocean's Basement",
-  "ctx": "subtitle under the block title — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "tours": [
-   "5.0",
-   "6.0",
-   "7.0"
-  ]
- },
- {
-  "id": "493a9ec879",
-  "en": "We've barely left town and we've already **driven off the map** — this flat land used to be the **bottom of the Atlantic Ocean**.",
-  "ctx": "opening hook line — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "tours": [
-   "5.0",
-   "6.0",
-   "7.0"
-  ]
- },
- {
-  "id": "ba40dd87c5",
-  "en": "It looks like \"just flat fields,\" but you're crossing a giant **flood-deposit fan**, built grain by grain by glacial rivers — chiefly the **Markarfljót** — charging out of the highlands.",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "tours": [
-   "5.0"
-  ]
- },
- {
-  "id": "92cffe0c81",
-  "en": "The name gives it away: **Landeyjar means \"land islands\"** — grassy patches that stood up out of the marsh and sand. Waves once rolled over where this road runs, the sea reaching right up to that **cliff line on your left**.",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "tours": [
-   "5.0"
-  ]
- },
- {
-  "id": "e042cc2929",
-  "en": "Then the land rose, the rivers kept dumping sand, and the coastline **marched south, kilometre by kilometre** — the shore is now several km further out than the cliffs that used to be beach.",
-  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "tours": [
-   "5.0"
-  ]
- },
- {
-  "id": "cb033bb2ce",
-  "en": "land islands, the flat plains of old seabed we're crossing",
-  "ctx": "gloss for the name \"Landeyjar\" — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
-  "tours": [
-   "5.0"
-  ]
- },
- {
   "id": "0fc8535db6",
   "en": "🛡️ Markarfljót & Hlíðarendi",
   "ctx": "block title — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🛡️ Markarfljót & Hlíðarendi",
@@ -14413,6 +14317,104 @@
   "tours": [
    "5.0",
    "6.0"
+  ]
+ },
+ {
+  "id": "c3216dfb4c",
+  "en": "🌊 Landeyjar Plains",
+  "ctx": "block title — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "92b11871bd",
+  "en": "Look right at 2 o'clock — Landeyjar sandur, the plain running away to the sea.",
+  "ctx": "cue, tells the guest where to look — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
+  "tours": [
+   "5.0",
+   "6.0"
+  ]
+ },
+ {
+  "id": "821d641e5a",
+  "en": "Living here means accepting your backyard is the **natural drain for big angry glaciers** — every farm, fence and bridge gets built with **jökulhlaups** in the back of people's minds.",
+  "ctx": "the point of the block — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
+  "tours": [
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
+  "id": "b622e19de6",
+  "en": "\"There's nothing here,\" they say. Under you: old seabed. Ahead: glacial wash-plain. Left: ghost coastline. That's a lot of nothing.",
+  "ctx": "the spoken close — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
+  "tours": [
+   "5.0"
+  ]
+ },
+ {
+  "id": "2d4563dee8",
+  "en": "Weather pivot: \"Flat, wet and grey is this plain's default setting. It is a floodplain. It looks like this most of the year.\"",
+  "ctx": "bad-weather alternative — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
+  "tours": [
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
+  "id": "f1930deaf8",
+  "en": "The Ocean's Basement",
+  "ctx": "subtitle under the block title — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
+  "tours": [
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
+  "id": "493a9ec879",
+  "en": "We've barely left town and we've already **driven off the map** — this flat land used to be the **bottom of the Atlantic Ocean**.",
+  "ctx": "opening hook line — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
+  "tours": [
+   "5.0",
+   "6.0",
+   "7.0"
+  ]
+ },
+ {
+  "id": "ba40dd87c5",
+  "en": "It looks like \"just flat fields,\" but you're crossing a giant **flood-deposit fan**, built grain by grain by glacial rivers — chiefly the **Markarfljót** — charging out of the highlands.",
+  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
+  "tours": [
+   "5.0"
+  ]
+ },
+ {
+  "id": "92cffe0c81",
+  "en": "The name gives it away: **Landeyjar means \"land islands\"** — grassy patches that stood up out of the marsh and sand. Waves once rolled over where this road runs, the sea reaching right up to that **cliff line on your left**.",
+  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
+  "tours": [
+   "5.0"
+  ]
+ },
+ {
+  "id": "e042cc2929",
+  "en": "Then the land rose, the rivers kept dumping sand, and the coastline **marched south, kilometre by kilometre** — the shore is now several km further out than the cliffs that used to be beach.",
+  "ctx": "fact bullet — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
+  "tours": [
+   "5.0"
+  ]
+ },
+ {
+  "id": "cb033bb2ce",
+  "en": "land islands, the flat plains of old seabed we're crossing",
+  "ctx": "gloss for the name \"Landeyjar\" — tour 5.0 / Hvolsvöllur → Sólheimajökull / 🌊 Landeyjar Plains",
+  "tours": [
+   "5.0"
   ]
  },
  {
@@ -17162,6 +17164,30 @@
   ]
  },
  {
+  "id": "306a3bd189",
+  "en": "Per the saga, first settler **Ingólfur Arnarson** threw his carved **high-seat pillars** overboard and vowed to settle wherever they washed up. It took his slaves **three years** to find them — in a bay full of steam from hot springs, which he named **Reykjavík**, \"Smoky Bay.\"",
+  "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
+  "tours": [
+   "6.0"
+  ]
+ },
+ {
+  "id": "ef281868b5",
+  "en": "Myth-bust worth landing: he wasn't the **first** here. Irish monks (the **Papar**) were already in Iceland and left when the pagans arrived; a Norseman called **Náttfari** had stayed behind years earlier. Ingólfur's real title is narrower — **first *permanent* Norse settler in the saga tradition.** He got the trophy because his family later ran the parliament and wrote the record.",
+  "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
+  "tours": [
+   "6.0"
+  ]
+ },
+ {
+  "id": "e2fe9ed688",
+  "en": "the Irish monks already here before the Norse",
+  "ctx": "gloss for the name \"Papar\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
+  "tours": [
+   "6.0"
+  ]
+ },
+ {
   "id": "7be212e9c2",
   "en": "Every drop of water that falls on the Golden Circle — glaciers, geysers, lakes — eventually squeezes through this one channel.",
   "ctx": "the point of the block — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
@@ -17245,30 +17271,6 @@
   "id": "e65c89edbb",
   "en": "the lava field beside it, the largest lava flow on Earth since the end of the Ice Age, about 130 km to the sea",
   "ctx": "gloss for the name \"Þjórsárhraun\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🌊 Ölfusá",
-  "tours": [
-   "6.0"
-  ]
- },
- {
-  "id": "306a3bd189",
-  "en": "Per the saga, first settler **Ingólfur Arnarson** threw his carved **high-seat pillars** overboard and vowed to settle wherever they washed up. It took his slaves **three years** to find them — in a bay full of steam from hot springs, which he named **Reykjavík**, \"Smoky Bay.\"",
-  "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
-  "tours": [
-   "6.0"
-  ]
- },
- {
-  "id": "ef281868b5",
-  "en": "Myth-bust worth landing: he wasn't the **first** here. Irish monks (the **Papar**) were already in Iceland and left when the pagans arrived; a Norseman called **Náttfari** had stayed behind years earlier. Ingólfur's real title is narrower — **first *permanent* Norse settler in the saga tradition.** He got the trophy because his family later ran the parliament and wrote the record.",
-  "ctx": "fact bullet — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
-  "tours": [
-   "6.0"
-  ]
- },
- {
-  "id": "e2fe9ed688",
-  "en": "the Irish monks already here before the Norse",
-  "ctx": "gloss for the name \"Papar\" — tour 6.0 / BSÍ Bus Terminal → Hvolsvöllur / 🧭 Ingólfur Arnarson",
   "tours": [
    "6.0"
   ]
@@ -17678,62 +17680,6 @@
   ]
  },
  {
-  "id": "0a6c7de45d",
-  "en": "\"There's nothing here,\" they say. Under you: old seabed. Ahead: glacial wash-plain. Left: ghost coastline. Out there: a saga murder scene. That's a lot of nothing.",
-  "ctx": "the spoken close — tour 6.0 / Hvolsvöllur → Skógafoss / 🌊 Landeyjar Plains",
-  "tours": [
-   "6.0"
-  ]
- },
- {
-  "id": "96144c3445",
-  "en": "It looks like \"just flat fields,\" but you're crossing a giant **flood-deposit fan**, built grain by grain by glacial rivers charging out of the highlands — chiefly one river, the **Markarfljót.**",
-  "ctx": "fact bullet — tour 6.0 / Hvolsvöllur → Skógafoss / 🌊 Landeyjar Plains",
-  "tours": [
-   "6.0"
-  ]
- },
- {
-  "id": "9bd2d96579",
-  "en": "Waves once rolled over where this road now runs — the sea reached right up to that **cliff line on your left**. Then the land rose, the rivers kept dumping sand, and the coastline **marched south, kilometre by kilometre.**",
-  "ctx": "fact bullet — tour 6.0 / Hvolsvöllur → Skógafoss / 🌊 Landeyjar Plains",
-  "tours": [
-   "6.0"
-  ]
- },
- {
-  "id": "fed76dce95",
-  "en": "This \"empty\" plain is also **Njáls saga's stage**: **Bergþórshvoll**, where Njáll's family was burned alive around **1011**, sits out here among the hayfields. Flat, quiet — and, a thousand years ago, the address of Iceland's most famous house fire.",
-  "ctx": "fact bullet — tour 6.0 / Hvolsvöllur → Skógafoss / 🌊 Landeyjar Plains",
-  "tours": [
-   "6.0"
-  ]
- },
- {
-  "id": "106282c3cc",
-  "en": "The name gives it away: **Landeyjar means “land islands”** — the grassy patches that stood up out of the marsh and sand when the water still owned everything around them.",
-  "ctx": "fact bullet — tour 6.0 / Hvolsvöllur → Skógafoss / 🌊 Landeyjar Plains",
-  "tours": [
-   "6.0"
-  ]
- },
- {
-  "id": "3e89165337",
-  "en": "the flat plain we are crossing, once the bottom of the Atlantic",
-  "ctx": "gloss for the name \"Landeyjar\" — tour 6.0 / Hvolsvöllur → Skógafoss / 🌊 Landeyjar Plains",
-  "tours": [
-   "6.0"
-  ]
- },
- {
-  "id": "48d015eea9",
-  "en": "the farm out here among the hayfields where Njáll's family was burned alive around 1011",
-  "ctx": "gloss for the name \"Bergþórshvoll\" — tour 6.0 / Hvolsvöllur → Skógafoss / 🌊 Landeyjar Plains",
-  "tours": [
-   "6.0"
-  ]
- },
- {
   "id": "c241d8bce0",
   "en": "Out there: grass and sheep. In the sagas: a man who chose his view over his life — and a wife who remembered exactly how she'd been wronged.",
   "ctx": "the spoken close — tour 6.0 / Hvolsvöllur → Skógafoss / 🛡️ Markarfljót & Hlíðarendi",
@@ -17815,6 +17761,62 @@
   "tours": [
    "6.0",
    "7.0"
+  ]
+ },
+ {
+  "id": "0a6c7de45d",
+  "en": "\"There's nothing here,\" they say. Under you: old seabed. Ahead: glacial wash-plain. Left: ghost coastline. Out there: a saga murder scene. That's a lot of nothing.",
+  "ctx": "the spoken close — tour 6.0 / Hvolsvöllur → Skógafoss / 🌊 Landeyjar Plains",
+  "tours": [
+   "6.0"
+  ]
+ },
+ {
+  "id": "96144c3445",
+  "en": "It looks like \"just flat fields,\" but you're crossing a giant **flood-deposit fan**, built grain by grain by glacial rivers charging out of the highlands — chiefly one river, the **Markarfljót.**",
+  "ctx": "fact bullet — tour 6.0 / Hvolsvöllur → Skógafoss / 🌊 Landeyjar Plains",
+  "tours": [
+   "6.0"
+  ]
+ },
+ {
+  "id": "9bd2d96579",
+  "en": "Waves once rolled over where this road now runs — the sea reached right up to that **cliff line on your left**. Then the land rose, the rivers kept dumping sand, and the coastline **marched south, kilometre by kilometre.**",
+  "ctx": "fact bullet — tour 6.0 / Hvolsvöllur → Skógafoss / 🌊 Landeyjar Plains",
+  "tours": [
+   "6.0"
+  ]
+ },
+ {
+  "id": "fed76dce95",
+  "en": "This \"empty\" plain is also **Njáls saga's stage**: **Bergþórshvoll**, where Njáll's family was burned alive around **1011**, sits out here among the hayfields. Flat, quiet — and, a thousand years ago, the address of Iceland's most famous house fire.",
+  "ctx": "fact bullet — tour 6.0 / Hvolsvöllur → Skógafoss / 🌊 Landeyjar Plains",
+  "tours": [
+   "6.0"
+  ]
+ },
+ {
+  "id": "106282c3cc",
+  "en": "The name gives it away: **Landeyjar means “land islands”** — the grassy patches that stood up out of the marsh and sand when the water still owned everything around them.",
+  "ctx": "fact bullet — tour 6.0 / Hvolsvöllur → Skógafoss / 🌊 Landeyjar Plains",
+  "tours": [
+   "6.0"
+  ]
+ },
+ {
+  "id": "3e89165337",
+  "en": "the flat plain we are crossing, once the bottom of the Atlantic",
+  "ctx": "gloss for the name \"Landeyjar\" — tour 6.0 / Hvolsvöllur → Skógafoss / 🌊 Landeyjar Plains",
+  "tours": [
+   "6.0"
+  ]
+ },
+ {
+  "id": "48d015eea9",
+  "en": "the farm out here among the hayfields where Njáll's family was burned alive around 1011",
+  "ctx": "gloss for the name \"Bergþórshvoll\" — tour 6.0 / Hvolsvöllur → Skógafoss / 🌊 Landeyjar Plains",
+  "tours": [
+   "6.0"
   ]
  },
  {
@@ -19214,102 +19216,6 @@
   ]
  },
  {
-  "id": "6552c3e516",
-  "en": "Ölfusá",
-  "ctx": "block title — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "faa773b01c",
-  "en": "Every drop that fell on the Golden Circle — glaciers, geysers, lakes — eventually squeezes through this one 25 km channel.",
-  "ctx": "the point of the block — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "a1a0bf03ec",
-  "en": "One of the **shortest** rivers in Iceland — but it moves **more water than any other**. Four rivers in disguise, sharing a name only for the last **25 km**.",
-  "ctx": "opening hook line — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "262d224da3",
-  "en": "Only **~25 km long**, yet **Iceland's largest river by discharge** — about **400 m³ every second** off a **~5,760 km² basin**. Not the longest; just the one you absolutely could not cross.",
-  "ctx": "fact bullet — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "e574f012aa",
-  "en": "It's **four systems in one**. The glacial **Hvítá** runs south from **Langjökull** past **Gullfoss**, gathering **Tungufljót** and **Brúará**; the spring-fed **Sog** drains **Þingvallavatn**, Iceland's biggest natural lake. They meet just above **Selfoss** and from there run as one — the **Ölfusá**.",
-  "ctx": "fact bullet — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "b9c6e4a0b8",
-  "en": "It follows the **South Iceland Seismic Zone**, zig-zagging along fault lines. Beside it lies **Þjórsárhraun** — about **8,700 years** old, roughly **1,000 km²**, the **longest lava flow in Iceland**. Vísindavefur puts it higher than that (id=87471, Haraldur Sigurðsson, January 2025): *“Þjórsárhraun er stærsta hraun sem runnið hefur á jörðinni síðan ísöldinni lauk”* — the largest lava flow to have run anywhere on Earth since the Ice Age ended.",
-  "ctx": "fact bullet — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "f07cf7bfa3",
-  "en": "For centuries the **ultimate obstacle**: unfordable, no bridge, just a ferry at **Laugardælir** paid in **cattle or cod** to reach the harbour at **Eyrarbakki**. When it flooded catastrophically in **1623**, a bishop blamed a giant river serpent — an “ice worm.” (It was an **ice-jam flood**; the serpent just got the better press.)",
-  "ctx": "fact bullet — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "ddf0d3945e",
-  "en": "That lava has a proper name and a frankly silly scale: **Þjórsárhraunið mikla**, the Great Þjórsá Lava. It erupted **about 8,700 years ago** from a **fissure 20 to 30 km long** in the **Veiðivötn swarm of the Bárðarbunga system**, well up in the interior, then ran **about 130 km to the sea**, reaching the coast **between the Þjórsá and the Ölfusá.** Total volume: **25 cubic kilometres.**",
-  "ctx": "fact bullet — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "bf108dfd8f",
-  "en": "On the magnitude scale Vísindavefur rates it **MS-9 — the largest Icelandic eruption by volume of erupted material** — ahead of **Eldgjá at MS-8** and a long way ahead of **Laki 1783 at MS-6.5.** That scale is logarithmic, so the gaps are wider than they look. Keep one distinction straight, though: largest by volume is not the same as **most powerful**, and that title goes to **Eldgjá**. The same system gave us **Vatnaöldur in 871** and **Veiðivötn in 1477.** (The biggest eruption this island ever produced is shaped like a field. You cannot see it, and that is exactly how large it is.)",
-  "ctx": "fact bullet — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "06e1619591",
-  "en": "“Bridge-River”, one of the rivers the Hvítá gathers on the way",
-  "ctx": "gloss for the name \"Brúará\" — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "b45c3b84e3",
-  "en": "“Tongue-River”, the other river the Hvítá gathers",
-  "ctx": "gloss for the name \"Tungufljót\" — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
-  "id": "ea560f0873",
-  "en": "the lava flow beside the river, Iceland's largest eruption by volume and its longest lava flow",
-  "ctx": "gloss for the name \"Þjórsárhraun\" — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
-  "tours": [
-   "7.0"
-  ]
- },
- {
   "id": "28de38a9b1",
   "en": "Hveragerði",
   "ctx": "block title — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Hveragerði",
@@ -19425,6 +19331,102 @@
   "id": "3ab62116e2",
   "en": "the Norseman who had stayed years earlier",
   "ctx": "gloss for the name \"Náttfari\" — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ingólfur Arnarson",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "6552c3e516",
+  "en": "Ölfusá",
+  "ctx": "block title — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "faa773b01c",
+  "en": "Every drop that fell on the Golden Circle — glaciers, geysers, lakes — eventually squeezes through this one 25 km channel.",
+  "ctx": "the point of the block — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "a1a0bf03ec",
+  "en": "One of the **shortest** rivers in Iceland — but it moves **more water than any other**. Four rivers in disguise, sharing a name only for the last **25 km**.",
+  "ctx": "opening hook line — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "262d224da3",
+  "en": "Only **~25 km long**, yet **Iceland's largest river by discharge** — about **400 m³ every second** off a **~5,760 km² basin**. Not the longest; just the one you absolutely could not cross.",
+  "ctx": "fact bullet — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "e574f012aa",
+  "en": "It's **four systems in one**. The glacial **Hvítá** runs south from **Langjökull** past **Gullfoss**, gathering **Tungufljót** and **Brúará**; the spring-fed **Sog** drains **Þingvallavatn**, Iceland's biggest natural lake. They meet just above **Selfoss** and from there run as one — the **Ölfusá**.",
+  "ctx": "fact bullet — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "b9c6e4a0b8",
+  "en": "It follows the **South Iceland Seismic Zone**, zig-zagging along fault lines. Beside it lies **Þjórsárhraun** — about **8,700 years** old, roughly **1,000 km²**, the **longest lava flow in Iceland**. Vísindavefur puts it higher than that (id=87471, Haraldur Sigurðsson, January 2025): *“Þjórsárhraun er stærsta hraun sem runnið hefur á jörðinni síðan ísöldinni lauk”* — the largest lava flow to have run anywhere on Earth since the Ice Age ended.",
+  "ctx": "fact bullet — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "f07cf7bfa3",
+  "en": "For centuries the **ultimate obstacle**: unfordable, no bridge, just a ferry at **Laugardælir** paid in **cattle or cod** to reach the harbour at **Eyrarbakki**. When it flooded catastrophically in **1623**, a bishop blamed a giant river serpent — an “ice worm.” (It was an **ice-jam flood**; the serpent just got the better press.)",
+  "ctx": "fact bullet — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "ddf0d3945e",
+  "en": "That lava has a proper name and a frankly silly scale: **Þjórsárhraunið mikla**, the Great Þjórsá Lava. It erupted **about 8,700 years ago** from a **fissure 20 to 30 km long** in the **Veiðivötn swarm of the Bárðarbunga system**, well up in the interior, then ran **about 130 km to the sea**, reaching the coast **between the Þjórsá and the Ölfusá.** Total volume: **25 cubic kilometres.**",
+  "ctx": "fact bullet — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "bf108dfd8f",
+  "en": "On the magnitude scale Vísindavefur rates it **MS-9 — the largest Icelandic eruption by volume of erupted material** — ahead of **Eldgjá at MS-8** and a long way ahead of **Laki 1783 at MS-6.5.** That scale is logarithmic, so the gaps are wider than they look. Keep one distinction straight, though: largest by volume is not the same as **most powerful**, and that title goes to **Eldgjá**. The same system gave us **Vatnaöldur in 871** and **Veiðivötn in 1477.** (The biggest eruption this island ever produced is shaped like a field. You cannot see it, and that is exactly how large it is.)",
+  "ctx": "fact bullet — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "06e1619591",
+  "en": "“Bridge-River”, one of the rivers the Hvítá gathers on the way",
+  "ctx": "gloss for the name \"Brúará\" — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "b45c3b84e3",
+  "en": "“Tongue-River”, the other river the Hvítá gathers",
+  "ctx": "gloss for the name \"Tungufljót\" — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
+  "tours": [
+   "7.0"
+  ]
+ },
+ {
+  "id": "ea560f0873",
+  "en": "the lava flow beside the river, Iceland's largest eruption by volume and its longest lava flow",
+  "ctx": "gloss for the name \"Þjórsárhraun\" — tour 7.0 / BSÍ Bus Terminal → Hvolsvöllur / Ölfusá",
   "tours": [
    "7.0"
   ]
@@ -23223,15 +23225,6 @@
   ]
  },
  {
-  "id": "1c3a91d734",
-  "en": "Look right at 4 o'clock — Esja on the skyline.",
-  "ctx": "cue, tells the guest where to look — tour 9.0 / BSÍ Bus Terminal → Borgarnes / ⛰️ Mount Esja",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
   "id": "2441a1eb82",
   "en": "Reykjavíkians don't check the weather app — they check if they can still see Esja. If Esja's gone, your phone is the least of your problems.",
   "ctx": "the spoken close — tour 9.0 / BSÍ Bus Terminal → Borgarnes / ⛰️ Mount Esja",
@@ -25987,6 +25980,266 @@
   ]
  },
  {
+  "id": "79c9382a46",
+  "en": "🐚 Búlandshöfði",
+  "ctx": "block title — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "e6f53d112f",
+  "en": "We're driving under it now — the headland the road is cut into, sea on your left.",
+  "ctx": "cue, tells the guest where to look — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "9ffd7dd67f",
+  "en": "A cliff full of seashells far above the waterline — and the reason we know the Ice Age came and went rather than simply lasting.",
+  "ctx": "the point of the block — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "dae933a93e",
+  "en": "Most roadside cliffs are scenery. This one is a textbook, and the chapter it wrote is that the ice had summers.",
+  "ctx": "the spoken close — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "8e483a4427",
+  "en": "Weather pivot (if the top is in cloud): \"The fossil beds are up in that cloud — honest enough, because you couldn't pick them out on a clear day either without someone pointing.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "b1a08b2999",
+  "en": "Where Iceland Found Out the Ice Age Had Summers",
+  "ctx": "subtitle under the block title — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "3871504435",
+  "en": "This headland is where geologists proved the Ice Age **wasn't one long winter.** The evidence is seashells — sitting **high above the sea.**",
+  "ctx": "opening hook line — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "046ca7acea",
+  "en": "High in this cliff are **marine fossil beds** — shells, laid down on a seabed — now stranded far above the present shore, and **sealed under lava dated to roughly 1.1 million years.**",
+  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "bc7f1ba82a",
+  "en": "That is the whole argument. Shells mean **open, ice-free sea.** Lava on top means an eruption came afterwards. Stack the layers and you are reading **warm interglacials sandwiched between cold stages** — the Ice Age switching on and off, written into a cliff face.",
+  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "267e35fd72",
+  "en": "It made Búlandshöfði **a classic site in Icelandic Quaternary geology.** Generations of students have been driven out here to look at the rock above your window.",
+  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "35b70bb28e",
+  "en": "Honest caveat: **you cannot pick the shell beds out from the road.** They are high in the face and you need someone standing next to you pointing. Point at the cliff, not at a layer.",
+  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "7b89c589bb",
+  "en": "The road has its own reputation. Before it was rebuilt this was **one of the most notorious stretches in the country** — a narrow shelf between the mountain and a long drop — and there is a **memorial stone at the top** for the reason you would expect.",
+  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "4cdc329ca8",
+  "en": "*Eyrbyggja saga* calls the screes below **Þrælaskriður** — **Slave Screes.** Not a metaphor. Two men went off here in the saga, and the saga is quite specific about why.",
+  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "f9b3734737",
+  "en": "the headland the road is cut into",
+  "ctx": "gloss for the name \"Búlandshöfði\" — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "90dbd116b4",
+  "en": "'Slave Screes', the saga's name for the slopes below",
+  "ctx": "gloss for the name \"Þrælaskriður\" — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "dfda0ee888",
+  "en": "🧙 Mávahlíð",
+  "ctx": "block title — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "0568487998",
+  "en": "Look left, inland — the farm under the fell.",
+  "ctx": "cue, tells the guest where to look — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
+  "tours": [
+   "9.0"
+  ]
+ },
+ {
+  "id": "114cc2d01a",
+  "en": "Accused of witchcraft in the saga age, and the remedy was a court date rather than a fire.",
+  "ctx": "the point of the block — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "c49cae476e",
+  "en": "Iceland did burn people for witchcraft — three centuries later, and almost all of them men. Everything guests think they know about this is off by both.",
+  "ctx": "the spoken close — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "493b6cb508",
+  "en": "Weather pivot (if the fell is hidden): \"The farm's in there somewhere under the cloud — still farmed, still called Mávahlíð, nine hundred years after the case.\"",
+  "ctx": "bad-weather alternative — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "47ccf977d8",
+  "en": "The Witch Trial That Went the Other Way",
+  "ctx": "subtitle under the block title — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "1c5f6ad10d",
+  "en": "A woman on that farm was accused of riding a man to death in his sleep. **The case went to court — and she walked.**",
+  "ctx": "opening hook line — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "ed19dc884f",
+  "en": "**Geirríður** of **Mávahlíð** was accused of being a **kveldriða** — a night-rider — of riding a man in his sleep until he sickened and died. In most of medieval Europe that accusation had one ending.",
+  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "3e19357611",
+  "en": "Not here. The charge was brought to the **þing**, argued, and **Geirríður was acquitted** — the accuser could not make it stand. *Eyrbyggja saga* records the whole thing as a legal matter, because that is what it was.",
+  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "d4c196ccda",
+  "en": "Keep the chronology straight, because guests always ask about burnings. Iceland's actual witch-hunt was the **17th century** — the first burning for witchcraft was **1625**, the last **1685.** Of roughly **25 Icelanders** ever burned, the overwhelming majority were **men.**",
+  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "cce3a8a0b2",
+  "en": "So the picture people arrive with — medieval Iceland burning women — is the wrong century **and** the wrong gender. Here, in the saga age, the answer to a witchcraft accusation was a hearing.",
+  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "a80d4c4450",
+  "en": "'seagull slope', the farm inland on your right",
+  "ctx": "gloss for the name \"Mávahlíð\" — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "19f136278f",
+  "en": "the woman accused, and acquitted",
+  "ctx": "gloss for the name \"Geirríður\" — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
+  "id": "a171e4019c",
+  "en": "a 'night-rider', the thing she was accused of being",
+  "ctx": "gloss for the name \"kveldriða\" — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
+  "tours": [
+   "10.0",
+   "9.0"
+  ]
+ },
+ {
   "id": "68d544043b",
   "en": "👻 Fróðá",
   "ctx": "block title — tour 9.0 / Kirkjufell → Ólafsvík / 👻 Fróðá",
@@ -26161,267 +26414,6 @@
   "id": "d40ae66e94",
   "en": "the \"door-court\" that tried the ghosts, one by one",
   "ctx": "gloss for the name \"duradómr\" — tour 9.0 / Kirkjufell → Ólafsvík / 👻 Fróðá",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "79c9382a46",
-  "en": "🐚 Búlandshöfði",
-  "ctx": "block title — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "e6f53d112f",
-  "en": "We're driving under it now — the headland the road is cut into, sea on your left.",
-  "ctx": "cue, tells the guest where to look — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "9ffd7dd67f",
-  "en": "A cliff full of seashells far above the waterline — and the reason we know the Ice Age came and went rather than simply lasting.",
-  "ctx": "the point of the block — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "dae933a93e",
-  "en": "Most roadside cliffs are scenery. This one is a textbook, and the chapter it wrote is that the ice had summers.",
-  "ctx": "the spoken close — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "8e483a4427",
-  "en": "Weather pivot (if the top is in cloud): \"The fossil beds are up in that cloud — honest enough, because you couldn't pick them out on a clear day either without someone pointing.\"",
-  "ctx": "bad-weather alternative — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "b1a08b2999",
-  "en": "Where Iceland Found Out the Ice Age Had Summers",
-  "ctx": "subtitle under the block title — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "3871504435",
-  "en": "This headland is where geologists proved the Ice Age **wasn't one long winter.** The evidence is seashells — sitting **high above the sea.**",
-  "ctx": "opening hook line — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "046ca7acea",
-  "en": "High in this cliff are **marine fossil beds** — shells, laid down on a seabed — now stranded far above the present shore, and **sealed under lava dated to roughly 1.1 million years.**",
-  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "bc7f1ba82a",
-  "en": "That is the whole argument. Shells mean **open, ice-free sea.** Lava on top means an eruption came afterwards. Stack the layers and you are reading **warm interglacials sandwiched between cold stages** — the Ice Age switching on and off, written into a cliff face.",
-  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "267e35fd72",
-  "en": "It made Búlandshöfði **a classic site in Icelandic Quaternary geology.** Generations of students have been driven out here to look at the rock above your window.",
-  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "35b70bb28e",
-  "en": "Honest caveat: **you cannot pick the shell beds out from the road.** They are high in the face and you need someone standing next to you pointing. Point at the cliff, not at a layer.",
-  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "7b89c589bb",
-  "en": "The road has its own reputation. Before it was rebuilt this was **one of the most notorious stretches in the country** — a narrow shelf between the mountain and a long drop — and there is a **memorial stone at the top** for the reason you would expect.",
-  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "4cdc329ca8",
-  "en": "*Eyrbyggja saga* calls the screes below **Þrælaskriður** — **Slave Screes.** Not a metaphor. Two men went off here in the saga, and the saga is quite specific about why.",
-  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "f9b3734737",
-  "en": "the headland the road is cut into",
-  "ctx": "gloss for the name \"Búlandshöfði\" — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "90dbd116b4",
-  "en": "'Slave Screes', the saga's name for the slopes below",
-  "ctx": "gloss for the name \"Þrælaskriður\" — tour 9.0 / Kirkjufell → Ólafsvík / 🐚 Búlandshöfði",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "dfda0ee888",
-  "en": "🧙 Mávahlíð",
-  "ctx": "block title — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "32dde9c114",
-  "en": "Look right, inland — the farm under the fell.",
-  "ctx": "cue, tells the guest where to look — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "114cc2d01a",
-  "en": "Accused of witchcraft in the saga age, and the remedy was a court date rather than a fire.",
-  "ctx": "the point of the block — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "c49cae476e",
-  "en": "Iceland did burn people for witchcraft — three centuries later, and almost all of them men. Everything guests think they know about this is off by both.",
-  "ctx": "the spoken close — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "493b6cb508",
-  "en": "Weather pivot (if the fell is hidden): \"The farm's in there somewhere under the cloud — still farmed, still called Mávahlíð, nine hundred years after the case.\"",
-  "ctx": "bad-weather alternative — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "47ccf977d8",
-  "en": "The Witch Trial That Went the Other Way",
-  "ctx": "subtitle under the block title — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "1c5f6ad10d",
-  "en": "A woman on that farm was accused of riding a man to death in his sleep. **The case went to court — and she walked.**",
-  "ctx": "opening hook line — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "ed19dc884f",
-  "en": "**Geirríður** of **Mávahlíð** was accused of being a **kveldriða** — a night-rider — of riding a man in his sleep until he sickened and died. In most of medieval Europe that accusation had one ending.",
-  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "3e19357611",
-  "en": "Not here. The charge was brought to the **þing**, argued, and **Geirríður was acquitted** — the accuser could not make it stand. *Eyrbyggja saga* records the whole thing as a legal matter, because that is what it was.",
-  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "d4c196ccda",
-  "en": "Keep the chronology straight, because guests always ask about burnings. Iceland's actual witch-hunt was the **17th century** — the first burning for witchcraft was **1625**, the last **1685.** Of roughly **25 Icelanders** ever burned, the overwhelming majority were **men.**",
-  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "cce3a8a0b2",
-  "en": "So the picture people arrive with — medieval Iceland burning women — is the wrong century **and** the wrong gender. Here, in the saga age, the answer to a witchcraft accusation was a hearing.",
-  "ctx": "fact bullet — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "a80d4c4450",
-  "en": "'seagull slope', the farm inland on your right",
-  "ctx": "gloss for the name \"Mávahlíð\" — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "19f136278f",
-  "en": "the woman accused, and acquitted",
-  "ctx": "gloss for the name \"Geirríður\" — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
-  "tours": [
-   "10.0",
-   "9.0"
-  ]
- },
- {
-  "id": "a171e4019c",
-  "en": "a 'night-rider', the thing she was accused of being",
-  "ctx": "gloss for the name \"kveldriða\" — tour 9.0 / Kirkjufell → Ólafsvík / 🧙 Mávahlíð",
   "tours": [
    "10.0",
    "9.0"
@@ -30566,6 +30558,14 @@
   "id": "4d5e592a05",
   "en": "Ólafsvík → Kirkjufell",
   "ctx": "section title",
+  "tours": [
+   "10.0"
+  ]
+ },
+ {
+  "id": "32dde9c114",
+  "en": "Look right, inland — the farm under the fell.",
+  "ctx": "cue, tells the guest where to look — tour 10.0 / Ólafsvík → Kirkjufell / 🧙 Mávahlíð",
   "tours": [
    "10.0"
   ]

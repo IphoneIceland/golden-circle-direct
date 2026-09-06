@@ -47,7 +47,13 @@ for tid in TOURS:
     for x in cu:
         T=x.get('target')
         if not T or kind.get(x['id'])=='stop': continue
-        i=min(range(N), key=lambda k: hav(T['lat'],T['lon'],g[k][0],g[k][1]))
+        # Search only near the block's OWN progress. A global closest-approach
+        # search picks whichever pass is nearer, and on an out-and-back tour that
+        # is often the other leg -- which would have had me reordering 7.0 on
+        # homeward geometry for blocks that fire outbound.
+        lo=max(0,int(N*(x['progress']-12)/100)); hi=min(N,int(N*(x['progress']+12)/100)+1)
+        if hi-lo<2: lo,hi=0,N
+        i=min(range(lo,hi), key=lambda k: hav(T['lat'],T['lon'],g[k][0],g[k][1]))
         ideal[x['id']]=(cum[i]/total*100, hav(T['lat'],T['lon'],g[i][0],g[i][1])/1000,
                         hav(x['pin']['lat'],x['pin']['lon'],T['lat'],T['lon'])/1000, T['name'])
     ids=[x['id'] for x in cu]
