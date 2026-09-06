@@ -36,12 +36,24 @@ def brg(a,b,c,d):
     x=math.cos(p1)*math.sin(p2)-math.sin(p1)*math.cos(p2)*math.cos(dl)
     return (math.degrees(math.atan2(y,x))+360)%360
 def claim(cue):
+    """Every acceptable side the words allow, not just the first one found.
+
+    "Look back and left" is BOTH, and 8 o'clock satisfies it. And a positional
+    cue ("we're driving under it now", "crossing the Sog") says where you ARE,
+    not which way to look -- any left/right in it usually belongs to something
+    else in the sentence, as in 10.0's "the headland the road is cut into, sea
+    on your left", where "left" is the SEA. Position wins unless a clock is named.
+    """
     c=(cue or "").lower()
-    if 'look back' in c or 'behind' in c or re.search(r'over (your|the) \w+ shoulder', c): return 'back'
-    if 'ahead' in c or '12 o' in c: return 'ahead'
-    if 'left' in c: return 'left'
-    if 'right' in c: return 'right'
-    return None
+    hasclock = re.search(r"\d{1,2}\s*(?:[\u2013-]\s*\d{1,2}\s*)?o.?clock", c)
+    if not hasclock and re.search(r"\b(driving (under|through)|crossing|pulling into|passing)\b", c):
+        return None
+    sides=[]
+    if 'look back' in c or 'behind' in c or re.search(r'over (your|the) \w+ shoulder', c): sides.append('back')
+    if 'ahead' in c or '12 o' in c: sides.append('ahead')
+    if 'left' in c: sides.append('left')
+    if 'right' in c: sides.append('right')
+    return sides or None
 def side_of(d):
     if d>=330 or d<=30: return 'ahead'
     if 30<d<150: return 'right'
@@ -52,8 +64,9 @@ def clock_of(d):
     return 12 if h==0 else h
 def agrees(said, rel):
     gs,gc=side_of(rel),clock_of(rel)
-    return (said==gs or (said=='ahead' and gc in (11,12,1)) or (said=='back' and gc in (5,6,7))
-            or (said=='left' and gc in (7,8,9,10,11)) or (said=='right' and gc in (1,2,3,4,5)))
+    return any(s==gs or (s=='ahead' and gc in (11,12,1)) or (s=='back' and gc in (5,6,7))
+               or (s=='left' and gc in (7,8,9,10,11)) or (s=='right' and gc in (1,2,3,4,5))
+               for s in said)
 
 # photo table, read straight out of the shipped app so this audits what ships
 app=io.open('index.html',encoding='utf-8').read()
@@ -64,6 +77,25 @@ def photokey(t):
     t=''.join(c for c in t if unicodedata.category(c)!='Mn')
     t=t.replace('þ','th').replace('ð','d').replace('æ','ae').lower()
     return re.sub(r'\s+',' ',re.sub(r'[^a-z0-9 -]',' ',t)).strip()
+
+def _cumdist(R):
+    """Cumulative metres along the route, for resolving a block by progress."""
+    cm=[0.0]
+    for i in range(1,len(R)): cm.append(cm[-1]+hav(R[i-1][0],R[i-1][1],R[i][0],R[i][1]))
+    return cm
+def idx_by_progress(cm, pct):
+    """Resolve a block to a route index by its PROGRESS, never by nearest point.
+
+    On an out-and-back tour the same road is driven twice. A nearest-point search
+    picks whichever pass is closer, and on 7.0 that put the checker on the
+    OUTBOUND pass at 25% while judging blocks that fire homeward at 75% --
+    heading 80 degrees instead of 261, which flips left and right and reported
+    three correct cues as wrong. The app places the dot by progress; so do we.
+    """
+    want=cm[-1]*max(0.0,min(100.0,pct))/100.0
+    for i,c in enumerate(cm):
+        if c>=want: return i
+    return len(cm)-1
 
 problems=[]
 for tid in TOURS:
@@ -102,7 +134,7 @@ for tid in TOURS:
             if c and c.get('target'):
                 t=c['target']
                 d=hav(c['pin']['lat'],c['pin']['lon'],t['lat'],t['lon'])/1000
-                pi=min(range(n),key=lambda z:hav(c['pin']['lat'],c['pin']['lon'],R[z][0],R[z][1]))
+                pi=idx_by_progress(_cumdist(R), c['progress'])
                 j=min(pi+3,n-1); i0=max(pi-1,0)
                 trav=brg(R[i0][0],R[i0][1],R[j][0],R[j][1])
                 rel=(brg(c['pin']['lat'],c['pin']['lon'],t['lat'],t['lon'])-trav)%360
@@ -110,7 +142,7 @@ for tid in TOURS:
                 sl=f"→{t['name'][:18]} {d:.1f}km @{h}"
                 said=claim(cue)
                 if said and kind!='stop' and not agrees(said,rel):
-                    flags.append(f"CUE SAYS {said.upper()} BUT GEOMETRY IS {h} O'CLOCK")
+                    flags.append(f"CUE SAYS {'/'.join(said).upper()} BUT GEOMETRY IS {h} O'CLOCK")
                 if d>70: flags.append(f'SIGHTLINE {d:.0f} km — not visible')
             print(f"   {bid:9s} {title[:32]:34s} {pinbit:7s} {photo:22s} {sl}")
             if cue: print(f"             \"{cue[:82]}\"")

@@ -48,15 +48,27 @@ def bearing(a,b,c,d):
     return (math.degrees(math.atan2(y,x))+360)%360
 
 def claim(cue):
+    """Every acceptable side the words allow -- not just the first one found.
+
+    "Look back and left - Ingolfsfjall" is BOTH back and left, and 8 o'clock
+    satisfies it. Reading only the first marker reported that correct cue wrong.
+    """
     c = cue.lower()
     m = re.search(r'(\d{1,2})(?:\s*[–-]\s*\d{1,2})?\s*o.clock', c)
     clock = int(m.group(1)) if m else None
-    if 'look back' in c or 'behind' in c or re.search(r'over (your|the) \w+ shoulder', c): side='back'
-    elif 'ahead' in c or '12 o' in c: side='ahead'
-    elif 'left' in c: side='left'
-    elif 'right' in c: side='right'
-    else: side=None
-    return side, clock
+    # A positional cue ("we're driving under it now", "crossing the Sog") says
+    # where you ARE, not which way to look, and any left/right in it usually
+    # belongs to something else in the sentence -- 10.0's Bulandshofdi reads
+    # "the headland the road is cut into, sea on your left", where "left" is the
+    # SEA. Position wins, unless the cue also names a clock.
+    if clock is None and re.search(r"\b(driving (under|through)|crossing|pulling into|passing)\b", c):
+        return None, None
+    sides = []
+    if 'look back' in c or 'behind' in c or re.search(r'over (your|the) \w+ shoulder', c): sides.append('back')
+    if 'ahead' in c or '12 o' in c: sides.append('ahead')
+    if 'left' in c: sides.append('left')
+    if 'right' in c: sides.append('right')
+    return (sides or None), clock
 
 def clock_of(d): 
     h = round(d/30) % 12
@@ -67,6 +79,25 @@ def side_of(d):
     if 30<d<150: return 'right'
     if 150<=d<=210: return 'back'
     return 'left'
+
+def _cumdist(R):
+    """Cumulative metres along the route, for resolving a block by progress."""
+    cm=[0.0]
+    for i in range(1,len(R)): cm.append(cm[-1]+hav(R[i-1][0],R[i-1][1],R[i][0],R[i][1]))
+    return cm
+def idx_by_progress(cm, pct):
+    """Resolve a block to a route index by its PROGRESS, never by nearest point.
+
+    On an out-and-back tour the same road is driven twice. A nearest-point search
+    picks whichever pass is closer, and on 7.0 that put the checker on the
+    OUTBOUND pass at 25% while judging blocks that fire homeward at 75% --
+    heading 80 degrees instead of 261, which flips left and right and reported
+    three correct cues as wrong. The app places the dot by progress; so do we.
+    """
+    want=cm[-1]*max(0.0,min(100.0,pct))/100.0
+    for i,c in enumerate(cm):
+        if c>=want: return i
+    return len(cm)-1
 
 bad = 0; checked = 0
 
@@ -83,13 +114,13 @@ for tid in _ready_tours():
     C = cues(io.open(f"cues-{tid}.js",encoding="utf-8").read())
     R = route(io.open(f"route-{tid}.js",encoding="utf-8").read())
     B = blocks(io.open(f"script-{tid}.js",encoding="utf-8").read())
-    n = len(R); rows=[]
+    n = len(R); rows=[]; CM=_cumdist(R)
     for c in C:
         t = c.get("target")
         if not t: continue
         checked += 1
         pin = c["pin"]
-        pi = min(range(n), key=lambda i: hav(pin["lat"],pin["lon"],R[i][0],R[i][1]))
+        pi = idx_by_progress(CM, c["progress"])
         j = min(pi+3, n-1); i0 = max(pi-1, 0)
         trav = bearing(R[i0][0],R[i0][1],R[j][0],R[j][1])
         rel = (bearing(pin["lat"],pin["lon"],t["lat"],t["lon"]) - trav) % 360
@@ -98,13 +129,14 @@ for tid in _ready_tours():
         if knd == "stop": continue
         cs, ck = claim(cue)
         if cs is None: continue
-        ok = (cs==gs
-              or (cs=='ahead' and gc in (11,12,1))
-              or (cs=='back'  and gc in (5,6,7))
-              or (cs=='left'  and gc in (7,8,9,10,11))
-              or (cs=='right' and gc in (1,2,3,4,5)))
+        ok = any(s==gs
+                 or (s=='ahead' and gc in (11,12,1))
+                 or (s=='back'  and gc in (5,6,7))
+                 or (s=='left'  and gc in (7,8,9,10,11))
+                 or (s=='right' and gc in (1,2,3,4,5))
+                 for s in cs)
         if not ok:
-            rows.append(f"    {c['id']:9s} {title[:34]:34s} says {cs:5s} -> geometry {gc} o'clock ({gs}), {t['name'][:22]}")
+            rows.append(f"    {c['id']:9s} {title[:34]:34s} says {"/".join(cs):11s} -> geometry {gc} o'clock ({gs}), {t['name'][:22]}")
     if rows:
         bad += len(rows)
         print(f"  {tid}:"); print("\n".join(rows))
