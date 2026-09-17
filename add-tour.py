@@ -116,7 +116,7 @@ print("  sw.js: %d tours cached, VERSION -> gcd%d-v1"
 print("""
 Built and wired. Still to do for %s:
   python3 i18n-strings.py     # re-extract; only genuinely new lines appear
-  python3 i18n-chunks.py 3    # translate the new chunks, then
+  python3 i18n-chunks.py --missing 3   # NEVER without --missing (clobbers)
   python3 i18n-build.py       # validate + rebuild the 20 language packs
   python3 build-single.py     # refresh the one-file backup
 then commit, push, and refresh the gist.""" % TID)

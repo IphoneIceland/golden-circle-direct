@@ -1,2 +1,4 @@
 _to_delete/
 *.bak-*
+__pycache__/
+_backups/

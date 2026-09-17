@@ -117,7 +117,7 @@
   .say i{color:#f4d5a0;font-style:normal;font-family:ui-monospace,Menlo,monospace;font-size:.9em}
   .legln{font-size:.9em;color:#8496a5;margin-top:5px;line-height:1.55}
   .tags{font-size:10px;color:#5b6b7a;margin-top:8px}
-  #map{flex:0 0 34%;box-shadow:0 -14px 18px -6px rgba(14,17,20,.95);z-index:2;min-height:150px;position:relative;border-top:1px solid var(--line)}
+  #map{flex:0 0 34%;box-shadow:0 14px 18px -6px rgba(14,17,20,.95);z-index:2;min-height:150px;position:relative;border-bottom:1px solid var(--line)}
   #langs{display:flex;align-items:center;padding:2px 0 16px}
   #lang{flex:1;min-width:0;appearance:none;-webkit-appearance:none;
         background:rgba(20,20,26,.82) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%23d4a94a' stroke-width='2' fill='none'/></svg>") no-repeat right 14px center;
@@ -198,6 +198,10 @@
     background:var(--panel);text-align:right;letter-spacing:.03em}
   /* The map starts as a strip; a tap grows it back to full height. */
   #map{transition:flex-basis .28s ease,min-height .28s ease}
+  /* iOS-sheet header: swipe up in the script and the whole header folds away;
+     pull down at the very top and it returns. body.hdr-tuck = folded. */
+  body.hdr-tuck #topbar,body.hdr-tuck #track,body.hdr-tuck #steps{display:none}
+  body.hdr-tuck #map:not(.mini){flex-basis:20%;min-height:110px}
   #map.mini{flex:0 0 118px;min-height:118px}
   #mapcover{position:absolute;inset:0;z-index:720;display:none;cursor:pointer;background:none}
   #map.mini #mapcover{display:block}
@@ -257,6 +261,9 @@
   #gpsbtn.on{border-color:var(--accent);color:var(--accent);box-shadow:0 0 14px rgba(212,169,74,.35)}
   #gpsbtn.paused{border-color:var(--accent);color:var(--accent);opacity:.55}
   @keyframes gpspulse{0%{box-shadow:0 0 0 0 rgba(94,200,242,.5)}70%{box-shadow:0 0 0 14px rgba(94,200,242,0)}100%{box-shadow:0 0 0 0 rgba(94,200,242,0)}}
+  .hereptr{width:0;height:0;margin:0 auto;border-left:9px solid transparent;border-right:9px solid transparent;
+    border-bottom:17px solid var(--accent);
+    filter:drop-shadow(0 0 1.5px #fff) drop-shadow(0 0 1px #fff) drop-shadow(0 2px 4px rgba(0,0,0,.95))}
   .heredot{width:12px;height:12px;border-radius:50%;background:var(--accent);
     border:2px solid #fff;box-sizing:border-box;animation:herepulse 2.4s ease-out infinite}
   @keyframes herepulse{0%{box-shadow:0 0 0 0 rgba(212,169,74,.55)}
@@ -328,7 +335,7 @@
     #mapcover,#mapexpand,#mapmin{display:none!important}
     #map.mini #gpsbtn{display:flex}
 
-    .slbl{font-size:13px}
+    .slbl{font-size:calc(13px*var(--slblscale,1))}
   }
   #uptoast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%) translateY(80px);z-index:9999;
   background:#16161a;color:#d4a94a;border:1px solid #d4a94a;border-radius:12px;padding:.7rem 1.1rem;
@@ -337,8 +344,10 @@
 #uptoast.show{transform:translateX(-50%) translateY(0)}
 .sarrow{width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;
   border-bottom:10px solid #d4a94a;opacity:.8}
-.slbl{color:#d4a94a;font:600 11px/1 -apple-system,system-ui,sans-serif;letter-spacing:.08em;
-  text-transform:uppercase;white-space:nowrap;text-shadow:0 1px 3px rgba(0,0,0,.9);opacity:.9}
+.slbl{color:#d4a94a;font:600 calc(11px*var(--slblscale,1))/1 -apple-system,system-ui,sans-serif;letter-spacing:.08em;
+  text-transform:uppercase;white-space:nowrap;background:#16161a;border:1px solid rgba(212,169,74,.55);
+  border-radius:.72em;padding:.36em .72em;box-shadow:0 2px 8px rgba(0,0,0,.55)}
+.slbl2{font-size:calc(9.5px*var(--slblscale,1));letter-spacing:.06em;padding:.32em .63em;border-color:rgba(212,169,74,.4);opacity:.95}
   /* Track cards — same shape as the .trk cards on iguideiceland.is/playlists */
   .blist{list-style:none;margin:0;padding:0}
   .blist>li{margin:0 0 8px;padding-left:1.1em;text-indent:-1.1em}
@@ -438,8 +447,8 @@
   </div>
   <div id="track"></div>
   <div id="steps"></div>
-  <div id="days"></div>
   <div id="map"><div id="zhint">Zoom in further to show place names</div><button id="gpsbtn" title="Follow the bus" aria-label="Follow the bus">➤</button><div id="mapcover" role="button" aria-label="Expand map"></div><button id="mapmin" title="Shrink map" aria-label="Shrink map">⌄</button><span id="mapexpand">TAP TO EXPAND</span></div>
+  <div id="days"></div>
 </div>
 <div id="threads" role="dialog" aria-modal="true" aria-label="Threads">
   <div id="thrhead"><h2>🧵 Threads</h2><button id="thrclose" aria-label="Close">✕</button></div>
@@ -843,7 +852,28 @@ function travelled(pct){
   }
   return out.length>1?out:[GEO[0],GEO[0]];
 }
-const routeLine = L.polyline(travelled(0),{color:"#5ec8f2",weight:4,opacity:.9}).addTo(map);
+// Comet-tail travelled line (10 Sep): one uniform line reads as "route
+// complete" on an out-and-back road, because the morning outbound already
+// painted the tarmac you'll drive home on. Instead the road just behind the
+// bus burns bright and fades with distance — the bright side IS the
+// direction we came from, at any zoom.
+const RLBANDS=[[1e9,.16],[150,.35],[75,.6],[25,.95]];   // faint first, bright drawn last (on top)
+const RL=RLBANDS.map(b=>L.polyline([],{color:"#5ec8f2",weight:4,opacity:b[1]}).addTo(map));
+function setTravelled(pct){
+  if(pct==null){ RL.forEach(l=>l.setLatLngs([])); return; }
+  const want=TOTAL*Math.max(0,Math.min(100,pct))/100;
+  let end=0; while(end<GEO.length-1&&CUM[end]<want) end++;
+  // bands measured in km back from the bus, brightest nearest
+  let from=end;
+  for(let b=RLBANDS.length-1;b>=0;b--){
+    const back=Math.max(0,want-RLBANDS[b][0]);
+    let start=from; while(start>0&&CUM[start-1]>back) start--;
+    RL[b].setLatLngs(start<from?GEO.slice(start,from+1):[]);
+    from=start;
+    if(back<=0){ for(let k=b-1;k>=0;k--) RL[k].setLatLngs([]); break; }
+  }
+}
+setTravelled(0);
 // How far along the road each block sits.
 // Blocks with a pin are anchors. Blocks without one — the story blocks you tell
 // while driving — are spaced evenly between the anchors either side, so the line
@@ -903,10 +933,39 @@ function md(s){ return esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\
 // The story dot: smaller, gold, breathing - and no longer dressed like the GPS dot.
 const HERE = L.marker([0,0],{interactive:false,zIndexOffset:900,pane:"markerPane",
   icon:L.divIcon({className:"",iconSize:[12,12],iconAnchor:[6,6],html:'<div class="heredot"></div>'})});
+// Direction chevron riding just ahead of the here-dot, rotated to the bearing
+// of travel. On an out-and-back road the travelled line runs BOTH sides of the
+// dot by the homebound leg, so the line alone cannot say which way the bus is
+// pointing — the Höfðabrekka lesson, 10 Sep.
+const HEREDIR = L.marker([0,0],{interactive:false,zIndexOffset:899,pane:"markerPane",
+  icon:L.divIcon({className:"",iconSize:[0,0]})});
+function dirIcon(ang){return L.divIcon({className:"",iconSize:[52,52],iconAnchor:[26,26],
+  html:`<div style="width:52px;height:52px;transform:rotate(${ang}deg)"><div class="hereptr"></div></div>`});}
+function travelDirAt(pct){
+  if(pct==null) return null;
+  const want=TOTAL*Math.max(0,Math.min(100,pct))/100;
+  let i=GEO.length-1;
+  for(let k=0;k<GEO.length;k++) if(CUM[k]>=want){ i=k; break; }
+  const j=Math.min(i+4,GEO.length-1);
+  return j>i?brg(GEO[i],GEO[j]):brg(GEO[Math.max(0,i-4)],GEO[i]);
+}
+function pointHere(pt,pct){
+  HERE.setLatLng(pt).addTo(map);
+  const a=travelDirAt(pct);
+  if(a==null){ HEREDIR.remove(); return; }
+  HEREDIR.setLatLng(pt).setIcon(dirIcon(a)).addTo(map);
+}
 // Faint sightline from the bus to whatever the cue says to look at.
-const SIGHT = L.polyline([],{color:"#d4a94a",weight:1.5,opacity:.6,dashArray:"2,7",interactive:false});
-const SIGHTDOT = L.circleMarker([0,0],{radius:4,color:"#d4a94a",weight:1.5,fill:false,opacity:.75,interactive:false});
+const SIGHTC = L.polyline([],{color:"#101418",weight:5.5,opacity:.55,dashArray:"4,6",interactive:false});
+const SIGHT = L.polyline([],{color:"#d4a94a",weight:2.8,opacity:.95,dashArray:"4,6",interactive:false});
+const SIGHTDOTC = L.circleMarker([0,0],{radius:5,color:"#101418",weight:4,fill:false,opacity:.6,interactive:false});
+const SIGHTDOT = L.circleMarker([0,0],{radius:4,color:"#d4a94a",weight:2,fill:false,opacity:.95,interactive:false});
 let SIGHTARROW=null, SIGHTLBL=null;
+// Extra sightlines: a block may name several things at once ("All around —
+// Mosfellsdalur": Egill's farm, the Hrísbrú dig, Laxnes, Gljúfrasteinn).
+// Cue schema: "targets": [{lat,lon,name},...] alongside the primary "target".
+let SIGHTX=[];
+function clearSightExtras(){ SIGHTX.forEach(l=>l.remove()); SIGHTX=[]; }
 function brg(a,b){const r=Math.PI/180,la1=a[0]*r,la2=b[0]*r,dl=(b[1]-a[1])*r;
   return (Math.atan2(Math.sin(dl)*Math.cos(la2),Math.cos(la1)*Math.sin(la2)-Math.sin(la1)*Math.cos(la2)*Math.cos(dl))*180/Math.PI+360)%360;}
 function pointAt(pct){
@@ -919,42 +978,63 @@ function focusBlock(id){
   if(!c||!c.pin){
     // story block: the dot keeps rolling down the road instead of camping on
     // the previous landmark, and the old sightline doesn't linger.
-    SIGHT.remove(); SIGHTDOT.remove();
+    SIGHTC.remove(); SIGHT.remove(); SIGHTDOTC.remove(); SIGHTDOT.remove();
     if(SIGHTARROW){SIGHTARROW.remove();SIGHTARROW=null;}
     if(SIGHTLBL){SIGHTLBL.remove();SIGHTLBL=null;}
+    clearSightExtras();
     const pr=PROG[id];
     if(pr!=null){
       const pt=pointAt(pr);
-      HERE.setLatLng(pt).addTo(map);
+      pointHere(pt,pr);
       map.setView(pt,13,{animate:true,duration:.4});
     }
     return;
   }
-  HERE.setLatLng([c.pin.lat,c.pin.lon]).addTo(map);
+  pointHere([c.pin.lat,c.pin.lon],PROG[id]);
   if(c.target){
+    SIGHTC.setLatLngs([[c.pin.lat,c.pin.lon],[c.target.lat,c.target.lon]]).addTo(map);
     SIGHT.setLatLngs([[c.pin.lat,c.pin.lon],[c.target.lat,c.target.lon]]).addTo(map);
+    SIGHTDOTC.setLatLng([c.target.lat,c.target.lon]).addTo(map);
     SIGHTDOT.setLatLng([c.target.lat,c.target.lon]).addTo(map);
     const ang=brg([c.pin.lat,c.pin.lon],[c.target.lat,c.target.lon]);
     if(SIGHTARROW) SIGHTARROW.remove();
     SIGHTARROW=L.marker([c.target.lat,c.target.lon],{interactive:false,icon:L.divIcon({className:"",iconSize:[10,10],iconAnchor:[5,10],
       html:`<div class="sarrow" style="transform:rotate(${ang}deg);transform-origin:50% 100%"></div>`})}).addTo(map);
     if(SIGHTLBL) SIGHTLBL.remove();
-    SIGHTLBL=c.target.name?L.marker([c.target.lat,c.target.lon],{interactive:false,icon:L.divIcon({className:"",iconSize:[0,0],iconAnchor:[-8,-6],
-      html:`<div class="slbl">${esc(c.target.name)}</div>`})}).addTo(map):null;
+    SIGHTLBL=c.target.name?L.marker([c.target.lat,c.target.lon],{interactive:false,icon:L.divIcon({className:"",iconSize:[0,0],iconAnchor:[0,-10],
+      html:`<div class="slbl" style="transform:translateX(-50%)">${esc(c.target.name)}</div>`})}).addTo(map):null;
+    // Extra targets: one dashed line + dot + label per named thing.
+    // Extras draw LIGHTER than the primary, and their labels stagger
+    // above/below their dots in turn — four pills in a row otherwise
+    // pile into one unreadable heap (the Mosfellsdalur lesson).
+    clearSightExtras();
+    (c.targets||[]).forEach((t,ix)=>{
+      SIGHTX.push(L.polyline([[c.pin.lat,c.pin.lon],[t.lat,t.lon]],{color:"#101418",weight:4.5,opacity:.5,dashArray:"4,6",interactive:false}).addTo(map));
+      SIGHTX.push(L.polyline([[c.pin.lat,c.pin.lon],[t.lat,t.lon]],{color:"#d4a94a",weight:2.2,opacity:.95,dashArray:"4,6",interactive:false}).addTo(map));
+      SIGHTX.push(L.circleMarker([t.lat,t.lon],{radius:4,color:"#101418",weight:3,fill:false,opacity:.5,interactive:false}).addTo(map));
+      SIGHTX.push(L.circleMarker([t.lat,t.lon],{radius:3.5,color:"#d4a94a",weight:2,fill:false,opacity:.9,interactive:false}).addTo(map));
+      const anch=[[0,26],[0,-14]][ix%2];   // alternate just-above / just-below — a pill
+                                           // must stay glued to ITS dot or the map lies
+      if(t.name) SIGHTX.push(L.marker([t.lat,t.lon],{interactive:false,icon:L.divIcon({className:"",iconSize:[0,0],iconAnchor:anch,
+        html:`<div class="slbl slbl2" style="transform:translateX(-50%)">${esc(t.name)}</div>`})}).addTo(map));
+    });
     // Zoom discipline: near targets get framed; far mountains get a steady wide
     // view with the sightline running off-screen toward them - no more lurching
-    // from street level to satellite orbit between two swipes.
-    const tkm=Math.hypot((c.target.lat-c.pin.lat)*111.32,
-                         (c.target.lon-c.pin.lon)*111.32*Math.cos(c.pin.lat*Math.PI/180));
+    // from street level to satellite orbit between two swipes. Frames ALL
+    // named targets when a block carries several.
+    const allT=[c.target].concat(c.targets||[]);
+    const tkm=Math.max(...allT.map(t=>Math.hypot((t.lat-c.pin.lat)*111.32,
+                         (t.lon-c.pin.lon)*111.32*Math.cos(c.pin.lat*Math.PI/180))));
     if(tkm<=8)
-      map.fitBounds(L.latLngBounds([[c.pin.lat,c.pin.lon],[c.target.lat,c.target.lon]]).pad(0.25),
+      map.fitBounds(L.latLngBounds([[c.pin.lat,c.pin.lon]].concat(allT.map(t=>[t.lat,t.lon]))).pad(0.25),
                     {animate:true,duration:.4,maxZoom:14});
     else
       map.setView([c.pin.lat,c.pin.lon],11,{animate:true,duration:.4});
   }else{
-    SIGHT.remove(); SIGHTDOT.remove();
+    SIGHTC.remove(); SIGHT.remove(); SIGHTDOTC.remove(); SIGHTDOT.remove();
     if(SIGHTARROW){SIGHTARROW.remove();SIGHTARROW=null;}
     if(SIGHTLBL){SIGHTLBL.remove();SIGHTLBL=null;}
+    clearSightExtras();
     map.setView([c.pin.lat,c.pin.lon],14,{animate:true,duration:.4});
   }
 }
@@ -1003,7 +1083,37 @@ const STOPPHOTOS={
   "ellidaardalur paradisardalur":{src:"images/drive/ellidaardalur.webp",cr:"Steinninn / CC BY 4.0"},
   "thjorsa":               {src:"images/drive/thjorsa.webp",             cr:"TommyBee / Public domain"},
   "hella":                 {src:"images/drive/hella.webp",               cr:"Steinninn / CC BY 4.0"},
-  "landeyjar plains":      {src:"images/drive/landeyjahofn.webp",        cr:"Szilas / Public domain"}
+  "landeyjar plains":      {src:"images/drive/landeyjahofn.webp",        cr:"Szilas / Public domain"},
+
+  // --- 4.0 Golden Circle, drive legs (10 Sep 2026) -----------------------------
+  // Every one of these is a thing you only get through glass on this route. Keys
+  // are the photoKey() of the BLOCK TITLE, which is why "ellidaardalur" is listed
+  // separately from "ellidaardalur paradisardalur": 4.0 titles that block without
+  // the second name, so the picture that already existed had never once rendered.
+  "ellidaardalur":         {src:"images/drive/ellidaardalur.webp",      cr:"Steinninn / CC BY 4.0"},
+  "hveragerdi":            {src:"images/drive/hveragerdi.webp",         cr:"Progresschrome / CC BY 3.0"},
+  "ingolfur arnarson":     {src:"images/drive/ingolfsfjall.webp",       cr:"Bromr / CC BY-SA 3.0"},
+  "selfoss":               {src:"images/drive/selfoss.webp",            cr:"Steinninn / CC BY 4.0"},
+  "olfusa":                {src:"images/drive/olfusa.webp",             cr:"Olga Ernst / CC BY-SA 4.0"},
+  "sog river":             {src:"images/drive/sog.webp",                cr:"Bromr / CC BY-SA 3.0"},
+  "grimsnes kerid":        {src:"images/drive/kerid.webp",              cr:"Gerd Eichmann / CC BY-SA 4.0"},
+  "bruara":                {src:"images/drive/bruara.webp",             cr:"Roman Zacharij / Public domain"},
+  "skalholt":              {src:"images/drive/skalholt.webp",           cr:"Qaswed / CC BY-SA 4.0"},
+  "icelandic horses":      {src:"images/drive/icelandic-horses.webp",   cr:"David Blaikie / CC BY 2.0"},
+  "tungufljot":            {src:"images/drive/tungufljot.webp",         cr:"Steinninn / CC BY 4.0"},
+  "haukadalur":            {src:"images/drive/haukadalur.webp",         cr:"Diego Delso / CC BY-SA 4.0"},
+  "laugarvatn apavatn":    {src:"images/drive/laugarvatn.webp",         cr:"Andreas Tille / CC BY-SA 4.0"},
+  "hekla":                 {src:"images/drive/hekla.webp",              cr:"Hansueli Krapf / CC BY-SA 3.0"},
+  "mosfellsdalur":         {src:"images/drive/mosfellsdalur.webp",      cr:"Stig Nygaard / CC BY 2.0"},
+  "mosfellsbaer":          {src:"images/drive/mosfellsbaer.webp",       cr:"Bromr / CC BY-SA 3.0"},
+  // One block, one title, one key: the Kjalarnes/Kjalarnesþing split was merged on
+  // 17 Sep 2026 and every tour now titles it "Kjalarnesþing". The alias that
+  // papered over the split is gone — _photocheck.py flagged it as dead the moment
+  // the merge landed, which is exactly what it is for.
+  "kjalarnesthing":        {src:"images/drive/kjalarnes.webp",          cr:"Hansueli Krapf / CC BY-SA 3.0"},
+  "mount esja":            {src:"images/drive/esja.webp",               cr:"Axel Kristinsson / CC BY 2.0"},
+  "kristnitokuhraun":      {src:"images/drive/kristnitokuhraun.webp",   cr:"Olga Ernst / CC BY-SA 4.0"},
+  "the cave people":       {src:"images/drive/laugarvatnshellir.webp",  cr:"Steinninn / CC BY 4.0"}
 };
 /* Strip emoji, accents and punctuation so "\ud83d\udca7 Sel\u00f0jalandsfoss & Glj\u00fafrab\u00fai"
    and "Seljalandsfoss & Gljufrabui" land on the same key. */
@@ -1042,7 +1152,6 @@ function blockRow(b, kind){
       ${(b.bullets&&b.bullets.length)?`<ul class="blist">${b.bullets.map(x=>trkCard(x)||actCard(x)||`<li>${md(x)}</li>`).join("")}</ul>`:""}
       ${b.point?`<div class="pt">${md(b.point)}</div>`:""}
       ${b.mic?`<div class="mc">${md(b.mic)}</div>`:""}
-      ${b.weather?`<div class="wx">${md(b.weather)}</div>`:""}
       ${say?`<details class="say"><summary><span class="chev">▶</span><span class="sublab">How to say it</span><span class="cnt">${(b.say||[]).length}</span></summary>${say}</details>`:""}
     </div>`;
 }
@@ -1155,7 +1264,7 @@ function render(){
   list.querySelectorAll(".stop[data-key]").forEach(r=>r.classList.add("open"));
   list.scrollTop=0;
   paintTrack();
-  routeLine.setLatLngs(travelled(PROG[b.id]));
+  setTravelled(PROG[b.id]);
   focusBlock(b.id);
 }
 // ---- 🧵 Threads ------------------------------------------------------------
@@ -1351,6 +1460,16 @@ document.addEventListener("keydown",e=>{
   if(e.key==="ArrowRight"){e.preventDefault();step(1);}
 });
 map.on("zoomend",()=>{document.getElementById("zhint").style.display=map.getZoom()>=11?"none":"block";});
+// Sightline labels breathe with the zoom: tiny at country scale, full-size
+// framed on a cue. Standard for ALL sightline pills (primary + extras).
+function lblScale(){
+  const z=map.getZoom();
+  // READABLE (1x) at the typical framed view (z13); smaller only when truly
+  // zoomed out (0.6x at country scale); up to 1.7x pushed in close.
+  const sc=z<=13 ? Math.max(.6,.6+(z-9)*.1) : Math.min(1.7,1+(z-13)*.2);
+  document.getElementById("map").style.setProperty("--slblscale",sc.toFixed(2));
+}
+map.on("zoomend",lblScale); lblScale();
 // Map starts small and grows on a tap; the chevron tucks it away again.
 (function(){
   const m=document.getElementById("map");
@@ -1366,7 +1485,11 @@ map.on("zoomend",()=>{document.getElementById("zhint").style.display=map.getZoom
   document.getElementById("mapmin").onclick=()=>{ mini=true; apply(); };
   apply();
 })();
-let __rsz;window.addEventListener("resize",()=>{clearTimeout(__rsz);__rsz=setTimeout(()=>map.invalidateSize(),200);});
+// After ANY size change (rotation, split view, header fold, a window that was
+// hidden while the block rendered) the map re-frames the current cue — a
+// fitBounds computed against a zero-size canvas otherwise leaves you in orbit.
+let __rsz;window.addEventListener("resize",()=>{clearTimeout(__rsz);__rsz=setTimeout(()=>{ map.invalidateSize();
+  try{ focusBlock(S.sections[SI].blocks[BI].id); }catch(e){} },200);});
 setTimeout(()=>map.invalidateSize(),400);
 
 
@@ -1432,6 +1555,41 @@ if("serviceWorker" in navigator) window.addEventListener("load",()=>{
   }
   tick(); setInterval(tick,30000);
   document.addEventListener('visibilitychange',function(){ if(!document.hidden) tick() });
+})();
+</script>
+<script>
+/* iOS 26 sheet behaviour: swipe up in the script pane and the header
+   (buttons, stops row, dots) folds away - more words, more map. Pull down
+   when you are already at the top and it slides back. */
+(function(){
+  const pane=document.getElementById("days");
+  if(!pane) return;
+  function tuck(on){
+    if(document.body.classList.contains("hdr-tuck")===on) return;
+    document.body.classList.toggle("hdr-tuck",on);
+    /* the Leaflet map lives in a closure - poke it via the app's own
+       debounced resize handler, once mid-transition, once after. */
+    setTimeout(()=>window.dispatchEvent(new Event("resize")),150);
+    setTimeout(()=>window.dispatchEvent(new Event("resize")),420);
+  }
+  let y0=null,x0=null,top0=0;
+  pane.addEventListener("touchstart",e=>{
+    if(e.touches.length!==1){y0=null;return;}
+    y0=e.touches[0].clientY;x0=e.touches[0].clientX;top0=pane.scrollTop;
+  },{passive:true});
+  pane.addEventListener("touchmove",e=>{
+    if(y0==null||e.touches.length!==1) return;
+    const dy=e.touches[0].clientY-y0,dx=e.touches[0].clientX-x0;
+    if(Math.abs(dx)>Math.abs(dy)) return;              /* sideways = block swipe */
+    if(dy<-24){tuck(true);y0=null;}                    /* swipe up: fold away */
+    else if(dy>24&&top0<=2&&pane.scrollTop<=2){tuck(false);y0=null;} /* rubber-band at top: return */
+  },{passive:true});
+  pane.addEventListener("wheel",e=>{                   /* trackpad fallback */
+    if(Math.abs(e.deltaX)>=Math.abs(e.deltaY)) return;
+    if(e.deltaY>18) tuck(true);
+    else if(e.deltaY<-14&&pane.scrollTop<=2) tuck(false);
+  },{passive:true});
+  pane.addEventListener("scroll",()=>{if(pane.scrollTop>90)tuck(true);},{passive:true});
 })();
 </script>
 </body>

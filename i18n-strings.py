@@ -69,9 +69,20 @@ console.log(JSON.stringify(out));
 raw = json.loads(subprocess.run(["node", "-e", NODE], capture_output=True,
                                 text=True, check=True).stdout)
 
+# PROPER NOUNS — names, not prose. A playlist is called what it is called in
+# every language, the same way Ölgerðin is. Kept out of the corpus so they can
+# never be reported as missing translations, and so no translator "helpfully"
+# renders "Rícharður's Mix" as "Richard's Mixture".
+NEVER_TRANSLATE = {
+    "🎧 Iceland Through the Years",
+    "🎧 Rícharður's Mix",
+}
+
 seen, corpus = {}, []
 for r in raw:
     t = r["t"]
+    if isinstance(t, str) and t.strip() in NEVER_TRANSLATE:
+        continue
     if not isinstance(t, str) or not t.strip():
         continue
     h = hashlib.sha1(t.encode("utf-8")).hexdigest()[:10]

@@ -36,6 +36,12 @@ PLACES = {
   "LAEK":"Lækjargata, Reykjavík, Iceland", "SELT":"Seltún, Iceland",
   "FAGR":"Fagradalsfjall, Iceland", "GRIN":"Grindavík, Iceland",
   "GUNN":"Gunnuhver, Iceland", "RVIT":"Reykjanesviti, Iceland",
+  # 12.0 Reykjanes North — the airport transfer. One-way, KEF to town, all of it
+  # on Reykjanesbraut (Route 41). Every waypoint here is ON that road on purpose:
+  # routing via Svartsengi or Grindavík would drag the line 14 km off the coach's
+  # actual path to places it only drives PAST.
+  "KEFA":"Keflavík International Airport, Iceland", "NJAR":"Njarðvík, Reykjanesbær, Iceland",
+  "VOGA":"Vogar, Iceland", "HAFN":"Hafnarfjörður, Iceland",
 }
 NICE = {"BSI":"BSÍ Bus Terminal","HVOL":"Hvolsvöllur","SOLH":"Sólheimajökull",
         "REYN":"Reynisfjara","VIK":"Vík í Mýrdal","SKOG":"Skógafoss","SELJ":"Seljalandsfoss",
@@ -47,7 +53,8 @@ NICE = {"BSI":"BSÍ Bus Terminal","HVOL":"Hvolsvöllur","SOLH":"Sólheimajökull
         "HELN":"Hellnar","DJUP":"Djúpalónssandur","VATN":"Vatnshellir","OLAF":"Ólafsvík",
         "KIRF":"Kirkjufell","STYK":"Stykkishólmur","BERS":"Berserkjahraun","SELV":"Selvallafoss",
         "LAEK":"Lækjargata","SELT":"Seltún","FAGR":"Fagradalsfjall","GRIN":"Grindavík",
-        "GUNN":"Gunnuhver","RVIT":"Reykjanesviti"}
+        "GUNN":"Gunnuhver","RVIT":"Reykjanesviti",
+        "KEFA":"Keflavíkurflugvöllur","NJAR":"Njarðvík","VOGA":"Vogar","HAFN":"Hafnarfjörður"}
 
 # Order matters: this is a substring match, first hit wins. Reykjavík sits above
 # Vík so a heading that ends "→ Reykjavík" can never be read as the Vík stop,
@@ -66,6 +73,10 @@ MATCH = [("Reykjavík","BSI"),("BSÍ","BSI"),
          ("Stykkishólmur","STYK"),("Berserkjahraun","BERS"),
          ("Reykjanesviti","RVIT"),("Lækjargata","LAEK"),("Seltún","SELT"),
          ("Fagradalsfjall","FAGR"),("Grindavík","GRIN"),("Gunnuhver","GUNN"),
+         # 12.0 Reykjanes North. Safe under the "Vík" rule below because the "vík"
+         # in Njarðvík and Keflavík is lower-case and this match is case-sensitive.
+         ("Keflavíkurflugvöllur","KEFA"),("Keflavík Airport","KEFA"),
+         ("Njarðvík","NJAR"),("Vogar","VOGA"),("Hafnarfjörður","HAFN"),
          ("Vík","VIK")]
 
 # Anything in here is pinned by hand and never geocoded.
@@ -113,18 +124,30 @@ def keyfor(t):
         if w in t: return k
     return None
 
-# Not every tour starts at BSÍ. 14.0 is picked up on Lækjargata.
-START = {"14.0":"LAEK"}
+# Not every tour starts at BSÍ. 14.0 is picked up on Lækjargata, 12.0 at the
+# airport.
+START = {"14.0":"LAEK", "12.0":"KEFA"}
 HOME  = START.get(tag, "BSI")
+
+# ...and not every tour comes back. Every tour here is a LOOP: it is assumed to
+# finish where it started, so HOME is appended to the end of the sequence below.
+# 12.0 Reykjanes North is a one-way airport transfer — it starts at Keflavík and
+# ends in Reykjavík and never returns. Appending HOME would have drawn the line
+# 50 km back down the peninsula to the airport. Opt-in only, so no existing tour
+# changes shape.
+ONE_WAY = {"12.0"}
 
 # stop order, straight out of the document's section headings
 seq=[HOME]
 for sec in S["sections"]:
     dest = sec["title"].split("→")[-1] if "→" in sec["title"] else sec["title"]
     k=keyfor(dest)
-    if k=="BSI" and HOME!="BSI": k=HOME
+    # On a loop that is picked up away from BSÍ, a closing "→ Reykjavík" means
+    # "back to where we collected you". On a ONE-WAY transfer it means the actual
+    # destination, so leave it alone — 12.0 really does end in Reykjavík.
+    if k=="BSI" and HOME!="BSI" and tag not in ONE_WAY: k=HOME
     if k and k!=seq[-1]: seq.append(k)
-if seq[-1]!=HOME: seq.append(HOME)
+if seq[-1]!=HOME and tag not in ONE_WAY: seq.append(HOME)
 VIA = {"1.0":[("GULL","SELF")], "2.0":[("GULL","SELF")], "3.0":[("GULL","SELF")]}
 for after, ins in VIA.get(tag, []):
     if after in seq and ins not in seq:

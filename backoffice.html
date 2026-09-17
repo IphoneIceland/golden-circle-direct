@@ -7,23 +7,24 @@
 <meta name="theme-color" content="#0d0d0f">
 <title>iGuide — Back Office</title>
 <style>
-@font-face{font-family:'Norse';src:url('fonts/NorseBold.woff2') format('woff2');font-weight:700;font-display:block}
+@font-face{font-family:'Norse';src:url('/app/fonts/NorseBold.woff2') format('woff2');font-weight:700;font-display:block}
 :root{--bg:#0d0d0f;--panel:#14141a;--panel2:#1a1a20;--line:rgba(244,240,230,.14);
       --ink:#f4f0e6;--mute:#cbc4b0;--dim:#837e6f;--accent:#d4a94a;--accent-2:#b48a2f;
+      --warn:#e07a5f;
       --sans:"Inter",ui-sans-serif,system-ui,-apple-system,sans-serif;--head:56px}
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;font:14px/1.5 var(--sans);color:var(--ink);-webkit-text-size-adjust:100%}
 body{background:
   radial-gradient(ellipse at 100% 0%, rgba(212,169,74,.20) 0%, rgba(13,13,15,0) 55%),
   linear-gradient(160deg, rgba(13,13,15,.94) 0%, rgba(26,21,18,.9) 45%, rgba(58,42,18,.72) 100%),
-  var(--bg) url("images/hero-road.webp") center/cover fixed no-repeat}
+  var(--bg) url("/app/images/hero-road.webp") center/cover fixed no-repeat}
 
 /* ── PIN gate: the site's front door, not a browser dialog ── */
 #gate{position:fixed;inset:0;z-index:200;display:flex;flex-direction:column;align-items:center;
   justify-content:center;gap:15px;text-align:center;padding:28px;
   background:radial-gradient(ellipse at 50% 18%, rgba(212,169,74,.16) 0%, rgba(13,13,15,0) 60%),
     linear-gradient(160deg,rgba(13,13,15,.96),rgba(26,21,18,.96)),
-    var(--bg) url("images/hero-road.webp") center/cover no-repeat}
+    var(--bg) url("/app/images/hero-road.webp") center/cover no-repeat}
 #gate img{width:92px;height:92px;border-radius:50%;box-shadow:0 8px 30px rgba(0,0,0,.6)}
 #gate h1{margin:4px 0 0;font:700 30px 'Norse',Georgia,serif;color:var(--accent);letter-spacing:.04em}
 #gate p{margin:0;color:var(--mute);font-size:14px}
@@ -32,7 +33,7 @@ body{background:
 #gatepin:focus{outline:none;border-color:var(--accent)}
 #gatego{background:var(--accent);border:1px solid var(--accent);color:#121110;font:700 15px var(--sans);
   border-radius:12px;padding:12px 32px;cursor:pointer}
-#gateerr{color:#e07a5f;font-size:13px;min-height:1.2em}
+#gateerr{color:var(--warn);font-size:13px;min-height:1.2em}
 
 /* ── header: the website's own brand lockup ── */
 #top{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:12px;padding:8px 14px;
@@ -45,14 +46,52 @@ body{background:
 #top .spacer{flex:1}
 #top .n{color:var(--dim);font-size:12px;white-space:nowrap}
 
-/* ── the bit that was missing: what am I meant to do here ── */
-#steps{display:flex;gap:8px;padding:12px 14px 0;flex-wrap:wrap}
-.step{display:flex;align-items:center;gap:8px;background:rgba(20,20,26,.66);border:1px solid var(--line);
-  border-radius:11px;padding:7px 12px;font-size:12.5px;color:var(--mute)}
-.step b{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;
-  background:rgba(212,169,74,.16);color:var(--accent);font:700 11px var(--sans);flex:none}
-.step.done{border-color:rgba(212,169,74,.5);color:var(--ink)}
-.step.done b{background:var(--accent);color:#121110}
+/* thin gold hairline under the header while a tour is being fetched */
+#loadbar{position:fixed;top:var(--head);left:0;height:2px;width:0;z-index:45;background:var(--accent);
+  transition:width .25s ease,opacity .4s ease;opacity:0}
+#loadbar.on{opacity:1}
+
+#modes{display:flex;gap:8px;padding:11px 14px 0}
+#modes button{background:rgba(20,20,26,.72);border:1px solid var(--line);color:var(--mute);
+  border-radius:11px;padding:8px 16px;font:700 13px var(--sans);cursor:pointer}
+#modes button.on{border-color:var(--accent);color:var(--accent);background:rgba(212,169,74,.12)}
+
+/* ── THE MATRIX. Blocks down the side, tours across the top. One tick per
+      cell, one save for the lot. Sticky first column and sticky header, or
+      you lose track of which row you are on by tour 6. ── */
+#matrixwrap{display:none;flex-direction:column;margin:12px 14px 16px;background:rgba(16,16,20,.74);
+  border:1px solid var(--line);border-radius:16px;overflow:hidden}
+body.matrix #matrixwrap{display:flex}
+body.matrix #wrap,body.matrix #tabs,body.matrix #tourbar{display:none}
+#mxqwrap{padding:9px 12px;border-bottom:1px solid var(--line)}
+#mxq{width:100%;background:rgba(20,20,26,.8);border:1px solid var(--line);border-radius:10px;
+  color:var(--ink);padding:9px 11px;font:inherit}
+#mxq:focus{outline:none;border-color:var(--accent-2)}
+#matrixscroll{overflow:auto;max-height:calc(100vh - var(--head) - 210px)}
+#matrix{border-collapse:separate;border-spacing:0;width:max-content;min-width:100%}
+#matrix th,#matrix td{padding:0;border-bottom:1px solid rgba(244,240,230,.07)}
+#matrix thead th{position:sticky;top:0;z-index:3;background:rgba(22,22,28,.98);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);padding:9px 6px;font:700 11px var(--sans);
+  color:var(--accent);white-space:nowrap;text-align:center;min-width:58px;cursor:pointer}
+#matrix thead th.rowhead{position:sticky;left:0;z-index:4;text-align:left;padding-left:12px;
+  min-width:clamp(220px,32vw,420px);cursor:default}
+#matrix thead th small{display:block;color:var(--dim);font-weight:400;font-size:10px}
+#matrix td.rowhead{position:sticky;left:0;z-index:2;background:rgba(18,18,23,.98);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  padding:7px 10px 7px 12px;font-size:12.5px;line-height:1.35;
+  border-right:1px solid var(--line)}
+#matrix td.rowhead b{font-weight:600}
+#matrix td.rowhead span{display:block;color:var(--dim);font-size:10.5px}
+#matrix tbody tr:hover td{background:rgba(212,169,74,.05)}
+#matrix tbody tr:hover td.rowhead{background:rgba(28,26,22,.99)}
+#matrix td.cell{text-align:center;cursor:pointer}
+#matrix td.cell i{display:inline-block;width:19px;height:19px;border:1.5px solid var(--dim);
+  border-radius:6px;vertical-align:middle;transition:background .1s,border-color .1s}
+#matrix td.cell.on i{background:var(--accent);border-color:var(--accent)}
+#matrix td.cell.chg i{box-shadow:0 0 0 3px rgba(224,122,95,.45)}
+#matrix td.cell:hover i{border-color:var(--accent)}
+#mxdirty{color:var(--warn)}
 
 #tourbar{display:flex;gap:8px;padding:11px 14px;overflow-x:auto;scrollbar-width:thin}
 #tourbar::-webkit-scrollbar{height:6px}
@@ -90,6 +129,25 @@ body{background:
   color:var(--dim);cursor:pointer;font-size:15px;padding:2px 7px;display:none}
 #q:not(:placeholder-shown)+#qx{display:block}
 
+/* ── SECTIONS. 414 blocks in one flat scroll was the structure problem.
+      A section is the unit the route builder geocodes, so it is the unit
+      the picker shows. Sticky header, own count, own tick-all, collapsible. ── */
+.secgrp{margin:0 0 10px}
+.sechd{position:sticky;top:-10px;z-index:5;display:flex;align-items:center;gap:9px;cursor:pointer;
+  background:rgba(22,22,28,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  border:1px solid var(--line);border-radius:10px;padding:7px 10px;margin:0 0 7px}
+.sechd:hover{border-color:rgba(212,169,74,.4)}
+.sechd .tw{flex:1;min-width:0}
+.sechd .st{display:block;font:700 13px var(--sans);color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sechd .sk{display:block;color:var(--dim);font-size:11px;line-height:1.35}
+.sechd .cnt{flex:none;color:var(--dim);font-size:11px;white-space:nowrap}
+.sechd .cnt b{color:var(--accent)}
+.sechd .car{flex:none;color:var(--dim);font-size:11px;transition:transform .15s;transform:rotate(90deg)}
+.secgrp.shut .car{transform:rotate(0deg)}
+.secgrp.shut .secbody{display:none}
+.sechd .all{flex:none}
+.sechd.full{border-color:rgba(212,169,74,.55);background:rgba(212,169,74,.10)}
+
 .blk{background:rgba(20,20,26,.7);border:1px solid var(--line);border-radius:12px;padding:9px 11px;
   margin:0 0 7px;display:flex;gap:11px;align-items:flex-start;cursor:pointer}
 .blk:hover{border-color:rgba(212,169,74,.4)}
@@ -120,6 +178,16 @@ body{background:
 .pick .ord{flex:none;color:var(--accent);font:700 12px var(--sans);min-width:26px}
 .pick .t{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px}
 .pick .src{color:var(--dim);font-size:11px}
+.pick.split{border-color:rgba(224,122,95,.55)}
+.pick.split .src{color:var(--warn)}
+
+/* the section rule, said out loud instead of discovered at build time */
+#ordwarn{display:none;margin:0 10px 10px;border:1px solid rgba(224,122,95,.5);background:rgba(224,122,95,.10);
+  border-radius:10px;padding:9px 11px;font-size:12px;color:var(--mute);line-height:1.5}
+#ordwarn.on{display:block}
+#ordwarn b{color:var(--warn)}
+#ordwarn button{margin-top:7px}
+
 button.mini{background:rgba(26,26,32,.9);border:1px solid var(--line);color:var(--mute);border-radius:8px;
   cursor:pointer;font:inherit;padding:3px 9px;font-size:12px;flex:none}
 button.mini:hover{border-color:var(--accent);color:var(--accent)}
@@ -130,7 +198,7 @@ button.mini:hover{border-color:var(--accent);color:var(--accent)}
   padding:3px 5px 3px 11px;font-size:12px;display:flex;align-items:center;gap:4px}
 .savedchip b{color:var(--accent);font-weight:700}
 .savedchip button{background:none;border:0;color:var(--dim);cursor:pointer;font-size:13px;padding:0 4px}
-.savedchip button:hover{color:#e07a5f}
+.savedchip button:hover{color:var(--warn)}
 .savedchip .ld{cursor:pointer}
 
 #meta{padding:11px 14px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:9px;align-items:center}
@@ -161,13 +229,14 @@ button.mini:hover{border-color:var(--accent);color:var(--accent)}
   body:not(.show-custom) #custom{display:none}
   .colbody{max-height:none}
   #top .tag{display:none}
+  .sechd{top:0}
 }
 </style>
 </head>
 <body>
 
 <div id="gate">
-  <img src="images/logo-crest.webp" alt="">
+  <img src="/app/images/logo-crest.webp" alt="">
   <h1>Back Office</h1>
   <p>Ritchie only. Enter the PIN.</p>
   <input id="gatepin" type="password" inputmode="numeric" autocomplete="off" maxlength="12" placeholder="••••••">
@@ -176,21 +245,32 @@ button.mini:hover{border-color:var(--accent);color:var(--accent)}
 </div>
 
 <div id="top">
-  <img class="crest" src="images/logo-crest.webp" alt="">
-  <img class="logo" src="images/iguide-logo-stacked.svg" alt="iGuide Iceland">
+  <img class="crest" src="/app/images/logo-crest.webp" alt="">
+  <img class="logo" src="/app/images/iguide-logo-stacked.svg" alt="iGuide Iceland">
   <span class="tag">BACK OFFICE</span>
   <span class="spacer"></span>
   <span class="n" id="stat">loading…</span>
   <span class="n" id="autosave"></span>
 </div>
+<div id="loadbar"></div>
 
-<div id="steps">
-  <div class="step" id="s1"><b>1</b> Pick a tour</div>
-  <div class="step" id="s2"><b>2</b> Tick the blocks you want</div>
-  <div class="step" id="s3"><b>3</b> Name it and download</div>
+<div id="modes">
+  <button id="modeBuild" class="on">Build one tour</button>
+  <button id="modeMatrix">All tours at once</button>
 </div>
 
 <div id="tourbar"></div>
+
+<div id="matrixwrap">
+  <div class="colhead">Every block · every tour <span class="n" id="mxcount"></span>
+    <span class="spacer"></span>
+    <span class="n" id="mxdirty"></span>
+    <button class="mini" id="mxreset">Undo changes</button>
+    <button class="mini" id="mxsave">Save plan</button>
+  </div>
+  <div id="mxqwrap"><input id="mxq" placeholder="Search blocks…"></div>
+  <div id="matrixscroll"><table id="matrix"></table></div>
+</div>
 
 <div id="tabs">
   <button id="tabBlocks" class="on">Script blocks</button>
@@ -198,9 +278,11 @@ button.mini:hover{border-color:var(--accent);color:var(--accent)}
 </div>
 
 <div id="wrap">
+
   <div class="col" id="blocks">
     <div class="colhead">Script blocks <span class="n" id="bcount"></span>
       <span class="spacer"></span>
+      <button class="mini" id="fold">Collapse all</button>
       <button class="mini" id="allon">Tick all</button>
       <button class="mini" id="alloff">Clear</button>
     </div>
@@ -217,6 +299,7 @@ button.mini:hover{border-color:var(--accent);color:var(--accent)}
     <div class="colhead">Your tour <span class="n" id="ccount"></span>
       <span class="spacer"></span><span class="n" id="mins"></span>
     </div>
+    <div id="ordwarn"></div>
     <div class="colbody" id="picklist"></div>
     <div id="saved"><span class="lbl">Saved:</span><span id="savedlist"></span></div>
     <div id="meta">
@@ -257,26 +340,99 @@ const BACKOFFICE_PIN="731905";
      /editor/script-*.js, all 404, so the picker loaded zero tours. -->
 <script src="/app/tours.js"></script>
 <script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   THE BACK OFFICE — one brain, in four parts:
+     1. LIBRARY   loading tours, on demand, never all 1.18 MB up front
+     2. BLOCKS    the left column, grouped by section (the unit the router pins)
+     3. BASKET    the right column: order, warnings, drag, save
+     4. EXPORT    the file, unchanged in shape — add-tour.py depends on it
+   There used to be a second script down here that monkey-patched afterChange()
+   and grew grips with a MutationObserver. Two brains arguing is how the map app
+   got its three-scripts-write-!important problem. There is now one.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
 const TOURS = window.__TOURS__.filter(t=>t.ready!==false);
-const LIB   = {};            // tour id -> {title, sections}
-let PICKS   = [];            // [{tour, si, bi}]  — order = tour order
+const LIB   = {};            // tour id -> {title, sections}   (lazily filled)
+const PEND  = {};            // tour id -> in-flight promise
+let BOOK    = [];            // THE LIBRARY: one entry per block, 185 of them
+let PICKS   = [];            // order = the order you drive it
+let SHUT    = new Set();     // collapsed section keys
 let CUR = null, Q = "";
 
 const $   = id=>document.getElementById(id);
 const esc = s=>(s||"").replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
-const key = p=>p.tour+"|"+p.si+"|"+p.bi;
+
+/* A pick is either a LIBRARY block {lib:n} — the deduped one-of-each list — or
+   a block read straight out of one tour {tour,si,bi}. Both live in the same
+   basket, so everything downstream goes through these two. */
+const key = p=>p.lib!=null ? "lib|"+p.lib : p.tour+"|"+p.si+"|"+p.bi;
+const skey= p=>p.lib!=null ? "lib|"+(BOOK[p.lib]||{}).section : p.tour+"|"+p.si;
 const DRAFT="bo-draft", STORE="bo-saved";
 
 function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("on");
   clearTimeout(toast._t); toast._t=setTimeout(()=>t.classList.remove("on"),1900); }
 
+/* ── 1. LIBRARY ────────────────────────────────────────────────────────────
+   Ten scripts, 86–141 KB each, 1.18 MB the lot. The old boot() awaited every
+   one of them before painting a single pixel — on a kerbside 4G phone that is
+   a blank gold screen for the best part of a minute. Now: fetch the tour you
+   asked for, and only that one. ★ All tours pulls the rest in the background. */
 function loadScript(src){return new Promise((ok,bad)=>{const e=document.createElement("script");
   e.src=src;e.onload=ok;e.onerror=()=>bad(new Error(src));document.head.appendChild(e);});}
+
+let inflight=0;
+function bar(on){
+  inflight=Math.max(0,inflight+(on?1:-1));
+  const b=$("loadbar");
+  if(inflight){ b.classList.add("on"); b.style.width="70%"; }
+  else{ b.style.width="100%"; setTimeout(()=>{b.classList.remove("on"); b.style.width="0";},260); }
+}
+
+function ensureTour(id){
+  if(LIB[id]) return Promise.resolve(LIB[id]);
+  if(PEND[id]) return PEND[id];
+  bar(true);
+  PEND[id] = loadScript("/app/script-"+id+".js").then(()=>{
+    LIB[id]=JSON.parse(JSON.stringify(window.__SCRIPT__));
+    bar(false); delete PEND[id]; return LIB[id];
+  }).catch(e=>{
+    bar(false); delete PEND[id];
+    toast("Tour "+id+" would not load"); throw e;
+  });
+  return PEND[id];
+}
+/* ★ THE LIBRARY. 414 blocks on disk are 185 actual blocks — "Three Names to
+   Keep in Your Pocket" was six of them, one per tour that uses it. blocks.json
+   holds one entry each, built by _onecopy.py, carrying the list of tours that
+   use it. One fetch, one list, no ten-script download. */
+let BOOKP=null;
+function ensureBook(){
+  if(BOOK.length) return Promise.resolve(BOOK);
+  if(BOOKP) return BOOKP;
+  bar(true);
+  BOOKP = fetch("/app/blocks.json")
+    .then(r=>{ if(!r.ok) throw new Error("blocks.json "+r.status); return r.json(); })
+    .then(j=>{ BOOK=j; bar(false); return BOOK; })
+    .catch(e=>{ bar(false); BOOKP=null; toast("Library would not load"); throw e; });
+  return BOOKP;
+}
+
+/* Header count comes from tours.js, which knows the totals without the files. */
+function libStat(){
+  if(CUR==="*") return BOOK.length ? BOOK.length+" blocks · one of each" : "loading library…";
+  const loaded=TOURS.filter(t=>LIB[t.id]).length;
+  const n=TOURS.reduce((a,t)=>a+(LIB[t.id]?countOf(t.id):(t.blocks||0)),0);
+  return TOURS.length+" tours · "+n+" blocks · "+loaded+" loaded";
+}
+function countOf(tid){
+  return (LIB[tid]||{sections:[]}).sections.reduce((a,s)=>a+s.blocks.length,0);
+}
 
 /* Block reference: tour 1.0 -> its blocks are 1.1, 1.2, 1.3 … */
 function refOf(tid, n){ return String(tid).split(".")[0] + "." + n; }
 
-/* Flat, ordered list of every block in a tour, numbered the way Ritchie counts. */
+/* Flat, ordered list of every block in a tour, numbered the way Ritchie counts.
+   Unchanged on purpose: these refs are what he reads off the page. */
 function blocksOf(tid){
   const out=[]; let n=0;
   (LIB[tid]||{sections:[]}).sections.forEach((s,si)=>s.blocks.forEach((b,bi)=>{
@@ -286,15 +442,16 @@ function blocksOf(tid){
 }
 
 async function boot(){
-  for(const t of TOURS){
-    await loadScript("/app/script-"+t.id+".js");
-    LIB[t.id]=JSON.parse(JSON.stringify(window.__SCRIPT__));
-  }
-  let n=0; Object.values(LIB).forEach(S=>S.sections.forEach(s=>n+=s.blocks.length));
-  $("stat").textContent=TOURS.length+" tours · "+n+" blocks";
-  restoreDraft();
-  paintTours(); paintSaved();
-  pick(CUR && (CUR==="*"||LIB[CUR]) ? CUR : TOURS[0].id);
+  restoreDraft();                       // picks may name tours we have not fetched
+  paintTours(); paintSaved(); paintPicks();
+  $("stat").textContent=libStat();
+  const want=new Set(PICKS.filter(p=>p.lib==null).map(p=>p.tour));
+  if(PICKS.some(p=>p.lib!=null)) await ensureBook().catch(()=>null);
+  const start=(CUR && (CUR==="*"||TOURS.some(t=>t.id===CUR))) ? CUR : TOURS[0].id;
+  if(start!=="*") want.add(start);
+  await Promise.all([...want].map(id=>ensureTour(id).catch(()=>null)));
+  PICKS=PICKS.filter(p=>p.lib!=null ? !!BOOK[p.lib] : (LIB[p.tour]&&LIB[p.tour].sections[p.si]&&LIB[p.tour].sections[p.si].blocks[p.bi]));
+  await pick(start);
 }
 
 /* ── tours across the top ─────────────────────────── */
@@ -310,69 +467,130 @@ function paintTours(){
     if(CUR===id) b.dataset.on="1";
     el.appendChild(b);
   };
-  mk("*","★","All tours","every block, searchable", PICKS.length);
+  mk("*","★","Library", (BOOK.length?BOOK.length+" blocks, one of each":"every block, once"), PICKS.length);
   TOURS.forEach(t=>{
-    const all=blocksOf(t.id);
+    const n = LIB[t.id] ? countOf(t.id) : (t.blocks||0);
     const on=PICKS.filter(p=>p.tour===t.id).length;
-    mk(t.id, t.id, t.name, all.length+" blocks", on);
+    mk(t.id, t.id, t.name, n+" blocks", on);
   });
 }
-function pick(id){
-  CUR=id; paintTours(); paintBlocks();
+
+async function pick(id){
+  CUR=id; paintTours(); paintBlocks();          // paint the shell straight away
   const on=document.querySelector('#tourbar .tourbtn[data-on]');
   if(on && on.scrollIntoView) on.scrollIntoView({block:"nearest",inline:"nearest",behavior:"smooth"});
+  if(id==="*") await ensureBook().catch(()=>null); else await ensureTour(id).catch(()=>null);
+  $("stat").textContent=libStat();
+  paintTours(); paintBlocks(); saveDraft();
 }
 
-/* ── blocks down the left, each with a tick box ───── */
+/* ── 2. BLOCKS ─────────────────────────────────────────────────────────────
+   Grouped by section, because the section is the thing add-tour.py geocodes.
+   Flat, it was 414 rows and a scrollbar the width of a hair. */
 function rows(){
-  const ids = CUR==="*" ? TOURS.map(t=>t.id) : [CUR];
-  let out=[]; ids.forEach(tid=>{ out=out.concat(blocksOf(tid)); });
+  let out;
+  if(CUR==="*"){
+    out = BOOK.map((e,i)=>({lib:i, tour:e.from, sec:{title:e.section, kind:e.kind},
+                            b:e.block, ref:"", usedBy:e.usedBy}));
+  } else {
+    out = blocksOf(CUR);
+  }
   if(!Q) return out;
   const q=Q.toLowerCase();
   return out.filter(r=>((r.b.title+" "+(r.b.cue||"")+" "+(r.b.bullets||[]).join(" ")).toLowerCase()).includes(q));
 }
+function groups(){
+  const g=[], seen={};
+  rows().forEach(r=>{
+    const k=skey(r);
+    if(!seen[k]){ seen[k]={key:k, tour:r.tour, si:r.si, sec:r.sec, rows:[]}; g.push(seen[k]); }
+    seen[k].rows.push(r);
+  });
+  return g;
+}
 function isPicked(r){ return PICKS.some(p=>key(p)===key(r)); }
+
+function blockEl(r){
+  const d=document.createElement("div");
+  d.className="blk"+(isPicked(r)?" picked":"");
+  d.innerHTML="<div class='box'></div>"
+    +"<div class='body'>"
+    +"<span class='ref'>"+esc(r.ref || ("used on "+(r.usedBy||[]).length+" tour"+((r.usedBy||[]).length===1?"":"s")))+"</span>"
+    +"<h3>"+esc(r.b.title)+"</h3>"
+    +(r.usedBy?"<div class='sec'>"+esc(r.usedBy.join(" · "))+"</div>":"")
+    /* no section line here — the sticky header above already says it, tour and all */
+    +(r.b.cue?"<div class='cue'>"+esc(r.b.cue)+"</div>":"")
+    +"<div class='stats'>"+(r.b.bullets||[]).length+" bullets · "+(r.b.say||[]).length+" pronunciations</div>"
+    +"<div class='peek'>"+esc((r.b.bullets||[]).slice(0,4).join("\n\n"))+"</div>"
+    +"</div>"
+    +"<button class='eye' title='Show the words'>👁</button>";
+  d.onclick=()=>toggle(r);
+  d.querySelector(".eye").onclick=e=>{ e.stopPropagation(); d.classList.toggle("open"); };
+  return d;
+}
 
 function paintBlocks(){
   const list=$("blocklist"); list.innerHTML="";
-  const rs=rows();
-  $("bcount").textContent="· "+rs.length+(Q?" matching":"");
-  rs.forEach(r=>{
-    const d=document.createElement("div");
-    d.className="blk"+(isPicked(r)?" picked":"");
-    d.innerHTML="<div class='box'></div>"
-      +"<div class='body'>"
-      +"<span class='ref'>"+esc(r.ref)+"</span>"
-      +"<h3>"+esc(r.b.title)+"</h3>"
-      +"<div class='sec'>"+esc(r.sec.title)+" · "+esc(r.sec.kind)+"</div>"
-      +(r.b.cue?"<div class='cue'>"+esc(r.b.cue)+"</div>":"")
-      +"<div class='stats'>"+(r.b.bullets||[]).length+" bullets · "+(r.b.say||[]).length+" pronunciations</div>"
-      +"<div class='peek'>"+esc((r.b.bullets||[]).slice(0,4).join("\n\n"))+"</div>"
-      +"</div>"
-      +"<button class='eye' title='Show the words'>👁</button>";
-    d.onclick=()=>toggle(r);
-    d.querySelector(".eye").onclick=e=>{ e.stopPropagation(); d.classList.toggle("open"); };
-    list.appendChild(d);
+  const gs=groups(), total=gs.reduce((a,g)=>a+g.rows.length,0);
+  $("bcount").textContent="· "+total+(Q?" matching":"")+" in "+gs.length+" section"+(gs.length===1?"":"s");
+
+  if(!total){
+    const loading = CUR==="*" ? !BOOK.length : !LIB[CUR];
+    list.innerHTML = loading
+      ? "<div class='empty'>Fetching the script…</div>"
+      : "<div class='empty'>No blocks match that search.</div>";
+    return;
+  }
+
+  gs.forEach(g=>{
+    const on=g.rows.filter(isPicked).length, all=on===g.rows.length;
+    const wrap=document.createElement("div");
+    wrap.className="secgrp"+(SHUT.has(g.key)?" shut":"");
+
+    const hd=document.createElement("div");
+    hd.className="sechd"+(all?" full":"");
+    hd.innerHTML="<span class='car'>▸</span>"
+      +"<span class='tw'><span class='st'>"+esc(g.sec.title)+"</span>"
+      +"<span class='sk'>"+esc(g.sec.kind)+(CUR==="*"?" · tour "+esc(g.tour):"")+"</span></span>"
+      +"<span class='cnt'><b>"+on+"</b>/"+g.rows.length+"</span>"
+      +"<button class='mini all'>"+(all?"Untick":"Tick all")+"</button>";
+    hd.onclick=()=>{ SHUT.has(g.key)?SHUT.delete(g.key):SHUT.add(g.key); saveDraft(); paintBlocks(); };
+    hd.querySelector(".all").onclick=e=>{ e.stopPropagation(); tickSection(g, !all); };
+    wrap.appendChild(hd);
+
+    const body=document.createElement("div");
+    body.className="secbody";
+    g.rows.forEach(r=>body.appendChild(blockEl(r)));
+    wrap.appendChild(body);
+    list.appendChild(wrap);
   });
-  if(!rs.length) list.innerHTML="<div class='empty'>No blocks match that search.</div>";
 }
 
+/* Ticking a whole section is the safe move — a section picked whole can never
+   be the thing that breaks the route builder. */
+function tickSection(g, on){
+  if(on){ g.rows.forEach(r=>{ if(!isPicked(r)) PICKS.push(asPick(r)); }); }
+  else{ const gone=new Set(g.rows.map(key)); PICKS=PICKS.filter(p=>!gone.has(key(p))); }
+  PICKS.sort(byTourOrder); afterChange();
+}
+const asPick = r => r.lib!=null ? {lib:r.lib} : {tour:r.tour, si:r.si, bi:r.bi};
 function toggle(r){
   const i=PICKS.findIndex(p=>key(p)===key(r));
   if(i>=0) PICKS.splice(i,1);
-  else{
-    PICKS.push({tour:r.tour,si:r.si,bi:r.bi});
-    PICKS.sort(byTourOrder);
-  }
+  else{ PICKS.push(asPick(r)); PICKS.sort(byTourOrder); }
   afterChange();
 }
 /* keeps picks in tour order so the script reads the way the coach drives */
 function byTourOrder(a,b){
+  // Library picks have no tour of their own — they keep the order you ticked
+  // them, which is the order you intend to drive. Only tour-sourced picks get
+  // sorted back into their own tour's running order.
+  if(a.lib!=null || b.lib!=null) return 0;
   const ti=TOURS.findIndex(t=>t.id===a.tour)-TOURS.findIndex(t=>t.id===b.tour);
   return ti || (a.si-b.si) || (a.bi-b.bi);
 }
 $("allon").onclick=()=>{
-  rows().forEach(r=>{ if(!isPicked(r)) PICKS.push({tour:r.tour,si:r.si,bi:r.bi}); });
+  rows().forEach(r=>{ if(!isPicked(r)) PICKS.push(asPick(r)); });
   PICKS.sort(byTourOrder); afterChange();
 };
 $("alloff").onclick=()=>{
@@ -380,24 +598,81 @@ $("alloff").onclick=()=>{
   PICKS=PICKS.filter(p=>!gone.has(key(p)));
   afterChange();
 };
+$("fold").onclick=()=>{
+  const gs=groups(), anyOpen=gs.some(g=>!SHUT.has(g.key));
+  gs.forEach(g=>anyOpen?SHUT.add(g.key):SHUT.delete(g.key));
+  $("fold").textContent=anyOpen?"Expand all":"Collapse all";
+  saveDraft(); paintBlocks();
+};
 
-/* ── the custom tour ──────────────────────────────── */
+/* ── 3. BASKET ─────────────────────────────────────────────────────────────
+   Export merges CONSECUTIVE picks from one source section into one section.
+   So a section broken into two runs by a drag comes out as two sections with
+   the same name, and add-tour.py geocodes a stop that does not exist. That
+   used to be silent until the build failed. It is not silent any more. */
+/* One place that turns a pick — library or tour — into the block, its source
+   section, and what to label it. Everything downstream uses this, so the two
+   kinds of pick can never drift apart. */
+function resolve(p){
+  if(p.lib!=null){
+    const e=BOOK[p.lib];
+    if(!e) return null;
+    return {b:e.block, secTitle:e.section, kind:e.kind, label:(e.usedBy||[]).join(","), lib:true};
+  }
+  const S=LIB[p.tour];
+  if(!S||!S.sections[p.si]||!S.sections[p.si].blocks[p.bi]) return null;
+  const sec=S.sections[p.si];
+  const nth=blocksOf(p.tour).find(r=>key(r)===key(p));
+  return {b:sec.blocks[p.bi], secTitle:sec.title, kind:sec.kind, label:(nth?nth.ref:p.tour), lib:false};
+}
+
+function splitKeys(){
+  const runs=[], seen={}, bad=new Set();
+  let last=null;
+  PICKS.forEach(p=>{ const k=skey(p); if(k!==last){ runs.push(k); last=k; } });
+  runs.forEach(k=>{ if(seen[k]) bad.add(k); seen[k]=1; });
+  return bad;
+}
+function paintWarn(bad){
+  const w=$("ordwarn");
+  if(!bad.size){ w.classList.remove("on"); w.innerHTML=""; return; }
+  const n=bad.size;
+  w.innerHTML="<b>"+n+" section"+(n===1?" is":"s are")+" split up.</b> "
+    +"The export glues together only blocks that sit next to each other, so a split section "
+    +"exports twice under one name and the route builder cannot pin the stop. "
+    +"Download it like this and <b>it will not build a route</b>."
+    +"<br><button class='mini' id='fixord'>Put them back in tour order</button>";
+  w.classList.add("on");
+  $("fixord").onclick=()=>{ PICKS.sort(byTourOrder); afterChange(); toast("Back in tour order"); };
+}
+
 function paintPicks(){
   const el=$("picklist"); el.innerHTML="";
   $("ccount").textContent="· "+PICKS.length+" block"+(PICKS.length===1?"":"s");
   $("export").disabled=!PICKS.length;
   $("save").disabled=!PICKS.length;
   if(!PICKS.length){
+    paintWarn(new Set());
     el.innerHTML="<div class='empty'>Pick a tour along the top, then tick the blocks on the left.<br>"
       +"They come across with every bullet, cue and pronunciation intact.</div>";
     return;
   }
+  const bad=splitKeys();
+  paintWarn(bad);
+
   PICKS.forEach((p,i)=>{
-    const b=LIB[p.tour].sections[p.si].blocks[p.bi];
-    const nth=blocksOf(p.tour).find(r=>key(r)===key(p));
-    const d=document.createElement("div"); d.className="pick";
-    d.innerHTML="<span class='ord'>"+(i+1)+"</span>"
-      +"<div class='t'><b>"+esc(b.title)+"</b> <span class='src'>"+esc(nth?nth.ref:p.tour)+"</span></div>"
+    const R=resolve(p);
+    if(!R) return;                       // library or tour not fetched yet
+    const b=R.b;
+    const d=document.createElement("div");
+    d.className="pick"+(bad.has(skey(p))?" split":"");
+    /* The grip is built here, with the row. The old build grew grips from a
+       MutationObserver watching this very list repaint itself. */
+    d.draggable=true; d.dataset.idx=i;
+    d.innerHTML="<span class='grip' title='Drag to reorder'>⠿</span>"
+      +"<span class='ord'>"+(i+1)+"</span>"
+      +"<div class='t'><b>"+esc(b.title)+"</b> <span class='src'>"+esc(R.label)
+      +(bad.has(skey(p))?" · split section":"")+"</span></div>"
       +"<button class='mini' title='up'>↑</button><button class='mini' title='down'>↓</button>"
       +"<button class='mini' title='remove'>✕</button>";
     const [up,dn,rm]=d.querySelectorAll("button");
@@ -407,13 +682,65 @@ function paintPicks(){
     el.appendChild(d);
   });
 }
-function afterChange(){ paintPicks(); paintBlocks(); paintTours(); saveDraft(); }
+
+/* One repaint, one place. Steps, minutes and tab labels are part of the paint,
+   not a decoration bolted on afterwards. */
+function afterChange(){
+  paintPicks(); paintBlocks(); paintTours(); paintSteps(); saveDraft();
+}
+/* The 1-2-3 strip is gone — Ritchie knows how his own tool works. What it was
+   quietly carrying, the talking-time and the basket count, lives on here. */
+function paintSteps(){
+  const picked=PICKS.length;
+  // a block is roughly a minute and a half on the mic — enough to sanity-check a private tour
+  $("mins").textContent = picked ? "~"+Math.round(picked*1.5)+" min of talking" : "";
+  $("tabCustom").textContent = "Your tour"+(picked?" ("+picked+")":"");
+}
+
+/* ── drag to reorder. The ↑/↓ buttons stay — they are better on a phone. ── */
+(function(){
+  const list=$("picklist"); let from=null;
+  const idxOf=el=>el?Number(el.dataset.idx):-1;
+  list.addEventListener("dragstart",e=>{
+    const row=e.target.closest(".pick"); if(!row) return;
+    from=idxOf(row); row.classList.add("dragging"); e.dataTransfer.effectAllowed="move";
+  });
+  list.addEventListener("dragover",e=>{
+    e.preventDefault(); const row=e.target.closest(".pick"); if(!row) return;
+    [...list.children].forEach(c=>c.classList.remove("over")); row.classList.add("over");
+  });
+  list.addEventListener("dragleave",e=>{
+    const row=e.target.closest(".pick"); if(row) row.classList.remove("over");
+  });
+  list.addEventListener("drop",e=>{
+    e.preventDefault(); const row=e.target.closest(".pick"); if(!row||from===null) return;
+    const to=idxOf(row);
+    if(to>=0 && to!==from){ const [m]=PICKS.splice(from,1); PICKS.splice(to,0,m); afterChange(); }
+    from=null;
+  });
+  list.addEventListener("dragend",()=>{
+    from=null; [...list.children].forEach(c=>c.classList.remove("dragging","over"));
+  });
+})();
+
+/* ── phone layout: one column at a time, so neither list is a peephole ── */
+const showCustom=on=>{
+  document.body.classList.toggle("show-custom", on);
+  $("tabBlocks").classList.toggle("on", !on);
+  $("tabCustom").classList.toggle("on", on);
+};
+$("tabBlocks").onclick=()=>showCustom(false);
+$("tabCustom").onclick=()=>showCustom(true);
+
+$("q").oninput=e=>{ Q=e.target.value.trim(); paintBlocks(); };
+$("qx").onclick=()=>{ const q=$("q"); q.value=""; q.dispatchEvent(new Event("input")); q.focus(); };
+$("q").addEventListener("keydown",e=>{ if(e.key==="Escape"){ e.target.value=""; e.target.dispatchEvent(new Event("input")); }});
 
 /* ── saving ───────────────────────────────────────── */
 function saveDraft(){
   try{
     localStorage.setItem(DRAFT, JSON.stringify({
-      picks:PICKS, cur:CUR, cid:$("cid").value, cname:$("cname").value
+      picks:PICKS, cur:CUR, cid:$("cid").value, cname:$("cname").value, shut:[...SHUT]
     }));
     $("autosave").textContent="draft saved "+new Date().toLocaleTimeString().slice(0,5);
   }catch(e){ $("autosave").textContent="draft not saved: "+e.message; }
@@ -422,7 +749,8 @@ function restoreDraft(){
   try{
     const d=JSON.parse(localStorage.getItem(DRAFT)||"null");
     if(!d) return;
-    PICKS=(d.picks||[]).filter(p=>LIB[p.tour]&&LIB[p.tour].sections[p.si]&&LIB[p.tour].sections[p.si].blocks[p.bi]);
+    PICKS=(d.picks||[]);                 // validated in boot(), once the tours are in
+    SHUT=new Set(d.shut||[]);
     CUR=d.cur||null; $("cid").value=d.cid||""; $("cname").value=d.cname||"";
   }catch(e){}
 }
@@ -435,8 +763,10 @@ function paintSaved(){
     const c=document.createElement("span"); c.className="savedchip";
     c.innerHTML="<span class='ld'><b>"+esc(id)+"</b> "+esc(S[id].name)+" · "+S[id].picks.length+"</span>"
                +"<button title='delete'>✕</button>";
-    c.querySelector(".ld").onclick=()=>{
+    c.querySelector(".ld").onclick=async()=>{
       PICKS=S[id].picks.slice(); $("cid").value=id; $("cname").value=S[id].name;
+      await Promise.all([...new Set(PICKS.filter(p=>p.lib==null).map(p=>p.tour))].map(t=>ensureTour(t).catch(()=>null)));
+      if(PICKS.some(p=>p.lib!=null)) await ensureBook().catch(()=>null);
       afterChange(); toast("Loaded "+id);
     };
     c.querySelector("button").onclick=()=>{
@@ -447,6 +777,7 @@ function paintSaved(){
     box.appendChild(c);
   });
 }
+
 $("save").onclick=()=>{
   const id=$("cid").value.trim(), name=$("cname").value.trim();
   if(!id||!name){ alert("Give the tour an id and a name first."); return; }
@@ -461,21 +792,27 @@ function labelExport(){
   const id=$("cid").value.trim();
   $("export").textContent = id ? "Download script-"+id+".js" : "Download script-<id>.js";
 }
-["cid","cname"].forEach(k=>$(k).oninput=()=>{ saveDraft(); labelExport(); });
-$("q").oninput=e=>{ Q=e.target.value.trim(); paintBlocks(); };
+["cid","cname"].forEach(k=>$(k).oninput=()=>{ saveDraft(); labelExport(); paintSteps(); });
 
-/* ── export ───────────────────────────────────────── */
+/* ── 4. EXPORT ─────────────────────────────────────────────────────────────
+   The file shape is frozen: add-tour.py reads it. Only the guard is new. */
 $("export").onclick=()=>{
   const id=$("cid").value.trim(), name=$("cname").value.trim();
   if(!id||!name){ alert("Give the tour an id and a name first."); return; }
+  const bad=splitKeys();
+  if(bad.size && !confirm(
+      bad.size+" section"+(bad.size===1?" is":"s are")+" split across the running order.\n\n"
+      +"Sections are glued back together only where blocks sit next to each other, so this file "
+      +"will export the same section twice and add-tour.py will not be able to build the route.\n\n"
+      +"Download it anyway?")) return;
   // Consecutive picks from the same source section stay one section, so the
   // route builder still sees real stop names it can geocode.
   const sections=[]; let cur=null;
   PICKS.forEach(p=>{
-    const src=LIB[p.tour].sections[p.si];
-    const k=p.tour+"|"+p.si;
-    if(!cur||cur.key!==k){ cur={key:k,title:src.title,kind:src.kind,blocks:[]}; sections.push(cur); }
-    cur.blocks.push(JSON.parse(JSON.stringify(src.blocks[p.bi])));
+    const R=resolve(p); if(!R) return;
+    const k=skey(p);
+    if(!cur||cur.key!==k){ cur={key:k,title:R.secTitle,kind:R.kind,blocks:[]}; sections.push(cur); }
+    cur.blocks.push(JSON.parse(JSON.stringify(R.b)));
   });
   sections.forEach((s,si)=>{ delete s.key; s.blocks.forEach((b,bi)=>b.id=(si+1)+"."+(bi+1)); });
   const js="// Custom tour, assembled in the back office "+new Date().toISOString().slice(0,10)+"\n"
@@ -486,96 +823,121 @@ $("export").onclick=()=>{
   toast("Downloaded script-"+id+".js");
 };
 
-boot().then(()=>{ afterChange(); labelExport(); }).catch(e=>{ $("stat").textContent="failed: "+e.message; });
-</script>
-<script>
-/* ── Usability layer. Purely additive: it decorates what the brain already
-   does, and never changes what a click means. ───────────────────────────── */
-(function(){
-  const $=id=>document.getElementById(id);
+/* ═══ 5. THE MATRIX ═══════════════════════════════════════════════════════
+   Every block down the side, every tour across the top. The tick says "this
+   block is on that tour". It starts as a picture of what the ten scripts say
+   right now, so an untouched matrix is a no-op — you can only ever be looking
+   at the truth or at a change you just made, never at a stale guess.
+   Saving hands you one tour-plan.json; _applyplan.py writes the scripts. */
+let MX = null;      // slug -> Set(tour) as loaded
+let MXNOW = null;   // slug -> Set(tour) as edited
+let MXQ = "";
 
-  /* Steps light up as you actually complete them, so the screen tells you
-     where you are instead of leaving you to guess. */
-  function paintSteps(){
-    const picked = (typeof PICKS!=="undefined") ? PICKS.length : 0;
-    const named  = $("cid").value.trim() && $("cname").value.trim();
-    $("s1").classList.toggle("done", !!(typeof CUR!=="undefined" && CUR));
-    $("s2").classList.toggle("done", picked>0);
-    $("s3").classList.toggle("done", !!(picked>0 && named));
-    // a block is roughly a minute and a half on the mic — enough to sanity-check a private tour
-    $("mins").textContent = picked ? "~"+Math.round(picked*1.5)+" min of talking" : "";
-    const tc=$("tabCount"); if(tc) tc.textContent = picked?" ("+picked+")":"";
-    const tb=$("tabCustom"); if(tb) tb.textContent = "Your tour"+(picked?" ("+picked+")":"");
-  }
+const rowKey = e => e.title;
 
-  /* Wrap the brain's own repaint so decoration can never drift out of sync. */
-  const _after = window.afterChange;
-  if (typeof _after === "function") {
-    window.afterChange = function(){ _after.apply(this, arguments); paintSteps(); };
-  }
-  ["cid","cname"].forEach(k=>$(k).addEventListener("input", paintSteps));
-
-  /* Clear-search button — the field had no way out but the backspace key. */
-  $("qx").onclick=()=>{ const q=$("q"); q.value=""; q.dispatchEvent(new Event("input")); q.focus(); };
-  $("q").addEventListener("keydown",e=>{ if(e.key==="Escape"){ e.target.value=""; e.target.dispatchEvent(new Event("input")); }});
-
-  /* Phone layout: one column at a time, so neither list is a peephole. */
-  const showCustom=on=>{
-    document.body.classList.toggle("show-custom", on);
-    $("tabBlocks").classList.toggle("on", !on);
-    $("tabCustom").classList.toggle("on", on);
-  };
-  $("tabBlocks").onclick=()=>showCustom(false);
-  $("tabCustom").onclick=()=>showCustom(true);
-
-  /* Drag to reorder. The ↑/↓ buttons stay — they are better on a phone and
-     they are what already works — this is just faster for a long list. */
-  let from=null;
-  const list=$("picklist");
-  list.addEventListener("dragstart",e=>{
-    const row=e.target.closest(".pick"); if(!row) return;
-    from=[...list.children].indexOf(row); row.classList.add("dragging");
-    e.dataTransfer.effectAllowed="move";
-  });
-  list.addEventListener("dragover",e=>{
-    e.preventDefault();
-    const row=e.target.closest(".pick"); if(!row) return;
-    [...list.children].forEach(c=>c.classList.remove("over"));
-    row.classList.add("over");
-  });
-  list.addEventListener("dragleave",e=>{
-    const row=e.target.closest(".pick"); if(row) row.classList.remove("over");
-  });
-  list.addEventListener("drop",e=>{
-    e.preventDefault();
-    const row=e.target.closest(".pick"); if(!row||from===null) return;
-    const to=[...list.children].indexOf(row);
-    if(to>=0 && to!==from && typeof PICKS!=="undefined"){
-      const [m]=PICKS.splice(from,1); PICKS.splice(to,0,m);
-      if(typeof afterChange==="function") afterChange();
-    }
-    from=null;
-  });
-  list.addEventListener("dragend",()=>{
-    from=null;
-    [...list.children].forEach(c=>c.classList.remove("dragging","over"));
-  });
-
-  /* Give every basket row a grip and make it draggable, after each repaint. */
-  const mo=new MutationObserver(()=>{
-    [...list.querySelectorAll(".pick")].forEach(r=>{
-      if(r.dataset.dnd) return;
-      r.dataset.dnd="1"; r.draggable=true;
-      const g=document.createElement("span");
-      g.className="grip"; g.textContent="⠿"; g.title="Drag to reorder";
-      r.insertBefore(g, r.firstChild);
+function matrixReady(){
+  if(MX) return Promise.resolve();
+  return ensureBook().then(()=>{
+    MX = new Map(); MXNOW = new Map();
+    BOOK.forEach(e=>{
+      MX.set(rowKey(e), new Set(e.usedBy));
+      MXNOW.set(rowKey(e), new Set(e.usedBy));
     });
   });
-  mo.observe(list,{childList:true});
+}
+function mxChanged(){
+  const out=[];
+  BOOK.forEach(e=>{
+    const k=rowKey(e), was=MX.get(k), now=MXNOW.get(k);
+    TOURS.forEach(t=>{
+      if(was.has(t.id)!==now.has(t.id))
+        out.push({block:k, tour:t.id, action: now.has(t.id)?"add":"remove"});
+    });
+  });
+  return out;
+}
 
-  paintSteps();
-})();
+function paintMatrix(){
+  const tb=$("matrix"); tb.innerHTML="";
+  const q=MXQ.toLowerCase();
+  const rows=BOOK.filter(e=>!q || (e.title+" "+(e.block.cue||"")+" "+(e.block.bullets||[]).join(" ")).toLowerCase().includes(q));
 
+  const thead=document.createElement("thead"), hr=document.createElement("tr");
+  const rh=document.createElement("th"); rh.className="rowhead";
+  rh.innerHTML="Block <small>"+rows.length+" of "+BOOK.length+"</small>";
+  hr.appendChild(rh);
+  TOURS.forEach(t=>{
+    const th=document.createElement("th");
+    const n=rows.filter(e=>MXNOW.get(rowKey(e)).has(t.id)).length;
+    th.innerHTML=esc(t.id)+"<small>"+n+"</small>";
+    th.title=t.name+" — click to tick or clear this whole column";
+    th.onclick=()=>{
+      const all=rows.every(e=>MXNOW.get(rowKey(e)).has(t.id));
+      rows.forEach(e=>{ const st=MXNOW.get(rowKey(e)); all?st.delete(t.id):st.add(t.id); });
+      paintMatrix();
+    };
+    hr.appendChild(th);
+  });
+  thead.appendChild(hr); tb.appendChild(thead);
+
+  const tbody=document.createElement("tbody");
+  rows.forEach(e=>{
+    const k=rowKey(e), tr=document.createElement("tr");
+    const td=document.createElement("td"); td.className="rowhead";
+    td.innerHTML="<b>"+esc(e.title)+"</b><span>"+esc(e.section)+" · "+esc(e.kind)+"</span>";
+    tr.appendChild(td);
+    TOURS.forEach(t=>{
+      const c=document.createElement("td"); c.className="cell";
+      const on=MXNOW.get(k).has(t.id), was=MX.get(k).has(t.id);
+      if(on) c.classList.add("on");
+      if(on!==was) c.classList.add("chg");
+      c.innerHTML="<i></i>";
+      c.title=e.title+" on "+t.id;
+      c.onclick=()=>{ const st=MXNOW.get(k); st.has(t.id)?st.delete(t.id):st.add(t.id); paintMatrix(); };
+      tr.appendChild(c);
+    });
+    tbody.appendChild(tr);
+  });
+  tb.appendChild(tbody);
+
+  const ch=mxChanged();
+  $("mxcount").textContent="· "+BOOK.length+" blocks × "+TOURS.length+" tours";
+  $("mxdirty").textContent=ch.length? ch.length+" change"+(ch.length===1?"":"s")+" not saved" : "";
+  $("mxsave").disabled=!ch.length;
+}
+
+$("modeBuild").onclick=()=>setMode(false);
+$("modeMatrix").onclick=()=>setMode(true);
+function setMode(on){
+  document.body.classList.toggle("matrix", on);
+  $("modeBuild").classList.toggle("on", !on);
+  $("modeMatrix").classList.toggle("on", on);
+  $("stat").textContent = on ? "all tours at once" : libStat();
+  if(on) matrixReady().then(paintMatrix);
+}
+$("mxq").oninput=e=>{ MXQ=e.target.value.trim(); paintMatrix(); };
+$("mxreset").onclick=()=>{
+  if(!MX) return;
+  BOOK.forEach(e=>MXNOW.set(rowKey(e), new Set(MX.get(rowKey(e)))));
+  paintMatrix(); toast("Back to what the scripts say");
+};
+$("mxsave").onclick=()=>{
+  const ch=mxChanged();
+  if(!ch.length){ toast("Nothing changed"); return; }
+  const plan={
+    builtAt:new Date().toISOString(),
+    note:"Apply with: python3 _applyplan.py tour-plan.json",
+    tours:TOURS.map(t=>({id:t.id, blocks:BOOK.filter(e=>MXNOW.get(rowKey(e)).has(t.id)).map(e=>e.title)})),
+    changes:ch
+  };
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([JSON.stringify(plan,null,1)],{type:"application/json"}));
+  a.download="tour-plan.json"; a.click();
+  toast("Saved plan — "+ch.length+" change"+(ch.length===1?"":"s"));
+};
+
+boot().then(()=>{ afterChange(); labelExport(); })
+      .catch(e=>{ $("stat").textContent="failed: "+e.message; });
 </script>
 </body>
 </html>
