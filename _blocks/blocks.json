@@ -2002,7 +2002,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.15.1",
+   "id": "11.0.15.1",
    "title": "🎧 Music Leg",
    "sub": "Iceland Through the Years",
    "cue": "Leaving Ytri-Tunga, last stop of the day. Playlist on, mic live between the stops.",
@@ -2882,7 +2882,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.15.3",
+   "id": "11.0.15.3",
    "title": "🎧 Music Leg",
    "sub": "Rícharður's Mix, The Road Home",
    "cue": "Through Borgarnes — my own playlist from here to BSÍ.",
@@ -6068,7 +6068,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.1.6",
+   "id": "11.0.1.6",
    "title": "🕳️ Hvalfjörður Tunnel",
    "sub": "Forty Metres of Ocean Overhead",
    "cue": "Entering the tunnel — nothing to see for a few minutes, so here's what you're inside.",
@@ -6117,7 +6117,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.1.7",
+   "id": "11.0.1.7",
    "title": "🐋 Hvalfjörður",
    "sub": "The Whale With a Grudge and the Island of 180 Outlaws",
    "cue": "Emerging from the north portal — the fjord you just drove under runs away to your right, at 3 o'clock.",
@@ -6185,7 +6185,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.1.8",
+   "id": "11.0.1.8",
    "title": "⛰️ Akrafjall",
    "sub": "A Whale Bone at 85 Metres, and Two Irish Brothers",
    "cue": "Look left at 9–10 o'clock — Akrafjall, the free-standing mountain past the tunnel.",
@@ -6252,7 +6252,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.1.9",
+   "id": "11.0.1.9",
    "title": "🌉 Borgarfjarðarbrú",
    "sub": "520 Metres That Retired Four Kilometres",
    "cue": "Crossing Borgarfjarðarbrú — Hafnarfjall at 3 o'clock, Borgarnes dead ahead.",
@@ -6311,7 +6311,7 @@
   "kind": "stop",
   "from": "11.0",
   "block": {
-   "id": "9.0.2.1",
+   "id": "11.0.2.1",
    "title": "🪦 Borgarnes",
    "sub": "The Graveyard Chapters of Egils Saga",
    "cue": "At the N1, Borgarnes.",
@@ -6395,7 +6395,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.3.1",
+   "id": "11.0.3.1",
    "title": "🌋 Iceland's First Rift Zone",
    "sub": "The Volcanoes That Didn't Get the Memo",
    "cue": "Look ahead at 12 o'clock — the Snæfellsnes mountains, running west to the glacier.",
@@ -6455,7 +6455,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.3.2",
+   "id": "11.0.3.2",
    "title": "🔥 Hítardalur & Ljósufjöll",
    "sub": "Ninety Kilometres of One Bad Idea",
    "cue": "Look right at 2–3 o'clock — the hyaloclastite ridges of the Ljósufjöll system.",
@@ -6511,7 +6511,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.3.3",
+   "id": "11.0.3.3",
    "title": "🌋 Eldborg",
    "sub": "The Fire-Fortress",
    "cue": "Look left at 9–10 o'clock — a low, perfectly regular ring rising out of the scrub.",
@@ -6565,7 +6565,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.3.4",
+   "id": "11.0.3.4",
    "title": "🪨 Gerðuberg",
    "sub": "Nobody Carved This",
    "cue": "Look right at 3 o'clock — a straight-ruled wall of basalt columns above the flowered slopes.",
@@ -6616,7 +6616,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.3.5",
+   "id": "11.0.3.5",
    "title": "⛰️ Vatnaleið",
    "sub": "The Quiet Leg Over the Spine",
    "cue": "All around — the Vatnaleið pass, Road 56.",
@@ -6676,7 +6676,7 @@
   "kind": "stop",
   "from": "11.0",
   "block": {
-   "id": "9.0.4.1",
+   "id": "11.0.4.1",
    "title": "💧 Fossá",
    "sub": "The Waterfall Iceland Never Bothered to Name",
    "cue": "At the Vatnaleið viewpoint — the fall is below the road, the lake beyond it.",
@@ -6739,7 +6739,7 @@
   "kind": "stop",
   "from": "11.0",
   "block": {
-   "id": "9.0.4.2",
+   "id": "11.0.4.2",
    "title": "🌀 Selvallavatn",
    "sub": "The Lake With No Way Out",
    "cue": "Same viewpoint — the lake in the hollow between the lava and the mountain wall.",
@@ -6804,7 +6804,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.5.1",
+   "id": "11.0.5.1",
    "title": "🪨 Berserkjahraun",
    "sub": "The Severance Package Was a Bath",
    "cue": "Crossing the rust-red lava on Road 54 — Berserkjahraun on both sides.",
@@ -6863,7 +6863,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.5.2",
+   "id": "11.0.5.2",
    "title": "🦈 Bjarnarhöfn",
    "sub": "The Man Who Refused to Settle",
    "cue": "Look right — the farm cluster and the little white church under Bjarnarhafnarfjall.",
@@ -6926,7 +6926,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.5.3",
+   "id": "11.0.5.3",
    "title": "⛰️ Helgafell",
    "sub": "The Mountain You Walk Into When You Die",
    "cue": "Look right, far ahead across the lava — Helgafell sits about fifteen kilometres that way, out of sight.",
@@ -6989,7 +6989,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.5.4",
+   "id": "11.0.5.4",
    "title": "🌊 Kolgrafarfjörður",
    "sub": "Fifty Thousand Tonnes of Herring",
    "cue": "We're crossing it now — the causeway and bridge across Kolgrafarfjörður.",
@@ -7045,7 +7045,7 @@
   "kind": "stop",
   "from": "11.0",
   "block": {
-   "id": "9.0.6.1",
+   "id": "11.0.6.1",
    "title": "⛰️ Kirkjufell",
    "sub": "The Church, Not the Arrowhead",
    "cue": "Ahead on the spit — the lone striped peak, with Kirkjufellsfoss by the car park.",
@@ -7106,7 +7106,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.7.1",
+   "id": "11.0.7.1",
    "title": "🐚 Búlandshöfði",
    "sub": "Where Iceland Found Out the Ice Age Had Summers",
    "cue": "We're driving under it now — the headland the road is cut into, sea on your left.",
@@ -7153,7 +7153,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.7.2",
+   "id": "11.0.7.2",
    "title": "🧙 Mávahlíð",
    "sub": "The Witch Trial That Went the Other Way",
    "cue": "Look left, inland — the farm under the fell.",
@@ -7207,7 +7207,7 @@
   "kind": "stop",
   "from": "11.0",
   "block": {
-   "id": "9.0.8.1",
+   "id": "11.0.8.1",
    "title": "👻 Fróðá",
    "sub": "The Ghosts We Took to Court",
    "cue": "Passing Fróðá, just east of Ólafsvík.",
@@ -7281,7 +7281,7 @@
   "kind": "stop",
   "from": "11.0",
   "block": {
-   "id": "9.0.8.2",
+   "id": "11.0.8.2",
    "title": "⚓ Ólafsvík",
    "sub": "The Harbour Swap of 1687",
    "cue": "Coming into Ólafsvík.",
@@ -7337,7 +7337,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.9.1",
+   "id": "11.0.9.1",
    "title": "🪓 Björn the Rich",
    "sub": "Killed on This Spot, 1467",
    "cue": "Passing Rif on the right — the flat little harbour village on the point.",
@@ -7403,7 +7403,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.9.2",
+   "id": "11.0.9.2",
    "title": "🐦 The Tern Capital",
    "sub": "17,000 Nests and an Antarctic Commute",
    "cue": "Still passing Rif — look at the roadside posts for the terns.",
@@ -7451,7 +7451,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.9.3",
+   "id": "11.0.9.3",
    "title": "⛪ Hellissandur, Ingjaldshóll & the Columbus Story",
    "sub": "Fiction, Historicized",
    "cue": "Look left at 8 o'clock — Hellissandur, with the church at Ingjaldshóll on its hill beyond.",
@@ -7500,7 +7500,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.9.4",
+   "id": "11.0.9.4",
    "title": "🪜 Saxhóll",
    "sub": "396 Steps to Heaven and Hell",
    "cue": "Approaching Saxhóll — the dark cone with the black stair bolted to its side.",
@@ -7555,7 +7555,7 @@
   "kind": "stop",
   "from": "11.0",
   "block": {
-   "id": "9.0.10.1",
+   "id": "11.0.10.1",
    "title": "💪 Djúpalónssandur & Dritvík",
    "sub": "The Job Interview Was a Boulder",
    "cue": "Turning down to Djúpalónssandur — the beach at the volcano's foot.",
@@ -7623,7 +7623,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.11.1",
+   "id": "11.0.11.1",
    "title": "🕳️ Malarrif & Vatnshellir",
    "sub": "Lighthouse Above, Underworld Below",
    "cue": "Look right at 3 o'clock — the white tower at Malarrif.",
@@ -7681,7 +7681,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.11.2",
+   "id": "11.0.11.2",
    "title": "🪨 Lóndrangar",
    "sub": "The Devil Loses a Poetry Slam",
    "cue": "Look right at 3 o'clock — two dark pinnacles against the sea: Lóndrangar.",
@@ -7745,7 +7745,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.11.3",
+   "id": "11.0.11.3",
    "title": "🌋 Snæfellsjökull",
    "sub": "The Mountain With Three Careers",
    "cue": "Look left at 9 o'clock — Snæfellsjökull, if it's showing.",
@@ -7804,7 +7804,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.11.4",
+   "id": "11.0.11.4",
    "title": "🧭 Guðríður Þorbjarnardóttir",
    "sub": "The Farm Girl Who Out-Sailed Columbus",
    "cue": "Look right at 3 o'clock — Hellnar down by the shore, then Laugarbrekka.",
@@ -7868,7 +7868,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.11.5",
+   "id": "11.0.11.5",
    "title": "🛁 Bárðarlaug",
    "sub": "The Half-Troll Takes a Cold Bath",
    "cue": "Passing Laugarbrekka — the crater pond hides until you're standing on its rim, so this one's a story.",
@@ -7928,7 +7928,7 @@
   "kind": "stop",
   "from": "11.0",
   "block": {
-   "id": "9.0.12.1",
+   "id": "11.0.12.1",
    "title": "🐦 The Arnarstapi Cliffs",
    "sub": "Columns Lying Down on the Job",
    "cue": "At Arnarstapi — the start of the cliff path.",
@@ -7983,7 +7983,7 @@
   "kind": "stop",
   "from": "11.0",
   "block": {
-   "id": "9.0.12.2",
+   "id": "11.0.12.2",
    "title": "🗿 The Bárður Statue",
    "sub": "The Detail Almost Every Guide Misses",
    "cue": "At the Bárður statue.",
@@ -8033,7 +8033,7 @@
   "kind": "stop",
   "from": "11.0",
   "block": {
-   "id": "9.0.12.3",
+   "id": "11.0.12.3",
    "title": "🏠 The Governor's House That Left",
    "sub": "Flat-Packed in 1849",
    "cue": "At the harbour.",
@@ -8088,7 +8088,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.13.1",
+   "id": "11.0.13.1",
    "title": "⛰️ Stapafell & Rauðfeldsgjá",
    "sub": "One Under Each Arm",
    "cue": "Leaving Arnarstapi — Stapafell over your left shoulder; then at 9 o'clock, a thin black cleft in the mountainside — Rauðfeldsgjá.",
@@ -8147,7 +8147,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.13.2",
+   "id": "11.0.13.2",
    "title": "🔪 Axlar-Björn",
    "sub": "The Farmer You Didn't Stop To Visit",
    "cue": "*Between Búðir and Arnarstapi — this one's a story, not a view.*",
@@ -8201,7 +8201,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.13.3",
+   "id": "11.0.13.3",
    "title": "⛪ Búðir",
    "sub": "The Widow Who Rebuilt the Church",
    "cue": "Look right at 3 o'clock — a small black church standing alone on the lava.",
@@ -8261,7 +8261,7 @@
   "kind": "stop",
   "from": "11.0",
   "block": {
-   "id": "9.0.14.1",
+   "id": "11.0.14.1",
    "title": "🦭 Ytri-Tunga",
    "sub": "The Seals Keep Office Hours",
    "cue": "Turning down the farm track to Ytri-Tunga.",
@@ -8310,7 +8310,7 @@
   "kind": "drive",
   "from": "11.0",
   "block": {
-   "id": "9.0.15.2",
+   "id": "11.0.15.2",
    "title": "🦅 Löngufjörur",
    "sub": "The Sea Floor That Got Promoted",
    "cue": "Look right at 3 o'clock — flat pale sand running to the horizon; the cliffs inland on your left are old sea cliffs.",
@@ -8359,65 +8359,47 @@
   "rescued": []
  },
  {
-  "title": "🏛️ Reykjavík",
-  "subject": "reykjavík",
+  "title": "✈️ Keflavíkurflugvöllur",
+  "subject": "keflavíkurflugvöllur",
   "usedBy": [
-   "13.0"
+   "12.0"
   ],
-  "section": "Lækjargata → Seltún",
+  "section": "Keflavíkurflugvöllur → Njarðvík",
   "kind": "drive",
-  "from": "13.0",
+  "from": "12.0",
   "block": {
-   "id": "14.0.1.1",
-   "title": "🏛️ Reykjavík",
-   "sub": "The Brook, The Hill And The Forty-Five Years Of Silence",
-   "cue": "Look back — the green hill with the statue on it, just behind where we picked you up.",
-   "hook": "The street you just got on the bus in is called **Lækjargata — Brook Street.** There is no brook. It is still there, running under the tarmac, and in January it is the reason the ducks in the city pond have anywhere to swim.",
-   "point": "A buried brook that still keeps the birds warm, a parliament that stopped for forty-five years, and a church that took forty-one to build in a country that had none of the money.",
-   "mic": "Reykjavík will tell you it has the world's oldest parliament. What it actually has is the world's oldest parliament with a very long lunch break.",
-   "weather": "Weather pivot: \"If the tower has gone, do not worry — you will see it again tonight, and on a morning like this the locals cannot see it either.\"",
+   "id": "12.0.1.1",
+   "title": "✈️ Keflavíkurflugvöllur",
+   "sub": "From Bomber Field to Global Gateway 📜",
+   "cue": "Pulling out of Keflavík International Airport",
+   "hook": "The terminal you just walked through was built for bombers. You've been dragging a duty-free bag through the Cold War.",
+   "point": "A bomber base that hunted submarines now processes stag-dos. Same runway, opposite century.",
+   "mic": "You flew into a war machine. One 2010 ash cloud finished the job of turning it into a gift shop.",
    "bullets": [
-    "That hill is **Arnarhóll**, and the man on it is **Ingólfur Arnarson**, who the tradition says was Iceland's first settler. The tradition — and say it as a tradition, because that is what it is — has him throwing his **öndvegissúlur**, the carved pillars from either side of a chieftain's high seat, over the side of the ship and settling wherever they washed ashore. They came in below this hill. **What archaeology can actually pin down is different and better:** there were people here **before the ash layer dated to AD 871, give or take two years.** The statue is by **Einar Jónsson**, and it was not a gift from the state — the **Reykjavík craftsmen's guild** paid the **40,000 krónur** and unveiled it on **24 February 1924.** Arnarhóll was a working farm until the **1820s.**",
-    "Now the brook. **Lækurinn** ran from the pond down to the sea, the old town grew up on the west side of it, and the street was named **Lækjargata in 1848.** In **1911** they put the brook in a culvert and paved over it. **It is still flowing under us.** And here is the good part: the pond — **Tjörnin** — freezes in winter, except for one patch. Guides will tell you that is a natural hot spring. **It is not.** It is **warm overflow from the city's hot-water system**, coming out at the old brook outlet by Iðnó. One warm corner, and every duck in Reykjavík standing in it.",
-    "Off to the right on **Austurvöllur** is the **Alþingishúsið**, the parliament, built **1880 to 1881** by the Danish architect **Ferdinand Meldahl**, out of stone quarried up the hill in **Þingholtin.** And this is where you correct the guidebook. **Alþingi was founded at Þingvellir, traditionally in 930** — the oldest parliamentary institution in the world by date of foundation. **But it is not the oldest continuously running one, and Alþingi does not claim to be.** It was **shut down by royal decree on 6 June 1800** and did not sit again until **1 July 1845.** **Forty-five years of silence.** That gap is the whole reason the Isle of Man gets to argue about this.",
-    "Last one on the skyline: **Hallgrímskirkja**, the concrete tower you can see from most of the city. **About 74 and a half metres** — the parish's own leaflet says 73, and I am not going to pretend that is settled. It was designed by **Guðjón Samúelsson**, and the shape is meant to be **columnar basalt, mountains and glaciers** rather than anything churchy. Building started in **1945** and it was consecrated on **26 October 1986** — **forty-one years.** Guðjón died in **1950** and never saw it. The statue of **Leifur Eiríksson** out front is older than the church behind it: **a gift from the United States** for the **1930 millennium of the Alþingi**, formally handed over on **17 July 1931.**"
+    "Born as **Meeks Field**, a US Army bomber base thrown up in **1942–43** and named after pilot **George Everett Meeks**, killed in Iceland on active service. First plane down **23 March 1943**. Its job: the **Battle of the Atlantic** — keeping German U-boats off the North Atlantic convoy lanes.",
+    "None of it happens without the **British invasion first** — **Operation Fork**, **10 May 1940**: **746 Royal Marines** waded ashore in Reykjavík and Hafnarfjörður to grab neutral Iceland before Germany could. Iceland formally protested the invasion, then rented them the land. The **US took over in July 1941.**",
+    "The **1946 Keflavík Agreement** handed the field back to Iceland; the Americans returned in **1951** under NATO and didn't leave until **2006**. Until the civilian terminal — named after **Leifur Eiríksson** — opened in **April 1987**, holidaymakers cleared **military checkpoints** to board a flight.",
+    "Now run by **Isavia**. For a country of **394,324** people (Hagstofa Íslands, 1 January 2026), Keflavík is one of the **busiest airports per head on Earth** — Iceland sits almost dead-centre between the continents: **~6.5 hrs to New York, ~2.5 hrs to London.**"
    ],
    "say": [
     [
-     "Lækjargata",
-     "LYE-kyar-GA-ta",
-     "'brook street', named 1848, with the brook culverted underneath in 1911"
+     "Keflavíkurflugvöllur",
+     "KEP-la-vee-kur-flug-VOT-lur",
+     "Keflavík International Airport, born as a US bomber field in 1942–43"
     ],
     [
-     "Arnarhóll",
-     "ARD-nar-hohtl",
-     "'eagle hill', the mound with the Ingólfur statue"
+     "Isavia",
+     "EE-sah-vee-ah",
+     "the company that runs the airport today"
     ],
     [
-     "öndvegissúlur",
-     "URND-vay-yis-SOO-lur",
-     "'high-seat pillars', thrown overboard to choose a landing place"
-    ],
-    [
-     "Alþingi",
-     "AL-thing-ee",
-     "the parliament, founded at Þingvellir around 930, closed 1800, reopened 1845"
-    ],
-    [
-     "Tjörnin",
-     "TYURT-nin",
-     "'the pond', where one corner stays open all winter"
-    ],
-    [
-     "Hallgrímskirkja",
-     "HATL-greems-KIRK-ya",
-     "consecrated 26 October 1986, forty-one years after work began"
+     "Eyjafjallajökull",
+     "AY-ya-fyat-la-yo-kutl",
+     "the volcano whose 2010 ash cloud helped finish turning this base into a gift shop"
     ]
    ],
    "tags": [
-    "#history",
-    "#folklore",
-    "#migration",
+    "#wwii",
     "#technology"
    ]
   },
@@ -8428,13 +8410,14 @@
   "title": "🌍 Reykjanes UNESCO Global Geopark",
   "subject": "reykjanes unesco global geopark",
   "usedBy": [
+   "12.0",
    "13.0"
   ],
   "section": "Lækjargata → Seltún",
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.1.2",
+   "id": "13.0.1.2",
    "title": "🌍 Reykjanes UNESCO Global Geopark",
    "cue": "Look ahead — the whole peninsula opening up in front of us.",
    "hook": "We're driving onto the only stretch of mid-ocean ridge on Earth that pokes above the sea. Most geologists only ever see one on a diagram. You're about to spend a day standing on it.",
@@ -8444,7 +8427,9 @@
    "bullets": [
     "The whole peninsula is a **UNESCO Global Geopark** (**2015**) — one of only a handful of places where a **mid-ocean ridge climbs above sea level.** Normally the North American/Eurasian plate boundary sits **2 km down** on the seafloor. Here you can walk on it, and later today you will.",
     "The park protects ~**825 km²** of lava, geothermal fields and rift. **Four to six linked volcanic systems** run through it — Reykjanes, Svartsengi, Fagradalsfjall, Krýsuvík, Brennisteinsfjöll, Hengill — out of ~30 Iceland-wide. We will be inside four of them before lunch.",
-    "Iceland is a **double engine**: a spreading **plate boundary** sitting on a stationary **mantle hotspot.** The oldest rock anywhere in Iceland is only **fifteen or sixteen million years** old — and out here on Reykjanes it's a tiny fraction of that. The hotspot beneath has been burning for at least **60 million.**"
+    "Iceland is a **double engine**: a spreading **plate boundary** sitting on a stationary **mantle hotspot.** The oldest rock anywhere in Iceland is only **fifteen or sixteen million years** old — and out here on Reykjanes it's a tiny fraction of that. The hotspot beneath has been burning for at least **60 million.**",
+    "The whole peninsula is a **UNESCO Global Geopark** (**2015**) — one of only a handful of places where a **mid-ocean ridge climbs above sea level.** Normally the North American/Eurasian plate boundary sits **2 km down** on the seafloor. Here you can walk on it.",
+    "The park protects ~**825 km²** of lava, geothermal fields and rift. **Four to six linked volcanic systems** run through it — Reykjanes, Svartsengi, Fagradalsfjall, Krýsuvík, Brennisteinsfjöll, Hengill — out of ~30 Iceland-wide."
    ],
    "say": [
     [
@@ -8462,20 +8447,464 @@
     "#geology"
    ]
   },
+  "cuePerTour": {
+   "12.0": "Bus content as we pull away from the airport — the whole peninsula ahead of us",
+   "13.0": "Look ahead — the whole peninsula opening up in front of us."
+  },
+  "rescued": [
+   "12.0: The whole peninsula is a **UNESCO Global Geopark** (**2015**) — one of only a handful of p",
+   "12.0: The park protects ~**825 km²** of lava, geothermal fields and rift. **Four to six linked v"
+  ]
+ },
+ {
+  "title": "🛡️ NAS Keflavík",
+  "subject": "nas keflavík",
+  "usedBy": [
+   "12.0"
+  ],
+  "section": "Keflavíkurflugvöllur → Njarðvík",
+  "kind": "drive",
+  "from": "12.0",
+  "block": {
+   "id": "12.0.1.3",
+   "title": "🛡️ NAS Keflavík",
+   "sub": "Iceland's Cold War Front Line 📜",
+   "cue": "Look right — Ásbrú, the old base housing, now a college campus",
+   "hook": "Iceland is the only NATO member with no army. So what did NATO want with an empty, windblown peninsula?",
+   "point": "Iceland pays its NATO dues in **latitude, not soldiers** — and the superpowers keep deciding the trade is worth it.",
+   "mic": "The smallest NATO country beat the Royal Navy three times — with a handful of coastguard boats and a pair of net-cutters.",
+   "bullets": [
+    "Iceland became a **founding NATO member in 1949** — no standing army then, none now. In **1951** it signed a US Defence Agreement, planting the permanent **Iceland Defence Force** here. Peak in the 1980s: ~**3,000 US personnel**, ~**5,000 with families.**",
+    "The whole point was **geography.** Iceland straddles the **GIUK Gap** — the Greenland–Iceland–UK chokepoint every Soviet sub had to squeeze through to reach the open Atlantic. **P-3 Orion** patrol planes flew that gap on a loop for the entire Cold War.",
+    "Last US forces left **30 September 2006.** Since **2016**, with Russian activity climbing again, NATO has quietly moved back in — you can furlough a base, but not its coordinates.",
+    "The same base armed Iceland's cheekiest win: the **three Cod Wars** with Britain (**1958–61, 1972–73, 1975–76**). The threat was blunt — accept our fishing limits, or we leave NATO and close the gap. The Royal Navy actually **rammed** Icelandic boats in the third one. Iceland won **all three.**"
+   ],
+   "say": [
+    [
+     "GIUK Gap",
+     "GEE-yuk",
+     "the Greenland–Iceland–UK chokepoint every Soviet sub had to squeeze through"
+    ],
+    [
+     "Ásbrú",
+     "OWS-broo",
+     "the old NAS Keflavík base estate south-east of the runways, now a college campus and housing district"
+    ]
+   ],
+   "tags": [
+    "#warfare",
+    "#history"
+   ]
+  },
   "cuePerTour": null,
   "rescued": []
+ },
+ {
+  "title": "⚔️ Viking World",
+  "subject": "viking world",
+  "usedBy": [
+   "12.0"
+  ],
+  "section": "Keflavíkurflugvöllur → Njarðvík",
+  "kind": "drive",
+  "from": "12.0",
+  "block": {
+   "id": "12.0.1.4",
+   "title": "⚔️ Viking World",
+   "sub": "A Longship That Sailed to New York 📜",
+   "cue": "Look left at 10 o'clock — the angular glass hall on the shore",
+   "hook": "There's a 22-metre Viking longship parked inside that glass hall — and the man who built it captained it to New York.",
+   "point": "This is Viking expansion made physical — a working longship that crossed the ocean **within living memory**, not a museum model behind glass.",
+   "mic": "A 1,000-year-old design, one man with a Viking handbook, and the North Atlantic crossed in a single summer.",
+   "bullets": [
+    "**Viking World** opened in **2009** in **Njarðvík**, the whole building wrapped around one object: a full-scale longship standing in the open hall.",
+    "The ship is ***Íslendingur*** (\"The Icelander\") — a life-size replica of the **Gokstad ship** (excavated in Norway in **1880**, dated ~**890–900 CE**). **Gunnar Marel Eggertsson** built it by hand with Viking-age tools over two years: ~**22.5 m long, 5.3 m wide**, oak, one square sail.",
+    "In **2000 CE** — exactly **1,000 years** after Leif Erikson's crossing — Gunnar captained it and sailed it from Iceland to **New York** with a **crew of about 8**, **17 June to 5 October** (roughly three and a half months). A 1,000-year-old blueprint crossed the Atlantic without complaint."
+   ],
+   "say": [
+    [
+     "Víkingaheimar",
+     "VEE-king-ah-hay-mar",
+     "Viking World, the glass hall opened in 2009 around one full-scale longship"
+    ],
+    [
+     "Íslendingur",
+     "EES-len-ding-ur",
+     "'The Icelander', the 22.5 m longship replica sailed to New York in 2000"
+    ],
+    [
+     "Njarðvík",
+     "NYARTH-veek",
+     "the town the hall stands in, named after Njörður, the Norse sea-god"
+    ]
+   ],
+   "tags": [
+    "#burial",
+    "#migration",
+    "#seafaring"
+   ]
+  },
+  "cuePerTour": null,
+  "rescued": []
+ },
+ {
+  "title": "✈️ Keflavík",
+  "subject": "keflavík",
+  "usedBy": [
+   "12.0",
+   "13.0"
+  ],
+  "section": "Reykjanes → Reykjavík",
+  "kind": "drive",
+  "from": "13.0",
+  "block": {
+   "id": "13.0.10.2",
+   "title": "✈️ Keflavík",
+   "sub": "The Airport You Arrived At, And The Base That Built It",
+   "cue": "Look left — the terminal, the control tower, and the flat ground running away behind it.",
+   "hook": "Almost everyone on this bus landed there. It was built by the **US military in the Second World War**, it was an **American base for fifty-five years**, and the Americans went home on **30 September 2006.** The airport you walked through is the leftovers.",
+   "point": "A wartime airstrip became a Cold War base, became a shopping-and-housing district, became the busiest transatlantic stopover in the North Atlantic. Same tarmac. Four completely different countries' worth of history.",
+   "mic": "Iceland is the only nation that got handed an entire American town and turned it into student flats and a business park. Somewhere on Ásbrú there is a family living in a barracks block, complaining about the parking.",
+   "weather": "Weather pivot: \"If it is closed in, take comfort: this airport has one of the best weather records in the country. That is the whole reason it is here and not somewhere prettier.\"",
+   "bullets": [
+    "There were originally **two** airfields. **Patterson Field** was started in **February 1942** up by Fitjar. **Meeks Field** — which is the one still here — was begun that summer on Háaleiti by a US Navy construction battalion, with about **3,000 men** working on it at the peak. It opened in **1943.** *(Sources give three different days in March and April 1943 for the ceremony, so I will give you the year and keep my dignity.)*",
+    "Both were named after **young American pilots killed in Iceland.** Meeks died in a crash at Reykjavík airport on **19 August 1941**, shortly after arriving in the country. The busiest month was **June 1944**: **1,050 aircraft** through the field, and on one day, **115 four-engine bombers** on the ground at once.",
+    "The airfields became Icelandic property under the **1946 agreement** and the last wartime US troops left on **8 April 1947.** Then the Cold War arrived: the **defence agreement was signed on 5 May 1951**, and the base ran for the next fifty-five years. On **1 March 1990** there were **3,294 US military personnel** here — **4,987** counting families — plus **1,086 Icelandic employees.** By January **2005** the military figure was down to **1,453.** On **15 March 2006** Washington gave notice, and on **30 September 2006** they were gone.",
+    "What happens when a foreign army hands you a town? Iceland set up a development company on **24 October 2006** and turned the base into **Ásbrú** — housing, businesses and a campus. *(The university side has just changed hands again: teaching stayed on Ásbrú but the **University of Iceland took it over on 1 January 2026.**)*",
+    "The airport itself became the country's front door. The **Leifur Eiríksson terminal** opened on **14 April 1987** at **23,000 square metres.** In **2025** it handled **8,159,461 passengers** — the fourth-busiest year in its history. **2.2 million** of those, **27%**, never left the building — they were changing planes between America and Europe, which is the entire business model of this country's aviation.",
+    "And the town is **Reykjanesbær**, created on **11 June 1994** by merging **Keflavík, Njarðvík and Hafnir** — **10,181 people** at the time.",
+    "One story for the road. On **9 October 1986**, Air Force One landed here at **five past seven in the evening** carrying **Ronald Reagan**, for the summit with **Gorbachev** in Reykjavík. The talks collapsed. On the **12th**, before flying home, Reagan stopped at this base to speak to the American personnel and explained why he was late: *\"I called Nancy and told her I wouldn't be home for dinner.\"*",
+    "***Keflavík* = Driftwood Bay** — named for timber washed up from the Atlantic, genuine treasure on a **treeless** coast. Settled in the Viking Age, a documented **fishing station from at least the 12th century**, and for centuries one of Iceland's top **cod ports** — English, Hanseatic and Danish traders all worked it.",
+    "What a **cod port** actually meant: **stockfish** — cod split and wind-dried on these headlands, keeping for years without a grain of salt, and worth a fortune in Catholic Europe with all those meat-free days to feed. Through the **1400s** English merchants effectively owned the trade off this coast. Then Hamburg's **Hanseatic** men muscled in, and the two sides spent the best part of a century licensing, seizing and occasionally shooting at one another over dried fish, until the Danish crown lost patience and shut the lot behind a **royal trade monopoly in 1602.** (Iceland's first hostile takeover. Nobody sent a memo.)",
+    "Then in **1941** the US military arrived, and from **1942** built the airport as an Atlantic refuelling stop — accidentally inventing the modern town in the process.",
+    "And that is what ended the fishery's reign here — not a bad season, but a better payslip. Work on the base, and later at the terminal, was steady, year-round and indoors, which no boat has ever managed. The fleet is still here and still lands fish. It simply stopped being the only employer in town."
+   ],
+   "say": [
+    [
+     "Keflavík",
+     "KEP-la-veek",
+     "'Driftwood Bay', the peninsula's largest town and a cod port for centuries"
+    ],
+    [
+     "Reykjanesbær",
+     "RAYK-ya-ness-BYE-r",
+     "the municipality formed in 1994 from Keflavík, Njarðvík and Hafnir"
+    ],
+    [
+     "Ásbrú",
+     "OWS-broo",
+     "'the bridge of the Æsir', the former base, now a district"
+    ],
+    [
+     "Njarðvík",
+     "NYARTH-veek",
+     "the neighbouring town, part of the 1994 merger"
+    ]
+   ],
+   "tags": [
+    "#history",
+    "#technology",
+    "#migration"
+   ]
+  },
+  "cuePerTour": {
+   "12.0": "Bus content once the last houses drop away behind us — the town we have just driven out of",
+   "13.0": "Look left — the terminal, the control tower, and the flat ground running away behind it."
+  },
+  "rescued": [
+   "12.0: ***Keflavík* = Driftwood Bay** — named for timber washed up from the Atlantic, genuine tre",
+   "12.0: What a **cod port** actually meant: **stockfish** — cod split and wind-dried on these head",
+   "12.0: Then in **1941** the US military arrived, and from **1942** built the airport as an Atlant",
+   "12.0: And that is what ended the fishery's reign here — not a bad season, but a better payslip. "
+  ]
+ },
+ {
+  "title": "🌑 Route 41",
+  "subject": "route 41",
+  "usedBy": [
+   "12.0",
+   "13.0"
+  ],
+  "section": "Njarðvík → Vogar",
+  "kind": "drive",
+  "from": "12.0",
+  "block": {
+   "id": "12.0.2.1",
+   "title": "🌑 Route 41",
+   "sub": "The Moon Road 🔀",
+   "cue": "Looking ahead at 12 o'clock — Route 41 cutting through black lava",
+   "hook": "NASA sent thirty-two astronauts to Iceland to learn how to read rock — Armstrong among them. This is the rock.",
+   "point": "The landscape hasn't changed in 60 years — which is exactly why NASA keeps coming back.",
+   "mic": "The first human on the Moon practised on this lava. So will the next one.",
+   "bullets": [
+    "The lava out both windows looked so alien that **NASA used Iceland as astronaut training ground.** During the **Apollo programme (1965–67)**, **32 astronauts** — **Neil Armstrong** among them — trained on Icelandic rock.",
+    "The heavy fieldwork was at **Askja** in the highlands, but the Reykjanes flows you're passing are the same **young basalt.** Volcanologist **Sigurður Þórarinsson** guided the crews; Armstrong later called the Icelandic terrain one of the closest Earth matches to the lunar surface.",
+    "The two lava types here — **pahoehoe** (smooth, ropy) and **aa** (rough, jagged) — are the same textures mapped on the Moon and Mars. In **2023** the **NASA Artemis** astronauts came back to the same fields to train for humanity's return to the Moon.",
+    "Reading the age of it is easy once you know the trick: nothing grows on it. The jet-black, plant-free fields are the new ones. These older flows, **east of the new ones** toward Hafnarfjörður, are ~**700–1,000 years old** — medieval — and still look like last week's, because Iceland has almost **no weathering**: no acid rain, no baking heat, no forest to break the rock down. Cold, clean Atlantic air preserves lava almost perfectly. (Nothing tidies up here. It just sits there looking new for a thousand years, like a show home.)",
+    "And a fair bit of it is hollow. **Lava tubes** form where the surface crusts over while molten rock keeps running underneath, then drains away and leaves the pipe behind. The whole pile is hundreds of metres thick — but the hollow tubes are just under the crust, sometimes only a metre or two below the wheels. (You are, in a modest way, driving on a ceiling.)",
+    "The lava out both windows looked so alien that **NASA used Iceland as an astronaut training ground.** During the **Apollo programme (1965–67)**, **32 astronauts** — **Neil Armstrong** among them — trained on Icelandic rock. The heavy fieldwork was at **Askja** in the highlands, but the Reykjanes flows you are passing are the same **young basalt.** Volcanologist **Sigurður Þórarinsson** guided the crews.",
+    "Reading the age of it is easy once you know the trick: **nothing grows on it.** The jet-black, plant-free fields are the new ones. The older flows toward Hafnarfjörður are ~**700 to 1,000 years old** — medieval — and still look like last week's, because Iceland has almost **no weathering**: no acid rain, no baking heat, no forest to break the rock down. *(Nothing tidies up here. It just sits there looking new for a thousand years, like a show home.)*",
+    "And a fair bit of it is hollow. **Lava tubes** form where the surface crusts over while molten rock keeps running underneath, then drains away and leaves the pipe behind. The pile is hundreds of metres thick, but the tubes sit just under the crust — sometimes **only a metre or two below the wheels.** *(You are, in a modest way, driving on a ceiling.)*"
+   ],
+   "say": [
+    [
+     "pahoehoe",
+     "pah-HOY-hoy",
+     "the smooth, ropy lava type out the window, a Hawaiian word"
+    ],
+    [
+     "aa",
+     "AH-ah",
+     "the rough, jagged lava type, the other half of the pair"
+    ],
+    [
+     "Sigurður Þórarinsson",
+     "SIG-ur-thur THOR-ar-in-son",
+     "the volcanologist who guided the Apollo crews training on Icelandic rock"
+    ]
+   ],
+   "tags": [
+    "#geology"
+   ]
+  },
+  "cuePerTour": {
+   "12.0": "Looking ahead at 12 o'clock — Route 41 cutting through black lava",
+   "13.0": "Look ahead — Route 41 cutting through black lava."
+  },
+  "rescued": [
+   "13.0: The lava out both windows looked so alien that **NASA used Iceland as an astronaut trainin",
+   "13.0: Reading the age of it is easy once you know the trick: **nothing grows on it.** The jet-bl",
+   "13.0: And a fair bit of it is hollow. **Lava tubes** form where the surface crusts over while mo"
+  ]
+ },
+ {
+  "title": "⚡ Svartsengi",
+  "subject": "svartsengi",
+  "usedBy": [
+   "12.0",
+   "13.0"
+  ],
+  "section": "Fagradalsfjall → Grindavík",
+  "kind": "drive",
+  "from": "13.0",
+  "block": {
+   "id": "13.0.5.1",
+   "title": "⚡ Svartsengi",
+   "sub": "The Power Plant That Made The Lagoon",
+   "cue": "Look right — tall white steam towers rising out of the lava field.",
+   "hook": "That power station accidentally built the Blue Lagoon — and then in 2024 had to be walled off from lava by the metre.",
+   "point": "Iceland pulls about **30% of its electricity** and **90% of its heating** from geothermal. Svartsengi is the textbook made real — and then defended with a digger.",
+   "mic": "A power station that accidentally made a spa, then had to be saved by hand from the volcano it lives off.",
+   "weather": "Weather pivot (if the towers are hidden): \"You will smell it before you see it, and on a day like this the steam plume and the cloud are the same object.\"",
+   "bullets": [
+    "***Svartsengi* = Black Meadow**, for the scorched ground it stands on. **Geothermal water from 1976, electricity from 1978 — the first plant anywhere to make both from the same well field.** That first turbine was a modest **1 MW**, quietly running the pumps for its own boreholes.",
+    "It drills **1,000 to 2,000 m** down to water at **240°C**, and now makes **85 MW of electricity** and **190 MW of heat.** The **seventh generating unit came on line on 1 December 2025**, replacing units three and four. That heat is piped across the **Suðurnes**, a region now well over **30,000** people. The **Blue Lagoon** was never planned — just mineral-rich wastewater pooling in the lava next door.",
+    "In **2024**, the eruptions sent lava straight at it. The plant was evacuated and defended with **earthen barriers averaging seven metres**, bulldozed into place in days. **The lava stopped short. It is still running today** — and the same reservoir it drinks from is the one being refilled under our feet right now.",
+    "It drills **1,000–2,000 m** down to water at **240°C**, and now makes **85 MW of electricity** and **190 MW of heat.** The **seventh generating unit came on line on 1 December 2025**, replacing units three and four. That heat is piped across the **Suðurnes**, a region now well over **30,000** people. The **Blue Lagoon** was never planned — just mineral-rich wastewater pooling in the lava next door.",
+    "In **2024**, the eruptions sent lava straight at it. The plant was evacuated and defended with **earthen barriers up to 6 m high**, bulldozed into place in days. The lava stopped short. It's still running today."
+   ],
+   "say": [
+    [
+     "Svartsengi",
+     "SVART-seng-ee",
+     "'Black Meadow', the 1976 geothermal plant whose wastewater accidentally made the Blue Lagoon"
+    ],
+    [
+     "Suðurnes",
+     "SOO-thur-ness",
+     "the southern peninsula region its hot water heats"
+    ]
+   ],
+   "tags": [
+    "#geology",
+    "#technology"
+   ]
+  },
+  "cuePerTour": {
+   "12.0": "Look right at 3 o'clock — tall white steam towers rising from the lava field to the south",
+   "13.0": "Look right — tall white steam towers rising out of the lava field."
+  },
+  "rescued": [
+   "12.0: It drills **1,000–2,000 m** down to water at **240°C**, and now makes **85 MW of electrici",
+   "12.0: In **2024**, the eruptions sent lava straight at it. The plant was evacuated and defended "
+  ]
+ },
+ {
+  "title": "🔥 The Reykjanes Fires",
+  "subject": "the reykjanes fires",
+  "usedBy": [
+   "12.0",
+   "13.0"
+  ],
+  "section": "Njarðvík → Vogar",
+  "kind": "drive",
+  "from": "12.0",
+  "block": {
+   "id": "12.0.2.3",
+   "title": "🔥 The Reykjanes Fires",
+   "sub": "Eruptions Right Now 🌍",
+   "cue": "Bus content as we drive across the lava — some of what you're passing cooled only last year",
+   "hook": "Some of the lava we're crossing cooled only last year.",
+   "point": "Geologists now think Reykjanes has entered a new eruptive era that could last decades or centuries. The black, plant-free fields by this road are **2021–2025** — some of the youngest ground on Earth.",
+   "mic": "This peninsula isn't dormant — it's just resting between eruptions. The last few redrew the map; the next is a question of when, not if.",
+   "bullets": [
+    "The **Reykjanes Fires** are a recurring cycle: the peninsula sleeps for centuries, then wakes for decades of eruptions across several systems, then sleeps again. The last full cycle ran ~**950–1240 CE** and laid most of the lava we've driven on.",
+    "After **1240 it went quiet for ~800 years** — then on **19 March 2021** a fissure split open at **Fagradalsfjall** and the Fires restarted. That first show ran six months; **50,000+** people hiked out to watch a volcano like it was a gig.",
+    "Then **Meradalir (2022)** and **Litli-Hrútur** (\"Little Ram\", **2023**), before the action jumped north to the **Sundhnúkur crater row** by Grindavík: **nine eruptions there between December 2023 and August 2025** — **twelve on the peninsula since 2021.** The last ended **early August 2025.**",
+    "As of **2026** there is **no active eruption** — the **longest pause yet** — but magma is still pooling under **Svartsengi**, and the Met Office (**Veðurstofan**) rates a fresh eruption the **most likely near-term outcome.** Their hazard map runs a six-level colour scale, green through yellow and orange to red, across zones **A to F.** Grindavík is zone A, and it currently sits at **yellow — *nokkur hætta*, some hazard.**",
+    "That first eruption ran **six months to the day** — **19 March to 18 September 2021** — and left about **150 million cubic metres** of lava over **4.8 km²**, averaging **more than 30 metres thick**, peaking in May and June at around **12 cubic metres a second.**",
+    "Under Svartsengi right now there is **about 28 million cubic metres** of magma on the Met Office's assessment — and that assessment runs out on **30 September**, which tells you how fast this moves. The ground is still rising at roughly **2 cm a month**, which makes today's quiet the pause between two eruptions rather than the end of anything.",
+    "**Could it go off while we're here?** Honestly — it could. There's about **twenty-eight million cubic metres** of magma under Svartsengi and the Met Office's own assessment says an eruption is the **most likely next event.** Here's the part that matters: when it moves, it moves **sideways first**, and that gives somewhere between **twenty minutes and four hours** of warning. Iceland has evacuated this ground **nine times** and has **not lost a single person to lava.** If it happens today, we'll know before it reaches the surface, and we'll be somewhere else.",
+    "Krýsuvík did the same job last time round. The **Krýsuvíkureldar of 1151 to 1188** laid down **Ögmundarhraun**, **Mávahlíðahraun** and **Kapelluhraun**, and then the system shut for **eight centuries** and has not opened since.",
+    "The 2021 fissure opened in **Geldingadalir** — the wether valleys, named after **castrated rams**, because sheep came there for a mouthful of grass. **Hallgrímur J. Ámundason** settled it at **Vísindavefurinn** on **24 March 2021**, five days into the eruption, from the place-name register of the farm **Hraun** in Grindavík.",
+    "**Kristján Sæmundsson** and **Magnús Á. Sigurgeirsson** call **Fagradalsfjall** unlike any other system on the peninsula — no central volcano, no proper fissure swarm, no high-temperature field, roughly **5 km wide and 15 km long.** Its **picrite** comes up fast and from deep without loitering in a chamber, which is why nothing filled up slowly where the instruments could watch it.",
+    "After **1240 the peninsula went quiet for about 800 years** — then on **19 March 2021** a fissure split open at **Fagradalsfjall** and the Fires restarted. That first show ran six months; **more than 50,000 people** hiked out to watch a volcano like it was a gig.",
+    "Then **Meradalir (2022)** and **Litli-Hrútur** (\"Little Ram\", **2023**), before the action jumped north to the **Sundhnúkur crater row** by Grindavík. **Veðurstofa Íslands counts nine eruptions there.** The ninth began on **16 July 2025** and the Met Office **formally declared it over on 5 August 2025.** That is **twelve eruptions on this peninsula since 2021.**",
+    "**And then it stopped.** As of **18 August 2026** Veðurstofan's line is *\"Kvikusöfnun og landris heldur áfram við Svartsengi\"* — **magma accumulation and uplift are continuing at Svartsengi**, at a rate that has held steady for weeks. Around **ten small earthquakes a day**, most of them north of Grindavík. **No eruption since the fifth of August last year** — which makes today, as we drive across it, **thirteen months of quiet.** The longest pause of the whole series.",
+    "Be careful how you say the next part, because it is the honest one. **The ground is still rising. The magma is still arriving. The Met Office's own assessment is that a new dike intrusion, and possibly a new eruption, remains the most likely outcome.** *(For the exact volume under Svartsengi and today's hazard-zone colours — check vedur.is this morning. Those numbers move and a stale one is worse than none.)*",
+    "**\"Could it go off while we're here?\"** You will get asked. The honest answer: it could. Here is what matters — when the magma moves it goes **sideways first**, and that dike run is the warning. **Veðurstofa Íslands puts the historic range at twenty minutes to just over four hours.** Iceland has evacuated this ground repeatedly and has **not lost a single person to lava.** If it happens today we will know before it reaches the surface, and we will be somewhere else.",
+    "Two footnotes for the geology-curious. **Kristján Sæmundsson** and **Magnús Á. Sigurgeirsson** describe **Fagradalsfjall** as unlike anything else on the peninsula — **no central volcano, no proper fissure swarm, no high-temperature field**, roughly **5 km wide and 15 km long.** Its **picrite** comes up fast and from deep without loitering in a magma chamber, which is exactly why nothing filled slowly where the instruments could watch it. And the valley the 2021 fissure opened in, **Geldingadalir**, means the **wether valleys** — named for **castrated rams**, because sheep came there for a mouthful of grass. **Hallgrímur J. Ámundason** settled that at **Vísindavefurinn** on **24 March 2021**, five days into the eruption, from the place-name register of the farm **Hraun** in Grindavík."
+   ],
+   "say": [
+    [
+     "Fagradalsfjall",
+     "FAG-ra-dals-FYATL",
+     "where the fissure opened on 19 March 2021 and restarted the fires after some 800 quiet years"
+    ],
+    [
+     "Meradalir",
+     "MEH-ra-DAH-leer",
+     "the site of the 2022 eruption"
+    ],
+    [
+     "Litli-Hrútur",
+     "LIT-lee HROO-tur",
+     "'Little Ram', the site of the 2023 eruption"
+    ],
+    [
+     "Sundhnúkagígar",
+     "SUND-noo-ka-GEE-yar",
+     "the crater row by Grindavík, nine eruptions between December 2023 and August 2025"
+    ],
+    [
+     "Reykjaneseldar",
+     "RAYK-ya-ness-EL-dar",
+     "the 'Reykjanes Fires', the cycle that wakes this peninsula for decades at a time"
+    ],
+    [
+     "Geldingadalir",
+     "GEL-ding-a-DAH-leer",
+     "'the wether valleys', the 2021 eruption site, named for castrated rams"
+    ],
+    [
+     "Veðurstofa Íslands",
+     "VETH-ur-sto-va EES-lands",
+     "the Icelandic Met Office, the people whose numbers these are"
+    ]
+   ],
+   "tags": [
+    "#geology"
+   ]
+  },
+  "cuePerTour": {
+   "12.0": "Bus content as we drive across the lava — some of what you're passing cooled only last year",
+   "13.0": "Look ahead — the black ground either side of the road."
+  },
+  "rescued": [
+   "13.0: After **1240 the peninsula went quiet for about 800 years** — then on **19 March 2021** a ",
+   "13.0: Then **Meradalir (2022)** and **Litli-Hrútur** (\"Little Ram\", **2023**), before the action",
+   "13.0: **And then it stopped.** As of **18 August 2026** Veðurstofan's line is *\"Kvikusöfnun og l",
+   "13.0: Be careful how you say the next part, because it is the honest one. **The ground is still ",
+   "13.0: **\"Could it go off while we're here?\"** You will get asked. The honest answer: it could. H",
+   "13.0: Two footnotes for the geology-curious. **Kristján Sæmundsson** and **Magnús Á. Sigurgeirss"
+  ]
+ },
+ {
+  "title": "🌋 Grindavík",
+  "subject": "grindavík",
+  "usedBy": [
+   "12.0",
+   "13.0"
+  ],
+  "section": "Grindavík",
+  "kind": "stop",
+  "from": "13.0",
+  "block": {
+   "id": "13.0.6.1",
+   "title": "🌋 Grindavík",
+   "sub": "The Town That Came Back",
+   "cue": "In Grindavík. Doors open, but stay on made ground.",
+   "hook": "This town stood for a thousand years. On **10 November 2023** the ground tore open beneath it in a single night — and every single person got out. **Then 874 of them moved back in.**",
+   "point": "The full hazard case in one town — lava, ground rupture and gas, then house fires, lost roads and a relocated fleet, then the human tier: a town evacuated overnight, bought out, and slowly reoccupied. And the response that made it survivable: **real-time monitoring, hours of warning, state-funded buyouts, and barriers built in days.**",
+   "mic": "Iceland is the only country on Earth that bought an entire town from its own citizens — and 874 of them moved back in anyway.",
+   "weather": "Weather pivot (if it's foul): \"Stay tight and stay on the tarmac. On a day like this the cracks are harder to see, and that is the only reason I am being boring about it.\"",
+   "bullets": [
+    "**Grindavík** was settled around **934 CE** — one of the first Reykjanes communities and a major North Atlantic **cod harbour.** By December 2023 it held about **3,720 people.**",
+    "On **10 November 2023**, thousands of earthquakes in a few hours drove a **dike roughly 15 kilometres long** under the town. Fissures **metres wide** opened through roads, gardens and house foundations, the ground **subsided about a metre** and **pulled apart by around 120 centimetres.** The whole town was **evacuated in one night.** In **January 2024**, lava reached the streets for the first time — houses burned, roads buried.",
+    "Further eruptions followed through 2024 and into 2025 as the **Sundhnúkur crater row** kept reactivating. **Earthen barriers built in days** — six to ten metres by design, twenty-four at the highest point — saved some streets and were overrun on others. For all that, **none of this lava ever reached the sea.** It crossed the Grindavíkurvegur road again and again and pushed into the town on **14 January 2024**, but it never made the coast. The last time lava ran into the sea on this peninsula was the **twelfth century.**",
+    "And then people started coming back. The state buyout company **Þórkatla** bought **over 90% of the homes**, and most residents did leave for good — but at **1 April 2026** Þjóðskrá had **874 registered residents** living here again. The **school is open** for the autumn term, the **library** has been brought back to its feet, and the **harbour and the power plant never stopped at all.** In **April 2026** Alþingi debated a formal framework for rebuilding the community. *(Not a ghost town. A very small town with an extremely dramatic CV.)*",
+    "**Say this bit out loud, because it changes how people behave:** the ground here is still moving and **crevasses are still opening.** That is why we stay on made surfaces and off verges, gardens and shortcuts. People live here. They did not survive all that to have a coach party fall down a hole in their street.",
+    "One older raid, because this harbour has form. On **20 June 1627** corsairs out of **Salé** in Morocco under **Murat Reis** took **12 to 15 Icelanders** from Grindavík, along with Danish and Dutch crew, and sailed them to **Algiers** — the opening act of the **Tyrkjaránið**, the Turkish Raid. Of everyone seized around Iceland that summer, **only 27** ever made it home, **nine years later.**",
+    "**Grindavík** was settled ~**934 CE** — one of the first Reykjanes communities and a major North Atlantic **cod harbour.** It even caught the **1627 Barbary corsair** raids. By December 2023 it held about **3,720 people.**",
+    "On **10 November 2023**, thousands of earthquakes in a few hours ripped **fissures metres wide** through roads, gardens and house foundations. The whole town was **evacuated in one night.** In **January 2024**, lava reached the streets for the first time — houses burned, roads buried.",
+    "Further eruptions followed through 2024 and into 2025 as the **Sundhnúkur crater row** kept reactivating. **6 m earthen barriers** built in days saved some streets and were overrun on others. For all that, **none of this lava ever reached the sea** — it crossed the Grindavíkurvegur road again and again and pushed into the town on **14 January 2024**, but it never made the coast. The last time lava ran into the sea on this peninsula was the **12th century.**",
+    "And then people started coming back. The state buyout company **Þórkatla** bought **over 90% of the homes** and most residents did leave for good — but at **1 April 2026** Þjóðskrá had **874 registered residents** living in Grindavík again, against about **3,720** before the evacuation. The **school is open** for the autumn term, crews have worked all summer to get **Bókasafn Grindavíkur**, the town library, back on its feet, and the **harbour and the power plant never stopped at all.** In **April 2026** Alþingi debated a formal framework for rebuilding the community here. (Not a ghost town. A very small town with an extremely dramatic CV.)",
+    "Between eruptions magma refills a shallow reservoir beneath **Svartsengi**, then runs sideways into the crater row as a **dike** before it surfaces. That sideways run is the only warning there is, and it is short — **Veðurstofa Íslands** puts the historic range at **20 minutes to just over four hours.**",
+    "The **1627** raid was this harbour specifically. On **20 June 1627** corsairs out of **Salé** in Morocco under **Murat Reis** took **12 to 15 Icelanders** along with Danish and Dutch crew and sailed them to **Algiers** — the opening act of the **Tyrkjaránið**, of which only **27** of everyone seized that summer ever made it home, nine years later."
+   ],
+   "say": [
+    [
+     "Grindavík",
+     "GRIN-da-veek",
+     "the fishing town settled around 934, evacuated in a single night on 10 November 2023"
+    ],
+    [
+     "Sundhnúkur",
+     "SUND-noo-kur",
+     "the crater row north of the town that kept reactivating through 2024 and 2025"
+    ],
+    [
+     "Þórkatla",
+     "THOR-kat-la",
+     "the state company that bought over 90% of the homes"
+    ],
+    [
+     "Tyrkjaránið",
+     "TIRK-ya-ROW-nith",
+     "'the Turkish Raid', the corsair raids of 1627"
+    ]
+   ],
+   "tags": [
+    "#geology",
+    "#seafaring",
+    "#history"
+   ]
+  },
+  "cuePerTour": {
+   "12.0": "Look right at the Grindavík turn-off — that road south. The town is fourteen kilometres down it, behind that ridge.",
+   "13.0": "In Grindavík. Doors open, but stay on made ground."
+  },
+  "rescued": [
+   "12.0: **Grindavík** was settled ~**934 CE** — one of the first Reykjanes communities and a major",
+   "12.0: On **10 November 2023**, thousands of earthquakes in a few hours ripped **fissures metres ",
+   "12.0: Further eruptions followed through 2024 and into 2025 as the **Sundhnúkur crater row** kep",
+   "12.0: And then people started coming back. The state buyout company **Þórkatla** bought **over 9",
+   "12.0: Between eruptions magma refills a shallow reservoir beneath **Svartsengi**, then runs side",
+   "12.0: The **1627** raid was this harbour specifically. On **20 June 1627** corsairs out of **Sal"
+  ]
  },
  {
   "title": "🧝 Hafnarfjörður",
   "subject": "hafnarfjörður",
   "usedBy": [
+   "12.0",
    "13.0"
   ],
   "section": "Lækjargata → Seltún",
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.1.3",
+   "id": "13.0.1.3",
    "title": "🧝 Hafnarfjörður",
    "sub": "Iceland's Elf Capital",
    "cue": "Look right — Hafnarfjörður running down to its harbour.",
@@ -8507,7 +8936,7 @@
     [
      "Jóhannes Reykdal",
      "YOH-han-nes RAYK-dal",
-     "the carpenter whose dammed stream lit the town in December 1904"
+     "the carpenter whose dammed stream lit the town in December 1904, Iceland's first hydroelectric station"
     ]
    ],
    "tags": [
@@ -8516,8 +8945,127 @@
     "#trade"
    ]
   },
-  "cuePerTour": null,
+  "cuePerTour": {
+   "12.0": "Look left at 10 o'clock — Hafnarfjörður running down to its harbour",
+   "13.0": "Look right — Hafnarfjörður running down to its harbour."
+  },
   "rescued": []
+ },
+ {
+  "title": "🏛️ Reykjavík",
+  "subject": "reykjavík",
+  "usedBy": [
+   "12.0",
+   "13.0"
+  ],
+  "section": "Lækjargata → Seltún",
+  "kind": "drive",
+  "from": "13.0",
+  "block": {
+   "id": "13.0.1.1",
+   "title": "🏛️ Reykjavík",
+   "sub": "The Brook, The Hill And The Forty-Five Years Of Silence",
+   "cue": "Look back — the green hill with the statue on it, just behind where we picked you up.",
+   "hook": "The street you just got on the bus in is called **Lækjargata — Brook Street.** There is no brook. It is still there, running under the tarmac, and in January it is the reason the ducks in the city pond have anywhere to swim.",
+   "point": "A buried brook that still keeps the birds warm, a parliament that stopped for forty-five years, and a church that took forty-one to build in a country that had none of the money.",
+   "mic": "Reykjavík will tell you it has the world's oldest parliament. What it actually has is the world's oldest parliament with a very long lunch break.",
+   "weather": "Weather pivot: \"If the tower has gone, do not worry — you will see it again tonight, and on a morning like this the locals cannot see it either.\"",
+   "bullets": [
+    "That hill is **Arnarhóll**, and the man on it is **Ingólfur Arnarson**, who the tradition says was Iceland's first settler. The tradition — and say it as a tradition, because that is what it is — has him throwing his **öndvegissúlur**, the carved pillars from either side of a chieftain's high seat, over the side of the ship and settling wherever they washed ashore. They came in below this hill. **What archaeology can actually pin down is different and better:** there were people here **before the ash layer dated to AD 871, give or take two years.** The statue is by **Einar Jónsson**, and it was not a gift from the state — the **Reykjavík craftsmen's guild** paid the **40,000 krónur** and unveiled it on **24 February 1924.** Arnarhóll was a working farm until the **1820s.**",
+    "Now the brook. **Lækurinn** ran from the pond down to the sea, the old town grew up on the west side of it, and the street was named **Lækjargata in 1848.** In **1911** they put the brook in a culvert and paved over it. **It is still flowing under us.** And here is the good part: the pond — **Tjörnin** — freezes in winter, except for one patch. Guides will tell you that is a natural hot spring. **It is not.** It is **warm overflow from the city's hot-water system**, coming out at the old brook outlet by Iðnó. One warm corner, and every duck in Reykjavík standing in it.",
+    "Off to the right on **Austurvöllur** is the **Alþingishúsið**, the parliament, built **1880 to 1881** by the Danish architect **Ferdinand Meldahl**, out of stone quarried up the hill in **Þingholtin.** And this is where you correct the guidebook. **Alþingi was founded at Þingvellir, traditionally in 930** — the oldest parliamentary institution in the world by date of foundation. **But it is not the oldest continuously running one, and Alþingi does not claim to be.** It was **shut down by royal decree on 6 June 1800** and did not sit again until **1 July 1845.** **Forty-five years of silence.** That gap is the whole reason the Isle of Man gets to argue about this.",
+    "Last one on the skyline: **Hallgrímskirkja**, the concrete tower you can see from most of the city. **About 74 and a half metres** — the parish's own leaflet says 73, and I am not going to pretend that is settled. It was designed by **Guðjón Samúelsson**, and the shape is meant to be **columnar basalt, mountains and glaciers** rather than anything churchy. Building started in **1945** and it was consecrated on **26 October 1986** — **forty-one years.** Guðjón died in **1950** and never saw it. The statue of **Leifur Eiríksson** out front is older than the church behind it: **a gift from the United States** for the **1930 millennium of the Alþingi**, formally handed over on **17 July 1931.**",
+    "***Reykjavík* = \"Smoky Bay.\"** Around **874 AD** chieftain **Ingólfur Arnarson** sailed in, saw steam off the geothermal vents, and called it smoke. It wasn't — those **hot springs** now heat nearly every building in the city.",
+    "Archaeology backs the legend: a turf longhouse wall at **Aðalstræti** lies **under a volcanic ash layer dated to AD 871 ±2** — the founding pinned to within two years by Greenland ice cores. It's on show *in situ* at the **Settlement Exhibition.** (DNA says the \"pure Viking\" founders were already a **Norse–Gaelic** mix from day one.)",
+    "It's the world's **northernmost capital** at **64°N**, closer to the Arctic than to London. **Two-thirds of all Icelanders** — roughly **250,000 of 394,324** (Hagstofa Íslands, 1 January 2026) — live in the greater city, almost entirely on **geothermal heat**: **80–90°C** water piped to radiators, pools, and snow-free pavements. Reykjavík was the **first major city to quit oil heating**, done by the **1970s.** Skyline: **Hallgrímskirkja**, **Harpa**, and **Esja** behind — the city's free weather app. See Esja = good day. Esja gone = grab a coat.",
+    "**Höfði house** — the small white seafront mansion — hosted the **Reykjavík Summit, 11–12 October 1986**: **Reagan** and **Gorbachev** met on cutting nuclear arsenals. It officially \"failed,\" then produced the **INF Treaty (1987)**; Berlin Wall down **1989**, USSR gone **1991.** Neutral, army-free Iceland was the trusted middle ground.",
+    "Two more firsts: on **24 October 1975**, **90% of women** downed tools for **Kvennafrídagurinn** (\"Women's Day Off\") and froze the country; on **29 June 1980** Iceland elected **Vigdís Finnbogadóttir** — the world's **first democratically elected female head of state.**"
+   ],
+   "say": [
+    [
+     "Reykjavík",
+     "RAKE-ya-veek",
+     "'Smoky Bay', the world's northernmost capital, at 64°N"
+    ],
+    [
+     "Ingólfur Arnarson",
+     "EENG-gohl-vur AR-nar-son",
+     "the chieftain who sailed in around 874 and named the bay for its steam"
+    ],
+    [
+     "Hallgrímskirkja",
+     "HATL-greems-KIRK-ya",
+     "consecrated 26 October 1986, forty-one years after work began"
+    ],
+    [
+     "Harpa",
+     "HAR-pa",
+     "the concert hall on the waterfront skyline"
+    ],
+    [
+     "Esja",
+     "ES-ya",
+     "the mountain behind the city, the free weather app: see Esja, good day"
+    ],
+    [
+     "Höfði",
+     "HUFTH-ee",
+     "the small white seafront mansion, literally 'headland', where Reagan and Gorbachev met in 1986"
+    ],
+    [
+     "Kvennafrídagurinn",
+     "KVEN-na-free-DAH-gur-in",
+     "the 'Women's Day Off', 24 October 1975, when 90% of women downed tools and froze the country"
+    ],
+    [
+     "Vigdís Finnbogadóttir",
+     "VIG-dees FIN-boh-ga-DOH-tir",
+     "elected in 1980, the world's first democratically elected female head of state"
+    ],
+    [
+     "Lækjargata",
+     "LYE-kyar-GA-ta",
+     "'brook street', named 1848, with the brook culverted underneath in 1911"
+    ],
+    [
+     "Arnarhóll",
+     "ARD-nar-hohtl",
+     "'eagle hill', the mound with the Ingólfur statue"
+    ],
+    [
+     "öndvegissúlur",
+     "URND-vay-yis-SOO-lur",
+     "'high-seat pillars', thrown overboard to choose a landing place"
+    ],
+    [
+     "Alþingi",
+     "AL-thing-ee",
+     "the parliament, founded at Þingvellir around 930, closed 1800, reopened 1845"
+    ],
+    [
+     "Tjörnin",
+     "TYURT-nin",
+     "'the pond', where one corner stays open all winter"
+    ]
+   ],
+   "tags": [
+    "#history",
+    "#folklore",
+    "#migration",
+    "#technology"
+   ]
+  },
+  "cuePerTour": {
+   "12.0": "Pulling into the city — the buildings, the bay, the hills ahead",
+   "13.0": "Look back — the green hill with the statue on it, just behind where we picked you up."
+  },
+  "rescued": [
+   "12.0: ***Reykjavík* = \"Smoky Bay.\"** Around **874 AD** chieftain **Ingólfur Arnarson** sailed in",
+   "12.0: Archaeology backs the legend: a turf longhouse wall at **Aðalstræti** lies **under a volca",
+   "12.0: It's the world's **northernmost capital** at **64°N**, closer to the Arctic than to London",
+   "12.0: **Höfði house** — the small white seafront mansion — hosted the **Reykjavík Summit, 11–12 ",
+   "12.0: Two more firsts: on **24 October 1975**, **90% of women** downed tools for **Kvennafrídagu"
+  ]
  },
  {
   "title": "🏭 Straumsvík & Kapelluhraun",
@@ -8529,7 +9077,7 @@
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.1.4",
+   "id": "13.0.1.4",
    "title": "🏭 Straumsvík & Kapelluhraun",
    "sub": "A Saint Of Fire, Next Door To A Smelter",
    "cue": "Look right — the low silver sheds and the chimneys, and the black lava they sit on.",
@@ -8586,7 +9134,7 @@
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.1.5",
+   "id": "13.0.1.5",
    "title": "🛣️ Vatnsskarð & Sveifluháls",
    "sub": "The Road Everyone Said Was A Waste Of Money",
    "cue": "Look ahead — the road climbing into the gap, and the long jagged ridge on our right.",
@@ -8641,7 +9189,7 @@
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.1.6",
+   "id": "13.0.1.6",
    "title": "💧 Kleifarvatn",
    "sub": "The Lake That Pulled Its Own Plug",
    "cue": "Look left — the long dark lake filling the valley floor.",
@@ -8695,7 +9243,7 @@
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.1.7",
+   "id": "13.0.1.7",
    "title": "🔥 Krýsuvíkureldar",
    "sub": "The Fires That Shut The Door",
    "cue": "Look around — the whole floor of this valley is one lava flow.",
@@ -8742,7 +9290,7 @@
   "kind": "stop",
   "from": "13.0",
   "block": {
-   "id": "14.0.2.1",
+   "id": "13.0.2.1",
    "title": "♨️ Seltún",
    "sub": "Where They Drilled For The Queen And Got A Crater",
    "cue": "At Seltún, from the boardwalk.",
@@ -8809,7 +9357,7 @@
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.3.1",
+   "id": "13.0.3.1",
    "title": "💚 Grænavatn & Augun",
    "sub": "The Green Lake Nobody Can Fully Explain",
    "cue": "Look left — the small deep-green lake below the road. And in a moment, a pool on each side of us.",
@@ -8863,7 +9411,7 @@
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.3.2",
+   "id": "13.0.3.2",
    "title": "⛪ Krýsuvíkurkirkja",
    "sub": "The Church That Burned Down And Was Built Again By Apprentices",
    "cue": "Look right — the small black timber church under the hill.",
@@ -8905,71 +9453,6 @@
   "rescued": []
  },
  {
-  "title": "🌋 The Reykjanes Fires",
-  "subject": "the reykjanes fires",
-  "usedBy": [
-   "13.0"
-  ],
-  "section": "Seltún → Fagradalsfjall",
-  "kind": "drive",
-  "from": "13.0",
-  "block": {
-   "id": "14.0.3.3",
-   "title": "🌋 The Reykjanes Fires",
-   "sub": "Twelve Eruptions And Counting",
-   "cue": "Look ahead — the black ground either side of the road.",
-   "hook": "Some of the lava we are about to walk on is younger than most of the phones on this bus.",
-   "point": "Twelve eruptions in four years, then thirteen months of silence with the ground still swelling underneath. This is not the end of anything. It is the gap between two paragraphs.",
-   "mic": "Geologists think this peninsula has woken up for the next few decades. We are not visiting a volcano today. We are visiting its lunch break.",
-   "weather": "Weather pivot (always usable): \"You don't need a view for this one. Everything I've just described is under the tyres.\"",
-   "bullets": [
-    "After **1240 the peninsula went quiet for about 800 years** — then on **19 March 2021** a fissure split open at **Fagradalsfjall** and the Fires restarted. That first show ran six months; **more than 50,000 people** hiked out to watch a volcano like it was a gig.",
-    "Then **Meradalir (2022)** and **Litli-Hrútur** (\"Little Ram\", **2023**), before the action jumped north to the **Sundhnúkur crater row** by Grindavík. **Veðurstofa Íslands counts nine eruptions there.** The ninth began on **16 July 2025** and the Met Office **formally declared it over on 5 August 2025.** That is **twelve eruptions on this peninsula since 2021.**",
-    "**And then it stopped.** As of **18 August 2026** Veðurstofan's line is *\"Kvikusöfnun og landris heldur áfram við Svartsengi\"* — **magma accumulation and uplift are continuing at Svartsengi**, at a rate that has held steady for weeks. Around **ten small earthquakes a day**, most of them north of Grindavík. **No eruption since the fifth of August last year** — which makes today, as we drive across it, **thirteen months of quiet.** The longest pause of the whole series.",
-    "Be careful how you say the next part, because it is the honest one. **The ground is still rising. The magma is still arriving. The Met Office's own assessment is that a new dike intrusion, and possibly a new eruption, remains the most likely outcome.** *(For the exact volume under Svartsengi and today's hazard-zone colours — check vedur.is this morning. Those numbers move and a stale one is worse than none.)*",
-    "**\"Could it go off while we're here?\"** You will get asked. The honest answer: it could. Here is what matters — when the magma moves it goes **sideways first**, and that dike run is the warning. **Veðurstofa Íslands puts the historic range at twenty minutes to just over four hours.** Iceland has evacuated this ground repeatedly and has **not lost a single person to lava.** If it happens today we will know before it reaches the surface, and we will be somewhere else.",
-    "Two footnotes for the geology-curious. **Kristján Sæmundsson** and **Magnús Á. Sigurgeirsson** describe **Fagradalsfjall** as unlike anything else on the peninsula — **no central volcano, no proper fissure swarm, no high-temperature field**, roughly **5 km wide and 15 km long.** Its **picrite** comes up fast and from deep without loitering in a magma chamber, which is exactly why nothing filled slowly where the instruments could watch it. And the valley the 2021 fissure opened in, **Geldingadalir**, means the **wether valleys** — named for **castrated rams**, because sheep came there for a mouthful of grass. **Hallgrímur J. Ámundason** settled that at **Vísindavefurinn** on **24 March 2021**, five days into the eruption, from the place-name register of the farm **Hraun** in Grindavík."
-   ],
-   "say": [
-    [
-     "Fagradalsfjall",
-     "FAG-ra-dals-FYATL",
-     "where the fissure opened on 19 March 2021 after some 800 quiet years"
-    ],
-    [
-     "Geldingadalir",
-     "GEL-ding-a-DAH-leer",
-     "'the wether valleys', the 2021 eruption site, named for castrated rams"
-    ],
-    [
-     "Meradalir",
-     "MEH-ra-DAH-leer",
-     "the site of the 2022 eruption"
-    ],
-    [
-     "Litli-Hrútur",
-     "LIT-lee HROO-tur",
-     "'Little Ram', the site of the 2023 eruption"
-    ],
-    [
-     "Sundhnúkagígar",
-     "SUND-noo-ka-GEE-yar",
-     "the crater row by Grindavík, nine eruptions from December 2023 to August 2025"
-    ],
-    [
-     "Veðurstofa Íslands",
-     "VETH-ur-sto-va EES-lands",
-     "the Icelandic Met Office, the people whose numbers these are"
-    ]
-   ],
-   "tags": [
-    "#geology"
-   ]
-  },
-  "cuePerTour": null,
-  "rescued": []
- },
- {
   "title": "⛓️ Festarfjall & Ísólfsskáli",
   "subject": "festarfjall & ísólfsskáli",
   "usedBy": [
@@ -8979,7 +9462,7 @@
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.3.4",
+   "id": "13.0.3.4",
    "title": "⛓️ Festarfjall & Ísólfsskáli",
    "sub": "The Giant's Chain, And A Volcano Cut In Half",
    "cue": "Look left — the cliff falling into the bay, with a pale vertical stripe running up it.",
@@ -9041,7 +9524,7 @@
   "kind": "stop",
   "from": "13.0",
   "block": {
-   "id": "14.0.4.1",
+   "id": "13.0.4.1",
    "title": "🥾 Fagradalsfjall",
    "sub": "The Newest Ground In Europe",
    "cue": "At the trailhead, before we set off.",
@@ -9086,49 +9569,6 @@
   "rescued": []
  },
  {
-  "title": "⚡ Svartsengi",
-  "subject": "svartsengi",
-  "usedBy": [
-   "13.0"
-  ],
-  "section": "Fagradalsfjall → Grindavík",
-  "kind": "drive",
-  "from": "13.0",
-  "block": {
-   "id": "14.0.5.1",
-   "title": "⚡ Svartsengi",
-   "sub": "The Power Plant That Made The Lagoon",
-   "cue": "Look right — tall white steam towers rising out of the lava field.",
-   "hook": "That power station accidentally built the Blue Lagoon — and then in 2024 had to be walled off from lava by the metre.",
-   "point": "Iceland pulls about **30% of its electricity** and **90% of its heating** from geothermal. Svartsengi is the textbook made real — and then defended with a digger.",
-   "mic": "A power station that accidentally made a spa, then had to be saved by hand from the volcano it lives off.",
-   "weather": "Weather pivot (if the towers are hidden): \"You will smell it before you see it, and on a day like this the steam plume and the cloud are the same object.\"",
-   "bullets": [
-    "***Svartsengi* = Black Meadow**, for the scorched ground it stands on. **Geothermal water from 1976, electricity from 1978 — the first plant anywhere to make both from the same well field.** That first turbine was a modest **1 MW**, quietly running the pumps for its own boreholes.",
-    "It drills **1,000 to 2,000 m** down to water at **240°C**, and now makes **85 MW of electricity** and **190 MW of heat.** The **seventh generating unit came on line on 1 December 2025**, replacing units three and four. That heat is piped across the **Suðurnes**, a region now well over **30,000** people. The **Blue Lagoon** was never planned — just mineral-rich wastewater pooling in the lava next door.",
-    "In **2024**, the eruptions sent lava straight at it. The plant was evacuated and defended with **earthen barriers averaging seven metres**, bulldozed into place in days. **The lava stopped short. It is still running today** — and the same reservoir it drinks from is the one being refilled under our feet right now."
-   ],
-   "say": [
-    [
-     "Svartsengi",
-     "SVART-seng-ee",
-     "'Black Meadow', the 1976 plant whose wastewater accidentally made the Blue Lagoon"
-    ],
-    [
-     "Suðurnes",
-     "SOO-thur-ness",
-     "the southern peninsula region its hot water heats"
-    ]
-   ],
-   "tags": [
-    "#geology",
-    "#technology"
-   ]
-  },
-  "cuePerTour": null,
-  "rescued": []
- },
- {
   "title": "⛰️ Þorbjörn",
   "subject": "þorbjörn",
   "usedBy": [
@@ -9138,7 +9578,7 @@
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.5.2",
+   "id": "13.0.5.2",
    "title": "⛰️ Þorbjörn",
    "sub": "The Mountain That Gave The First Warning",
    "cue": "Look ahead and right — the flat-topped hill standing over the town, with masts on the summit.",
@@ -9193,63 +9633,6 @@
   "rescued": []
  },
  {
-  "title": "🌋 Grindavík",
-  "subject": "grindavík",
-  "usedBy": [
-   "13.0"
-  ],
-  "section": "Grindavík",
-  "kind": "stop",
-  "from": "13.0",
-  "block": {
-   "id": "14.0.6.1",
-   "title": "🌋 Grindavík",
-   "sub": "The Town That Came Back",
-   "cue": "In Grindavík. Doors open, but stay on made ground.",
-   "hook": "This town stood for a thousand years. On **10 November 2023** the ground tore open beneath it in a single night — and every single person got out. **Then 874 of them moved back in.**",
-   "point": "The full hazard case in one town — lava, ground rupture and gas, then house fires, lost roads and a relocated fleet, then the human tier: a town evacuated overnight, bought out, and slowly reoccupied. And the response that made it survivable: **real-time monitoring, hours of warning, state-funded buyouts, and barriers built in days.**",
-   "mic": "Iceland is the only country on Earth that bought an entire town from its own citizens — and 874 of them moved back in anyway.",
-   "weather": "Weather pivot (if it's foul): \"Stay tight and stay on the tarmac. On a day like this the cracks are harder to see, and that is the only reason I am being boring about it.\"",
-   "bullets": [
-    "**Grindavík** was settled around **934 CE** — one of the first Reykjanes communities and a major North Atlantic **cod harbour.** By December 2023 it held about **3,720 people.**",
-    "On **10 November 2023**, thousands of earthquakes in a few hours drove a **dike roughly 15 kilometres long** under the town. Fissures **metres wide** opened through roads, gardens and house foundations, the ground **subsided about a metre** and **pulled apart by around 120 centimetres.** The whole town was **evacuated in one night.** In **January 2024**, lava reached the streets for the first time — houses burned, roads buried.",
-    "Further eruptions followed through 2024 and into 2025 as the **Sundhnúkur crater row** kept reactivating. **Earthen barriers built in days** — six to ten metres by design, twenty-four at the highest point — saved some streets and were overrun on others. For all that, **none of this lava ever reached the sea.** It crossed the Grindavíkurvegur road again and again and pushed into the town on **14 January 2024**, but it never made the coast. The last time lava ran into the sea on this peninsula was the **twelfth century.**",
-    "And then people started coming back. The state buyout company **Þórkatla** bought **over 90% of the homes**, and most residents did leave for good — but at **1 April 2026** Þjóðskrá had **874 registered residents** living here again. The **school is open** for the autumn term, the **library** has been brought back to its feet, and the **harbour and the power plant never stopped at all.** In **April 2026** Alþingi debated a formal framework for rebuilding the community. *(Not a ghost town. A very small town with an extremely dramatic CV.)*",
-    "**Say this bit out loud, because it changes how people behave:** the ground here is still moving and **crevasses are still opening.** That is why we stay on made surfaces and off verges, gardens and shortcuts. People live here. They did not survive all that to have a coach party fall down a hole in their street.",
-    "One older raid, because this harbour has form. On **20 June 1627** corsairs out of **Salé** in Morocco under **Murat Reis** took **12 to 15 Icelanders** from Grindavík, along with Danish and Dutch crew, and sailed them to **Algiers** — the opening act of the **Tyrkjaránið**, the Turkish Raid. Of everyone seized around Iceland that summer, **only 27** ever made it home, **nine years later.**"
-   ],
-   "say": [
-    [
-     "Grindavík",
-     "GRIN-da-veek",
-     "the fishing town settled around 934, evacuated in a single night on 10 November 2023"
-    ],
-    [
-     "Sundhnúkur",
-     "SUND-noo-kur",
-     "the crater row north of the town that kept reactivating through 2024 and 2025"
-    ],
-    [
-     "Þórkatla",
-     "THOR-kat-la",
-     "the state company that bought over 90% of the homes"
-    ],
-    [
-     "Tyrkjaránið",
-     "TIRK-ya-ROW-nith",
-     "'the Turkish Raid', the corsair raids of 1627"
-    ]
-   ],
-   "tags": [
-    "#geology",
-    "#seafaring",
-    "#history"
-   ]
-  },
-  "cuePerTour": null,
-  "rescued": []
- },
- {
   "title": "⛳ Staðarhverfi & Húsatóftir",
   "subject": "staðarhverfi & húsatóftir",
   "usedBy": [
@@ -9259,7 +9642,7 @@
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.7.1",
+   "id": "13.0.7.1",
    "title": "⛳ Staðarhverfi & Húsatóftir",
    "sub": "Iceland's Most Over-Qualified Golf Course",
    "cue": "Look right — the flat green ground running down to the shore, and the little graveyard.",
@@ -9317,7 +9700,7 @@
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.7.2",
+   "id": "13.0.7.2",
    "title": "🎬 Sandvík",
    "sub": "The Beach That Played Iwo Jima",
    "cue": "Look left — the wide black sand bay.",
@@ -9362,7 +9745,7 @@
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.7.3",
+   "id": "13.0.7.3",
    "title": "🔌 Reykjanesvirkjun",
    "sub": "Drinking From The Ridge",
    "cue": "Look right — the second power station, and the steam behind it.",
@@ -9410,7 +9793,7 @@
   "kind": "stop",
   "from": "13.0",
   "block": {
-   "id": "14.0.8.1",
+   "id": "13.0.8.1",
    "title": "👻 Gunnuhver",
    "sub": "The Ghost They Paid Eight Bottles To Move",
    "cue": "At Gunnuhver, on the boardwalk.",
@@ -9476,7 +9859,7 @@
   "kind": "stop",
   "from": "13.0",
   "block": {
-   "id": "14.0.9.1",
+   "id": "13.0.9.1",
    "title": "🗼 Reykjanesviti",
    "sub": "The Lighthouse The Ground Tried To Evict",
    "cue": "At Reykjanesviti — the white tower on the hill.",
@@ -9538,7 +9921,7 @@
   "kind": "stop",
   "from": "13.0",
   "block": {
-   "id": "14.0.9.2",
+   "id": "13.0.9.2",
    "title": "🐧 Eldey & The Great Auk",
    "sub": "The Rock Where A Species Ended",
    "cue": "Look out to sea — the flat-topped island on the horizon. And the bronze bird on the headland.",
@@ -9595,7 +9978,7 @@
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.10.1",
+   "id": "13.0.10.1",
    "title": "⚓ Hafnir",
    "sub": "A Ship With Nobody Aboard, And A Hall That Is Too Old",
    "cue": "Look right — the church and the scatter of houses down by the shore.",
@@ -9644,64 +10027,6 @@
   "rescued": []
  },
  {
-  "title": "✈️ Keflavík",
-  "subject": "keflavík",
-  "usedBy": [
-   "13.0"
-  ],
-  "section": "Reykjanes → Reykjavík",
-  "kind": "drive",
-  "from": "13.0",
-  "block": {
-   "id": "14.0.10.2",
-   "title": "✈️ Keflavík",
-   "sub": "The Airport You Arrived At, And The Base That Built It",
-   "cue": "Look left — the terminal, the control tower, and the flat ground running away behind it.",
-   "hook": "Almost everyone on this bus landed there. It was built by the **US military in the Second World War**, it was an **American base for fifty-five years**, and the Americans went home on **30 September 2006.** The airport you walked through is the leftovers.",
-   "point": "A wartime airstrip became a Cold War base, became a shopping-and-housing district, became the busiest transatlantic stopover in the North Atlantic. Same tarmac. Four completely different countries' worth of history.",
-   "mic": "Iceland is the only nation that got handed an entire American town and turned it into student flats and a business park. Somewhere on Ásbrú there is a family living in a barracks block, complaining about the parking.",
-   "weather": "Weather pivot: \"If it is closed in, take comfort: this airport has one of the best weather records in the country. That is the whole reason it is here and not somewhere prettier.\"",
-   "bullets": [
-    "There were originally **two** airfields. **Patterson Field** was started in **February 1942** up by Fitjar. **Meeks Field** — which is the one still here — was begun that summer on Háaleiti by a US Navy construction battalion, with about **3,000 men** working on it at the peak. It opened in **1943.** *(Sources give three different days in March and April 1943 for the ceremony, so I will give you the year and keep my dignity.)*",
-    "Both were named after **young American pilots killed in Iceland.** Meeks died in a crash at Reykjavík airport on **19 August 1941**, shortly after arriving in the country. The busiest month was **June 1944**: **1,050 aircraft** through the field, and on one day, **115 four-engine bombers** on the ground at once.",
-    "The airfields became Icelandic property under the **1946 agreement** and the last wartime US troops left on **8 April 1947.** Then the Cold War arrived: the **defence agreement was signed on 5 May 1951**, and the base ran for the next fifty-five years. On **1 March 1990** there were **3,294 US military personnel** here — **4,987** counting families — plus **1,086 Icelandic employees.** By January **2005** the military figure was down to **1,453.** On **15 March 2006** Washington gave notice, and on **30 September 2006** they were gone.",
-    "What happens when a foreign army hands you a town? Iceland set up a development company on **24 October 2006** and turned the base into **Ásbrú** — housing, businesses and a campus. *(The university side has just changed hands again: teaching stayed on Ásbrú but the **University of Iceland took it over on 1 January 2026.**)*",
-    "The airport itself became the country's front door. The **Leifur Eiríksson terminal** opened on **14 April 1987** at **23,000 square metres.** In **2025** it handled **8,159,461 passengers** — the fourth-busiest year in its history. **2.2 million** of those, **27%**, never left the building — they were changing planes between America and Europe, which is the entire business model of this country's aviation.",
-    "And the town is **Reykjanesbær**, created on **11 June 1994** by merging **Keflavík, Njarðvík and Hafnir** — **10,181 people** at the time.",
-    "One story for the road. On **9 October 1986**, Air Force One landed here at **five past seven in the evening** carrying **Ronald Reagan**, for the summit with **Gorbachev** in Reykjavík. The talks collapsed. On the **12th**, before flying home, Reagan stopped at this base to speak to the American personnel and explained why he was late: *\"I called Nancy and told her I wouldn't be home for dinner.\"*"
-   ],
-   "say": [
-    [
-     "Keflavík",
-     "KEP-la-veek",
-     "'driftwood bay', the airport and the town"
-    ],
-    [
-     "Reykjanesbær",
-     "RAYK-ya-ness-BYE-r",
-     "the municipality formed in 1994 from Keflavík, Njarðvík and Hafnir"
-    ],
-    [
-     "Ásbrú",
-     "OWS-broo",
-     "'the bridge of the Æsir', the former base, now a district"
-    ],
-    [
-     "Njarðvík",
-     "NYARTH-veek",
-     "the neighbouring town, part of the 1994 merger"
-    ]
-   ],
-   "tags": [
-    "#history",
-    "#technology",
-    "#migration"
-   ]
-  },
-  "cuePerTour": null,
-  "rescued": []
- },
- {
   "title": "🪦 Vogastapi",
   "subject": "vogastapi",
   "usedBy": [
@@ -9711,7 +10036,7 @@
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.10.3",
+   "id": "13.0.10.3",
    "title": "🪦 Vogastapi",
    "sub": "The Ghost That May Have Been Made Redundant Last December",
    "cue": "Look left — the long flat-topped headland dropping into the sea.",
@@ -9769,7 +10094,7 @@
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.10.4",
+   "id": "13.0.10.4",
    "title": "🔺 Keilir",
    "sub": "The Cone That Only Ever Erupted Once",
    "cue": "Look right — the perfect triangle standing on its own out on the lava plain.",
@@ -9815,55 +10140,6 @@
   "rescued": []
  },
  {
-  "title": "🌑 Route 41",
-  "subject": "route 41",
-  "usedBy": [
-   "13.0"
-  ],
-  "section": "Reykjanes → Reykjavík",
-  "kind": "drive",
-  "from": "13.0",
-  "block": {
-   "id": "14.0.10.5",
-   "title": "🌑 Route 41",
-   "sub": "The Moon Road",
-   "cue": "Look ahead — Route 41 cutting through black lava.",
-   "hook": "NASA sent thirty-two astronauts to Iceland to learn how to read rock — Armstrong among them. This is the rock.",
-   "point": "The landscape hasn't changed in sixty years — which is exactly why NASA keeps coming back.",
-   "mic": "The first human on the Moon practised on this lava. So will the next one.",
-   "weather": "Weather pivot: \"Grey sky over black rock and no plants anywhere. If anything this is *more* like the Moon, not less.\"",
-   "bullets": [
-    "The lava out both windows looked so alien that **NASA used Iceland as an astronaut training ground.** During the **Apollo programme (1965–67)**, **32 astronauts** — **Neil Armstrong** among them — trained on Icelandic rock. The heavy fieldwork was at **Askja** in the highlands, but the Reykjanes flows you are passing are the same **young basalt.** Volcanologist **Sigurður Þórarinsson** guided the crews.",
-    "The two lava types here — **pahoehoe** (smooth, ropy) and **aa** (rough, jagged) — are the same textures mapped on the Moon and Mars. In **2023** the **NASA Artemis** astronauts came back to the same fields to train for humanity's return to the Moon.",
-    "Reading the age of it is easy once you know the trick: **nothing grows on it.** The jet-black, plant-free fields are the new ones. The older flows toward Hafnarfjörður are ~**700 to 1,000 years old** — medieval — and still look like last week's, because Iceland has almost **no weathering**: no acid rain, no baking heat, no forest to break the rock down. *(Nothing tidies up here. It just sits there looking new for a thousand years, like a show home.)*",
-    "And a fair bit of it is hollow. **Lava tubes** form where the surface crusts over while molten rock keeps running underneath, then drains away and leaves the pipe behind. The pile is hundreds of metres thick, but the tubes sit just under the crust — sometimes **only a metre or two below the wheels.** *(You are, in a modest way, driving on a ceiling.)*"
-   ],
-   "say": [
-    [
-     "pahoehoe",
-     "pah-HOY-hoy",
-     "the smooth, ropy lava out the window, a Hawaiian word"
-    ],
-    [
-     "aa",
-     "AH-ah",
-     "the rough, jagged type, the other half of the pair"
-    ],
-    [
-     "Sigurður Þórarinsson",
-     "SIG-ur-thur THOR-ar-in-son",
-     "the volcanologist who guided the Apollo crews"
-    ]
-   ],
-   "tags": [
-    "#geology",
-    "#technology"
-   ]
-  },
-  "cuePerTour": null,
-  "rescued": []
- },
- {
   "title": "🏙️ Reykjavík",
   "subject": "reykjavík #2",
   "usedBy": [
@@ -9873,7 +10149,7 @@
   "kind": "drive",
   "from": "13.0",
   "block": {
-   "id": "14.0.10.6",
+   "id": "13.0.10.6",
    "title": "🏙️ Reykjavík",
    "sub": "The Smoky Bay",
    "cue": "Pulling into the city — the buildings, the bay, the hills ahead.",
