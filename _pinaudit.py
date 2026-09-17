@@ -1,159 +1,170 @@
 #!/usr/bin/env python3
-"""PIN AUDIT — are the map pins and sightlines where they are supposed to be?
-
-WINDOWED, and that is the whole point. 5.0 is an out-and-back: Sólheimajökull to
-Vík is driven twice, and BSÍ is both the first and the last point on the line.
-A naive nearest-point search over the whole geometry therefore resolves a
-return-leg pin to its outbound pass and screams "42 km backwards" about a cue
-that is perfectly fine. Every lookup here is constrained to a window around the
-cue's own stated progress. (Repo law, learned on 4.0 and re-learned here.)
-
-Checks, per cue:
-  1. is the pin ON the road?
-  2. does the pin actually sit where its progress says it does?
-  3. do the pins run in route order?
-  4. is the pin BEFORE the target's closest approach, within the window?
-  5. is the target close enough for a human to see?
-Then: clumps, and silences split into OUTBOUND (a real gap) and RETURN
-(same road already covered outbound — not a gap, per Ritchie's dedupe rule).
-
-Usage: python3 _pinaudit.py 5.0
+# -*- coding: utf-8 -*-
 """
-import json, re, sys, math, os
+_pinaudit.py — read-only. Hunt for the next Vogar.
 
-TAG    = sys.argv[1] if len(sys.argv) > 1 else "5.0"
-HERE   = os.path.dirname(os.path.abspath(__file__))
-WINDOW = 8.0          # % of route either side of the stated progress
+THE BUG THIS LOOKS FOR (found on 12.0, 17 Sep 2026)
+Vogar was pinned at the village. The village sits 1.66 km off Reykjanesbraut, so
+the drawn line turned off the main road, looped the village and came back — 4.5
+km and 9 minutes of driving the coach never does. The app uses that line to work
+out how far through the journey you are, so a line that is long by 14 minutes
+fires cues in the wrong place.
 
-def km(a, b):
-    dy = (a[0] - b[0]) * 111.32
-    dx = (a[1] - b[1]) * 111.32 * math.cos(math.radians(a[0]))
-    return math.hypot(dx, dy)
+THE TEST — drop-one, the same one that caught Vogar
+Route the tour with all its stops, then route it again with one stop removed,
+and see how much distance that stop was costing. Repeat for every stop.
 
-rt = open(os.path.join(HERE, "route-%s.js" % TAG), encoding="utf-8").read()
-pts = [(float(a), float(b)) for a, b in
-       re.findall(r"\[\s*(-?\d+\.\d+)\s*,\s*(-?\d+\.\d+)\s*\]", rt)]
-if pts and abs(pts[0][0]) < 30:
-    pts = [(b, a) for a, b in pts]
-cum = [0.0]
-for i in range(1, len(pts)):
-    cum.append(cum[-1] + km(pts[i - 1], pts[i]))
-TOTAL = cum[-1]
-PROG  = [c / TOTAL * 100 for c in cum]
+A stop that costs distance is NOT automatically wrong. Gullfoss costs 90 km and
+the coach absolutely goes there. What made Vogar wrong is that it is a
+DRIVE-PAST — the manuscript introduces it with 🚌, not 📍 — and the coach never
+leaves the main road for it.
 
-cu   = open(os.path.join(HERE, "cues-%s.js" % TAG), encoding="utf-8").read()
-CUES = json.loads(cu[cu.index("["):cu.rindex("]") + 1])
-sc   = open(os.path.join(HERE, "script-%s.js" % TAG), encoding="utf-8").read()
+   costs distance + marked 📍  = correct, that's a stop
+   costs distance + marked 🚌  = SUSPECT, the line detours for nothing
 
-KINDBYID = {}
-for m in re.finditer(r'\{title:"[^"]+", kind:"(\w+)", blocks:\[', sc):
-    seg = sc[m.end():]
-    n = seg.find('{title:"')
-    seg = seg[:n] if n > 0 else seg
-    for b in re.findall(r'\{id:"(%s\.\d+\.\d+)"' % re.escape(TAG), seg):
-        KINDBYID[b] = m.group(1)
+An earlier version of this script measured each pin against a "through-road"
+drawn first-stop-to-last. That is meaningless on a loop tour, where first and
+last are both BSÍ and the through-road has zero length — it reported Gullfoss as
+suspect on 2.0 and 3.0, which is nonsense. Drop-one works on loops and one-ways
+alike.
 
-BLOCK = {}
-for m in re.finditer(r'\{id:"(%s\.\d+\.\d+)"' % re.escape(TAG), sc):
-    seg = sc[m.start():m.start() + 900]
-    t = re.search(r'title:"([^"]*)"', seg)
-    c = re.search(r'cue:"((?:[^"\\]|\\.)*)"', seg)
-    BLOCK[m.group(1)] = (t.group(1) if t else "?", c.group(1) if c else "")
+  python3 _pinaudit.py            # every tour with a built route
+  python3 _pinaudit.py 5.0 7.0    # just these
+"""
+import json, math, os, re, subprocess, sys, time, glob
 
-def near_win(p, prog):
-    """Nearest route index to p, searched ONLY within +/-WINDOW% of prog."""
-    lo = next((i for i, q in enumerate(PROG) if q >= prog - WINDOW), 0)
-    hi = next((i for i in range(len(PROG) - 1, -1, -1) if PROG[i] <= prog + WINDOW),
-              len(PROG) - 1)
-    if hi < lo:
-        lo, hi = 0, len(PROG) - 1
-    best, bi = 1e9, lo
-    for i in range(lo, hi + 1):
-        d = km(p, pts[i])
-        if d < best:
-            best, bi = d, i
-    return best, bi
+GCD  = "/Users/ritchiej/Documents/golden-circle-direct/"
+MS   = "/Users/ritchiej/Documents/RitchWiki/Tour Scripts/"
+WARN = 1.0   # km a drive-past may cost before it is worth a look
 
-print("route %.1f km | %d points | %d cues | window +/-%.0f%%\n"
-      % (TOTAL, len(pts), len(CUES), WINDOW))
-print("%-11s %-31s %6s %7s %7s %-8s %s"
-      % ("id", "title", "prog", "pin→rd", "tgt km", "abeam", "notes"))
-print("-" * 120)
+def osrm_geo(pts):
+    co = ";".join("%f,%f" % (p[1], p[0]) for p in pts)
+    out = subprocess.run(["curl", "-s",
+          "http://router.project-osrm.org/route/v1/driving/%s"
+          "?overview=full&geometries=geojson" % co],
+          capture_output=True, text=True).stdout
+    try:
+        d = json.loads(out)
+        if d.get("code") != "Ok": return None
+        return [(c[1], c[0]) for c in d["routes"][0]["geometry"]["coordinates"]]
+    except Exception:
+        return None
 
-rows, prev, problems = [], -1, []
-for c in CUES:
-    bid = c["id"]
-    title, cue = BLOCK.get(bid, ("?", ""))
-    prog = c["progress"]
-    off, pi = near_win((c["pin"]["lat"], c["pin"]["lon"]), prog)
-    notes = []
-    if off > 0.12:
-        notes.append("PIN %dm OFF-ROAD" % int(off * 1000))
-    drift = PROG[pi] - prog
-    if abs(drift) > 1.5:
-        notes.append("pin sits at %.1f%%, progress says %.1f%% (%.0f km out)"
-                     % (PROG[pi], prog, abs(drift) / 100 * TOTAL))
-    if prog < prev - 0.01:
-        notes.append("PROGRESS GOES BACKWARDS")
-    prev = prog
 
-    tk, ab, tg = "-", "-", c.get("target")
-    if tg:
-        tp = (tg["lat"], tg["lon"])
-        td = km((c["pin"]["lat"], c["pin"]["lon"]), tp)
-        tk = "%.1f" % td
-        _, ai = near_win(tp, prog)
-        # The before-abeam law is about a MOVING bus: a pin placed past its
-        # subject draws the arrow out of the back window. At a stop the coach is
-        # parked and the guest can turn round, so the rule does not apply.
-        stationary = KINDBYID.get(bid) == "stop"
-        ab = "n/a" if stationary else ("ok" if pi <= ai + 3 else "PAST")
-        if pi > ai + 3 and not stationary:
-            notes.append("pin %.1f km PAST closest approach — arrow points backwards"
-                         % (cum[pi] - cum[ai]))
-        if td > 30:
-            notes.append("target %.0f km off — visible?" % td)
-    rows.append(dict(id=bid, title=title, cue=cue, prog=prog,
-                     pin_off_road_m=round(off * 1000),
-                     pin_actual_prog=round(PROG[pi], 2),
-                     target=(tg or {}).get("name"),
-                     target_km=(float(tk) if tk != "-" else None),
-                     abeam=ab, notes=notes))
-    if notes:
-        problems.append(bid)
-    print("%-11s %-31s %5.1f%% %6dm %7s %-8s %s"
-          % (bid, title[:30], prog, int(off * 1000), tk, ab, "; ".join(notes)))
+def hav(a, b):
+    R = 6371.0088
+    la1, lo1 = math.radians(a[0]), math.radians(a[1])
+    la2, lo2 = math.radians(b[0]), math.radians(b[1])
+    return 2*R*math.asin(math.sqrt(math.sin((la2-la1)/2)**2 +
+                math.cos(la1)*math.cos(la2)*math.sin((lo2-lo1)/2)**2))
 
-print("\n" + "=" * 78)
-print("CLUMPS — blocks firing within 0.15%% (%.1f km) of each other"
-      % (0.15 / 100 * TOTAL))
-print("=" * 78)
-for i in range(1, len(CUES)):
-    g = CUES[i]["progress"] - CUES[i - 1]["progress"]
-    if g < 0.15:
-        print("  %.2f%%  %-11s %-27s + %-11s %s"
-              % (g, CUES[i - 1]["id"], BLOCK.get(CUES[i - 1]["id"], ("", ""))[0][:26],
-                 CUES[i]["id"], BLOCK.get(CUES[i]["id"], ("", ""))[0][:26]))
 
-# outbound = up to the furthest point of the route (max distance from start)
-far = max(range(len(pts)), key=lambda i: km(pts[0], pts[i]))
-TURN = PROG[far]
-print("\nturnaround (furthest point from BSÍ) at %.1f%% of the route" % TURN)
-print("=" * 78)
-print("SILENCES >= 12 km  —  OUTBOUND ones are real gaps, RETURN ones retrace")
-print("=" * 78)
-for i in range(1, len(CUES)):
-    a, b = CUES[i - 1]["progress"], CUES[i]["progress"]
-    d = (b - a) / 100 * TOTAL
-    if d >= 12:
-        leg = "OUTBOUND" if b <= TURN + 1 else ("RETURN  " if a >= TURN - 1 else "SPANS   ")
-        print("  %-8s %6.1f km  %5.1f%% → %5.1f%%   %-28s → %s"
-              % (leg, d, a, b, BLOCK.get(CUES[i - 1]["id"], ("", ""))[0][:27],
-                 BLOCK.get(CUES[i]["id"], ("", ""))[0][:27]))
+def osrm_km(pts):
+    co = ";".join("%f,%f" % (p[1], p[0]) for p in pts)
+    out = subprocess.run(["curl", "-s",
+          "http://router.project-osrm.org/route/v1/driving/%s?overview=false" % co],
+          capture_output=True, text=True).stdout
+    try:
+        d = json.loads(out)
+        if d.get("code") != "Ok": return None
+        return d["routes"][0]["distance"] / 1000.0
+    except Exception:
+        return None
 
-print("\ncues with something to answer for: %d of %d" % (len(problems), len(CUES)))
-json.dump({"tag": TAG, "total_km": round(TOTAL, 1), "turnaround_pct": round(TURN, 1),
-           "rows": rows},
-          open(os.path.join(HERE, "_pinaudit-%s.json" % TAG), "w"),
-          ensure_ascii=False, indent=1)
-print("wrote _pinaudit-%s.json" % TAG)
+def stop_kinds(tag):
+    """{stop title lowercased: 'stop'|'drive'} taken from the BUILT script.
+
+    An earlier version read the markdown and looked for "+ ## 📍" headings. Most
+    manuscripts do not use that spelling — 2.0 has exactly one such heading in
+    the whole file — so nearly every stop came back unclassified and Gullfoss
+    was reported as a drive-past on 2.0 and 3.0, which is nonsense: it is the
+    headline stop of the tour. The built JS already carries kind:"stop" or
+    kind:"drive" per section, decided by the same parser the app uses, so ask
+    that instead of re-deriving it badly. (17 Sep 2026)
+    """
+    f = GCD + "script-%s.js" % tag
+    if not os.path.exists(f): return {}
+    out = subprocess.run(["node", "-e",
+        'global.window={};eval(require("fs").readFileSync(process.argv[1],"utf8"));'
+        'console.log(JSON.stringify(window.__SCRIPT__.sections.map('
+        's=>[s.title,s.kind])))', f], capture_output=True, text=True).stdout
+    try:
+        secs = json.loads(out)
+    except Exception:
+        return {}
+    kinds = {}
+    for title, kind in secs:
+        if kind == "stop":
+            kinds[title.strip().lower()] = "stop"
+    return kinds
+
+
+def pins_for(tag):
+    """Re-derive the builder's stop coordinates from the drawn route's legs."""
+    s = open(GCD + "route-%s.js" % tag, encoding="utf-8").read()
+    j = json.loads(s[s.index("{"):s.rindex("}")+1])
+    geo, legs = j["geometry"], j["legs"]
+    names = re.search(r'via (.+?)\. Stop coordinates', s)
+    stops = [x.strip() for x in re.split(r'→', names.group(1))] if names else []
+    tot, run, fr = sum(l["km"] for l in legs), 0.0, [0.0]
+    for l in legs:
+        run += l["km"]; fr.append(run / tot)
+    pins = [tuple(geo[min(int(f * (len(geo)-1)), len(geo)-1)]) for f in fr]
+    return stops, pins, tot
+
+TOURS = re.findall(r'id:"([^"]+)"', open(GCD + "tours.js", encoding="utf-8").read())
+want  = sys.argv[1:] or TOURS
+flagged, checked = [], 0
+
+for tag in want:
+    if not os.path.exists(GCD + "route-%s.js" % tag):
+        print("%-6s (no route file — not built)\n" % tag); continue
+    stops, pins, tot = pins_for(tag)
+    kinds = stop_kinds(tag)
+    full = osrm_km(pins); time.sleep(0.8)
+    if full is None:
+        print("%-6s (router declined)\n" % tag); continue
+    print("%-6s %d stops, %.1f km with every stop" % (tag, len(pins), full))
+    for i, name in enumerate(stops):
+        if i == 0 or i == len(pins)-1:       # start and end define the tour
+            print("        %-32s  (endpoint)" % name[:32]); continue
+        less = osrm_km(pins[:i] + pins[i+1:]); time.sleep(0.8)
+        checked += 1
+        if less is None:
+            print("        %-32s  (router declined)" % name[:32]); continue
+        cost = full - less
+        mark = kinds.get(name.lower(), "drive")
+        flag = ""
+        if cost >= WARN and mark != "stop":
+            # SECOND STAGE, and it matters. A waypoint that costs distance is
+            # only a Vogar if the coach would have driven past it ANYWAY. Drop
+            # it, redraw, and see where the road goes: if the new line still
+            # passes close to the pin, the pin is making the coach leave a road
+            # it was already on — that is the bug. If the new line goes somewhere
+            # else entirely, the waypoint is DEFINING the route, not detouring
+            # from it, and the distance it "costs" is the tour itself.
+            #
+            # Without this stage the script cried wolf over Selfoss on the three
+            # Golden Circle tours (drop it and the router returns via Þingvellir,
+            # 28 km away — Selfoss is what forces the southern return) and over
+            # Reykjanesviti on 13.0 (the turnaround point of the loop).
+            geo2 = osrm_geo(pins[:i] + pins[i+1:]); time.sleep(0.8)
+            near = min(hav(pins[i], q) for q in geo2) if geo2 else 99.0
+            if near < 1.0:
+                flag = ("  <-- SUSPECT: costs %.1f km, yet the coach passes "
+                        "%.2f km away without it" % (cost, near))
+                flagged.append((tag, name, cost))
+            else:
+                flag = "  (route-defining — without it the road goes %.0f km elsewhere)" % near
+        print("        %-32s  costs %6.1f km  %-5s%s" % (name[:32], cost, mark, flag))
+    print()
+
+print("=" * 72)
+print("%d stops tested." % checked)
+if flagged:
+    print("SUSPECT — drive-past stops the drawn line detours to:")
+    for t, n, c in sorted(flagged, key=lambda x: -x[2]):
+        print("   %-6s %-30s %.1f km" % (t, n, c))
+else:
+    print("No drive-past stop costs the line more than %.1f km. Clean." % WARN)
+print("Pins are Ritchie's call — this reports, it does not move anything.")

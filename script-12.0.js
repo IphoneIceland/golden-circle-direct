@@ -143,7 +143,7 @@ sections: [
 },
 {id:"12.0.2.4", title:"🌋 Grindavík", sub:"The Town Holding Its Breath 🌍", cue:"Look right at the Grindavík turn-off — that road south. The town is fourteen kilometres down it, behind that ridge.",
  hook:"That town stood for 1,000 years — then on 10 November 2023 the ground tore open beneath it in a single night.",
- point:"Grindavík is the textbook **volcanic hazard** case: primary impacts (lava, ground rupture, SO₂), knock-ons (house fires, harbour and road loss, fleet relocation), and the human tier — a whole town evacuated overnight, bought out, and now slowly reoccupied. HIC response: real-time **InSAR + GPS** monitoring, days of warning, **state-funded buyouts**, lava barriers built in days.",
+ point:"Grindavík is the textbook **volcanic hazard** case: primary impacts (lava, ground rupture, SO₂), knock-ons (house fires, harbour and road loss, fleet relocation), and the human tier — a whole town evacuated overnight, bought out, and now slowly reoccupied. HIC response: real-time **InSAR + GPS** monitoring, hours of warning, **state-funded buyouts**, lava barriers built in days.",
  mic:"Iceland is the only country on Earth that bought an entire town from its own citizens — and 874 of them have moved back in anyway.",
  bullets:[
   "**Grindavík** was settled ~**934 CE** — one of the first Reykjanes communities and a major North Atlantic **cod harbour.** It even caught the **1627 Barbary corsair** raids. By December 2023 it held about **3,720 people.**",
