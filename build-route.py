@@ -132,7 +132,7 @@ def keyfor(t):
 
 # Not every tour starts at BSÍ. 14.0 is picked up on Lækjargata, 12.0 at the
 # airport.
-START = {"13.0":"LAEK", "12.0":"KEFA"}
+START = {"13.0":"LAEK", "12.0":"LAEK"}
 HOME  = START.get(tag, "BSI")
 
 # ...and not every tour comes back. Every tour here is a LOOP: it is assumed to
@@ -141,7 +141,9 @@ HOME  = START.get(tag, "BSI")
 # ends in Reykjavík and never returns. Appending HOME would have drawn the line
 # 50 km back down the peninsula to the airport. Opt-in only, so no existing tour
 # changes shape.
-ONE_WAY = {"12.0"}
+ONE_WAY = set()   # 12.0 left this set on 17 Sep 2026: it is no longer an airport
+                  # transfer, it is the South Loop driven the other way, so it
+                  # ends where it started and must close like any other loop.
 
 # stop order, straight out of the document's section headings
 seq=[HOME]

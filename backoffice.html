@@ -51,6 +51,26 @@ body{background:
   transition:width .25s ease,opacity .4s ease;opacity:0}
 #loadbar.on{opacity:1}
 
+/* ── THE MAP. The back office decides what a guest hears where, so it should
+      show where. Same Leaflet and the same CARTO dark tiles as the guest app,
+      off the same vendored files, so it looks like one product. ── */
+#mapstrip{margin:11px 14px 0;border:1px solid var(--line);border-radius:14px;
+  overflow:hidden;background:rgba(16,16,20,.74)}
+body.nomap #mapstrip{display:none}
+#bomap{height:230px;background:#11131a;transition:height .18s ease}
+#mapstrip.tall #bomap{height:min(62vh,560px)}
+#mapbar{display:flex;align-items:center;gap:8px;padding:7px 10px;
+  border-top:1px solid var(--line)}
+#mapbar .spacer{flex:1}
+#mapbar .n{color:var(--dim);font-size:11.5px}
+.leaflet-container{background:#11131a;font:inherit}
+.leaflet-control-attribution{background:rgba(13,13,15,.7)!important;color:var(--dim)!important;
+  font-size:9.5px!important}
+.leaflet-control-attribution a{color:var(--mute)!important}
+.leaflet-bar a{background:#1a1a20!important;color:var(--mute)!important;
+  border-color:var(--line)!important}
+.leaflet-bar a:hover{background:#24242c!important;color:var(--accent)!important}
+.bodot{border-radius:50%;box-sizing:border-box}
 #modes{display:flex;gap:8px;padding:11px 14px 0}
 #modes button{background:rgba(20,20,26,.72);border:1px solid var(--line);color:var(--mute);
   border-radius:11px;padding:8px 16px;font:700 13px var(--sans);cursor:pointer}
@@ -92,6 +112,41 @@ body.matrix #wrap,body.matrix #tabs,body.matrix #tourbar{display:none}
 #matrix td.cell.chg i{box-shadow:0 0 0 3px rgba(224,122,95,.45)}
 #matrix td.cell:hover i{border-color:var(--accent)}
 #mxdirty{color:var(--warn)}
+/* Placeless blocks — the playlists, Landnám, 17 June 1944. Nothing to point
+   at, and that is not a gap to fill. Their own section, their own colour, so
+   they stop reading as 8 permanent faults. */
+:root{--noplace:#7aa2c8}
+#matrix tr.sec.placeless td.rowhead{color:var(--noplace)}
+#matrix tr.sec.placeless td{background:rgba(122,162,200,.07)}
+#matrix tr.placeless td.cell.on i{background:var(--noplace);border-color:var(--noplace)}
+#matrix td.rowhead span.code.noplace{color:var(--noplace);
+  background:rgba(122,162,200,.12);border-color:rgba(122,162,200,.34)}
+/* The location code. Compass octant and km from BSÍ, off the landmark's own
+   coordinate — SE10 is ten km south-east. Nothing to renumber. */
+#matrix td.rowhead span.code{display:inline-block;width:auto;min-width:46px;text-align:center;
+  font:700 10px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.04em;
+  color:var(--accent);background:rgba(212,169,74,.12);vertical-align:2px;
+  border:1px solid rgba(212,169,74,.3);border-radius:5px;padding:1px 5px;margin-right:8px}
+#matrix td.rowhead span.code.none{color:var(--dim);background:rgba(255,255,255,.03);border-color:var(--line)}
+#matrix td.rowhead b{vertical-align:middle}
+/* Which way you look, computed from the road — not typed per tour. */
+#matrix td.cell em{display:block;font:600 9.5px var(--sans);font-style:normal;
+  color:var(--dim);letter-spacing:.02em;margin-top:2px;white-space:nowrap}
+#matrix td.cell.on em{color:var(--mute)}
+#matrix td.cell.far em{color:rgba(224,122,95,.75)}
+body.noaim #matrix td.cell em{display:none}
+/* Section rows. The blocks belong to a leg of road, so the matrix reads the
+   way the coach drives rather than as 159 undifferentiated ticks. */
+#matrix tr.sec td{background:rgba(26,24,20,.97);border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);padding:6px 10px 6px 12px;cursor:pointer}
+#matrix tr.sec td.rowhead{position:sticky;left:0;z-index:2;
+  font:700 12px var(--sans);color:var(--accent);letter-spacing:.02em;white-space:nowrap}
+#matrix tr.sec td.rowhead .car{display:inline-block;width:11px;color:var(--dim);
+  transition:transform .15s;transform:rotate(90deg)}
+#matrix tr.sec.shut td.rowhead .car{transform:rotate(0deg)}
+#matrix tr.sec td.rowhead small{color:var(--dim);font-weight:400;margin-left:6px}
+#matrix tr.sec td.cell{text-align:center;font:700 10.5px var(--sans);color:var(--dim)}
+#matrix tr.sec:hover td{background:rgba(34,30,24,.99)}
 
 #tourbar{display:flex;gap:8px;padding:11px 14px;overflow-x:auto;scrollbar-width:thin}
 #tourbar::-webkit-scrollbar{height:6px}
@@ -231,6 +286,10 @@ button.mini:hover{border-color:var(--accent);color:var(--accent)}
   #top .tag{display:none}
   .sechd{top:0}
 }
+.sight{margin-top:6px;font-size:12px;color:var(--mute);line-height:1.5}
+  .sight b{color:var(--accent)}
+  .sight.none{color:var(--dim);font-style:italic}
+  .sight .warn{color:var(--warn)}
 </style>
 </head>
 <body>
@@ -254,9 +313,22 @@ button.mini:hover{border-color:var(--accent);color:var(--accent)}
 </div>
 <div id="loadbar"></div>
 
+<div id="mapstrip">
+  <div id="bomap"></div>
+  <div id="mapbar">
+    <span class="n" id="mapwho">Every block with a target</span>
+    <span class="spacer"></span>
+    <button class="mini" id="mapfit">Fit</button>
+    <button class="mini" id="maptall">Taller</button>
+    <button class="mini" id="maphide">Hide map</button>
+  </div>
+</div>
+
 <div id="modes">
   <button id="modeBuild" class="on">Build one tour</button>
   <button id="modeMatrix">All tours at once</button>
+  <span style="flex:1"></span>
+  <button id="modeMapOn" class="mini" hidden>Show map</button>
 </div>
 
 <div id="tourbar"></div>
@@ -265,6 +337,8 @@ button.mini:hover{border-color:var(--accent);color:var(--accent)}
   <div class="colhead">Every block · every tour <span class="n" id="mxcount"></span>
     <span class="spacer"></span>
     <span class="n" id="mxdirty"></span>
+    <button class="mini" id="mxaim">Hide aim</button>
+    <button class="mini" id="mxfold">Collapse all</button>
     <button class="mini" id="mxreset">Undo changes</button>
     <button class="mini" id="mxsave">Save plan</button>
   </div>
@@ -338,6 +412,8 @@ const BACKOFFICE_PIN="731905";
 <!-- ABSOLUTE, not relative. The back office is served at /editor/ but its data
      lives at /app/. Relative paths resolved to /editor/tours.js and every
      /editor/script-*.js, all 404, so the picker loaded zero tours. -->
+<link rel="stylesheet" href="/app/vendor/leaflet.css">
+<script src="/app/vendor/leaflet.js"></script>
 <script src="/app/tours.js"></script>
 <script>
 /* ═══════════════════════════════════════════════════════════════════════════
@@ -392,6 +468,7 @@ function ensureTour(id){
   if(LIB[id]) return Promise.resolve(LIB[id]);
   if(PEND[id]) return PEND[id];
   bar(true);
+  sightReady(id).then(()=>{ try{paintBlocks();}catch(e){} });
   PEND[id] = loadScript("/app/script-"+id+".js").then(()=>{
     LIB[id]=JSON.parse(JSON.stringify(window.__SCRIPT__));
     bar(false); delete PEND[id]; return LIB[id];
@@ -405,6 +482,13 @@ function ensureTour(id){
    Keep in Your Pocket" was six of them, one per tour that uses it. blocks.json
    holds one entry each, built by _onecopy.py, carrying the list of tours that
    use it. One fetch, one list, no ten-script download. */
+let AIM=null;      // computed placement: block -> tour -> {side, clock, km, progress}
+function ensureAim(){
+  if(AIM) return Promise.resolve(AIM);
+  return fetch("/app/aim.json").then(r=>r.ok?r.json():null)
+    .then(j=>{ AIM=j||{blocks:{}}; return AIM; })
+    .catch(()=>{ AIM={blocks:{}}; return AIM; });
+}
 let BOOKP=null;
 function ensureBook(){
   if(BOOK.length) return Promise.resolve(BOOK);
@@ -482,6 +566,84 @@ async function pick(id){
   if(id==="*") await ensureBook().catch(()=>null); else await ensureTour(id).catch(()=>null);
   $("stat").textContent=libStat();
   paintTours(); paintBlocks(); saveDraft();
+  if(typeof paintMap==="function") paintMap();
+}
+
+
+/* ── SIGHTLINES ────────────────────────────────────────────────────────────
+   Which window, and what o'clock — computed, not remembered.
+
+   The same hill is on your left on one tour and your right on another, because
+   the coach passes it the other way round. Rauðhólar is right on 4.0/5.0/6.0/7.0
+   and left on 1.0/2.0/3.0. Reversing a tour (12.0, 17 Sep 2026) makes every one
+   of them wrong at once, so this is arithmetic, not memory:
+
+     heading  = bearing along the DRAWN route at the cue's pin (not stop-to-stop,
+                so it stays right on a bend)
+     bearing  = bearing from the pin to the target
+     relative = bearing - heading, normalised to ±180. Positive is the right-hand
+                side of the coach, negative the left. o'clock = relative / 30.
+
+   Two answers per cue, and they often differ: what it is WHEN THE CUE FIRES, and
+   what it is WHEN YOU ARE BESIDE IT. A cue that fires 2 km early reads "ahead"
+   whichever side the thing is on, because it genuinely is still ahead. The side
+   only becomes true at closest approach. Where the two disagree the pin is early,
+   and the gap is printed in km.
+
+   Needs a target coordinate — that is the thing being pointed at. No target,
+   nothing to aim at, and it says so rather than guessing. */
+const GEO={}, CUE={};
+function _hav(a,b){const R=6371.0088,p=Math.PI/180;
+  const la1=a[0]*p,la2=b[0]*p,dla=(b[0]-a[0])*p,dlo=(b[1]-a[1])*p;
+  return 2*R*Math.asin(Math.sqrt(Math.sin(dla/2)**2+Math.cos(la1)*Math.cos(la2)*Math.sin(dlo/2)**2));}
+function _brg(a,b){const p=Math.PI/180,la1=a[0]*p,la2=b[0]*p,dlo=(b[1]-a[1])*p;
+  const y=Math.sin(dlo)*Math.cos(la2),x=Math.cos(la1)*Math.sin(la2)-Math.sin(la1)*Math.cos(la2)*Math.cos(dlo);
+  return (Math.atan2(y,x)*180/Math.PI+360)%360;}
+function _clock(r){const h=Math.round(((r+360)%360)/30)%12;return h===0?12:h;}
+function _side(r){return r>15?"right":(r<-15?"left":"ahead");}
+
+function sightReady(tid){
+  if(GEO[tid]&&CUE[tid]) return Promise.resolve();
+  return Promise.all([
+    fetch("/app/route-"+tid+".js").then(r=>r.ok?r.text():null).then(t=>{
+      if(!t) return; const j=JSON.parse(t.slice(t.indexOf("{"),t.lastIndexOf("}")+1));
+      GEO[tid]=j.geometry;}),
+    fetch("/app/cues-"+tid+".js").then(r=>r.ok?r.text():null).then(t=>{
+      if(!t) return; CUE[tid]=JSON.parse(t.slice(t.indexOf("["),t.lastIndexOf("]")+1));})
+  ]).catch(()=>{});
+}
+
+function sightline(tid, blockId){
+  const geo=GEO[tid], cues=CUE[tid];
+  if(!geo||!cues) return null;
+  const c=cues.find(x=>x.id===blockId);
+  if(!c||!c.pin) return null;
+  if(!c.target) return {none:true};
+  const q=[c.target.lat,c.target.lon], p=[c.pin.lat,c.pin.lon];
+  const at=i=>{const a=geo[Math.max(0,i-6)],b=geo[Math.min(geo.length-1,i+6)],o=geo[i];
+    return [((_brg(o,q)-_brg(a,b)+540)%360)-180,_hav(o,q)];};
+  let i=0,best=1e9,j=0,best2=1e9;
+  for(let k=0;k<geo.length;k++){
+    const d1=_hav(p,geo[k]); if(d1<best){best=d1;i=k;}
+    const d2=_hav(q,geo[k]); if(d2<best2){best2=d2;j=k;}
+  }
+  const [r1,d1]=at(i), [r2,d2]=at(j);
+  let ahead=0; for(let k=Math.min(i,j);k<Math.max(i,j);k++) ahead+=_hav(geo[k],geo[k+1]);
+  return {pinSide:_side(r1), pinClock:_clock(r1), pinKm:d1,
+          bySide:_side(r2), byClock:_clock(r2), byKm:d2, earlyKm:ahead,
+          early:_side(r1)!==_side(r2)};
+}
+
+function sightText(tid, blockId){
+  const s=sightline(tid, blockId);
+  if(!s) return "";
+  if(s.none) return "<div class='sight none'>no target pinned — side cannot be computed</div>";
+  let t="<div class='sight'><b>"+s.bySide+" · "+s.byClock+" o'clock</b> when you are beside it ("
+        +s.byKm.toFixed(2)+" km)";
+  if(s.early) t+="<br><span class='warn'>cue fires "+s.earlyKm.toFixed(1)
+        +" km early — at the pin it is "+s.pinSide+" "+s.pinClock+" o'clock</span>";
+  t+="</div>";
+  return t;
 }
 
 /* ── 2. BLOCKS ─────────────────────────────────────────────────────────────
@@ -520,6 +682,7 @@ function blockEl(r){
     +(r.usedBy?"<div class='sec'>"+esc(r.usedBy.join(" · "))+"</div>":"")
     /* no section line here — the sticky header above already says it, tour and all */
     +(r.b.cue?"<div class='cue'>"+esc(r.b.cue)+"</div>":"")
+    +(r.tour&&r.b.id?sightText(r.tour, r.b.id):"")
     +"<div class='stats'>"+(r.b.bullets||[]).length+" bullets · "+(r.b.say||[]).length+" pronunciations</div>"
     +"<div class='peek'>"+esc((r.b.bullets||[]).slice(0,4).join("\n\n"))+"</div>"
     +"</div>"
@@ -687,6 +850,7 @@ function paintPicks(){
    not a decoration bolted on afterwards. */
 function afterChange(){
   paintPicks(); paintBlocks(); paintTours(); paintSteps(); saveDraft();
+  if(typeof paintMap==="function") paintMap();
 }
 /* The 1-2-3 strip is gone — Ritchie knows how his own tool works. What it was
    quietly carrying, the talking-time and the basket count, lives on here. */
@@ -832,12 +996,13 @@ $("export").onclick=()=>{
 let MX = null;      // slug -> Set(tour) as loaded
 let MXNOW = null;   // slug -> Set(tour) as edited
 let MXQ = "";
+let MXSHUT = new Set();   // collapsed section names
 
 const rowKey = e => e.title;
 
 function matrixReady(){
   if(MX) return Promise.resolve();
-  return ensureBook().then(()=>{
+  return Promise.all([ensureBook(), ensureAim()]).then(()=>{
     MX = new Map(); MXNOW = new Map();
     BOOK.forEach(e=>{
       MX.set(rowKey(e), new Set(e.usedBy));
@@ -855,6 +1020,30 @@ function mxChanged(){
     });
   });
   return out;
+}
+
+/* The thread a placeless block belongs to. Tags are ranked so the one that
+   actually names the block wins — everything is #law somewhere, but only the
+   playlists are #music. Untagged blocks say so rather than guessing. */
+const THREADS = [
+  ["#music","🎵 Music"], ["#literature","🪶 Literature"], ["#art","🎨 Art"],
+  ["#film","🎬 Film & TV"], ["#folklore","🧝 Folklore"], ["#wwii","🎖️ WWII"],
+  // An era is history. The settlement, the conversion, the Sturlung Age and
+  // 1944 are all periods of it, so they file together rather than splintering
+  // into a thread each.
+  ["#history","📜 History"], ["#migration","📜 History"],
+  ["#statehood","📜 History"], ["#warfare","📜 History"],
+  ["#religion","⛪ Religion"], ["#law","⚖️ Law & Parliament"], ["#women","♀ Women"],
+  ["#seafaring","⚓ Seafaring"], ["#trade","💰 Trade"], ["#architecture","🏛️ Architecture"],
+  ["#technology","⚡ Technology"], ["#wildlife","🐦 Wildlife"], ["#climate","🌡️ Climate"],
+  ["#geology","🌋 Geology"], ["#culture","🎭 Culture"],
+  ["#language","🗣️ Language"], ["#food","🍽️ Food"], ["#society","👥 Society"],
+];
+function threadOf(e){
+  const tags=(e.block&&e.block.tags)||[];
+  if(/Iceland Through the Years|Rícharður|Music Leg/.test(e.title)) return "🎵 Music";
+  for(const [tag,name] of THREADS) if(tags.includes(tag)) return name;
+  return "🧵 No thread yet";
 }
 
 function paintMatrix(){
@@ -881,25 +1070,84 @@ function paintMatrix(){
   thead.appendChild(hr); tb.appendChild(thead);
 
   const tbody=document.createElement("tbody");
+  // one group per section, in the order the library lists them, which is the
+  // order the road runs
+  const groups=[], byS={};
   rows.forEach(e=>{
+    const a=AIM&&AIM.blocks[e.title];
+    // A block with nowhere to point still belongs to something — the thread it
+    // carries. Those are the tags already on every block, so a placeless block
+    // files under Literature or Law rather than into one grey drawer.
+    const sc = (a&&a.placeless) ? threadOf(e) : (e.section||"—");
+    if(!byS[sc]){ byS[sc]={sec:sc, rows:[], placeless:!!(a&&a.placeless)}; groups.push(byS[sc]); }
+    byS[sc].rows.push(e);
+  });
+  // the threads sit after the road, because they belong to no leg of it
+  groups.sort((a,b)=>(a.placeless?1:0)-(b.placeless?1:0));
+
+  groups.forEach(g=>{
+    const shut=MXSHUT.has(g.sec);
+    const sr=document.createElement("tr");
+    sr.className="sec"+(shut?" shut":"")+(g.placeless?" placeless":"");
+    const sh=document.createElement("td"); sh.className="rowhead";
+    sh.innerHTML="<span class='car'>▸</span> "+esc(g.sec)+"<small>"+g.rows.length+"</small>";
+    sh.onclick=()=>{ shut?MXSHUT.delete(g.sec):MXSHUT.add(g.sec); paintMatrix(); };
+    sr.appendChild(sh);
+    TOURS.forEach(t=>{
+      const c=document.createElement("td"); c.className="cell";
+      const n=g.rows.filter(e=>MXNOW.get(rowKey(e)).has(t.id)).length;
+      c.textContent = n ? n+"/"+g.rows.length : "";
+      c.title="Tick or clear this whole section on "+t.id;
+      c.onclick=()=>{
+        const all=g.rows.every(e=>MXNOW.get(rowKey(e)).has(t.id));
+        g.rows.forEach(e=>{ const st=MXNOW.get(rowKey(e)); all?st.delete(t.id):st.add(t.id); });
+        paintMatrix();
+      };
+      sr.appendChild(c);
+    });
+    tbody.appendChild(sr);
+    if(shut) return;
+    g.rows.forEach(e=>{ tbody.appendChild(mxRow(e)); });
+  });
+  tb.appendChild(tbody);
+  paintMatrixFooter(rows);
+}
+
+function mxRow(e){
+  {
     const k=rowKey(e), tr=document.createElement("tr");
     const td=document.createElement("td"); td.className="rowhead";
-    td.innerHTML="<b>"+esc(e.title)+"</b><span>"+esc(e.section)+" · "+esc(e.kind)+"</span>";
+    const aim=(AIM&&AIM.blocks[e.title])||null;
+    const placeless=aim&&aim.placeless;
+    if(placeless) tr.classList.add("placeless");
+    const code = placeless ? "ANY" : (aim&&aim.code ? aim.code : "—");
+    const cls  = placeless ? " noplace" : (aim&&aim.code ? "" : " none");
+    const tip  = placeless ? "no place — goes on any tour"
+               : (aim&&aim.code ? aim.kmFromRvk+" km from BSÍ" : "no target yet");
+    td.innerHTML="<span class='code"+cls+"' title='"+esc(tip)+"'>"+esc(code)+"</span>"
+      +"<b>"+esc(e.title)+"</b>"
+      +"<span>"+esc(e.kind)+" · on "+e.usedBy.length+" tour"+(e.usedBy.length===1?"":"s")+"</span>";
     tr.appendChild(td);
     TOURS.forEach(t=>{
       const c=document.createElement("td"); c.className="cell";
       const on=MXNOW.get(k).has(t.id), was=MX.get(k).has(t.id);
       if(on) c.classList.add("on");
       if(on!==was) c.classList.add("chg");
-      c.innerHTML="<i></i>";
-      c.title=e.title+" on "+t.id;
+      const pl=aim&&aim.on&&aim.on[t.id];
+      c.innerHTML="<i></i>"+(pl?"<em>"+esc(pl.best.side==="ahead"?"ahead":pl.best.side==="behind"?"behind":pl.best.side.charAt(0).toUpperCase()+" "+pl.best.clock+"h")+"</em>":"");
+      if(pl && pl.best.km>5) c.classList.add("far");
+      c.title = pl
+        ? e.title+" on "+t.id+" — "+pl.best.side+" at "+pl.best.clock+" o'clock, "+pl.best.km+" km off the road, at "+pl.best.progress.toFixed(1)+"% of the tour"
+        : e.title+" on "+t.id+" — no target to aim at";
       c.onclick=()=>{ const st=MXNOW.get(k); st.has(t.id)?st.delete(t.id):st.add(t.id); paintMatrix(); };
       tr.appendChild(c);
     });
-    tbody.appendChild(tr);
-  });
-  tb.appendChild(tbody);
+    tr.addEventListener("mouseenter",()=>{ if(typeof highlight==="function" && AIM && AIM.blocks[e.title]) highlight(e.title); });
+    return tr;
+  }
+}
 
+function paintMatrixFooter(rows){
   const ch=mxChanged();
   $("mxcount").textContent="· "+BOOK.length+" blocks × "+TOURS.length+" tours";
   $("mxdirty").textContent=ch.length? ch.length+" change"+(ch.length===1?"":"s")+" not saved" : "";
@@ -916,6 +1164,17 @@ function setMode(on){
   if(on) matrixReady().then(paintMatrix);
 }
 $("mxq").oninput=e=>{ MXQ=e.target.value.trim(); paintMatrix(); };
+$("mxaim").onclick=()=>{
+  const off=document.body.classList.toggle("noaim");
+  $("mxaim").textContent = off ? "Show aim" : "Hide aim";
+};
+$("mxfold").onclick=()=>{
+  const secs=[...new Set(BOOK.map(e=>e.section||"—"))];
+  const anyOpen=secs.some(x=>!MXSHUT.has(x));
+  MXSHUT = anyOpen ? new Set(secs) : new Set();
+  $("mxfold").textContent = anyOpen ? "Expand all" : "Collapse all";
+  paintMatrix();
+};
 $("mxreset").onclick=()=>{
   if(!MX) return;
   BOOK.forEach(e=>MXNOW.set(rowKey(e), new Set(MX.get(rowKey(e)))));
@@ -936,7 +1195,119 @@ $("mxsave").onclick=()=>{
   toast("Saved plan — "+ch.length+" change"+(ch.length===1?"":"s"));
 };
 
-boot().then(()=>{ afterChange(); labelExport(); })
+/* ═══ 6. THE MAP ══════════════════════════════════════════════════════════
+   Ticking a block onto a tour is a decision about a place, so the place is on
+   screen while you make it. Dots are the blocks that have a cue target; gold
+   means it is on whatever tour you are looking at. Click a dot to jump the
+   list to that block, hover a row to light its dot. */
+let MAP=null, MAPDOTS={}, MAPLINE=null, MAPROUTES={};
+
+function mapInit(){
+  if(MAP || typeof L==="undefined") return;
+  MAP=L.map("bomap",{zoomControl:true,attributionControl:true,preferCanvas:true})
+       .setView([64.4,-19.5],6);
+  // Esri's dark canvas, the same basemap the aurora page already uses. CARTO
+  // started enforcing an API key on basemaps.cartocdn.com in late August 2026
+  // and now watermarks anonymous tiles — this one needs no key.
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+    {maxZoom:19, maxNativeZoom:16, attribution:'Esri, HERE, Garmin, &copy; OpenStreetMap contributors'})
+    .addTo(MAP);
+  Promise.all([ensureBook(), ensureAim()]).then(paintMap).catch(()=>{});
+
+  // Leaflet measures its container once, at init. On a phone the strip is
+  // still being laid out at that moment, so it measures zero and never asks
+  // for a tile — dots on a blank ground. Re-measure once the layout settles,
+  // and again whenever the window changes shape.
+  const remeasure = () => MAP && MAP.invalidateSize();
+  requestAnimationFrame(() => setTimeout(remeasure, 60));
+  setTimeout(remeasure, 400);
+  addEventListener("resize", remeasure);
+  addEventListener("orientationchange", () => setTimeout(remeasure, 250));
+}
+
+/* Three states, because the gaps are the point of the map:
+     gold      on this tour, aimed
+     grey      in the library, aimed, not on this tour
+     hollow red  has a pin but NO TARGET — the coach knows where it is and the
+                 guest is told nothing to look at. These are the ones to fix. */
+function dotStyle(on, hot, unaimed){
+  if(unaimed) return { radius: hot?8:5, color:"#e07a5f", weight: hot?2.4:1.6,
+                       fillColor:"#e07a5f", fillOpacity: hot?.5:.12, dashArray:"2,2" };
+  return { radius: hot?8:(on?5.5:4), color: hot?"#f4f0e6":"rgba(10,9,8,.85)",
+           weight: hot?2:1, fillColor: on?"#d4a94a":"#6f6a5e", fillOpacity: on?.95:.5 };
+}
+
+function paintMap(){
+  if(!MAP||!AIM) return;
+  Object.values(MAPDOTS).forEach(m=>MAP.removeLayer(m));
+  MAPDOTS={};
+  const tour = (CUR && CUR!=="*") ? CUR : null;
+  let n=0, bounds=[];
+  BOOK.forEach(e=>{
+    const a=AIM.blocks[e.title]; if(!a || a.placeless) return;
+    const on = tour ? e.usedBy.includes(tour) : isPickedTitle(e.title);
+    const m=L.circleMarker([a.target.lat,a.target.lon], dotStyle(on,false,a.unaimed));
+    m.bindTooltip(e.title + (a.unaimed ? " — no target, nothing to point at" : ""),
+                  {direction:"top",offset:[0,-4],className:"bodot"});
+    m.on("click", ()=>jumpTo(e.title));
+    m.addTo(MAP); MAPDOTS[e.title]=m; bounds.push([a.target.lat,a.target.lon]); n++;
+  });
+  const bad  = BOOK.filter(e=>AIM.blocks[e.title] && AIM.blocks[e.title].unaimed).length;
+  const none = BOOK.filter(e=>AIM.blocks[e.title] && AIM.blocks[e.title].placeless).length;
+  $("mapwho").innerHTML = (tour ? n+" blocks · gold = on "+tour : n+" blocks · gold = in your tour")
+    + (bad ? " · <b style='color:#e07a5f'>"+bad+" with no target</b>" : "")
+    + (none ? " · <b style='color:#7aa2c8'>"+none+" go anywhere</b>" : "");
+  drawRoute(tour);
+  if(bounds.length && !MAP._fitted){ MAP.fitBounds(bounds,{padding:[24,24]}); MAP._fitted=1; }
+}
+
+function isPickedTitle(t){
+  return PICKS.some(p=>{ const R=resolve(p); return R && R.b && R.b.title===t; });
+}
+
+function drawRoute(tour){
+  if(MAPLINE){ MAP.removeLayer(MAPLINE); MAPLINE=null; }
+  if(!tour) return;
+  const put=g=>{ MAPLINE=L.polyline(g,{color:"#d4a94a",weight:2,opacity:.55}).addTo(MAP);
+                 MAPLINE.bringToBack(); };
+  if(MAPROUTES[tour]) return put(MAPROUTES[tour]);
+  loadScript("/app/route-"+tour+".js").then(()=>{
+    const g=(window.__ROUTE__||{}).geometry||[];
+    MAPROUTES[tour]=g; if(CUR===tour) put(g);
+  }).catch(()=>{});
+}
+
+function jumpTo(title){
+  const rows=[...document.querySelectorAll("#matrix td.rowhead b, .blk h3")];
+  const hit=rows.find(el=>el.textContent.trim()===title.trim());
+  if(hit){ hit.scrollIntoView({block:"center",behavior:"smooth"});
+           const row=hit.closest("tr,.blk"); if(row){ row.style.outline="2px solid var(--accent)";
+             setTimeout(()=>row.style.outline="",1400); } }
+  highlight(title);
+}
+function highlight(title){
+  Object.entries(MAPDOTS).forEach(([t,m])=>{
+    const on = (CUR&&CUR!=="*") ? (AIM.blocks[t] && (BOOK.find(e=>e.title===t)||{usedBy:[]}).usedBy.includes(CUR)) : isPickedTitle(t);
+    m.setStyle(dotStyle(on, t===title, AIM.blocks[t] && AIM.blocks[t].unaimed));
+  });
+  const m=MAPDOTS[title];
+  if(m){ m.bringToFront(); if(!MAP.getBounds().contains(m.getLatLng())) MAP.panTo(m.getLatLng()); }
+}
+
+$("mapfit").onclick=()=>{
+  const b=Object.values(MAPDOTS).map(m=>m.getLatLng());
+  if(b.length) MAP.fitBounds(L.latLngBounds(b),{padding:[24,24]});
+};
+$("maptall").onclick=()=>{
+  const t=$("mapstrip").classList.toggle("tall");
+  $("maptall").textContent=t?"Shorter":"Taller";
+  setTimeout(()=>MAP&&MAP.invalidateSize(),210);
+};
+$("maphide").onclick=()=>{ document.body.classList.add("nomap"); $("modeMapOn").hidden=false; };
+$("modeMapOn").onclick=()=>{ document.body.classList.remove("nomap"); $("modeMapOn").hidden=true;
+  setTimeout(()=>{ mapInit(); MAP&&MAP.invalidateSize(); },30); };
+
+boot().then(()=>{ afterChange(); labelExport(); mapInit(); })
       .catch(e=>{ $("stat").textContent="failed: "+e.message; });
 </script>
 </body>

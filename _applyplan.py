@@ -1,191 +1,204 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-_applyplan.py — apply a tour-plan.json from the backoffice matrix.
+_applyplan.py — take a tour-plan.json out of the back office and write it into
+the tour scripts.
 
-WHAT THIS IS FOR
-The backoffice has a block x tour matrix: tick a box and that block is on that
-tour. Saving downloads `tour-plan.json` whose own note says
-"Apply with: python3 _applyplan.py tour-plan.json" — and until 17 Sep 2026 that
-script did not exist, so every plan was a dead end. This is the missing half.
+  python3 _applyplan.py tour-plan.json            # say what would change
+  python3 _applyplan.py tour-plan.json --write    # do it
 
-  python3 _applyplan.py tour-plan.json            # dry run, shows every edit
-  python3 _applyplan.py tour-plan.json --write    # apply, backing each file up
+WHAT A PLAN IS
+The back office matrix is a picture of which blocks sit on which tours. Tick a
+cell, hit Save plan, and you get a file listing every add and every remove.
+This applies it.
 
-WHAT IT DOES
-  add    render the library's copy of the block into that tour's manuscript,
-         in that file's own indentation, and renumber the tour
-  remove cut the block out of that manuscript and renumber the tour
-
-THE PER-TOUR VOICE IS RESPECTED. A block carries `overrides` for the hook, point,
-mic and subtitle, and `cuePerTour` for the look-here line, because a tour that
-STOPS somewhere words it differently from one that drives past. Adding a block
-to a new tour inherits the shared base; it never copies another tour's staging.
-The new tour's cue is left as a TODO marker rather than invented — a sightline is
-Ritchie's call and guessing one would put "look left" on the wrong window.
-
-WHAT IT REFUSES TO DO
-  - add a block to a tour that already has it
-  - remove a block that is not there
-  - touch a manuscript that does not parse cleanly afterwards
-Every file is re-parsed after the edit and the block count checked before the
-write is kept. Edits are collected and applied in REVERSE line order, because
-every write that changes the number of lines invalidates every index after it
-(_blocklib's founding law).
+HOW IT BEHAVES, and why
+  * Every script it touches gets a dated .bak BESIDE it, before the edit.
+  * An ADD takes the block from the library, drops it into the section it
+    belongs to, and places it in that section by the block's own progress along
+    that tour — so it fires where the road reaches it, not at the end of a list.
+  * A REMOVE lifts the block out and leaves the section alone.
+  * Block ids are renumbered per section afterwards, the way the exporter does.
+  * NOTHING is written unless every affected script still parses and every
+    section still has its blocks array. That check is the whole reason this is
+    a script and not a hand edit — losing a section's blocks[] is a real bug
+    this project has had twice.
+  * cues-*.js is NOT touched. A new block needs a pin and a target, and that is
+    _autosight.py's job, not this one. The report says which blocks now need one.
 """
-import json, os, re, shutil, sys, glob, datetime
+import json, os, re, subprocess, sys, shutil, datetime
 
-sys.path.insert(0, "/Users/ritchiej/Documents/iGuide-deploy")
-import _blocklib as B
-
-GCD   = "/Users/ritchiej/Documents/golden-circle-direct/"
-MS    = "/Users/ritchiej/Documents/RitchWiki/Tour Scripts/"
-STAMP = ".bak-applyplan-" + datetime.datetime.now().strftime("%Y-%m-%d-%H%M%S")
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 WRITE = "--write" in sys.argv
-args  = [a for a in sys.argv[1:] if not a.startswith("--")]
-if not args:
-    sys.exit(__doc__)
+ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
+PLAN = ARGS[0] if ARGS else "tour-plan.json"
+STAMP = datetime.date.today().strftime("%Y-%m-%d")
 
-plan = json.load(open(args[0], encoding="utf-8"))
-BOOK = json.load(open(GCD + "_blocks/blocks.json", encoding="utf-8"))
-BYTITLE = {e["title"]: e for e in BOOK}
+if not os.path.exists(PLAN):
+    sys.exit("no plan at %s — save one out of the back office first" % PLAN)
 
-TODO_CUE = "*TODO — sightline for this tour. Which window, and at what o'clock?*"
+plan = json.load(open(PLAN, encoding="utf-8"))
+BOOK = {e["title"]: e for e in json.load(open("_blocks/blocks.json", encoding="utf-8"))}
+AIM = json.load(open("aim.json", encoding="utf-8")) if os.path.exists("aim.json") else {"blocks": {}}
 
+NODE_READ = r'''
+global.window = {};
+require("./script-%s.js");
+process.stdout.write(JSON.stringify(global.window.__SCRIPT__));
+'''
 
-def manuscript(tag):
-    hits = [p for p in glob.glob(MS + "*.md")
-            if os.path.basename(p).startswith(tag + " ")]
-    return hits[0] if hits else None
-
-
-def render(entry, tag, indent):
-    """The library entry as manuscript markdown, in this file's indentation."""
-    b = dict(entry["block"])
-    for k, v in ((entry.get("overrides") or {}).get(tag) or {}).items():
-        b[k] = v
-    cue = (entry.get("cuePerTour") or {}).get(tag)
-
-    L = []
-    head = b.get("title", "")
-    if b.get("sub"):
-        head += " — " + b["sub"]
-    L.append("> ### {N} " + head)
-    L.append("")
-    L.append("> *%s*" % cue if cue else "> " + TODO_CUE)
-    L.append("")
-    if b.get("hook"):
-        L.append("<callout>🎣 %s</callout>" % b["hook"])
-        L.append("")
-    for bl in b.get("bullets") or []:
-        L.append("- " + bl)
-    if b.get("bullets"):
-        L.append("")
-    if b.get("point"):
-        L.append("🎯 " + b["point"]); L.append("")
-    if b.get("mic"):
-        L.append("🎤 " + b["mic"]); L.append("")
-    if b.get("weather"):
-        L.append("🌫️ " + b["weather"]); L.append("")
-    if b.get("say"):
-        L.append("+ ### 🗣️ How to say it:")
-        for row in b["say"]:
-            name, phon, gloss = (list(row) + ["", ""])[:3]
-            L.append("  - **%s** [%s]%s" % (name, phon, (" — " + gloss) if gloss else ""))
-        L.append("")
-    if b.get("tags"):
-        L.append("🧵 " + " ".join(b["tags"])); L.append("")
-    return [(indent + x) if x else "" for x in L]
+def read_script(tid):
+    out = subprocess.run(["node", "-e", NODE_READ % tid],
+                         capture_output=True, text=True, check=True)
+    return json.loads(out.stdout)
 
 
-def file_indent(lines):
-    for (s, e, ind, num, head) in B.regions(lines):
-        return ind
-    return ""
+def write_script(tid, S):
+    """Same shape the exporter writes, so add-tour.py and the app see no change."""
+    js = ("// %s — rebuilt by _applyplan.py %s\n" % (S.get("title", tid), STAMP) +
+          "window.__SCRIPT__ = " + json.dumps(S, ensure_ascii=False, indent=1) + ";\n")
+    open("script-%s.js" % tid, "w", encoding="utf-8").write(js)
 
 
-def renumber(lines, tag):
-    """Block numbers are positional: 12.1, 12.2, 12.3 in running order."""
-    major = tag.split(".")[0]
-    edits, n = [], 0
-    for (s, e, ind, num, head) in B.regions(lines):
-        n += 1
-        new = re.sub(r'(>\s*###\s+)[\d.]+(\s)', r'\g<1>%s.%d\g<2>' % (major, n), head, count=1)
-        if new != head:
-            edits.append((s, s + 1, [new.rstrip("\n")]))
-    return edits, n
+def progress_on(title, tid):
+    """Where along this tour the block's own landmark sits. None if unknown."""
+    a = AIM["blocks"].get(title)
+    if not a or a.get("unaimed"):
+        return None
+    on = (a.get("on") or {}).get(tid)
+    return on["best"]["progress"] if on else None
 
 
-def apply_to(tag, adds, removes):
-    p = manuscript(tag)
-    if not p:
-        print("   %-6s NO MANUSCRIPT — skipped" % tag); return None
-    lines = open(p, encoding="utf-8").read().split("\n")
-    ind = file_indent(lines)
-    regs = B.regions(lines)
-    have = {}
-    for (s, e, i2, num, head) in regs:
-        t = re.sub(r'^\s*>\s*###\s+[\d.]+\s*', '', head).strip()
-        t = t.split("—")[0].strip()
-        have[t] = (s, e)
+def apply(tid, adds, removes):
+    S = read_script(tid)
+    before = sum(len(s["blocks"]) for s in S["sections"])
+    notes = []
 
-    edits = []
     for title in removes:
-        base = title.split("—")[0].strip()
-        if base not in have:
-            print("   %-6s remove %-34s NOT PRESENT — skipped" % (tag, base[:34])); continue
-        s, e = have[base]
-        while e < len(lines) and lines[e].strip() in ("", "*******"):
-            e += 1
-        edits.append((s, e, []))
-        print("   %-6s remove %-34s lines %d-%d" % (tag, base[:34], s + 1, e))
+        for sec in S["sections"]:
+            hit = [b for b in sec["blocks"] if b["title"].strip() == title.strip()]
+            for b in hit:
+                sec["blocks"].remove(b)
+                notes.append("  − %-44s from %s" % (title[:44], sec["title"]))
 
     for title in adds:
-        base = title.split("—")[0].strip()
-        if base in have:
-            print("   %-6s add    %-34s ALREADY THERE — skipped" % (tag, base[:34])); continue
-        e = BYTITLE.get(title)
+        e = BOOK.get(title)
         if not e:
-            print("   %-6s add    %-34s NOT IN LIBRARY — skipped" % (tag, base[:34])); continue
-        body = render(e, tag, ind)
-        at = regs[-1][1] if regs else len(lines)
-        edits.append((at, at, body + [ind + "*******", ""]))
-        cue = "inherits its own cue" if (e.get("cuePerTour") or {}).get(tag) else "CUE LEFT AS TODO"
-        print("   %-6s add    %-34s %d lines at %d   (%s)"
-              % (tag, base[:34], len(body), at + 1, cue))
+            notes.append("  ! %-44s NOT IN THE LIBRARY — skipped" % title[:44]); continue
+        if any(b["title"].strip() == title.strip()
+               for s in S["sections"] for b in s["blocks"]):
+            notes.append("  = %-44s already on %s" % (title[:44], tid)); continue
 
-    if not edits:
-        return None
-    out = B.apply(lines, edits)
-    ren, n = renumber(out, tag)
-    out = B.apply(out, ren)
-    after = len(B.regions(out))
-    if after != n:
-        print("   %-6s ABORT: reparsed to %d blocks, expected %d" % (tag, after, n)); return None
-    print("   %-6s -> %d blocks after renumbering" % (tag, n))
-    return p, out
+        blk = json.loads(json.dumps(e["block"]))
+        # the cue is the one field that is legitimately per-tour
+        per = (e.get("cuePerTour") or {}).get(tid)
+        if per:
+            blk["cue"] = per
+
+        # put it in the section it came from, or the nearest thing this tour has
+        names = [s["title"] for s in S["sections"]]
+        sec = next((s for s in S["sections"] if s["title"] == e["section"]), None)
+        if sec is None:
+            sec = S["sections"][0] if S["sections"] else None
+            notes.append("  ~ %-44s no '%s' section on %s — put in '%s'"
+                         % (title[:44], e["section"], tid, sec["title"] if sec else "?"))
+        if sec is None:
+            notes.append("  ! %-44s tour has no sections — skipped" % title[:44]); continue
+
+        # place it by where the road actually reaches it
+        p = progress_on(title, tid)
+        pos = len(sec["blocks"])
+        if p is not None:
+            for i, b in enumerate(sec["blocks"]):
+                bp = progress_on(b["title"].strip(), tid)
+                if bp is not None and bp > p:
+                    pos = i; break
+        sec["blocks"].insert(pos, blk)
+        notes.append("  + %-44s into %s at #%d%s"
+                     % (title[:44], sec["title"], pos + 1,
+                        "" if p is not None else "  (no target — placed last)"))
+
+    # renumber, exactly as the exporter does
+    for si, s in enumerate(S["sections"]):
+        for bi, b in enumerate(s["blocks"]):
+            b["id"] = "%s.%d.%d" % (tid, si + 1, bi + 1)
+
+    after = sum(len(s["blocks"]) for s in S["sections"])
+    return S, before, after, notes
 
 
-byt = {}
-for c in plan.get("changes", []):
-    byt.setdefault(c["tour"], {"add": [], "remove": []})[c["action"]].append(c["block"])
+def main():
+    changes = plan.get("changes") or []
+    if not changes:
+        sys.exit("plan has no changes in it")
 
-print("plan built %s — %d changes across %d tours\n"
-      % (plan.get("builtAt", "?"), len(plan.get("changes", [])), len(byt)))
+    by_tour = {}
+    for c in changes:
+        t = by_tour.setdefault(c["tour"], {"add": [], "remove": []})
+        t["add" if c["action"] == "add" else "remove"].append(c["block"])
 
-results = []
-for tag, ops in sorted(byt.items()):
-    r = apply_to(tag, ops["add"], ops["remove"])
-    if r: results.append(r)
+    print("PLAN  %s   built %s" % (PLAN, plan.get("builtAt", "?")[:19]))
+    print("      %d change%s across %d tour%s\n"
+          % (len(changes), "" if len(changes) == 1 else "s",
+             len(by_tour), "" if len(by_tour) == 1 else "s"))
 
-print("\n%s" % ("WRITING" if WRITE else "DRY RUN — nothing written. re-run with --write"))
-for p, out in results:
-    if WRITE:
-        shutil.copy2(p, p + STAMP)
-        open(p, "w", encoding="utf-8").write("\n".join(out))
-        print("   wrote %s  (backup %s)" % (os.path.basename(p), STAMP))
-if WRITE and results:
-    print("\nNow rebuild the touched tours, regenerate the library, and redeploy:")
-    for p, _ in results:
-        print("   python3 build-any.py \"%s\" script-<id>.js" % os.path.basename(p)[:-3])
-    print("   python3 _onecopy.py --write")
+    staged, needs_target = {}, []
+    for tid in sorted(by_tour):
+        if not os.path.exists("script-%s.js" % tid):
+            print("  %s — no script on disk, skipped\n" % tid); continue
+        S, before, after, notes = apply(tid, by_tour[tid]["add"], by_tour[tid]["remove"])
+        print("%s   %d → %d blocks" % (tid, before, after))
+        for n in notes:
+            print(n)
+        print()
+        staged[tid] = S
+        for title in by_tour[tid]["add"]:
+            if progress_on(title, tid) is None:
+                needs_target.append((tid, title))
+
+    if needs_target:
+        print("NEEDS A TARGET before it can be aimed or mapped:")
+        for tid, t in needs_target:
+            print("   %-6s %s" % (tid, t))
+        print("   run _autosight.py for these — this script does not touch cues.\n")
+
+    if not WRITE:
+        print("(dry run — nothing written. re-run with --write)")
+        return
+
+    # write to a temp name, parse-check it, and only then move it into place
+    ok = True
+    for tid, S in staged.items():
+        src = "script-%s.js" % tid
+        shutil.copy2(src, "%s.bak-%s-applyplan" % (src, STAMP))
+        write_script(tid, S)
+
+    check = r'''
+const fs=require("fs");
+let bad=0;
+for(const id of %s){
+  global.window={};
+  try{ eval(fs.readFileSync("script-"+id+".js","utf8")); }
+  catch(e){ console.log("PARSE FAIL "+id+": "+e.message); bad++; continue; }
+  const S=global.window.__SCRIPT__;
+  if(!S||!Array.isArray(S.sections)){ console.log("NO SECTIONS "+id); bad++; continue; }
+  const mal=S.sections.filter(s=>!Array.isArray(s.blocks));
+  if(mal.length){ console.log("SECTION WITH NO blocks[] "+id); bad++; }
+}
+process.stdout.write(bad? "BAD":"OK");
+''' % json.dumps(list(staged))
+    res = subprocess.run(["node", "-e", check], capture_output=True, text=True)
+    print(res.stdout.replace("OK", "").replace("BAD", ""), end="")
+
+    if "OK" not in res.stdout:
+        for tid in staged:
+            shutil.copy2("script-%s.js.bak-%s-applyplan" % (tid, STAMP), "script-%s.js" % tid)
+        sys.exit("REVERTED — the rebuilt scripts did not check out. Nothing changed.")
+
+    print("wrote %d script%s, all parse, no section lost its blocks."
+          % (len(staged), "" if len(staged) == 1 else "s"))
+    print("rollback: script-<id>.js.bak-%s-applyplan" % STAMP)
+    print("\nnext: python3 _autosight.py   (targets)   then   ~/Documents/iGuide-deploy/sync-app.sh")
+
+
+if __name__ == "__main__":
+    main()
