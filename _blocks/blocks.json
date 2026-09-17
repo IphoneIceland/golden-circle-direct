@@ -67,6 +67,7 @@
    "11.0": "Pulling out of BSÍ — no window required.",
    "10.0": "Pulling out of BSÍ — no window required."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -141,6 +142,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -217,6 +219,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -294,6 +297,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -386,6 +390,7 @@
    "11.0": "Look right at 4 o'clock — Esja on the skyline.",
    "10.0": "Look right at 4 o'clock — Esja on the skyline."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -491,6 +496,7 @@
    "11.0": "At Kjalarnes, foot of Esja.",
    "10.0": "At Kjalarnes, foot of Esja."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -571,6 +577,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -633,6 +640,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -700,6 +708,7 @@
    "3.0": "Look left on Route 36 — Laxnes, about 400 metres up the side road.",
    "4.0": "Look right on Route 36 — Laxnes, about 400 metres up the side road."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -800,6 +809,7 @@
    "3.0": "Look right — the white house by the river Kaldakvísl, just off Route 36.",
    "4.0": "Coming up ahead — the white house by the river Kaldakvísl, just off Route 36."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -919,6 +929,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -977,6 +988,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -1036,6 +1048,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -1094,6 +1107,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -1146,6 +1160,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -1217,6 +1232,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -1276,6 +1292,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -1340,6 +1357,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -1386,6 +1404,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -1462,6 +1481,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -1533,6 +1553,7 @@
    "3.0": "Look right at 1 o'clock — Hekla, sixty kilometres out on the horizon. Clear days only.",
    "4.0": "Look back over your left shoulder — Hekla, sixty kilometres out. Clear days only."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -1619,6 +1640,7 @@
    "3.0": "Look right at 3 o'clock — Laugarvatn lake.",
    "4.0": "Look left at 9 o'clock — Laugarvatn."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -1684,6 +1706,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -1772,6 +1795,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -1858,6 +1882,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -1914,6 +1939,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -1983,6 +2009,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -2074,6 +2101,20 @@
    "11.0": "Leaving Ytri-Tunga, last stop of the day. Playlist on, mic live between the stops.",
    "10.0": "Leaving Kirkjufell, last stop of the day. Playlist on, mic live between the stops."
   },
+  "overrides": {
+   "5.0": {
+    "hook": "No commentary on this stretch — **Iceland Through the Years** takes the wheel: forty-three tracks in three acts, from borrowed dance-band tunes to Iceland exporting pop to the whole world.",
+    "point": "They've had a full day of my voice. Now they get the country's own.",
+    "mic": "Right — I've talked at you since breakfast. From here, Iceland does the talking. Window seat, volume up, and if a track grabs you, come and ask me at the front.",
+    "sub": "ACT 1: Iceland Through the Years"
+   },
+   "6.0": {
+    "hook": "No commentary on this stretch — **Iceland Through the Years** takes the wheel: forty-three tracks in three acts, from borrowed dance-band tunes to Iceland exporting pop to the whole world.",
+    "point": "They've had a full day of my voice. Now they get the country's own.",
+    "mic": "Right — I've talked at you since breakfast. From here, Iceland does the talking. Window seat, volume up, and if a track grabs you, come and ask me at the front.",
+    "sub": "ACT 1: Iceland Through the Years"
+   }
+  },
   "rescued": [
    "1.0: **03 · Bláu augun** — *Haukur Morthens*",
    "1.0: **04 · Vor við flóann** — *Ragnar Bjarnason*. Two-for-one. The 1959 7″ gives you Ragnar si",
@@ -2153,6 +2194,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -2219,6 +2261,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -2265,6 +2308,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -2338,6 +2382,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -2422,6 +2467,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -2521,6 +2567,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -2601,6 +2648,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -2687,6 +2735,7 @@
    "6.0": "We're crossing it now — look down. Ölfusárbrú.",
    "7.0": "We're crossing it now — look down. Ölfusárbrú."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -2776,6 +2825,7 @@
    "6.0": "Look back and left — Ingólfsfjall, the flat-topped mountain named after him.",
    "7.0": "Look back and left — Ingólfsfjall, the flat-topped mountain named after him."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -2863,6 +2913,7 @@
    "6.0": "Look left at 9–10 o'clock — Hveragerði.",
    "7.0": "Look left at 9–10 o'clock — Hveragerði."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -2937,6 +2988,20 @@
    "6.0": "Coming into Selfoss — cue “Selfoss” by SVVN, then Rícharður's Mix through to BSÍ.",
    "11.0": "Through Borgarnes — my own playlist from here to BSÍ.",
    "10.0": "Through Borgarnes — my own playlist from here to BSÍ."
+  },
+  "overrides": {
+   "5.0": {
+    "hook": "One song left with a job to do, and then **Rícharður's Mix** carries us home — eighteen tracks sequenced for exactly this road.",
+    "point": "Last stretch of the day. Nobody wants a lecture at this hour; everybody wants the window.",
+    "mic": "The song is called Selfoss. The town is called Selfoss. I would love to tell you I planned that, but I just got lucky with the timing.",
+    "sub": "ACT 2: Selfoss, and the Road Home"
+   },
+   "6.0": {
+    "hook": "One song left with a job to do, and then **Rícharður's Mix** carries us home — eighteen tracks sequenced for exactly this road.",
+    "point": "Last stretch of the day. Nobody wants a lecture at this hour; everybody wants the window.",
+    "mic": "The song is called Selfoss. The town is called Selfoss. I would love to tell you I planned that, but I just got lucky with the timing.",
+    "sub": "ACT 2: Selfoss, and the Road Home"
+   }
   },
   "rescued": [
    "1.0: **01 · Flight from the City** — *Jóhann Jóhannsson*. Opening track of *Orphée* (2016) — Jó",
@@ -3043,6 +3108,7 @@
    "6.0": "Look left at 10 o'clock — the Hellisheiði geothermal plant.",
    "7.0": "Look left at 10 o'clock — the Hellisheiði geothermal plant."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -3136,6 +3202,7 @@
    "6.0": "Look right at 3 o'clock — Kristnitökuhraun, the Christianity Lava.",
    "7.0": "Look right at 3 o'clock — Kristnitökuhraun, the Christianity Lava."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -3237,6 +3304,7 @@
    "6.0": "Look right at 3 o'clock — Rauðhólar.",
    "7.0": "Look right at 3 o'clock — Rauðhólar."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -3302,6 +3370,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -3358,6 +3427,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -3421,6 +3491,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -3474,6 +3545,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -3526,6 +3598,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -3592,6 +3665,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -3644,6 +3718,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -3713,6 +3788,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -3774,6 +3850,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -3827,6 +3904,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -3899,6 +3977,7 @@
    "6.0": "Look left at 10 o'clock — Keldur turf farm.",
    "7.0": "Look left up the valley — about eleven kilometres in that direction, out of sight from here."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -3966,6 +4045,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -4046,6 +4126,7 @@
    "6.0": "Look right at 2 o'clock — the Westman Islands out to sea.",
    "7.0": "Look right, out to sea at 3 o'clock — the Westman Islands."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -4119,6 +4200,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -4178,6 +4260,7 @@
    "6.0": "Look right at 2 o'clock — Landeyjar sandur, the plain running away to the sea.",
    "7.0": "Look right at 2–3 o'clock — the Landeyjar, twelve kilometres of old seabed running down to the coast, and we're driving along its northern edge."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -4234,6 +4317,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -4294,6 +4378,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -4360,6 +4445,7 @@
    "6.0": "At Sólheimajökull car park.",
    "7.0": "At Sólheimajökull glacier."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -4417,6 +4503,7 @@
    "6.0": "Look right at 2 o'clock — far out on Sólheimasandur.",
    "7.0": "Look right at 2 o'clock — far out on the sand plains."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -4489,6 +4576,7 @@
    "6.0": "Look right at 1–2 o'clock — the steep, isolated mountain.",
    "7.0": "Look right at 2 o'clock — the steep, isolated mountain."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -4551,6 +4639,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -4615,6 +4704,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -4694,6 +4784,7 @@
    "6.0": "At the black sand beach.",
    "7.0": "Step off at Reynisfjara — and before anything else: stay high on the sand, well back from the water."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -4763,6 +4854,7 @@
    "6.0": "Look left at 9–10 o'clock — Mýrdalsjökull, the ice cap covering Katla.",
    "7.0": "Look right at 2 o'clock — Mýrdalsjökull, and Katla under it."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -4813,6 +4905,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -4877,6 +4970,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -4966,6 +5060,7 @@
    "6.0": "Due east, twelve kilometres out — the massive flat-topped mountain on the horizon.",
    "7.0": "Look ahead at 1 o'clock — the massive flat-topped mountain on the horizon."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5044,6 +5139,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5111,6 +5207,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5165,6 +5262,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5214,6 +5312,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5278,6 +5377,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5343,6 +5443,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5398,6 +5499,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5447,6 +5549,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5496,6 +5599,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5550,6 +5654,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5601,6 +5706,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5667,6 +5773,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5722,6 +5829,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5778,6 +5886,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5828,6 +5937,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5852,6 +5962,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5900,6 +6011,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -5951,6 +6063,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6000,6 +6113,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6055,6 +6169,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6104,6 +6219,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6172,6 +6288,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6239,6 +6356,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6298,6 +6416,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6382,6 +6501,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6442,6 +6562,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6498,6 +6619,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6552,6 +6674,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6603,6 +6726,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6664,6 +6788,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6727,6 +6852,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6791,6 +6917,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6850,6 +6977,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6913,6 +7041,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -6976,6 +7105,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7032,6 +7162,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7093,6 +7224,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7140,6 +7272,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7194,6 +7327,7 @@
    "11.0": "Look left, inland — the farm under the fell.",
    "10.0": "Look right, inland — the farm under the fell."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7268,6 +7402,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7324,6 +7459,7 @@
    "11.0": "Coming into Ólafsvík.",
    "10.0": "Leaving Rif — Ólafsvík ahead in nine kilometres."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7390,6 +7526,7 @@
    "11.0": "Passing Rif on the right — the flat little harbour village on the point.",
    "10.0": "At Rif — Björnssteinn, the stone by the shore."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7438,6 +7575,7 @@
    "11.0": "Still passing Rif — look at the roadside posts for the terns.",
    "10.0": "All around — the wetland between Rif and Hellissandur."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7487,6 +7625,7 @@
    "11.0": "Look left at 8 o'clock — Hellissandur, with the church at Ingjaldshóll on its hill beyond.",
    "10.0": "Ahead at 12 o'clock — Hellissandur, with the church at Ingjaldshóll on its hill beyond."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7542,6 +7681,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7610,6 +7750,7 @@
    "11.0": "Turning down to Djúpalónssandur — the beach at the volcano's foot.",
    "10.0": "Passing the Djúpalónssandur turn-off at 9 o'clock."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7668,6 +7809,7 @@
    "11.0": "Look right at 3 o'clock — the white tower at Malarrif.",
    "10.0": "Look left at 9 o'clock — the white tower at Malarrif."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7732,6 +7874,7 @@
    "11.0": "Look right at 3 o'clock — two dark pinnacles against the sea: Lóndrangar.",
    "10.0": "Look left at 9 o'clock — two dark pinnacles against the sea: Lóndrangar."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7791,6 +7934,7 @@
    "11.0": "Look left at 9 o'clock — Snæfellsjökull, if it's showing.",
    "10.0": "Look right at 3 o'clock — Snæfellsjökull, if it's showing."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7855,6 +7999,7 @@
    "11.0": "Look right at 3 o'clock — Hellnar down by the shore, then Laugarbrekka.",
    "10.0": "Look left at 9 o'clock — Laugarbrekka, then Hellnar down by the shore."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7915,6 +8060,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -7970,6 +8116,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -8020,6 +8167,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -8075,6 +8223,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -8134,6 +8283,7 @@
    "11.0": "Leaving Arnarstapi — Stapafell over your left shoulder; then at 9 o'clock, a thin black cleft in the mountainside — Rauðfeldsgjá.",
    "10.0": "Look ahead at 12 o'clock — the dark pyramid of Stapafell; then right at 3 o'clock, a thin black cleft in the mountainside — Rauðfeldsgjá."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -8188,6 +8338,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -8248,6 +8399,7 @@
    "11.0": "Look right at 3 o'clock — a small black church standing alone on the lava.",
    "10.0": "Look left at 9 o'clock — a small black church standing alone on the lava."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -8297,6 +8449,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -8356,6 +8509,7 @@
    "11.0": "Look right at 3 o'clock — flat pale sand running to the horizon; the cliffs inland on your left are old sea cliffs.",
    "10.0": "Look left at 9 o'clock — flat pale sand running to the horizon; the cliffs inland on your right are old sea cliffs."
   },
+  "overrides": null,
   "rescued": []
  },
  {
@@ -8404,6 +8558,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -8422,7 +8577,7 @@
    "cue": "Look ahead — the whole peninsula opening up in front of us.",
    "hook": "We're driving onto the only stretch of mid-ocean ridge on Earth that pokes above the sea. Most geologists only ever see one on a diagram. You're about to spend a day standing on it.",
    "point": "A **constructive plate boundary** and a **mantle hotspot** overlap nowhere else on Earth. Iceland exists because both happen in the same spot.",
-   "mic": "Today's route is basically a guided tour of a crack in the planet. Mind the step.",
+   "mic": "You're driving across a mid-ocean ridge. Most geologists only ever see one on a diagram.",
    "weather": "Weather pivot (if it's socked in): \"You will not see much of the peninsula this morning, and that is fine — everything I am about to show you is at your feet rather than on the horizon.\"",
    "bullets": [
     "The whole peninsula is a **UNESCO Global Geopark** (**2015**) — one of only a handful of places where a **mid-ocean ridge climbs above sea level.** Normally the North American/Eurasian plate boundary sits **2 km down** on the seafloor. Here you can walk on it, and later today you will.",
@@ -8450,6 +8605,14 @@
   "cuePerTour": {
    "12.0": "Bus content as we pull away from the airport — the whole peninsula ahead of us",
    "13.0": "Look ahead — the whole peninsula opening up in front of us."
+  },
+  "overrides": {
+   "12.0": {
+    "hook": "We're crossing the only stretch of mid-ocean ridge on Earth that pokes above the sea."
+   },
+   "13.0": {
+    "mic": "Today's route is basically a guided tour of a crack in the planet. Mind the step."
+   }
   },
   "rescued": [
    "12.0: The whole peninsula is a **UNESCO Global Geopark** (**2015**) — one of only a handful of p",
@@ -8497,6 +8660,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -8545,6 +8709,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -8611,6 +8776,14 @@
    "12.0": "Bus content once the last houses drop away behind us — the town we have just driven out of",
    "13.0": "Look left — the terminal, the control tower, and the flat ground running away behind it."
   },
+  "overrides": {
+   "12.0": {
+    "hook": "Keflavík means Driftwood Bay. Until 1941, driftwood was the most exciting thing about it.",
+    "point": "Two industries built Keflavík: **cod for 1,000 years, then aviation in under 100.** Both still pay the wages.",
+    "mic": "Driftwood Bay became Driftless Tarmac — same bay, completely rewritten economy.",
+    "sub": "Fish, War, and Flight 🔀"
+   }
+  },
   "rescued": [
    "12.0: ***Keflavík* = Driftwood Bay** — named for timber washed up from the Atlantic, genuine tre",
    "12.0: What a **cod port** actually meant: **stockfish** — cod split and wind-dried on these head",
@@ -8634,7 +8807,7 @@
    "sub": "The Moon Road 🔀",
    "cue": "Looking ahead at 12 o'clock — Route 41 cutting through black lava",
    "hook": "NASA sent thirty-two astronauts to Iceland to learn how to read rock — Armstrong among them. This is the rock.",
-   "point": "The landscape hasn't changed in 60 years — which is exactly why NASA keeps coming back.",
+   "point": "The landscape hasn't changed in sixty years — which is exactly why NASA keeps coming back.",
    "mic": "The first human on the Moon practised on this lava. So will the next one.",
    "bullets": [
     "The lava out both windows looked so alien that **NASA used Iceland as astronaut training ground.** During the **Apollo programme (1965–67)**, **32 astronauts** — **Neil Armstrong** among them — trained on Icelandic rock.",
@@ -8665,11 +8838,20 @@
    ],
    "tags": [
     "#geology"
-   ]
+   ],
+   "weather": "Weather pivot: \"Grey sky over black rock and no plants anywhere. If anything this is *more* like the Moon, not less.\""
   },
   "cuePerTour": {
    "12.0": "Looking ahead at 12 o'clock — Route 41 cutting through black lava",
    "13.0": "Look ahead — Route 41 cutting through black lava."
+  },
+  "overrides": {
+   "12.0": {
+    "point": "The landscape hasn't changed in 60 years — which is exactly why NASA keeps coming back."
+   },
+   "13.0": {
+    "sub": "The Moon Road"
+   }
   },
   "rescued": [
    "13.0: The lava out both windows looked so alien that **NASA used Iceland as an astronaut trainin",
@@ -8690,11 +8872,11 @@
   "block": {
    "id": "13.0.5.1",
    "title": "⚡ Svartsengi",
-   "sub": "The Power Plant That Made The Lagoon",
+   "sub": "The Power Plant That Made the Lagoon 🌍",
    "cue": "Look right — tall white steam towers rising out of the lava field.",
    "hook": "That power station accidentally built the Blue Lagoon — and then in 2024 had to be walled off from lava by the metre.",
-   "point": "Iceland pulls about **30% of its electricity** and **90% of its heating** from geothermal. Svartsengi is the textbook made real — and then defended with a digger.",
-   "mic": "A power station that accidentally made a spa, then had to be saved by hand from the volcano it lives off.",
+   "point": "Iceland pulls about **30% of its electricity** and **90% of its heating** from geothermal — one of the highest renewable shares anywhere. Svartsengi is the textbook made real.",
+   "mic": "A power station that accidentally made a spa, then had to be defended by hand from the volcano it lives off.",
    "weather": "Weather pivot (if the towers are hidden): \"You will smell it before you see it, and on a day like this the steam plume and the cloud are the same object.\"",
    "bullets": [
     "***Svartsengi* = Black Meadow**, for the scorched ground it stands on. **Geothermal water from 1976, electricity from 1978 — the first plant anywhere to make both from the same well field.** That first turbine was a modest **1 MW**, quietly running the pumps for its own boreholes.",
@@ -8724,6 +8906,16 @@
    "12.0": "Look right at 3 o'clock — tall white steam towers rising from the lava field to the south",
    "13.0": "Look right — tall white steam towers rising out of the lava field."
   },
+  "overrides": {
+   "12.0": {
+    "hook": "That power station accidentally built the Blue Lagoon — then in 2024 had to be walled off from lava by the metre."
+   },
+   "13.0": {
+    "point": "Iceland pulls about **30% of its electricity** and **90% of its heating** from geothermal. Svartsengi is the textbook made real — and then defended with a digger.",
+    "mic": "A power station that accidentally made a spa, then had to be saved by hand from the volcano it lives off.",
+    "sub": "The Power Plant That Made The Lagoon"
+   }
+  },
   "rescued": [
    "12.0: It drills **1,000–2,000 m** down to water at **240°C**, and now makes **85 MW of electrici",
    "12.0: In **2024**, the eruptions sent lava straight at it. The plant was evacuated and defended "
@@ -8742,11 +8934,11 @@
   "block": {
    "id": "12.0.2.3",
    "title": "🔥 The Reykjanes Fires",
-   "sub": "Eruptions Right Now 🌍",
+   "sub": "Twelve Eruptions And Counting",
    "cue": "Bus content as we drive across the lava — some of what you're passing cooled only last year",
-   "hook": "Some of the lava we're crossing cooled only last year.",
+   "hook": "Some of the lava we are about to walk on is younger than most of the phones on this bus.",
    "point": "Geologists now think Reykjanes has entered a new eruptive era that could last decades or centuries. The black, plant-free fields by this road are **2021–2025** — some of the youngest ground on Earth.",
-   "mic": "This peninsula isn't dormant — it's just resting between eruptions. The last few redrew the map; the next is a question of when, not if.",
+   "mic": "Geologists think this peninsula has woken up for the next few decades. We are not visiting a volcano today. We are visiting its lunch break.",
    "bullets": [
     "The **Reykjanes Fires** are a recurring cycle: the peninsula sleeps for centuries, then wakes for decades of eruptions across several systems, then sleeps again. The last full cycle ran ~**950–1240 CE** and laid most of the lava we've driven on.",
     "After **1240 it went quiet for ~800 years** — then on **19 March 2021** a fissure split open at **Fagradalsfjall** and the Fires restarted. That first show ran six months; **50,000+** people hiked out to watch a volcano like it was a gig.",
@@ -8804,11 +8996,22 @@
    ],
    "tags": [
     "#geology"
-   ]
+   ],
+   "weather": "Weather pivot (always usable): \"You don't need a view for this one. Everything I've just described is under the tyres.\""
   },
   "cuePerTour": {
    "12.0": "Bus content as we drive across the lava — some of what you're passing cooled only last year",
    "13.0": "Look ahead — the black ground either side of the road."
+  },
+  "overrides": {
+   "12.0": {
+    "hook": "Some of the lava we're crossing cooled only last year.",
+    "mic": "This peninsula isn't dormant — it's just resting between eruptions. The last few redrew the map; the next is a question of when, not if.",
+    "sub": "Eruptions Right Now 🌍"
+   },
+   "13.0": {
+    "point": "Twelve eruptions in four years, then thirteen months of silence with the ground still swelling underneath. This is not the end of anything. It is the gap between two paragraphs."
+   }
   },
   "rescued": [
    "13.0: After **1240 the peninsula went quiet for about 800 years** — then on **19 March 2021** a ",
@@ -8832,11 +9035,11 @@
   "block": {
    "id": "13.0.6.1",
    "title": "🌋 Grindavík",
-   "sub": "The Town That Came Back",
+   "sub": "The Town Holding Its Breath 🌍",
    "cue": "In Grindavík. Doors open, but stay on made ground.",
    "hook": "This town stood for a thousand years. On **10 November 2023** the ground tore open beneath it in a single night — and every single person got out. **Then 874 of them moved back in.**",
-   "point": "The full hazard case in one town — lava, ground rupture and gas, then house fires, lost roads and a relocated fleet, then the human tier: a town evacuated overnight, bought out, and slowly reoccupied. And the response that made it survivable: **real-time monitoring, hours of warning, state-funded buyouts, and barriers built in days.**",
-   "mic": "Iceland is the only country on Earth that bought an entire town from its own citizens — and 874 of them moved back in anyway.",
+   "point": "Grindavík is the textbook **volcanic hazard** case: primary impacts (lava, ground rupture, SO₂), knock-ons (house fires, harbour and road loss, fleet relocation), and the human tier — a whole town evacuated overnight, bought out, and now slowly reoccupied. HIC response: real-time **InSAR + GPS** monitoring, hours of warning, **state-funded buyouts**, lava barriers built in days.",
+   "mic": "Iceland is the only country on Earth that bought an entire town from its own citizens — and 874 of them have moved back in anyway.",
    "weather": "Weather pivot (if it's foul): \"Stay tight and stay on the tarmac. On a day like this the cracks are harder to see, and that is the only reason I am being boring about it.\"",
    "bullets": [
     "**Grindavík** was settled around **934 CE** — one of the first Reykjanes communities and a major North Atlantic **cod harbour.** By December 2023 it held about **3,720 people.**",
@@ -8884,6 +9087,16 @@
    "12.0": "Look right at the Grindavík turn-off — that road south. The town is fourteen kilometres down it, behind that ridge.",
    "13.0": "In Grindavík. Doors open, but stay on made ground."
   },
+  "overrides": {
+   "12.0": {
+    "hook": "That town stood for 1,000 years — then on 10 November 2023 the ground tore open beneath it in a single night."
+   },
+   "13.0": {
+    "point": "The full hazard case in one town — lava, ground rupture and gas, then house fires, lost roads and a relocated fleet, then the human tier: a town evacuated overnight, bought out, and slowly reoccupied. And the response that made it survivable: **real-time monitoring, hours of warning, state-funded buyouts, and barriers built in days.**",
+    "mic": "Iceland is the only country on Earth that bought an entire town from its own citizens — and 874 of them moved back in anyway.",
+    "sub": "The Town That Came Back"
+   }
+  },
   "rescued": [
    "12.0: **Grindavík** was settled ~**934 CE** — one of the first Reykjanes communities and a major",
    "12.0: On **10 November 2023**, thousands of earthquakes in a few hours ripped **fissures metres ",
@@ -8906,7 +9119,7 @@
   "block": {
    "id": "13.0.1.3",
    "title": "🧝 Hafnarfjörður",
-   "sub": "Iceland's Elf Capital",
+   "sub": "Iceland's Elf Capital 🔀",
    "cue": "Look right — Hafnarfjörður running down to its harbour.",
    "hook": "When the University of Iceland actually asked — first in 1974, again in 2007 — around half of Icelanders wouldn't rule out elves. This is the town where the official ones live.",
    "point": "A town that built itself into an eight-thousand-year-old lava flow, and then decided the flow came with tenants.",
@@ -8949,6 +9162,11 @@
    "12.0": "Look left at 10 o'clock — Hafnarfjörður running down to its harbour",
    "13.0": "Look right — Hafnarfjörður running down to its harbour."
   },
+  "overrides": {
+   "13.0": {
+    "sub": "Iceland's Elf Capital"
+   }
+  },
   "rescued": []
  },
  {
@@ -8967,7 +9185,7 @@
    "sub": "The Brook, The Hill And The Forty-Five Years Of Silence",
    "cue": "Look back — the green hill with the statue on it, just behind where we picked you up.",
    "hook": "The street you just got on the bus in is called **Lækjargata — Brook Street.** There is no brook. It is still there, running under the tarmac, and in January it is the reason the ducks in the city pond have anywhere to swim.",
-   "point": "A buried brook that still keeps the birds warm, a parliament that stopped for forty-five years, and a church that took forty-one to build in a country that had none of the money.",
+   "point": "Ingólfur thought he was naming the place after fire smoke. He'd actually named it after the **free energy** under the city that, 1,100 years on, makes Reykjavík one of the cleanest capitals on Earth.",
    "mic": "Reykjavík will tell you it has the world's oldest parliament. What it actually has is the world's oldest parliament with a very long lunch break.",
    "weather": "Weather pivot: \"If the tower has gone, do not worry — you will see it again tonight, and on a morning like this the locals cannot see it either.\"",
    "bullets": [
@@ -9059,6 +9277,16 @@
    "12.0": "Pulling into the city — the buildings, the bay, the hills ahead",
    "13.0": "Look back — the green hill with the statue on it, just behind where we picked you up."
   },
+  "overrides": {
+   "12.0": {
+    "hook": "The northernmost capital on Earth. Named for smoke that turned out to be steam. Heated by a hot spring that has never once posted an oil bill.",
+    "mic": "Smoky Bay. No smoke. Just steam — and a whole capital running on it.",
+    "sub": "The Smoky Bay 🔀"
+   },
+   "13.0": {
+    "point": "A buried brook that still keeps the birds warm, a parliament that stopped for forty-five years, and a church that took forty-one to build in a country that had none of the money."
+   }
+  },
   "rescued": [
    "12.0: ***Reykjavík* = \"Smoky Bay.\"** Around **874 AD** chieftain **Ingólfur Arnarson** sailed in",
    "12.0: Archaeology backs the legend: a turf longhouse wall at **Aðalstræti** lies **under a volca",
@@ -9122,6 +9350,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -9177,6 +9406,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -9231,6 +9461,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -9278,6 +9509,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -9345,6 +9577,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -9399,6 +9632,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -9450,6 +9684,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -9512,6 +9747,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -9566,6 +9802,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -9630,6 +9867,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -9688,6 +9926,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -9733,6 +9972,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -9781,6 +10021,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -9847,6 +10088,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -9909,6 +10151,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -9966,6 +10209,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -10024,6 +10268,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -10082,6 +10327,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -10137,6 +10383,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  },
  {
@@ -10187,6 +10434,7 @@
    ]
   },
   "cuePerTour": null,
+  "overrides": null,
   "rescued": []
  }
 ]

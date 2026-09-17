@@ -9,7 +9,27 @@ Every script block currently exists once per tour that uses it. "Three Names to
 Keep in Your Pocket" is six blocks — 1.1, 2.1, 3.1, 4.1, 9.1, 10.1 — and they
 are the same block. This keeps ONE of each and records which tours used it.
 
-THE RULE, one line: the fullest version wins.
+THE RULE, in two halves — and the second half was learned the hard way.
+
+FACTS are shared. Bullets and the pronunciation list carry the figures, and the
+figures must agree everywhere. Fullest wins, and a line only one tour carried is
+rescued rather than lost.
+
+DELIVERY is per tour. The hook, the point, the mic line and the subtitle are how
+a block is STAGED, and staging legitimately differs. The Music Leg on 5.0 says
+"they've had a full day of my voice — now they get the country's own", which is
+right for a full-day South Coast run and meaningless on Snaefellsnes. 13.0's
+Geopark block says "our late-morning stop" because 13.0 goes there and 12.0
+drives past it. Picking a winner there does not remove duplication, it destroys
+correct writing.
+
+So those fields keep a base in `block` plus an `overrides` map for every tour
+that says it its own way — exactly the pattern `cuePerTour` already proved for
+the look-left/look-right line. Nothing is dropped and nothing is flattened.
+
+Before 17 Sep 2026 this file overrode 35 wordings across 9 blocks and wrote them
+to dropped.md as a courtesy. dropped.md is now only for genuine figure clashes,
+which are defects, not for staging, which is authorship.
 Fullest = most characters across hook, point, mic, bullets, say. Where a copy
 carries a line the winner doesn't, the line is kept rather than lost.
 
@@ -19,6 +39,8 @@ directions, so "look left" on 9.0 and "look right" on 10.0 are both correct.
 Nothing here touches script-*.js. This writes the list.
 """
 import json, os, re, sys, collections, subprocess, unicodedata
+
+NUMRE = re.compile(r'\\d[\\d.,]*')
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 WRITE = "--write" in sys.argv
@@ -112,13 +134,37 @@ def main():
         else:
             b.pop("cue", None)
 
-        # what the losing copies said that the winner now overrides
+        # DELIVERY FIELDS — keep a base, record every tour that differs.
+        # Nothing is dropped. `block` holds the base a new tour would inherit;
+        # `overrides` holds what each tour actually says where it differs.
+        overrides = {}
         for f in ("hook", "point", "mic", "weather", "sub"):
-            others = {i["tour"]: i["b"].get(f) for i in insts
-                      if i["b"].get(f) and i["b"].get(f) != b.get(f)}
-            if others:
-                dropped.append({"title": win["b"]["title"], "field": f, "kept_from": win["tour"],
-                                "kept": b.get(f), "dropped": others})
+            vals = {i["tour"]: i["b"].get(f) for i in insts if i["b"].get(f)}
+            if not vals:
+                continue
+            # base = the wording the most tours share; ties go to the fullest,
+            # so a block used once keeps its own voice and a block used six
+            # times inherits the version six tours already agreed on.
+            counts = collections.Counter(vals.values())
+            top = max(counts.values())
+            base = max([v for v, n in counts.items() if n == top], key=len)
+            b[f] = base
+            for tour, v in vals.items():
+                if v != base:
+                    overrides.setdefault(tour, {})[f] = v
+
+        # FIGURES must agree. A disagreement here is a defect, not a style, and
+        # it is the thing dropped.md is now for. (12.0 said "days of warning"
+        # where 13.0 said "hours"; only one of those can be true.)
+        figs = {}
+        for i in insts:
+            nums = set(NUMRE.findall(" ".join(i["b"].get("bullets", []) or [])))
+            figs[i["tour"]] = nums
+        allnums = set().union(*figs.values()) if figs else set()
+        odd = {t: sorted(allnums - n) for t, n in figs.items() if allnums - n}
+        if len(figs) > 1 and odd and len(set(map(len, figs.values()))) > 1:
+            dropped.append({"title": win["b"]["title"], "kept_from": win["tour"],
+                            "missing": odd})
 
         blocks.append({
             "title": win["b"]["title"],
@@ -127,6 +173,7 @@ def main():
             "section": win["sec"], "kind": win["kind"], "from": win["tour"],
             "block": b,
             "cuePerTour": None if same_cue else cues,
+            "overrides": overrides or None,
             "rescued": rescued,
         })
 
@@ -141,8 +188,11 @@ def main():
           % len([b for b in blocks if b["cuePerTour"]]))
     print("RESCUED LINES   %d bullets that only existed on one tour"
           % sum(len(b["rescued"]) for b in blocks))
-    print("OVERRIDDEN      %d wordings on %d blocks — listed in %s/dropped.md"
-          % (len(dropped), len({d['title'] for d in dropped}), OUT))
+    nover = sum(len(v) for b in blocks for v in (b["overrides"] or {}).values())
+    print("STAGED PER-TOUR %d wordings across %d blocks — hook/point/mic/sub kept, not flattened"
+          % (nover, len([b for b in blocks if b["overrides"]])))
+    print("FIGURE CLASHES  %d blocks where the copies disagree on a number — %s/dropped.md"
+          % (len({d['title'] for d in dropped}), OUT))
     print()
     top = sorted(dup, key=lambda b: -len(b["usedBy"]))[:8]
     print("most-copied blocks:")
@@ -158,19 +208,25 @@ def main():
               ensure_ascii=False, indent=1)
 
     with open(OUT + "/dropped.md", "w", encoding="utf-8") as fh:
-        fh.write("# What the duplicates said, that the kept copy doesn't\n\n")
-        fh.write("One block per subject now. Where the copies were worded differently, "
-                 "the fullest one was kept. This is everything the other copies said, "
-                 "so nothing disappears without you seeing it. Nothing here is lost from "
-                 "disk — the old scripts are untouched.\n\n---\n\n")
-        for t in dict.fromkeys(d["title"] for d in dropped):
-            fh.write("## %s\n\n" % t)
-            for d in [x for x in dropped if x["title"] == t]:
-                fh.write("**%s** — keeping %s:\n\n> %s\n\n" % (d["field"], d["kept_from"], d["kept"]))
-                for tour, val in d["dropped"].items():
-                    fh.write("- ~~%s~~ — %s\n" % (tour, val))
-                fh.write("\n")
-            fh.write("---\n\n")
+        fh.write("# Figure clashes — copies of one block that disagree on a number\n\n")
+        fh.write("This file used to list every wording the \"fullest version wins\" rule "
+                 "overrode. It no longer needs to: staging differences are kept per tour "
+                 "in `overrides`, because a block's hook, point and mic line are allowed "
+                 "to differ when one tour stops somewhere and another drives past.\n\n"
+                 "What is NOT allowed is two copies of the same block disagreeing about a "
+                 "figure. Everything below is a bullet list where one tour carries a number "
+                 "the others do not. Some are harmless — a tour that goes into more depth "
+                 "carries more figures. Some are the real thing: 12.0's Grindavik said "
+                 "\"days of warning\" where 13.0 said \"hours\", and only one of those "
+                 "can be true. Read them; do not bulk-apply them.\n\n---\n\n")
+        if not dropped:
+            fh.write("Nothing to report. Every shared block agrees on its figures.\n")
+        for d in dropped:
+            fh.write("## %s\n\n" % d["title"])
+            fh.write("Fullest copy is **%s**.\n\n" % d["kept_from"])
+            for tour, missing in sorted(d["missing"].items()):
+                fh.write("- **%s** does not carry: %s\n" % (tour, ", ".join(missing[:18])))
+            fh.write("\n---\n\n")
     print("\nwrote %s/blocks.json (%d blocks) and %s/dropped.md" % (OUT, len(blocks), OUT))
 
 
