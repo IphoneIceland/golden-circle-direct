@@ -85,6 +85,12 @@ MATCH = [("Reykjavík","BSI"),("BSÍ","BSI"),
 # stop in the same places, not 200 m away because a geocoder felt differently.
 # (Nominatim resolves "Geysir, Haukadalur" to Geysir Cottages, a hotel.)
 FIXED = {
+  "VOGA": (63.97167, -22.365736), # the Vogar turn-off ON Reykjanesbraut, NOT the village.
+                                   # Vogar sits 1.66 km off the main road; geocoding the village
+                                   # made the drawn line turn in, loop the village and come back out —
+                                   # +4.5 km and +9 min of driving the coach never does, which drags
+                                   # every cue percentage on 12.0 out of step with the real journey.
+                                   # Point AT Vogar from the road; do not drive into it. (17 Sep 2026)
   "YTRI": (64.802742, -23.080318), # the Snæfellsnes seal beach car park (Ritchie's
                                    # research GPS) — a second Ytri-Tunga up north fools Nominatim
   "SELV": (64.94175, -22.90772),   # Selvallafoss on Vatnaleið (OSM)

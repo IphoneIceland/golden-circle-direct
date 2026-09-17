@@ -27,7 +27,7 @@ window.__TOURS__ = [
   {id:"8.0", group:"South Coast", ready:false, name:"Vestmannaeyjar",
    sub:"Mainland → Landeyjahöfn → Heimaey → Herjólfsdalur → Stórhöfði → Eldfell → Eldheimar → Skansinn"},
   {id:"12.0", group:"Reykjanes", ready:true , name:"Reykjanes North",
-   sub:"Keflavík Airport → Njarðvík → Route 41 → Grindavík turn-off → Hafnarfjörður → Reykjavík", blocks:11},
+   sub:"Keflavík Airport → Njarðvík → Route 41 → Grindavík turn-off → Hafnarfjörður → Reykjavík", km:52, min:57, blocks:11},
   {id:"14.0", group:"Reykjanes", ready:true , name:"Reykjanes South Loop",
    sub:"Lækjargata → Seltún → Fagradalsfjall → Grindavík → Gunnuhver → Reykjanesviti → Reykjavík", km:155, min:161, blocks:28}
 ];
