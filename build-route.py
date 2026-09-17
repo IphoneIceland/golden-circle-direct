@@ -132,7 +132,7 @@ def keyfor(t):
 
 # Not every tour starts at BSÍ. 14.0 is picked up on Lækjargata, 12.0 at the
 # airport.
-START = {"14.0":"LAEK", "12.0":"KEFA"}
+START = {"13.0":"LAEK", "12.0":"KEFA"}
 HOME  = START.get(tag, "BSI")
 
 # ...and not every tour comes back. Every tour here is a LOOP: it is assumed to
